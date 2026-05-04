@@ -81,6 +81,7 @@
   border: 1px solid #ced4da;
   border-radius: 4px;
   font-size: 1rem;
+  color: black;
 }
 
 .input:focus {
@@ -122,12 +123,12 @@
 }
 
 .primaryBtn {
-  background-color: #3498db;
+  background-color: #141515;
   color: #fff;
 }
 
 .primaryBtn:hover:not(:disabled) {
-  background-color: #2980b9;
+  background-color: #09090a;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -139,12 +140,12 @@
 }
 
 .secondaryBtn {
-  background-color: #95a5a6;
+  background-color: #0d0d0d;
   color: #fff;
 }
 
 .secondaryBtn:hover {
-  background-color: #7f8c8d;
+  background-color: #0f0f0f;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -153,7 +154,7 @@
   margin-top: 1rem;
   padding: 1rem;
   background-color: #d4edda;
-  color: #155724;
+  color: #131313;
   border: 1px solid #c3e6cb;
   border-radius: 4px;
   font-weight: 500;

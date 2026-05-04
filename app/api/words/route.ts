@@ -6,21 +6,47 @@ const bookManager = new BookManager();
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { bookName, pageNo, word, meaning } = body;
+    const { bookName, pageNo, word, meaning, examples } = body;
 
     // Validate required fields
-    if (!bookName || pageNo === undefined || !word || !meaning) {
+    if (!bookName || pageNo === undefined || !word) {
       return NextResponse.json(
         {
           success: false,
-          error: "bookName, pageNo, word, and meaning are required",
+          error: "bookName, pageNo, and word are required",
         },
         { status: 400 },
       );
     }
 
+    let finalMeaning = meaning;
+    if (!finalMeaning) {
+      const existing = bookManager.getWordOccurrences(bookName, word);
+      if (existing) {
+        finalMeaning = existing.meaning;
+      } else {
+        return NextResponse.json(
+          {
+            success: false,
+            error: "Meaning is required for a new word",
+          },
+          { status: 400 },
+        );
+      }
+    }
+
+    const finalExamples = Array.isArray(examples)
+      ? examples.map((item) => String(item).trim()).filter(Boolean)
+      : [];
+
     // Add the word to the book
-    bookManager.addWord(bookName, Number(pageNo), word, meaning);
+    bookManager.addWord(
+      bookName,
+      Number(pageNo),
+      word,
+      finalMeaning,
+      finalExamples,
+    );
 
     return NextResponse.json({
       success: true,
@@ -42,12 +68,26 @@ export async function GET(request: NextRequest) {
     const searchParams = request.nextUrl.searchParams;
     const bookName = searchParams.get("bookName");
     const pageNo = searchParams.get("pageNo");
+    const word = searchParams.get("word");
 
     if (!bookName) {
       return NextResponse.json(
         { success: false, error: "bookName is required" },
         { status: 400 },
       );
+    }
+
+    if (word) {
+      const occurrence = bookManager.getWordOccurrences(bookName, word);
+      if (!occurrence) {
+        return NextResponse.json({
+          success: true,
+          found: false,
+          word: word.trim(),
+        });
+      }
+
+      return NextResponse.json({ success: true, found: true, ...occurrence });
     }
 
     if (pageNo) {
