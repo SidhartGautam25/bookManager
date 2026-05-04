@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { Book, Layout, Hash, BookOpen, Loader2, ChevronRight, Info } from "lucide-react";
 import Navbar from "@/components/Navbar";
-import styles from "./page.module.css";
 
 interface Word {
   word: string;
@@ -20,11 +20,8 @@ export default function BookListPage() {
   const [bookData, setBookData] = useState<PageData[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [message, setMessage] = useState<string>("");
-  const [messageType, setMessageType] = useState<"success" | "error">(
-    "success",
-  );
+  const [messageType, setMessageType] = useState<"success" | "error">("success");
 
-  // Fetch existing books on component mount
   useEffect(() => {
     const fetchBooks = async () => {
       try {
@@ -39,20 +36,17 @@ export default function BookListPage() {
         setMessageType("error");
       }
     };
-
     void fetchBooks();
   }, []);
 
   const handleSelectBook = async (bookName: string) => {
     setSelectedBook(bookName);
     setLoading(true);
-
     try {
       const response = await fetch(
         `/api/words?bookName=${encodeURIComponent(bookName)}`,
       );
       const data = await response.json();
-
       if (data.success) {
         setBookData(data.data || []);
         setMessage("");
@@ -73,96 +67,155 @@ export default function BookListPage() {
   const calculateStats = () => {
     let totalWords = 0;
     let totalPages = 0;
-
     bookData.forEach((page) => {
       totalWords += page.words.length;
       totalPages++;
     });
-
     return { totalWords, totalPages };
   };
 
   const stats = calculateStats();
 
   return (
-    <>
+    <div className="min-h-screen bg-gray-50 text-gray-900">
       <Navbar />
-      <div className={styles.container}>
-        <h1>Book List</h1>
 
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="mb-8">
+          <h1 className="text-3xl font-extrabold tracking-tight text-gray-900">Library Vault</h1>
+          <p className="text-gray-500 mt-1 text-sm md:text-base">Review your collection of words and meanings.</p>
+        </div>
+
+        {/* Global Notifications */}
         {message && (
-          <div className={`${styles.message} ${styles[messageType]}`}>
-            {message}
+          <div className={`mb-6 p-4 rounded-xl flex items-center gap-3 animate-in fade-in slide-in-from-top-2 duration-300 ${messageType === "success"
+              ? "bg-emerald-50 text-emerald-800 border border-emerald-200"
+              : "bg-red-50 text-red-800 border border-red-200"
+            }`}>
+            <Info size={20} />
+            <span className="font-medium text-sm">{message}</span>
           </div>
         )}
 
-        <div className={styles.booksGrid}>
-          <div className={styles.bookSelector}>
-            <h2>Select a Book</h2>
-            {books.length === 0 ? (
-              <p className={styles.noBooks}>
-                No books found. Create one from the Add Word page.
-              </p>
-            ) : (
-              <div className={styles.bookList}>
-                {books.map((book) => (
-                  <button
-                    key={book}
-                    onClick={() => void handleSelectBook(book)}
-                    className={`${styles.bookButton} ${selectedBook === book ? styles.active : ""}`}
-                  >
-                    {book}
-                  </button>
-                ))}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          {/* Sidebar: Book Selector */}
+          <aside className="lg:col-span-3 space-y-4">
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5">
+              <div className="flex items-center gap-2 mb-4 px-1">
+                <Book className="text-indigo-600" size={18} />
+                <h2 className="font-bold text-gray-800 tracking-tight text-sm uppercase">Your Books</h2>
               </div>
-            )}
-          </div>
 
-          {selectedBook && (
-            <div className={styles.bookContent}>
-              <div className={styles.bookHeader}>
-                <h2>{selectedBook}</h2>
-                <div className={styles.stats}>
-                  <div className={styles.statItem}>
-                    <span className={styles.statLabel}>Total Words:</span>
-                    <span className={styles.statValue}>{stats.totalWords}</span>
-                  </div>
-                  <div className={styles.statItem}>
-                    <span className={styles.statLabel}>Total Pages:</span>
-                    <span className={styles.statValue}>{stats.totalPages}</span>
-                  </div>
+              {books.length === 0 ? (
+                <div className="text-center py-8">
+                  <p className="text-sm text-gray-400">No books found yet.</p>
                 </div>
-              </div>
-
-              {loading ? (
-                <p className={styles.loading}>Loading...</p>
-              ) : bookData.length === 0 ? (
-                <p className={styles.noData}>No words added yet.</p>
               ) : (
-                <div className={styles.pagesContainer}>
-                  {bookData.map((pageData) => (
-                    <div key={pageData.page} className={styles.pageSection}>
-                      <h3>Page {pageData.page}</h3>
-                      <div className={styles.wordsList}>
-                        {pageData.words.map((item, index) => (
-                          <div key={index} className={styles.wordItem}>
-                            <div className={styles.wordHeader}>
-                              <strong className={styles.wordText}>
-                                {item.word}
-                              </strong>
-                            </div>
-                            <p className={styles.meaning}>{item.meaning}</p>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
+                <nav className="flex flex-col gap-1">
+                  {books.map((book) => (
+                    <button
+                      key={book}
+                      onClick={() => void handleSelectBook(book)}
+                      className={`flex items-center justify-between px-4 py-3 rounded-xl text-left text-sm font-semibold transition-all duration-200 group ${selectedBook === book
+                          ? "bg-indigo-600 text-white shadow-md shadow-indigo-100"
+                          : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
+                        }`}
+                    >
+                      <span className="truncate">{book}</span>
+                      <ChevronRight size={14} className={selectedBook === book ? "opacity-100" : "opacity-0 group-hover:opacity-40"} />
+                    </button>
                   ))}
-                </div>
+                </nav>
               )}
             </div>
-          )}
+          </aside>
+
+          {/* Main Content Area */}
+          <section className="lg:col-span-9">
+            {selectedBook ? (
+              <div className="space-y-6">
+                {/* Book Header & Stats Card */}
+                <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                  <div>
+                    <h2 className="text-2xl font-bold text-gray-900">{selectedBook}</h2>
+                    <div className="flex items-center gap-2 mt-1 text-gray-400 text-sm">
+                      <BookOpen size={14} />
+                      <span>Reading Log</span>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 w-full md:w-auto">
+                    <div className="flex-1 md:flex-none px-4 py-2 bg-indigo-50 rounded-xl border border-indigo-100">
+                      <span className="block text-[10px] uppercase font-bold text-indigo-400 tracking-wider leading-none">Words</span>
+                      <span className="text-lg font-black text-indigo-700">{stats.totalWords}</span>
+                    </div>
+                    <div className="flex-1 md:flex-none px-4 py-2 bg-amber-50 rounded-xl border border-amber-100">
+                      <span className="block text-[10px] uppercase font-bold text-amber-400 tracking-wider leading-none">Pages</span>
+                      <span className="text-lg font-black text-amber-700">{stats.totalPages}</span>
+                    </div>
+                  </div>
+                </div>
+
+                {loading ? (
+                  <div className="flex flex-col items-center justify-center py-20 bg-white rounded-2xl border border-dashed border-gray-200">
+                    <Loader2 className="animate-spin text-indigo-600 mb-4" size={32} />
+                    <p className="text-gray-500 font-medium">Fetching vocabulary data...</p>
+                  </div>
+                ) : bookData.length === 0 ? (
+                  <div className="text-center py-20 bg-white rounded-2xl border border-dashed border-gray-200">
+                    <p className="text-gray-400">Empty library. Add some words to see them here.</p>
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-1 gap-8">
+                    {bookData.map((pageData) => (
+                      <div key={pageData.page} className="space-y-4">
+                        <div className="flex items-center gap-3">
+                          <span className="flex items-center justify-center bg-gray-900 text-white text-xs font-bold px-3 py-1 rounded-full">
+                            PAGE {pageData.page}
+                          </span>
+                          <div className="h-[1px] flex-1 bg-gray-200"></div>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          {pageData.words.map((item, index) => (
+                            <div
+                              key={index}
+                              className="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 group"
+                            >
+                              <div className="flex items-center gap-2 mb-2">
+                                <div className="p-1.5 rounded-lg bg-indigo-50 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
+                                  <Layout size={14} />
+                                </div>
+                                <h4 className="font-bold text-lg text-gray-800 capitalize tracking-tight">
+                                  {item.word}
+                                </h4>
+                              </div>
+                              <p className="text-gray-600 text-sm leading-relaxed border-l-2 border-gray-100 pl-4 py-1 italic">
+                                {item.meaning}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              /* Empty State */
+              <div className="flex flex-col items-center justify-center py-24 bg-white rounded-3xl border border-dashed border-gray-200 text-center px-6">
+                <div className="bg-gray-50 p-6 rounded-full mb-4">
+                  <BookOpen size={48} className="text-gray-300" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800">No Book Selected</h3>
+                <p className="text-gray-500 max-w-xs mt-2">
+                  Select a book from the sidebar to view your saved vocabulary and definitions.
+                </p>
+              </div>
+            )}
+          </section>
         </div>
-      </div>
-    </>
+      </main>
+    </div>
   );
 }

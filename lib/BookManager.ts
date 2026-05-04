@@ -4,10 +4,19 @@ import path from "path";
 export interface Word {
   word: string;
   meaning: string;
+  examples?: string[];
 }
 
 export interface PageData {
   [key: string]: Word[]; // page number as key, array of words as value
+}
+
+export interface WordOccurrence {
+  word: string;
+  meaning: string;
+  frequency: number;
+  pages: number[];
+  examples: string[];
 }
 
 export class BookManager {
@@ -75,6 +84,7 @@ export class BookManager {
     pageNo: number,
     word: string,
     meaning: string,
+    examples: string[] = [],
   ): boolean {
     if (!this.bookExists(bookName)) {
       throw new Error(`Book "${bookName}" does not exist`);
@@ -105,6 +115,7 @@ export class BookManager {
     pageData.push({
       word,
       meaning,
+      examples,
     });
 
     // Write updated data back to file
@@ -154,6 +165,54 @@ export class BookManager {
     });
 
     return result.sort((a, b) => a.page - b.page);
+  }
+
+  /**
+   * Get word frequency, meaning and pages for a word across a book
+   */
+  getWordOccurrences(bookName: string, word: string): WordOccurrence | null {
+    if (!this.bookExists(bookName)) {
+      throw new Error(`Book "${bookName}" does not exist`);
+    }
+
+    const normalizedWord = word.trim().toLowerCase();
+    if (!normalizedWord) {
+      return null;
+    }
+
+    const allWords = this.getAllWordsFromBook(bookName);
+
+    let frequency = 0;
+    let meaning = "";
+    let examples: string[] = [];
+    const pages: number[] = [];
+
+    allWords.forEach((pageData) => {
+      pageData.words.forEach((item) => {
+        if (item.word.trim().toLowerCase() === normalizedWord) {
+          frequency += 1;
+          if (!meaning) {
+            meaning = item.meaning;
+            examples = item.examples ?? [];
+          }
+          if (!pages.includes(pageData.page)) {
+            pages.push(pageData.page);
+          }
+        }
+      });
+    });
+
+    if (frequency === 0) {
+      return null;
+    }
+
+    return {
+      word: word.trim(),
+      meaning,
+      frequency,
+      pages: pages.sort((a, b) => a - b),
+      examples,
+    };
   }
 
   /**
