@@ -7,19 +7,29 @@ import {
   Book,
   Type,
   FileText,
-  Hash,
   CheckCircle2,
   AlertCircle,
   Loader2,
+  Trash2,
+  Plus,
+  Hash,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 
+type MeaningItem = {
+  partOfSpeech: string;
+  definition: string;
+  examples: string[];
+};
+
 type ExistingWordData = {
   found: boolean;
-  meaning: string;
   frequency: number;
   pages: number[];
-  examples: string[];
+  meanings: MeaningItem[];
+  variations?: string[];
+  source?: "current-book" | "other-book" | "api";
+  bookName?: string;
 };
 
 export default function AddWordPage() {
@@ -28,7 +38,7 @@ export default function AddWordPage() {
   const [newBookName, setNewBookName] = useState<string>("");
   const [showNewBookInput, setShowNewBookInput] = useState<boolean>(false);
   const [word, setWord] = useState<string>("");
-  const [meaning, setMeaning] = useState<string>("");
+
   const [pageNo, setPageNo] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
   const [message, setMessage] = useState<string>("");
@@ -37,7 +47,13 @@ export default function AddWordPage() {
   );
   const [existingWordData, setExistingWordData] =
     useState<ExistingWordData | null>(null);
-  const [examples, setExamples] = useState<string[]>([""]);
+  const [meanings, setMeanings] = useState<MeaningItem[]>([
+    { partOfSpeech: "", definition: "", examples: [""] },
+  ]);
+  const [variations, setVariations] = useState<string>("");
+  const [dataSource, setDataSource] = useState<
+    "current-book" | "other-book" | "api" | null
+  >(null);
   const searchTimerRef = useRef<number | null>(null);
 
   // Fetch existing books on component mount
@@ -59,70 +75,219 @@ export default function AddWordPage() {
     void fetchBooks();
   }, []);
 
+  const stripHtml = (html: string) => {
+    return html.replace(/<[^>]*>?/gm, "");
+  };
+
+  const fetchDictionaryData = async (searchWord: string) => {
+    const normalizedWord = searchWord.trim();
+    if (!normalizedWord) return null;
+
+    let collectedMeanings: MeaningItem[] = [];
+
+    try {
+      // 1. Try Primary Community API
+      const response = await fetch(
+        `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(normalizedWord)}`,
+      );
+      if (response.ok) {
+        const data = await response.json();
+        if (Array.isArray(data) && data.length > 0) {
+          data.forEach((entry: any) => {
+            entry.meanings?.forEach((m: any) => {
+              m.definitions?.forEach((d: any) => {
+                if (d.definition) {
+                  // Capture all possible example formats
+                  let definitionExamples: string[] = [];
+                  if (d.example) definitionExamples.push(d.example);
+                  if (Array.isArray(d.examples)) {
+                    definitionExamples = [...definitionExamples, ...d.examples];
+                  }
+                  
+                  collectedMeanings.push({
+                    partOfSpeech: m.partOfSpeech || "",
+                    definition: d.definition,
+                    examples: definitionExamples.length > 0 ? [...new Set(definitionExamples)] : [""],
+                  });
+                }
+              });
+            });
+          });
+        }
+      }
+
+      // 2. Fallback/Supplement with Official Wiktionary API if needed
+      if (collectedMeanings.length === 0) {
+        const wikiResponse = await fetch(
+          `https://en.wiktionary.org/api/rest_v1/page/definition/${encodeURIComponent(normalizedWord)}`,
+        );
+        if (wikiResponse.ok) {
+          const wikiData = await wikiResponse.json();
+          const enData = wikiData.en;
+          if (Array.isArray(enData)) {
+            enData.forEach((posGroup: any) => {
+              posGroup.definitions?.forEach((def: any) => {
+                const examples: string[] = [];
+                if (Array.isArray(def.examples)) {
+                  def.examples.forEach((ex: any) => {
+                    const exText = typeof ex === "string" ? ex : ex.example;
+                    if (exText && exText.length > 2) {
+                      examples.push(stripHtml(exText));
+                    }
+                  });
+                }
+
+                if (def.definition) {
+                  collectedMeanings.push({
+                    partOfSpeech: posGroup.partOfSpeech || "",
+                    definition: stripHtml(def.definition),
+                    examples: examples.length > 0 ? examples : [""],
+                  });
+                }
+              });
+            });
+          }
+        }
+      }
+
+      return collectedMeanings.length > 0 ? collectedMeanings : null;
+    } catch (error) {
+      console.error("Error fetching from dictionary APIs:", error);
+    }
+    return null;
+  };
+
   const searchExistingWord = async (searchWord: string) => {
     if (!selectedBook || !searchWord.trim()) {
-      return;
+      return null;
     }
 
     try {
       const response = await fetch(
-        `/api/words?bookName=${encodeURIComponent(selectedBook)}&word=${encodeURIComponent(searchWord.trim())}`,
+        `/api/words?bookName=${encodeURIComponent(selectedBook)}&word=${encodeURIComponent(searchWord.trim())}&searchType=global`,
       );
       const data = await response.json();
 
       if (data.success && data.found) {
         setExistingWordData({
           found: true,
-          meaning: data.meaning,
           frequency: data.frequency,
           pages: data.pages,
-          examples: data.examples ?? [],
+          meanings: data.meanings || [],
+          variations: data.variations,
+          source: data.source,
+          bookName: data.bookName,
         });
-        setMeaning(data.meaning);
+        setMeanings(data.meanings || []);
+        setVariations((data.variations || []).join(", "));
+        setDataSource(data.source);
+        return { found: true, source: data.source };
       } else {
         setExistingWordData({
           found: false,
-          meaning: "",
           frequency: 0,
           pages: [],
-          examples: [],
+          meanings: [],
         });
+        setDataSource(null);
+        return { found: false };
       }
     } catch {
       setExistingWordData(null);
+      setDataSource(null);
+      return null;
     }
   };
 
   const handleWordChange = (value: string) => {
     setWord(value);
     setExistingWordData(null);
-    setExamples([""]);
+
+    // Clear fields if input is cleared
+    if (!value.trim()) {
+      setMeanings([{ partOfSpeech: "", definition: "", examples: [""] }]);
+      setVariations("");
+      setDataSource(null);
+    }
 
     if (searchTimerRef.current) {
       window.clearTimeout(searchTimerRef.current);
     }
 
     if (selectedBook && value.trim()) {
-      searchTimerRef.current = window.setTimeout(() => {
-        void searchExistingWord(value);
+      searchTimerRef.current = window.setTimeout(async () => {
+        // 1. Try local/global search first
+        const localResult = await searchExistingWord(value);
+
+        // 2. If not found in any book, fetch from Dictionary API
+        if (!localResult || !localResult.found) {
+          const dictMeanings = await fetchDictionaryData(value);
+          if (dictMeanings) {
+            setMeanings(dictMeanings);
+            setDataSource("api");
+          }
+        }
       }, 450);
     }
   };
 
-  const handleExampleChange = (index: number, value: string) => {
-    setExamples((current) => {
+  const handleMeaningChange = (
+    index: number,
+    field: keyof MeaningItem,
+    value: string,
+  ) => {
+    setMeanings((current) => {
       const next = [...current];
-      next[index] = value;
+      next[index] = { ...next[index], [field]: value };
       return next;
     });
   };
 
-  const addExampleField = () => {
-    setExamples((current) => [...current, ""]);
+  const handleExampleChange = (
+    meaningIndex: number,
+    exampleIndex: number,
+    value: string,
+  ) => {
+    setMeanings((current) => {
+      const next = [...current];
+      const nextExamples = [...next[meaningIndex].examples];
+      nextExamples[exampleIndex] = value;
+      next[meaningIndex] = { ...next[meaningIndex], examples: nextExamples };
+      return next;
+    });
   };
 
-  const removeExampleField = (index: number) => {
-    setExamples((current) => current.filter((_, i) => i !== index));
+  const addMeaningGroup = () => {
+    setMeanings((current) => [
+      ...current,
+      { partOfSpeech: "", definition: "", examples: [""] },
+    ]);
+  };
+
+  const removeMeaningGroup = (index: number) => {
+    setMeanings((current) => current.filter((_, i) => i !== index));
+  };
+
+  const addExampleToGroup = (meaningIndex: number) => {
+    setMeanings((current) => {
+      const next = [...current];
+      next[meaningIndex] = {
+        ...next[meaningIndex],
+        examples: [...next[meaningIndex].examples, ""],
+      };
+      return next;
+    });
+  };
+
+  const removeExampleFromGroup = (meaningIndex: number, exampleIndex: number) => {
+    setMeanings((current) => {
+      const next = [...current];
+      const nextExamples = next[meaningIndex].examples.filter(
+        (_, i) => i !== exampleIndex,
+      );
+      next[meaningIndex] = { ...next[meaningIndex], examples: nextExamples };
+      return next;
+    });
   };
 
   const handleCreateNewBook = async () => {
@@ -146,8 +311,7 @@ export default function AddWordPage() {
         setMessageType("success");
         setSelectedBook(newBookName);
         setExistingWordData(null);
-        setMeaning("");
-        setExamples([""]);
+        setMeanings([{ partOfSpeech: "", definition: "", examples: [""] }]);
         setNewBookName("");
         setShowNewBookInput(false);
 
@@ -175,13 +339,16 @@ export default function AddWordPage() {
       return;
     }
 
-    const finalMeaning = meaning.trim() || existingWordData?.meaning || "";
-    const finalExamples = examples
-      .map((example) => example.trim())
-      .filter(Boolean);
+    const finalMeanings = meanings
+      .map((m) => ({
+        ...m,
+        definition: m.definition.trim(),
+        examples: m.examples.map((e) => e.trim()).filter(Boolean),
+      }))
+      .filter((m) => m.definition);
 
-    if (!word.trim() || !finalMeaning || !pageNo.trim()) {
-      setMessage("All fields are required");
+    if (!word.trim() || finalMeanings.length === 0 || !pageNo.trim()) {
+      setMessage("Word, at least one meaning, and page number are required");
       setMessageType("error");
       return;
     }
@@ -194,9 +361,12 @@ export default function AddWordPage() {
         body: JSON.stringify({
           bookName: selectedBook,
           word: word.trim(),
-          meaning: finalMeaning,
           pageNo: parseInt(pageNo),
-          examples: finalExamples,
+          meanings: finalMeanings,
+          variations: variations
+            .split(",")
+            .map((v) => v.trim())
+            .filter(Boolean),
         }),
       });
 
@@ -205,10 +375,11 @@ export default function AddWordPage() {
         setMessage(`Word "${word}" added successfully!`);
         setMessageType("success");
         setWord("");
-        setMeaning("");
+        setMeanings([{ partOfSpeech: "", definition: "", examples: [""] }]);
         setPageNo("");
-        setExamples([""]);
+        setVariations("");
         setExistingWordData(null);
+        setDataSource(null);
       } else {
         setMessage(data.error);
         setMessageType("error");
@@ -275,8 +446,7 @@ export default function AddWordPage() {
                       setSelectedBook(nextBook);
                       setShowNewBookInput(false);
                       setExistingWordData(null);
-                      setMeaning("");
-                      setExamples([""]);
+                      setMeanings([{ partOfSpeech: "", definition: "", examples: [""] }]);
                     }}
                     className="flex-1 block w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all outline-none text-gray-700"
                   >
@@ -371,8 +541,25 @@ export default function AddWordPage() {
                       value={word}
                       onChange={(e) => handleWordChange(e.target.value)}
                       placeholder="e.g., Ephemeral"
-                      className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none"
+                      className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-black"
                       required
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="variations"
+                      className="flex items-center gap-2 text-sm font-bold text-gray-700"
+                    >
+                      <PlusCircle size={16} className="text-gray-400" /> Variations
+                    </label>
+                    <input
+                      id="variations"
+                      type="text"
+                      value={variations}
+                      onChange={(e) => setVariations(e.target.value)}
+                      placeholder="e.g., ran, runs, running"
+                      className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-black"
                     />
                   </div>
 
@@ -389,100 +576,192 @@ export default function AddWordPage() {
                       value={pageNo}
                       onChange={(e) => setPageNo(e.target.value)}
                       placeholder="0"
-                      className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none"
+                      className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-black"
                       min="1"
                       required
                     />
                   </div>
+
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="variations"
+                      className="flex items-center gap-2 text-sm font-bold text-gray-700"
+                    >
+                      <PlusCircle size={16} className="text-gray-400" /> Variations
+                    </label>
+                    <input
+                      id="variations"
+                      type="text"
+                      value={variations}
+                      onChange={(e) => setVariations(e.target.value)}
+                      placeholder="e.g., ran, runs, running"
+                      className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-black"
+                    />
+                  </div>
                 </div>
 
-                <div className="space-y-2">
-                  <label
-                    htmlFor="meaning"
-                    className="flex items-center gap-2 text-sm font-bold text-gray-700"
-                  >
-                    <FileText size={16} className="text-gray-400" /> Meaning
-                  </label>
+                <div className="pt-6 border-t border-gray-100">
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="flex items-center gap-3">
+                      <div className="bg-indigo-100 p-2 rounded-lg text-indigo-600">
+                        <FileText size={18} />
+                      </div>
+                      <h3 className="text-lg font-bold text-gray-800">
+                        Meaning & Usage Sections
+                      </h3>
+                    </div>
+                    {dataSource && (
+                      <span
+                        className={`text-xs font-bold px-3 py-1 rounded-full ${
+                          dataSource === "current-book"
+                            ? "bg-green-100 text-green-700"
+                            : dataSource === "other-book"
+                              ? "bg-blue-100 text-blue-700"
+                              : "bg-purple-100 text-purple-700"
+                        }`}
+                      >
+                        Source:{" "}
+                        {dataSource === "current-book"
+                          ? "Current Book"
+                          : dataSource === "other-book"
+                            ? `Book: ${existingWordData?.bookName}`
+                            : "Dictionary API"}
+                      </span>
+                    )}
+                  </div>
+
                   {existingWordData?.found && (
-                    <div className="text-sm text-green-700 bg-green-50 border border-green-100 rounded-xl p-3">
-                      <p>
-                        This word already exists in{" "}
-                        <span className="font-semibold">{selectedBook}</span>.
-                        The meaning has been filled for you.
+                    <div className="mb-6 text-sm text-indigo-700 bg-indigo-50 border border-indigo-100 rounded-xl p-4">
+                      <p className="flex items-center gap-2">
+                        <CheckCircle2 size={16} />
+                        This word already exists in your library.
                       </p>
-                      <p className="mt-1 text-gray-600">
+                      <p className="mt-1 text-gray-600 pl-6">
                         Frequency: {existingWordData.frequency} time
                         {existingWordData.frequency > 1 ? "s" : ""} across pages{" "}
                         {existingWordData.pages.join(", ")}.
                       </p>
-                      {existingWordData.examples.length > 0 && (
-                        <p className="mt-1 text-gray-600">
-                          Existing examples:{" "}
-                          {existingWordData.examples.join(" • ")}.
-                        </p>
-                      )}
                     </div>
                   )}
-                  <textarea
-                    id="meaning"
-                    value={meaning}
-                    onChange={(e) => setMeaning(e.target.value)}
-                    placeholder={
-                      existingWordData?.found
-                        ? "Meaning auto-filled from this book"
-                        : "Describe the definition or context..."
-                    }
-                    className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none min-h-[120px] resize-none"
-                    rows={4}
-                    required={!existingWordData?.found}
-                    disabled={existingWordData?.found}
-                  />
-                </div>
 
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between gap-3">
-                    <label className="flex items-center gap-2 text-sm font-bold text-gray-700">
-                      <span className="text-gray-400">•</span> Examples
-                    </label>
+                  <div className="space-y-8">
+                    {meanings.map((m, mIndex) => (
+                      <div
+                        key={mIndex}
+                        className="p-6 rounded-2xl bg-gray-50 border border-gray-200 relative group animate-in fade-in slide-in-from-top-4 duration-300"
+                      >
+                        {meanings.length > 1 && (
+                          <button
+                            type="button"
+                            onClick={() => removeMeaningGroup(mIndex)}
+                            className="absolute -top-3 -right-3 p-2 bg-white text-red-500 rounded-full border border-red-100 shadow-sm hover:bg-red-50 hover:text-red-600 transition-all opacity-0 group-hover:opacity-100"
+                          >
+                            <Trash2 size={16} />
+                          </button>
+                        )}
+
+                        <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-6">
+                          <div className="space-y-4">
+                            <div className="space-y-2">
+                              <label className="text-xs font-black text-gray-400 uppercase tracking-wider">
+                                Part of Speech
+                              </label>
+                              <input
+                                type="text"
+                                value={m.partOfSpeech}
+                                onChange={(e) =>
+                                  handleMeaningChange(
+                                    mIndex,
+                                    "partOfSpeech",
+                                    e.target.value,
+                                  )
+                                }
+                                placeholder="e.g. Noun"
+                                className="w-full px-4 py-2.5 rounded-xl border-gray-200 bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-sm text-black"
+                              />
+                            </div>
+                            <div className="space-y-2">
+                              <label className="text-xs font-black text-gray-400 uppercase tracking-wider">
+                                Definition
+                              </label>
+                              <textarea
+                                value={m.definition}
+                                onChange={(e) =>
+                                  handleMeaningChange(
+                                    mIndex,
+                                    "definition",
+                                    e.target.value,
+                                  )
+                                }
+                                placeholder="Describe the meaning..."
+                                className="w-full px-4 py-2.5 rounded-xl border-gray-200 bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-sm min-h-[100px] text-black"
+                              />
+                            </div>
+                          </div>
+
+                          <div className="space-y-4">
+                            <div className="flex items-center justify-between">
+                              <label className="text-xs font-black text-gray-400 uppercase tracking-wider">
+                                Examples
+                              </label>
+                              <button
+                                type="button"
+                                onClick={() => addExampleToGroup(mIndex)}
+                                className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 hover:text-indigo-700"
+                              >
+                                <Plus size={14} /> Add Example
+                              </button>
+                            </div>
+                            <div className="space-y-3">
+                              {m.examples.map((ex, exIndex) => (
+                                <div
+                                  key={exIndex}
+                                  className="flex items-center gap-2"
+                                >
+                                  <input
+                                    type="text"
+                                    value={ex}
+                                    onChange={(e) =>
+                                      handleExampleChange(
+                                        mIndex,
+                                        exIndex,
+                                        e.target.value,
+                                      )
+                                    }
+                                    placeholder={`Usage example ${exIndex + 1}`}
+                                    className="flex-1 px-4 py-2.5 rounded-xl border-gray-200 bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-sm text-black"
+                                  />
+                                  {m.examples.length > 1 && (
+                                    <button
+                                      type="button"
+                                      onClick={() =>
+                                        removeExampleFromGroup(mIndex, exIndex)
+                                      }
+                                      className="p-2.5 text-gray-400 hover:text-red-500 transition-colors"
+                                    >
+                                      <Trash2 size={16} />
+                                    </button>
+                                  )}
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+
                     <button
                       type="button"
-                      onClick={addExampleField}
-                      className="inline-flex items-center gap-2 px-3 py-2 bg-indigo-600 text-white text-sm font-medium rounded-xl hover:bg-indigo-700 transition-colors"
+                      onClick={addMeaningGroup}
+                      className="w-full py-4 border-2 border-dashed border-gray-200 rounded-2xl text-gray-400 font-bold hover:border-indigo-300 hover:text-indigo-600 hover:bg-indigo-50/50 transition-all flex items-center justify-center gap-2 group"
                     >
-                      Add example
+                      <Plus
+                        size={20}
+                        className="group-hover:scale-110 transition-transform"
+                      />
+                      Add Another Meaning / Part of Speech
                     </button>
                   </div>
-
-                  {examples.map((example, index) => (
-                    <div
-                      key={index}
-                      className="grid grid-cols-[1fr_auto] gap-3 items-start"
-                    >
-                      <input
-                        type="text"
-                        value={example}
-                        onChange={(e) =>
-                          handleExampleChange(index, e.target.value)
-                        }
-                        placeholder={`Example ${index + 1}`}
-                        className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none"
-                      />
-                      {examples.length > 1 && (
-                        <button
-                          type="button"
-                          onClick={() => removeExampleField(index)}
-                          className="px-4 py-3 bg-red-50 text-red-700 rounded-xl hover:bg-red-100 transition-colors"
-                        >
-                          Remove
-                        </button>
-                      )}
-                    </div>
-                  ))}
-
-                  <p className="text-sm text-gray-500">
-                    Add one or more example sentences for this word. Examples
-                    are optional, so you can leave them blank.
-                  </p>
                 </div>
 
                 <div className="pt-4 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">

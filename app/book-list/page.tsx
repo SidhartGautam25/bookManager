@@ -4,9 +4,15 @@ import { useState, useEffect } from "react";
 import { Book, Layout, Hash, BookOpen, Loader2, ChevronRight, Info } from "lucide-react";
 import Navbar from "@/components/Navbar";
 
+interface WordMeaning {
+  partOfSpeech: string;
+  definition: string;
+  examples: string[];
+}
+
 interface Word {
   word: string;
-  meaning: string;
+  meanings: WordMeaning[];
 }
 
 interface PageData {
@@ -190,9 +196,32 @@ export default function BookListPage() {
                                   {item.word}
                                 </h4>
                               </div>
-                              <p className="text-gray-600 text-sm leading-relaxed border-l-2 border-gray-100 pl-4 py-1 italic">
-                                {item.meaning}
-                              </p>
+                              <div className="space-y-3 border-l-2 border-gray-100 pl-4">
+                                {item.meanings?.map((m, mIdx) => (
+                                  <div key={mIdx} className="py-1">
+                                    <div className="flex items-center gap-2 mb-1">
+                                      {m.partOfSpeech && (
+                                        <span className="text-[10px] font-black uppercase text-indigo-500 bg-indigo-50 px-2 py-0.5 rounded-md tracking-wider">
+                                          {m.partOfSpeech}
+                                        </span>
+                                      )}
+                                    </div>
+                                    <p className="text-gray-600 text-sm leading-relaxed italic">
+                                      {m.definition}
+                                    </p>
+                                    {m.examples && m.examples.length > 0 && (
+                                      <ul className="mt-2 space-y-1">
+                                        {m.examples.map((ex, exIdx) => (
+                                          <li key={exIdx} className="text-[11px] text-gray-400 flex gap-2">
+                                            <span className="text-indigo-300">•</span>
+                                            <span>{ex}</span>
+                                          </li>
+                                        ))}
+                                      </ul>
+                                    )}
+                                  </div>
+                                ))}
+                              </div>
                             </div>
                           ))}
                         </div>

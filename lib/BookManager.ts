@@ -1,10 +1,16 @@
 import fs from "fs";
 import path from "path";
 
+export interface WordMeaning {
+  partOfSpeech: string;
+  definition: string;
+  examples: string[];
+}
+
 export interface Word {
   word: string;
-  meaning: string;
-  examples?: string[];
+  variations?: string[];
+  meanings: WordMeaning[];
 }
 
 export interface PageData {
@@ -13,10 +19,11 @@ export interface PageData {
 
 export interface WordOccurrence {
   word: string;
-  meaning: string;
+  variations?: string[];
+  meanings: WordMeaning[];
   frequency: number;
   pages: number[];
-  examples: string[];
+  bookName?: string;
 }
 
 export class BookManager {
@@ -83,8 +90,8 @@ export class BookManager {
     bookName: string,
     pageNo: number,
     word: string,
-    meaning: string,
-    examples: string[] = [],
+    meanings: WordMeaning[],
+    variations?: string[],
   ): boolean {
     if (!this.bookExists(bookName)) {
       throw new Error(`Book "${bookName}" does not exist`);
@@ -114,8 +121,8 @@ export class BookManager {
     // Add new word
     pageData.push({
       word,
-      meaning,
-      examples,
+      variations,
+      meanings,
     });
 
     // Write updated data back to file
@@ -183,17 +190,25 @@ export class BookManager {
     const allWords = this.getAllWordsFromBook(bookName);
 
     let frequency = 0;
-    let meaning = "";
-    let examples: string[] = [];
+    let meanings: WordMeaning[] = [];
     const pages: number[] = [];
 
     allWords.forEach((pageData) => {
       pageData.words.forEach((item) => {
         if (item.word.trim().toLowerCase() === normalizedWord) {
           frequency += 1;
-          if (!meaning) {
-            meaning = item.meaning;
-            examples = item.examples ?? [];
+          if (meanings.length === 0) {
+            meanings = item.meanings || [];
+            // Handle legacy single-meaning data if necessary
+            if (!item.meanings && (item as any).meaning) {
+              meanings = [
+                {
+                  partOfSpeech: (item as any).partOfSpeech || "",
+                  definition: (item as any).meaning,
+                  examples: (item as any).examples || [],
+                },
+              ];
+            }
           }
           if (!pages.includes(pageData.page)) {
             pages.push(pageData.page);
@@ -206,13 +221,43 @@ export class BookManager {
       return null;
     }
 
+    // Get the latest occurrence metadata
+    const latest = allWords
+      .slice()
+      .reverse()
+      .find((p) =>
+        p.words.some((w) => w.word.trim().toLowerCase() === normalizedWord),
+      )
+      ?.words.find((w) => w.word.trim().toLowerCase() === normalizedWord);
+
     return {
       word: word.trim(),
-      meaning,
+      variations: latest?.variations,
+      meanings: meanings,
       frequency,
       pages: pages.sort((a, b) => a - b),
-      examples,
+      bookName,
     };
+  }
+
+  /**
+   * Get word frequency, meaning and pages for a word across ALL books
+   */
+  getGlobalWordOccurrences(word: string): WordOccurrence | null {
+    const normalizedWord = word.trim().toLowerCase();
+    if (!normalizedWord) {
+      return null;
+    }
+
+    const books = this.getAllBooks();
+    for (const book of books) {
+      const occurrence = this.getWordOccurrences(book, normalizedWord);
+      if (occurrence) {
+        return occurrence;
+      }
+    }
+
+    return null;
   }
 
   /**
