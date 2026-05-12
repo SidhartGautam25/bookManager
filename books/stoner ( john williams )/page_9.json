@@ -1,0 +1,116 @@
+[
+    {
+        "word": "intonation",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "The rise and fall of the voice in speaking, which can change the meaning of a sentence or express emotion.",
+                "examples": [
+                    "She spoke with a slight questioning intonation.",
+                    "In some languages, intonation is used to distinguish between different words.",
+                    "His angry intonation made it clear he was not joking.",
+                    "The teacher noticed a strange intonation in the student's voice."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "chores",
+        "variations": [
+            "chore"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Routine tasks, especially household ones like cleaning or washing.",
+                "examples": [
+                    "He spent the whole morning doing household chores.",
+                    "The children were assigned daily chores like setting the table.",
+                    "Mowing the lawn is one of my least favorite chores.",
+                    "After finishing her chores, she finally sat down to relax."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "attic",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A space or room just below the roof of a house, often used for storing things.",
+                "examples": [
+                    "We found some old family photos in a trunk in the attic.",
+                    "The attic was dusty and filled with cobwebs.",
+                    "They decided to convert the attic into a guest bedroom.",
+                    "It was freezing in the attic during the winter months."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "contemptuously",
+        "variations": [
+            "contemptuous"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "In a way that shows strong dislike or a lack of respect; scornfully.",
+                "examples": [
+                    "He looked contemptuously at the messy room.",
+                    "She laughed contemptuously at his suggestion.",
+                    "The official spoke contemptuously to the protesters.",
+                    "He dismissed the idea contemptuously with a wave of his hand."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "pondered",
+        "variations": [
+            "ponder"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Thought about something carefully, especially before making a decision or reaching a conclusion.",
+                "examples": [
+                    "He pondered the question for several minutes before answering.",
+                    "She sat by the window and pondered her future.",
+                    "Scientists have pondered this mystery for centuries.",
+                    "The committee pondered the proposal but reached no decision."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "hunched",
+        "variations": [
+            "hunch"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Bent the body forward and downward, often because of cold, age, or concentration.",
+                "examples": [
+                    "He hunched his shoulders against the freezing wind.",
+                    "She sat hunched over her desk, focused on her work.",
+                    "The old man hunched forward as he walked with his cane.",
+                    "They hunched together under the small umbrella."
+                ]
+              },
+              {
+                "partOfSpeech": "adjective",
+                "definition": "In a bent or rounded posture.",
+                "examples": [
+                    "His hunched back made him look much older than he was.",
+                    "She had a hunched appearance while sitting in the uncomfortable chair.",
+                    "The detective looked at the hunched figure in the shadows.",
+                    "Years of desk work had given him a slightly hunched posture."
+                ]
+            }
+        ]
+    }
+]

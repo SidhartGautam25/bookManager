@@ -1,0 +1,56 @@
+[
+    {
+        "word": "callused",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Having thick, hard skin formed because of repeated work, pressure, or friction, especially on the hands or feet.",
+                "examples": [
+                    "The farmer had rough, callused hands from years of labor.",
+                    "Her feet became callused after walking long distances barefoot.",
+                    "The carpenter’s callused fingers showed signs of hard work.",
+                    "He gently touched the guitar strings with his callused fingertips."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To develop thick and hardened skin because of constant rubbing, pressure, or physical work.",
+                "examples": [
+                    "His palms callused after weeks of lifting heavy weights.",
+                    "Years of rowing had callused her hands.",
+                    "The skin slowly callused from repeated friction.",
+                    "Working with tools every day had callused his fingers."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "catalogue",
+        "variations": [
+            "catalog"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A complete list of items, books, products, or information arranged in an organized way.",
+                "examples": [
+                    "She looked through the clothing catalogue before ordering.",
+                    "The library catalogue helped students find books easily.",
+                    "The company released a new catalogue of products.",
+                    "He searched the online catalogue for old movies."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To make an organized list of items, information, or collections.",
+                "examples": [
+                    "The museum carefully catalogued its ancient artifacts.",
+                    "She catalogued all the books in her study room.",
+                    "Scientists catalogued different species found in the forest.",
+                    "The librarian spent the afternoon cataloguing new arrivals."
+                ]
+            }
+        ]
+    }
+]
