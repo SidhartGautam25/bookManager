@@ -5,17 +5,23 @@
     "meanings": [
       {
         "partOfSpeech": "verb",
-        "definition": "To bend the upper part of the body forward and downward to a half-squatting position; crouch.",
+        "definition": "To bend your body forward or downward, usually because you are picking something up, trying to fit into a small space, or because of tiredness, age, or sadness.",
         "examples": [
-          "He stooped to tie his shoe-laces.",
-          "Can you believe that a salesman would stoop so low as to hide his customers' car keys until they agreed to the purchase?",
-          "to stoop a cask of liquor"
+          "He stooped down to pick up the coin from the floor.",
+          "The old man stooped slightly while walking with his stick.",
+          "She stooped to enter the small wooden door.",
+          "The boy stooped over his notebook and continued writing."
         ]
       },
       {
         "partOfSpeech": "adjective",
-        "definition": "In a bent bodily position, hunched",
-        "examples": []
+        "definition": "Having a bent or hunched posture, usually because of age, weakness, or carrying heavy weight for a long time.",
+        "examples": [
+          "The stooped gardener slowly watered the plants.",
+          "Years of hard work had made his shoulders look stooped.",
+          "She noticed a stooped figure standing near the gate.",
+          "The old teacher walked with a stooped back."
+        ]
       }
     ]
   },
@@ -25,11 +31,12 @@
     "meanings": [
       {
         "partOfSpeech": "adjective",
-        "definition": "Very dry.",
+        "definition": "Extremely dry, with very little rain or moisture; also used for something dull or lacking emotion or excitement.",
         "examples": [
-          "The cake was arid.",
-          "Deserts are known for being arid.",
-          "The millionaire viewed his gift as arid."
+          "The desert remained hot and arid throughout the year.",
+          "Very few plants can survive in such an arid climate.",
+          "After weeks without rain, the land became arid and cracked.",
+          "His lecture sounded so arid that many students lost interest."
         ]
       }
     ]
@@ -40,25 +47,43 @@
     "meanings": [
       {
         "partOfSpeech": "noun",
-        "definition": "A large number of birds, especially those gathered together for the purpose of migration.",
-        "examples": []
+        "definition": "A large group of birds, sheep, or animals gathered or moving together.",
+        "examples": [
+          "A flock of birds flew across the evening sky.",
+          "The shepherd guided the flock toward the hills.",
+          "We saw a flock of pigeons near the railway station.",
+          "The flock moved together as if it were a single creature."
+        ]
       },
       {
         "partOfSpeech": "verb",
-        "definition": "To congregate in or head towards a place in large numbers.",
+        "definition": "To gather or move somewhere in large numbers, usually because something is attractive or important.",
         "examples": [
-          "People flocked to the cinema to see the new film."
+          "Tourists flock to the beach during summer.",
+          "People flocked to the market before the festival.",
+          "Fans flocked outside the stadium to see the singer.",
+          "Students flocked to the library before exams."
         ]
       },
       {
         "partOfSpeech": "noun",
-        "definition": "Coarse tufts of wool or cotton used in bedding.",
-        "examples": []
+        "definition": "Soft fibers or small pieces of wool or cotton used for stuffing cushions, mattresses, or furniture.",
+        "examples": [
+          "The pillow was filled with soft flock.",
+          "Old sofas often used flock as stuffing material.",
+          "The craftsman replaced the worn-out flock inside the cushion.",
+          "The toy was packed tightly with cotton flock."
+        ]
       },
       {
         "partOfSpeech": "verb",
-        "definition": "To coat a surface with dense fibers or particles.",
-        "examples": []
+        "definition": "To cover a surface with tiny soft fibers to give it a velvet-like texture.",
+        "examples": [
+          "The company flocked the wallpaper to give it a rich feel.",
+          "Some greeting cards are flocked for decoration.",
+          "The inside of the jewelry box was flocked with soft material.",
+          "The artist flocked the surface to create a textured design."
+        ]
       }
     ]
   },
@@ -68,15 +93,23 @@
     "meanings": [
       {
         "partOfSpeech": "noun",
-        "definition": "Labour, work, especially of a grueling nature.",
+        "definition": "Very hard and tiring work done continuously over a long period of time.",
         "examples": [
-          "Lindi has achieved her comfortable life only after years of hard toil."
+          "Years of toil helped her build a successful business.",
+          "The farmers returned home after a day of toil in the fields.",
+          "Behind every achievement, there is often silent toil.",
+          "His hands showed signs of years of physical toil."
         ]
       },
       {
         "partOfSpeech": "verb",
-        "definition": "To labour; work.",
-        "examples": []
+        "definition": "To work extremely hard for a long time, especially with physical effort.",
+        "examples": [
+          "The workers toiled under the hot sun all day.",
+          "She toiled for months to complete the project.",
+          "Miners toiled deep underground in difficult conditions.",
+          "He continued to toil despite feeling exhausted."
+        ]
       }
     ]
   },
@@ -86,9 +119,84 @@
     "meanings": [
       {
         "partOfSpeech": "adjective",
-        "definition": "Characteristic of a spindle; slender and of weak appearance.",
+        "definition": "Long, thin, and weak-looking, often in an awkward or fragile way.",
         "examples": [
-          "She has spindly legs."
+          "The young plant had a few spindly branches.",
+          "He walked on his spindly legs across the field.",
+          "The chair stood on four spindly wooden supports.",
+          "The puppy looked tiny with its spindly little legs."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "sag",
+    "variations": [],
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A downward bend or drooping shape caused by weight, weakness, or lack of support.",
+        "examples": [
+          "There was a noticeable sag in the old mattress.",
+          "The roof developed a slight sag after the storm.",
+          "The rope showed a deep sag in the middle.",
+          "Years of use caused a sag in the sofa cushions."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To sink, bend, or hang downward because of pressure, weight, weakness, or age.",
+        "examples": [
+          "The shelf began to sag under the weight of the books.",
+          "His shoulders sagged with disappointment.",
+          "The old tent started to sag in the rain.",
+          "The branches sagged under the weight of the fruit."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To lose strength, energy, confidence, or enthusiasm.",
+        "examples": [
+          "Team spirit started to sag after repeated losses.",
+          "Her voice sagged as she spoke about the failure.",
+          "Sales began to sag during the winter season.",
+          "His motivation sagged after hearing the bad news."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "creak",
+    "variations": [],
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A long, sharp, squeaking sound usually made by old wood, doors, floors, or furniture when moved.",
+        "examples": [
+          "She heard the creak of the wooden stairs at night.",
+          "The old door opened with a loud creak.",
+          "Every creak in the house made the child nervous.",
+          "The floorboards gave a soft creak as he walked."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To make a sharp, squeaking sound when something old or heavy moves.",
+        "examples": [
+          "The gate creaked loudly in the wind.",
+          "The wooden chair creaked as he sat down.",
+          "Her shoes creaked on the polished floor.",
+          "The ship creaked during the stormy night."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To move or function with difficulty because of old age, strain, or weakness.",
+        "examples": [
+          "He creaked out of bed after the long journey.",
+          "The old machine creaked into action.",
+          "Her knees creaked as she climbed the stairs.",
+          "The tired bus creaked along the mountain road."
         ]
       }
     ]

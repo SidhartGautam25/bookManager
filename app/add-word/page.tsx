@@ -95,13 +95,21 @@ export default function AddWordPage() {
         if (Array.isArray(data) && data.length > 0) {
           data.forEach((entry: any) => {
             entry.meanings?.forEach((m: any) => {
-              const examples = m.definitions
-                ?.map((d: any) => d.example)
-                .filter(Boolean);
-              collectedMeanings.push({
-                partOfSpeech: m.partOfSpeech || "",
-                definition: m.definitions?.[0]?.definition || "",
-                examples: examples.length > 0 ? examples : [""],
+              m.definitions?.forEach((d: any) => {
+                if (d.definition) {
+                  // Capture all possible example formats
+                  let definitionExamples: string[] = [];
+                  if (d.example) definitionExamples.push(d.example);
+                  if (Array.isArray(d.examples)) {
+                    definitionExamples = [...definitionExamples, ...d.examples];
+                  }
+                  
+                  collectedMeanings.push({
+                    partOfSpeech: m.partOfSpeech || "",
+                    definition: d.definition,
+                    examples: definitionExamples.length > 0 ? [...new Set(definitionExamples)] : [""],
+                  });
+                }
               });
             });
           });
@@ -118,22 +126,24 @@ export default function AddWordPage() {
           const enData = wikiData.en;
           if (Array.isArray(enData)) {
             enData.forEach((posGroup: any) => {
-              const examples: string[] = [];
               posGroup.definitions?.forEach((def: any) => {
+                const examples: string[] = [];
                 if (Array.isArray(def.examples)) {
                   def.examples.forEach((ex: any) => {
                     const exText = typeof ex === "string" ? ex : ex.example;
-                    if (exText && exText.length > 5) {
+                    if (exText && exText.length > 2) {
                       examples.push(stripHtml(exText));
                     }
                   });
                 }
-              });
 
-              collectedMeanings.push({
-                partOfSpeech: posGroup.partOfSpeech || "",
-                definition: stripHtml(posGroup.definitions?.[0]?.definition || ""),
-                examples: examples.length > 0 ? examples : [""],
+                if (def.definition) {
+                  collectedMeanings.push({
+                    partOfSpeech: posGroup.partOfSpeech || "",
+                    definition: stripHtml(def.definition),
+                    examples: examples.length > 0 ? examples : [""],
+                  });
+                }
               });
             });
           }
