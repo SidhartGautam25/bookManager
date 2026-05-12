@@ -1,0 +1,124 @@
+[
+    {
+        "word": "protruded",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Stuck out or extended beyond the normal surface or position.",
+                "examples": [
+                    "A sharp rock protruded from the ground.",
+                    "His elbow protruded through the torn sleeve.",
+                    "Tree roots protruded from the muddy path.",
+                    "The old nail protruded from the wooden wall."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "disquieted",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Made someone feel worried, uneasy, nervous, or mentally disturbed.",
+                "examples": [
+                    "The sudden silence disquieted the children.",
+                    "She was disquieted by the strange message.",
+                    "The news of the storm disquieted the villagers.",
+                    "His unusual behavior deeply disquieted his friends."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Feeling uneasy, anxious, or mentally disturbed.",
+                "examples": [
+                    "He looked disquieted after the meeting.",
+                    "The disquieted crowd waited for answers.",
+                    "She gave him a disquieted glance.",
+                    "The child felt disquieted in the unfamiliar place."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "clods",
+        "variations": [
+            "clod"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Hard lumps of earth, clay, or soil stuck together.",
+                "examples": [
+                    "The field was covered with clods of dry soil.",
+                    "Rain broke the large clods into softer mud.",
+                    "Farmers crushed the clods before planting seeds.",
+                    "His shoes were covered in heavy clods of dirt."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A foolish, dull, or awkward person.",
+                "examples": [
+                    "The bully laughed and called him a clod.",
+                    "He acted like a clod during the discussion.",
+                    "Everyone ignored the rude clod in the corner.",
+                    "The character in the play was portrayed as a harmless clod."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "disdain",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A strong feeling that someone or something is unworthy of respect or consideration.",
+                "examples": [
+                    "She looked at the dishonest man with disdain.",
+                    "His voice carried clear disdain for corruption.",
+                    "The teacher showed disdain for careless work.",
+                    "They treated the outdated rules with disdain."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To strongly dislike or reject something because it seems unworthy or beneath respect.",
+                "examples": [
+                    "He disdained cheating in any form.",
+                    "She disdained people who lied for profit.",
+                    "The artist disdained copying others’ work.",
+                    "They disdained luxury and preferred a simple life."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "contempt",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A strong feeling of disrespect, dislike, or the belief that someone or something is worthless.",
+                "examples": [
+                    "His face showed open contempt for the unfair decision.",
+                    "She spoke with contempt about the dishonest officials.",
+                    "The audience reacted with contempt to the cruel remarks.",
+                    "Years of betrayal filled him with contempt."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The act of refusing to respect or obey rules, authority, or a court.",
+                "examples": [
+                    "The judge warned him for showing contempt of court.",
+                    "Ignoring the court order was treated as contempt.",
+                    "She was punished for acting in contempt of the law.",
+                    "The lawyer explained the seriousness of contempt charges."
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "word": "serge",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A strong and durable type of cloth, usually made from wool, often used for uniforms, coats, or formal clothing.",
+                "examples": [
+                    "The officer wore a dark blue serge uniform.",
+                    "Her winter coat was made from heavy serge fabric.",
+                    "The tailor used fine serge to stitch the trousers.",
+                    "Old school uniforms were often made of serge."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "wagon",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A vehicle with four wheels used for carrying goods, luggage, or people, usually pulled by animals or attached to another vehicle.",
+                "examples": [
+                    "The farmer loaded hay onto the wagon.",
+                    "Children sat happily in the wooden wagon.",
+                    "The old wagon moved slowly along the dusty road.",
+                    "They carried supplies across the village using a horse-drawn wagon."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "serge",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A strong and durable type of cloth, usually made from wool, often used for uniforms, coats, or formal clothing.",
+                "examples": [
+                    "The officer wore a dark blue serge uniform.",
+                    "Her winter coat was made from heavy serge fabric.",
+                    "The tailor used fine serge to stitch the trousers.",
+                    "Old school uniforms were often made of serge."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "mingled",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Mixed, combined, or joined together, especially in a natural or social way.",
+                "examples": [
+                    "The smell of flowers mingled with the fresh rain.",
+                    "Voices from different rooms mingled in the hallway.",
+                    "She mingled easily with the guests at the party.",
+                    "Joy and sadness mingled in his heart at the farewell."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "serenity",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A state of calmness, peace, and quietness, free from stress or disturbance.",
+                "examples": [
+                    "The lake reflected a feeling of complete serenity.",
+                    "She enjoyed the serenity of the early morning garden.",
+                    "Meditation helped him find inner serenity.",
+                    "The silence of the mountains filled them with serenity."
+                ]
+            }
+        ]
+    }
+]

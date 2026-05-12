@@ -1,0 +1,196 @@
+[
+    {
+        "word": "frowned",
+        "variations": [
+            "frown",
+            "frowns",
+            "frowning",
+            "frowned"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Lowered the eyebrows and showed displeasure, worry, confusion, or concentration through facial expression.",
+                "examples": [
+                    "She frowned when she heard the disappointing news.",
+                    "The teacher was frowning at the noisy students.",
+                    "He frowns whenever someone interrupts him.",
+                    "They had frowned upon such behavior for years."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A facial expression in which the eyebrows are brought together to show anger, worry, or deep thought.",
+                "examples": [
+                    "A deep frown appeared on his face.",
+                    "Her mother gave her a worried frown.",
+                    "The child’s frowns disappeared after hearing the good news.",
+                    "He answered the question with a slight frown."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "gnawed",
+        "variations": [
+            "gnaw",
+            "gnaws",
+            "gnawing",
+            "gnawed"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Bit or chewed something repeatedly, usually with small sharp teeth.",
+                "examples": [
+                    "The dog gnawed the old bone for hours.",
+                    "Rats were gnawing through the wooden boxes.",
+                    "The puppy gnaws on shoes whenever it is bored.",
+                    "Something had gnawed the corner of the book."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Continuously troubled or worried someone mentally or emotionally.",
+                "examples": [
+                    "Guilt gnawed at him after the argument.",
+                    "Fear had been gnawing at her mind all night.",
+                    "The uncertainty gnaws at people during difficult times.",
+                    "Doubts were gnawing away at his confidence."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "contempt",
+        "variations": [
+            "contempt",
+            "contemptuous",
+            "contemptuously"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A strong feeling of disrespect or the belief that someone or something is worthless or beneath respect.",
+                "examples": [
+                    "She looked at the corrupt official with contempt.",
+                    "His contempt for dishonesty was obvious.",
+                    "People spoke contemptuously about the unfair system.",
+                    "The audience reacted with contemptuous silence."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The act of refusing to obey or respect a rule, authority, or court order.",
+                "examples": [
+                    "The judge warned him for showing contempt of court.",
+                    "Ignoring the order was treated as contempt by the authorities.",
+                    "Lawyers explained that repeated violations could lead to contempt charges.",
+                    "She was punished after acting contemptuously during the hearing."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "slouching",
+        "variations": [
+            "slouch",
+            "slouches",
+            "slouching",
+            "slouched"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Sitting, standing, or walking with the shoulders bent forward in a lazy or tired posture.",
+                "examples": [
+                    "He was slouching on the sofa while watching television.",
+                    "The students slouched in their chairs during the long lecture.",
+                    "She slouches whenever she spends too much time at the computer.",
+                    "The tired traveler slouched against the wall."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A lazy, bent, or drooping posture.",
+                "examples": [
+                    "Years of desk work had given him a permanent slouch.",
+                    "Her slouches became noticeable when she was tired.",
+                    "The coach warned the players about their poor slouch.",
+                    "He walked with a slight slouch after carrying heavy bags."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "lectern",
+        "variations": [
+            "lectern",
+            "lecterns"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A stand with a slanted top used to hold notes or books while speaking, teaching, or reading in public.",
+                "examples": [
+                    "The professor placed his notes on the lectern before beginning the lecture.",
+                    "A wooden lectern stood at the center of the stage.",
+                    "Speakers often adjust the height of the lecterns before presentations.",
+                    "She walked confidently toward the lectern to deliver her speech."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "roved",
+        "variations": [
+            "rove",
+            "roves",
+            "roving",
+            "roved"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Moved from place to place without a fixed direction or purpose; wandered around freely.",
+                "examples": [
+                    "His eyes roved across the crowded room.",
+                    "Travelers were roving through the mountains all summer.",
+                    "The dog roves around the neighborhood every evening.",
+                    "She roved from city to city searching for work."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "grim",
+        "variations": [
+            "grim",
+            "grimmer",
+            "grimmest",
+            "grimly"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Very serious, sad, worrying, or unpleasant.",
+                "examples": [
+                    "The doctor delivered grim news to the family.",
+                    "Conditions became grimmer as the storm continued.",
+                    "He grimly accepted the difficult decision.",
+                    "The workers faced the grimmest winter in years."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Showing determination, harshness, or seriousness without warmth or joy.",
+                "examples": [
+                    "She gave him a grim look before leaving.",
+                    "The soldiers marched grimly through the rain.",
+                    "His grim expression frightened the children.",
+                    "They continued their work under grim conditions."
+                ]
+            }
+        ]
+    }
+]

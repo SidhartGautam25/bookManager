@@ -1,0 +1,230 @@
+[
+    {
+        "word": "plowed",
+        "variations": [
+            "ploughed"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Turned over and loosened soil using a plow in order to prepare land for planting crops.",
+                "examples": [
+                    "The farmer plowed the field before the rainy season.",
+                    "Tractors plowed large areas of land in a single day.",
+                    "He spent the morning plowing the dry soil.",
+                    "The land was freshly plowed and ready for seeds."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Moved forcefully through something, pushing it aside.",
+                "examples": [
+                    "The ship plowed through the rough waves.",
+                    "The truck plowed through the muddy road.",
+                    "He plowed through the crowd to reach the stage.",
+                    "The snowplow plowed through thick snow."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "harrowed",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Caused someone to feel deeply distressed, troubled, or emotionally disturbed.",
+                "examples": [
+                    "The tragic news harrowed the entire village.",
+                    "She looked harrowed after hearing about the accident.",
+                    "The film showed the harrowed faces of war survivors.",
+                    "Years of hardship had harrowed his mind."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Dragged a farming tool called a harrow over soil to break it into smaller pieces and smooth the land.",
+                "examples": [
+                    "The farmer harrowed the field after plowing it.",
+                    "Workers harrowed the soil before planting crops.",
+                    "The land was carefully harrowed to remove weeds.",
+                    "He spent hours harrowing the rough ground."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Deeply troubled, distressed, or emotionally exhausted.",
+                "examples": [
+                    "She gave him a harrowed look before leaving.",
+                    "The survivors appeared tired and harrowed.",
+                    "His harrowed expression worried everyone.",
+                    "The harrowed family waited silently outside the hospital."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "churned",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Stirred or moved something around forcefully, often in a circular motion.",
+                "examples": [
+                    "The waves churned violently during the storm.",
+                    "She churned the mixture until it became smooth.",
+                    "The muddy water churned beneath the bridge.",
+                    "The machine churned the cream into butter."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Experienced strong emotional discomfort, nervousness, or unrest.",
+                "examples": [
+                    "His stomach churned with anxiety before the interview.",
+                    "She felt her emotions churning after the argument.",
+                    "The bad news left him mentally churned and restless.",
+                    "Fear churned inside her as she waited for the results."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "bobbing",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Moving up and down repeatedly, usually in a light or floating motion.",
+                "examples": [
+                    "The fishing boat was bobbing on the waves.",
+                    "Her head kept bobbing as she listened to music.",
+                    "The balloons were bobbing gently in the air.",
+                    "A cork floated on the water, bobbing slowly."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The repeated up-and-down movement of something floating or moving lightly.",
+                "examples": [
+                    "The bobbing of the boat made him dizzy.",
+                    "Children laughed at the bobbing balloons.",
+                    "The gentle bobbing of the cradle put the baby to sleep.",
+                    "She watched the bobbing of the ducks on the pond."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "grim",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Very serious, sad, worrying, or unpleasant.",
+                "examples": [
+                    "The doctor gave the family grim news.",
+                    "The village faced grim conditions during the drought.",
+                    "His face wore a grim expression.",
+                    "The future looked grim after the factory closed."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Showing determination and seriousness, often without joy.",
+                "examples": [
+                    "She remained grim despite the difficulties.",
+                    "The soldiers marched forward with grim focus.",
+                    "He gave a grim nod before starting the task.",
+                    "The team continued their grim struggle to survive."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "churner",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A person or machine that churns something, especially cream into butter.",
+                "examples": [
+                    "The old butter churner stood in the corner of the kitchen.",
+                    "Farmers once used wooden churners to make butter.",
+                    "The machine worked as an automatic milk churner.",
+                    "She learned to use a traditional butter churner from her grandmother."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "splashed",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Scattered or threw liquid in drops or waves onto something.",
+                "examples": [
+                    "The children splashed water at each other in the pool.",
+                    "Mud splashed onto his clothes during the rain.",
+                    "She splashed cold water on her face.",
+                    "Waves splashed against the rocks."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Displayed or spread something in a very noticeable way.",
+                "examples": [
+                    "The newspaper splashed the story across the front page.",
+                    "Bright colors were splashed across the wall.",
+                    "The brand name was splashed on every advertisement.",
+                    "Posters splashed the actor’s image all over the city."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "tattered",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Old, torn, damaged, or worn out from long use.",
+                "examples": [
+                    "The child carried a tattered blanket everywhere.",
+                    "He wore a tattered coat during winter.",
+                    "The old book had tattered pages.",
+                    "A tattered flag fluttered in the wind."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "quilts",
+        "variations": [
+            "quilt"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Warm bed coverings made by stitching together layers of cloth with soft material inside.",
+                "examples": [
+                    "The grandmother stitched colorful quilts by hand.",
+                    "Heavy quilts kept them warm during winter nights.",
+                    "The bed was covered with bright cotton quilts.",
+                    "Old family quilts were stored carefully in wooden boxes."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To stitch layers of fabric together to make a quilt or padded cloth item.",
+                "examples": [
+                    "She learned to quilt from her mother.",
+                    "The women quilted blankets for the village festival.",
+                    "They quilted pieces of old cloth into a beautiful cover.",
+                    "He watched his grandmother quilting near the window."
+                ]
+            }
+        ]
+    }
+]

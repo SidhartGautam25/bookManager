@@ -1,0 +1,142 @@
+[
+    {
+        "word": "padded",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Covered, filled, or protected with soft material to make something more comfortable, safer, or thicker.",
+                "examples": [
+                    "He wore a padded jacket during the cold weather.",
+                    "The chair had padded arms for extra comfort.",
+                    "She carried a padded laptop bag to protect her computer.",
+                    "The football players wore padded protective gear."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Added soft material or extra layers to something for protection, comfort, or shape.",
+                "examples": [
+                    "The workers padded the box before shipping the glass items.",
+                    "She padded the seat with cushions.",
+                    "The tailor padded the shoulders of the coat.",
+                    "He carefully padded the package to prevent damage."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Walked softly and quietly with light steps.",
+                "examples": [
+                    "The cat padded silently across the room.",
+                    "She padded into the kitchen early in the morning.",
+                    "Barefoot children padded along the hallway.",
+                    "He padded downstairs without making a sound."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "rimless",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Without an outer edge, border, or frame, especially used for glasses or containers.",
+                "examples": [
+                    "He wore stylish rimless glasses.",
+                    "The designer chose a rimless mirror for the bathroom.",
+                    "Her rimless spectacles gave her a simple and elegant look.",
+                    "The photograph was displayed in a rimless frame."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "slop",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A liquid or semi-liquid mixture that is messy, watery, or unpleasant.",
+                "examples": [
+                    "The pigs were fed kitchen slop every evening.",
+                    "Rain turned the road into muddy slop.",
+                    "He accidentally stepped into a pool of slop near the drain.",
+                    "The bucket was filled with dirty slop from the kitchen."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To spill or move liquid carelessly so that it splashes around.",
+                "examples": [
+                    "Water slopped over the sides of the bucket.",
+                    "She slopped coffee onto the table while walking quickly.",
+                    "The soup slopped out of the bowl during the journey.",
+                    "Waves slopped against the sides of the small boat."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Careless or overly emotional writing, speech, or behavior.",
+                "examples": [
+                    "The critic called the movie dialogue sentimental slop.",
+                    "He was tired of hearing political slop on television.",
+                    "The article was full of exaggerated slop instead of facts.",
+                    "Readers disliked the romantic slop in the novel."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "gleaming",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Shining brightly and cleanly by reflecting light.",
+                "examples": [
+                    "The car looked new with its gleaming paint.",
+                    "She entered a room with gleaming marble floors.",
+                    "The knight carried a gleaming sword.",
+                    "The city lights appeared gleaming after the rain."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Shining softly or brightly with reflected light; also used for eyes or expressions showing excitement or emotion.",
+                "examples": [
+                    "The stars were gleaming in the night sky.",
+                    "Her eyes were gleaming with joy.",
+                    "Freshly washed windows gleamed in the sunlight.",
+                    "The polished silver was gleaming on the table."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "crooked",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Bent, uneven, or not straight in shape or position.",
+                "examples": [
+                    "The old fence had several crooked posts.",
+                    "He drew a crooked line across the paper.",
+                    "The tree grew in a crooked shape because of the wind.",
+                    "She smiled with a slightly crooked grin."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Dishonest, unfair, or involved in illegal activities.",
+                "examples": [
+                    "The businessman was known for his crooked dealings.",
+                    "Police arrested a crooked official for taking bribes.",
+                    "They refused to work with the crooked company.",
+                    "The story exposed a crooked system of corruption."
+                ]
+            }
+        ]
+    }
+]
