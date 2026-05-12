@@ -20,6 +20,10 @@ type ExistingWordData = {
   frequency: number;
   pages: number[];
   examples: string[];
+  partOfSpeech?: string;
+  variations?: string[];
+  source?: "current-book" | "other-book" | "api";
+  bookName?: string;
 };
 
 export default function AddWordPage() {
@@ -38,6 +42,11 @@ export default function AddWordPage() {
   const [existingWordData, setExistingWordData] =
     useState<ExistingWordData | null>(null);
   const [examples, setExamples] = useState<string[]>([""]);
+  const [partOfSpeech, setPartOfSpeech] = useState<string>("");
+  const [variations, setVariations] = useState<string>("");
+  const [dataSource, setDataSource] = useState<
+    "current-book" | "other-book" | "api" | null
+  >(null);
   const searchTimerRef = useRef<number | null>(null);
 
   // Fetch existing books on component mount
@@ -59,14 +68,92 @@ export default function AddWordPage() {
     void fetchBooks();
   }, []);
 
+  const stripHtml = (html: string) => {
+    return html.replace(/<[^>]*>?/gm, "");
+  };
+
+  const fetchDictionaryData = async (searchWord: string) => {
+    const normalizedWord = searchWord.trim();
+    if (!normalizedWord) return null;
+
+    let allExamples: string[] = [];
+    let firstDefinition = "";
+    let firstPartOfSpeech = "";
+
+    try {
+      // 1. Try Primary Community API
+      const response = await fetch(
+        `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(normalizedWord)}`,
+      );
+      if (response.ok) {
+        const data = await response.json();
+        if (Array.isArray(data) && data.length > 0) {
+          const firstEntry = data[0];
+          firstDefinition =
+            firstEntry.meanings?.[0]?.definitions?.[0]?.definition || "";
+          firstPartOfSpeech = firstEntry.meanings?.[0]?.partOfSpeech || "";
+
+          firstEntry.meanings?.forEach((m: any) => {
+            m.definitions?.forEach((d: any) => {
+              if (d.example) {
+                allExamples.push(d.example);
+              }
+            });
+          });
+        }
+      }
+
+      // 2. Fallback/Supplement with Official Wiktionary API if examples are missing
+      if (allExamples.length === 0) {
+        const wikiResponse = await fetch(
+          `https://en.wiktionary.org/api/rest_v1/page/definition/${encodeURIComponent(normalizedWord)}`,
+        );
+        if (wikiResponse.ok) {
+          const wikiData = await wikiResponse.json();
+          const enData = wikiData.en;
+          if (Array.isArray(enData)) {
+            enData.forEach((posGroup: any) => {
+              if (!firstPartOfSpeech)
+                firstPartOfSpeech = posGroup.partOfSpeech || "";
+
+              posGroup.definitions?.forEach((def: any) => {
+                if (!firstDefinition) firstDefinition = stripHtml(def.definition);
+
+                if (Array.isArray(def.examples)) {
+                  def.examples.forEach((ex: any) => {
+                    const exText = typeof ex === "string" ? ex : ex.example;
+                    if (exText && exText.length > 5) {
+                      allExamples.push(stripHtml(exText));
+                    }
+                  });
+                }
+              });
+            });
+          }
+        }
+      }
+
+      if (firstDefinition) {
+        return {
+          definition: firstDefinition,
+          partOfSpeech: firstPartOfSpeech,
+          examples: [...new Set(allExamples)],
+        };
+      }
+    } catch (error) {
+      console.error("Error fetching from dictionary APIs:", error);
+    }
+    return null;
+  };
+
   const searchExistingWord = async (searchWord: string) => {
     if (!selectedBook || !searchWord.trim()) {
-      return;
+      return null;
     }
 
     try {
       const response = await fetch(
-        `/api/words?bookName=${encodeURIComponent(selectedBook)}&word=${encodeURIComponent(searchWord.trim())}`,
+        `/api/words?bookName=${encodeURIComponent(selectedBook)}&word=${encodeURIComponent(searchWord.trim())}&searchType=global`,
       );
       const data = await response.json();
 
@@ -77,8 +164,16 @@ export default function AddWordPage() {
           frequency: data.frequency,
           pages: data.pages,
           examples: data.examples ?? [],
+          partOfSpeech: data.partOfSpeech,
+          variations: data.variations,
+          source: data.source,
+          bookName: data.bookName,
         });
         setMeaning(data.meaning);
+        setPartOfSpeech(data.partOfSpeech || "");
+        setVariations((data.variations || []).join(", "));
+        setDataSource(data.source);
+        return { found: true, meaning: data.meaning, source: data.source };
       } else {
         setExistingWordData({
           found: false,
@@ -87,24 +182,52 @@ export default function AddWordPage() {
           pages: [],
           examples: [],
         });
+        setDataSource(null);
+        return { found: false };
       }
     } catch {
       setExistingWordData(null);
+      setDataSource(null);
+      return null;
     }
   };
 
   const handleWordChange = (value: string) => {
     setWord(value);
     setExistingWordData(null);
-    setExamples([""]);
+    
+    // Clear fields if input is cleared
+    if (!value.trim()) {
+      setMeaning("");
+      setExamples([""]);
+      setPartOfSpeech("");
+      setVariations("");
+      setDataSource(null);
+    }
 
     if (searchTimerRef.current) {
       window.clearTimeout(searchTimerRef.current);
     }
 
     if (selectedBook && value.trim()) {
-      searchTimerRef.current = window.setTimeout(() => {
-        void searchExistingWord(value);
+      searchTimerRef.current = window.setTimeout(async () => {
+        // 1. Try local/global search first
+        const localResult = await searchExistingWord(value);
+
+        // 2. If not found in any book, fetch from Dictionary API
+        if (!localResult || !localResult.found) {
+          const dictData = await fetchDictionaryData(value);
+          if (dictData) {
+            setMeaning(dictData.definition);
+            setPartOfSpeech(dictData.partOfSpeech);
+            setDataSource("api");
+            if (dictData.examples && dictData.examples.length > 0) {
+              setExamples(dictData.examples);
+            } else {
+              setExamples([""]);
+            }
+          }
+        }
       }, 450);
     }
   };
@@ -191,14 +314,19 @@ export default function AddWordPage() {
       const response = await fetch("/api/words", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          bookName: selectedBook,
-          word: word.trim(),
-          meaning: finalMeaning,
-          pageNo: parseInt(pageNo),
-          examples: finalExamples,
-        }),
-      });
+           body: JSON.stringify({
+            bookName: selectedBook,
+            word: word.trim(),
+            meaning: finalMeaning,
+            pageNo: parseInt(pageNo),
+            examples: finalExamples,
+            partOfSpeech,
+            variations: variations
+              .split(",")
+              .map((v) => v.trim())
+              .filter(Boolean),
+          }),
+        });
 
       const data = await response.json();
       if (data.success) {
@@ -371,8 +499,25 @@ export default function AddWordPage() {
                       value={word}
                       onChange={(e) => handleWordChange(e.target.value)}
                       placeholder="e.g., Ephemeral"
-                      className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none"
+                      className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-black"
                       required
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="variations"
+                      className="flex items-center gap-2 text-sm font-bold text-gray-700"
+                    >
+                      <PlusCircle size={16} className="text-gray-400" /> Variations
+                    </label>
+                    <input
+                      id="variations"
+                      type="text"
+                      value={variations}
+                      onChange={(e) => setVariations(e.target.value)}
+                      placeholder="e.g., ran, runs, running"
+                      className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-black"
                     />
                   </div>
 
@@ -389,38 +534,71 @@ export default function AddWordPage() {
                       value={pageNo}
                       onChange={(e) => setPageNo(e.target.value)}
                       placeholder="0"
-                      className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none"
+                      className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-black"
                       min="1"
                       required
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="partOfSpeech"
+                      className="flex items-center gap-2 text-sm font-bold text-gray-700"
+                    >
+                      <Type size={16} className="text-gray-400" /> Part of Speech
+                    </label>
+                    <input
+                      id="partOfSpeech"
+                      type="text"
+                      value={partOfSpeech}
+                      onChange={(e) => setPartOfSpeech(e.target.value)}
+                      placeholder="e.g., Verb, Adjective"
+                      className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-black"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <label
-                    htmlFor="meaning"
-                    className="flex items-center gap-2 text-sm font-bold text-gray-700"
-                  >
-                    <FileText size={16} className="text-gray-400" /> Meaning
-                  </label>
+                  <div className="flex items-center justify-between">
+                    <label
+                      htmlFor="meaning"
+                      className="flex items-center gap-2 text-sm font-bold text-gray-700"
+                    >
+                      <FileText size={16} className="text-gray-400" /> Meaning
+                    </label>
+                    {dataSource && (
+                      <span
+                        className={`text-xs font-bold px-2 py-1 rounded-md ${
+                          dataSource === "current-book"
+                            ? "bg-green-100 text-green-700"
+                            : dataSource === "other-book"
+                              ? "bg-blue-100 text-blue-700"
+                              : "bg-purple-100 text-purple-700"
+                        }`}
+                      >
+                        Source:{" "}
+                        {dataSource === "current-book"
+                          ? "Current Book"
+                          : dataSource === "other-book"
+                            ? `Book: ${existingWordData?.bookName}`
+                            : "Dictionary API"}
+                      </span>
+                    )}
+                  </div>
                   {existingWordData?.found && (
-                    <div className="text-sm text-green-700 bg-green-50 border border-green-100 rounded-xl p-3">
+                    <div className="text-sm text-indigo-700 bg-indigo-50 border border-indigo-100 rounded-xl p-3">
                       <p>
                         This word already exists in{" "}
-                        <span className="font-semibold">{selectedBook}</span>.
-                        The meaning has been filled for you.
+                        <span className="font-semibold">
+                          {existingWordData.bookName}
+                        </span>
+                        .
                       </p>
                       <p className="mt-1 text-gray-600">
                         Frequency: {existingWordData.frequency} time
                         {existingWordData.frequency > 1 ? "s" : ""} across pages{" "}
                         {existingWordData.pages.join(", ")}.
                       </p>
-                      {existingWordData.examples.length > 0 && (
-                        <p className="mt-1 text-gray-600">
-                          Existing examples:{" "}
-                          {existingWordData.examples.join(" • ")}.
-                        </p>
-                      )}
                     </div>
                   )}
                   <textarea
@@ -429,13 +607,12 @@ export default function AddWordPage() {
                     onChange={(e) => setMeaning(e.target.value)}
                     placeholder={
                       existingWordData?.found
-                        ? "Meaning auto-filled from this book"
+                        ? "Meaning auto-filled from library"
                         : "Describe the definition or context..."
                     }
-                    className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none min-h-[120px] resize-none"
+                    className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none min-h-[120px] resize-none text-black"
                     rows={4}
                     required={!existingWordData?.found}
-                    disabled={existingWordData?.found}
                   />
                 </div>
 
@@ -465,7 +642,7 @@ export default function AddWordPage() {
                           handleExampleChange(index, e.target.value)
                         }
                         placeholder={`Example ${index + 1}`}
-                        className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none"
+                        className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-black"
                       />
                       {examples.length > 1 && (
                         <button

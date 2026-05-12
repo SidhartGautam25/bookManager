@@ -4,6 +4,8 @@ import path from "path";
 export interface Word {
   word: string;
   meaning: string;
+  partOfSpeech?: string;
+  variations?: string[];
   examples?: string[];
 }
 
@@ -14,9 +16,12 @@ export interface PageData {
 export interface WordOccurrence {
   word: string;
   meaning: string;
+  partOfSpeech?: string;
+  variations?: string[];
   frequency: number;
   pages: number[];
   examples: string[];
+  bookName?: string; // New: to identify which book it belongs to
 }
 
 export class BookManager {
@@ -85,6 +90,8 @@ export class BookManager {
     word: string,
     meaning: string,
     examples: string[] = [],
+    partOfSpeech?: string,
+    variations?: string[],
   ): boolean {
     if (!this.bookExists(bookName)) {
       throw new Error(`Book "${bookName}" does not exist`);
@@ -115,6 +122,8 @@ export class BookManager {
     pageData.push({
       word,
       meaning,
+      partOfSpeech,
+      variations,
       examples,
     });
 
@@ -206,13 +215,41 @@ export class BookManager {
       return null;
     }
 
+    // Get the latest occurrence metadata
+    const latest = allWords.find((p) =>
+      p.words.some((w) => w.word.trim().toLowerCase() === normalizedWord),
+    )?.words.find((w) => w.word.trim().toLowerCase() === normalizedWord);
+
     return {
       word: word.trim(),
       meaning,
+      partOfSpeech: latest?.partOfSpeech,
+      variations: latest?.variations,
       frequency,
       pages: pages.sort((a, b) => a - b),
       examples,
+      bookName,
     };
+  }
+
+  /**
+   * Get word frequency, meaning and pages for a word across ALL books
+   */
+  getGlobalWordOccurrences(word: string): WordOccurrence | null {
+    const normalizedWord = word.trim().toLowerCase();
+    if (!normalizedWord) {
+      return null;
+    }
+
+    const books = this.getAllBooks();
+    for (const book of books) {
+      const occurrence = this.getWordOccurrences(book, normalizedWord);
+      if (occurrence) {
+        return occurrence;
+      }
+    }
+
+    return null;
   }
 
   /**

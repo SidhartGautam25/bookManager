@@ -6,7 +6,7 @@ const bookManager = new BookManager();
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { bookName, pageNo, word, meaning, examples } = body;
+    const { bookName, pageNo, word, meaning, examples, partOfSpeech, variations } = body;
 
     // Validate required fields
     if (!bookName || pageNo === undefined || !word) {
@@ -46,6 +46,8 @@ export async function POST(request: NextRequest) {
       word,
       finalMeaning,
       finalExamples,
+      partOfSpeech,
+      variations,
     );
 
     return NextResponse.json({
@@ -69,6 +71,7 @@ export async function GET(request: NextRequest) {
     const bookName = searchParams.get("bookName");
     const pageNo = searchParams.get("pageNo");
     const word = searchParams.get("word");
+    const searchType = searchParams.get("searchType");
 
     if (!bookName) {
       return NextResponse.json(
@@ -80,6 +83,19 @@ export async function GET(request: NextRequest) {
     if (word) {
       const occurrence = bookManager.getWordOccurrences(bookName, word);
       if (!occurrence) {
+        // If not found in current book, check globally if requested
+        if (searchType === "global") {
+          const globalOccurrence = bookManager.getGlobalWordOccurrences(word);
+          if (globalOccurrence) {
+            return NextResponse.json({
+              success: true,
+              found: true,
+              source: "other-book",
+              ...globalOccurrence,
+            });
+          }
+        }
+
         return NextResponse.json({
           success: true,
           found: false,
@@ -87,7 +103,12 @@ export async function GET(request: NextRequest) {
         });
       }
 
-      return NextResponse.json({ success: true, found: true, ...occurrence });
+      return NextResponse.json({
+        success: true,
+        found: true,
+        source: "current-book",
+        ...occurrence,
+      });
     }
 
     if (pageNo) {
