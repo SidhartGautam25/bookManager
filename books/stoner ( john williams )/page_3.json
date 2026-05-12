@@ -1,0 +1,138 @@
+[
+    {
+        "word": "hewn",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Cut, shaped, or carved using strong blows with an axe, knife, or other tool; usually used for wood, stone, or rough materials.",
+                "examples": [
+                    "The table was hewn from a single block of wood.",
+                    "Workers hewn large stones to build the old temple.",
+                    "The sculpture looked as if it had been carefully hewn by hand.",
+                    "A narrow path was hewn through the thick forest."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Roughly cut or shaped by hand rather than made smooth by machines.",
+                "examples": [
+                    "The cottage had hewn wooden walls.",
+                    "They sat on a pair of hewn stone benches.",
+                    "The bridge was built using hewn logs.",
+                    "He admired the hewn rock structures near the mountain."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "enameled",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Covered or decorated with a smooth, shiny coating called enamel, often used on metal, pottery, or jewelry.",
+                "examples": [
+                    "She wore an enameled blue bracelet.",
+                    "The kitchen had old enameled pots hanging on the wall.",
+                    "The box was decorated with beautiful enameled patterns.",
+                    "He bought an enameled mug from the market."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To coat or decorate something with enamel to make it smooth, colorful, or shiny.",
+                "examples": [
+                    "The artist enameled the metal plate by hand.",
+                    "Workers carefully enameled the jewelry pieces.",
+                    "The surface was enameled to protect it from rust.",
+                    "She learned how to enamel decorative bowls."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "chores",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Small regular tasks or household duties that need to be done, often daily.",
+                "examples": [
+                    "She finished her chores before going out to play.",
+                    "Washing dishes and cleaning rooms are common household chores.",
+                    "The children helped their parents with farm chores.",
+                    "He spent the morning doing chores around the house."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "weary",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Very tired, either physically or mentally, especially after hard work, stress, or a long journey.",
+                "examples": [
+                    "The weary travelers finally reached the village.",
+                    "She looked weary after working all night.",
+                    "His voice sounded weary and exhausted.",
+                    "After the long walk, everyone felt weary."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To make someone feel tired, bored, or exhausted.",
+                "examples": [
+                    "The endless arguments began to weary him.",
+                    "Long hours of waiting wearied the passengers.",
+                    "The repetitive work quickly wearied the workers.",
+                    "Constant complaints can weary even a patient person."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "hoeing",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Using a hoe to loosen soil, remove weeds, or prepare land for planting.",
+                "examples": [
+                    "The farmer spent the morning hoeing the field.",
+                    "She was hoeing around the plants to remove weeds.",
+                    "Workers were busy hoeing the dry soil before planting seeds.",
+                    "He enjoyed hoeing in the garden during winter afternoons."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The activity or process of working on soil with a hoe.",
+                "examples": [
+                    "Hoeing is important for keeping weeds away from crops.",
+                    "After hours of hoeing, his hands were covered in dirt.",
+                    "The farmers finished the hoeing before sunset.",
+                    "Regular hoeing helps plants grow better."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "gleamed",
+        "variations": [],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Shone softly or brightly by reflecting light; also used for eyes or expressions showing emotion or excitement.",
+                "examples": [
+                    "The polished floor gleamed in the sunlight.",
+                    "Her eyes gleamed with happiness.",
+                    "The sword gleamed under the moonlight.",
+                    "Fresh rain made the streets gleam at night."
+                ]
+            }
+        ]
+    }
+]

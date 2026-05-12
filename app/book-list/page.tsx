@@ -23,6 +23,7 @@ interface PageData {
 export default function BookListPage() {
   const [books, setBooks] = useState<string[]>([]);
   const [selectedBook, setSelectedBook] = useState<string>("");
+  const [selectedPage, setSelectedPage] = useState<number | null>(null);
   const [bookData, setBookData] = useState<PageData[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [message, setMessage] = useState<string>("");
@@ -54,12 +55,19 @@ export default function BookListPage() {
       );
       const data = await response.json();
       if (data.success) {
-        setBookData(data.data || []);
+        const sortedData = data.data || [];
+        setBookData(sortedData);
+        if (sortedData.length > 0) {
+          setSelectedPage(sortedData[0].page);
+        } else {
+          setSelectedPage(null);
+        }
         setMessage("");
       } else {
         setMessage(data.error);
         setMessageType("error");
         setBookData([]);
+        setSelectedPage(null);
       }
     } catch {
       setMessage("Error fetching book data");
@@ -152,15 +160,36 @@ export default function BookListPage() {
 
                   <div className="flex gap-4 w-full md:w-auto">
                     <div className="flex-1 md:flex-none px-4 py-2 bg-indigo-50 rounded-xl border border-indigo-100">
-                      <span className="block text-[10px] uppercase font-bold text-indigo-400 tracking-wider leading-none">Words</span>
+                      <span className="block text-[10px] uppercase font-bold text-indigo-400 tracking-wider leading-none">Total Words</span>
                       <span className="text-lg font-black text-indigo-700">{stats.totalWords}</span>
-                    </div>
-                    <div className="flex-1 md:flex-none px-4 py-2 bg-amber-50 rounded-xl border border-amber-100">
-                      <span className="block text-[10px] uppercase font-bold text-amber-400 tracking-wider leading-none">Pages</span>
-                      <span className="text-lg font-black text-amber-700">{stats.totalPages}</span>
                     </div>
                   </div>
                 </div>
+
+                {/* Page Selector */}
+                {!loading && bookData.length > 0 && (
+                  <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+                    <div className="flex items-center gap-2 mb-4">
+                      <Hash size={18} className="text-indigo-600" />
+                      <h3 className="font-bold text-gray-800 text-sm uppercase tracking-wider">Select Page</h3>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {bookData.map((p) => (
+                        <button
+                          key={p.page}
+                          onClick={() => setSelectedPage(p.page)}
+                          className={`w-10 h-10 rounded-xl flex items-center justify-center font-bold transition-all duration-200 ${
+                            selectedPage === p.page
+                              ? "bg-indigo-600 text-white shadow-lg shadow-indigo-200 scale-110"
+                              : "bg-gray-50 text-gray-500 hover:bg-gray-100"
+                          }`}
+                        >
+                          {p.page}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 {loading ? (
                   <div className="flex flex-col items-center justify-center py-20 bg-white rounded-2xl border border-dashed border-gray-200">
@@ -172,61 +201,60 @@ export default function BookListPage() {
                     <p className="text-gray-400">Empty library. Add some words to see them here.</p>
                   </div>
                 ) : (
-                  <div className="grid grid-cols-1 gap-8">
-                    {bookData.map((pageData) => (
-                      <div key={pageData.page} className="space-y-4">
-                        <div className="flex items-center gap-3">
-                          <span className="flex items-center justify-center bg-gray-900 text-white text-xs font-bold px-3 py-1 rounded-full">
-                            PAGE {pageData.page}
-                          </span>
-                          <div className="h-[1px] flex-1 bg-gray-200"></div>
-                        </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                          {pageData.words.map((item, index) => (
-                            <div
-                              key={index}
-                              className="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 group"
-                            >
-                              <div className="flex items-center gap-2 mb-2">
-                                <div className="p-1.5 rounded-lg bg-indigo-50 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
-                                  <Layout size={14} />
+                  <div className="grid grid-cols-1 gap-6">
+                    {bookData
+                      .filter((p) => p.page === selectedPage)
+                      .map((pageData) => (
+                        <div key={pageData.page} className="space-y-6">
+                          <div className="grid grid-cols-1 gap-6">
+                            {pageData.words.map((item, index) => (
+                              <div
+                                key={index}
+                                className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group"
+                              >
+                                <div className="flex items-center gap-3 mb-6">
+                                  <div className="p-2 rounded-xl bg-indigo-50 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
+                                    <Layout size={20} />
+                                  </div>
+                                  <h4 className="font-black text-2xl text-gray-900 capitalize tracking-tight">
+                                    {item.word}
+                                  </h4>
                                 </div>
-                                <h4 className="font-bold text-lg text-gray-800 capitalize tracking-tight">
-                                  {item.word}
-                                </h4>
-                              </div>
-                              <div className="space-y-3 border-l-2 border-gray-100 pl-4">
-                                {item.meanings?.map((m, mIdx) => (
-                                  <div key={mIdx} className="py-1">
-                                    <div className="flex items-center gap-2 mb-1">
-                                      {m.partOfSpeech && (
-                                        <span className="text-[10px] font-black uppercase text-indigo-500 bg-indigo-50 px-2 py-0.5 rounded-md tracking-wider">
-                                          {m.partOfSpeech}
-                                        </span>
+                                <div className="space-y-6 border-l-4 border-indigo-50 pl-6 ml-2">
+                                  {item.meanings?.map((m, mIdx) => (
+                                    <div key={mIdx} className="space-y-4">
+                                      <div className="flex items-center gap-2">
+                                        {m.partOfSpeech && (
+                                          <span className="text-xs font-black uppercase text-indigo-600 bg-indigo-50 px-3 py-1 rounded-lg tracking-widest border border-indigo-100">
+                                            {m.partOfSpeech}
+                                          </span>
+                                        )}
+                                      </div>
+                                      <p className="text-gray-900 text-lg font-medium leading-relaxed">
+                                        {m.definition}
+                                      </p>
+                                      {m.examples && m.examples.length > 0 && (
+                                        <div className="bg-gray-50/50 p-4 rounded-2xl border border-gray-100/50 space-y-3">
+                                          <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Usage Examples</p>
+                                          <ul className="space-y-3">
+                                            {m.examples.map((ex, exIdx) => (
+                                              <li key={exIdx} className="text-gray-700 text-base flex gap-3 leading-relaxed">
+                                                <span className="text-indigo-400 font-bold mt-0.5">“</span>
+                                                <span className="italic">{ex}</span>
+                                                <span className="text-indigo-400 font-bold mt-0.5">”</span>
+                                              </li>
+                                            ))}
+                                          </ul>
+                                        </div>
                                       )}
                                     </div>
-                                    <p className="text-gray-600 text-sm leading-relaxed italic">
-                                      {m.definition}
-                                    </p>
-                                    {m.examples && m.examples.length > 0 && (
-                                      <ul className="mt-2 space-y-1">
-                                        {m.examples.map((ex, exIdx) => (
-                                          <li key={exIdx} className="text-[11px] text-gray-400 flex gap-2">
-                                            <span className="text-indigo-300">•</span>
-                                            <span>{ex}</span>
-                                          </li>
-                                        ))}
-                                      </ul>
-                                    )}
-                                  </div>
-                                ))}
+                                  ))}
+                                </div>
                               </div>
-                            </div>
-                          ))}
+                            ))}
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
                   </div>
                 )}
               </div>
