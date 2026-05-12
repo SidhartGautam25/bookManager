@@ -6,7 +6,7 @@ const bookManager = new BookManager();
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { bookName, pageNo, word, meaning, examples, partOfSpeech, variations } = body;
+    const { bookName, pageNo, word, variations, meanings } = body;
 
     // Validate required fields
     if (!bookName || pageNo === undefined || !word) {
@@ -19,34 +19,28 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    let finalMeaning = meaning;
-    if (!finalMeaning) {
+    let finalMeanings = meanings;
+    if (!finalMeanings || finalMeanings.length === 0) {
       const existing = bookManager.getWordOccurrences(bookName, word);
-      if (existing) {
-        finalMeaning = existing.meaning;
+      if (existing && existing.meanings) {
+        finalMeanings = existing.meanings;
       } else {
         return NextResponse.json(
           {
             success: false,
-            error: "Meaning is required for a new word",
+            error: "At least one meaning is required for a new word",
           },
           { status: 400 },
         );
       }
     }
 
-    const finalExamples = Array.isArray(examples)
-      ? examples.map((item) => String(item).trim()).filter(Boolean)
-      : [];
-
     // Add the word to the book
     bookManager.addWord(
       bookName,
       Number(pageNo),
       word,
-      finalMeaning,
-      finalExamples,
-      partOfSpeech,
+      finalMeanings,
       variations,
     );
 

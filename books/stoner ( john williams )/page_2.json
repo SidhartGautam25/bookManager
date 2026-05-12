@@ -1,0 +1,96 @@
+[
+  {
+    "word": "stooped",
+    "variations": [],
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To bend the upper part of the body forward and downward to a half-squatting position; crouch.",
+        "examples": [
+          "He stooped to tie his shoe-laces.",
+          "Can you believe that a salesman would stoop so low as to hide his customers' car keys until they agreed to the purchase?",
+          "to stoop a cask of liquor"
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "In a bent bodily position, hunched",
+        "examples": []
+      }
+    ]
+  },
+  {
+    "word": "arid",
+    "variations": [],
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Very dry.",
+        "examples": [
+          "The cake was arid.",
+          "Deserts are known for being arid.",
+          "The millionaire viewed his gift as arid."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "flock",
+    "variations": [],
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A large number of birds, especially those gathered together for the purpose of migration.",
+        "examples": []
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To congregate in or head towards a place in large numbers.",
+        "examples": [
+          "People flocked to the cinema to see the new film."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "Coarse tufts of wool or cotton used in bedding.",
+        "examples": []
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To coat a surface with dense fibers or particles.",
+        "examples": []
+      }
+    ]
+  },
+  {
+    "word": "toil",
+    "variations": [],
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Labour, work, especially of a grueling nature.",
+        "examples": [
+          "Lindi has achieved her comfortable life only after years of hard toil."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To labour; work.",
+        "examples": []
+      }
+    ]
+  },
+  {
+    "word": "spindly",
+    "variations": [],
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Characteristic of a spindle; slender and of weak appearance.",
+        "examples": [
+          "She has spindly legs."
+        ]
+      }
+    ]
+  }
+]

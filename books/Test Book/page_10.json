@@ -1,0 +1,27 @@
+[
+  {
+    "word": "Object",
+    "variations": [],
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A thing that has physical existence.",
+        "examples": [
+          "Mary Jane had been the object of Peter's affection for years."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To disagree with or oppose something or someone; (especially in a Court of Law) to raise an objection.",
+        "examples": [
+          "I object to the proposal to build a new airport terminal."
+        ]
+      },
+      {
+        "partOfSpeech": "Adjective",
+        "definition": "A dummy adjective definition for testing.",
+        "examples": []
+      }
+    ]
+  }
+]
