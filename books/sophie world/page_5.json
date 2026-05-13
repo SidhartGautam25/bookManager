@@ -1,0 +1,163 @@
+[
+    {
+        "word": "twitch",
+        "variations": [
+            "twitch",
+            "twitches",
+            "twitching",
+            "twitched"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To make a sudden small movement, often quickly and without control.",
+                "examples": [
+                    "His eye twitched nervously during the interview.",
+                    "The dog’s ears were twitching at every sound.",
+                    "She twitched her fingers impatiently while waiting.",
+                    "A smile twitched across his face for a moment."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To pull or move something with a quick sharp motion.",
+                "examples": [
+                    "He twitched the curtain aside to look outside.",
+                    "The fisherman twitched the line gently.",
+                    "She twitched the blanket closer during the cold night.",
+                    "The horse twitched its tail to drive away flies."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A sudden small movement or jerk, usually uncontrolled.",
+                "examples": [
+                    "A nervous twitch appeared near his mouth.",
+                    "The doctor noticed a slight twitch in her hand.",
+                    "The cat’s tail gave a quick twitch.",
+                    "His face showed a faint twitch of annoyance."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "flaxen",
+        "variations": [
+            "flaxen"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Pale yellow in color, especially describing hair similar to the color of flax.",
+                "examples": [
+                    "The child had soft flaxen hair shining in the sunlight.",
+                    "Her flaxen curls moved gently in the wind.",
+                    "The painter portrayed a girl with flaxen braids.",
+                    "Golden and flaxen fields stretched across the countryside."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "malformed",
+        "variations": [
+            "malformed",
+            "malformation",
+            "malformations"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Having an unnatural, damaged, or incorrectly formed shape or structure.",
+                "examples": [
+                    "The tree grew in a strangely malformed shape.",
+                    "Doctors treated a child born with malformed limbs.",
+                    "The accident left the metal frame badly malformed.",
+                    "Several malformed bricks weakened the old wall."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Incorrectly arranged or improperly structured.",
+                "examples": [
+                    "The computer failed because of a malformed file.",
+                    "Engineers discovered malformed data in the system.",
+                    "The website crashed after receiving malformed requests.",
+                    "A malformed sentence confused the readers."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "wand",
+        "variations": [
+            "wand",
+            "wands"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A thin stick often associated with magic, used by magicians or in stories and myths.",
+                "examples": [
+                    "The wizard raised his wand before casting the spell.",
+                    "Children pretended sticks were magical wands.",
+                    "Her silver wand glittered in the moonlight.",
+                    "The fairy touched the flower gently with her wand."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A thin rod-shaped tool or object used for pointing, scanning, or directing something.",
+                "examples": [
+                    "The security officer checked bags with a metal-detecting wand.",
+                    "The hairstylist used a curling wand for her hair.",
+                    "The conductor lifted his wand to begin the performance.",
+                    "The technician moved the scanning wand across the machine."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "gravel",
+        "variations": [
+            "gravel",
+            "gravels",
+            "graveling",
+            "graveled",
+            "gravelled",
+            "gravelly"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Small loose stones often used for roads, paths, or construction.",
+                "examples": [
+                    "The car tires crunched over the gravel driveway.",
+                    "Workers spread gravel along the village road.",
+                    "Children threw pebbles and gravel into the river.",
+                    "A narrow gravel path led to the farmhouse."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To confuse, trouble, or make someone uncertain.",
+                "examples": [
+                    "The difficult question completely gravelled the student.",
+                    "She looked gravelled by the unexpected accusation.",
+                    "His strange behavior gravels everyone around him.",
+                    "The detective was momentarily gravelled by the missing evidence."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Having a rough, harsh, or deep sound quality.",
+                "examples": [
+                    "The old singer spoke in a gravelly voice.",
+                    "Years of smoking gave him a gravelly tone.",
+                    "Her gravelly laughter echoed through the hall.",
+                    "The actor’s gravelly voice suited the character perfectly."
+                ]
+            }
+        ]
+    }
+]

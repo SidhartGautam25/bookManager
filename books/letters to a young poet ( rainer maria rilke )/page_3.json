@@ -1,0 +1,96 @@
+[
+    {
+        "word": "felicitous",
+        "variations": [
+            "felicitous",
+            "more felicitous",
+            "most felicitous",
+            "felicitously",
+            "felicitousness",
+            "felicity"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Well chosen, suitable, pleasing, or perfectly appropriate for a particular situation.",
+                "examples": [
+                    "The speaker made a felicitous remark that eased the tension in the room.",
+                    "Her felicitously chosen words comforted the grieving family.",
+                    "The poet was admired for his felicitous use of language.",
+                    "It was a felicitous moment to announce the good news."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Bringing happiness, success, or good fortune.",
+                "examples": [
+                    "Their meeting turned out to be a felicitous accident.",
+                    "The team’s felicitous decision changed the course of the project.",
+                    "He considered the opportunity a felicitous beginning to his career.",
+                    "Several felicitous events helped the village recover quickly."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "concealed",
+        "variations": [
+            "conceal",
+            "conceals",
+            "concealing",
+            "concealed",
+            "concealment"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Kept something hidden or prevented it from being seen, known, or discovered.",
+                "examples": [
+                    "She concealed the letter inside a drawer.",
+                    "The clouds concealed the mountain peaks.",
+                    "He was concealing his true feelings behind a smile.",
+                    "The thief concealed the stolen money under the floorboards."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Hidden from sight or kept secret.",
+                "examples": [
+                    "Police discovered a concealed weapon in the car.",
+                    "The room had a concealed entrance behind the bookshelf.",
+                    "Her concealed anger became obvious during the argument.",
+                    "The treasure remained concealed for centuries."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "affinity",
+        "variations": [
+            "affinity",
+            "affinities"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A natural liking, connection, or sense of understanding between people, ideas, or things.",
+                "examples": [
+                    "She felt a strong affinity with classical music.",
+                    "The two writers shared an affinity for poetry.",
+                    "Children often develop affinities for certain stories or characters.",
+                    "He discovered a deep affinity with nature during his travels."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A similarity or close relationship between things because they share qualities or characteristics.",
+                "examples": [
+                    "Scientists noticed an affinity between the two languages.",
+                    "There is a clear affinity between these artistic styles.",
+                    "The study explored affinities among different cultures.",
+                    "Their political ideas showed strong affinities."
+                ]
+            }
+        ]
+    }
+]

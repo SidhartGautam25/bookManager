@@ -1,0 +1,65 @@
+[
+    {
+        "word": "sleazy",
+        "variations": [
+            "sleazy",
+            "sleazier",
+            "sleaziest",
+            "sleazily",
+            "sleaziness"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Dirty, shabby, unpleasant, or morally questionable in appearance, behavior, or character.",
+                "examples": [
+                    "They stayed in a sleazy hotel near the station.",
+                    "The businessman was known for his sleazy deals.",
+                    "She disliked the sleazy atmosphere of the nightclub.",
+                    "His sleazily written advertisements fooled many customers."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Dishonest, immoral, or lacking respectability, especially in a cheap or vulgar way.",
+                "examples": [
+                    "The movie portrayed a sleazy politician hungry for power.",
+                    "He worked for a sleazier company before changing jobs.",
+                    "People criticized the channel for its sleazy content.",
+                    "The reporter exposed several sleazy business practices."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "surcharge",
+        "variations": [
+            "surcharge",
+            "surcharges",
+            "surcharging",
+            "surcharged"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "An extra amount of money added to the usual price, cost, or charge.",
+                "examples": [
+                    "The airline added a fuel surcharge to the ticket price.",
+                    "Customers complained about the unexpected surcharges on their bills.",
+                    "A weekend surcharge was applied at the restaurant.",
+                    "The delivery company increased its holiday surcharge this year."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To add an extra charge or fee to the normal cost of something.",
+                "examples": [
+                    "The bank surcharged customers for late payments.",
+                    "Some stores surcharge credit card purchases.",
+                    "The hotel was surcharging guests during the festival season.",
+                    "They surcharged the shipment because of its extra weight."
+                ]
+            }
+        ]
+    }
+]

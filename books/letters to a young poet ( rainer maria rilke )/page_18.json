@@ -1,0 +1,217 @@
+[
+    {
+        "word": "disposition",
+        "variations": [
+            "disposition",
+            "dispositions",
+            "dispose",
+            "disposes",
+            "disposed",
+            "disposing"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A person’s usual mood, character, or natural way of thinking and behaving.",
+                "examples": [
+                    "She had a calm and cheerful disposition.",
+                    "His friendly disposition made him popular among students.",
+                    "Children often reflect the dispositions of their surroundings.",
+                    "Despite difficulties, he maintained a hopeful disposition."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A natural tendency or inclination toward something.",
+                "examples": [
+                    "She showed a strong disposition toward music from childhood.",
+                    "He has little disposition to argue with others.",
+                    "Their disposition toward helping strangers impressed everyone.",
+                    "The teacher encouraged students with artistic dispositions."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The arrangement, handling, or placing of people or things.",
+                "examples": [
+                    "The general carefully planned the disposition of troops.",
+                    "The disposition of furniture changed the feel of the room.",
+                    "Officials discussed the disposition of resources after the flood.",
+                    "The architect considered the disposition of windows and doors."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "contemplation",
+        "variations": [
+            "contemplation",
+            "contemplations",
+            "contemplate",
+            "contemplates",
+            "contemplating",
+            "contemplated",
+            "contemplative"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Deep and careful thought about something over a period of time.",
+                "examples": [
+                    "She sat in quiet contemplation beside the river.",
+                    "Years of contemplation led him to change his beliefs.",
+                    "The philosopher’s writings encourage contemplation about life.",
+                    "He remained silent in contemplation of the difficult decision."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The act of considering or planning something seriously.",
+                "examples": [
+                    "The company is in contemplation of major changes.",
+                    "She contemplated moving to another country.",
+                    "The idea remained under contemplation for several months.",
+                    "Their contemplative discussions continued late into the night."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "splendour",
+        "variations": [
+            "splendour",
+            "splendours",
+            "splendid",
+            "splendidly"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Great beauty, magnificence, richness, or impressive brilliance.",
+                "examples": [
+                    "Visitors admired the splendour of the royal palace.",
+                    "The mountains revealed their splendour at sunrise.",
+                    "The festival was celebrated with great splendour.",
+                    "Ancient temples still preserve their architectural splendours."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A quality of greatness or excellence that inspires admiration.",
+                "examples": [
+                    "The splendour of her performance moved the audience deeply.",
+                    "Poets often write about the splendour of nature.",
+                    "The city regained some of its former splendour after restoration.",
+                    "His splendidly written speech inspired the students."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "stimulus",
+        "variations": [
+            "stimulus",
+            "stimuli",
+            "stimulate",
+            "stimulates",
+            "stimulating",
+            "stimulated",
+            "stimulation"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Something that causes activity, thought, growth, or a reaction.",
+                "examples": [
+                    "Music can act as a stimulus for creativity.",
+                    "The teacher provided intellectual stimuli for the students.",
+                    "Bright colors are strong visual stimuli.",
+                    "The government introduced financial stimulus measures."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Something that encourages or motivates someone to act or improve.",
+                "examples": [
+                    "Competition served as a stimulus for better performance.",
+                    "Travel often stimulates curiosity about other cultures.",
+                    "The award gave him fresh stimulation to continue his work.",
+                    "Positive feedback can be a powerful stimulus."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "obscured",
+        "variations": [
+            "obscure",
+            "obscures",
+            "obscuring",
+            "obscured",
+            "obscurity"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Hidden, blocked, or made difficult to see, understand, or notice.",
+                "examples": [
+                    "Dark clouds obscured the moon.",
+                    "The truth was obscured by rumors and confusion.",
+                    "Smoke had obscured the view of the mountains.",
+                    "His real intentions remained obscured for years."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Not clearly seen, understood, or known.",
+                "examples": [
+                    "The road became obscured in the heavy fog.",
+                    "Several details remained obscured in the old document.",
+                    "Her face was partly obscured by shadows.",
+                    "The writer discussed obscure and obscured historical events."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "bowing",
+        "variations": [
+            "bow",
+            "bows",
+            "bowing",
+            "bowed"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Bending the head or upper body forward as a sign of respect, greeting, thanks, or obedience.",
+                "examples": [
+                    "The audience was bowing to the performer after the concert.",
+                    "He bowed respectfully before the king.",
+                    "People in the temple were bowing quietly in prayer.",
+                    "She gave a slight bow while greeting the guests."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Bending or curving because of pressure, weight, age, or force.",
+                "examples": [
+                    "The tree branches were bowing under the snow.",
+                    "Years of hard work had bowed his shoulders.",
+                    "The old bridge was bowing slightly in the middle.",
+                    "Tall grass bowed gently in the wind."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The act of bending the body or head forward to show respect or greeting.",
+                "examples": [
+                    "She greeted the elders with a polite bowing of her head.",
+                    "The actor received applause after a graceful bow.",
+                    "His slight bowing showed humility and respect.",
+                    "Ceremonial bowings are common in many cultures."
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,136 @@
+[
+    {
+        "word": "catastrophes",
+        "variations": [
+            "catastrophe",
+            "catastrophes",
+            "catastrophic",
+            "catastrophically"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Great disasters or terrible events that cause serious destruction, suffering, or failure.",
+                "examples": [
+                    "Floods and earthquakes are natural catastrophes.",
+                    "The war brought economic and human catastrophes to the region.",
+                    "Scientists warn about environmental catastrophes caused by climate change.",
+                    "Several small mistakes combined into a complete catastrophe."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A sudden event that causes complete failure, ruin, or chaos.",
+                "examples": [
+                    "The project turned into a financial catastrophe.",
+                    "Forgetting the documents was a catastrophe for the team.",
+                    "The play’s opening night became a public catastrophe.",
+                    "Poor planning often leads to avoidable catastrophes."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "loomed",
+        "variations": [
+            "loom",
+            "looms",
+            "looming",
+            "loomed"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Appeared large, dark, or threatening, often in a way that creates fear or importance.",
+                "examples": [
+                    "Dark mountains loomed over the village.",
+                    "A storm was looming in the distance.",
+                    "The old castle loomed through the fog.",
+                    "Huge shadows loomed across the empty street."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Seemed likely to happen soon, especially something difficult or worrying.",
+                "examples": [
+                    "Exams loomed as the semester neared its end.",
+                    "Economic problems were looming over the country.",
+                    "A major decision loomed before the company.",
+                    "The threat of war had loomed for years."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "henchman",
+        "variations": [
+            "henchman",
+            "henchmen"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A loyal follower or supporter who carries out the orders of a powerful or often criminal person.",
+                "examples": [
+                    "The villain arrived with several armed henchmen.",
+                    "The gang leader relied on trusted henchmen for protection.",
+                    "In old stories, kings often had loyal henchmen beside them.",
+                    "The detective arrested the criminal and his henchmen."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Someone who blindly supports another person, especially for power or personal gain.",
+                "examples": [
+                    "Critics accused the politician’s henchmen of spreading rumors.",
+                    "The businessman surrounded himself with obedient henchmen.",
+                    "Powerful leaders often depend on loyal henchmen.",
+                    "Several henchmen defended the corrupt official publicly."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "boast",
+        "variations": [
+            "boast",
+            "boasts",
+            "boasting",
+            "boasted",
+            "boastful",
+            "boastfully"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To speak proudly or excessively about achievements, abilities, or possessions.",
+                "examples": [
+                    "He constantly boasted about his wealth and success.",
+                    "She was boasting that her team would easily win.",
+                    "People who boast too much often annoy others.",
+                    "The athlete boasted of breaking several records."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To possess or contain something impressive or desirable.",
+                "examples": [
+                    "The city boasts several beautiful historical buildings.",
+                    "Their garden boasts a wide variety of flowers.",
+                    "The university boasts one of the best libraries in the country.",
+                    "The restaurant boasted an excellent view of the sea."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A proud or exaggerated statement about oneself or something related to oneself.",
+                "examples": [
+                    "His boast about never failing sounded unrealistic.",
+                    "The soldier’s boasts entertained the crowd.",
+                    "She dismissed his boasts as empty words.",
+                    "The company’s advertisement was little more than a boast."
+                ]
+            }
+        ]
+    }
+]

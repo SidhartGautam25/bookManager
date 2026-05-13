@@ -1,0 +1,116 @@
+[
+    {
+        "word": "subtlety",
+        "variations": [
+            "subtlety",
+            "subtleties",
+            "subtle",
+            "subtler",
+            "subtlest",
+            "subtly"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "The quality of being delicate, not obvious, or difficult to notice or fully understand.",
+                "examples": [
+                    "The subtlety of her emotions made the poem powerful.",
+                    "Many readers miss the subtlety in the writer’s humor.",
+                    "The artist’s work is admired for its color subtlety.",
+                    "His subtle manner of speaking often hides deep meaning."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A fine detail, distinction, or clever complexity in thought, language, or behavior.",
+                "examples": [
+                    "The professor explained the subtleties of classical philosophy.",
+                    "She appreciated the subtlety between the two similar arguments.",
+                    "The film contains political subtleties that become clearer over time.",
+                    "Language learners often struggle with grammatical subtleties."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "inviolably",
+        "variations": [
+            "inviolable",
+            "inviolably",
+            "inviolate"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "In a way that must not be broken, violated, harmed, or disturbed.",
+                "examples": [
+                    "The agreement was considered inviolably sacred by the community.",
+                    "Human dignity should be protected inviolably.",
+                    "The temple grounds were kept inviolably pure for centuries.",
+                    "Certain rights are treated inviolably under the constitution."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "preface",
+        "variations": [
+            "preface",
+            "prefaces",
+            "prefacing",
+            "prefaced"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "An introduction at the beginning of a book, speech, or piece of writing that explains its purpose, background, or main ideas.",
+                "examples": [
+                    "The author wrote a thoughtful preface for the new edition.",
+                    "I read the preface before starting the novel.",
+                    "The preface explains how the research was conducted.",
+                    "Her prefaces often reveal personal experiences behind the stories."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To introduce something by saying or writing a few words beforehand.",
+                "examples": [
+                    "He prefaced his criticism with a polite apology.",
+                    "The speaker prefaced the lecture with a short joke.",
+                    "She often prefaces difficult conversations with silence.",
+                    "The teacher prefaced the announcement by thanking the students."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "disquisition",
+        "variations": [
+            "disquisition",
+            "disquisitions",
+            "disquisitional"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A long, detailed, and formal discussion or piece of writing about a subject.",
+                "examples": [
+                    "The professor delivered a disquisition on ancient philosophy.",
+                    "His book contains lengthy disquisitions on politics and history.",
+                    "The lecture turned into a disquisition about human nature.",
+                    "Readers admired the writer’s thoughtful disquisitions on art."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A careful and deep examination of a topic or idea.",
+                "examples": [
+                    "The essay offered a disquisition on freedom and morality.",
+                    "Scientists presented a detailed disquisition of the theory.",
+                    "Her disquisitions often combine literature, culture, and philosophy.",
+                    "The debate became an intellectual disquisition rather than an argument."
+                ]
+            }
+        ]
+    }
+]

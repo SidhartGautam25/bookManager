@@ -1,0 +1,174 @@
+[
+    {
+        "word": "correspondence",
+        "variations": [
+            "correspondence",
+            "correspondences",
+            "correspond",
+            "corresponds",
+            "corresponding",
+            "corresponded"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Communication through letters, emails, or written messages exchanged between people.",
+                "examples": [
+                    "The writer’s correspondence with friends was later published.",
+                    "She handled all official correspondence for the company.",
+                    "Their long correspondence continued for many years.",
+                    "Old correspondence revealed details about the historical event."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A close similarity, agreement, or connection between two things.",
+                "examples": [
+                    "Scientists noticed a correspondence between the two sets of results.",
+                    "There is a clear correspondence between effort and success.",
+                    "The map shows little correspondence with the actual landscape.",
+                    "Historians studied the correspondence between ancient cultures."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "trivial",
+        "variations": [
+            "trivial",
+            "more trivial",
+            "most trivial",
+            "trivially",
+            "triviality",
+            "trivialities"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Very small, unimportant, or not serious enough to deserve attention.",
+                "examples": [
+                    "They argued over something completely trivial.",
+                    "Most of his worries later seemed trivial.",
+                    "She ignored trivial gossip and focused on her work.",
+                    "The mistake looked trivial at first but caused bigger problems later."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Simple, ordinary, or easy to understand or solve.",
+                "examples": [
+                    "For experienced programmers, the problem was trivial.",
+                    "The teacher considered the question too trivial for the exam.",
+                    "What feels difficult today may appear trivial later.",
+                    "Scientists dismissed the error as a trivial calculation mistake."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "preoccupations",
+        "variations": [
+            "preoccupation",
+            "preoccupations",
+            "preoccupy",
+            "preoccupies",
+            "preoccupied",
+            "preoccupying"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Thoughts, worries, or interests that occupy a person’s mind continuously.",
+                "examples": [
+                    "Financial preoccupations kept him awake at night.",
+                    "Her artistic preoccupations shaped most of her conversations.",
+                    "Students often develop preoccupations about exams.",
+                    "The novel explores human preoccupations with success and failure."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Strong attention or involvement with something that makes a person distracted from other matters.",
+                "examples": [
+                    "His preoccupation with work affected his personal life.",
+                    "Children can become completely absorbed in their favorite preoccupations.",
+                    "The scientist’s preoccupations with research left little time for rest.",
+                    "She appeared preoccupied during the meeting."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "meagre",
+        "variations": [
+            "meagre",
+            "meagrer",
+            "meagrest",
+            "meagrely",
+            "meagreness"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Very small in amount, poor in quality, or not enough for what is needed.",
+                "examples": [
+                    "The workers survived on meagre wages.",
+                    "They received only meagre support from the authorities.",
+                    "The harvest was meagre because of the drought.",
+                    "He lived in a tiny room with meagre furniture."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Thin, weak, or lacking richness or fullness.",
+                "examples": [
+                    "The stray dog looked weak and meagre.",
+                    "The report provided only meagre details about the incident.",
+                    "Her meagre meal consisted of bread and soup.",
+                    "Years of hardship had given him a meagre appearance."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "barren",
+        "variations": [
+            "barren",
+            "more barren",
+            "most barren",
+            "barrenness"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Unable to produce plants, crops, or life; dry and unproductive.",
+                "examples": [
+                    "The desert remained barren for miles.",
+                    "Years without rain turned the farmland barren.",
+                    "Only a few shrubs grew in the barren landscape.",
+                    "The once fertile valley became barren after the drought."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Lacking ideas, interest, activity, or meaningful results.",
+                "examples": [
+                    "The discussion proved barren and unproductive.",
+                    "He feared living a barren and lonely life.",
+                    "Her imagination never remained barren for long.",
+                    "The research produced barren results despite years of effort."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Unable to have children or produce offspring.",
+                "examples": [
+                    "The queen feared being considered barren.",
+                    "Some ancient societies treated barren women unfairly.",
+                    "The story tells of a barren couple praying for a child.",
+                    "Medical treatment helped many once-barren families conceive."
+                ]
+            }
+        ]
+    }
+]

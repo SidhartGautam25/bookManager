@@ -1,0 +1,144 @@
+[
+    {
+        "word": "limping",
+        "variations": [
+            "limp",
+            "limps",
+            "limping",
+            "limped"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Walking unevenly or with difficulty, usually because of pain, injury, or weakness in one leg or foot.",
+                "examples": [
+                    "He was limping after twisting his ankle during the match.",
+                    "The injured dog limped slowly across the road.",
+                    "She limps slightly because of an old knee injury.",
+                    "The tired traveler came limping into the village."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Moving or progressing slowly and unevenly because of weakness, difficulty, or lack of energy.",
+                "examples": [
+                    "The company made a limping recovery after the financial crisis.",
+                    "Their limping efforts failed to impress the audience.",
+                    "The project continued in a limping manner after several delays.",
+                    "The old car made a limping journey up the hill."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "An uneven way of walking caused by injury, pain, or weakness.",
+                "examples": [
+                    "His limping became worse after the long walk.",
+                    "The doctor examined the child’s unusual limping.",
+                    "Years of hard labor had left him with a permanent limping gait.",
+                    "Everyone noticed her slight limping as she climbed the stairs."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "plucking",
+        "variations": [
+            "pluck",
+            "plucks",
+            "plucking",
+            "plucked"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Pulling something quickly or sharply, especially flowers, fruits, strings, feathers, or hair.",
+                "examples": [
+                    "She was plucking roses from the garden.",
+                    "The musician plucked the guitar strings gently.",
+                    "Children were plucking mangoes from the tree.",
+                    "He nervously kept plucking at his shirt sleeve."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Removing something by pulling it away from its place.",
+                "examples": [
+                    "The chef was plucking feathers from the chicken.",
+                    "She plucked a gray hair from her head.",
+                    "Workers carefully plucked weeds from the field.",
+                    "He plucks loose threads from his clothes absentmindedly."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The act or sound of pulling something sharply, especially musical strings.",
+                "examples": [
+                    "The soft plucking of the harp filled the room.",
+                    "A quick pluck of the string changed the melody.",
+                    "The bird escaped with one sudden plucking movement.",
+                    "She recognized the gentle plucking of the sitar instantly."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "truss",
+        "variations": [
+            "truss",
+            "trusses",
+            "trussing",
+            "trussed"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A strong framework, usually made of wood or metal, used to support roofs, bridges, or other structures.",
+                "examples": [
+                    "The bridge was held up by large steel trusses.",
+                    "Workers repaired the damaged roof truss.",
+                    "The engineer designed a lightweight truss structure.",
+                    "Wooden trusses supported the old hall ceiling."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A medical support worn to hold a weak part of the body in place, especially for a hernia.",
+                "examples": [
+                    "The doctor advised him to wear a truss after surgery.",
+                    "He adjusted the truss before walking.",
+                    "Modern trusses are designed to be more comfortable.",
+                    "The patient relied on a truss for support."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To tie, fasten, or bind something tightly.",
+                "examples": [
+                    "The cook trussed the chicken before roasting it.",
+                    "They trussed the packages securely with rope.",
+                    "The prisoners were trussed and guarded carefully.",
+                    "She trusses the plants to keep them upright."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "phiz",
+        "variations": [
+            "phiz",
+            "phizzes"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A person’s face or facial appearance, often used humorously or informally.",
+                "examples": [
+                    "He walked in with a cheerful phiz.",
+                    "The cartoon showed a man with a funny-looking phiz.",
+                    "Her puzzled phiz made everyone laugh.",
+                    "The old photograph captured his youthful phiz perfectly."
+                ]
+            }
+        ]
+    }
+]

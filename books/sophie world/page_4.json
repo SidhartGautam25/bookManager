@@ -1,0 +1,93 @@
+[
+    {
+        "word": "slink",
+        "variations": [
+            "slink",
+            "slinks",
+            "slinking",
+            "slunk"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To move quietly and secretly, usually in a guilty, fearful, or ashamed way.",
+                "examples": [
+                    "The thief slunk away through the dark alley.",
+                    "He was slinking around the house trying not to be noticed.",
+                    "The dog slunk under the table after being scolded.",
+                    "Embarrassed by the mistake, she slunk out of the room."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To leave or move away quietly in order to avoid attention.",
+                "examples": [
+                    "The students slunk away after the teacher caught them talking.",
+                    "He slunk off before anyone could question him.",
+                    "Several workers were slinking toward the exit during the break.",
+                    "The cat slinks into the garden every evening."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "menagerie",
+        "variations": [
+            "menagerie",
+            "menageries"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A collection of wild, unusual, or kept animals, especially for display.",
+                "examples": [
+                    "The king owned a menagerie filled with exotic animals.",
+                    "Children were fascinated by the traveling menagerie.",
+                    "The old palace once contained a private menagerie.",
+                    "Visitors explored the colorful menagerie of birds and animals."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A varied or unusual mixture of people or things.",
+                "examples": [
+                    "The market was a menagerie of sounds, colors, and smells.",
+                    "Her room looked like a menagerie of books and paintings.",
+                    "The film gathers a strange menagerie of characters together.",
+                    "The festival became a lively menagerie of cultures and traditions."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "slung",
+        "variations": [
+            "sling",
+            "slings",
+            "slinging",
+            "slung"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Hung or placed something loosely over a shoulder, hook, or support.",
+                "examples": [
+                    "He slung his bag over his shoulder before leaving.",
+                    "The hunter had slung a rope across the tree branch.",
+                    "She was slinging a guitar across her back.",
+                    "A lantern slung from the ceiling moved gently in the wind."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Threw or moved something carelessly, forcefully, or casually.",
+                "examples": [
+                    "He slung the wet towel onto the chair.",
+                    "Workers were slinging sacks into the truck quickly.",
+                    "The angry boy slung his books onto the floor.",
+                    "She slung a stone across the river playfully."
+                ]
+            }
+        ]
+    }
+]

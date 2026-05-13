@@ -1,0 +1,185 @@
+[
+    {
+        "word": "wrought",
+        "variations": [
+            "wrought",
+            "work",
+            "works",
+            "working",
+            "worked"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Carefully shaped, formed, or created with effort and skill, especially from metal.",
+                "examples": [
+                    "The gate was made of beautifully wrought iron.",
+                    "Artists displayed finely wrought jewelry at the exhibition.",
+                    "The palace contained richly wrought decorations.",
+                    "The craftsman spent months creating the wrought patterns."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Caused, produced, or brought about something, usually something significant.",
+                "examples": [
+                    "The war wrought destruction across the region.",
+                    "Years of hardship had wrought changes in his personality.",
+                    "The reforms wrought major improvements in education.",
+                    "Her kindness had wrought peace within the family."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Deeply affected emotionally or mentally.",
+                "examples": [
+                    "She looked emotionally wrought after the tragedy.",
+                    "The long struggle left him tired and wrought.",
+                    "The family appeared deeply wrought by grief.",
+                    "His face showed a wrought expression of worry."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "lament",
+        "variations": [
+            "lament",
+            "laments",
+            "lamenting",
+            "lamented",
+            "lamentation",
+            "lamentable"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To express deep sadness, grief, or regret about something.",
+                "examples": [
+                    "The villagers lamented the loss of their homes after the flood.",
+                    "She lamented wasting so many years in fear.",
+                    "Poets often lament the passing of youth and beauty.",
+                    "He was lamenting the decline of old traditions."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "An expression of sorrow, mourning, or regret.",
+                "examples": [
+                    "Her song became a lament for lost love.",
+                    "The funeral echoed with laments from grieving relatives.",
+                    "The poem reads like a lament for a forgotten world.",
+                    "His speech turned into a lament about modern society."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "frighten",
+        "variations": [
+            "frighten",
+            "frightens",
+            "frightening",
+            "frightened",
+            "fright",
+            "frightfully"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To make someone feel afraid, nervous, or alarmed.",
+                "examples": [
+                    "The loud thunder frightened the children.",
+                    "She was frightened by the strange footsteps outside.",
+                    "Horror films frighten him easily.",
+                    "The barking dog had frightened the visitors away."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To force someone away or into action through fear.",
+                "examples": [
+                    "The guards frightened the thieves away from the building.",
+                    "Birds were frightened off by the loud noise.",
+                    "The warning frightened many people into leaving early.",
+                    "The villagers tried frightening wild animals away from the crops."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "reckon",
+        "variations": [
+            "reckon",
+            "reckons",
+            "reckoning",
+            "reckoned"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To think, believe, or consider something in a particular way.",
+                "examples": [
+                    "I reckon the journey will take at least five hours.",
+                    "She reckoned him to be an honest person.",
+                    "Many people reckon that the decision was unfair.",
+                    "He is reckoning on support from his friends."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To calculate, count, or estimate something.",
+                "examples": [
+                    "The workers reckoned the total cost carefully.",
+                    "Scientists reckoned the age of the ruins to be thousands of years old.",
+                    "She was reckoning how much time remained before sunset.",
+                    "Farmers once reckoned distance by days of travel."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A moment of judgment, settlement, or serious consequence.",
+                "examples": [
+                    "The corrupt leader eventually faced a public reckoning.",
+                    "History often brings a reckoning for injustice.",
+                    "The company’s financial reckoning arrived after years of debt.",
+                    "He knew a personal reckoning was unavoidable."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "benediction",
+        "variations": [
+            "benediction",
+            "benedictions",
+            "benedictory",
+            "bless",
+            "blesses",
+            "blessing",
+            "blessed"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A prayer, blessing, or kind expression asking for divine help, protection, or peace.",
+                "examples": [
+                    "The priest ended the ceremony with a benediction.",
+                    "Her grandmother’s words felt like a benediction.",
+                    "The crowd listened silently to the final benediction.",
+                    "He offered a quiet benediction before the journey began."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Something seen as a source of blessing, comfort, or goodness.",
+                "examples": [
+                    "Rain after the drought was considered a benediction.",
+                    "Their friendship became a benediction during difficult times.",
+                    "The teacher’s guidance felt like a blessing and benediction.",
+                    "Peace after years of conflict seemed almost like a benediction."
+                ]
+            }
+        ]
+    }
+]

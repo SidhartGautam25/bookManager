@@ -1,0 +1,202 @@
+[
+    {
+        "word": "eminently",
+        "variations": [
+            "eminent",
+            "eminently",
+            "eminence"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "To a very high degree; clearly, obviously, or exceptionally.",
+                "examples": [
+                    "She was eminently qualified for the position.",
+                    "The book is eminently readable despite its complex subject.",
+                    "He handled the crisis eminently well.",
+                    "The scientist was eminently respected in academic circles."
+                ]
+            },
+            {
+                "partOfSpeech": "adverb",
+                "definition": "In a distinguished, notable, or highly admirable way.",
+                "examples": [
+                    "The actor performed eminently throughout the play.",
+                    "Their leader was eminently suited for diplomacy.",
+                    "The village is eminently known for its craftsmanship.",
+                    "She spoke eminently on issues of education and equality."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "snug",
+        "variations": [
+            "snug",
+            "snugger",
+            "snuggest",
+            "snugly",
+            "snugness"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Comfortably warm, cozy, and protected.",
+                "examples": [
+                    "They sat in a snug little cabin during the snowfall.",
+                    "The child looked snug beneath the thick blankets.",
+                    "A fire made the room feel warm and snug.",
+                    "The cat slept in a snug corner near the window."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Fitting closely or tightly in a comfortable way.",
+                "examples": [
+                    "The jacket felt snug around his shoulders.",
+                    "She wore snug gloves during the winter trip.",
+                    "The lid fit snugly onto the container.",
+                    "The hikers slept in snug sleeping bags."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To settle or fit comfortably and closely.",
+                "examples": [
+                    "The puppy snugged itself beside the fire.",
+                    "She snugged the scarf around her neck.",
+                    "The child snugged closer to his mother during the storm.",
+                    "The blanket was snugged tightly around the baby."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "perilous",
+        "variations": [
+            "perilous",
+            "more perilous",
+            "most perilous",
+            "perilously",
+            "peril"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Very dangerous, risky, or likely to cause harm.",
+                "examples": [
+                    "The climbers faced a perilous journey through the mountains.",
+                    "Traveling during the storm became increasingly perilous.",
+                    "The bridge looked old and perilously weak.",
+                    "Soldiers crossed the perilous battlefield at night."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Full of serious difficulties, uncertainty, or threat.",
+                "examples": [
+                    "The country entered a perilous political situation.",
+                    "He made a perilous decision without proper advice.",
+                    "Businesses struggled during the perilous economic crisis.",
+                    "Their expedition continued despite perilous conditions."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "fragile",
+        "variations": [
+            "fragile",
+            "more fragile",
+            "most fragile",
+            "fragility",
+            "fragilely"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Easily broken, damaged, or harmed.",
+                "examples": [
+                    "The fragile glass vase cracked during transport.",
+                    "Ancient documents are too fragile to touch directly.",
+                    "The bird carried fragile eggs in its nest.",
+                    "Her fragile health worried the family."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Emotionally sensitive, delicate, or easily affected.",
+                "examples": [
+                    "He appeared emotionally fragile after the tragedy.",
+                    "Trust between them remained fragile for years.",
+                    "Children can feel fragile in unfamiliar situations.",
+                    "Peace in the region was still fragile and uncertain."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "nestling",
+        "variations": [
+            "nestle",
+            "nestles",
+            "nestling",
+            "nestled",
+            "nestling",
+            "nestlings"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Resting or settling comfortably and closely within something.",
+                "examples": [
+                    "The village was nestling between green hills.",
+                    "The cat lay nestling beside the fireplace.",
+                    "Tiny houses were nestled along the riverbank.",
+                    "She sat nestling into the warm blanket."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A young bird that is still living in the nest and not yet fully able to fly.",
+                "examples": [
+                    "The mother bird returned to feed her nestlings.",
+                    "Several hungry nestlings chirped loudly in the nest.",
+                    "The fallen nestling was carefully placed back in the tree.",
+                    "Birdwatchers observed the tiny nestlings growing each day."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "triviality",
+        "variations": [
+            "triviality",
+            "trivialities",
+            "trivial",
+            "trivially"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Something very small, unimportant, or lacking seriousness.",
+                "examples": [
+                    "They argued over a complete triviality.",
+                    "Most daily complaints later seem like trivialities.",
+                    "The issue was dismissed as a triviality by the officials.",
+                    "Life’s trivialities often distract people from deeper concerns."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The quality of being ordinary, insignificant, or lacking depth.",
+                "examples": [
+                    "The critic complained about the triviality of the film’s story.",
+                    "She grew tired of the triviality of office gossip.",
+                    "The novel contrasts human suffering with social trivialities.",
+                    "His speech avoided serious ideas and remained trapped in triviality."
+                ]
+            }
+        ]
+    }
+]

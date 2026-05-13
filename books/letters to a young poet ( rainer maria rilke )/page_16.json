@@ -1,0 +1,221 @@
+[
+    {
+        "word": "ailing",
+        "variations": [
+            "ail",
+            "ails",
+            "ailing",
+            "ailed",
+            "ailment",
+            "ailments"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Sick, weak, or not in good physical or mental health.",
+                "examples": [
+                    "She spent months caring for her ailing grandfather.",
+                    "The ailing dog refused to eat anything.",
+                    "Doctors treated several ailing patients during the outbreak.",
+                    "His ailing health forced him to retire early."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Causing trouble, pain, or illness to someone.",
+                "examples": [
+                    "Nobody could understand what was ailing the child.",
+                    "Stress has been ailing him for years.",
+                    "The mechanic tried to discover what ailed the old engine.",
+                    "She asked gently what was ailing her friend."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "weary",
+        "variations": [
+            "weary",
+            "wearier",
+            "weariest",
+            "wearily",
+            "weariness",
+            "wearies",
+            "wearied",
+            "wearying"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Very tired physically or mentally, usually after hard work, stress, or long effort.",
+                "examples": [
+                    "The weary travelers finally reached the village.",
+                    "She looked wearier after working through the night.",
+                    "His voice sounded weary and exhausted.",
+                    "The workers walked home wearily after the long day."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To make someone tired, bored, or exhausted.",
+                "examples": [
+                    "The endless arguments wearied everyone in the room.",
+                    "Long journeys often weary young children.",
+                    "She was wearied by constant complaints.",
+                    "The repetitive work had been wearying the employees for months."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "unceasing",
+        "variations": [
+            "unceasing",
+            "unceasingly"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Continuing without stopping or interruption.",
+                "examples": [
+                    "The unceasing rain flooded the streets.",
+                    "She admired his unceasing determination.",
+                    "Traffic noise continued in an unceasing stream outside.",
+                    "The machine worked unceasingly throughout the night."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "windswept",
+        "variations": [
+            "windswept"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Exposed to strong winds or shaped by constant wind.",
+                "examples": [
+                    "They walked across the windswept beach at sunset.",
+                    "A lonely cottage stood on the windswept hill.",
+                    "Her hair looked wild and windswept after the storm.",
+                    "The windswept plains stretched endlessly into the distance."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "stretch",
+        "variations": [
+            "stretch",
+            "stretches",
+            "stretching",
+            "stretched"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To extend, spread, or make something longer or wider.",
+                "examples": [
+                    "The road stretches across the desert for miles.",
+                    "She stretched her arms after waking up.",
+                    "Clouds stretched across the evening sky.",
+                    "The fabric had stretched after being washed."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To reach or continue over a distance, area, or period of time.",
+                "examples": [
+                    "The forest stretches from the mountains to the sea.",
+                    "Their friendship stretched over many decades.",
+                    "Long shadows were stretching across the field.",
+                    "The meeting stretched late into the night."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A continuous area, period, or extent of something.",
+                "examples": [
+                    "A long stretch of empty road lay ahead.",
+                    "The river passes through a quiet stretch of forest.",
+                    "He worked for hours without a single stretch of rest.",
+                    "That difficult stretch of life taught her patience."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "An act of extending the body or limbs to relax muscles.",
+                "examples": [
+                    "She did a quick stretch before running.",
+                    "After sitting all day, he enjoyed a long stretch.",
+                    "The trainer taught the students simple stretches.",
+                    "Morning stretches help reduce stiffness."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "din",
+        "variations": [
+            "din",
+            "dins",
+            "dinning",
+            "dinned"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A loud, unpleasant, and continuous noise.",
+                "examples": [
+                    "The din of traffic filled the busy street.",
+                    "Children shouted above the din of the crowd.",
+                    "The factory produced a constant din all day.",
+                    "He struggled to hear over the din of the storm."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To repeat something loudly and continuously until it becomes hard to ignore.",
+                "examples": [
+                    "Teachers dinned the rules into the students repeatedly.",
+                    "The warning was dinned into everyone’s minds.",
+                    "Parents often din good manners into children.",
+                    "The coach kept dinning instructions throughout practice."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "intangible",
+        "variations": [
+            "intangible",
+            "more intangible",
+            "most intangible",
+            "intangibly",
+            "intangibility"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Unable to be touched physically; existing as an idea, feeling, quality, or concept rather than a material object.",
+                "examples": [
+                    "Love and trust are intangible qualities.",
+                    "The project created intangible benefits for the community.",
+                    "Fear can be powerful even though it is intangible.",
+                    "Artists often try to express intangible emotions through music."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Difficult to clearly define, measure, or fully understand.",
+                "examples": [
+                    "There was an intangible sadness in his voice.",
+                    "Success sometimes depends on intangible factors like confidence.",
+                    "The film captured an intangible sense of loneliness.",
+                    "Her influence on the team was subtle but intangible."
+                ]
+            }
+        ]
+    }
+]

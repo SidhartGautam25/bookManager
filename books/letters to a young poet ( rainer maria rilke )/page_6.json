@@ -1,0 +1,55 @@
+[
+    {
+        "word": "descent",
+        "variations": [
+            "descent",
+            "descents",
+            "descend",
+            "descends",
+            "descending",
+            "descended"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "The act of moving or coming downward from a higher place to a lower one.",
+                "examples": [
+                    "The descent from the mountain became dangerous after sunset.",
+                    "Passengers felt nervous during the airplane’s rapid descent.",
+                    "The river’s descent through the valley created beautiful waterfalls.",
+                    "Climbers began their slow descent before the storm arrived."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A gradual decline into a worse condition, situation, or state.",
+                "examples": [
+                    "The novel describes his descent into loneliness and despair.",
+                    "People worried about the city’s descent into violence.",
+                    "Her financial descent began after the company closed.",
+                    "The king’s greed led to the kingdom’s moral descent."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A person’s family origin, background, or ancestry.",
+                "examples": [
+                    "She is of Indian descent but grew up abroad.",
+                    "The festival celebrates people of African descent.",
+                    "He proudly spoke about his royal descent.",
+                    "Many families in the town share a common descent."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "An attack, arrival, or movement downward upon a place or group.",
+                "examples": [
+                    "The sudden descent of soldiers frightened the villagers.",
+                    "Birds made a quick descent onto the field.",
+                    "The descent of the rescue team brought relief to the trapped miners.",
+                    "Locals watched the descent of helicopters into the valley."
+                ]
+            }
+        ]
+    }
+]

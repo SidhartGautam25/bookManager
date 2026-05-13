@@ -1,0 +1,165 @@
+[
+    {
+        "word": "vigorous",
+        "variations": [
+            "vigorous",
+            "more vigorous",
+            "most vigorous",
+            "vigorously",
+            "vigour"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Strong, energetic, healthy, and full of force or activity.",
+                "examples": [
+                    "Despite his age, he remained vigorous and active.",
+                    "The team made a vigorous effort to rescue the climbers.",
+                    "Plants grew vigorously after the heavy rain.",
+                    "She gave a vigorous performance during the competition."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Done with great energy, strength, or enthusiasm.",
+                "examples": [
+                    "The crowd responded with vigorous applause.",
+                    "Doctors encouraged vigorous exercise for better health.",
+                    "The government launched a vigorous campaign against pollution.",
+                    "Strong winds were vigorously shaking the trees."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "forfeit",
+        "variations": [
+            "forfeit",
+            "forfeits",
+            "forfeiting",
+            "forfeited",
+            "forfeiture"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To lose something as a penalty for a mistake, crime, or failure to meet rules or conditions.",
+                "examples": [
+                    "The player forfeited the match after breaking the rules.",
+                    "He risked forfeiting his reputation through dishonest actions.",
+                    "Companies may forfeit licenses if they ignore safety laws.",
+                    "She forfeited her chance by arriving too late."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Something lost or given up as punishment or consequence.",
+                "examples": [
+                    "Missing practice resulted in a small forfeit for the players.",
+                    "The team accepted the forfeit after failing to appear.",
+                    "He paid a financial forfeit for breaking the agreement.",
+                    "The children treated the game’s forfeit as a joke."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Lost or surrendered because of a rule, mistake, or penalty.",
+                "examples": [
+                    "The championship title became forfeit after the violation.",
+                    "Several rights were declared forfeit by the court.",
+                    "The prize money was considered forfeit after cheating was discovered.",
+                    "Their forfeit victory disappointed the audience."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "engendering",
+        "variations": [
+            "engender",
+            "engenders",
+            "engendering",
+            "engendered"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Creating, causing, or giving rise to feelings, conditions, or situations.",
+                "examples": [
+                    "The leader’s speech was engendering hope among the people.",
+                    "Fear and uncertainty were engendering social tension.",
+                    "Their kindness had engendered trust within the community.",
+                    "The reforms are engendering positive changes in education."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "freed",
+        "variations": [
+            "free",
+            "frees",
+            "freeing",
+            "freed",
+            "freedom",
+            "freely"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Released someone or something from control, danger, confinement, or limitation.",
+                "examples": [
+                    "The rescuers freed the trapped workers safely.",
+                    "She felt freed from years of anxiety after the decision.",
+                    "Several prisoners were freed after new evidence appeared.",
+                    "The bird was finally freeing itself from the net."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "No longer controlled, restricted, trapped, or burdened.",
+                "examples": [
+                    "The freed animals ran into the forest immediately.",
+                    "He felt emotionally freed after speaking the truth.",
+                    "The country celebrated its newly freed citizens.",
+                    "She walked away with a freed and peaceful mind."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "unerring",
+        "variations": [
+            "unerring",
+            "unerringly",
+            "err",
+            "errs",
+            "erring",
+            "erred",
+            "error",
+            "errors"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Always correct, accurate, or reliable without making mistakes.",
+                "examples": [
+                    "The hunter was famous for his unerring aim.",
+                    "She showed an unerring sense of direction in the forest.",
+                    "His unerring judgment impressed the entire team.",
+                    "The scientist’s methods were considered remarkably unerring."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Certain, steady, and dependable in action or result.",
+                "examples": [
+                    "The guide moved with unerring confidence through the mountains.",
+                    "Her unerringly calm voice reassured the frightened children.",
+                    "The dog followed the trail with unerring accuracy.",
+                    "Years of experience gave him an unerring understanding of people."
+                ]
+            }
+        ]
+    }
+]

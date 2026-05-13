@@ -1,0 +1,128 @@
+[
+  {
+    "word": "hideous",
+    "variations": [
+      "hideous",
+      "more hideous",
+      "most hideous",
+      "hideously",
+      "hideousness"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Extremely ugly, unpleasant, or shocking to look at.",
+        "examples": [
+          "The abandoned house looked hideous in the dark.",
+          "He wore a hideous sweater covered in bright colors.",
+          "The storm left behind a hideous mess in the streets.",
+          "She described the creature as the most hideous thing she had ever seen."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having a very unpleasant, harsh, or frightening sound.",
+        "examples": [
+          "A hideous scream echoed through the empty building.",
+          "The machine made hideously loud noises all night.",
+          "Everyone covered their ears at the hideous sound of metal scraping.",
+          "The alarm produced a hideous ringing sound."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Morally shocking, hateful, or deeply offensive.",
+        "examples": [
+          "The community was horrified by the hideous act of violence.",
+          "People condemned the hideously cruel treatment of the animals.",
+          "The film showed the hideous reality of war.",
+          "He apologized for making such a hideous remark."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "heinous",
+    "variations": [
+      "heinous",
+      "more heinous",
+      "most heinous",
+      "heinously",
+      "heinousness"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Extremely evil, wicked, cruel, or morally terrible, especially used for crimes or actions.",
+        "examples": [
+          "The police investigated the heinous crime for several months.",
+          "Everyone was shocked by the heinously violent attack.",
+          "The dictator was responsible for some of history’s most heinous acts.",
+          "She could not forgive such a heinous betrayal."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rehabilitated",
+    "variations": [
+      "rehabilitate",
+      "rehabilitates",
+      "rehabilitating",
+      "rehabilitated",
+      "rehabilitation"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Helped someone return to a healthy, normal, or improved condition after illness, injury, addiction, or difficulty.",
+        "examples": [
+          "The athlete was rehabilitated after months of therapy.",
+          "Doctors are rehabilitating patients recovering from serious injuries.",
+          "The center rehabilitates people struggling with addiction.",
+          "He slowly rehabilitated himself after the accident."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "Restored someone’s reputation, public image, or social standing after damage or criticism.",
+        "examples": [
+          "Historians later rehabilitated the reputation of the misunderstood leader.",
+          "The documentary helped rehabilitate her public image.",
+          "Writers are rehabilitating forgotten artists through modern research.",
+          "His name was finally rehabilitated after new evidence appeared."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "Repaired or restored a building, place, object, or system so that it could be used again.",
+        "examples": [
+          "The old railway station was rehabilitated and reopened.",
+          "Workers are rehabilitating damaged roads after the flood.",
+          "The government rehabilitated several abandoned buildings.",
+          "The historic theater was beautifully rehabilitated."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "Trained or prepared someone, especially a criminal or offender, to successfully return to society and live responsibly.",
+        "examples": [
+          "The prison program rehabilitated many young offenders.",
+          "Counselors work hard to rehabilitate troubled teenagers.",
+          "Several inmates were successfully rehabilitating through education programs.",
+          "The organization focuses on rehabilitating former addicts and prisoners."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "Recovered physically, mentally, or emotionally after a difficult condition or experience.",
+        "examples": [
+          "She rehabilitated slowly after the surgery.",
+          "The injured bird was rehabilitating at the rescue center.",
+          "Many patients rehabilitate faster with family support.",
+          "He fully rehabilitated after years of treatment."
+        ]
+      }
+    ]
+  }
+]

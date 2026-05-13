@@ -1,0 +1,235 @@
+[
+    {
+        "word": "savour",
+        "variations": [
+            "savour",
+            "savours",
+            "savouring",
+            "savoured",
+            "savoury"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To enjoy something slowly and fully, especially a taste, moment, feeling, or experience.",
+                "examples": [
+                    "She savoured every bite of the homemade dessert.",
+                    "He was savouring the peaceful silence after the storm.",
+                    "Travelers often savour the beauty of the mountains at sunrise.",
+                    "They savoured their final evening together before parting."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A particular taste, smell, or quality that gives pleasure or interest.",
+                "examples": [
+                    "The soup had a rich savour of spices and herbs.",
+                    "There was a savour of smoke in the evening air.",
+                    "The story carried a savour of old legends and mystery.",
+                    "Fresh bread filled the room with a pleasant savour."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "splendours",
+        "variations": [
+            "splendour",
+            "splendours",
+            "splendid",
+            "splendidly"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Great beauty, magnificence, richness, or impressive brilliance.",
+                "examples": [
+                    "Tourists admired the splendours of the ancient palace.",
+                    "The forest revealed its splendours during autumn.",
+                    "Poets often write about the splendours of nature.",
+                    "The city’s cultural splendour attracted visitors from around the world."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "faintest",
+        "variations": [
+            "faint",
+            "fainter",
+            "faintest",
+            "faintly"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Very slight, weak, unclear, or barely noticeable.",
+                "examples": [
+                    "She heard the faintest sound coming from the attic.",
+                    "There was not the faintest sign of movement in the dark room.",
+                    "A faint light was glowing in the distance.",
+                    "He smiled faintly before turning away."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Very weak physically, often because of tiredness, illness, fear, or hunger.",
+                "examples": [
+                    "After hours without food, she felt faint.",
+                    "The exhausted runner gave the faintest wave to the crowd.",
+                    "His voice became fainter as he walked away.",
+                    "The patient looked pale and faint after the surgery."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "resonance",
+        "variations": [
+            "resonance",
+            "resonances",
+            "resonant",
+            "resonating",
+            "resonate",
+            "resonates",
+            "resonated"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A deep, clear, and lasting quality of sound that continues to echo or vibrate.",
+                "examples": [
+                    "The singer’s voice carried a beautiful resonance through the hall.",
+                    "The resonance of the temple bells filled the valley.",
+                    "His resonant tone made the speech more powerful.",
+                    "The guitar strings resonated softly in the quiet room."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A strong emotional connection, meaning, or lasting effect produced by something.",
+                "examples": [
+                    "The poem has deep emotional resonance for many readers.",
+                    "Her words resonated with people who had faced similar struggles.",
+                    "The story’s resonance continued long after the film ended.",
+                    "Ancient myths still carry cultural resonance today."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "trembling",
+        "variations": [
+            "tremble",
+            "trembles",
+            "trembling",
+            "trembled",
+            "tremblingly"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Shaking slightly because of fear, nervousness, cold, excitement, weakness, or strong emotion.",
+                "examples": [
+                    "She was trembling with fear during the storm.",
+                    "His hands trembled as he opened the letter.",
+                    "The frightened child stood trembling near the doorway.",
+                    "He trembles whenever he speaks before a large crowd."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Shaking slightly or appearing unsteady because of emotion, weakness, or cold.",
+                "examples": [
+                    "The old man spoke in a trembling voice.",
+                    "A trembling hand reached for the glass of water.",
+                    "She gave a trembling smile before leaving.",
+                    "The candle cast a trembling light across the wall."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A slight shaking movement caused by emotion, fear, weakness, or cold.",
+                "examples": [
+                    "There was a trembling in his voice during the speech.",
+                    "The trembling of the leaves showed the strength of the wind.",
+                    "She noticed a faint trembling in her hands.",
+                    "The horse’s trembling worried the rider."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "grasped",
+        "variations": [
+            "grasp",
+            "grasps",
+            "grasping",
+            "grasped"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Held something firmly with the hand.",
+                "examples": [
+                    "He grasped the rope tightly before climbing.",
+                    "She was grasping the handle with both hands.",
+                    "The child grasped his mother’s finger while walking.",
+                    "He quickly grasped the falling cup."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Understood or realized something clearly.",
+                "examples": [
+                    "She finally grasped the meaning of the difficult poem.",
+                    "Students were struggling to grasp the new concept.",
+                    "He quickly grasps complex ideas during discussions.",
+                    "It took me years to fully grasp the importance of patience."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A firm hold or a clear understanding of something.",
+                "examples": [
+                    "He kept a strong grasp on the steering wheel.",
+                    "Her grasp of history impressed the teacher.",
+                    "The climber lost his grasp and slipped slightly.",
+                    "She has a good grasp of several languages."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "relinquish",
+        "variations": [
+            "relinquish",
+            "relinquishes",
+            "relinquishing",
+            "relinquished",
+            "relinquishment"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To give up, leave behind, or stop holding something such as power, control, rights, or possessions.",
+                "examples": [
+                    "The king reluctantly relinquished his throne.",
+                    "She refused to relinquish control of the project.",
+                    "Many people struggle with relinquishing old habits.",
+                    "He finally relinquished his claim to the property."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To let go of something physically or emotionally.",
+                "examples": [
+                    "The child would not relinquish the toy.",
+                    "She slowly relinquished her fear of failure.",
+                    "He reluctantly relinquished her hand before boarding the train.",
+                    "Meditation teaches people to relinquish unnecessary worries."
+                ]
+            }
+        ]
+    }
+]

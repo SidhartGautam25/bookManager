@@ -1,0 +1,113 @@
+[
+    {
+        "word": "nuts",
+        "variations": [
+            "nut",
+            "nuts",
+            "nutty",
+            "nuttier",
+            "nuttiest"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Hard-shelled fruits or seeds that contain edible kernels.",
+                "examples": [
+                    "She added nuts and raisins to the cake mixture.",
+                    "Squirrels were gathering nuts for the winter.",
+                    "The market sold almonds, walnuts, and other nuts.",
+                    "Children cracked open roasted nuts during the festival."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Crazy, foolish, strange, or behaving in an unreasonable way.",
+                "examples": [
+                    "He must be nuts to climb the mountain in that weather.",
+                    "The idea sounded completely nutty at first.",
+                    "People thought the inventor was nuts before his success.",
+                    "She laughed at the nuttiest stories during the trip."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Extremely enthusiastic or obsessed about something.",
+                "examples": [
+                    "He is nuts about old jazz music.",
+                    "The children were nutty about superhero movies.",
+                    "She has always been nuts for adventure travel.",
+                    "Fans went nuts when the singer appeared on stage."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "lulled",
+        "variations": [
+            "lull",
+            "lulls",
+            "lulling",
+            "lulled"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Calmed or soothed someone into feeling relaxed, sleepy, or peaceful.",
+                "examples": [
+                    "The sound of rain lulled him to sleep.",
+                    "She was lulled by the gentle music in the room.",
+                    "The baby quickly settled after being lulled by her mother’s voice.",
+                    "Warm winds and quiet waves had lulled the travelers into comfort."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Caused someone to feel falsely safe or less alert.",
+                "examples": [
+                    "The calm weather lulled sailors into carelessness.",
+                    "People were lulled into believing the danger had passed.",
+                    "Years of peace had lulled the kingdom into complacency.",
+                    "The quiet situation was lulling investors into confidence."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A temporary period of calm, silence, or reduced activity.",
+                "examples": [
+                    "There was a brief lull in the storm during the night.",
+                    "Conversation paused in a sudden lull.",
+                    "The workers rested during a lull in activity.",
+                    "A short lull before the performance increased the tension."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "humdrum",
+        "variations": [
+            "humdrum"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Dull, ordinary, repetitive, and lacking excitement or variety.",
+                "examples": [
+                    "He grew tired of his humdrum office routine.",
+                    "The town seemed quiet and humdrum after the festival.",
+                    "She wanted to escape her humdrum daily life.",
+                    "Many workers dream of adventure beyond humdrum routines."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A boring or monotonous way of life or activity.",
+                "examples": [
+                    "Travel helped him escape the humdrum of city life.",
+                    "The novel describes the humdrum of factory work.",
+                    "She feared returning to the humdrum after her holiday.",
+                    "Music brought excitement into an otherwise humdrum existence."
+                ]
+            }
+        ]
+    }
+]

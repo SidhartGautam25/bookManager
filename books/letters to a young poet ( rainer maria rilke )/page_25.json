@@ -1,0 +1,94 @@
+[
+    {
+        "word": "inconsequentiality",
+        "variations": [
+            "inconsequentiality",
+            "inconsequential",
+            "inconsequentially"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "The quality of being unimportant, insignificant, or having little effect or value.",
+                "examples": [
+                    "He was frustrated by the inconsequentiality of the argument.",
+                    "Many daily worries later reveal their inconsequentiality.",
+                    "The novel explores the feeling of human inconsequentiality in the vast universe.",
+                    "She dismissed the mistake because of its inconsequential nature."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A lack of seriousness, importance, or meaningful impact.",
+                "examples": [
+                    "Critics complained about the film’s emotional inconsequentiality.",
+                    "The meeting drifted into topics of complete inconsequentiality.",
+                    "His comments were ignored because of their inconsequentiality.",
+                    "Years later, the conflict seemed trivial and inconsequential."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "astray",
+        "variations": [
+            "astray"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Away from the correct path, direction, or destination.",
+                "examples": [
+                    "The child wandered astray in the crowded market.",
+                    "Several hikers went astray during the storm.",
+                    "The sheep had strayed astray from the flock.",
+                    "Without a map, travelers can easily go astray in the forest."
+                ]
+            },
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Away from correct behavior, thinking, or moral conduct.",
+                "examples": [
+                    "Greed led the ruler astray from justice.",
+                    "He feared that anger might lead him astray.",
+                    "Many young people are led astray by false promises.",
+                    "The teacher tried guiding troubled students who had gone astray."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "entrust",
+        "variations": [
+            "entrust",
+            "entrusts",
+            "entrusting",
+            "entrusted",
+            "trust",
+            "trusts",
+            "trusted"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To give someone responsibility for something important because you trust them.",
+                "examples": [
+                    "She entrusted her friend with the house keys.",
+                    "The manager entrusted him with leading the project.",
+                    "Parents often entrust teachers with their children’s education.",
+                    "He was entrusted with sensitive information."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To place something valuable, important, or personal into someone’s care.",
+                "examples": [
+                    "The museum entrusted the painting to expert restorers.",
+                    "She entrusted her secrets only to close friends.",
+                    "Villagers entrusted the elder with settling disputes.",
+                    "The captain entrusted navigation duties to his officer."
+                ]
+            }
+        ]
+    }
+]

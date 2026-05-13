@@ -1,0 +1,43 @@
+[
+    {
+        "word": "blared",
+        "variations": [
+            "blare",
+            "blares",
+            "blaring",
+            "blared"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Produced a very loud, harsh, and powerful sound, often suddenly or continuously.",
+                "examples": [
+                    "Music blared from the speakers late into the night.",
+                    "The alarm was blaring throughout the building.",
+                    "Car horns blare constantly in the busy streets.",
+                    "The television blared loudly while everyone was trying to sleep."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Displayed or announced something very loudly, clearly, or in an attention-grabbing way.",
+                "examples": [
+                    "The newspaper blared shocking headlines across the front page.",
+                    "Bright advertisements blared from every screen in the market.",
+                    "The signs were blaring warnings about the storm.",
+                    "News channels blared updates throughout the evening."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A loud, harsh, or unpleasant sound.",
+                "examples": [
+                    "A sudden blare from the siren startled everyone.",
+                    "The blares of traffic filled the narrow street.",
+                    "They woke up to the blare of loud music outside.",
+                    "The trumpet’s blare echoed through the hall."
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "word": "explicable",
+        "variations": [
+            "explicable",
+            "more explicable",
+            "most explicable",
+            "explicably",
+            "explicability",
+            "explain",
+            "explains",
+            "explained",
+            "explaining",
+            "explanation"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Able to be understood, explained, or given a reasonable cause or meaning.",
+                "examples": [
+                    "The sudden delay was completely explicable because of the heavy rain.",
+                    "Her reaction became more explicable after hearing the full story.",
+                    "Scientists searched for an explicable reason behind the unusual event.",
+                    "What first seemed mysterious later proved entirely explicable."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "affirmative",
+        "variations": [
+            "affirmative",
+            "affirmatives",
+            "affirmatively",
+            "affirm",
+            "affirms",
+            "affirmed",
+            "affirming",
+            "affirmation"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Showing agreement, approval, or support; expressing that something is true or accepted.",
+                "examples": [
+                    "She gave an affirmative answer to the invitation.",
+                    "The committee made an affirmative decision after discussion.",
+                    "He nodded affirmatively during the meeting.",
+                    "The judge affirmed the earlier ruling in court."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A reply or statement that means yes, agreement, or approval.",
+                "examples": [
+                    "Everyone responded in the affirmative.",
+                    "The officer answered with a clear affirmative over the radio.",
+                    "Her quiet affirmative surprised the audience.",
+                    "The proposal received several affirmatives during voting."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Positive, active, or encouraging in attitude or approach.",
+                "examples": [
+                    "Teachers should create an affirmative learning environment.",
+                    "He tried to maintain an affirmative outlook despite difficulties.",
+                    "The speech carried an affirmative message of hope.",
+                    "Parents appreciated the school’s affirmative approach toward creativity."
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "word": "perjured",
+        "variations": [
+            "perjure",
+            "perjures",
+            "perjuring",
+            "perjured",
+            "perjury"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Lied deliberately after making a legal or formal promise to tell the truth, especially in a court of law.",
+                "examples": [
+                    "The witness perjured himself during the trial.",
+                    "She was accused of perjuring herself to protect her friend.",
+                    "Anyone who knowingly perjures themselves in court can face punishment.",
+                    "The lawyer proved that the official had perjured himself under oath."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Having lied under oath or given false legal testimony.",
+                "examples": [
+                    "The judge rejected the perjured testimony.",
+                    "He was exposed as a perjured witness.",
+                    "The case collapsed because of perjured statements.",
+                    "Investigators uncovered several perjured documents."
+                ]
+            }
+        ]
+    }
+]

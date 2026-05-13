@@ -1,0 +1,166 @@
+[
+    {
+        "word": "shuddered",
+        "variations": [
+            "shudder",
+            "shudders",
+            "shuddering",
+            "shuddered"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Shook suddenly and briefly because of fear, cold, shock, disgust, or strong emotion.",
+                "examples": [
+                    "She shuddered when she heard the strange noise outside.",
+                    "The child was shuddering from the freezing wind.",
+                    "He shudders whenever he remembers the accident.",
+                    "The entire crowd shuddered at the terrifying scene."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Moved or vibrated suddenly with a shaking motion.",
+                "examples": [
+                    "The old train shuddered before coming to a stop.",
+                    "Windows shuddered during the thunderstorm.",
+                    "The engine was shuddering violently on the rough road.",
+                    "The building briefly shuddered after the explosion."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A sudden shaking movement caused by fear, emotion, cold, or shock.",
+                "examples": [
+                    "A shudder ran through her body after the nightmare.",
+                    "He felt a sudden shudder of fear.",
+                    "The loud scream sent shudders through the audience.",
+                    "She gave a small shudder and stepped back."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "jotting",
+        "variations": [
+            "jot",
+            "jots",
+            "jotting",
+            "jotted"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Writing something down quickly in a short or informal way.",
+                "examples": [
+                    "She was jotting notes during the lecture.",
+                    "He jotted the phone number on a piece of paper.",
+                    "Students often jot down important points while studying.",
+                    "I quickly jotted a reminder before leaving."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A short note or quick piece of writing made to remember something.",
+                "examples": [
+                    "Her notebook was full of random jottings.",
+                    "He checked his jottings before the meeting began.",
+                    "The writer kept small jottings of story ideas.",
+                    "Several hurried jottings covered the page."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "stumble",
+        "variations": [
+            "stumble",
+            "stumbles",
+            "stumbling",
+            "stumbled"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To trip or lose balance while walking or moving.",
+                "examples": [
+                    "He stumbled over a rock on the dark path.",
+                    "The tired runner was stumbling near the finish line.",
+                    "She stumbles whenever she walks in high heels.",
+                    "The child stumbled but quickly stood up again."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To speak or act in an uncertain, confused, or awkward way.",
+                "examples": [
+                    "He stumbled through his speech nervously.",
+                    "She was stumbling over difficult words while reading.",
+                    "The witness stumbled when answering questions.",
+                    "He stumbled into an explanation that made little sense."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To accidentally discover or encounter something.",
+                "examples": [
+                    "They stumbled upon an old cave in the forest.",
+                    "She stumbled across a rare book in the market.",
+                    "Researchers stumbled on a surprising discovery.",
+                    "I accidentally stumbled into the wrong classroom."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A loss of balance, mistake, or moment of difficulty.",
+                "examples": [
+                    "One stumble nearly cost him the race.",
+                    "The company recovered quickly after its financial stumble.",
+                    "Her small stumble during the dance went unnoticed.",
+                    "Every learner makes a few stumbles in the beginning."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "broadsided",
+        "variations": [
+            "broadside",
+            "broadsides",
+            "broadsiding",
+            "broadsided"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Hit the side of something with great force, especially in a vehicle accident.",
+                "examples": [
+                    "The truck broadsided the small car at the crossing.",
+                    "A speeding vehicle had broadsided the bus during the storm.",
+                    "The cyclist was nearly broadsided by a turning van.",
+                    "The ship was broadsided by huge waves."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Strongly criticized, attacked, or shocked someone suddenly with words or actions.",
+                "examples": [
+                    "The journalist broadsided the minister during the interview.",
+                    "She was broadsided by unexpected criticism from her team.",
+                    "The report broadsides several powerful companies.",
+                    "He felt emotionally broadsided by the sudden announcement."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A strong attack, criticism, or forceful hit directed at someone or something.",
+                "examples": [
+                    "The speech was a direct broadside against corruption.",
+                    "Critics launched broadsides at the new policy.",
+                    "The newspaper published a political broadside.",
+                    "The army suffered a broadside from enemy fire."
+                ]
+            }
+        ]
+    }
+]

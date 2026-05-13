@@ -1,0 +1,300 @@
+[
+    {
+        "word": "thicket",
+        "variations": [
+            "thicket",
+            "thickets"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A dense group of bushes, small trees, or plants growing closely together.",
+                "examples": [
+                    "The rabbit disappeared into a thick thicket.",
+                    "Travelers struggled to move through the thorny thickets.",
+                    "Birds nested safely inside the forest thicket.",
+                    "A narrow path led through the dark thicket."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A complicated or difficult situation filled with confusion or problems.",
+                "examples": [
+                    "The investigation entered a thicket of legal issues.",
+                    "He found himself trapped in a thicket of lies.",
+                    "The debate became a thicket of confusing arguments.",
+                    "Writers often struggle through a thicket of ideas before finishing a book."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "glider",
+        "variations": [
+            "glider",
+            "gliders",
+            "glide",
+            "glides",
+            "gliding",
+            "glided"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A light aircraft designed to fly without an engine for most of its journey.",
+                "examples": [
+                    "The glider floated silently above the hills.",
+                    "Pilots trained for hours before flying gliders alone.",
+                    "A white glider circled gracefully in the sky.",
+                    "The wind helped the glider remain airborne."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Something that moves smoothly and easily.",
+                "examples": [
+                    "The skater moved like a glider across the ice.",
+                    "Modern chairs sometimes have gliders on their legs.",
+                    "The boat became a silent glider over the calm water.",
+                    "Her graceful movements resembled those of a glider."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "tangled",
+        "variations": [
+            "tangle",
+            "tangles",
+            "tangling",
+            "tangled"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Twisted together in a messy or confusing way.",
+                "examples": [
+                    "She tried to comb her tangled hair.",
+                    "The fishing lines became badly tangled.",
+                    "Roots formed a tangled pattern beneath the tree.",
+                    "The wires were tangled behind the computer desk."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Twisted or caught things together so they became difficult to separate.",
+                "examples": [
+                    "The storm tangled the branches together.",
+                    "He tangled the headphones in his pocket.",
+                    "Children were tangling strings while flying kites.",
+                    "The dog had tangled itself in the rope."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Complicated, confused, or difficult to understand clearly.",
+                "examples": [
+                    "They became trapped in a tangled legal dispute.",
+                    "Her tangled emotions made decision-making difficult.",
+                    "The story follows a tangled web of relationships.",
+                    "History often leaves behind tangled political questions."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "impenetrable",
+        "variations": [
+            "impenetrable",
+            "more impenetrable",
+            "most impenetrable",
+            "impenetrably",
+            "impenetrability"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Impossible or very difficult to pass through or enter.",
+                "examples": [
+                    "The jungle was thick and almost impenetrable.",
+                    "Soldiers faced an impenetrable wall of defenses.",
+                    "Bushes formed an impenetrable barrier around the ruins.",
+                    "Fog created an impenetrable curtain across the road."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Very difficult to understand, explain, or figure out.",
+                "examples": [
+                    "The philosopher’s writing seemed impenetrable to beginners.",
+                    "She maintained an impenetrable silence during the interview.",
+                    "His expression remained calm and impenetrable.",
+                    "The legal document was almost impenetrably complex."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "hutches",
+        "variations": [
+            "hutch",
+            "hutches"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Boxes or enclosed shelters used for keeping small animals such as rabbits.",
+                "examples": [
+                    "The rabbits rested quietly inside their hutches.",
+                    "Farmers cleaned the wooden hutches every morning.",
+                    "Several hutches stood beside the garden wall.",
+                    "Children fed carrots to rabbits in the hutches."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Storage furniture with shelves or cabinets, often used in kitchens or dining rooms.",
+                "examples": [
+                    "Her grandmother kept dishes in an old wooden hutch.",
+                    "The dining room contained antique hutches filled with glassware.",
+                    "They bought new hutches for extra storage space.",
+                    "Books and decorations covered the shelves of the hutch."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "clump",
+        "variations": [
+            "clump",
+            "clumps",
+            "clumping",
+            "clumped"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A small group or cluster of things growing or gathered closely together.",
+                "examples": [
+                    "A clump of trees stood near the river.",
+                    "She found a clump of wild flowers beside the road.",
+                    "Mud formed thick clumps on the boots.",
+                    "Birds gathered in noisy clumps on the wires."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To gather or stick together in groups or masses.",
+                "examples": [
+                    "Wet soil clumped around the roots.",
+                    "People were clumping together to stay warm.",
+                    "The powder had clumped because of moisture.",
+                    "Children clumped near the stage to watch the performance."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To walk heavily with loud steps.",
+                "examples": [
+                    "He clumped down the stairs angrily.",
+                    "Boots clumped across the wooden floor.",
+                    "The soldiers were clumping through the muddy field.",
+                    "She heard someone clumping toward the door."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "gnarled",
+        "variations": [
+            "gnarl",
+            "gnarls",
+            "gnarling",
+            "gnarled"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Twisted, rough, and uneven because of age or long growth.",
+                "examples": [
+                    "The old tree had gnarled branches stretching in every direction.",
+                    "His gnarled hands showed years of hard labor.",
+                    "Roots formed a gnarled pattern across the ground.",
+                    "The forest contained ancient gnarled oaks."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Complicated, difficult, or harsh in appearance or nature.",
+                "examples": [
+                    "The story follows a gnarled path of revenge and guilt.",
+                    "Her face carried a gnarled expression of pain.",
+                    "The negotiations became increasingly gnarled over time.",
+                    "The old sailor spoke in a rough, gnarled voice."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "wormed",
+        "variations": [
+            "worm",
+            "worms",
+            "worming",
+            "wormed"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Moved slowly and carefully into or through a narrow space.",
+                "examples": [
+                    "The cat wormed its way through the fence.",
+                    "He wormed through the crowded market silently.",
+                    "Roots had wormed into the cracks of the wall.",
+                    "The snake-like robot wormed under the rocks."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Managed to gain something slowly or cleverly, often through persistence.",
+                "examples": [
+                    "She wormed information out of the reluctant witness.",
+                    "The salesman wormed his way into the manager’s trust.",
+                    "He had wormed himself into the group over time.",
+                    "Children often worm extra treats from their grandparents."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "crouched",
+        "variations": [
+            "crouch",
+            "crouches",
+            "crouching",
+            "crouched"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Bent low with knees close to the body, usually to hide, prepare to jump, or stay balanced.",
+                "examples": [
+                    "The tiger crouched silently before attacking.",
+                    "He was crouching behind the wall during the storm.",
+                    "Children crouched near the fire for warmth.",
+                    "The athlete crouched at the starting line."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Positioned low to the ground in a bent posture.",
+                "examples": [
+                    "A crouched figure appeared in the shadows.",
+                    "The crouched animal watched the travelers carefully.",
+                    "She remained in a crouched position behind the bushes.",
+                    "The sculpture showed a crouched warrior preparing for battle."
+                ]
+            }
+        ]
+    }
+]

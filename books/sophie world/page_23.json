@@ -1,0 +1,65 @@
+[
+    {
+        "word": "tamper",
+        "variations": [
+            "tamper",
+            "tampers",
+            "tampering",
+            "tampered"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To interfere with, change, or touch something secretly or improperly in a way that may cause damage or trouble.",
+                "examples": [
+                    "Someone had tampered with the lock during the night.",
+                    "Police discovered that the evidence was tampered with.",
+                    "Children were warned not to tamper with electrical wires.",
+                    "Hackers had been tampering with the company’s data system."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To make unwanted or dishonest changes to something.",
+                "examples": [
+                    "The mechanic refused to tamper with the safety controls.",
+                    "Officials accused the group of tampering with election results.",
+                    "He tampered with the recipe and ruined the dish.",
+                    "Researchers carefully avoid tampering with original historical documents."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "treacherous",
+        "variations": [
+            "treacherous",
+            "more treacherous",
+            "most treacherous",
+            "treacherously",
+            "treachery"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Dangerous, unreliable, or likely to cause harm unexpectedly.",
+                "examples": [
+                    "Travelers crossed the treacherous mountain path carefully.",
+                    "The sea became treacherous during the storm.",
+                    "Ice made the roads extremely treacherous to drive on.",
+                    "The climbers faced treacherous weather conditions."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Dishonest or disloyal in a way that involves betrayal.",
+                "examples": [
+                    "The king was betrayed by a treacherous adviser.",
+                    "She could not forgive his treacherous actions.",
+                    "Stories often feature treacherous characters seeking power.",
+                    "The spy lived among them while secretly acting treacherously."
+                ]
+            }
+        ]
+    }
+]

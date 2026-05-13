@@ -1,0 +1,88 @@
+[
+    {
+        "word": "professed",
+        "variations": [
+            "profess",
+            "professes",
+            "professing",
+            "professed",
+            "profession",
+            "professor",
+            "professional"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Openly claimed, declared, or admitted a belief, feeling, quality, or intention, whether sincerely or not.",
+                "examples": [
+                    "He professed his admiration for the poet during the interview.",
+                    "She has always professed loyalty to her friends.",
+                    "The politician professes concern for ordinary people.",
+                    "They were professing innocence despite the evidence."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Claimed openly or publicly, especially about beliefs, emotions, or intentions.",
+                "examples": [
+                    "His professed honesty was questioned after the scandal.",
+                    "She remained calm despite her professed fears.",
+                    "The group’s professed goal was to help poor communities.",
+                    "Their professed friendship slowly disappeared over time."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "sneaking",
+        "variations": [
+            "sneak",
+            "sneaks",
+            "sneaking",
+            "sneaked",
+            "snuck"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Moving quietly and secretly in order to avoid being noticed.",
+                "examples": [
+                    "The children were sneaking into the kitchen for snacks.",
+                    "He sneaked out of the house late at night.",
+                    "A cat was sneaking through the narrow alley.",
+                    "She snuck into the theater without buying a ticket."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Doing something secretly, dishonestly, or without permission.",
+                "examples": [
+                    "He was sneaking looks at his phone during class.",
+                    "Someone had sneaked extra sugar into the recipe.",
+                    "They sneak into abandoned buildings to explore them.",
+                    "She snuck a letter into his bag before leaving."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Done secretly, dishonestly, or in a quiet hidden way.",
+                "examples": [
+                    "He gave her a sneaking smile before walking away.",
+                    "The report criticized the company’s sneaking tactics.",
+                    "She had a sneaking suspicion that something was wrong.",
+                    "The thief made a sneaking attempt to enter the shop."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The act of moving or behaving secretly to avoid attention.",
+                "examples": [
+                    "His sneaking around the house worried his parents.",
+                    "The guards noticed suspicious sneaking near the gate.",
+                    "Children often enjoy the thrill of sneaking out at night.",
+                    "Her constant sneaking eventually made everyone distrust her."
+                ]
+            }
+        ]
+    }
+]

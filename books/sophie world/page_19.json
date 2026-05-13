@@ -1,0 +1,148 @@
+[
+    {
+        "word": "precarious",
+        "variations": [
+            "precarious",
+            "more precarious",
+            "most precarious",
+            "precariously",
+            "precariousness"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Unsafe, unstable, or likely to fail or become dangerous at any moment.",
+                "examples": [
+                    "The climbers stood on a precarious ledge above the valley.",
+                    "Their financial situation became increasingly precarious.",
+                    "The old bridge looked dangerously precarious after the storm.",
+                    "Workers balanced precariously on the tall scaffolding."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Uncertain and dependent on chance or changing conditions.",
+                "examples": [
+                    "Peace in the region remained precarious for years.",
+                    "Many artists live with precarious incomes.",
+                    "The company’s future seemed precariously uncertain.",
+                    "His position in the team became more precarious after the mistake."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "stiff",
+        "variations": [
+            "stiff",
+            "stiffer",
+            "stiffest",
+            "stiffly",
+            "stiffness"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Hard to bend, move, or change shape.",
+                "examples": [
+                    "The fabric felt stiff after drying in the sun.",
+                    "Cold weather made his fingers stiff.",
+                    "She walked with stiff legs after the long journey.",
+                    "The old door was too stiff to open easily."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Formal, serious, or lacking warmth and relaxation.",
+                "examples": [
+                    "Their conversation remained polite but stiff.",
+                    "He gave a stiff smile during the meeting.",
+                    "The ceremony felt stiff and overly formal.",
+                    "She sat stiffly beside strangers at dinner."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Difficult, severe, or requiring great effort.",
+                "examples": [
+                    "The team faced stiff competition in the finals.",
+                    "Climbing the mountain was a stiff challenge.",
+                    "The company imposed stiff penalties for breaking rules.",
+                    "Students prepared for a stiff examination."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A dead body, used informally or humorously.",
+                "examples": [
+                    "Detectives discovered a stiff near the abandoned warehouse.",
+                    "Old crime novels sometimes use the word stiff for a corpse.",
+                    "The reporter joked darkly about finding another stiff.",
+                    "The movie opened with a mysterious stiff in the alley."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "interminable",
+        "variations": [
+            "interminable",
+            "more interminable",
+            "most interminable",
+            "interminably"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Seeming endless because it continues for too long or becomes tiresome.",
+                "examples": [
+                    "The travelers faced an interminable wait at the station.",
+                    "His speech felt interminably long to the audience.",
+                    "Rain continued through an interminable night.",
+                    "The road stretched in an interminable line across the desert."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Impossible or very difficult to bring to an end.",
+                "examples": [
+                    "The conflict seemed almost interminable.",
+                    "They became trapped in interminable arguments.",
+                    "Interminable construction work frustrated local residents.",
+                    "The novel describes the interminable suffering caused by war."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "profusion",
+        "variations": [
+            "profusion",
+            "profusions",
+            "profuse",
+            "profusely"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A very large amount or abundance of something.",
+                "examples": [
+                    "The garden bloomed with a profusion of flowers.",
+                    "Books lay scattered around the room in profusion.",
+                    "The market displayed a profusion of colors and fabrics.",
+                    "A profusion of stars filled the night sky."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A rich, overflowing display or supply of something.",
+                "examples": [
+                    "She thanked them with profuse gratitude and emotion.",
+                    "The artist used a profusion of bright patterns in the painting.",
+                    "Guests admired the profusion of decorations at the wedding.",
+                    "Water poured profusely from the broken pipe."
+                ]
+            }
+        ]
+    }
+]
