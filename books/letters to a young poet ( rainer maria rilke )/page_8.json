@@ -1,0 +1,36 @@
+[
+    {
+        "word": "concur",
+        "variations": [
+            "concur",
+            "concurs",
+            "concurring",
+            "concurred",
+            "concurrence",
+            "concurrent",
+            "concurrently"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To agree with someone’s opinion, statement, or decision.",
+                "examples": [
+                    "Most experts concur that the plan will succeed.",
+                    "She concurred with the manager’s suggestion during the meeting.",
+                    "I completely concur with your views on education.",
+                    "The judges were concurring on the final verdict."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To happen or exist at the same time together.",
+                "examples": [
+                    "Several problems concurred to create the crisis.",
+                    "The festival concurred with the holiday season this year.",
+                    "Heavy rain and strong winds were concurring throughout the night.",
+                    "Their arrival concurred exactly with the start of the ceremony."
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,105 @@
+[
+    {
+        "word": "birches",
+        "variations": [
+            "birch",
+            "birches",
+            "birching",
+            "birched"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Trees with smooth bark, usually white or silver, commonly found in colder regions.",
+                "examples": [
+                    "Tall birches lined the path through the forest.",
+                    "The wind moved gently through the birch trees.",
+                    "Artists often paint snowy landscapes filled with birches.",
+                    "Sunlight filtered between the silver birches beautifully."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To punish someone by hitting them with birch sticks or branches.",
+                "examples": [
+                    "In earlier times, students were sometimes birched for disobedience.",
+                    "The cruel official threatened to birch the prisoners.",
+                    "Historical records describe children being birched at school.",
+                    "Such harsh punishments are no longer accepted in many places."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "sprawling",
+        "variations": [
+            "sprawl",
+            "sprawls",
+            "sprawling",
+            "sprawled"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Spreading over a large area in an irregular or untidy way.",
+                "examples": [
+                    "They lived in a sprawling city filled with traffic and noise.",
+                    "A sprawling mansion stood at the end of the road.",
+                    "The village slowly grew into a sprawling town.",
+                    "Tourists explored the sprawling gardens around the palace."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Stretching or lying awkwardly with arms and legs spread out.",
+                "examples": [
+                    "The tired dog was sprawling across the floor.",
+                    "Children sprawled on the grass after the game.",
+                    "He had sprawled comfortably on the sofa with a book.",
+                    "The climber fell sprawling onto the muddy ground."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Expanding over a wide area without careful planning.",
+                "examples": [
+                    "The city is sprawling rapidly toward the countryside.",
+                    "Factories sprawled across the outskirts of the town.",
+                    "Modern suburbs are sprawling farther every year.",
+                    "Roads and buildings had sprawled across the valley."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "welling",
+        "variations": [
+            "well",
+            "wells",
+            "welling",
+            "welled"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Rising, flowing upward, or filling gradually, especially with liquid or emotion.",
+                "examples": [
+                    "Tears were welling in her eyes during the farewell.",
+                    "Water welled from the cracked ground after the rain.",
+                    "A feeling of pride welled up inside him.",
+                    "Anger was welling beneath his calm expression."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Increasing or growing strongly inside someone.",
+                "examples": [
+                    "Excitement was welling among the crowd before the concert.",
+                    "Hope welled up after hearing the good news.",
+                    "Fear began welling inside the travelers during the storm.",
+                    "Memories welled up as she revisited her childhood home."
+                ]
+            }
+        ]
+    }
+]

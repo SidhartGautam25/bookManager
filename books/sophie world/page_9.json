@@ -1,0 +1,59 @@
+[
+    {
+        "word": "turmoil",
+        "variations": [
+            "turmoil",
+            "turmoils"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A state of great confusion, disorder, uncertainty, or emotional disturbance.",
+                "examples": [
+                    "The country was thrown into political turmoil after the election.",
+                    "She struggled with inner turmoil before making the decision.",
+                    "The sudden announcement caused turmoil in the office.",
+                    "Years of war left the region in constant turmoil."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A condition of noisy activity, chaos, or violent movement.",
+                "examples": [
+                    "The streets were filled with turmoil during the protest.",
+                    "Waves crashed in turmoil against the rocks.",
+                    "The crowd moved in confusion and turmoil after the explosion.",
+                    "The storm created turmoil across the coastline."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "astray",
+        "variations": [
+            "astray"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Away from the correct path, direction, or destination.",
+                "examples": [
+                    "The child wandered astray in the crowded market.",
+                    "Several hikers went astray during the storm.",
+                    "Without a guide, travelers can easily go astray in the forest.",
+                    "One sheep had strayed astray from the flock."
+                ]
+            },
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Away from correct behavior, judgment, or moral conduct.",
+                "examples": [
+                    "Greed led the ruler astray from justice.",
+                    "Many young people are led astray by false promises.",
+                    "He feared anger might lead him astray.",
+                    "The teacher tried helping students who had gone astray."
+                ]
+            }
+        ]
+    }
+]

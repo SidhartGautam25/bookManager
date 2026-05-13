@@ -1,0 +1,240 @@
+[
+    {
+        "word": "tunic",
+        "variations": [
+            "tunic",
+            "tunics"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A simple loose piece of clothing that covers the upper body and sometimes extends to the knees.",
+                "examples": [
+                    "The soldier wore a red tunic during the ceremony.",
+                    "Ancient paintings often show people dressed in tunics.",
+                    "She stitched a cotton tunic for the festival.",
+                    "The monk’s plain tunic reflected a simple lifestyle."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A long loose top worn in modern fashion, often over pants or leggings.",
+                "examples": [
+                    "She paired the blue tunic with white trousers.",
+                    "Light tunics are popular during summer.",
+                    "The designer displayed embroidered tunics at the fashion show.",
+                    "Her flowing tunic moved gently in the wind."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "devours",
+        "variations": [
+            "devour",
+            "devours",
+            "devouring",
+            "devoured"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Eats something quickly, greedily, or hungrily.",
+                "examples": [
+                    "The lion devours its prey within minutes.",
+                    "Hungry children were devouring slices of pizza.",
+                    "He devoured the meal after the long journey.",
+                    "The dog quickly devoured the food in its bowl."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Consumes or destroys something completely.",
+                "examples": [
+                    "The fire devoured several houses in the village.",
+                    "Flames were devouring the dry forest rapidly.",
+                    "Time slowly devours memories and emotions.",
+                    "The sea had devoured large parts of the coastline."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Reads or experiences something eagerly with great interest.",
+                "examples": [
+                    "She devours mystery novels every weekend.",
+                    "Students were devouring information before the exam.",
+                    "He had devoured every book in the library about astronomy.",
+                    "Fans eagerly devoured news about the upcoming film."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "avert",
+        "variations": [
+            "avert",
+            "averts",
+            "averting",
+            "averted"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To prevent something harmful, dangerous, or unpleasant from happening.",
+                "examples": [
+                    "Quick action averted a serious accident.",
+                    "Doctors worked hard to avert the spread of disease.",
+                    "Diplomats hoped to avert war through negotiations.",
+                    "The warning helped avert a financial disaster."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To turn away one’s eyes, face, or attention.",
+                "examples": [
+                    "She averted her gaze during the awkward moment.",
+                    "The child averted his eyes from the frightening scene.",
+                    "He quickly averted his face from the bright light.",
+                    "Many people avert attention from uncomfortable truths."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "veil",
+        "variations": [
+            "veil",
+            "veils",
+            "veiling",
+            "veiled"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A thin piece of cloth worn to partly cover the face or head.",
+                "examples": [
+                    "The bride wore a white veil during the ceremony.",
+                    "Her face remained hidden behind a dark veil.",
+                    "Traditional veils are common in many cultures.",
+                    "The wind lifted the delicate veil gently."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Something that hides, covers, or conceals.",
+                "examples": [
+                    "Fog formed a veil over the mountains.",
+                    "A veil of secrecy surrounded the meeting.",
+                    "Sadness lay like a veil across his expression.",
+                    "Clouds spread a gray veil across the sky."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To hide, cover, or disguise something partially.",
+                "examples": [
+                    "Mist veiled the valley in the early morning.",
+                    "She tried veiling her disappointment with a smile.",
+                    "Dark curtains veiled the windows from outside view.",
+                    "The politician veiled his true intentions carefully."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "startled",
+        "variations": [
+            "startle",
+            "startles",
+            "startling",
+            "startled",
+            "startlingly"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Surprised or frightened suddenly by something unexpected.",
+                "examples": [
+                    "The loud thunder startled the children.",
+                    "She was startled by footsteps behind her.",
+                    "A bird flying out of the bushes startled the travelers.",
+                    "The sudden phone call had startled him awake."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Feeling sudden surprise, fear, or shock.",
+                "examples": [
+                    "He gave a startled glance toward the door.",
+                    "The startled horse stepped backward nervously.",
+                    "Her startled expression revealed her confusion.",
+                    "Children looked startled after the lights suddenly went out."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "kin",
+        "variations": [
+            "kin",
+            "kinsman",
+            "kinsmen",
+            "kinswoman",
+            "kinswomen"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Family members, relatives, or people connected by blood.",
+                "examples": [
+                    "She invited all her kin to the wedding.",
+                    "Villagers treated one another like kin.",
+                    "He searched for surviving kin after the disaster.",
+                    "Stories about ancestors were shared among the kin."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Related or similar in nature, type, or feeling.",
+                "examples": [
+                    "The two cultures share kin traditions and beliefs.",
+                    "Artists often feel kinship with creative minds from the past.",
+                    "Their ideas were closely kin to each other.",
+                    "The poet described humans and nature as deeply kin."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "enact",
+        "variations": [
+            "enact",
+            "enacts",
+            "enacting",
+            "enacted",
+            "enactment"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To officially make something such as a law, rule, or decision active and valid.",
+                "examples": [
+                    "The government enacted new environmental laws.",
+                    "Several reforms were enacted after public protests.",
+                    "The parliament is enacting stricter safety regulations.",
+                    "Ancient rulers enacted harsh punishments for theft."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To perform or act out a role, scene, or event.",
+                "examples": [
+                    "Students enacted scenes from history during the play.",
+                    "The actor enacted the character brilliantly.",
+                    "Villagers were enacting traditional stories during the festival.",
+                    "Children love enacting adventures from books and movies."
+                ]
+            }
+        ]
+    }
+]

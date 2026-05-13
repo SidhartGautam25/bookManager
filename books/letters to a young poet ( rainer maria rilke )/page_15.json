@@ -1,0 +1,64 @@
+[
+    {
+        "word": "acolyte",
+        "variations": [
+            "acolyte",
+            "acolytes"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A person who assists or follows a religious leader during ceremonies or rituals.",
+                "examples": [
+                    "The young acolyte carried candles during the ceremony.",
+                    "Several acolytes stood beside the priest in the temple.",
+                    "The acolytes prepared the altar before the service began.",
+                    "An elderly monk trained new acolytes in religious duties."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A loyal follower, supporter, or admirer of an important person, leader, or idea.",
+                "examples": [
+                    "The famous writer was surrounded by enthusiastic acolytes.",
+                    "Political acolytes defended the leader at every opportunity.",
+                    "The scientist’s acolytes continued his research after his death.",
+                    "Young musicians became acolytes of the legendary performer."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "afflictions",
+        "variations": [
+            "affliction",
+            "afflictions",
+            "afflict",
+            "afflicts",
+            "afflicting",
+            "afflicted"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Painful conditions, sufferings, illnesses, or troubles that cause physical or emotional distress.",
+                "examples": [
+                    "The village suffered from many afflictions during the drought.",
+                    "Old age often brings physical afflictions.",
+                    "She endured personal afflictions with great courage.",
+                    "The hospital treated patients with rare afflictions."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Mental, emotional, or spiritual suffering that deeply troubles a person.",
+                "examples": [
+                    "Loneliness became one of his greatest afflictions.",
+                    "The novel explores the hidden afflictions of modern life.",
+                    "Fear and guilt were afflicting his mind constantly.",
+                    "Many poets write about emotional afflictions and sorrow."
+                ]
+            }
+        ]
+    }
+]

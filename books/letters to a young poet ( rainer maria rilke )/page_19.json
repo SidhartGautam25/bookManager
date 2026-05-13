@@ -1,0 +1,367 @@
+[
+    {
+        "word": "fleeting",
+        "variations": [
+            "fleet",
+            "fleets",
+            "fleeting",
+            "fleeted"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Lasting for only a very short time; passing quickly.",
+                "examples": [
+                    "She caught a fleeting glimpse of the bird before it disappeared.",
+                    "Happiness can sometimes feel fleeting.",
+                    "A fleeting smile crossed his face during the conversation.",
+                    "The beauty of sunsets is often brief and fleeting."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Passing quickly or moving away rapidly.",
+                "examples": [
+                    "Clouds were fleeting across the evening sky.",
+                    "The years fleet by faster as people grow older.",
+                    "Time had fleeted away before they realized it.",
+                    "Shadows were fleeting over the hills during sunset."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "rapt",
+        "variations": [
+            "rapt",
+            "raptly",
+            "raptness"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Completely fascinated, deeply absorbed, or intensely focused on something.",
+                "examples": [
+                    "The audience listened in rapt silence.",
+                    "She watched the dancer with rapt attention.",
+                    "Children sat rapt as the storyteller spoke.",
+                    "He remained rapt throughout the performance."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Filled with strong joy, delight, or emotional excitement.",
+                "examples": [
+                    "Fans gave the singer a rapt welcome.",
+                    "She looked rapt after hearing the good news.",
+                    "The poet described a rapt feeling of spiritual peace.",
+                    "His face showed rapt admiration for the artwork."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "carnal",
+        "variations": [
+            "carnal",
+            "carnally",
+            "carnality"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Related to physical desires, pleasures, or the body, especially sexual desire.",
+                "examples": [
+                    "The novel explores both spiritual and carnal desires.",
+                    "Religious thinkers often warn against excessive carnal pleasures.",
+                    "The character struggled between moral duty and carnal temptation.",
+                    "The film portrayed a world driven by carnal instincts."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Related to ordinary physical or worldly life rather than spiritual matters.",
+                "examples": [
+                    "He tried to free himself from carnal attachments.",
+                    "The monk rejected carnal comforts and luxury.",
+                    "Ancient philosophers debated carnal and spiritual existence.",
+                    "Her writings examine the conflict between carnal needs and inner peace."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "engender",
+        "variations": [
+            "engender",
+            "engenders",
+            "engendering",
+            "engendered"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To cause, create, produce, or give rise to a feeling, situation, or condition.",
+                "examples": [
+                    "Kindness often engenders trust between people.",
+                    "The speech engendered hope among the listeners.",
+                    "Violence can engender fear and anger in society.",
+                    "Their honesty had engendered deep respect over the years."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "palpable",
+        "variations": [
+            "palpable",
+            "more palpable",
+            "most palpable",
+            "palpably",
+            "palpability"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "So clear, strong, or obvious that it can almost be physically felt.",
+                "examples": [
+                    "There was a palpable tension in the courtroom.",
+                    "Excitement became palpable as the concert began.",
+                    "Her disappointment was palpable after the announcement.",
+                    "The fear in the village was almost palpably present."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Able to be touched or physically felt.",
+                "examples": [
+                    "The heat from the fire was palpable even from a distance.",
+                    "A palpable vibration ran through the floor.",
+                    "The thick fabric gave a palpable sense of warmth.",
+                    "The pulse was barely palpable during the examination."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "myriad",
+        "variations": [
+            "myriad",
+            "myriads"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Extremely many or countless in number.",
+                "examples": [
+                    "The night sky was filled with myriad stars.",
+                    "Scientists face myriad challenges in climate research.",
+                    "She had myriad reasons for leaving the city.",
+                    "The internet offers myriad opportunities for learning."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A very large number of people or things.",
+                "examples": [
+                    "A myriad of lights covered the hillside.",
+                    "The garden contained a myriad of flowers.",
+                    "Travelers encountered myriads of cultures during their journey.",
+                    "The museum displayed a myriad of ancient artifacts."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "abundant",
+        "variations": [
+            "abundant",
+            "more abundant",
+            "most abundant",
+            "abundantly",
+            "abundance"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Existing in large quantities; more than enough.",
+                "examples": [
+                    "The region has abundant natural resources.",
+                    "Food was abundantly available during the festival.",
+                    "The forest is abundant with wildlife.",
+                    "She received an abundance of support from friends."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Rich in quality, energy, or productivity.",
+                "examples": [
+                    "The farmland remained abundant after the rainy season.",
+                    "He showed abundant enthusiasm for the project.",
+                    "The river provided abundant water to nearby villages.",
+                    "Their garden produced abundant fruits every year."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "engendering",
+        "variations": [
+            "engender",
+            "engenders",
+            "engendering",
+            "engendered"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Creating, causing, or producing a feeling, condition, or result.",
+                "examples": [
+                    "The reforms were engendering optimism among citizens.",
+                    "Fear is engendering mistrust within the community.",
+                    "Their actions had engendered unnecessary conflict.",
+                    "The inspiring speech was engendering hope in young people."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "grandeur",
+        "variations": [
+            "grandeur",
+            "grand",
+            "grander",
+            "grandest",
+            "grandly"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Great beauty, magnificence, importance, or impressive quality.",
+                "examples": [
+                    "Visitors admired the grandeur of the ancient palace.",
+                    "The mountains revealed their grandeur at sunrise.",
+                    "The ceremony was celebrated with great grandeur.",
+                    "The film captured the grandeur of historical empires."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A quality of greatness or nobility that inspires admiration.",
+                "examples": [
+                    "There was a quiet grandeur in her simple lifestyle.",
+                    "The writer described the grandeur of human ambition.",
+                    "Nature often displays a grandeur beyond human imagination.",
+                    "The old cathedral still carries spiritual grandeur."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "cradle",
+        "variations": [
+            "cradle",
+            "cradles",
+            "cradling",
+            "cradled"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A small bed for a baby that can gently rock from side to side.",
+                "examples": [
+                    "The baby slept peacefully in the wooden cradle.",
+                    "Her grandmother kept the old cradle for generations.",
+                    "The cradle rocked softly near the window.",
+                    "Parents decorated the cradle with colorful cloth."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The place where something important begins or develops.",
+                "examples": [
+                    "Mesopotamia is often called the cradle of civilization.",
+                    "The city became the cradle of artistic movements.",
+                    "Ancient universities were cradles of knowledge and debate.",
+                    "The valley served as the cradle of the kingdom."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To hold someone or something gently and carefully, usually in the arms.",
+                "examples": [
+                    "She cradled the injured bird in her hands.",
+                    "The mother was cradling her sleeping child.",
+                    "He cradled the cup carefully to avoid spilling it.",
+                    "The hills cradled the small village between them."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "profundity",
+        "variations": [
+            "profundity",
+            "profundities",
+            "profound",
+            "profoundly"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Great depth of thought, wisdom, emotion, or meaning.",
+                "examples": [
+                    "Readers admired the profundity of the philosopher’s ideas.",
+                    "The poem carries emotional profundity beneath its simple words.",
+                    "Her silence often contained more profundity than speeches.",
+                    "The teacher explained difficult concepts with remarkable profundity."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A deep or serious quality that is difficult to fully understand.",
+                "examples": [
+                    "The scientist explored the profundities of the universe.",
+                    "His writings combine simplicity with intellectual profundity.",
+                    "The film’s profundity became clearer after repeated viewing.",
+                    "Ancient scriptures are often valued for their spiritual profundities."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "err",
+        "variations": [
+            "err",
+            "errs",
+            "erring",
+            "erred",
+            "error",
+            "errors",
+            "erroneous",
+            "erroneously"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To make a mistake, especially in judgment, action, or opinion.",
+                "examples": [
+                    "Even experienced people sometimes err.",
+                    "The judge admitted that the court had erred in its decision.",
+                    "Scientists rarely progress without erring occasionally.",
+                    "He erred by trusting the wrong people."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To go in the wrong direction morally, mentally, or practically.",
+                "examples": [
+                    "The leader erred toward harsh punishment.",
+                    "Writers may err when interpreting historical events.",
+                    "She preferred to err on the side of caution.",
+                    "The article erroneously reported the facts."
+                ]
+            }
+        ]
+    }
+]

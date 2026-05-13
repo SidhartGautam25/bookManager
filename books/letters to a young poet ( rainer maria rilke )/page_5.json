@@ -1,0 +1,133 @@
+[
+    {
+        "word": "depict",
+        "variations": [
+            "depict",
+            "depicts",
+            "depicting",
+            "depicted",
+            "depiction"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To show, describe, or represent someone or something through words, pictures, films, or other forms of expression.",
+                "examples": [
+                    "The painting depicts a peaceful village beside a river.",
+                    "Many films depict the struggles of ordinary people.",
+                    "The novel vividly depicted life during the war.",
+                    "Artists often depict emotions through colors and expressions."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To describe someone or something in a particular way or impression.",
+                "examples": [
+                    "The article depicted the leader as a courageous reformer.",
+                    "Critics argued that the media was depicting the situation unfairly.",
+                    "She was often depicted as quiet and mysterious.",
+                    "The documentary depicts modern cities as both exciting and lonely."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "trivial",
+        "variations": [
+            "trivial",
+            "more trivial",
+            "most trivial",
+            "trivially",
+            "triviality",
+            "trivialities"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Very small, unimportant, or not serious enough to deserve much attention.",
+                "examples": [
+                    "They argued over something completely trivial.",
+                    "The mistake seemed trivial at first but later caused problems.",
+                    "He spends too much time worrying about trivial matters.",
+                    "Most of their conversation revolved around trivial gossip."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Simple, obvious, or easy to understand or solve.",
+                "examples": [
+                    "For experienced programmers, the problem was trivial.",
+                    "The teacher considered the question too trivial for the exam.",
+                    "What looks difficult now may later seem trivial.",
+                    "Scientists dismissed the error as a trivial calculation mistake."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "sunken",
+        "variations": [
+            "sink",
+            "sinks",
+            "sinking",
+            "sank",
+            "sunk",
+            "sunken"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Lower than the normal level or surface; fallen inward or downward.",
+                "examples": [
+                    "The old road had several sunken patches after the rain.",
+                    "He had tired, sunken eyes after staying awake all night.",
+                    "The garden was built in a sunken area behind the house.",
+                    "Years of illness had given her face a slightly sunken appearance."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Lying beneath water after having sunk.",
+                "examples": [
+                    "Divers explored the sunken ship near the coast.",
+                    "The storm revealed parts of a sunken boat.",
+                    "Treasure hunters searched for sunken ruins underwater.",
+                    "Fish swam around the sunken remains of the aircraft."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "submersion",
+        "variations": [
+            "submersion",
+            "submersions",
+            "submerge",
+            "submerges",
+            "submerging",
+            "submerged"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "The act or state of being completely covered or placed under water or another liquid.",
+                "examples": [
+                    "The heavy rains caused the submersion of several villages.",
+                    "Divers practiced prolonged submersion underwater.",
+                    "The submarine disappeared after its sudden submersion.",
+                    "Floodwaters led to the complete submersion of the bridge."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The act of becoming deeply involved or absorbed in something.",
+                "examples": [
+                    "His submersion in music helped him forget his worries.",
+                    "The writer’s complete submersion in research delayed the project.",
+                    "Meditation encouraged a deep submersion into inner thought.",
+                    "Her submersion in work left little time for rest."
+                ]
+            }
+        ]
+    }
+]

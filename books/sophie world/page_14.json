@@ -1,0 +1,97 @@
+[
+    {
+        "word": "twig",
+        "variations": [
+            "twig",
+            "twigs",
+            "twigging",
+            "twigged"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A small thin branch that grows from a tree or bush.",
+                "examples": [
+                    "Birds gathered twigs to build their nests.",
+                    "The child snapped a dry twig while walking through the forest.",
+                    "Twigs and leaves covered the narrow path after the storm.",
+                    "A squirrel jumped lightly from twig to twig."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To suddenly understand, notice, or realize something.",
+                "examples": [
+                    "She finally twigged that everyone was joking.",
+                    "He quickly twigged what the teacher was trying to explain.",
+                    "The detective twigged the truth after seeing the broken lock.",
+                    "I didn’t twig that they were twins at first."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "stroller",
+        "variations": [
+            "stroller",
+            "strollers",
+            "stroll",
+            "strolls",
+            "strolling",
+            "strolled"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A person who walks slowly and casually for relaxation or pleasure.",
+                "examples": [
+                    "Evening strollers filled the park during sunset.",
+                    "Tourists and strollers wandered through the old streets.",
+                    "The beach attracted morning strollers every day.",
+                    "A lonely stroller paused beside the river to watch the birds."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A wheeled chair used for carrying a baby or small child.",
+                "examples": [
+                    "She pushed the baby in a stroller through the market.",
+                    "Modern strollers are designed to be lightweight and safe.",
+                    "The child fell asleep in the stroller during the walk.",
+                    "Parents parked several strollers near the playground."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "enthralled",
+        "variations": [
+            "enthrall",
+            "enthralls",
+            "enthralling",
+            "enthralled"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Completely fascinated, captivated, or filled with deep interest and excitement.",
+                "examples": [
+                    "The audience sat enthralled throughout the performance.",
+                    "Children were enthralled by the magician’s tricks.",
+                    "She listened with an enthralled expression on her face.",
+                    "Travelers became enthralled by the beauty of the mountains."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Captured someone’s complete attention or interest in a powerful way.",
+                "examples": [
+                    "The storyteller enthralled the crowd for hours.",
+                    "Music had enthralled him since childhood.",
+                    "The documentary continues to enthrall viewers worldwide.",
+                    "The king’s speeches once enthralled the entire kingdom."
+                ]
+            }
+        ]
+    }
+]

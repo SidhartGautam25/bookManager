@@ -1,0 +1,94 @@
+[
+    {
+        "word": "muffle",
+        "variations": [
+            "muffle",
+            "muffles",
+            "muffling",
+            "muffled"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To make a sound quieter, softer, or less clear by covering or blocking it.",
+                "examples": [
+                    "The thick walls muffled the noise from the street.",
+                    "She tried to muffle her laughter during the meeting.",
+                    "Snow muffles sounds and makes everything feel quieter.",
+                    "He spoke through a scarf, which muffled his voice."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To wrap or cover someone or something to keep warm or hidden.",
+                "examples": [
+                    "The child was muffled in heavy winter clothes.",
+                    "She muffled her face with a woolen scarf.",
+                    "Travelers muffled themselves against the cold wind.",
+                    "He sat by the fire, completely muffled in blankets."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A covering or wrap used to keep something warm or quiet, especially around the neck or face.",
+                "examples": [
+                    "He pulled his muffle tighter during the storm.",
+                    "The old rider wore a thick woolen muffle.",
+                    "A dark muffle covered most of her face.",
+                    "The winter outfit included gloves and a soft muffle."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "muzzle",
+        "variations": [
+            "muzzle",
+            "muzzles",
+            "muzzling",
+            "muzzled"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "The mouth and nose area of an animal, especially a dog or horse.",
+                "examples": [
+                    "The dog rested its muzzle on her lap.",
+                    "A horse’s muzzle touched the grass softly.",
+                    "The wolf lifted its muzzle toward the moon.",
+                    "Mud covered the puppy’s muzzle after playing outside."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A device placed over an animal’s mouth to stop it from biting or eating.",
+                "examples": [
+                    "The guard dog wore a strong leather muzzle.",
+                    "The veterinarian advised using a muzzle during treatment.",
+                    "She removed the muzzle after the dog calmed down.",
+                    "Some aggressive dogs are required to wear muzzles in public."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To put a muzzle on an animal to prevent biting or barking.",
+                "examples": [
+                    "They muzzled the dog before taking it to the clinic.",
+                    "The officer ordered the aggressive animal to be muzzled.",
+                    "Owners should muzzle dangerous dogs in crowded places.",
+                    "The frightened dog was carefully muzzled by the trainer."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To stop someone from speaking freely or expressing opinions.",
+                "examples": [
+                    "The government was accused of muzzling journalists.",
+                    "Fear cannot muzzle honest voices forever.",
+                    "The new rules effectively muzzled public criticism.",
+                    "Writers protested against attempts to muzzle free speech."
+                ]
+            }
+        ]
+    }
+]

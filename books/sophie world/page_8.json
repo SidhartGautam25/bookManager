@@ -1,0 +1,72 @@
+[
+    {
+        "word": "jolted",
+        "variations": [
+            "jolt",
+            "jolts",
+            "jolting",
+            "jolted"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Shook or moved suddenly and roughly, often because of impact, surprise, or uneven movement.",
+                "examples": [
+                    "The bus jolted violently over the rough road.",
+                    "She was jolted awake by a loud crash outside.",
+                    "The earthquake jolted buildings across the city.",
+                    "A sudden stop jolted the passengers forward."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Caused someone to feel sudden shock, surprise, or realization.",
+                "examples": [
+                    "The news jolted the entire community.",
+                    "His harsh words jolted her into silence.",
+                    "The accident jolted people into demanding safer roads.",
+                    "Seeing the old photograph jolted memories from childhood."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A sudden rough movement, shock, or surprise.",
+                "examples": [
+                    "The car hit a pothole with a sharp jolt.",
+                    "A sudden jolt of fear passed through him.",
+                    "The machine started with a violent jolt.",
+                    "The unexpected announcement gave everyone a jolt."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "drat",
+        "variations": [
+            "drat",
+            "drats"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "interjection",
+                "definition": "A mild expression of annoyance, frustration, or disappointment.",
+                "examples": [
+                    "“Drat! I forgot my keys again,” he said.",
+                    "She muttered “drat” after missing the train.",
+                    "“Drat, the rain ruined our picnic plans,” complained the children.",
+                    "He sighed, “Drat, I nearly had the answer.”"
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To curse or express irritation toward someone or something.",
+                "examples": [
+                    "The old sailor dratted the stormy weather.",
+                    "He sat dratting his bad luck quietly.",
+                    "Villagers jokingly dratted the noisy rooster every morning.",
+                    "She dratted herself for making such a careless mistake."
+                ]
+            }
+        ]
+    }
+]

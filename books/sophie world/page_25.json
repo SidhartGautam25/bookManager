@@ -1,0 +1,35 @@
+[
+    {
+        "word": "glider",
+        "variations": [
+            "glider",
+            "gliders",
+            "glide",
+            "glides",
+            "gliding",
+            "glided"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A light aircraft designed to fly without an engine for most of its journey, moving smoothly through the air using wind currents.",
+                "examples": [
+                    "The glider floated silently above the mountains.",
+                    "Young pilots often begin training with gliders.",
+                    "A white glider circled gracefully in the clear sky.",
+                    "Strong winds helped the glider stay airborne longer."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Something that moves smoothly, quietly, or effortlessly.",
+                "examples": [
+                    "The swan looked like a glider moving across the lake.",
+                    "Her skates turned her into a graceful glider on the ice.",
+                    "The boat became a silent glider over calm water.",
+                    "The dancer moved like a glider across the stage."
+                ]
+            }
+        ]
+    }
+]

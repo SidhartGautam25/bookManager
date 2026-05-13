@@ -1,0 +1,54 @@
+[
+    {
+        "word": "weave",
+        "variations": [
+            "weave",
+            "weaves",
+            "weaving",
+            "wove",
+            "woven"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To make cloth, fabric, baskets, or similar things by crossing threads, fibers, or strips over and under each other.",
+                "examples": [
+                    "The villagers weave beautiful carpets by hand.",
+                    "She was weaving a basket from dried grass.",
+                    "Traditional artists have woven silk fabrics for generations.",
+                    "The machine weaves cotton into fine cloth."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To move by turning and passing from side to side through obstacles, traffic, or crowds.",
+                "examples": [
+                    "The cyclist weaved through the busy traffic carefully.",
+                    "Children were weaving between the market stalls.",
+                    "He weaves through the crowd without slowing down.",
+                    "The narrow river wove through the green valley."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To combine ideas, stories, emotions, or details together into a connected whole.",
+                "examples": [
+                    "The writer wove history and fiction into the novel.",
+                    "She skillfully weaves humor into serious conversations.",
+                    "The film had woven several stories together beautifully.",
+                    "Poets often weave emotions into simple words."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The particular way threads or materials are woven together in a fabric or structure.",
+                "examples": [
+                    "The cloth had a tight and durable weave.",
+                    "Different weaves create different textures in fabric.",
+                    "The basket’s weave was neat and symmetrical.",
+                    "Experts admired the intricate weave of the handmade carpet."
+                ]
+            }
+        ]
+    }
+]

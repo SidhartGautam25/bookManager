@@ -1,0 +1,158 @@
+[
+    {
+        "word": "enigmas",
+        "variations": [
+            "enigma",
+            "enigmas",
+            "enigmatic",
+            "enigmatically"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "People, things, or situations that are mysterious, puzzling, or difficult to understand.",
+                "examples": [
+                    "Ancient ruins remain enigmas to many historians.",
+                    "Her quiet personality made her seem like an enigma.",
+                    "Scientists continue studying the enigmas of the universe.",
+                    "The detective tried solving the strange enigmas surrounding the case."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "shrouded",
+        "variations": [
+            "shroud",
+            "shrouds",
+            "shrouding",
+            "shrouded"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Covered, hidden, or surrounded so that something becomes difficult to see or understand.",
+                "examples": [
+                    "The mountains were shrouded in mist.",
+                    "Mystery still shrouds the disappearance of the ship.",
+                    "The village was shrouded by thick fog all morning.",
+                    "His true intentions remained shrouded in secrecy."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Hidden, concealed, or wrapped in something.",
+                "examples": [
+                    "A shrouded figure stood near the doorway.",
+                    "The castle appeared dark and shrouded at night.",
+                    "The ceremony followed ancient shrouded traditions.",
+                    "The moon looked faint behind shrouded clouds."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "accord",
+        "variations": [
+            "accord",
+            "accords",
+            "according",
+            "accorded"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Agreement, harmony, or understanding between people, groups, or ideas.",
+                "examples": [
+                    "The two countries signed a peace accord.",
+                    "Their opinions were in accord on most issues.",
+                    "The musicians performed in perfect accord.",
+                    "The agreement brought social accord to the region."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To give someone special treatment, respect, approval, or importance.",
+                "examples": [
+                    "The community accorded great respect to the teacher.",
+                    "She was accorded an award for her service.",
+                    "Ancient societies often accorded honor to warriors.",
+                    "The judge accorded both sides equal opportunity to speak."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "incredulity",
+        "variations": [
+            "incredulity",
+            "incredulous",
+            "incredulously"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A feeling of disbelief, shock, or inability to accept something as true.",
+                "examples": [
+                    "She stared at him in complete incredulity.",
+                    "The news was greeted with public incredulity.",
+                    "His expression showed disbelief and incredulity.",
+                    "People reacted incredulously to the strange story."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "sleight",
+        "variations": [
+            "sleight"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Skillful and quick use of the hands, especially to perform tricks or deceive people.",
+                "examples": [
+                    "The magician amazed the audience with sleight of hand.",
+                    "Years of practice improved her sleight and timing.",
+                    "The trick depended more on sleight than on real magic.",
+                    "His quick sleight made the coin disappear instantly."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "deception",
+        "variations": [
+            "deception",
+            "deceptions",
+            "deceive",
+            "deceives",
+            "deceiving",
+            "deceived",
+            "deceptive",
+            "deceptively"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "The act of misleading, tricking, or causing someone to believe something false.",
+                "examples": [
+                    "The company was accused of deception in its advertisements.",
+                    "His life was built on lies and deception.",
+                    "The detective uncovered a clever deception.",
+                    "People felt deceived after learning the truth."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A false appearance or impression that hides the truth.",
+                "examples": [
+                    "The calm atmosphere was only a deception.",
+                    "Appearances can sometimes create dangerous deceptions.",
+                    "The deceptively simple problem confused many students.",
+                    "Her smile concealed a quiet deception."
+                ]
+            }
+        ]
+    }
+]

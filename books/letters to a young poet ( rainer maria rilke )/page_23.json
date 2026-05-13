@@ -1,0 +1,246 @@
+[
+    {
+        "word": "wherewithal",
+        "variations": [
+            "wherewithal"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "The money, resources, ability, or means needed to do something.",
+                "examples": [
+                    "They lacked the financial wherewithal to continue the project.",
+                    "She had the wherewithal to build her own business.",
+                    "Many talented students do not have the wherewithal for higher education.",
+                    "The team finally gained the technical wherewithal to complete the task."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "settling",
+        "variations": [
+            "settle",
+            "settles",
+            "settling",
+            "settled",
+            "settlement"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Coming to rest, becoming calm, or moving into a stable position.",
+                "examples": [
+                    "Dust was slowly settling on the old furniture.",
+                    "The baby finally settled after hours of crying.",
+                    "Snow had settled across the rooftops overnight.",
+                    "The crowd was settling down before the performance began."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Resolving or deciding something such as an argument, payment, or problem.",
+                "examples": [
+                    "They were settling the dispute peacefully.",
+                    "She settled the bill before leaving the restaurant.",
+                    "The lawyers are settling the case outside court.",
+                    "He finally settled his differences with his brother."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Beginning to live permanently in a place.",
+                "examples": [
+                    "Their family settled in the village generations ago.",
+                    "Travelers were settling near the river for water and farmland.",
+                    "She plans on settling abroad after graduation.",
+                    "The settlers had settled the region long before the city was built."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "ridden",
+        "variations": [
+            "ride",
+            "rides",
+            "riding",
+            "rode",
+            "ridden"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Traveled on or controlled something such as a horse, bicycle, or vehicle.",
+                "examples": [
+                    "He had ridden horses since childhood.",
+                    "They were riding bicycles through the countryside.",
+                    "She rode the train to work every morning.",
+                    "The travelers had ridden across the desert for days."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Filled, troubled, or burdened with something unpleasant.",
+                "examples": [
+                    "The city was crime-ridden for many years.",
+                    "He looked guilt-ridden after the argument.",
+                    "The village remained poverty-ridden despite government promises.",
+                    "Stress-ridden workers struggled to maintain balance in life."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "acquainted",
+        "variations": [
+            "acquaint",
+            "acquaints",
+            "acquainting",
+            "acquainted",
+            "acquaintance",
+            "acquaintances"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Familiar with someone, something, or having knowledge about it.",
+                "examples": [
+                    "She is well acquainted with classical literature.",
+                    "The guide acquainted visitors with the history of the temple.",
+                    "I became acquainted with him during college.",
+                    "Workers must be acquainted with safety rules before entering the factory."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Introduced someone to another person, place, idea, or piece of information.",
+                "examples": [
+                    "The teacher acquainted students with the new syllabus.",
+                    "Travel acquainted him with different cultures.",
+                    "She was acquainting herself with the city before starting work.",
+                    "The documentary acquainted viewers with ancient traditions."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "drear",
+        "variations": [
+            "drear",
+            "dreary",
+            "drearier",
+            "dreariest",
+            "drearily",
+            "dreariness"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Dull, gloomy, depressing, or lacking excitement and hope.",
+                "examples": [
+                    "Rain fell over the dreary town all afternoon.",
+                    "He spent years in a drear office doing repetitive work.",
+                    "The novel describes a bleak and dreary winter landscape.",
+                    "Her voice sounded tired and drearily hopeless."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "esteem",
+        "variations": [
+            "esteem",
+            "esteems",
+            "esteeming",
+            "esteemed",
+            "self-esteem"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Respect, admiration, or high regard for someone or something.",
+                "examples": [
+                    "The professor was held in great esteem by students.",
+                    "Years of honest work earned him public esteem.",
+                    "She lost esteem for the dishonest politician.",
+                    "Self-esteem plays an important role in confidence."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To respect, admire, or value someone highly.",
+                "examples": [
+                    "People esteem her for her kindness and wisdom.",
+                    "He was highly esteemed in scientific circles.",
+                    "The community esteems teachers who work sincerely.",
+                    "She esteemed honesty above wealth and status."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "disfigured",
+        "variations": [
+            "disfigure",
+            "disfigures",
+            "disfiguring",
+            "disfigured",
+            "disfigurement"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Damaged the appearance of someone or something, often permanently.",
+                "examples": [
+                    "The fire disfigured several buildings in the town.",
+                    "He was disfigured by injuries from the accident.",
+                    "Pollution is disfiguring the natural landscape.",
+                    "The statue had been badly disfigured over time."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Having appearance damaged or spoiled.",
+                "examples": [
+                    "The disfigured wall showed signs of years of neglect.",
+                    "She cared for animals with disfigured limbs.",
+                    "The once beautiful garden looked disfigured after the storm.",
+                    "His face remained slightly disfigured after surgery."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "spoilt",
+        "variations": [
+            "spoil",
+            "spoils",
+            "spoiling",
+            "spoiled",
+            "spoilt"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Damaged, ruined, or made something less enjoyable or useful.",
+                "examples": [
+                    "Heavy rain spoilt the picnic plans.",
+                    "The milk had spoiled because it was left outside.",
+                    "Careless handling spoiled the painting.",
+                    "Noise from the street was spoiling the peaceful atmosphere."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Given too much attention or luxury, resulting in selfish or bad behavior.",
+                "examples": [
+                    "The spoilt child refused to share his toys.",
+                    "People considered him spoiled because he always got what he wanted.",
+                    "Her spoilt attitude annoyed the other students.",
+                    "The wealthy family raised several spoiled pets."
+                ]
+            }
+        ]
+    }
+]

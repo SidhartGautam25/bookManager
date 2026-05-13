@@ -1,0 +1,115 @@
+[
+    {
+        "word": "engrossed",
+        "variations": [
+            "engross",
+            "engrosses",
+            "engrossing",
+            "engrossed"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Completely focused, absorbed, or deeply interested in something.",
+                "examples": [
+                    "She was so engrossed in the novel that she ignored the noise around her.",
+                    "The children sat engrossed in the magician’s performance.",
+                    "He remained deeply engrossed in his research for hours.",
+                    "Students were engrossedly watching the science experiment."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Captured all of someone’s attention or interest.",
+                "examples": [
+                    "The documentary engrossed viewers from beginning to end.",
+                    "He was engrossing himself in old historical records.",
+                    "Music had engrossed her completely during the journey.",
+                    "The mystery story quickly engrosses its readers."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "darn",
+        "variations": [
+            "darn",
+            "darns",
+            "darning",
+            "darned"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To repair holes or worn areas in cloth by sewing thread across them.",
+                "examples": [
+                    "She carefully darned the hole in his sweater.",
+                    "Grandmothers once spent evenings darning socks by hand.",
+                    "He was darning an old blanket near the fire.",
+                    "The tailor had darned the torn pocket neatly."
+                ]
+            },
+            {
+                "partOfSpeech": "interjection",
+                "definition": "A mild expression of annoyance, surprise, or frustration.",
+                "examples": [
+                    "“Darn! I missed the bus again,” he complained.",
+                    "She muttered “darn” after dropping the glass.",
+                    "“Oh darn, I forgot my notebook at home,” said the student.",
+                    "The players shouted “darn it” after losing the match."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Used informally for emphasis, often instead of a stronger rude word.",
+                "examples": [
+                    "That darn machine stopped working again.",
+                    "He spent the whole day fixing the darn car.",
+                    "The darn phone kept ringing during the meeting.",
+                    "She lost her darn keys for the third time this week."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "flung",
+        "variations": [
+            "fling",
+            "flings",
+            "flinging",
+            "flung"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Threw or pushed something with great force or sudden movement.",
+                "examples": [
+                    "He flung the bag onto the chair angrily.",
+                    "The storm flung branches across the road.",
+                    "Children were flinging snowballs at each other.",
+                    "She flung open the window to let fresh air in."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Moved quickly or violently in a particular direction.",
+                "examples": [
+                    "The horse flung itself over the fence.",
+                    "He was flung backward by the explosion.",
+                    "The dancer flung her arms wide during the performance.",
+                    "Leaves were flung through the air by the wind."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A short period of enjoyment, excitement, or passionate activity.",
+                "examples": [
+                    "They had a brief fling during the summer holidays.",
+                    "His youthful fling with acting never became serious.",
+                    "Travelers sometimes enjoy a carefree fling before settling down.",
+                    "She described college as a happy fling of freedom and adventure."
+                ]
+            }
+        ]
+    }
+]

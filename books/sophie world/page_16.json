@@ -1,0 +1,133 @@
+[
+    {
+        "word": "fright",
+        "variations": [
+            "fright",
+            "frights",
+            "frighten",
+            "frightens",
+            "frightening",
+            "frightened",
+            "frightful"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A sudden strong feeling of fear, shock, or alarm.",
+                "examples": [
+                    "The loud scream gave everyone a terrible fright.",
+                    "She woke up in fright after hearing thunder outside.",
+                    "The child ran to his mother in fright.",
+                    "The strange shadow caused a moment of fright among the travelers."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A person or thing that looks shocking, unpleasant, or untidy.",
+                "examples": [
+                    "After the storm, the garden was an absolute fright.",
+                    "He joked that his messy hair made him look like a fright.",
+                    "The abandoned building looked a complete fright at night.",
+                    "The room was such a fright that guests avoided entering it."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "bewildering",
+        "variations": [
+            "bewilder",
+            "bewilders",
+            "bewildering",
+            "bewildered",
+            "bewilderment"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Very confusing, difficult to understand, or causing uncertainty.",
+                "examples": [
+                    "The instructions were so bewildering that nobody could follow them.",
+                    "He faced a bewildering number of choices at the market.",
+                    "The city’s narrow streets formed a bewildering maze.",
+                    "Modern technology can feel bewildering to some older people."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Causing someone to become confused, puzzled, or uncertain.",
+                "examples": [
+                    "The magician’s trick bewildered the audience completely.",
+                    "She looked bewildered after hearing the unexpected news.",
+                    "His strange behavior was bewildering everyone around him.",
+                    "The complicated map had bewildered the travelers."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "enigmatic",
+        "variations": [
+            "enigmatic",
+            "more enigmatic",
+            "most enigmatic",
+            "enigmatically",
+            "enigma",
+            "enigmas"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Mysterious, puzzling, or difficult to fully understand or explain.",
+                "examples": [
+                    "The old traveler gave an enigmatic smile before leaving.",
+                    "Her enigmatic silence confused everyone in the room.",
+                    "Ancient symbols on the wall remained enigmatic to historians.",
+                    "The detective tried understanding the suspect’s enigmatic behavior."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Having a secretive or unclear quality that creates curiosity.",
+                "examples": [
+                    "The film’s ending was intentionally enigmatic.",
+                    "He spoke in enigmatic phrases that revealed very little.",
+                    "The artist became famous for her enigmatic paintings.",
+                    "An enigmatic figure stood quietly near the doorway."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "apathetic",
+        "variations": [
+            "apathetic",
+            "more apathetic",
+            "most apathetic",
+            "apathetically",
+            "apathy"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Showing little or no interest, emotion, concern, or enthusiasm.",
+                "examples": [
+                    "The students seemed apathetic during the lecture.",
+                    "He became increasingly apathetic toward politics.",
+                    "Years of disappointment left her feeling emotionally apathetic.",
+                    "The crowd responded apathetically to the speech."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Lacking energy, motivation, or willingness to take action.",
+                "examples": [
+                    "The team appeared apathetic after repeated failures.",
+                    "She sat in an apathetic silence throughout the meeting.",
+                    "Many workers grew apathetic because their efforts were ignored.",
+                    "An apathetic attitude often prevents meaningful change."
+                ]
+            }
+        ]
+    }
+]

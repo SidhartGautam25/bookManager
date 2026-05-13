@@ -1,0 +1,33 @@
+[
+    {
+        "word": "titter",
+        "variations": [
+            "titter",
+            "titters",
+            "tittering",
+            "tittered"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To laugh quietly, nervously, or in a slightly silly or disrespectful way.",
+                "examples": [
+                    "The students tittered during the serious speech.",
+                    "She was tittering with her friends in the back row.",
+                    "He titters whenever he feels awkward in conversations.",
+                    "A few people tittered at the comedian’s unexpected joke."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A quiet, nervous, or suppressed laugh.",
+                "examples": [
+                    "A small titter spread through the audience.",
+                    "Her comment caused nervous titters around the room.",
+                    "The teacher ignored the sudden titter from the students.",
+                    "Soft titters could be heard during the presentation."
+                ]
+            }
+        ]
+    }
+]

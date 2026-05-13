@@ -1,0 +1,31 @@
+[
+    {
+        "word": "meadows",
+        "variations": [
+            "meadow",
+            "meadows"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Open areas of grassland, often filled with wildflowers, usually found in the countryside.",
+                "examples": [
+                    "Children ran freely across the green meadows.",
+                    "Wild horses grazed peacefully in the mountain meadows.",
+                    "Spring flowers covered the meadows with bright colors.",
+                    "The river flowed quietly beside the wide meadow."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Fields of grass used for animals to graze or for growing hay.",
+                "examples": [
+                    "Farmers cut hay from the meadows before winter.",
+                    "Cows wandered through the wet meadows near the village.",
+                    "Several fertile meadows surrounded the farmhouse.",
+                    "Morning mist spread gently across the grazing meadows."
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "word": "seek out",
+        "variations": [
+            "seek out",
+            "seeks out",
+            "seeking out",
+            "sought out"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "phrasal verb",
+                "definition": "To search for someone or something deliberately and with effort, especially because it is valuable, useful, or important.",
+                "examples": [
+                    "Travelers often seek out quiet places away from crowded cities.",
+                    "She sought out advice from experienced teachers.",
+                    "Many companies are seeking out skilled programmers.",
+                    "He always seeks out old bookstores whenever he visits a new town."
+                ]
+            },
+            {
+                "partOfSpeech": "phrasal verb",
+                "definition": "To intentionally try to meet, find, or experience something.",
+                "examples": [
+                    "Artists often seek out inspiration from nature.",
+                    "The journalist sought out people willing to share their stories.",
+                    "Children naturally seek out adventure and excitement.",
+                    "She was seeking out opportunities to study abroad."
+                ]
+            }
+        ]
+    }
+]

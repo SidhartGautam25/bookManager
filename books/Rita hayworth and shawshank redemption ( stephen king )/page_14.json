@@ -1,0 +1,53 @@
+[
+    {
+        "word": "corpses",
+        "variations": [
+            "corpse",
+            "corpses"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Dead human bodies, especially used in serious, medical, criminal, or literary contexts.",
+                "examples": [
+                    "The soldiers discovered several corpses after the battle.",
+                    "Doctors examined the corpses to determine the cause of death.",
+                    "Floodwaters carried corpses through the ruined streets.",
+                    "The detective walked carefully past the covered corpse."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "riflings",
+        "variations": [
+            "rifling",
+            "riflings",
+            "rifle",
+            "rifled",
+            "rifles"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Spiral grooves cut inside the barrel of a gun to make bullets spin and travel more accurately.",
+                "examples": [
+                    "The detective studied the riflings inside the weapon.",
+                    "Different guns leave different rifling marks on bullets.",
+                    "Experts compared the bullet with the barrel’s riflings.",
+                    "Modern rifles are designed with precise rifling patterns."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The act of searching through or stealing from something quickly and roughly.",
+                "examples": [
+                    "The riflings of abandoned houses continued during the chaos.",
+                    "Police investigated the rifling of several locked vehicles.",
+                    "Witnesses reported riflings through bags at the station.",
+                    "The shop owner discovered signs of rifling in the cash drawer."
+                ]
+            }
+        ]
+    }
+]

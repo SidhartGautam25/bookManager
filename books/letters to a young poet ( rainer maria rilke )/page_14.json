@@ -1,0 +1,482 @@
+[
+    {
+        "word": "felicity",
+        "variations": [
+            "felicity",
+            "felicities",
+            "felicitous",
+            "felicitously"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A state of happiness, joy, or pleasant contentment.",
+                "examples": [
+                    "The couple lived in quiet felicity beside the sea.",
+                    "Her face reflected pure felicity after hearing the news.",
+                    "Moments of felicity are often short but memorable.",
+                    "The children laughed with complete felicity in the garden."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The quality of expressing something in a pleasing, suitable, or skillful way.",
+                "examples": [
+                    "The poet was admired for the felicity of his language.",
+                    "Her speech combined clarity with remarkable felicity.",
+                    "Writers often struggle to achieve such felicity in expression.",
+                    "The novel’s felicities made it enjoyable to read."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "rut",
+        "variations": [
+            "rut",
+            "ruts",
+            "rutting"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A fixed and repetitive way of life that becomes dull and difficult to escape.",
+                "examples": [
+                    "He felt trapped in a boring daily rut.",
+                    "Travel helped her escape her creative rut.",
+                    "Many workers fall into routines and ruts over time.",
+                    "The artist broke out of his rut by trying new ideas."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A long narrow groove or track formed in the ground by wheels or repeated movement.",
+                "examples": [
+                    "The car tire slipped into a muddy rut.",
+                    "Deep ruts covered the village road after the storm.",
+                    "Farm carts left fresh ruts across the field.",
+                    "Cyclists tried to avoid the icy ruts."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The mating season of animals such as deer.",
+                "examples": [
+                    "Male deer become aggressive during the rut.",
+                    "Hunters observed unusual behavior in the rutting season.",
+                    "The forest echoed with animal calls during the rut.",
+                    "Several stags fought fiercely in the middle of the rut."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "capacious",
+        "variations": [
+            "capacious",
+            "more capacious",
+            "most capacious",
+            "capaciously",
+            "capaciousness"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Having a large amount of space or the ability to hold many things.",
+                "examples": [
+                    "She carried a capacious travel bag filled with books.",
+                    "The old house had a capacious attic.",
+                    "Their new car is more capacious than the previous one.",
+                    "The library contained a capacious reading hall."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Able to understand, contain, or accept many ideas or feelings.",
+                "examples": [
+                    "He had a capacious mind filled with curiosity.",
+                    "The writer’s imagination seemed endlessly capacious.",
+                    "Her capacious understanding made her a great teacher.",
+                    "Philosophy requires a capacious way of thinking."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "misapprehensions",
+        "variations": [
+            "misapprehension",
+            "misapprehensions"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Wrong ideas, misunderstandings, or incorrect beliefs about something.",
+                "examples": [
+                    "Many misapprehensions arose from the unclear announcement.",
+                    "The teacher corrected students’ misapprehensions about history.",
+                    "People often have misapprehensions about mental health.",
+                    "Their argument was caused by simple misapprehensions."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "stemming",
+        "variations": [
+            "stem",
+            "stems",
+            "stemming",
+            "stemmed"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Stopping, controlling, or reducing the spread or growth of something.",
+                "examples": [
+                    "The government was stemming the spread of disease.",
+                    "Efforts at stemming violence continued through the night.",
+                    "She tried stemming the flow of tears.",
+                    "New laws may help stem environmental damage."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Originating or developing from a particular source or cause.",
+                "examples": [
+                    "Most of his fears stem from childhood experiences.",
+                    "The conflict stemmed from political disagreements.",
+                    "Her love for music stems from her family background.",
+                    "Many social problems are stemming from poverty."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "vigorous",
+        "variations": [
+            "vigorous",
+            "more vigorous",
+            "most vigorous",
+            "vigorously",
+            "vigour"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Strong, energetic, healthy, or full of force and activity.",
+                "examples": [
+                    "He remained vigorous even in old age.",
+                    "The team made a vigorous effort to win the match.",
+                    "She vigorously defended her ideas during the debate.",
+                    "The garden showed vigorous plant growth after the rain."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Done with great energy, force, or enthusiasm.",
+                "examples": [
+                    "The crowd gave the singer a vigorous applause.",
+                    "Doctors advised vigorous exercise for better health.",
+                    "The storm brought vigorous winds across the coast.",
+                    "They launched a vigorous campaign against corruption."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "reckless",
+        "variations": [
+            "reckless",
+            "more reckless",
+            "most reckless",
+            "recklessly",
+            "recklessness"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Careless about danger, risk, or consequences.",
+                "examples": [
+                    "The reckless driver ignored the traffic signals.",
+                    "He acted recklessly without thinking about the results.",
+                    "Their reckless spending caused financial problems.",
+                    "The movie hero performed reckless stunts fearlessly."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "depriving",
+        "variations": [
+            "deprive",
+            "deprives",
+            "depriving",
+            "deprived",
+            "deprivation"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Preventing someone from having something needed, desired, or deserved.",
+                "examples": [
+                    "Lack of sleep was depriving him of energy.",
+                    "The war deprived many children of education.",
+                    "She felt deprived of freedom in the strict environment.",
+                    "The drought is depriving villages of clean water."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "uninhibitedness",
+        "variations": [
+            "uninhibited",
+            "uninhibitedness",
+            "uninhibitedly"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "The quality of behaving freely, naturally, and without embarrassment or restraint.",
+                "examples": [
+                    "Children often show joyful uninhibitedness while playing.",
+                    "Her uninhibitedness made conversations lively and honest.",
+                    "The festival encouraged music, dance, and uninhibitedness.",
+                    "Artists sometimes admire the uninhibitedness of street performers."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "virile",
+        "variations": [
+            "virile",
+            "more virile",
+            "most virile",
+            "virility"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Strong, energetic, masculine, or physically powerful.",
+                "examples": [
+                    "The actor was known for his virile appearance.",
+                    "He maintained a virile energy even in later years.",
+                    "The novel describes a virile young warrior.",
+                    "Athletes admired his virile strength and confidence."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Showing force, vigor, or strong effectiveness.",
+                "examples": [
+                    "The writer used a virile style of expression.",
+                    "Their virile campaign quickly gained attention.",
+                    "The speech carried a virile confidence.",
+                    "The movement was driven by virile leadership."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "intoxication",
+        "variations": [
+            "intoxication",
+            "intoxications",
+            "intoxicate",
+            "intoxicates",
+            "intoxicated",
+            "intoxicating"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "The condition of being affected by alcohol, drugs, or another substance.",
+                "examples": [
+                    "The driver was arrested for intoxication.",
+                    "Alcohol intoxication can affect judgment and balance.",
+                    "Doctors treated several cases of food intoxication.",
+                    "He behaved strangely because of severe intoxication."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A strong feeling of excitement, pleasure, or emotional overwhelm.",
+                "examples": [
+                    "She felt an intoxication of success after the performance.",
+                    "The music created a strange emotional intoxication.",
+                    "Young lovers often experience the intoxication of romance.",
+                    "The intoxicating atmosphere of the festival excited everyone."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "prejudices",
+        "variations": [
+            "prejudice",
+            "prejudices",
+            "prejudiced"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Unfair opinions or feelings formed without proper knowledge or understanding, often against certain people or groups.",
+                "examples": [
+                    "The novel explores social prejudices in society.",
+                    "Children can learn prejudices from their surroundings.",
+                    "Many people are fighting against racial prejudices.",
+                    "His prejudiced remarks upset the audience."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "disfigured",
+        "variations": [
+            "disfigure",
+            "disfigures",
+            "disfiguring",
+            "disfigured",
+            "disfigurement"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Damaged the appearance of someone or something, often permanently.",
+                "examples": [
+                    "The fire disfigured several buildings in the town.",
+                    "He was disfigured by injuries from the accident.",
+                    "Pollution is disfiguring the natural landscape.",
+                    "The statue had been badly disfigured over time."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Having appearance damaged or spoiled.",
+                "examples": [
+                    "The disfigured wall showed signs of years of neglect.",
+                    "She cared for animals with disfigured limbs.",
+                    "The once beautiful garden looked disfigured after the storm.",
+                    "His face remained slightly disfigured after surgery."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "ambivalent",
+        "variations": [
+            "ambivalent",
+            "more ambivalent",
+            "most ambivalent",
+            "ambivalence"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Having mixed or uncertain feelings about someone or something.",
+                "examples": [
+                    "She felt ambivalent about leaving her hometown.",
+                    "Many voters were ambivalent toward the new policy.",
+                    "He remained ambivalent between science and art.",
+                    "Her ambivalence became obvious during the discussion."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "blemish",
+        "variations": [
+            "blemish",
+            "blemishes",
+            "blemishing",
+            "blemished"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A mark, flaw, or imperfection that spoils appearance or quality.",
+                "examples": [
+                    "The mirror had a small blemish near the edge.",
+                    "Years of sunlight caused blemishes on the painting.",
+                    "Her skin was free from noticeable blemishes.",
+                    "The scandal left a blemish on his reputation."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To spoil or damage the appearance, quality, or reputation of something.",
+                "examples": [
+                    "Scratches blemished the surface of the table.",
+                    "The controversy blemished the company’s image.",
+                    "Smoke had blemished the walls of the old building.",
+                    "A single mistake should not blemish years of good work."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "prevail",
+        "variations": [
+            "prevail",
+            "prevails",
+            "prevailing",
+            "prevailed"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To succeed, win, or prove stronger in the end.",
+                "examples": [
+                    "Justice finally prevailed after many years.",
+                    "Hope prevailed despite the difficult circumstances.",
+                    "The stronger team prevailed in the final match.",
+                    "Truth eventually prevails over lies."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To exist, continue, or be commonly accepted in a place or time.",
+                "examples": [
+                    "Peace prevailed throughout the region for decades.",
+                    "A sense of silence prevailed in the hall.",
+                    "Traditional beliefs still prevail in many villages.",
+                    "Cold weather prevailed during most of the winter."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "endure",
+        "variations": [
+            "endure",
+            "endures",
+            "enduring",
+            "endured",
+            "endurance"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To suffer through something difficult, painful, or unpleasant with patience or strength.",
+                "examples": [
+                    "The workers endured extreme heat during the summer.",
+                    "She endured years of hardship without complaint.",
+                    "Many families are enduring financial difficulties.",
+                    "He endured the long journey despite being ill."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To continue existing or lasting for a long time.",
+                "examples": [
+                    "Ancient traditions still endure in the region.",
+                    "Their friendship endured through many challenges.",
+                    "Great literature often endures for centuries.",
+                    "The old bridge has endured countless storms."
+                ]
+            }
+        ]
+    }
+]

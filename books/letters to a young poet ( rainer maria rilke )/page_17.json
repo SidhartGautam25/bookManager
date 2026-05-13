@@ -1,0 +1,79 @@
+[
+    {
+        "word": "unassumingly",
+        "variations": [
+            "unassuming",
+            "unassumingly",
+            "unassumingness"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "In a modest, humble, and simple way without trying to attract attention or appear important.",
+                "examples": [
+                    "She spoke unassumingly despite her great achievements.",
+                    "The famous writer lived unassumingly in a small town.",
+                    "He dressed unassumingly and avoided showing off his wealth.",
+                    "The professor unassumingly helped every student after class."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "conciliatory",
+        "variations": [
+            "conciliatory",
+            "conciliation",
+            "conciliate",
+            "conciliates",
+            "conciliated",
+            "conciliating",
+            "conciliator"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Intended to calm disagreement, reduce anger, or restore friendly relations between people.",
+                "examples": [
+                    "She made a conciliatory gesture after the argument.",
+                    "The leader adopted a conciliatory tone during negotiations.",
+                    "His conciliatory words helped calm the angry crowd.",
+                    "Diplomats were conciliating both sides to avoid conflict."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "despise",
+        "variations": [
+            "despise",
+            "despises",
+            "despising",
+            "despised",
+            "despicable",
+            "despicably"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To strongly dislike or hate someone or something because they seem unpleasant, dishonest, cruel, or unworthy of respect.",
+                "examples": [
+                    "He despised cruelty toward animals.",
+                    "Many people despise corruption in politics.",
+                    "She was despising herself for making the careless mistake.",
+                    "The villagers despised the greedy landlord."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To look down on someone or something with contempt or disgust.",
+                "examples": [
+                    "The arrogant ruler despised ordinary people.",
+                    "She despises those who misuse power.",
+                    "He had long despised cowardly behavior.",
+                    "The audience viewed the criminal as completely despicable."
+                ]
+            }
+        ]
+    }
+]

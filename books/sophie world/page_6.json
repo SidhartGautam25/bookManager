@@ -1,0 +1,146 @@
+[
+    {
+        "word": "twitching",
+        "variations": [
+            "twitch",
+            "twitches",
+            "twitching",
+            "twitched"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Making small, sudden, quick movements, often without control.",
+                "examples": [
+                    "His fingers were twitching nervously during the interview.",
+                    "The rabbit’s nose kept twitching while it searched for food.",
+                    "She noticed the curtains twitching in the wind.",
+                    "A muscle near his eye had been twitching all day."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Small sudden movements or jerks, usually caused by nerves, excitement, or muscle reactions.",
+                "examples": [
+                    "The doctor observed a slight twitching in her arm.",
+                    "Constant twitching of the horse’s ears showed its alertness.",
+                    "Stress sometimes causes twitching around the eyes.",
+                    "He tried to hide the nervous twitching on his face."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Moving with quick, nervous, or jerking motions.",
+                "examples": [
+                    "The twitching leaves reflected the strength of the wind.",
+                    "She gave him a twitching nervous smile.",
+                    "A twitching shadow appeared near the doorway.",
+                    "The injured animal made twitching movements on the ground."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "whiskers",
+        "variations": [
+            "whisker",
+            "whiskers"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Long stiff hairs growing near the mouth of animals such as cats, dogs, or mice, used for sensing surroundings.",
+                "examples": [
+                    "The cat’s whiskers twitched as it sniffed the air.",
+                    "Mice use their whiskers to move through narrow spaces.",
+                    "The old dog had white whiskers around its muzzle.",
+                    "The tiger’s long whiskers made it look even fiercer."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Facial hair on a man, especially around the cheeks or mouth.",
+                "examples": [
+                    "His gray whiskers gave him a wise appearance.",
+                    "The barber carefully trimmed the man’s whiskers.",
+                    "Old portraits often show men with thick whiskers.",
+                    "He stroked his whiskers while thinking deeply."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "sleek",
+        "variations": [
+            "sleek",
+            "sleeker",
+            "sleekest",
+            "sleekly",
+            "sleekness"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Smooth, shiny, and well-shaped in an attractive way.",
+                "examples": [
+                    "The horse had a sleek black coat.",
+                    "She wore a sleek dress to the ceremony.",
+                    "The cat looked sleek and healthy.",
+                    "Modern trains are designed with sleek shapes."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Stylish, polished, modern, or carefully designed.",
+                "examples": [
+                    "The company released a sleek new smartphone.",
+                    "His office had a sleek and minimal design.",
+                    "The car’s sleek appearance impressed everyone.",
+                    "The website looked far sleeker after the redesign."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To make something smooth, glossy, or neat.",
+                "examples": [
+                    "She sleeked back her hair before the meeting.",
+                    "Rain had sleeked the animal’s fur against its body.",
+                    "He sleeked the fabric carefully with his hands.",
+                    "The wind sleeked the grass flat across the field."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "startled",
+        "variations": [
+            "startle",
+            "startles",
+            "startling",
+            "startled",
+            "startlingly"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Surprised or frightened suddenly by something unexpected.",
+                "examples": [
+                    "The loud crash startled everyone in the room.",
+                    "She was startled by a sudden knock on the door.",
+                    "A bird flew out of the bushes and startled the children.",
+                    "The horse startled easily at unfamiliar sounds."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Feeling sudden surprise, fear, or shock.",
+                "examples": [
+                    "He gave me a startled look when I mentioned the news.",
+                    "The startled child ran toward his mother.",
+                    "Her startled expression revealed that she knew nothing about the plan.",
+                    "They stood silently with startled faces after the explosion."
+                ]
+            }
+        ]
+    }
+]

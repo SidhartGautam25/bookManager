@@ -1,0 +1,74 @@
+[
+    {
+        "word": "trivialities",
+        "variations": [
+            "triviality",
+            "trivialities",
+            "trivial",
+            "trivially"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Small, unimportant, or insignificant things that usually do not deserve serious attention.",
+                "examples": [
+                    "They wasted hours arguing over trivialities.",
+                    "Daily trivialities often distract people from larger goals.",
+                    "The philosopher ignored social trivialities and focused on deeper questions.",
+                    "Most office conversations revolve around harmless trivialities."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Minor details or ordinary matters lacking seriousness or depth.",
+                "examples": [
+                    "The interview avoided political issues and focused on trivialities.",
+                    "She grew tired of discussing trivialities at parties.",
+                    "The book contrasts life’s trivialities with human suffering.",
+                    "Many friendships survive despite small trivialities and misunderstandings."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "shrugged",
+        "variations": [
+            "shrug",
+            "shrugs",
+            "shrugging",
+            "shrugged"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Raised and lowered the shoulders slightly to show uncertainty, lack of interest, helplessness, or indifference.",
+                "examples": [
+                    "He shrugged when asked about the missing money.",
+                    "She was shrugging helplessly during the argument.",
+                    "The child shrugged his shoulders and walked away.",
+                    "They shrugged at the criticism and continued working."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Ignored or treated something as unimportant.",
+                "examples": [
+                    "He shrugged off the insult with a smile.",
+                    "The team shrugged aside doubts from critics.",
+                    "She had shrugged off her fears before the performance.",
+                    "Many people shrug off small health problems until they worsen."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A gesture made by raising the shoulders to express uncertainty, indifference, or lack of knowledge.",
+                "examples": [
+                    "His only response was a careless shrug.",
+                    "She answered with a quick shrug of her shoulders.",
+                    "The manager gave a helpless shrug during the meeting.",
+                    "A slight shrug revealed his uncertainty."
+                ]
+            }
+        ]
+    }
+]
