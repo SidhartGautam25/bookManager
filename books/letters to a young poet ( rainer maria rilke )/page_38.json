@@ -1,0 +1,64 @@
+[
+    {
+        "word": "toiling",
+        "variations": [
+            "toil",
+            "toils",
+            "toiling",
+            "toiled"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Working very hard for a long time, often with great effort and tiredness.",
+                "examples": [
+                    "Farmers were toiling in the fields under the hot sun.",
+                    "She spent years toiling to build her business.",
+                    "Workers had toiled day and night to finish the bridge.",
+                    "Students were toiling over difficult exam preparations."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Hard, exhausting, or continuous work.",
+                "examples": [
+                    "Success came only after years of toil.",
+                    "The workers’ toil built the entire railway system.",
+                    "Behind every achievement lies patience and toil.",
+                    "Their daily toil left them little time for rest."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "bestowed",
+        "variations": [
+            "bestow",
+            "bestows",
+            "bestowing",
+            "bestowed"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Gave or presented something valuable, honorable, or special to someone.",
+                "examples": [
+                    "The king bestowed medals upon the soldiers.",
+                    "She was bestowed with an award for her service.",
+                    "The university bestowed an honorary degree on the scientist.",
+                    "His parents bestowed great love and care on him."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Placed or directed something carefully toward someone or something.",
+                "examples": [
+                    "She bestowed all her attention on the child.",
+                    "The teacher bestowed praise on hardworking students.",
+                    "He bestowed kindness even on strangers.",
+                    "The leader bestowed trust upon his closest advisers."
+                ]
+            }
+        ]
+    }
+]

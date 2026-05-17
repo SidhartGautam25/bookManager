@@ -1,0 +1,115 @@
+[
+    {
+        "word": "encompass",
+        "variations": [
+            "encompass",
+            "encompasses",
+            "encompassing",
+            "encompassed"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To include many different things as part of a whole.",
+                "examples": [
+                    "The course encompasses history, philosophy, and literature.",
+                    "Her work encompasses several areas of science.",
+                    "The project is encompassing ideas from many cultures.",
+                    "The book encompassed years of research and travel."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To surround, cover, or completely contain something.",
+                "examples": [
+                    "Mountains encompassed the small village.",
+                    "Dark clouds encompassed the sky before the storm.",
+                    "The walls encompassed the ancient city.",
+                    "A feeling of peace encompassed him during meditation."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To achieve, experience, or bring about something successfully.",
+                "examples": [
+                    "The leader hoped to encompass major reforms.",
+                    "They encompassed victory after years of struggle.",
+                    "Her ambition encompassed both knowledge and service.",
+                    "The movement aimed to encompass social change."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "murmur",
+        "variations": [
+            "murmur",
+            "murmurs",
+            "murmuring",
+            "murmured"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A soft, low, and often continuous sound or voice.",
+                "examples": [
+                    "A gentle murmur spread through the crowd.",
+                    "They heard the murmur of the river nearby.",
+                    "The classroom filled with quiet murmurs after the announcement.",
+                    "Her murmur of thanks was barely audible."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To speak softly, quietly, or unclearly.",
+                "examples": [
+                    "She murmured a prayer before sleeping.",
+                    "The audience was murmuring during the speech.",
+                    "He murmured her name under his breath.",
+                    "Children murmured excitedly while waiting for the show."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A soft repeated sound made by moving water, wind, or leaves.",
+                "examples": [
+                    "The murmur of rain relaxed everyone in the cabin.",
+                    "Leaves answered the wind with a quiet murmur.",
+                    "They slept listening to the murmur of the sea.",
+                    "The forest carried a constant murmur at night."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "bated",
+        "variations": [
+            "bate",
+            "bates",
+            "bating",
+            "bated"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Held back, reduced, or stopped for a short time, especially in the phrase 'with bated breath' meaning waiting nervously or excitedly.",
+                "examples": [
+                    "The audience waited with bated breath for the final result.",
+                    "Children listened with bated excitement to the ghost story.",
+                    "She stood with bated breath as the doctor opened the report.",
+                    "Fans watched the final moments of the match with bated silence."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Reduced, restrained, or held back something.",
+                "examples": [
+                    "He bated his anger during the argument.",
+                    "The speaker carefully bated his criticism of the government.",
+                    "She was bating her impatience while waiting in line.",
+                    "Fear had bated their confidence before the battle."
+                ]
+            }
+        ]
+    }
+]

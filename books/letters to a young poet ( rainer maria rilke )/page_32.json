@@ -1,0 +1,34 @@
+[
+    {
+        "word": "fickle",
+        "variations": [
+            "fickle",
+            "fickler",
+            "ficklest",
+            "fickleness",
+            "fickly"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Changing feelings, opinions, or loyalties very quickly and unpredictably.",
+                "examples": [
+                    "The public can be fickle about celebrities and trends.",
+                    "He was known for his fickle nature and changing decisions.",
+                    "Her interest in hobbies was so fickle that she rarely finished anything.",
+                    "Fans can quickly become fickle after a team starts losing."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Unstable, unreliable, or likely to change suddenly.",
+                "examples": [
+                    "Mountain weather is often fickle and hard to predict.",
+                    "Fortune can be fickle in business and politics.",
+                    "The market remained fickle throughout the year.",
+                    "Human emotions are sometimes surprisingly fickle."
+                ]
+            }
+        ]
+    }
+]

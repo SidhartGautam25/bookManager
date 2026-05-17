@@ -1,0 +1,162 @@
+[
+    {
+        "word": "fortuitous",
+        "variations": [
+            "fortuitous",
+            "more fortuitous",
+            "most fortuitous",
+            "fortuitously",
+            "fortuity"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Happening by chance in a lucky or beneficial way.",
+                "examples": [
+                    "A fortuitous meeting with an old friend changed his career.",
+                    "They discovered the hidden waterfall through a fortuitous accident.",
+                    "Her success came after several fortuitous opportunities.",
+                    "It was fortuitously sunny on the day of the festival."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Unexpected or accidental rather than planned.",
+                "examples": [
+                    "The discovery of the ancient coins was entirely fortuitous.",
+                    "Their friendship began through a fortuitous encounter at the station.",
+                    "Scientists sometimes make fortuitous discoveries during experiments.",
+                    "The timing of the event seemed strangely fortuitous."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "precipitately",
+        "variations": [
+            "precipitate",
+            "precipitates",
+            "precipitating",
+            "precipitated",
+            "precipitately",
+            "precipitation"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "In a sudden, hurried, or careless way without proper thought.",
+                "examples": [
+                    "He acted precipitately and later regretted the decision.",
+                    "The soldiers retreated precipitately after the attack.",
+                    "She answered precipitately before hearing the full question.",
+                    "Investors sold shares precipitately during the crisis."
+                ]
+            },
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Very quickly or unexpectedly.",
+                "examples": [
+                    "The weather changed precipitately during the night.",
+                    "Events moved precipitately after the announcement.",
+                    "The company’s profits fell precipitately within months.",
+                    "The crowd dispersed precipitately when the storm began."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "consensus",
+        "variations": [
+            "consensus",
+            "consensuses"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "General agreement or shared opinion among a group of people.",
+                "examples": [
+                    "The committee reached a consensus after hours of discussion.",
+                    "Scientists have formed a broad consensus on climate change.",
+                    "There was no clear consensus about the new policy.",
+                    "The team worked together until a consensus was achieved."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A collective decision accepted by most members of a group.",
+                "examples": [
+                    "Village elders made decisions through consensus.",
+                    "The proposal gained consensus among workers and managers.",
+                    "Public consensus slowly shifted in favor of reform.",
+                    "Leaders struggled to build consensus during the crisis."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "trivial",
+        "variations": [
+            "trivial",
+            "more trivial",
+            "most trivial",
+            "trivially",
+            "triviality",
+            "trivialities"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Very small, unimportant, or not serious enough to deserve attention.",
+                "examples": [
+                    "They argued over something completely trivial.",
+                    "Most of his worries later seemed trivial.",
+                    "She ignored trivial gossip and focused on her studies.",
+                    "The mistake looked trivial at first but caused problems later."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Simple, ordinary, or easy to understand or solve.",
+                "examples": [
+                    "For experienced programmers, the task was trivial.",
+                    "The teacher considered the question too trivial for the exam.",
+                    "What feels difficult today may appear trivial later.",
+                    "Scientists dismissed it as a trivial calculation error."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "frivolous",
+        "variations": [
+            "frivolous",
+            "more frivolous",
+            "most frivolous",
+            "frivolously",
+            "frivolity",
+            "frivolities"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Not serious or important; focused on fun or silly things rather than meaningful matters.",
+                "examples": [
+                    "He wasted money on frivolous luxuries.",
+                    "The judge dismissed the frivolous complaint.",
+                    "She preferred meaningful discussions over frivolous gossip.",
+                    "Their carefree and frivolous behavior annoyed the teachers."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Lacking purpose, value, or thoughtful seriousness.",
+                "examples": [
+                    "Critics called the movie entertaining but frivolous.",
+                    "The meeting became filled with frivolous arguments.",
+                    "He was accused of making frivolous promises during the campaign.",
+                    "Too many frivolous distractions reduced productivity."
+                ]
+            }
+        ]
+    }
+]

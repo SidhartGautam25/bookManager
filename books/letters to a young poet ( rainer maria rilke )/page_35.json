@@ -1,0 +1,124 @@
+[
+    {
+        "word": "dinghies",
+        "variations": [
+            "dinghy",
+            "dinghies"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Small boats, usually open and lightweight, often used for short trips, rescue work, or reaching larger ships.",
+                "examples": [
+                    "The sailors escaped in small dinghies during the storm.",
+                    "Several dinghies were tied near the wooden dock.",
+                    "Children were learning to row dinghies on the lake.",
+                    "Fishermen used dinghies to travel between the islands."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Inflatable or portable boats used in emergencies or recreation.",
+                "examples": [
+                    "The rescue team carried inflatable dinghies during the flood.",
+                    "Tourists paddled dinghies along the calm river.",
+                    "The yacht stored two emergency dinghies onboard.",
+                    "Modern dinghies are often made from lightweight rubber materials."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "lifebelts",
+        "variations": [
+            "lifebelt",
+            "lifebelts"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Floating safety devices worn or held to help people stay afloat in water.",
+                "examples": [
+                    "Passengers were instructed to wear lifebelts before departure.",
+                    "The rescue workers threw lifebelts into the river.",
+                    "Children practiced swimming while wearing lifebelts.",
+                    "Every boat carried enough lifebelts for emergencies."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Something that provides safety, support, or protection during danger or difficulty.",
+                "examples": [
+                    "Friends became emotional lifebelts during hard times.",
+                    "Savings can act like lifebelts during financial crises.",
+                    "Education often serves as a lifebelt for struggling communities.",
+                    "The charity became a lifebelt for many homeless families."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "buoyancy",
+        "variations": [
+            "buoyancy",
+            "buoyant",
+            "buoyantly"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "The ability of something to float or stay afloat in water or another liquid.",
+                "examples": [
+                    "The boat’s buoyancy kept it from sinking.",
+                    "Engineers tested the buoyancy of the rescue raft.",
+                    "Air trapped inside increases the buoyancy of objects.",
+                    "Life jackets provide extra buoyancy in deep water."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A cheerful, lively, or confident attitude.",
+                "examples": [
+                    "Her natural buoyancy lifted everyone’s mood.",
+                    "He faced difficulties with surprising buoyancy.",
+                    "The team regained buoyancy after their victory.",
+                    "Even during hard times, she spoke with buoyant optimism."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "trivialize",
+        "variations": [
+            "trivialize",
+            "trivializes",
+            "trivializing",
+            "trivialized",
+            "trivial",
+            "triviality",
+            "trivialities"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To make something seem less important, serious, or meaningful than it really is.",
+                "examples": [
+                    "People should not trivialize mental health problems.",
+                    "The movie was criticized for trivializing war and suffering.",
+                    "She felt her achievements were being trivialized.",
+                    "Jokes can sometimes trivialize serious social issues."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To treat something important as ordinary, small, or unworthy of attention.",
+                "examples": [
+                    "The manager trivialized workers’ complaints during the meeting.",
+                    "He accused the media of trivializing climate change.",
+                    "Pain should never be trivialized by doctors or family members.",
+                    "The discussion became heated when they trivialized the tragedy."
+                ]
+            }
+        ]
+    }
+]

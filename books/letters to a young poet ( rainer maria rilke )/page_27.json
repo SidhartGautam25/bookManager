@@ -1,0 +1,212 @@
+[
+    {
+        "word": "vocation",
+        "variations": [
+            "vocation",
+            "vocations",
+            "vocational"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A job, profession, or type of work that a person feels strongly suited for or devoted to.",
+                "examples": [
+                    "Teaching became her true vocation.",
+                    "He discovered his vocation in medicine at a young age.",
+                    "Many artists struggle for years before finding their vocation.",
+                    "She left office work to follow a vocational path in music."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A strong inner calling or purpose toward a particular way of life or activity.",
+                "examples": [
+                    "The monk believed spiritual service was his vocation.",
+                    "Writing felt more like a vocation than a career to him.",
+                    "She treated helping others as a lifelong vocation.",
+                    "Some people spend years searching for their true vocation."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "contempt",
+        "variations": [
+            "contempt",
+            "contemptuous",
+            "contemptuously"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A strong feeling that someone or something is worthless, unworthy of respect, or deserving dislike.",
+                "examples": [
+                    "He looked at the dishonest man with contempt.",
+                    "Her voice carried open contempt for corruption.",
+                    "The crowd reacted with contempt toward the cruel ruler.",
+                    "She contemptuously dismissed the unfair accusation."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A lack of respect shown toward rules, authority, or accepted behavior.",
+                "examples": [
+                    "The judge warned him for showing contempt in court.",
+                    "His contempt for safety rules worried the workers.",
+                    "The group acted with complete contempt for the law.",
+                    "People criticized the company’s contemptuous treatment of employees."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "assuage",
+        "variations": [
+            "assuage",
+            "assuages",
+            "assuaging",
+            "assuaged"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To make pain, fear, worry, or sadness less severe or easier to bear.",
+                "examples": [
+                    "Her kind words helped assuage his fears.",
+                    "Doctors tried to assuage the patient’s pain.",
+                    "The apology partially assuaged public anger.",
+                    "Music often assuages stress after a long day."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To satisfy or calm a strong feeling or desire.",
+                "examples": [
+                    "He ate quickly to assuage his hunger.",
+                    "Travel helped assuage her curiosity about the world.",
+                    "Nothing could fully assuage their grief after the loss.",
+                    "The leader tried assuaging the crowd with promises."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "steeped",
+        "variations": [
+            "steep",
+            "steeps",
+            "steeping",
+            "steeped"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Soaked or left in liquid so that flavor, color, or qualities slowly spread through it.",
+                "examples": [
+                    "The tea leaves were steeped in hot water.",
+                    "Herbs had been steeping overnight for the medicine.",
+                    "The cloth was steeped in dye before drying.",
+                    "He steeped the spices to strengthen the flavor."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Deeply filled, surrounded, or influenced by something such as culture, tradition, or emotion.",
+                "examples": [
+                    "The town is steeped in history and tradition.",
+                    "His writing was steeped in sadness and memory.",
+                    "She grew up in a family steeped in music.",
+                    "Ancient temples remain steeped in mystery."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Rising or falling sharply at a difficult angle.",
+                "examples": [
+                    "The hikers climbed a steep mountain path.",
+                    "The road became steeper near the hilltop.",
+                    "Cyclists struggled on the steep streets.",
+                    "A steep cliff overlooked the sea."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "resentment",
+        "variations": [
+            "resentment",
+            "resentments",
+            "resent",
+            "resents",
+            "resenting",
+            "resented",
+            "resentful",
+            "resentfully"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A lasting feeling of anger, bitterness, or unfairness caused by something someone did.",
+                "examples": [
+                    "He carried resentment toward his former employer for years.",
+                    "Jealousy and resentment slowly damaged their friendship.",
+                    "Workers expressed resentment about unequal pay.",
+                    "She resentfully accepted the unfair decision."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A feeling of displeasure caused by being insulted, ignored, or treated badly.",
+                "examples": [
+                    "Children may develop resentment if treated unfairly.",
+                    "His harsh comments created resentment in the team.",
+                    "The public’s resentment grew after the scandal.",
+                    "She resented being excluded from the discussion."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "obliged",
+        "variations": [
+            "oblige",
+            "obliges",
+            "obliging",
+            "obliged",
+            "obligation",
+            "obligatory"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Forced, required, or expected to do something because of duty, rules, or circumstances.",
+                "examples": [
+                    "He felt obliged to help his old friend.",
+                    "Employees are obliged to follow safety instructions.",
+                    "Bad weather obliged the travelers to stop early.",
+                    "She was legally obliged to appear in court."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Grateful because someone has done a favor or kindness.",
+                "examples": [
+                    "I’m much obliged for your help.",
+                    "She felt deeply obliged to the doctor who saved her life.",
+                    "They were obliged to everyone who supported the project.",
+                    "He politely thanked the host and said he was obliged."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To do someone a favor or help them willingly.",
+                "examples": [
+                    "Could you oblige me with some advice?",
+                    "The shopkeeper gladly obliged the customer’s request.",
+                    "She often obliges friends without expecting anything in return.",
+                    "He obliged by carrying the heavy bags upstairs."
+                ]
+            }
+        ]
+    }
+]
