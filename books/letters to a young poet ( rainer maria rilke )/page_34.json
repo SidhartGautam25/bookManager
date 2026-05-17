@@ -1,0 +1,76 @@
+[
+    {
+        "word": "scrimp",
+        "variations": [
+            "scrimp",
+            "scrimps",
+            "scrimping",
+            "scrimped"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To spend very little money, use only small amounts of something, or save carefully because resources are limited.",
+                "examples": [
+                    "The family scrimped for years to buy a house.",
+                    "Students often scrimp on food and entertainment to save money.",
+                    "She had been scrimping and saving for her education.",
+                    "They scrimped during the winter to prepare for difficult times."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To provide less than what is needed or expected.",
+                "examples": [
+                    "The builders scrimped on materials and weakened the structure.",
+                    "Good restaurants never scrimp on quality ingredients.",
+                    "He refused to scrimp on his children’s education.",
+                    "The company was accused of scrimping on worker safety."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "culmination",
+        "variations": [
+            "culmination",
+            "culminations",
+            "culminate",
+            "culminates",
+            "culminating",
+            "culminated"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "The final result, highest point, or most important stage of something after a long process.",
+                "examples": [
+                    "The championship victory was the culmination of years of hard work.",
+                    "Her speech marked the culmination of the conference.",
+                    "The festival ended in a grand culmination of music and fireworks.",
+                    "This book is the culmination of decades of research."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The point at which something reaches completion or peak intensity.",
+                "examples": [
+                    "The argument reached its culmination late at night.",
+                    "Summer brings the culmination of the farming season.",
+                    "The story moves toward a dramatic culmination.",
+                    "His journey found its culmination in spiritual peace."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To reach a final stage, result, or highest point.",
+                "examples": [
+                    "Their efforts culminated in a successful project.",
+                    "Months of tension culminated in a public protest.",
+                    "The celebrations culminated with a fireworks display.",
+                    "Years of study culminated in her becoming a doctor."
+                ]
+            }
+        ]
+    }
+]

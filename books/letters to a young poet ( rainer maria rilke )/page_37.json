@@ -1,0 +1,232 @@
+[
+    {
+        "word": "tentative",
+        "variations": [
+            "tentative",
+            "more tentative",
+            "most tentative",
+            "tentatively",
+            "tentativeness"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Not fully decided, certain, or fixed yet.",
+                "examples": [
+                    "They made a tentative plan for the weekend trip.",
+                    "The meeting date is still tentative.",
+                    "She gave a tentative answer because she was unsure.",
+                    "The company reached a tentative agreement with the workers."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Careful, hesitant, or lacking confidence.",
+                "examples": [
+                    "He took tentative steps into the dark room.",
+                    "The child gave a tentative smile to the strangers.",
+                    "She spoke tentatively during her first presentation.",
+                    "Their friendship began with tentative conversations."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "disguises",
+        "variations": [
+            "disguise",
+            "disguises",
+            "disguising",
+            "disguised"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Appearances, clothes, or methods used to hide someone’s real identity or nature.",
+                "examples": [
+                    "The spies wore disguises to avoid recognition.",
+                    "Children arrived at the party in colorful disguises.",
+                    "His kindness was only one of many disguises.",
+                    "Actors often use wigs and disguises on stage."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Hides or changes the appearance, identity, or truth of something.",
+                "examples": [
+                    "She disguises her voice during prank calls.",
+                    "The criminal disguised himself as a guard.",
+                    "Fear was disguised behind his calm expression.",
+                    "The company was accused of disguising financial losses."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "abides",
+        "variations": [
+            "abide",
+            "abides",
+            "abiding",
+            "abided",
+            "abode"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Accepts, follows, or obeys rules, decisions, or agreements.",
+                "examples": [
+                    "She abides by the rules strictly.",
+                    "Good citizens abide by the law.",
+                    "The team agreed to abide by the referee’s decision.",
+                    "He has always abided by his principles."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Remains, continues, or stays for a long time.",
+                "examples": [
+                    "True friendship abides even through hardship.",
+                    "The memory of that day still abides with him.",
+                    "Peace rarely abides in times of war.",
+                    "Ancient traditions continue abiding in the village."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "distorting",
+        "variations": [
+            "distort",
+            "distorts",
+            "distorting",
+            "distorted",
+            "distortion",
+            "distortions"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Changing the shape, appearance, or sound of something so it becomes unclear or unnatural.",
+                "examples": [
+                    "The cracked mirror was distorting his reflection.",
+                    "Heat waves were distorting the view of the road.",
+                    "The old speaker distorted voices badly.",
+                    "Rain on the window distorted the city lights."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Changing information, facts, or truth in a misleading way.",
+                "examples": [
+                    "The article was accused of distorting history.",
+                    "Rumors often distort the original story.",
+                    "He distorted her words during the argument.",
+                    "Social media can sometimes distort public opinion."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "ripened",
+        "variations": [
+            "ripen",
+            "ripens",
+            "ripening",
+            "ripened"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Became fully mature, ready to eat, or fully developed.",
+                "examples": [
+                    "The mangoes ripened in the summer heat.",
+                    "Farmers waited until the crops had fully ripened.",
+                    "The fruit was ripening slowly on the tree.",
+                    "Years of practice ripened his skills as a musician."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Developed gradually into a stronger or more complete state.",
+                "examples": [
+                    "Their friendship ripened over time.",
+                    "The idea ripened into a successful project.",
+                    "Experience had ripened her understanding of life.",
+                    "Public anger ripened into protest."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "femininity",
+        "variations": [
+            "femininity",
+            "feminine",
+            "femininely"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Qualities, appearance, or behavior traditionally associated with women or womanhood.",
+                "examples": [
+                    "The painting celebrated grace and femininity.",
+                    "She expressed her femininity through fashion and art.",
+                    "Different cultures define femininity in different ways.",
+                    "The character balanced strength with femininity."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Gentleness, elegance, or softness often linked with feminine identity.",
+                "examples": [
+                    "Her voice carried warmth and femininity.",
+                    "The dancer moved with natural femininity.",
+                    "Writers often discuss ideas of masculinity and femininity together.",
+                    "The film explored modern views of femininity."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "shrugged",
+        "variations": [
+            "shrug",
+            "shrugs",
+            "shrugging",
+            "shrugged"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Raised and lowered the shoulders slightly to show uncertainty, indifference, or lack of knowledge.",
+                "examples": [
+                    "He shrugged when asked about the missing book.",
+                    "She was shrugging helplessly during the discussion.",
+                    "The child shrugged his shoulders and walked away.",
+                    "They shrugged at the criticism and continued working."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Ignored or treated something as unimportant.",
+                "examples": [
+                    "He shrugged off the insult with a smile.",
+                    "The team shrugged aside negative comments.",
+                    "She had shrugged off her fears before the performance.",
+                    "Many people shrug off health warnings until problems appear."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A gesture made by raising the shoulders to express uncertainty or indifference.",
+                "examples": [
+                    "His only reply was a careless shrug.",
+                    "She answered with a quick shrug of her shoulders.",
+                    "The manager gave a helpless shrug during the meeting.",
+                    "A slight shrug revealed his uncertainty."
+                ]
+            }
+        ]
+    }
+]

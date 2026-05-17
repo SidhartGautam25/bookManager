@@ -1,0 +1,46 @@
+[
+    {
+        "word": "deceived",
+        "variations": [
+            "deceive",
+            "deceives",
+            "deceiving",
+            "deceived",
+            "deception",
+            "deceptive",
+            "deceptively"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Made someone believe something false or untrue by tricking or misleading them.",
+                "examples": [
+                    "He deceived his friends about where the money went.",
+                    "The advertisement deceived customers with false promises.",
+                    "She felt deeply hurt after being deceived for so long.",
+                    "People are often deceived by appearances."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Created a false impression or hidden the truth.",
+                "examples": [
+                    "The calm smile deceived everyone around him.",
+                    "Fog deceived the travelers about the distance ahead.",
+                    "The company had been deceiving investors for years.",
+                    "His deceptively simple words carried deep meaning."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Having been tricked, misled, or falsely convinced.",
+                "examples": [
+                    "The deceived customers demanded refunds.",
+                    "She looked shocked and deceived after learning the truth.",
+                    "Many deceived voters lost trust in the leaders.",
+                    "The deceived child finally understood the prank."
+                ]
+            }
+        ]
+    }
+]

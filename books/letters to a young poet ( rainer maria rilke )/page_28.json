@@ -1,0 +1,45 @@
+[
+    {
+        "word": "misapprehensions",
+        "variations": [
+            "misapprehension",
+            "misapprehensions",
+            "misapprehend",
+            "misapprehends",
+            "misapprehending",
+            "misapprehended"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Wrong ideas, misunderstandings, or incorrect beliefs about something.",
+                "examples": [
+                    "Many misapprehensions about the culture came from false rumors.",
+                    "The teacher cleared up students’ misapprehensions before the exam.",
+                    "People often have misapprehensions about scientific theories.",
+                    "Their argument began because of simple misapprehensions."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Feelings of worry or fear caused by uncertainty or misunderstanding.",
+                "examples": [
+                    "She had serious misapprehensions about traveling alone.",
+                    "Parents expressed misapprehensions regarding the new policy.",
+                    "His misapprehensions slowly disappeared after the explanation.",
+                    "The workers shared their misapprehensions about losing jobs."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To misunderstand or wrongly interpret something.",
+                "examples": [
+                    "He completely misapprehended her intentions.",
+                    "The statement was misapprehended by the public.",
+                    "People often misapprehend silence as weakness.",
+                    "She feared her words might be misapprehended."
+                ]
+            }
+        ]
+    }
+]

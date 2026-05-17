@@ -1,0 +1,119 @@
+[
+    {
+        "word": "forsake",
+        "variations": [
+            "forsake",
+            "forsakes",
+            "forsaking",
+            "forsook",
+            "forsaken"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To leave, abandon, or turn away from someone or something completely.",
+                "examples": [
+                    "He refused to forsake his family during difficult times.",
+                    "She felt forsaken after all her friends moved away.",
+                    "The warrior forsook his homeland to seek peace.",
+                    "True friends do not forsake each other in hardship."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To give up or stop following a belief, habit, or lifestyle.",
+                "examples": [
+                    "The monk forsook wealth and comfort.",
+                    "He decided to forsake his harmful habits.",
+                    "Many artists forsake stable jobs to follow creativity.",
+                    "She never forsakes her principles under pressure."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "apprenticeship",
+        "variations": [
+            "apprenticeship",
+            "apprenticeships",
+            "apprentice",
+            "apprentices",
+            "apprenticing",
+            "apprenticed"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A period of training in which someone learns a skill or profession by working with an experienced person.",
+                "examples": [
+                    "He completed an apprenticeship with a skilled carpenter.",
+                    "The young cook began her apprenticeship in a small restaurant.",
+                    "Many crafts are learned through long apprenticeships.",
+                    "During his apprenticeship, he learned how to repair machines."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The process of learning through practice, guidance, and real experience.",
+                "examples": [
+                    "Writing improves through years of apprenticeship and patience.",
+                    "The actor considered his early struggles part of his apprenticeship.",
+                    "Her apprenticeship in journalism taught her discipline.",
+                    "Young musicians often grow through apprenticeship under masters."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A beginner learning a trade or skill from an expert.",
+                "examples": [
+                    "The apprentice carefully watched the blacksmith work.",
+                    "Several apprentices trained in the workshop.",
+                    "She apprenticed herself to an experienced painter.",
+                    "Young apprentices practiced the craft every day."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "secluded",
+        "variations": [
+            "seclude",
+            "secludes",
+            "secluding",
+            "secluded",
+            "seclusion"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Quiet, private, and away from crowds or busy places.",
+                "examples": [
+                    "They spent the weekend in a secluded cabin near the forest.",
+                    "The temple stood in a secluded mountain valley.",
+                    "She preferred secluded places for reading and meditation.",
+                    "A secluded beach lay hidden behind the cliffs."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Separated or isolated from other people or activity.",
+                "examples": [
+                    "The writer lived a secluded life after becoming famous.",
+                    "He remained secluded from society for many years.",
+                    "The old house looked dark and secluded.",
+                    "Monks often choose secluded monasteries for spiritual practice."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To keep someone away from other people or public activity.",
+                "examples": [
+                    "The patient was secluded for recovery and rest.",
+                    "The royal family secluded themselves during the conflict.",
+                    "She secluded herself in her room to finish the novel.",
+                    "The monks secluded new learners from distractions."
+                ]
+            }
+        ]
+    }
+]
