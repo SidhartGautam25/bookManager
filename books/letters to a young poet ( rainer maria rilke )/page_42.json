@@ -1,0 +1,86 @@
+[
+    {
+        "word": "giddiness",
+        "variations": [
+            "giddiness",
+            "giddy",
+            "giddier",
+            "giddiest",
+            "giddily"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A feeling of dizziness or unsteadiness, as if everything is spinning.",
+                "examples": [
+                    "She felt sudden giddiness after standing up too quickly.",
+                    "The medicine caused slight giddiness and nausea.",
+                    "His giddiness made it difficult to walk properly.",
+                    "People climbing high mountains sometimes experience giddiness."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A feeling of excitement, happiness, or emotional lightness that makes someone behave playfully or carelessly.",
+                "examples": [
+                    "The children were filled with giddiness before the festival.",
+                    "She laughed with giddy excitement after hearing the good news.",
+                    "His giddiness made him speak faster than usual.",
+                    "Young friends often act with harmless giddiness during celebrations."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Careless or foolish excitement that may lead to poor judgment.",
+                "examples": [
+                    "Their giddiness caused them to ignore important warnings.",
+                    "He regretted decisions made in a moment of giddiness.",
+                    "The crowd's giddiness slowly turned into disorder.",
+                    "Too much giddy enthusiasm can cloud judgment."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "swore",
+        "variations": [
+            "swear",
+            "swears",
+            "swearing",
+            "swore",
+            "sworn"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Promised strongly or declared seriously that something was true or would be done.",
+                "examples": [
+                    "He swore that he had told the truth.",
+                    "She swore to protect her younger brother.",
+                    "The witness had sworn honesty before speaking.",
+                    "They were swearing loyalty to their cause."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Used rude, offensive, or angry language.",
+                "examples": [
+                    "He swore loudly after hurting his hand.",
+                    "The driver was swearing at the traffic jam.",
+                    "She rarely swears in front of children.",
+                    "The coach warned players against swearing during matches."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Took a formal oath or made a solemn vow, especially in legal, official, or religious settings.",
+                "examples": [
+                    "The officer swore an oath before taking office.",
+                    "New citizens swore allegiance to the country.",
+                    "The judge confirmed that the witness had sworn truthfully.",
+                    "They were sworn into their new roles during the ceremony."
+                ]
+            }
+        ]
+    }
+]

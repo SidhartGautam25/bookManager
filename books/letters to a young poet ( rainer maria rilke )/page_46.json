@@ -1,0 +1,208 @@
+[
+    {
+        "word": "mends",
+        "variations": [
+            "mend",
+            "mends",
+            "mending",
+            "mended"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Repairs or fixes something that is broken, damaged, or torn.",
+                "examples": [
+                    "She mends old clothes instead of throwing them away.",
+                    "The tailor was mending the torn jacket.",
+                    "He mended the bicycle before the trip.",
+                    "Skilled workers mend damaged furniture carefully."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Improves or becomes better after difficulty, damage, or illness.",
+                "examples": [
+                    "Time slowly mends emotional wounds.",
+                    "Their friendship mended after an honest conversation.",
+                    "The patient is mending well after surgery.",
+                    "Economic conditions had mended by the following year."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A repaired place or improvement after damage.",
+                "examples": [
+                    "The shirt showed a neat mend near the sleeve.",
+                    "The wall still carried signs of an old mend.",
+                    "Careful mends extended the life of the blanket.",
+                    "The carpenter inspected the previous mend in the chair."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "convalescent",
+        "variations": [
+            "convalescent",
+            "convalescents",
+            "convalescence",
+            "convalesce",
+            "convalesces",
+            "convalescing",
+            "convalesced"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Recovering gradually after illness, injury, or weakness.",
+                "examples": [
+                    "The convalescent patient needed rest and quiet.",
+                    "She spent weeks in a convalescent state after the illness.",
+                    "Doctors advised convalescing patients to avoid stress.",
+                    "His strength slowly returned during the convalescent period."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A person who is recovering from illness or injury.",
+                "examples": [
+                    "The garden was opened for convalescents at the hospital.",
+                    "Convalescents often require both patience and care.",
+                    "Volunteers helped convalescents during recovery programs.",
+                    "The nurse comforted several elderly convalescents."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The period or process of recovery after sickness or injury.",
+                "examples": [
+                    "His convalescence lasted several months.",
+                    "Good food and sleep support convalescence.",
+                    "She spent her convalescence reading and resting.",
+                    "The doctor monitored his progress during convalescence."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "divagations",
+        "variations": [
+            "divagation",
+            "divagations",
+            "divagate",
+            "divagates",
+            "divagating",
+            "divagated"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Thoughts, conversations, or writings that wander away from the main subject.",
+                "examples": [
+                    "The lecture was filled with interesting divagations.",
+                    "His divagations made the story longer than expected.",
+                    "Writers sometimes allow divagations to explore new ideas.",
+                    "The conversation wandered into humorous divagations."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Acts of moving away from a direct path, idea, or purpose.",
+                "examples": [
+                    "The essay contained several unnecessary divagations.",
+                    "Her divagations from the topic confused the audience.",
+                    "Philosophical divagations often appear in old literature.",
+                    "The speaker returned to the main point after many divagations."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To wander away from the main subject or path in speech, thought, or movement.",
+                "examples": [
+                    "He divagated while explaining the history lesson.",
+                    "The author often divagates into personal memories.",
+                    "She had divagated so far from the topic that people lost track.",
+                    "Storytellers sometimes divagate to build atmosphere."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "vice",
+        "variations": [
+            "vice",
+            "vices"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A bad habit or immoral behavior that may harm a person or others.",
+                "examples": [
+                    "Gambling became his most destructive vice.",
+                    "Greed and dishonesty are often described as vices.",
+                    "Everyone struggles with some small vice or weakness.",
+                    "The novel explores the conflict between virtue and vice."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A moral fault or weakness in character.",
+                "examples": [
+                    "Pride can become a dangerous vice when uncontrolled.",
+                    "The philosopher warned against human vices.",
+                    "Anger and envy are common vices discussed in ethics.",
+                    "He tried to overcome old vices through discipline."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A metal tool with two jaws used to hold something tightly while working on it.",
+                "examples": [
+                    "The carpenter fixed the wood in a vice before cutting it.",
+                    "Tools were placed beside the heavy metal vice.",
+                    "He tightened the object securely in the vice.",
+                    "The mechanic relied on the bench vice for repairs."
+                ]
+            },
+            {
+                "partOfSpeech": "preposition",
+                "definition": "Used formally to mean 'in place of' or 'instead of'.",
+                "examples": [
+                    "The deputy signed the letter vice the manager.",
+                    "He served vice the absent officer during the meeting.",
+                    "The document listed her as acting vice the director.",
+                    "Formal records sometimes use vice in this sense."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "inasfar",
+        "variations": [
+            "inasfar",
+            "inasmuch"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "This word is usually written as 'inasfar as' and means 'to the extent that' or 'as far as something is concerned'. It is used to limit or explain how much a statement is true.",
+                "examples": [
+                    "The plan succeeded insofar as it reduced expenses.",
+                    "I agree with you insofar as fairness is concerned.",
+                    "The law is effective insofar as it protects citizens.",
+                    "His advice was helpful insofar as it encouraged patience."
+                ]
+            },
+            {
+                "partOfSpeech": "conjunction",
+                "definition": "Used to connect ideas and show that something is true only within a certain limit or condition.",
+                "examples": [
+                    "The proposal is acceptable insofar as it remains affordable.",
+                    "She supported the idea insofar as it helped students.",
+                    "The project worked insofar as the team cooperated.",
+                    "His statement was correct insofar as the facts were known."
+                ]
+            }
+        ]
+    }
+]

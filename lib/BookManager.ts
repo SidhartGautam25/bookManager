@@ -261,6 +261,47 @@ export class BookManager {
   }
 
   /**
+   * Get word statistics across ALL books, detailing frequency and pages per book
+   */
+  getWordStatsAcrossAllBooks(word: string) {
+    const normalizedWord = word.trim().toLowerCase();
+    if (!normalizedWord) {
+      return null;
+    }
+
+    const books = this.getAllBooks();
+    const stats: { bookName: string; frequency: number; pages: number[] }[] = [];
+    let totalFrequency = 0;
+    let combinedMeanings: WordMeaning[] = [];
+
+    for (const book of books) {
+      const occurrence = this.getWordOccurrences(book, normalizedWord);
+      if (occurrence) {
+        stats.push({
+          bookName: book,
+          frequency: occurrence.frequency,
+          pages: occurrence.pages,
+        });
+        totalFrequency += occurrence.frequency;
+        if (combinedMeanings.length === 0 && occurrence.meanings) {
+          combinedMeanings = occurrence.meanings;
+        }
+      }
+    }
+
+    if (stats.length === 0) {
+      return null;
+    }
+
+    return {
+      word: word.trim(),
+      meanings: combinedMeanings,
+      totalFrequency,
+      books: stats.sort((a, b) => b.frequency - a.frequency),
+    };
+  }
+
+  /**
    * Get all pages in a book
    */
   getBookPages(bookName: string): number[] {

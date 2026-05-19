@@ -1,0 +1,137 @@
+[
+    {
+        "word": "articulate",
+        "variations": [
+            "articulate",
+            "articulates",
+            "articulating",
+            "articulated",
+            "articulation",
+            "articulately"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Able to express thoughts, feelings, or ideas clearly and effectively in speech or writing.",
+                "examples": [
+                    "She is an articulate speaker who explains difficult ideas simply.",
+                    "The student gave an articulate answer during the discussion.",
+                    "He became more articulate with practice and confidence.",
+                    "Her articulately written essays impressed the teachers."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To express or explain an idea, feeling, or thought clearly.",
+                "examples": [
+                    "He struggled to articulate his emotions after the event.",
+                    "The leader articulated a clear vision for the future.",
+                    "She was articulating her concerns during the meeting.",
+                    "The writer articulated complex ideas in simple language."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To pronounce words or sounds clearly and distinctly.",
+                "examples": [
+                    "Teachers encourage children to articulate words properly.",
+                    "He articulated every syllable carefully during the speech.",
+                    "The actor was articulating his lines with precision.",
+                    "Poor microphone quality made it difficult to hear articulated sounds."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Having connected parts joined together and able to move.",
+                "examples": [
+                    "The insect has articulate legs that bend easily.",
+                    "Scientists studied the articulated structure of the fossil.",
+                    "Robotic arms are designed with articulate joints.",
+                    "The machine used articulated parts for smoother movement."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "incontrovertibly",
+        "variations": [
+            "incontrovertible",
+            "incontrovertibly",
+            "incontrovertibility"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "In a way that cannot be denied, questioned, or proven false.",
+                "examples": [
+                    "The evidence incontrovertibly proved his innocence.",
+                    "She was incontrovertibly the most experienced candidate.",
+                    "The discovery incontrovertibly changed scientific understanding.",
+                    "Facts should be checked before being called incontrovertibly true."
+                ]
+            },
+            {
+                "partOfSpeech": "adverb",
+                "definition": "With complete certainty or unquestionable truth.",
+                "examples": [
+                    "The document incontrovertibly showed who owned the land.",
+                    "He spoke as though his opinion were incontrovertibly correct.",
+                    "The results incontrovertibly supported the theory.",
+                    "History does not always provide incontrovertibly clear answers."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "devour",
+        "variations": [
+            "devour",
+            "devours",
+            "devouring",
+            "devoured",
+            "devourer"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To eat something quickly, hungrily, or greedily.",
+                "examples": [
+                    "The lion devoured its prey within minutes.",
+                    "Hungry children were devouring sandwiches after the game.",
+                    "He devoured the meal after hours of travel.",
+                    "The dog had already devoured its food."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To destroy, consume, or take over completely.",
+                "examples": [
+                    "The fire devoured several houses in the village.",
+                    "Flames were devouring the dry forest rapidly.",
+                    "Time slowly devours memories and old habits.",
+                    "The sea had devoured parts of the coastline."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To read, watch, or experience something eagerly and with great interest.",
+                "examples": [
+                    "She devours mystery novels every weekend.",
+                    "Students were devouring information before the exam.",
+                    "He had devoured every book about astronomy in the library.",
+                    "Fans eagerly devoured news about the new film."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To be completely filled or overwhelmed by a strong feeling or emotion.",
+                "examples": [
+                    "Jealousy devoured him from within.",
+                    "She was devoured by anxiety before the interview.",
+                    "Grief had devoured his peace of mind for months.",
+                    "The character is slowly devoured by ambition in the novel."
+                ]
+            }
+        ]
+    }
+]

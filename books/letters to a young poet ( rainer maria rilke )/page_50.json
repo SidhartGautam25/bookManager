@@ -1,0 +1,43 @@
+[
+    {
+        "word": "splendour",
+        "variations": [
+            "splendour",
+            "splendours",
+            "splendid",
+            "splendidly"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Great beauty, richness, or impressive appearance that creates admiration.",
+                "examples": [
+                    "The palace shone in all its splendour at sunrise.",
+                    "Visitors admired the splendour of the ancient temple.",
+                    "The garden displayed a splendour of colors in spring.",
+                    "Her splendid dress added to the splendour of the celebration."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Magnificence, glory, or grand beauty in nature, art, or surroundings.",
+                "examples": [
+                    "The splendour of the mountains left travelers speechless.",
+                    "Poets often write about the splendours of nature.",
+                    "The city regained some of its former splendour after restoration.",
+                    "He stood quietly, taking in the splendour of the night sky."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A state of greatness, excellence, or impressive quality.",
+                "examples": [
+                    "The kingdom reached its greatest splendour during that era.",
+                    "The performance ended in musical splendour.",
+                    "Historians describe the period as an age of splendour and learning.",
+                    "The artist’s work is remembered for its emotional splendour."
+                ]
+            }
+        ]
+    }
+]

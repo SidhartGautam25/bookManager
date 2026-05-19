@@ -1,0 +1,108 @@
+[
+    {
+        "word": "unceasingly",
+        "variations": [
+            "unceasing",
+            "unceasingly",
+            "cease",
+            "ceases",
+            "ceasing",
+            "ceased"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Without stopping; continuously or constantly.",
+                "examples": [
+                    "Rain fell unceasingly throughout the night.",
+                    "She worked unceasingly to support her family.",
+                    "The river flowed unceasingly toward the sea.",
+                    "His mind worried unceasingly about the future."
+                ]
+            },
+            {
+                "partOfSpeech": "adverb",
+                "definition": "In a way that continues for a long time without interruption or rest.",
+                "examples": [
+                    "The machine hummed unceasingly in the factory.",
+                    "Birds sang unceasingly at dawn.",
+                    "The child asked questions unceasingly during the journey.",
+                    "Winds blew unceasingly across the desert."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "utterable",
+        "variations": [
+            "utterable",
+            "utterably",
+            "utter",
+            "utters",
+            "uttering",
+            "uttered"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Able to be spoken, expressed, or put into words.",
+                "examples": [
+                    "Some feelings are difficult but still utterable with honesty.",
+                    "His thoughts were finally made utterable through poetry.",
+                    "The fear was real but hardly utterable before strangers.",
+                    "Pain that seems unutterable may still seek expression."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Possible or suitable to say aloud.",
+                "examples": [
+                    "Certain truths remained utterable only in private conversations.",
+                    "The joke was barely utterable in formal company.",
+                    "Her anger became utterable after long silence.",
+                    "Not every thought is easily utterable in public."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To speak, say, or express something aloud.",
+                "examples": [
+                    "He uttered a quiet apology before leaving.",
+                    "She could barely utter his name through tears.",
+                    "The witness uttered only a few words in court.",
+                    "Children were uttering excited cries during the game."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "vigilance",
+        "variations": [
+            "vigilance",
+            "vigilant",
+            "vigilantly"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Careful attention and alertness to notice danger, problems, or important changes.",
+                "examples": [
+                    "Police maintained vigilance during the festival.",
+                    "Constant vigilance helped prevent accidents at the factory.",
+                    "Parents remained vigilant while children played near the river.",
+                    "The guard watched vigilantly through the night."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The habit of staying watchful, careful, and mentally alert.",
+                "examples": [
+                    "Cybersecurity requires continuous vigilance.",
+                    "The doctor praised her vigilance in noticing early symptoms.",
+                    "Travelers must show vigilance in unfamiliar places.",
+                    "His vigilance protected the village from danger."
+                ]
+            }
+        ]
+    }
+]

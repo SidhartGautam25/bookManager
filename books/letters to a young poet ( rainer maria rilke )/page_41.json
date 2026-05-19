@@ -1,0 +1,148 @@
+[
+    {
+        "word": "accustomed",
+        "variations": [
+            "accustom",
+            "accustoms",
+            "accustoming",
+            "accustomed"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Familiar with something because of repeated experience; used to it.",
+                "examples": [
+                    "She was accustomed to waking up before sunrise.",
+                    "The villagers were accustomed to harsh winters.",
+                    "He quickly became accustomed to city life.",
+                    "Travelers accustomed to comfort found the journey difficult."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Made someone familiar with or used to a particular condition, habit, or activity.",
+                "examples": [
+                    "Years of practice had accustomed him to hard work.",
+                    "Parents gradually accustom children to responsibility.",
+                    "She was being accustomed to speaking before large audiences.",
+                    "The horse had been accustomed to carrying heavy loads."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "stirring",
+        "variations": [
+            "stir",
+            "stirs",
+            "stirring",
+            "stirred"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Moving something around, usually to mix or prevent sticking.",
+                "examples": [
+                    "She was stirring the soup gently with a spoon.",
+                    "He stirred sugar into his tea.",
+                    "The cook had stirred the sauce carefully.",
+                    "Children were stirring paint to mix the colors."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Causing movement, activity, or awakening something from rest.",
+                "examples": [
+                    "The wind stirred the leaves outside.",
+                    "News of the discovery stirred excitement in the town.",
+                    "He stirred from sleep after hearing footsteps.",
+                    "The speech had stirred people into action."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Emotionally moving, inspiring, or exciting.",
+                "examples": [
+                    "The singer gave a stirring performance.",
+                    "His stirring words inspired the crowd.",
+                    "The film ended with a stirring message of hope.",
+                    "They listened to a stirring story of courage."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A slight movement, sign of activity, or beginning of change.",
+                "examples": [
+                    "There was a faint stirring in the bushes.",
+                    "The first stirrings of spring appeared in the valley.",
+                    "She felt a stirring of curiosity while reading the letter.",
+                    "No stirring could be heard inside the old house."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "supervened",
+        "variations": [
+            "supervene",
+            "supervenes",
+            "supervening",
+            "supervened"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Happened suddenly after something else and changed the situation, often unexpectedly.",
+                "examples": [
+                    "A storm supervened and delayed the journey.",
+                    "Unexpected difficulties supervened during construction.",
+                    "Silence supervened after the argument ended.",
+                    "Economic troubles had supervened after years of growth."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Came in addition to or followed an earlier event or condition.",
+                "examples": [
+                    "Illness supervened after the long period of stress.",
+                    "Further problems were supervening one after another.",
+                    "Joy soon supervened upon their earlier disappointment.",
+                    "Political unrest supervened and changed the country’s direction."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "unerringly",
+        "variations": [
+            "unerring",
+            "unerringly",
+            "err",
+            "errs",
+            "erring",
+            "erred"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "In a way that is always accurate, correct, or without mistakes.",
+                "examples": [
+                    "The bird unerringly found its way back to the nest.",
+                    "She unerringly recognized his voice in the crowd.",
+                    "The guide led them unerringly through the forest.",
+                    "His instincts unerringly pointed toward the truth."
+                ]
+            },
+            {
+                "partOfSpeech": "adverb",
+                "definition": "With complete certainty or reliability.",
+                "examples": [
+                    "The doctor unerringly identified the symptoms.",
+                    "He aimed unerringly at the target.",
+                    "Her memory unerringly recalled small details.",
+                    "The detective unerringly followed the clues to the culprit."
+                ]
+            }
+        ]
+    }
+]
