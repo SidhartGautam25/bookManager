@@ -1,0 +1,190 @@
+[
+    {
+        "word": "hitherto",
+        "variations": [
+            "hitherto"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Until now or until the particular time being spoken about.",
+                "examples": [
+                    "Hitherto, nobody had questioned the old tradition.",
+                    "The village had hitherto remained untouched by war.",
+                    "She revealed information that had hitherto been secret.",
+                    "His work, hitherto ignored, finally gained recognition."
+                ]
+            },
+            {
+                "partOfSpeech": "adverb",
+                "definition": "Up to this point in time, especially when describing a change or contrast.",
+                "examples": [
+                    "The company had hitherto enjoyed steady profits.",
+                    "A hitherto unknown species was discovered in the forest.",
+                    "He spoke about experiences hitherto hidden from others.",
+                    "Their relationship, hitherto peaceful, suddenly became strained."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "intoxication",
+        "variations": [
+            "intoxication",
+            "intoxications",
+            "intoxicate",
+            "intoxicates",
+            "intoxicating",
+            "intoxicated"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "The state of being affected by alcohol, drugs, or other substances that disturb normal thinking or behavior.",
+                "examples": [
+                    "The driver was arrested for intoxication.",
+                    "Alcohol intoxication can affect judgment and balance.",
+                    "He appeared intoxicated after the party.",
+                    "Doctors treated several cases of food and drug intoxication."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A feeling of excitement, pleasure, or emotional overwhelm that affects clear thinking.",
+                "examples": [
+                    "The intoxication of success made him overconfident.",
+                    "She spoke of the intoxicating joy of freedom.",
+                    "Crowds sometimes act irrationally under the intoxication of excitement.",
+                    "Power can create a dangerous intoxication."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A state of fascination or enchantment caused by strong emotion or attraction.",
+                "examples": [
+                    "He lived under the intoxication of first love.",
+                    "The music carried listeners into emotional intoxication.",
+                    "Her intoxicating voice captivated the audience.",
+                    "The novel describes the intoxication of adventure and discovery."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "spoil",
+        "variations": [
+            "spoil",
+            "spoils",
+            "spoiling",
+            "spoiled",
+            "spoilt"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To damage, ruin, or make something less enjoyable or useful.",
+                "examples": [
+                    "Rain spoiled the picnic plans.",
+                    "Careless handling can spoil delicate paintings.",
+                    "He spoiled the surprise by revealing the secret.",
+                    "One mistake had nearly spoiled the entire project."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To treat someone too generously or give them too much, often leading to bad behavior.",
+                "examples": [
+                    "Grandparents sometimes spoil children with gifts.",
+                    "The child became spoiled after always getting his way.",
+                    "She worried about spoiling her pet with treats.",
+                    "Too much praise can sometimes spoil discipline."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To decay, go bad, or become unfit for use, especially food.",
+                "examples": [
+                    "Milk spoils quickly in hot weather.",
+                    "The fruit had spoiled before reaching the market.",
+                    "Food spoiling in the refrigerator creates a bad smell.",
+                    "Farmers worked quickly so crops would not spoil."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Goods, benefits, or valuable things taken or gained, especially after victory or success.",
+                "examples": [
+                    "The soldiers divided the spoils after the battle.",
+                    "The winning party enjoyed the spoils of success.",
+                    "Ancient stories often describe spoils of war.",
+                    "Power and wealth became political spoils."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "mutinous",
+        "variations": [
+            "mutinous",
+            "more mutinous",
+            "most mutinous",
+            "mutinously",
+            "mutiny",
+            "mutinies"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Rebellious or refusing to obey authority, especially in a group such as soldiers or sailors.",
+                "examples": [
+                    "The captain struggled to control the mutinous crew.",
+                    "Mutinous soldiers refused to follow orders.",
+                    "The leader faced mutinous voices within the party.",
+                    "Their mutinous behavior threatened discipline."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Showing anger, resistance, or desire to rebel.",
+                "examples": [
+                    "He gave a mutinous look when criticized.",
+                    "The child crossed his arms in mutinous silence.",
+                    "Workers mutinously protested unfair conditions.",
+                    "A mutinous mood spread through the crowd."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "canniest",
+        "variations": [
+            "canny",
+            "cannier",
+            "canniest",
+            "cannily",
+            "canniness"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Superlative form of 'canny' — very clever, careful, and good at making wise decisions, especially in practical matters.",
+                "examples": [
+                    "She was the canniest businessperson in the town.",
+                    "His canny investments brought long-term success.",
+                    "The canniest leaders listen before speaking.",
+                    "He handled negotiations more cannily than expected."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Very skilled at avoiding mistakes or gaining advantage through intelligence and careful judgment.",
+                "examples": [
+                    "The canniest player predicted every move of the game.",
+                    "Farmers often make canny decisions about weather and crops.",
+                    "Her canniest decision was to save money early.",
+                    "The detective used canny observation to solve the mystery."
+                ]
+            }
+        ]
+    }
+]

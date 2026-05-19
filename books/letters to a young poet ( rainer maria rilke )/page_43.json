@@ -1,0 +1,135 @@
+[
+    {
+        "word": "hurtling",
+        "variations": [
+            "hurtle",
+            "hurtles",
+            "hurtling",
+            "hurtled"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Moving very fast, often in an uncontrolled or forceful way.",
+                "examples": [
+                    "The train was hurtling through the tunnel at high speed.",
+                    "Rocks came hurtling down the hillside during the storm.",
+                    "The car hurtled toward the bridge before stopping suddenly.",
+                    "The athlete was hurtling across the field during the race."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Throwing or sending something with great force.",
+                "examples": [
+                    "The explosion sent debris hurtling into the air.",
+                    "Children were hurtling snowballs at one another.",
+                    "Strong winds hurtled branches across the road.",
+                    "The machine had hurtled metal pieces across the workshop."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "inexplicable",
+        "variations": [
+            "inexplicable",
+            "more inexplicable",
+            "most inexplicable",
+            "inexplicably",
+            "inexplicability"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Impossible or very difficult to explain or understand.",
+                "examples": [
+                    "The lights disappeared in an inexplicable way.",
+                    "She felt an inexplicable sadness while visiting the old house.",
+                    "His sudden silence seemed completely inexplicable.",
+                    "Scientists continue studying some seemingly inexplicable events."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Strange or puzzling because no clear reason is known.",
+                "examples": [
+                    "The town experienced an inexplicable drop in temperature.",
+                    "He made an inexplicable decision that surprised everyone.",
+                    "Her inexplicably calm reaction confused the family.",
+                    "The story revolves around several inexplicable mysteries."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "apparitions",
+        "variations": [
+            "apparition",
+            "apparitions"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Ghost-like figures or strange images that suddenly appear, often believed to be supernatural.",
+                "examples": [
+                    "Old legends speak of apparitions wandering the castle halls.",
+                    "The frightened villagers claimed to see apparitions at night.",
+                    "The movie showed pale apparitions rising from the mist.",
+                    "Stories about apparitions have existed in many cultures."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A surprising or unusual appearance of a person or thing.",
+                "examples": [
+                    "His sudden arrival felt like an apparition to his friends.",
+                    "The deer appeared like a silent apparition in the forest.",
+                    "A white ship emerged from the fog like an apparition.",
+                    "The rare bird's apparition delighted the birdwatchers."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "atrophied",
+        "variations": [
+            "atrophy",
+            "atrophies",
+            "atrophying",
+            "atrophied"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Became weak, smaller, or wasted away because of lack of use, nourishment, or activity.",
+                "examples": [
+                    "His leg muscles had atrophied after months in bed.",
+                    "Unused skills may atrophy over time.",
+                    "The neglected garden had atrophied into dry patches.",
+                    "The patient's muscles were slowly atrophying during recovery."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Weakened, shrunk, or reduced in strength or ability.",
+                "examples": [
+                    "The doctor examined the atrophied muscles carefully.",
+                    "Years of isolation left his social skills somewhat atrophied.",
+                    "The old tree stood with atrophied branches.",
+                    "An atrophied economy struggles to create growth and jobs."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "The gradual wasting away or weakening of body parts, abilities, or systems.",
+                "examples": [
+                    "Lack of movement can cause muscle atrophy.",
+                    "The disease leads to gradual atrophy of nerves.",
+                    "Mental atrophy may occur without learning or stimulation.",
+                    "Doctors monitored signs of muscular atrophy during treatment."
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,279 @@
+[
+    {
+        "word": "lethargy",
+        "variations": [
+            "lethargy",
+            "lethargic",
+            "lethargically"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A state of tiredness, low energy, or lack of interest and activity.",
+                "examples": [
+                    "The hot weather filled everyone with lethargy.",
+                    "He struggled with morning lethargy after sleeping late.",
+                    "Illness often causes weakness and lethargy.",
+                    "Her usual energy was replaced by unusual lethargy."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Lack of enthusiasm, motivation, or mental alertness.",
+                "examples": [
+                    "The team’s lethargy affected their performance.",
+                    "Economic uncertainty created a sense of lethargy in the market.",
+                    "He fought against creative lethargy by trying new ideas.",
+                    "The crowd responded with surprising lethargy to the speech."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "enigmatic",
+        "variations": [
+            "enigmatic",
+            "more enigmatic",
+            "most enigmatic",
+            "enigmatically",
+            "enigma",
+            "enigmas"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Mysterious, puzzling, or difficult to fully understand.",
+                "examples": [
+                    "The traveler gave an enigmatic smile before leaving.",
+                    "Her enigmatic silence made everyone curious.",
+                    "Ancient symbols on the cave wall remain enigmatic.",
+                    "He spoke enigmatically about his plans."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Having a secretive or unclear quality that creates curiosity or confusion.",
+                "examples": [
+                    "The film ended with an enigmatic scene.",
+                    "The artist became famous for enigmatic paintings.",
+                    "An enigmatic figure stood near the doorway.",
+                    "His behavior grew increasingly enigmatic over time."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "perilous",
+        "variations": [
+            "perilous",
+            "more perilous",
+            "most perilous",
+            "perilously",
+            "peril"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Very dangerous or risky and likely to cause harm.",
+                "examples": [
+                    "The climbers faced a perilous journey across the mountains.",
+                    "The sea became perilous during the storm.",
+                    "The bridge looked perilously weak.",
+                    "Soldiers crossed the perilous battlefield at night."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Full of uncertainty or serious difficulty.",
+                "examples": [
+                    "The company entered a perilous financial situation.",
+                    "Peace in the region remained perilous and fragile.",
+                    "He made a perilous choice without much thought.",
+                    "Their expedition continued despite perilous conditions."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "grope",
+        "variations": [
+            "grope",
+            "gropes",
+            "groping",
+            "groped"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To search or move by feeling with the hands, especially when unable to see clearly.",
+                "examples": [
+                    "He groped for the light switch in the dark.",
+                    "The child was groping under the bed for the toy.",
+                    "She groped through the fog toward the gate.",
+                    "The old man had groped along the wall for support."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To try to understand or find something with uncertainty or difficulty.",
+                "examples": [
+                    "He groped for the right words during the speech.",
+                    "Scientists continue groping for answers to difficult questions.",
+                    "She was groping toward a solution to the problem.",
+                    "The writer groped through memories while writing the book."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To touch someone in an unwanted or improper sexual way.",
+                "examples": [
+                    "The man was accused of groping passengers on the train.",
+                    "Laws exist to punish those who grope others without consent.",
+                    "She reported being groped in the crowded market.",
+                    "Public campaigns speak against groping and harassment."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "dungeons",
+        "variations": [
+            "dungeon",
+            "dungeons"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Underground prison rooms or dark locked places, especially in old castles or forts.",
+                "examples": [
+                    "Prisoners were once kept in damp dungeons beneath the castle.",
+                    "The guide showed visitors the ancient dungeons.",
+                    "Stories describe kings hiding enemies in dungeons.",
+                    "The movie featured dark and frightening dungeons."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A place or situation that feels dark, unpleasant, or imprisoning.",
+                "examples": [
+                    "The tiny basement felt like a dungeon to him.",
+                    "He described poverty as a social dungeon.",
+                    "The abandoned building looked gloomy like a dungeon.",
+                    "Fear can turn the mind into a kind of dungeon."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "snares",
+        "variations": [
+            "snare",
+            "snares",
+            "snaring",
+            "snared"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Traps used for catching animals, usually made of rope or wire.",
+                "examples": [
+                    "Hunters placed snares along the forest path.",
+                    "The rabbit escaped from the snares set nearby.",
+                    "Wildlife officers removed illegal snares from the park.",
+                    "Animals can suffer greatly when caught in snares."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Difficulties, traps, or dangers that catch people unexpectedly.",
+                "examples": [
+                    "Greed and pride are often described as life’s snares.",
+                    "Young people sometimes fall into the snares of addiction.",
+                    "The story warns against political snares and deception.",
+                    "He avoided the financial snares hidden in the contract."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To trap, catch, or involve someone in difficulty or danger.",
+                "examples": [
+                    "The hunter snared a rabbit near the river.",
+                    "False promises had snared many investors.",
+                    "The criminal tried snaring victims through deception.",
+                    "She was nearly snared by the online scam."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "torment",
+        "variations": [
+            "torment",
+            "torments",
+            "tormenting",
+            "tormented",
+            "tormentor"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Severe physical or emotional suffering, pain, or distress.",
+                "examples": [
+                    "The loss of his friend caused deep torment.",
+                    "Fear and guilt became his constant torment.",
+                    "The prisoner lived in physical torment for years.",
+                    "Jealousy can become a hidden torment."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To cause someone great pain, worry, sadness, or suffering.",
+                "examples": [
+                    "Regret tormented him long after the mistake.",
+                    "Bullies were tormenting the younger student.",
+                    "The memory of war had tormented many survivors.",
+                    "Uncertainty often torments people waiting for results."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A person or thing that causes suffering or trouble.",
+                "examples": [
+                    "Mosquitoes were the campers’ greatest torment.",
+                    "The noisy machine became a daily torment.",
+                    "His strict teacher felt like a torment in childhood.",
+                    "The heat proved a torment during the journey."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "affinity",
+        "variations": [
+            "affinity",
+            "affinities"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A natural liking, connection, or feeling of closeness toward someone or something.",
+                "examples": [
+                    "She felt a strong affinity for music from childhood.",
+                    "The two friends shared an affinity for poetry.",
+                    "He has a natural affinity with animals.",
+                    "Their affinity grew through years of friendship."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A similarity or relationship between things that seem naturally connected.",
+                "examples": [
+                    "Scientists noticed an affinity between the two languages.",
+                    "The painting shows affinity with classical art styles.",
+                    "There is an affinity between philosophy and literature.",
+                    "Different cultures sometimes reveal surprising affinities."
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,140 @@
+[
+    {
+        "word": "consecrates",
+        "variations": [
+            "consecrate",
+            "consecrates",
+            "consecrating",
+            "consecrated",
+            "consecration"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Makes something sacred, holy, or officially dedicated to a religious purpose.",
+                "examples": [
+                    "The priest consecrates the temple during the ceremony.",
+                    "The church was consecrated many centuries ago.",
+                    "Monks were consecrating the new shrine with prayers.",
+                    "The sacred ground was consecrated for worship."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Dedicates something or someone completely to a cause, purpose, or ideal.",
+                "examples": [
+                    "She consecrates her life to helping the poor.",
+                    "The doctor had consecrated years to medical service.",
+                    "Artists often consecrate themselves to their craft.",
+                    "He was consecrating his energy to social reform."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "shimmered",
+        "variations": [
+            "shimmer",
+            "shimmers",
+            "shimmering",
+            "shimmered"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Shone with a soft, wavering, or gentle light.",
+                "examples": [
+                    "The lake shimmered under the moonlight.",
+                    "Her dress shimmered with silver threads.",
+                    "Heat was shimmering above the desert sand.",
+                    "The stars shimmered faintly through the clouds."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Appeared to move or tremble slightly because of light, heat, or emotion.",
+                "examples": [
+                    "The distant road shimmered in the afternoon heat.",
+                    "Tears shimmered in her eyes as she spoke.",
+                    "The curtains were shimmering in the breeze.",
+                    "A feeling of hope shimmered beneath his sadness."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A soft shining light or gentle trembling appearance.",
+                "examples": [
+                    "A faint shimmer covered the river at dawn.",
+                    "The jewel gave off a blue shimmer.",
+                    "The desert had a golden shimmer at sunset.",
+                    "They watched the shimmer of city lights from the hill."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "unlamenting",
+        "variations": [
+            "unlamenting",
+            "lament",
+            "laments",
+            "lamenting",
+            "lamented",
+            "lamentation"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Not expressing grief, sorrow, or complaint despite pain or loss.",
+                "examples": [
+                    "He faced hardship with an unlamenting spirit.",
+                    "The old woman remained quiet and unlamenting after the loss.",
+                    "Her unlamenting silence surprised everyone around her.",
+                    "The soldiers endured difficult conditions with unlamenting courage."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Accepting suffering or difficulty without openly mourning or protesting.",
+                "examples": [
+                    "The poem describes an unlamenting heart carrying hidden pain.",
+                    "She lived an unlamenting life despite many struggles.",
+                    "His face remained calm and unlamenting during the farewell.",
+                    "Many admired his unlamenting strength in difficult times."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "pallid",
+        "variations": [
+            "pallid",
+            "more pallid",
+            "most pallid",
+            "pallidly",
+            "pallor"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Pale in color, usually because of illness, fear, weakness, or lack of healthy color.",
+                "examples": [
+                    "His face looked pallid after the long illness.",
+                    "She turned pallid with fear upon hearing the news.",
+                    "The patient lay pallid and exhausted in bed.",
+                    "Cold weather left their faces pale and pallid."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Weak, dull, or lacking energy, excitement, or strength.",
+                "examples": [
+                    "The sequel received only a pallid response from critics.",
+                    "His speech sounded pallid compared to earlier talks.",
+                    "The painting seemed pallid beside brighter works.",
+                    "The celebration felt strangely pallid and lifeless."
+                ]
+            }
+        ]
+    }
+]

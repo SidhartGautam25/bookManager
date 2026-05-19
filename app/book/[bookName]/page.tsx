@@ -1,0 +1,220 @@
+"use client";
+
+import { useState, useEffect, use } from "react";
+import { Layout, Hash, BookOpen, Loader2, ArrowLeft, Info } from "lucide-react";
+import Navbar from "@/components/Navbar";
+import Link from "next/link";
+
+interface WordMeaning {
+  partOfSpeech: string;
+  definition: string;
+  examples: string[];
+}
+
+interface Word {
+  word: string;
+  meanings: WordMeaning[];
+}
+
+interface PageData {
+  page: number;
+  words: Word[];
+}
+
+export default function BookDetailsPage({ params }: { params: Promise<{ bookName: string }> }) {
+  const { bookName: encodedBookName } = use(params);
+  const selectedBook = decodeURIComponent(encodedBookName);
+
+  const [selectedPage, setSelectedPage] = useState<number | null>(null);
+  const [bookData, setBookData] = useState<PageData[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [message, setMessage] = useState<string>("");
+  const [messageType, setMessageType] = useState<"success" | "error">("success");
+
+  useEffect(() => {
+    const fetchBookData = async () => {
+      setLoading(true);
+      try {
+        const response = await fetch(
+          `/api/words?bookName=${encodeURIComponent(selectedBook)}`,
+        );
+        const data = await response.json();
+        if (data.success) {
+          const sortedData = data.data || [];
+          setBookData(sortedData);
+          if (sortedData.length > 0) {
+            setSelectedPage(sortedData[0].page);
+          } else {
+            setSelectedPage(null);
+          }
+          setMessage("");
+        } else {
+          setMessage(data.error);
+          setMessageType("error");
+          setBookData([]);
+          setSelectedPage(null);
+        }
+      } catch {
+        setMessage("Error fetching book data");
+        setMessageType("error");
+        setBookData([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    void fetchBookData();
+  }, [selectedBook]);
+
+  const calculateStats = () => {
+    let totalWords = 0;
+    let totalPages = 0;
+    bookData.forEach((page) => {
+      totalWords += page.words.length;
+      totalPages++;
+    });
+    return { totalWords, totalPages };
+  };
+
+  const stats = calculateStats();
+
+  return (
+    <div className="min-h-screen bg-gray-50 text-gray-900">
+      <Navbar />
+
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="mb-8">
+          <Link href="/book-list" className="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-800 transition-colors mb-4">
+            <ArrowLeft size={16} className="mr-2" />
+            Back to Library
+          </Link>
+          <h1 className="text-3xl font-extrabold tracking-tight text-gray-900">Book Details</h1>
+          <p className="text-gray-500 mt-1 text-sm md:text-base">Review vocabulary from the selected book.</p>
+        </div>
+
+        {/* Global Notifications */}
+        {message && (
+          <div className={`mb-6 p-4 rounded-xl flex items-center gap-3 animate-in fade-in slide-in-from-top-2 duration-300 ${messageType === "success"
+              ? "bg-emerald-50 text-emerald-800 border border-emerald-200"
+              : "bg-red-50 text-red-800 border border-red-200"
+            }`}>
+            <Info size={20} />
+            <span className="font-medium text-sm">{message}</span>
+          </div>
+        )}
+
+        <div className="space-y-6">
+          {/* Book Header & Stats Card */}
+          <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900">{selectedBook}</h2>
+              <div className="flex items-center gap-2 mt-1 text-gray-400 text-sm">
+                <BookOpen size={14} />
+                <span>Reading Log</span>
+              </div>
+            </div>
+
+            <div className="flex gap-4 w-full md:w-auto">
+              <div className="flex-1 md:flex-none px-4 py-2 bg-indigo-50 rounded-xl border border-indigo-100">
+                <span className="block text-[10px] uppercase font-bold text-indigo-400 tracking-wider leading-none">Total Words</span>
+                <span className="text-lg font-black text-indigo-700">{stats.totalWords}</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Page Selector */}
+          {!loading && bookData.length > 0 && (
+            <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+              <div className="flex items-center gap-2 mb-4">
+                <Hash size={18} className="text-indigo-600" />
+                <h3 className="font-bold text-gray-800 text-sm uppercase tracking-wider">Select Page</h3>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {bookData.map((p) => (
+                  <button
+                    key={p.page}
+                    onClick={() => setSelectedPage(p.page)}
+                    className={`w-10 h-10 rounded-xl flex items-center justify-center font-bold transition-all duration-200 ${
+                      selectedPage === p.page
+                        ? "bg-indigo-600 text-white shadow-lg shadow-indigo-200 scale-110"
+                        : "bg-gray-50 text-gray-500 hover:bg-gray-100"
+                    }`}
+                  >
+                    {p.page}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {loading ? (
+            <div className="flex flex-col items-center justify-center py-20 bg-white rounded-2xl border border-dashed border-gray-200">
+              <Loader2 className="animate-spin text-indigo-600 mb-4" size={32} />
+              <p className="text-gray-500 font-medium">Fetching vocabulary data...</p>
+            </div>
+          ) : bookData.length === 0 ? (
+            <div className="text-center py-20 bg-white rounded-2xl border border-dashed border-gray-200">
+              <p className="text-gray-400">Empty book. Add some words to see them here.</p>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 gap-6">
+              {bookData
+                .filter((p) => p.page === selectedPage)
+                .map((pageData) => (
+                  <div key={pageData.page} className="space-y-6">
+                    <div className="grid grid-cols-1 gap-6">
+                      {pageData.words.map((item, index) => (
+                        <div
+                          key={index}
+                          className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group"
+                        >
+                          <div className="flex items-center gap-3 mb-6">
+                            <div className="p-2 rounded-xl bg-indigo-50 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
+                              <Layout size={20} />
+                            </div>
+                            <h4 className="font-black text-2xl text-gray-900 capitalize tracking-tight">
+                              {item.word}
+                            </h4>
+                          </div>
+                          <div className="space-y-6 border-l-4 border-indigo-50 pl-6 ml-2">
+                            {item.meanings?.map((m, mIdx) => (
+                              <div key={mIdx} className="space-y-4">
+                                <div className="flex items-center gap-2">
+                                  {m.partOfSpeech && (
+                                    <span className="text-xs font-black uppercase text-indigo-600 bg-indigo-50 px-3 py-1 rounded-lg tracking-widest border border-indigo-100">
+                                      {m.partOfSpeech}
+                                    </span>
+                                  )}
+                                </div>
+                                <p className="text-gray-900 text-lg font-medium leading-relaxed">
+                                  {m.definition}
+                                </p>
+                                {m.examples && m.examples.length > 0 && (
+                                  <div className="bg-gray-50/50 p-4 rounded-2xl border border-gray-100/50 space-y-3">
+                                    <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Usage Examples</p>
+                                    <ul className="space-y-3">
+                                      {m.examples.map((ex, exIdx) => (
+                                        <li key={exIdx} className="text-gray-700 text-base flex gap-3 leading-relaxed">
+                                          <span className="text-indigo-400 font-bold mt-0.5">“</span>
+                                          <span className="italic">{ex}</span>
+                                          <span className="text-indigo-400 font-bold mt-0.5">”</span>
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </div>
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+            </div>
+          )}
+        </div>
+      </main>
+    </div>
+  );
+}

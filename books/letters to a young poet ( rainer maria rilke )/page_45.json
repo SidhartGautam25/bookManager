@@ -1,0 +1,171 @@
+[
+    {
+        "word": "abysses",
+        "variations": [
+            "abyss",
+            "abysses",
+            "abyssal"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "Very deep holes, spaces, or chasms, often difficult to measure or see the bottom of.",
+                "examples": [
+                    "The explorers stared into the dark abysses between the cliffs.",
+                    "Ocean abysses remain among the least explored places on Earth.",
+                    "The cave opened into vast underground abysses.",
+                    "Ancient stories speak of mysterious abysses beneath the sea."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A deep state of suffering, despair, confusion, or emotional darkness.",
+                "examples": [
+                    "After the loss, he felt trapped in an abyss of sorrow.",
+                    "The novel describes people falling into moral abysses.",
+                    "Fear and loneliness created emotional abysses within him.",
+                    "She struggled to climb out of the abyss of hopelessness."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "dismayed",
+        "variations": [
+            "dismay",
+            "dismays",
+            "dismaying",
+            "dismayed"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "Caused someone to feel worried, disappointed, or shocked.",
+                "examples": [
+                    "The news dismayed the entire family.",
+                    "Rising prices have dismayed many citizens.",
+                    "She was dismayed by the poor results.",
+                    "The sudden decision had greatly dismayed workers."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Feeling worried, disappointed, or upset because of something unpleasant or unexpected.",
+                "examples": [
+                    "He looked dismayed after reading the letter.",
+                    "The dismayed crowd watched the fire spread.",
+                    "Parents felt dismayed by the school’s decision.",
+                    "She gave a dismayed sigh upon hearing the news."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "A feeling of sudden worry, disappointment, or loss of confidence.",
+                "examples": [
+                    "The announcement caused widespread dismay.",
+                    "He reacted with visible dismay to the criticism.",
+                    "There was public dismay over the accident.",
+                    "To her dismay, the documents had gone missing."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "exclude",
+        "variations": [
+            "exclude",
+            "excludes",
+            "excluding",
+            "excluded",
+            "exclusion",
+            "exclusive",
+            "exclusively"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To leave someone or something out or prevent them from being included.",
+                "examples": [
+                    "The club excludes people who do not follow its rules.",
+                    "She felt excluded from the group conversation.",
+                    "The price excludes taxes and extra charges.",
+                    "They were excluding unnecessary details from the report."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To deliberately prevent someone from joining, entering, or taking part.",
+                "examples": [
+                    "The school excludes students involved in serious violence.",
+                    "He accused them of excluding him unfairly.",
+                    "Security guards excluded visitors from restricted areas.",
+                    "Nobody should be excluded because of background or language."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "ailing",
+        "variations": [
+            "ail",
+            "ails",
+            "ailing",
+            "ailed"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Sick, weak, or suffering from poor health.",
+                "examples": [
+                    "She cared for her ailing grandfather every day.",
+                    "The ailing patient needed rest and treatment.",
+                    "His dog had become old and ailing.",
+                    "The doctor visited several ailing villagers."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Causing trouble, illness, or difficulty to someone or something.",
+                "examples": [
+                    "What ails you today?",
+                    "Economic problems were ailing the company.",
+                    "The disease had long ailed the region.",
+                    "Doctors tried to understand what was ailing the child."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "persecute",
+        "variations": [
+            "persecute",
+            "persecutes",
+            "persecuting",
+            "persecuted",
+            "persecution",
+            "persecutor"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To treat someone cruelly or unfairly over a long period, often because of beliefs, identity, or differences.",
+                "examples": [
+                    "Many communities were persecuted for their beliefs.",
+                    "The ruler persecuted those who opposed him.",
+                    "History remembers people persecuted for speaking freely.",
+                    "Refugees often flee countries where they are persecuted."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To repeatedly trouble, harass, or bother someone.",
+                "examples": [
+                    "He felt persecuted by constant criticism at work.",
+                    "The child complained that classmates were persecuting him.",
+                    "She was being persecuted by endless rumors and gossip.",
+                    "Bad memories continued persecuting him for years."
+                ]
+            }
+        ]
+    }
+]

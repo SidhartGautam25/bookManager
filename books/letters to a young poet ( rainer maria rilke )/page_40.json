@@ -1,0 +1,111 @@
+[
+    {
+        "word": "inexpertly",
+        "variations": [
+            "inexpert",
+            "inexpertly",
+            "inexpertness"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adverb",
+                "definition": "In a way that shows lack of skill, practice, or experience.",
+                "examples": [
+                    "He repaired the chair rather inexpertly, and it broke again.",
+                    "The painting was inexpertly done by a beginner.",
+                    "She inexpertly handled the camera during her first shoot.",
+                    "The report was written somewhat inexpertly and needed corrections."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "assurance",
+        "variations": [
+            "assurance",
+            "assurances",
+            "assure",
+            "assures",
+            "assuring",
+            "assured",
+            "assuredly"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "noun",
+                "definition": "A promise or statement meant to remove doubt, fear, or worry.",
+                "examples": [
+                    "The doctor gave assurance that the treatment would help.",
+                    "She sought assurances about the safety of the journey.",
+                    "His assuring words calmed the frightened child.",
+                    "The company assured customers that their information was secure."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Confidence or certainty in oneself or in something.",
+                "examples": [
+                    "She spoke with calm assurance during the interview.",
+                    "Years of practice gave him assurance on stage.",
+                    "His assured manner impressed the audience.",
+                    "The athlete played with growing self-assurance."
+                ]
+            },
+            {
+                "partOfSpeech": "noun",
+                "definition": "Confidence that may appear bold or even slightly arrogant.",
+                "examples": [
+                    "His assurance sometimes sounded like pride.",
+                    "The salesman’s excessive assurance annoyed customers.",
+                    "She answered with an almost too-assured confidence.",
+                    "People admired his courage but questioned his assurance."
+                ]
+            }
+        ]
+    },
+    {
+        "word": "inhibited",
+        "variations": [
+            "inhibit",
+            "inhibits",
+            "inhibiting",
+            "inhibited",
+            "inhibition",
+            "inhibitions",
+            "uninhibited",
+            "uninhibitedness"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Shy, reserved, or unable to act or express feelings freely.",
+                "examples": [
+                    "He felt inhibited around strangers.",
+                    "The students were too inhibited to ask questions at first.",
+                    "She became less inhibited after joining the drama club.",
+                    "Children are often more uninhibited than adults."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "Prevented, limited, or slowed down an action, feeling, or process.",
+                "examples": [
+                    "Fear inhibited his ability to speak clearly.",
+                    "Strict rules inhibited creativity in the classroom.",
+                    "The medicine inhibits the spread of infection.",
+                    "Lack of confidence had inhibited her progress for years."
+                ]
+            },
+            {
+                "partOfSpeech": "adjective",
+                "definition": "Restricted or controlled by internal fears, social rules, or pressure.",
+                "examples": [
+                    "His inhibited behavior made him seem distant.",
+                    "She gave an inhibited smile during the gathering.",
+                    "The culture encouraged polite but inhibited expression of emotions.",
+                    "Years of criticism left him emotionally inhibited."
+                ]
+            }
+        ]
+    }
+]

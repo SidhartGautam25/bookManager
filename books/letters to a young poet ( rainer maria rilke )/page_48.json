@@ -1,0 +1,56 @@
+[
+    {
+        "word": "reconcile",
+        "variations": [
+            "reconcile",
+            "reconciles",
+            "reconciling",
+            "reconciled",
+            "reconciliation",
+            "reconcilable",
+            "irreconcilable"
+        ],
+        "meanings": [
+            {
+                "partOfSpeech": "verb",
+                "definition": "To restore friendship or peace between people after disagreement or conflict.",
+                "examples": [
+                    "The brothers reconciled after years of silence.",
+                    "She hoped to reconcile with her old friend.",
+                    "Community leaders worked to reconcile the two groups.",
+                    "Their reconciliation brought relief to the whole family."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To make different ideas, beliefs, or facts fit together or become compatible.",
+                "examples": [
+                    "He struggled to reconcile science and spirituality.",
+                    "The historian tried reconciling conflicting records.",
+                    "It is difficult to reconcile freedom with strict control.",
+                    "She reconciled the two reports before presenting them."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To accept something unpleasant or difficult and become at peace with it.",
+                "examples": [
+                    "He slowly reconciled himself to the loss.",
+                    "She was trying to reconcile herself to change.",
+                    "Many people reconcile with hardship through patience and support.",
+                    "He never fully reconciled himself to leaving his hometown."
+                ]
+            },
+            {
+                "partOfSpeech": "verb",
+                "definition": "To compare and check accounts, numbers, or records so that they match and are correct.",
+                "examples": [
+                    "The accountant reconciled the bank statements carefully.",
+                    "They were reconciling financial records at the office.",
+                    "Errors appeared while she reconciled the accounts.",
+                    "Businesses reconcile expenses and income regularly."
+                ]
+            }
+        ]
+    }
+]
