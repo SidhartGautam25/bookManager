@@ -3,16 +3,27 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { BookMarked, Menu, X, PlusCircle, Library, BarChart3 } from "lucide-react";
+import {
+  BookMarked,
+  Menu,
+  X,
+  PlusCircle,
+  BookOpen,
+  Music,
+  Film,
+  BarChart3,
+} from "lucide-react";
 
 export default function Navbar() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Add Word", href: "/add-word", icon: <PlusCircle size={18} /> },
-    { name: "Book List", href: "/book-list", icon: <Library size={18} /> },
-    { name: "Analytics", href: "/analytics", icon: <BarChart3 size={18} /> },
+    { name: "Add Word", href: "/add-word", icon: <PlusCircle size={17} /> },
+    { name: "Books", href: "/book-list", icon: <BookOpen size={17} /> },
+    { name: "Songs", href: "/song-list", icon: <Music size={17} /> },
+    { name: "Movies", href: "/movie-list", icon: <Film size={17} /> },
+    { name: "Analytics", href: "/analytics", icon: <BarChart3 size={17} /> },
   ];
 
   return (
@@ -23,7 +34,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center gap-2 group">
               <div className="bg-indigo-600 p-1.5 rounded-lg text-white group-hover:rotate-3 transition-transform">
-                <BookMarked size={24} />
+                <BookMarked size={22} />
               </div>
               <span className="text-xl font-black tracking-tight text-gray-900">
                 Book<span className="text-indigo-600">Word</span>
@@ -34,15 +45,21 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => {
-              const isActive = pathname === link.href;
+              const isActive =
+                pathname === link.href ||
+                (link.href !== "/add-word" &&
+                  link.href !== "/analytics" &&
+                  pathname.startsWith(link.href.replace("-list", "")));
+
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-all duration-200 ${isActive
+                  className={`flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-sm font-semibold transition-all duration-200 ${
+                    isActive
                       ? "bg-indigo-50 text-indigo-700 shadow-sm"
                       : "text-gray-500 hover:bg-gray-50 hover:text-gray-900"
-                    }`}
+                  }`}
                 >
                   {link.icon}
                   {link.name}
@@ -65,21 +82,28 @@ export default function Navbar() {
 
       {/* Mobile Menu Content */}
       <div
-        className={`md:hidden transition-all duration-300 ease-in-out border-b border-gray-100 bg-white ${isOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
-          }`}
+        className={`md:hidden transition-all duration-300 ease-in-out border-b border-gray-100 bg-white ${
+          isOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
+        }`}
       >
-        <div className="px-4 pt-2 pb-6 space-y-2">
+        <div className="px-4 pt-2 pb-6 space-y-1.5">
           {navLinks.map((link) => {
-            const isActive = pathname === link.href;
+            const isActive =
+              pathname === link.href ||
+              (link.href !== "/add-word" &&
+                link.href !== "/analytics" &&
+                pathname.startsWith(link.href.replace("-list", "")));
+
             return (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`flex items-center gap-3 px-4 py-3 rounded-xl text-base font-bold transition-colors ${isActive
-                    ? "bg-indigo-600 text-white shadow-lg shadow-indigo-100"
+                className={`flex items-center gap-3 px-4 py-2.5 rounded-xl text-sm font-bold transition-colors ${
+                  isActive
+                    ? "bg-indigo-600 text-white shadow-md shadow-indigo-100"
                     : "text-gray-600 hover:bg-gray-50"
-                  }`}
+                }`}
               >
                 {link.icon}
                 {link.name}
