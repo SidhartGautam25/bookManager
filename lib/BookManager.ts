@@ -26,6 +26,21 @@ export interface WordOccurrence {
   bookName?: string;
 }
 
+export interface BatchWordEntry {
+  pageNo: number;
+  word: string;
+  meanings: WordMeaning[];
+  variations?: string[];
+}
+
+export interface BatchResultSummary {
+  totalProcessed: number;
+  added: number;
+  skipped: number;
+  pagesAffected: number[];
+  errors: string[];
+}
+
 export class BookManager {
   private booksDir: string;
 
@@ -131,6 +146,98 @@ export class BookManager {
   }
 
   /**
+   * Add multiple words across pages in a single batch pass
+   */
+  addWordsBatch(
+    bookName: string,
+    entries: BatchWordEntry[],
+    skipDuplicates: boolean = true,
+  ): BatchResultSummary {
+    if (!this.bookExists(bookName)) {
+      throw new Error(`Book "${bookName}" does not exist`);
+    }
+
+    const bookPath = path.join(this.booksDir, bookName);
+    const summary: BatchResultSummary = {
+      totalProcessed: entries.length,
+      added: 0,
+      skipped: 0,
+      pagesAffected: [],
+      errors: [],
+    };
+
+    // Group entries by page
+    const pageGroups = new Map<number, BatchWordEntry[]>();
+    for (const entry of entries) {
+      if (!pageGroups.has(entry.pageNo)) {
+        pageGroups.set(entry.pageNo, []);
+      }
+      pageGroups.get(entry.pageNo)!.push(entry);
+    }
+
+    // Process each page
+    for (const [pageNo, pageEntries] of pageGroups.entries()) {
+      const pageFileName = `page_${pageNo}.json`;
+      const pageFilePath = path.join(bookPath, pageFileName);
+
+      let pageData: Word[] = [];
+      if (fs.existsSync(pageFilePath)) {
+        try {
+          const fileContent = fs.readFileSync(pageFilePath, "utf-8");
+          pageData = JSON.parse(fileContent);
+        } catch (e) {
+          summary.errors.push(
+            `Failed to read page ${pageNo}: ${(e as Error).message}`,
+          );
+          continue;
+        }
+      }
+
+      let pageModified = false;
+      for (const item of pageEntries) {
+        const cleanWord = item.word.trim();
+        if (!cleanWord) continue;
+
+        const exists = pageData.some(
+          (w) => w.word.toLowerCase() === cleanWord.toLowerCase(),
+        );
+
+        if (exists) {
+          if (skipDuplicates) {
+            summary.skipped++;
+            continue;
+          } else {
+            summary.errors.push(
+              `Word "${cleanWord}" already exists on page ${pageNo}`,
+            );
+            continue;
+          }
+        }
+
+        pageData.push({
+          word: cleanWord,
+          variations: item.variations,
+          meanings: item.meanings,
+        });
+        summary.added++;
+        pageModified = true;
+      }
+
+      if (pageModified) {
+        fs.writeFileSync(
+          pageFilePath,
+          JSON.stringify(pageData, null, 2),
+          "utf-8",
+        );
+        summary.pagesAffected.push(pageNo);
+      }
+    }
+
+    summary.pagesAffected.sort((a, b) => a - b);
+    return summary;
+  }
+
+  /**
    * Get all words from a specific page of a book
    */
   getPageWords(bookName: string, pageNo: number): Word[] {
@@ -200,12 +307,17 @@ export class BookManager {
           if (meanings.length === 0) {
             meanings = item.meanings || [];
             // Handle legacy single-meaning data if necessary
-            if (!item.meanings && (item as any).meaning) {
+            const legacy = item as unknown as {
+              meaning?: string;
+              partOfSpeech?: string;
+              examples?: string[];
+            };
+            if (!item.meanings && legacy.meaning) {
               meanings = [
                 {
-                  partOfSpeech: (item as any).partOfSpeech || "",
-                  definition: (item as any).meaning,
-                  examples: (item as any).examples || [],
+                  partOfSpeech: legacy.partOfSpeech || "",
+                  definition: legacy.meaning,
+                  examples: legacy.examples || [],
                 },
               ];
             }
@@ -270,7 +382,8 @@ export class BookManager {
     }
 
     const books = this.getAllBooks();
-    const stats: { bookName: string; frequency: number; pages: number[] }[] = [];
+    const stats: { bookName: string; frequency: number; pages: number[] }[] =
+      [];
     let totalFrequency = 0;
     let combinedMeanings: WordMeaning[] = [];
 
