@@ -32,7 +32,8 @@ export async function GET(request: NextRequest) {
     }
 
     const words = songManager.getWords(songName);
-    return NextResponse.json({ success: true, data: words });
+    const lyrics = songManager.getLyrics(songName);
+    return NextResponse.json({ success: true, data: words, lyrics });
   } catch (error) {
     return NextResponse.json(
       {

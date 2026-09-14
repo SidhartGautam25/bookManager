@@ -22,6 +22,9 @@ import {
   RefreshCw,
   Pencil,
   Database,
+  Edit3,
+  MousePointerClick,
+  Eye,
 } from "lucide-react";
 import {
   fetchDictionaryBatch,
@@ -48,6 +51,51 @@ interface ReviewWordItem {
   isEditing?: boolean;
   hasManualEdits?: boolean;
 }
+
+const SAMPLE_SONG_LYRICS = `[Intro]
+Is this the real life? Is this just fantasy?
+Caught in a landslide, no escape from reality
+Open your eyes, look up to the skies and see
+I'm just a poor boy, I need no sympathy
+
+[Verse]
+Because I'm easy come, easy go, little high, little low
+Any way the wind blows doesn't really matter to me, to me
+
+[Operatic Section]
+Scaramouche, Scaramouche, will you do the Fandango?
+Thunderbolt and lightning, very, very frightening me!
+Galileo, Figaro, Magnifico!
+
+[Outro]
+Nothing really matters, anyone can see
+Nothing really matters, nothing really matters to me`;
+
+const SAMPLE_MOVIE_SUBTITLES = `1
+00:01:15,000 --> 00:01:20,000
+ANDY DUFRESNE:
+Remember Red, hope is a good thing, maybe the best of things.
+
+2
+00:01:21,000 --> 00:01:26,000
+And no good thing ever dies. I will be hoping that this letter finds you.
+
+3
+00:01:27,000 --> 00:01:32,000
+ELLIS BOYD 'RED' REDDING:
+Get busy living, or get busy dying. That is an anomalous truth.
+
+4
+00:01:33,000 --> 00:01:38,000
+I find I'm so excited, I can barely sit still or hold a thought in my head.
+
+5
+00:01:39,000 --> 00:01:45,000
+I think it's the excitement only a free man can feel. A free man at the start of a long journey whose conclusion is uncertain.
+
+6
+00:01:46,000 --> 00:01:52,000
+I hope I can make it across the border. I hope the Pacific is as blue as it has been in my dreams. I hope.`;
 
 interface BatchImportProps {
   books: string[];
@@ -144,6 +192,102 @@ export default function BatchImport({
       ignore = true;
     };
   }, []);
+
+  // Song Lyrics state (optional interactive word-picker)
+  const [lyricsText, setLyricsText] = useState("");
+  const [isEditingLyrics, setIsEditingLyrics] = useState(false);
+  const [showLyricsCard, setShowLyricsCard] = useState(true);
+
+  // Restore saved lyrics from sessionStorage or server disk when song changes
+  useEffect(() => {
+    if (mediaType === "song" && selectedBook && typeof window !== "undefined") {
+      const timer = setTimeout(() => {
+        try {
+          const saved = sessionStorage.getItem(
+            `bookword_lyrics_${selectedBook}`,
+          );
+          if (saved) {
+            setLyricsText(saved);
+            setIsEditingLyrics(false);
+          } else {
+            fetch(
+              `/api/songs/lyrics?songName=${encodeURIComponent(selectedBook)}`,
+            )
+              .then((r) => r.json())
+              .then((d) => {
+                if (d.success && d.lyrics) {
+                  setLyricsText(d.lyrics);
+                  setIsEditingLyrics(false);
+                } else {
+                  setLyricsText("");
+                  setIsEditingLyrics(true);
+                }
+              })
+              .catch(() => {
+                setLyricsText("");
+                setIsEditingLyrics(true);
+              });
+          }
+        } catch {
+          // Ignore
+        }
+      }, 0);
+      return () => clearTimeout(timer);
+    }
+  }, [mediaType, selectedBook]);
+
+  // Update lyrics and persist to sessionStorage
+  const handleLyricsChange = (text: string) => {
+    setLyricsText(text);
+    if (selectedBook && typeof window !== "undefined") {
+      try {
+        sessionStorage.setItem(`bookword_lyrics_${selectedBook}`, text);
+      } catch {
+        // Ignore
+      }
+    }
+  };
+
+  // Movie Subtitles state (interactive word-picker)
+  const [subtitlesText, setSubtitlesText] = useState("");
+  const [isEditingSubtitles, setIsEditingSubtitles] = useState(false);
+  const [showSubtitlesCard, setShowSubtitlesCard] = useState(true);
+
+  // Restore saved subtitles from sessionStorage when movie changes
+  useEffect(() => {
+    if (
+      mediaType === "movie" &&
+      selectedBook &&
+      typeof window !== "undefined"
+    ) {
+      const timer = setTimeout(() => {
+        try {
+          const saved = sessionStorage.getItem(`bookword_subs_${selectedBook}`);
+          if (saved) {
+            setSubtitlesText(saved);
+            setIsEditingSubtitles(false);
+          } else {
+            setSubtitlesText("");
+            setIsEditingSubtitles(true);
+          }
+        } catch {
+          // Ignore
+        }
+      }, 0);
+      return () => clearTimeout(timer);
+    }
+  }, [mediaType, selectedBook]);
+
+  const handleSubtitlesChange = (text: string) => {
+    setSubtitlesText(text);
+    if (selectedBook && typeof window !== "undefined") {
+      try {
+        sessionStorage.setItem(`bookword_subs_${selectedBook}`, text);
+      } catch {
+        // Ignore
+      }
+    }
+  };
 
   // Helper to extract words from comma/semicolon separated text
   function extractWordsFromText(
@@ -243,6 +387,73 @@ export default function BatchImport({
       totalPages: pageSet.size,
     };
   }, [parsedEntries, mediaType]);
+
+  // Set of lowercase words currently present in the Wordpad (notesText)
+  const selectedWordsSet = useMemo(() => {
+    const set = new Set<string>();
+    parsedEntries.forEach((e) => {
+      const norm = e.word.toLowerCase().trim();
+      if (norm) set.add(norm);
+    });
+    return set;
+  }, [parsedEntries]);
+
+  // Split lyrics text into lines for interactive rendering
+  const lyricsLines = useMemo(() => {
+    if (!lyricsText) return [];
+    return lyricsText.split(/\r?\n/);
+  }, [lyricsText]);
+
+  // Split subtitle text into lines for interactive rendering
+  const subtitlesLines = useMemo(() => {
+    if (!subtitlesText) return [];
+    return subtitlesText.split(/\r?\n/);
+  }, [subtitlesText]);
+
+  // Handle clicking a word in the interactive lyrics reader
+  const handleToggleLyricWord = (clickedWord: string) => {
+    const cleanWord = clickedWord
+      .replace(/^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g, "")
+      .trim();
+    if (!cleanWord) return;
+    const norm = cleanWord.toLowerCase();
+
+    if (selectedWordsSet.has(norm)) {
+      // Remove word from notesText
+      const tokens = notesText.split(/[,;\n]+/);
+      const remaining: string[] = [];
+      let removed = false;
+
+      for (const token of tokens) {
+        const trimmed = token.trim();
+        if (!trimmed) continue;
+        const parenMatch = trimmed.match(/^([^(]+)\s*\(([^)]+)\)$/);
+        const dashMatch = trimmed.match(/^([^-]+)\s*-\s*(.+)$/);
+        const base = parenMatch
+          ? parenMatch[1].trim()
+          : dashMatch
+            ? dashMatch[1].trim()
+            : trimmed.replace(/[^a-zA-Z0-9\s'-]/g, "").trim();
+
+        if (!removed && base.toLowerCase() === norm) {
+          removed = true;
+          continue;
+        }
+        remaining.push(trimmed);
+      }
+      setNotesText(remaining.join(", "));
+    } else {
+      // Add word to notesText
+      const trimmed = notesText.trim();
+      if (!trimmed) {
+        setNotesText(cleanWord);
+      } else if (trimmed.endsWith(",")) {
+        setNotesText(`${trimmed} ${cleanWord}`);
+      } else {
+        setNotesText(`${trimmed}, ${cleanWord}`);
+      }
+    }
+  };
 
   // Load sample notes
   const handleLoadSample = () => {
@@ -596,6 +807,7 @@ Page 15: quixotic, recalcitrant`,
         endpoint = "/api/songs/batch";
         payload = {
           songName: selectedBook,
+          lyrics: lyricsText || undefined,
           entries: included.map((item) => ({
             word: item.word,
             meanings: item.meanings,
@@ -909,6 +1121,448 @@ Page 15: quixotic, recalcitrant`,
         )}
       </section>
 
+      {/* Optional Song Lyrics Interactive Word-Picker Section (Songs only) */}
+      {mediaType === "song" && (
+        <section className="bg-white rounded-2xl p-6 sm:p-8 border border-purple-100 shadow-2xs space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-gray-100">
+            <div className="flex items-center gap-2.5">
+              <div className="p-2 rounded-xl bg-purple-50 text-purple-600">
+                <Music size={18} />
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <h2 className="text-base font-bold text-gray-900">
+                    Song Lyrics{" "}
+                    <span className="text-xs font-normal text-gray-500">
+                      (Optional)
+                    </span>
+                  </h2>
+                  {lyricsText.trim() && (
+                    <span className="hidden sm:inline-flex items-center gap-1 text-[11px] font-semibold text-purple-700 bg-purple-50 px-2.5 py-0.5 rounded-full border border-purple-200">
+                      <MousePointerClick size={11} />
+                      Click words to pick
+                    </span>
+                  )}
+                </div>
+                <p className="text-xs text-gray-500">
+                  Paste lyrics to click words directly into your Wordpad, or
+                  type words manually below.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2 flex-wrap">
+              {lyricsText.trim() && !isEditingLyrics && (
+                <button
+                  type="button"
+                  onClick={() => setIsEditingLyrics(true)}
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-700 bg-gray-100 hover:bg-gray-200 px-3 py-1.5 rounded-xl transition-colors"
+                >
+                  <Edit3 size={13} />
+                  Edit Lyrics
+                </button>
+              )}
+              {lyricsText.trim() && isEditingLyrics && (
+                <button
+                  type="button"
+                  onClick={() => setIsEditingLyrics(false)}
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-purple-600 hover:bg-purple-700 px-3 py-1.5 rounded-xl transition-colors shadow-xs"
+                >
+                  <Eye size={13} />
+                  Done Editing
+                </button>
+              )}
+              <button
+                type="button"
+                onClick={() => {
+                  handleLyricsChange(SAMPLE_SONG_LYRICS);
+                  setIsEditingLyrics(false);
+                }}
+                className="text-xs font-bold text-purple-600 bg-purple-50 hover:bg-purple-100 px-3 py-1.5 rounded-xl transition-colors"
+              >
+                Sample Lyrics
+              </button>
+              {lyricsText.trim() && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    handleLyricsChange("");
+                    setIsEditingLyrics(true);
+                  }}
+                  className="text-xs font-semibold text-gray-400 hover:text-red-600 px-2 py-1.5 rounded-lg transition-colors"
+                  title="Clear lyrics"
+                >
+                  Clear
+                </button>
+              )}
+              <button
+                type="button"
+                onClick={() => setShowLyricsCard(!showLyricsCard)}
+                className="p-1.5 text-gray-400 hover:text-gray-600 rounded-lg transition-colors"
+                title={showLyricsCard ? "Collapse lyrics" : "Expand lyrics"}
+              >
+                {showLyricsCard ? (
+                  <ChevronUp size={16} />
+                ) : (
+                  <ChevronDown size={16} />
+                )}
+              </button>
+            </div>
+          </div>
+
+          {showLyricsCard && (
+            <>
+              {isEditingLyrics || !lyricsText.trim() ? (
+                <div className="space-y-3">
+                  <textarea
+                    value={lyricsText}
+                    onChange={(e) => handleLyricsChange(e.target.value)}
+                    placeholder="Paste song lyrics here... (e.g. from Genius, Spotify, or your notes)&#10;&#10;Is this the real life? Is this just fantasy?&#10;Caught in a landslide, no escape from reality...&#10;Scaramouche, Scaramouche, will you do the Fandango?"
+                    rows={6}
+                    className="w-full p-4 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-purple-500 outline-none text-sm font-sans text-gray-800 transition-all resize-y"
+                  />
+                  {lyricsText.trim() && (
+                    <div className="flex justify-end">
+                      <button
+                        type="button"
+                        onClick={() => setIsEditingLyrics(false)}
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white text-xs font-bold rounded-xl shadow-xs transition-all"
+                      >
+                        <MousePointerClick size={14} />
+                        Start Clicking Words (
+                        {lyricsText.split(/\s+/).filter(Boolean).length} words
+                        ready)
+                      </button>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <div className="space-y-3">
+                  {/* Info Banner */}
+                  <div className="flex flex-wrap items-center justify-between gap-2 px-3.5 py-2 bg-purple-50/70 border border-purple-100 rounded-xl text-xs text-purple-900">
+                    <span className="flex items-center gap-1.5">
+                      <Sparkles size={14} className="text-purple-600" />
+                      <span>
+                        <strong>Click any word</strong> in the lyrics to add or
+                        remove it from your Wordpad.
+                      </span>
+                    </span>
+                    <span className="text-purple-700 font-semibold">
+                      {selectedWordsSet.size} word
+                      {selectedWordsSet.size === 1 ? "" : "s"} selected
+                    </span>
+                  </div>
+
+                  {/* Scrollable Interactive Lyrics Reader */}
+                  <div className="max-h-80 overflow-y-auto p-5 bg-gradient-to-b from-purple-50/20 via-gray-50/40 to-white rounded-xl border border-gray-200 space-y-1 select-none font-sans text-sm leading-relaxed">
+                    {lyricsLines.map((line, lineIdx) => {
+                      const trimmedLine = line.trim();
+                      if (!trimmedLine) {
+                        return <div key={lineIdx} className="h-3" />;
+                      }
+                      if (
+                        trimmedLine.startsWith("[") &&
+                        trimmedLine.endsWith("]")
+                      ) {
+                        return (
+                          <div key={lineIdx} className="pt-2 pb-1">
+                            <span className="text-[11px] font-bold uppercase tracking-wider text-purple-700 bg-purple-100/70 px-2 py-0.5 rounded">
+                              {trimmedLine}
+                            </span>
+                          </div>
+                        );
+                      }
+
+                      const tokens = line.match(
+                        /[a-zA-Z0-9'-]+|[^a-zA-Z0-9'-]+/g,
+                      ) || [line];
+
+                      return (
+                        <div
+                          key={lineIdx}
+                          className="flex flex-wrap items-center"
+                        >
+                          {tokens.map((token, tokenIdx) => {
+                            const isWord = /[a-zA-Z0-9]/.test(token);
+                            const cleanWord = token.replace(
+                              /^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g,
+                              "",
+                            );
+
+                            if (!isWord || !cleanWord) {
+                              return (
+                                <span
+                                  key={tokenIdx}
+                                  className="text-gray-500 whitespace-pre"
+                                >
+                                  {token}
+                                </span>
+                              );
+                            }
+
+                            const norm = cleanWord.toLowerCase();
+                            const isSelected = selectedWordsSet.has(norm);
+
+                            return (
+                              <button
+                                key={tokenIdx}
+                                type="button"
+                                onClick={() => handleToggleLyricWord(cleanWord)}
+                                title={
+                                  isSelected
+                                    ? `Click to remove "${cleanWord}" from Wordpad`
+                                    : `Click to add "${cleanWord}" to Wordpad`
+                                }
+                                className={`inline-block px-1.5 py-0.5 my-0.5 rounded-md text-sm transition-all duration-150 ${
+                                  isSelected
+                                    ? "bg-purple-600 text-white font-bold shadow-2xs scale-105 ring-2 ring-purple-300 ring-offset-1"
+                                    : "text-gray-800 hover:bg-purple-100 hover:text-purple-900 cursor-pointer font-normal"
+                                }`}
+                              >
+                                {token}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </>
+          )}
+        </section>
+      )}
+
+      {/* Optional Movie Subtitles Interactive Word-Picker Section (Movies only) */}
+      {mediaType === "movie" && (
+        <section className="bg-white rounded-2xl p-6 sm:p-8 border border-amber-100 shadow-2xs space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-gray-100">
+            <div className="flex items-center gap-2.5">
+              <div className="p-2 rounded-xl bg-amber-50 text-amber-600">
+                <Film size={18} />
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <h2 className="text-base font-bold text-gray-900">
+                    Movie Subtitles{" "}
+                    <span className="text-xs font-normal text-gray-500">
+                      (Optional)
+                    </span>
+                  </h2>
+                  {subtitlesText.trim() && (
+                    <span className="hidden sm:inline-flex items-center gap-1 text-[11px] font-semibold text-amber-700 bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200">
+                      <MousePointerClick size={11} />
+                      Click words to pick
+                    </span>
+                  )}
+                </div>
+                <p className="text-xs text-gray-500">
+                  Paste movie subtitles or script dialogue below. Click any word
+                  to instantly add or remove it from your Wordpad.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2 flex-wrap">
+              {subtitlesText.trim() && !isEditingSubtitles && (
+                <button
+                  type="button"
+                  onClick={() => setIsEditingSubtitles(true)}
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-700 bg-gray-100 hover:bg-gray-200 px-3 py-1.5 rounded-xl transition-colors"
+                >
+                  <Edit3 size={13} />
+                  Edit Subtitles
+                </button>
+              )}
+              {subtitlesText.trim() && isEditingSubtitles && (
+                <button
+                  type="button"
+                  onClick={() => setIsEditingSubtitles(false)}
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-amber-600 hover:bg-amber-700 px-3 py-1.5 rounded-xl transition-colors shadow-xs"
+                >
+                  <Eye size={13} />
+                  Done Editing
+                </button>
+              )}
+              <button
+                type="button"
+                onClick={() => {
+                  handleSubtitlesChange(SAMPLE_MOVIE_SUBTITLES);
+                  setIsEditingSubtitles(false);
+                }}
+                className="text-xs font-bold text-amber-700 bg-amber-50 hover:bg-amber-100 px-3 py-1.5 rounded-xl transition-colors"
+              >
+                Sample Subtitles
+              </button>
+              {subtitlesText.trim() && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    handleSubtitlesChange("");
+                    setIsEditingSubtitles(true);
+                  }}
+                  className="text-xs font-semibold text-gray-400 hover:text-red-600 px-2 py-1.5 rounded-lg transition-colors"
+                  title="Clear subtitles"
+                >
+                  Clear
+                </button>
+              )}
+              <button
+                type="button"
+                onClick={() => setShowSubtitlesCard(!showSubtitlesCard)}
+                className="p-1.5 text-gray-400 hover:text-gray-600 rounded-lg transition-colors"
+                title={
+                  showSubtitlesCard ? "Collapse subtitles" : "Expand subtitles"
+                }
+              >
+                {showSubtitlesCard ? (
+                  <ChevronUp size={16} />
+                ) : (
+                  <ChevronDown size={16} />
+                )}
+              </button>
+            </div>
+          </div>
+
+          {showSubtitlesCard && (
+            <>
+              {isEditingSubtitles || !subtitlesText.trim() ? (
+                <div className="space-y-3">
+                  <textarea
+                    value={subtitlesText}
+                    onChange={(e) => handleSubtitlesChange(e.target.value)}
+                    placeholder="Paste movie subtitles or script dialogue here... (Supports .srt timestamps, speaker labels, or plain text)&#10;&#10;1&#10;00:01:20,000 --> 00:01:24,500&#10;Remember Red, hope is a good thing, maybe the best of things.&#10;&#10;Get busy living, or get busy dying. That is an anomalous truth."
+                    rows={12}
+                    className="w-full p-4 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-amber-500 outline-none text-sm font-mono text-gray-800 transition-all resize-y"
+                  />
+                  {subtitlesText.trim() && (
+                    <div className="flex justify-end">
+                      <button
+                        type="button"
+                        onClick={() => setIsEditingSubtitles(false)}
+                        className="inline-flex items-center gap-2 px-5 py-2.5 bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold rounded-xl shadow-xs transition-all"
+                      >
+                        <MousePointerClick size={14} />
+                        Start Clicking Words (
+                        {subtitlesText.split(/\s+/).filter(Boolean).length}{" "}
+                        words ready)
+                      </button>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <div className="space-y-3">
+                  {/* Info Banner */}
+                  <div className="flex flex-wrap items-center justify-between gap-2 px-3.5 py-2 bg-amber-50/80 border border-amber-200/80 rounded-xl text-xs text-amber-900">
+                    <span className="flex items-center gap-1.5">
+                      <Sparkles size={14} className="text-amber-600" />
+                      <span>
+                        <strong>Click any word</strong> in the subtitles to add
+                        or remove it from your Wordpad.
+                      </span>
+                    </span>
+                    <span className="text-amber-800 font-semibold">
+                      {selectedWordsSet.size} word
+                      {selectedWordsSet.size === 1 ? "" : "s"} selected in
+                      Wordpad
+                    </span>
+                  </div>
+
+                  {/* Scrollable Interactive Subtitles Reader (Bigger: max-h-[520px]) */}
+                  <div className="max-h-[520px] overflow-y-auto p-5 bg-gradient-to-b from-amber-50/20 via-gray-50/40 to-white rounded-xl border border-gray-200 space-y-1 select-none font-sans text-sm leading-relaxed">
+                    {subtitlesLines.map((line, lineIdx) => {
+                      const trimmedLine = line.trim();
+                      if (!trimmedLine) {
+                        return <div key={lineIdx} className="h-3" />;
+                      }
+
+                      // Subtitle sequence counter (e.g. "1", "2", "42")
+                      if (/^\d+$/.test(trimmedLine)) {
+                        return (
+                          <div key={lineIdx} className="pt-1">
+                            <span className="text-[10px] font-mono text-gray-400 select-none">
+                              #{trimmedLine}
+                            </span>
+                          </div>
+                        );
+                      }
+
+                      // Timestamp line (e.g. "00:01:20,000 --> 00:01:24,500")
+                      if (
+                        trimmedLine.includes("-->") ||
+                        /^\d{2}:\d{2}/.test(trimmedLine)
+                      ) {
+                        return (
+                          <div key={lineIdx} className="pb-0.5">
+                            <span className="text-[10px] font-mono text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200/60 select-none">
+                              {trimmedLine}
+                            </span>
+                          </div>
+                        );
+                      }
+
+                      const tokens = line.match(
+                        /[a-zA-Z0-9'-]+|[^a-zA-Z0-9'-]+/g,
+                      ) || [line];
+
+                      return (
+                        <div
+                          key={lineIdx}
+                          className="flex flex-wrap items-center"
+                        >
+                          {tokens.map((token, tokenIdx) => {
+                            const isWord = /[a-zA-Z0-9]/.test(token);
+                            const cleanWord = token.replace(
+                              /^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g,
+                              "",
+                            );
+
+                            if (!isWord || !cleanWord) {
+                              return (
+                                <span
+                                  key={tokenIdx}
+                                  className="text-gray-500 whitespace-pre"
+                                >
+                                  {token}
+                                </span>
+                              );
+                            }
+
+                            const norm = cleanWord.toLowerCase();
+                            const isSelected = selectedWordsSet.has(norm);
+
+                            return (
+                              <button
+                                key={tokenIdx}
+                                type="button"
+                                onClick={() => handleToggleLyricWord(cleanWord)}
+                                title={
+                                  isSelected
+                                    ? `Click to remove "${cleanWord}" from Wordpad`
+                                    : `Click to add "${cleanWord}" to Wordpad`
+                                }
+                                className={`inline-block px-1.5 py-0.5 my-0.5 rounded-md text-sm transition-all duration-150 ${
+                                  isSelected
+                                    ? "bg-amber-600 text-white font-bold shadow-2xs scale-105 ring-2 ring-amber-300 ring-offset-1"
+                                    : "text-gray-800 hover:bg-amber-100 hover:text-amber-900 cursor-pointer font-normal"
+                                }`}
+                              >
+                                {token}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </>
+          )}
+        </section>
+      )}
+
       {/* Step 2: Scratchpad Textarea Card */}
       <section className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 shadow-2xs space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
@@ -919,7 +1573,11 @@ Page 15: quixotic, recalcitrant`,
             <div>
               <div className="flex items-center gap-2">
                 <h2 className="text-base font-bold text-gray-900">
-                  Step 2: Paste Your Word Scratchpad
+                  {mediaType === "song"
+                    ? "Step 2: Wordpad (Words for Batching)"
+                    : mediaType === "movie"
+                      ? "Step 2: Wordpad (Movie Vocabulary)"
+                      : "Step 2: Paste Your Word Scratchpad"}
                 </h2>
                 {cacheStats && (
                   <span
@@ -932,9 +1590,13 @@ Page 15: quixotic, recalcitrant`,
                 )}
               </div>
               <p className="text-xs text-gray-500">
-                {mediaType === "book"
-                  ? "Organized by page numbers. Cached definitions are preserved!"
-                  : `Paste words for this ${mediaLabel.toLowerCase()} directly (comma-separated or one per line). No page numbers needed!`}
+                {mediaType === "song"
+                  ? "Words added from lyrics above or typed manually. Ready for batch dictionary enrichment!"
+                  : mediaType === "movie"
+                    ? "Words clicked in subtitles above or typed manually. Ready for batch dictionary enrichment!"
+                    : mediaType === "book"
+                      ? "Organized by page numbers. Cached definitions are preserved!"
+                      : `Paste words for this ${mediaLabel.toLowerCase()} directly (comma-separated or one per line). No page numbers needed!`}
               </p>
             </div>
           </div>
@@ -1023,6 +1685,16 @@ Page 15: quixotic, recalcitrant`,
                 )}
               </span>
             </div>
+            {notesText.trim() && (
+              <button
+                type="button"
+                onClick={() => setNotesText("")}
+                className="text-xs text-gray-400 hover:text-red-600 transition-colors font-medium px-1"
+                title="Clear all words from Wordpad"
+              >
+                Clear Wordpad
+              </button>
+            )}
           </div>
 
           <button

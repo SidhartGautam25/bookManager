@@ -118,7 +118,10 @@ export class DictionaryCacheManager {
         for (const songFile of songFiles) {
           try {
             const raw = fs.readFileSync(path.join(songsDir, songFile), "utf-8");
-            const words: Word[] = JSON.parse(raw);
+            const parsed = JSON.parse(raw);
+            const words: Word[] = Array.isArray(parsed)
+              ? parsed
+              : parsed?.words || [];
             this.indexWordList(words);
           } catch {
             // Ignore single file parse errors
@@ -143,7 +146,10 @@ export class DictionaryCacheManager {
               path.join(moviesDir, movieFile),
               "utf-8",
             );
-            const words: Word[] = JSON.parse(raw);
+            const parsed = JSON.parse(raw);
+            const words: Word[] = Array.isArray(parsed)
+              ? parsed
+              : parsed?.words || [];
             this.indexWordList(words);
           } catch {
             // Ignore single file parse errors

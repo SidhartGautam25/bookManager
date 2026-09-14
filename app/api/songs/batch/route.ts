@@ -4,7 +4,7 @@ import { songManager, MediaBatchEntry } from "@/lib/MediaManager";
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { songName, entries, skipDuplicates = true } = body;
+    const { songName, entries, skipDuplicates = true, lyrics } = body;
 
     if (!songName || !songName.trim()) {
       return NextResponse.json(
@@ -55,6 +55,7 @@ export async function POST(request: NextRequest) {
       songName.trim(),
       validEntries,
       Boolean(skipDuplicates),
+      typeof lyrics === "string" ? lyrics : undefined,
     );
 
     return NextResponse.json({
