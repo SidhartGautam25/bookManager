@@ -18,19 +18,63 @@ export interface EnrichedWordData {
   source: "dictionaryapi" | "wiktionary" | "combined" | "cache" | "fallback";
 }
 
-// Global in-memory dictionary cache to prevent redundant API calls
+// Multi-tier client cache: memory Map + localStorage
 const dictionaryCache = new Map<string, EnrichedWordData>();
+const LOCAL_STORAGE_PREFIX = "bookword_dict_cache_";
 
 export function getCachedWord(word: string): EnrichedWordData | undefined {
-  return dictionaryCache.get(word.trim().toLowerCase());
+  const norm = word.trim().toLowerCase();
+  if (dictionaryCache.has(norm)) {
+    return dictionaryCache.get(norm);
+  }
+  if (typeof window !== "undefined") {
+    try {
+      const raw = localStorage.getItem(`${LOCAL_STORAGE_PREFIX}${norm}`);
+      if (raw) {
+        const parsed = JSON.parse(raw) as EnrichedWordData;
+        if (parsed && parsed.word) {
+          dictionaryCache.set(norm, parsed);
+          return parsed;
+        }
+      }
+    } catch {
+      // Ignore localStorage read errors
+    }
+  }
+  return undefined;
 }
 
 export function setCachedWord(word: string, data: EnrichedWordData): void {
-  dictionaryCache.set(word.trim().toLowerCase(), data);
+  const norm = word.trim().toLowerCase();
+  dictionaryCache.set(norm, data);
+  if (typeof window !== "undefined") {
+    try {
+      localStorage.setItem(
+        `${LOCAL_STORAGE_PREFIX}${norm}`,
+        JSON.stringify(data),
+      );
+    } catch {
+      // Ignore quota errors
+    }
+  }
 }
 
 export function clearDictionaryCache(): void {
   dictionaryCache.clear();
+  if (typeof window !== "undefined") {
+    try {
+      const keysToRemove: string[] = [];
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key && key.startsWith(LOCAL_STORAGE_PREFIX)) {
+          keysToRemove.push(key);
+        }
+      }
+      keysToRemove.forEach((k) => localStorage.removeItem(k));
+    } catch {
+      // Ignore errors
+    }
+  }
 }
 
 export function getDictionaryCacheSize(): number {
@@ -217,11 +261,33 @@ export async function fetchComprehensiveDictionary(
     };
   }
 
-  // 1. Check in-memory cache first (unless forceRefresh is requested)
+  // 1. Check client multi-tier cache first (memory + localStorage)
   if (!forceRefresh) {
-    const cached = dictionaryCache.get(word);
+    const cached = getCachedWord(word);
     if (cached) {
       return { ...cached, source: "cache" };
+    }
+  }
+
+  // If executing in browser, attempt lookup via server's persistent disk cache API
+  if (typeof window !== "undefined") {
+    try {
+      const res = await fetch("/api/dictionary/lookup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          words: [word],
+          forceRefreshWords: forceRefresh ? [word] : [],
+        }),
+      });
+      const json = await res.json();
+      if (json.success && json.data && json.data[word]) {
+        const entry = json.data[word] as EnrichedWordData;
+        setCachedWord(word, entry);
+        return entry;
+      }
+    } catch {
+      // Fallback to direct client fetch below
     }
   }
 
@@ -303,7 +369,7 @@ export async function fetchComprehensiveDictionary(
     try {
       // Check cache for root word first
       let rootMeanings: MeaningItem[] = [];
-      const cachedRoot = dictionaryCache.get(rootWord);
+      const cachedRoot = getCachedWord(rootWord);
 
       if (cachedRoot && cachedRoot.meanings.length > 0) {
         rootMeanings = cachedRoot.meanings;
@@ -390,7 +456,7 @@ export async function fetchComprehensiveDictionary(
       variations,
       source: "fallback",
     };
-    dictionaryCache.set(word, fallbackResult);
+    setCachedWord(word, fallbackResult);
     return fallbackResult;
   }
 
@@ -461,7 +527,7 @@ export async function fetchComprehensiveDictionary(
   };
 
   // Cache the result for future batch operations
-  dictionaryCache.set(word, result);
+  setCachedWord(word, result);
 
   return result;
 }
@@ -494,19 +560,51 @@ export async function fetchDictionaryBatch(
   const wordsToFetch: string[] = [];
 
   for (const word of uniqueWords) {
-    if (!forceRefreshWords.has(word) && dictionaryCache.has(word)) {
-      const cached = dictionaryCache.get(word)!;
-      results.set(word, { ...cached, source: "cache" });
-      completed++;
-      if (onProgress) {
-        onProgress(completed, total, word, true);
+    if (!forceRefreshWords.has(word)) {
+      const cached = getCachedWord(word);
+      if (cached) {
+        results.set(word, { ...cached, source: "cache" });
+        completed++;
+        if (onProgress) {
+          onProgress(completed, total, word, true);
+        }
+        continue;
       }
-    } else {
-      wordsToFetch.push(word);
+    }
+    wordsToFetch.push(word);
+  }
+
+  // If in browser, use the server's persistent disk cache API
+  if (wordsToFetch.length > 0 && typeof window !== "undefined") {
+    try {
+      const res = await fetch("/api/dictionary/lookup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          words: wordsToFetch,
+          forceRefreshWords: Array.from(forceRefreshWords),
+        }),
+      });
+      const json = await res.json();
+      if (json.success && json.data) {
+        for (const [norm, data] of Object.entries(
+          json.data as Record<string, EnrichedWordData>,
+        )) {
+          setCachedWord(norm, data);
+          results.set(norm, data);
+          completed++;
+          if (onProgress) {
+            onProgress(completed, total, norm, data.source === "cache");
+          }
+        }
+        return results;
+      }
+    } catch {
+      // Fallback to local concurrency fetch below if API route fails
     }
   }
 
-  // Fetch only uncached/refreshed words with concurrency control
+  // Fallback concurrency fetch if running server-side or if API route failed
   for (let i = 0; i < wordsToFetch.length; i += concurrency) {
     const chunk = wordsToFetch.slice(i, i + concurrency);
     const chunkPromises = chunk.map(async (word) => {

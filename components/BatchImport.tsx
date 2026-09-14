@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import {
   BookPlus,
@@ -21,6 +21,7 @@ import {
   HelpCircle,
   RefreshCw,
   Pencil,
+  Database,
 } from "lucide-react";
 import {
   fetchDictionaryBatch,
@@ -104,6 +105,45 @@ export default function BatchImport({
   const [expandedPages, setExpandedPages] = useState<Record<number, boolean>>(
     {},
   );
+
+  // Persistent disk cache statistics
+  const [cacheStats, setCacheStats] = useState<{
+    totalWords: number;
+    isPersistent: boolean;
+  } | null>(null);
+
+  const refreshCacheStats = () => {
+    fetch("/api/dictionary/lookup")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success && data.stats) {
+          setCacheStats({
+            totalWords: data.stats.totalWords,
+            isPersistent: data.stats.isPersistent,
+          });
+        }
+      })
+      .catch(() => {});
+  };
+
+  useEffect(() => {
+    let ignore = false;
+    fetch("/api/dictionary/lookup")
+      .then((res) => res.json())
+      .then((data) => {
+        if (!ignore && data.success && data.stats) {
+          setCacheStats({
+            totalWords: data.stats.totalWords,
+            isPersistent: data.stats.isPersistent,
+          });
+        }
+      })
+      .catch(() => {});
+
+    return () => {
+      ignore = true;
+    };
+  }, []);
 
   // Helper to extract words from comma/semicolon separated text
   function extractWordsFromText(
@@ -388,10 +428,21 @@ Page 15: quixotic, recalcitrant`,
         setExpandedPages(exp);
       }
 
+      const cachedHitCount = parsedEntries.length - wordsToFetch.length;
       if (wordsToFetch.length === 0) {
         setStatusMessage({
           type: "success",
-          text: `Loaded all ${parsedEntries.length} words instantly from cache!`,
+          text: `⚡ Loaded all ${parsedEntries.length} words instantly from persistent disk cache!`,
+        });
+      } else if (cachedHitCount > 0) {
+        setStatusMessage({
+          type: "success",
+          text: `⚡ Loaded ${cachedHitCount} words from persistent cache, enriched ${wordsToFetch.length} new words and saved to disk!`,
+        });
+      } else {
+        setStatusMessage({
+          type: "success",
+          text: `Enriched ${wordsToFetch.length} words and saved to persistent disk cache!`,
         });
       }
     } catch (err) {
@@ -402,6 +453,7 @@ Page 15: quixotic, recalcitrant`,
       });
     } finally {
       setIsEnriching(false);
+      refreshCacheStats();
     }
   };
 
@@ -865,9 +917,20 @@ Page 15: quixotic, recalcitrant`,
               <FileText size={18} />
             </div>
             <div>
-              <h2 className="text-base font-bold text-gray-900">
-                Step 2: Paste Your Word Scratchpad
-              </h2>
+              <div className="flex items-center gap-2">
+                <h2 className="text-base font-bold text-gray-900">
+                  Step 2: Paste Your Word Scratchpad
+                </h2>
+                {cacheStats && (
+                  <span
+                    className="hidden sm:inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200"
+                    title="Persistent disk cache active at .cache/dictionary_cache.json"
+                  >
+                    <Database size={11} />
+                    {cacheStats.totalWords} words cached
+                  </span>
+                )}
+              </div>
               <p className="text-xs text-gray-500">
                 {mediaType === "book"
                   ? "Organized by page numbers. Cached definitions are preserved!"

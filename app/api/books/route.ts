@@ -3,7 +3,7 @@ import { BookManager } from "@/lib/BookManager";
 
 const bookManager = new BookManager();
 
-export async function GET(request: NextRequest) {
+export async function GET() {
   try {
     const books = bookManager.getAllBooks();
     return NextResponse.json({ success: true, books });
