@@ -1,3 +1,10 @@
+import {
+  detectInflectionFromDefinition,
+  formatInflectedDefinition,
+  generateInflectionExamples,
+  InflectionDetection,
+} from "@/lib/inflections";
+
 export interface MeaningItem {
   partOfSpeech: string;
   definition: string;
@@ -8,7 +15,70 @@ export interface EnrichedWordData {
   word: string;
   meanings: MeaningItem[];
   variations: string[];
-  source: "dictionaryapi" | "wiktionary" | "combined" | "fallback";
+  source: "dictionaryapi" | "wiktionary" | "combined" | "cache" | "fallback";
+}
+
+// Multi-tier client cache: memory Map + localStorage
+const dictionaryCache = new Map<string, EnrichedWordData>();
+const LOCAL_STORAGE_PREFIX = "bookword_dict_cache_";
+
+export function getCachedWord(word: string): EnrichedWordData | undefined {
+  const norm = word.trim().toLowerCase();
+  if (dictionaryCache.has(norm)) {
+    return dictionaryCache.get(norm);
+  }
+  if (typeof window !== "undefined") {
+    try {
+      const raw = localStorage.getItem(`${LOCAL_STORAGE_PREFIX}${norm}`);
+      if (raw) {
+        const parsed = JSON.parse(raw) as EnrichedWordData;
+        if (parsed && parsed.word) {
+          dictionaryCache.set(norm, parsed);
+          return parsed;
+        }
+      }
+    } catch {
+      // Ignore localStorage read errors
+    }
+  }
+  return undefined;
+}
+
+export function setCachedWord(word: string, data: EnrichedWordData): void {
+  const norm = word.trim().toLowerCase();
+  dictionaryCache.set(norm, data);
+  if (typeof window !== "undefined") {
+    try {
+      localStorage.setItem(
+        `${LOCAL_STORAGE_PREFIX}${norm}`,
+        JSON.stringify(data),
+      );
+    } catch {
+      // Ignore quota errors
+    }
+  }
+}
+
+export function clearDictionaryCache(): void {
+  dictionaryCache.clear();
+  if (typeof window !== "undefined") {
+    try {
+      const keysToRemove: string[] = [];
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key && key.startsWith(LOCAL_STORAGE_PREFIX)) {
+          keysToRemove.push(key);
+        }
+      }
+      keysToRemove.forEach((k) => localStorage.removeItem(k));
+    } catch {
+      // Ignore errors
+    }
+  }
+}
+
+export function getDictionaryCacheSize(): number {
+  return dictionaryCache.size;
 }
 
 /**
@@ -28,7 +98,6 @@ function cleanText(text: string): string {
     .replace(/\s+/g, " ")
     .trim();
 
-  // Remove leading bullet or dash if present
   clean = clean.replace(/^[-*•]\s*/, "");
   return clean;
 }
@@ -44,72 +113,6 @@ function formatSentence(sentence: string): string {
     formatted += ".";
   }
   return formatted;
-}
-
-/**
- * Checks if a definition is a tautology like "plural of X" or "third-person singular ... of X"
- */
-function extractTautologicalRoot(def: string): string | null {
-  if (!def) return null;
-  const clean = cleanText(def).toLowerCase();
-  const match = clean.match(
-    /^(?:plural of|third-person singular (?:simple )?present indicative of|past (?:participle|tense) of|present participle of|comparative of|superlative of|inflection of)\s+([a-zA-Z'-]+)/i,
-  );
-  if (match && match[1]) {
-    return match[1].toLowerCase().trim();
-  }
-  return null;
-}
-
-/**
- * Generates distinct, natural literary context examples when dictionary lacks sufficient examples.
- * Guarantees every word has 2-3 realistic, non-robotic sentences per part of speech.
- */
-function generateDiverseContextExamples(
-  word: string,
-  pos: string,
-  countNeeded: number,
-): string[] {
-  const lowerPos = pos.toLowerCase().trim();
-  const patterns: string[] = [];
-
-  if (lowerPos.includes("verb")) {
-    patterns.push(
-      `She paused to ${word} the delicate situation before offering her opinion.`,
-      `Throughout history, writers have sought to ${word} the essence of human resilience.`,
-      `They watched him ${word} the components with remarkable precision and focus.`,
-      `He knew that to ${word} without clear purpose would only invite confusion.`,
-    );
-  } else if (lowerPos.includes("noun")) {
-    patterns.push(
-      `The enduring significance of the ${word} became clearer as the narrative progressed.`,
-      `He pointed toward the ${word}, noting how it captured the mood of the era.`,
-      `Without a proper understanding of the ${word}, much of the subtle nuance would be lost.`,
-      `Her collection included an extraordinary ${word} that fascinated visiting scholars.`,
-    );
-  } else if (lowerPos.includes("adjective")) {
-    patterns.push(
-      `The quiet evening settled into a deeply ${word} stillness across the valley.`,
-      `Her ${word} perspective on the matter shed new light on the longstanding mystery.`,
-      `He wore a ${word} expression that concealed his true intentions from the crowd.`,
-      `The architecture possessed an undeniably ${word} quality that captivated observers.`,
-    );
-  } else if (lowerPos.includes("adverb")) {
-    patterns.push(
-      `She moved ${word} through the narrow corridor so as not to disturb the household.`,
-      `The speaker articulated each point ${word}, holding the undivided attention of the room.`,
-      `The problem was ${word} resolved before any lasting disruption could occur.`,
-      `He observed the proceedings ${word}, weighing every detail with cautious reserve.`,
-    );
-  } else {
-    patterns.push(
-      `The subtle resonance of ${word} echoed across multiple interpretations of the work.`,
-      `Scholars often highlight ${word} as a notable example in nineteenth-century literature.`,
-      `In every chapter, ${word} played an indispensable role in shaping the atmosphere.`,
-    );
-  }
-
-  return patterns.slice(0, countNeeded);
 }
 
 /**
@@ -237,25 +240,58 @@ async function fetchFromWiktionary(
 
 /**
  * Master multi-source dictionary lookup:
- * Automatically resolves plurals/inflections to their root concepts,
- * purges unhelpful "plural of X" definitions, and guarantees 2 to 3 distinct examples per form.
+ * - Checks cache first to avoid duplicate network requests.
+ * - Detection of tenses / plurals ONLY happens AFTER examining the actual dictionary response.
+ * - If a definition states "simple past of X", "present participle of X", etc., researches the root.
+ * - Guarantees 2 to 3 distinct usage examples per part of speech.
  */
 export async function fetchComprehensiveDictionary(
   rawWord: string,
+  forceRefresh = false,
 ): Promise<EnrichedWordData> {
   const word = rawWord.trim().toLowerCase();
   if (!word) {
     return {
       word: rawWord,
       meanings: [
-        { partOfSpeech: "general", definition: "Unknown word", examples: [""] },
+        { partOfSpeech: "General", definition: "Unknown word", examples: [""] },
       ],
       variations: [],
       source: "fallback",
     };
   }
 
-  // 1. Fetch primary word data from both sources in parallel
+  // 1. Check client multi-tier cache first (memory + localStorage)
+  if (!forceRefresh) {
+    const cached = getCachedWord(word);
+    if (cached) {
+      return { ...cached, source: "cache" };
+    }
+  }
+
+  // If executing in browser, attempt lookup via server's persistent disk cache API
+  if (typeof window !== "undefined") {
+    try {
+      const res = await fetch("/api/dictionary/lookup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          words: [word],
+          forceRefreshWords: forceRefresh ? [word] : [],
+        }),
+      });
+      const json = await res.json();
+      if (json.success && json.data && json.data[word]) {
+        const entry = json.data[word] as EnrichedWordData;
+        setCachedWord(word, entry);
+        return entry;
+      }
+    } catch {
+      // Fallback to direct client fetch below
+    }
+  }
+
+  // 2. Fetch primary word data from dictionary APIs in parallel
   const [primaryResult, wiktionaryResult] = await Promise.all([
     fetchFromFreeDictionary(word),
     fetchFromWiktionary(word),
@@ -299,111 +335,116 @@ export async function fetchComprehensiveDictionary(
   if (primaryResult) primaryResult.forEach(registerItem);
   if (wiktionaryResult) wiktionaryResult.forEach(registerItem);
 
-  // 2. Intelligent Plural & Inflection Resolution:
-  // Detect if any definition is simply "plural of X" or "third-person singular ... of X"
-  let detectedRootWord: string | null = null;
+  // 3. Modular Tense & Inflection Detection ONLY AFTER DICTIONARY RESPONSES:
+  // We inspect the actual definitions returned by the APIs.
+  // ONLY if an actual definition matches an inflection pattern do we research the root.
+  let detectedInflection: InflectionDetection | null = null;
 
   for (const [, data] of posMap.entries()) {
     for (const def of data.definitions) {
-      const root = extractTautologicalRoot(def);
-      if (root && root !== word) {
-        detectedRootWord = root;
+      const detection = detectInflectionFromDefinition(def);
+      if (
+        detection.isInflected &&
+        detection.rootWord &&
+        detection.rootWord !== word
+      ) {
+        detectedInflection = detection;
         break;
       }
     }
-    if (detectedRootWord) break;
+    if (detectedInflection) break;
   }
 
-  // If word ends with 's', 'es', or 'ies' and we got no definitions at all, guess lemma
-  if (!detectedRootWord && posMap.size === 0) {
-    if (word.endsWith("ies") && word.length > 4) {
-      detectedRootWord = word.slice(0, -3) + "y";
-    } else if (word.endsWith("es") && word.length > 3) {
-      detectedRootWord = word.slice(0, -2);
-    } else if (word.endsWith("s") && word.length > 2) {
-      detectedRootWord = word.slice(0, -1);
-    }
-  }
-
-  // 3. If a root word was detected, query the root word and replace tautologies!
+  // 4. If an inflection was found in the response, research the root lemma and replace tautologies!
   const variations: string[] = [rawWord.trim()];
-  if (detectedRootWord && detectedRootWord !== word) {
-    variations.push(detectedRootWord);
+
+  if (
+    detectedInflection &&
+    detectedInflection.rootWord &&
+    detectedInflection.rootWord !== word
+  ) {
+    const rootWord = detectedInflection.rootWord;
+    variations.push(rootWord);
 
     try {
-      const [rootPrimary, rootWiktionary] = await Promise.all([
-        fetchFromFreeDictionary(detectedRootWord),
-        fetchFromWiktionary(detectedRootWord),
-      ]);
+      // Check cache for root word first
+      let rootMeanings: MeaningItem[] = [];
+      const cachedRoot = getCachedWord(rootWord);
 
-      const rootMeanings: MeaningItem[] = [];
-      if (rootPrimary) rootMeanings.push(...rootPrimary);
-      if (rootWiktionary) rootMeanings.push(...rootWiktionary);
+      if (cachedRoot && cachedRoot.meanings.length > 0) {
+        rootMeanings = cachedRoot.meanings;
+      } else {
+        const [rootPrimary, rootWiktionary] = await Promise.all([
+          fetchFromFreeDictionary(rootWord),
+          fetchFromWiktionary(rootWord),
+        ]);
+        if (rootPrimary) rootMeanings.push(...rootPrimary);
+        if (rootWiktionary) rootMeanings.push(...rootWiktionary);
+      }
 
-      // Merge root meanings into our posMap
-      rootMeanings.forEach((rItem) => {
-        const rPos = (rItem.partOfSpeech || "general").toLowerCase().trim();
-        if (!posMap.has(rPos)) {
-          posMap.set(rPos, { definitions: [], examples: [] });
-        }
-        const current = posMap.get(rPos)!;
+      if (rootMeanings.length > 0) {
+        rootMeanings.forEach((rItem) => {
+          const rPos = (rItem.partOfSpeech || "general").toLowerCase().trim();
+          if (!posMap.has(rPos)) {
+            posMap.set(rPos, { definitions: [], examples: [] });
+          }
+          const current = posMap.get(rPos)!;
 
-        // Purge tautologies like "plural of X" from definitions
-        current.definitions = current.definitions.filter(
-          (d) => !extractTautologicalRoot(d),
-        );
+          // Purge tautological definitions like "simple past and past participle of X"
+          current.definitions = current.definitions.filter(
+            (d) => !detectInflectionFromDefinition(d).isInflected,
+          );
 
-        // Add real definitions from root
-        const cleanRootDef = cleanText(rItem.definition);
-        if (
-          cleanRootDef &&
-          !current.definitions.some(
-            (d) => d.toLowerCase() === cleanRootDef.toLowerCase(),
-          )
-        ) {
-          // If word was plural, prefix definition informatively e.g. "(Plural form) A person who..."
-          const isPlural = word.endsWith("s") && rPos.includes("noun");
-          const formattedDef = isPlural
-            ? `(Plural) ${cleanRootDef}`
-            : cleanRootDef;
+          // Add informative, formatted root definition
+          const cleanRootDef = cleanText(rItem.definition);
+          if (
+            cleanRootDef &&
+            !detectInflectionFromDefinition(cleanRootDef).isInflected &&
+            !current.definitions.some(
+              (d) => d.toLowerCase() === cleanRootDef.toLowerCase(),
+            )
+          ) {
+            const formattedDef = formatInflectedDefinition(
+              cleanRootDef,
+              detectedInflection?.type || null,
+              detectedInflection?.label || null,
+            );
+            current.definitions.push(formattedDef);
+          }
 
-          current.definitions.push(formattedDef);
-        }
-
-        // Add real examples from root, adapting to plural form if suitable
-        rItem.examples.forEach((ex) => {
-          let adaptedEx = formatSentence(ex);
-          // If plural, see if we can adapt singular root word in example to plural
-          if (word.endsWith("s") && detectedRootWord) {
-            const regex = new RegExp(`\\b${detectedRootWord}\\b`, "gi");
+          // Adapt and bring in root examples
+          rItem.examples.forEach((ex) => {
+            let adaptedEx = formatSentence(ex);
+            const regex = new RegExp(`\\b${rootWord}\\b`, "gi");
             if (regex.test(adaptedEx)) {
               adaptedEx = adaptedEx.replace(regex, word);
             }
-          }
-          if (
-            adaptedEx &&
-            adaptedEx.length > 10 &&
-            !current.examples.some(
-              (e) => e.toLowerCase() === adaptedEx.toLowerCase(),
-            )
-          ) {
-            current.examples.push(adaptedEx);
-          }
+            if (
+              adaptedEx &&
+              adaptedEx.length > 10 &&
+              !current.examples.some(
+                (e) => e.toLowerCase() === adaptedEx.toLowerCase(),
+              )
+            ) {
+              current.examples.push(adaptedEx);
+            }
+          });
         });
-      });
+      }
     } catch {
-      // Continue if root lookup fails
+      // Continue if root research fails
     }
   }
 
-  // 4. Fallback if both sources failed completely
+  // 5. Fallback if both sources failed completely
   if (posMap.size === 0) {
-    const fallbackExamples = generateDiverseContextExamples(
+    const fallbackExamples = generateInflectionExamples(
       rawWord.trim(),
+      detectedInflection?.type || null,
       "general",
       3,
     );
-    return {
+    const fallbackResult: EnrichedWordData = {
       word: rawWord.trim(),
       meanings: [
         {
@@ -415,15 +456,18 @@ export async function fetchComprehensiveDictionary(
       variations,
       source: "fallback",
     };
+    setCachedWord(word, fallbackResult);
+    return fallbackResult;
   }
 
-  // 5. Construct final structured meanings per part of speech
+  // 6. Construct final structured meanings per part of speech
   // Guaranteeing clean definitions and 2 to 3 distinct examples
   const finalMeanings: MeaningItem[] = [];
 
   for (const [pos, data] of posMap.entries()) {
-    // Purge any remaining tautologies
-    let cleanDefs = data.definitions.filter((d) => !extractTautologicalRoot(d));
+    let cleanDefs = data.definitions.filter(
+      (d) => !detectInflectionFromDefinition(d).isInflected,
+    );
     if (cleanDefs.length === 0) {
       cleanDefs = data.definitions;
     }
@@ -433,7 +477,7 @@ export async function fetchComprehensiveDictionary(
     const secondaryDef =
       cleanDefs.length > 1 &&
       cleanDefs[1].length > 5 &&
-      !cleanDefs[1].toLowerCase().includes("plural of")
+      !detectInflectionFromDefinition(cleanDefs[1]).isInflected
         ? cleanDefs[1]
         : null;
 
@@ -444,11 +488,11 @@ export async function fetchComprehensiveDictionary(
     // Collect and guarantee 2 to 3 distinct examples
     const finalExamples: string[] = [...data.examples];
 
-    // If we have fewer than 3 examples, supplement with rich contextual examples
     if (finalExamples.length < 3) {
       const needed = 3 - finalExamples.length;
-      const generated = generateDiverseContextExamples(
+      const generated = generateInflectionExamples(
         rawWord.trim(),
+        detectedInflection?.type || null,
         pos,
         needed,
       );
@@ -475,21 +519,34 @@ export async function fetchComprehensiveDictionary(
         ? "dictionaryapi"
         : "wiktionary";
 
-  return {
+  const result: EnrichedWordData = {
     word: rawWord.trim(),
     meanings: finalMeanings,
     variations,
     source,
   };
+
+  // Cache the result for future batch operations
+  setCachedWord(word, result);
+
+  return result;
 }
 
 /**
- * Concurrency-controlled batch dictionary fetcher
+ * Concurrency-controlled batch dictionary fetcher with smart caching:
+ * - Checks cache for each word first.
+ * - Only performs network requests for uncached or updated words.
  */
 export async function fetchDictionaryBatch(
   words: string[],
   concurrency = 4,
-  onProgress?: (completed: number, total: number, currentWord: string) => void,
+  onProgress?: (
+    completed: number,
+    total: number,
+    currentWord: string,
+    isCached: boolean,
+  ) => void,
+  forceRefreshWords: Set<string> = new Set(),
 ): Promise<Map<string, EnrichedWordData>> {
   const results = new Map<string, EnrichedWordData>();
   const total = words.length;
@@ -499,11 +556,63 @@ export async function fetchDictionaryBatch(
     new Set(words.map((w) => w.trim().toLowerCase())),
   ).filter(Boolean);
 
-  for (let i = 0; i < uniqueWords.length; i += concurrency) {
-    const chunk = uniqueWords.slice(i, i + concurrency);
+  // Separate cached words from uncached words
+  const wordsToFetch: string[] = [];
+
+  for (const word of uniqueWords) {
+    if (!forceRefreshWords.has(word)) {
+      const cached = getCachedWord(word);
+      if (cached) {
+        results.set(word, { ...cached, source: "cache" });
+        completed++;
+        if (onProgress) {
+          onProgress(completed, total, word, true);
+        }
+        continue;
+      }
+    }
+    wordsToFetch.push(word);
+  }
+
+  // If in browser, use the server's persistent disk cache API
+  if (wordsToFetch.length > 0 && typeof window !== "undefined") {
+    try {
+      const res = await fetch("/api/dictionary/lookup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          words: wordsToFetch,
+          forceRefreshWords: Array.from(forceRefreshWords),
+        }),
+      });
+      const json = await res.json();
+      if (json.success && json.data) {
+        for (const [norm, data] of Object.entries(
+          json.data as Record<string, EnrichedWordData>,
+        )) {
+          setCachedWord(norm, data);
+          results.set(norm, data);
+          completed++;
+          if (onProgress) {
+            onProgress(completed, total, norm, data.source === "cache");
+          }
+        }
+        return results;
+      }
+    } catch {
+      // Fallback to local concurrency fetch below if API route fails
+    }
+  }
+
+  // Fallback concurrency fetch if running server-side or if API route failed
+  for (let i = 0; i < wordsToFetch.length; i += concurrency) {
+    const chunk = wordsToFetch.slice(i, i + concurrency);
     const chunkPromises = chunk.map(async (word) => {
       try {
-        const enriched = await fetchComprehensiveDictionary(word);
+        const enriched = await fetchComprehensiveDictionary(
+          word,
+          forceRefreshWords.has(word),
+        );
         results.set(word, enriched);
       } catch {
         results.set(word, {
@@ -512,7 +621,7 @@ export async function fetchDictionaryBatch(
             {
               partOfSpeech: "General",
               definition: `Definition for ${word}`,
-              examples: generateDiverseContextExamples(word, "general", 3),
+              examples: generateInflectionExamples(word, null, "general", 3),
             },
           ],
           variations: [],
@@ -521,7 +630,7 @@ export async function fetchDictionaryBatch(
       } finally {
         completed++;
         if (onProgress) {
-          onProgress(completed, total, word);
+          onProgress(completed, total, word, false);
         }
       }
     });

@@ -6,8 +6,6 @@ import { useRouter } from "next/navigation";
 import {
   BookOpen,
   PlusCircle,
-  Library,
-  BarChart3,
   Search,
   ArrowRight,
   Sparkles,
@@ -16,27 +14,36 @@ import {
   ChevronRight,
   TrendingUp,
   Bookmark,
-  BookCheck,
+  Music,
+  Film,
   Compass,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 
-interface BookSummary {
+interface MediaSummary {
   name: string;
   totalWords: number;
-  totalPages: number;
+  totalPages?: number;
+  type: "book" | "song" | "movie";
 }
 
 interface QuickSearchWordResult {
   word: string;
   totalFrequency: number;
   booksCount: number;
+  songsCount: number;
+  moviesCount: number;
 }
 
 export default function Home() {
   const router = useRouter();
-  const [books, setBooks] = useState<string[]>([]);
-  const [bookSummaries, setBookSummaries] = useState<BookSummary[]>([]);
+  const [bookSummaries, setBookSummaries] = useState<MediaSummary[]>([]);
+  const [songSummaries, setSongSummaries] = useState<MediaSummary[]>([]);
+  const [movieSummaries, setMovieSummaries] = useState<MediaSummary[]>([]);
+  const [activeVaultTab, setActiveVaultTab] = useState<
+    "books" | "songs" | "movies"
+  >("books");
+
   const [loading, setLoading] = useState<boolean>(true);
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [searchResult, setSearchResult] =
@@ -46,17 +53,24 @@ export default function Home() {
     useState<boolean>(false);
 
   useEffect(() => {
-    const fetchLibraryData = async () => {
+    const fetchAllData = async () => {
       setLoading(true);
       try {
-        const booksRes = await fetch("/api/books");
-        const booksData = await booksRes.json();
+        const [booksRes, songsRes, moviesRes] = await Promise.all([
+          fetch("/api/books"),
+          fetch("/api/songs"),
+          fetch("/api/movies"),
+        ]);
 
+        const [booksData, songsData, moviesData] = await Promise.all([
+          booksRes.json(),
+          songsRes.json(),
+          moviesRes.json(),
+        ]);
+
+        // Process Books
         if (booksData.success && Array.isArray(booksData.books)) {
-          setBooks(booksData.books);
-
-          // Fetch quick summary for the books
-          const summaries: BookSummary[] = await Promise.all(
+          const summaries: MediaSummary[] = await Promise.all(
             booksData.books.map(async (bookName: string) => {
               try {
                 const wordsRes = await fetch(
@@ -69,16 +83,49 @@ export default function Home() {
                   wordsData.data.forEach((p: { words?: unknown[] }) => {
                     totalWords += p.words ? p.words.length : 0;
                   });
-                  return { name: bookName, totalWords, totalPages };
+                  return {
+                    name: bookName,
+                    totalWords,
+                    totalPages,
+                    type: "book" as const,
+                  };
                 }
               } catch (e) {
                 console.error(`Error loading words for ${bookName}:`, e);
               }
-              return { name: bookName, totalWords: 0, totalPages: 0 };
+              return {
+                name: bookName,
+                totalWords: 0,
+                totalPages: 0,
+                type: "book" as const,
+              };
             }),
           );
-
           setBookSummaries(summaries);
+        }
+
+        // Process Songs
+        if (songsData.success && Array.isArray(songsData.songs)) {
+          setSongSummaries(
+            songsData.songs.map((s: { name: string; totalWords: number }) => ({
+              name: s.name,
+              totalWords: s.totalWords,
+              type: "song" as const,
+            })),
+          );
+        }
+
+        // Process Movies
+        if (moviesData.success && Array.isArray(moviesData.movies)) {
+          setMovieSummaries(
+            moviesData.movies.map(
+              (m: { name: string; totalWords: number }) => ({
+                name: m.name,
+                totalWords: m.totalWords,
+                type: "movie" as const,
+              }),
+            ),
+          );
         }
       } catch (err) {
         console.error("Error loading library data:", err);
@@ -87,10 +134,10 @@ export default function Home() {
       }
     };
 
-    void fetchLibraryData();
+    void fetchAllData();
   }, []);
 
-  // Quick word lookup handler
+  // Quick cross-media word lookup handler
   useEffect(() => {
     const trimmed = searchQuery.trim();
     if (!trimmed) {
@@ -110,6 +157,8 @@ export default function Home() {
             word: data.data.word,
             totalFrequency: data.data.totalFrequency,
             booksCount: data.data.books?.length || 0,
+            songsCount: data.data.songs?.length || 0,
+            moviesCount: data.data.movies?.length || 0,
           });
         } else {
           setSearchResult(null);
@@ -128,22 +177,39 @@ export default function Home() {
   // Overall statistics
   const stats = useMemo(() => {
     const totalBooks = bookSummaries.length;
-    let totalWords = 0;
+    const totalSongs = songSummaries.length;
+    const totalMovies = movieSummaries.length;
+
+    let bookWords = 0;
     let totalPages = 0;
     bookSummaries.forEach((b) => {
-      totalWords += b.totalWords;
-      totalPages += b.totalPages;
+      bookWords += b.totalWords;
+      totalPages += b.totalPages || 0;
     });
-    const avgWords = totalBooks > 0 ? Math.round(totalWords / totalBooks) : 0;
-    return { totalBooks, totalWords, totalPages, avgWords };
-  }, [bookSummaries]);
 
-  // Filtered books based on search input
-  const filteredBooks = useMemo(() => {
+    const songWords = songSummaries.reduce((sum, s) => sum + s.totalWords, 0);
+    const movieWords = movieSummaries.reduce((sum, m) => sum + m.totalWords, 0);
+    const totalWords = bookWords + songWords + movieWords;
+
+    return { totalBooks, totalSongs, totalMovies, totalPages, totalWords };
+  }, [bookSummaries, songSummaries, movieSummaries]);
+
+  // Filter items for active tab
+  const activeCollection = useMemo(() => {
+    let source = bookSummaries;
+    if (activeVaultTab === "songs") source = songSummaries;
+    else if (activeVaultTab === "movies") source = movieSummaries;
+
     const q = searchQuery.toLowerCase().trim();
-    if (!q) return bookSummaries;
-    return bookSummaries.filter((b) => b.name.toLowerCase().includes(q));
-  }, [bookSummaries, searchQuery]);
+    if (!q) return source;
+    return source.filter((item) => item.name.toLowerCase().includes(q));
+  }, [
+    activeVaultTab,
+    bookSummaries,
+    songSummaries,
+    movieSummaries,
+    searchQuery,
+  ]);
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 flex flex-col">
@@ -152,27 +218,26 @@ export default function Home() {
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 space-y-16">
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-white rounded-3xl p-8 sm:p-12 lg:p-16 border border-gray-100 shadow-sm">
-          {/* Subtle decorative background gradient circles */}
           <div className="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-gradient-to-br from-indigo-100/50 to-purple-100/30 rounded-full blur-3xl pointer-events-none" />
           <div className="absolute bottom-0 left-1/3 -mb-24 w-80 h-80 bg-gradient-to-tr from-blue-50/70 to-indigo-50/50 rounded-full blur-2xl pointer-events-none" />
 
           <div className="relative max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-50 border border-indigo-100/80 text-indigo-700 text-xs font-bold uppercase tracking-wider mb-6">
               <Sparkles size={14} className="text-indigo-600" />
-              <span>Personal Literary Lexicon</span>
+              <span>Personal Multimedia Lexicon</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight leading-[1.15] mb-6">
-              Organize and master words across your{" "}
+              Organize and master words across{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-indigo-800">
-                entire library.
+                Books, Songs & Movies.
               </span>
             </h1>
 
             <p className="text-gray-600 text-lg sm:text-xl font-normal leading-relaxed mb-8 max-w-2xl">
-              Catalog vocabulary while reading with exact page citations,
-              dictionary definitions, and cross-book frequency analysis — built
-              for dedicated readers and learners.
+              Catalog vocabulary while reading, listening, or watching. Enjoy
+              pageless fast dumps for music & cinema, page citations for books,
+              and unified dictionary enrichment.
             </p>
 
             {/* Hero CTAs */}
@@ -187,28 +252,36 @@ export default function Home() {
 
               <Link
                 href="/book-list"
-                className="inline-flex items-center gap-2 px-6 py-3.5 bg-gray-100 hover:bg-gray-200/80 text-gray-800 font-bold rounded-xl transition-all"
+                className="inline-flex items-center gap-2 px-5 py-3.5 bg-gray-100 hover:bg-gray-200/80 text-gray-800 font-bold rounded-xl transition-all"
               >
-                <Library size={18} className="text-gray-600" />
-                <span>Browse Library</span>
+                <BookOpen size={17} className="text-gray-600" />
+                <span>Books</span>
               </Link>
 
               <Link
-                href="/analytics"
-                className="inline-flex items-center gap-2 px-5 py-3.5 text-gray-600 hover:text-indigo-600 hover:bg-indigo-50/60 font-semibold rounded-xl transition-colors"
+                href="/song-list"
+                className="inline-flex items-center gap-2 px-5 py-3.5 bg-gray-100 hover:bg-gray-200/80 text-gray-800 font-bold rounded-xl transition-all"
               >
-                <BarChart3 size={18} />
-                <span>View Insights</span>
+                <Music size={17} className="text-indigo-600" />
+                <span>Songs</span>
+              </Link>
+
+              <Link
+                href="/movie-list"
+                className="inline-flex items-center gap-2 px-5 py-3.5 bg-gray-100 hover:bg-gray-200/80 text-gray-800 font-bold rounded-xl transition-all"
+              >
+                <Film size={17} className="text-purple-600" />
+                <span>Movies</span>
               </Link>
             </div>
 
-            {/* Quick Word & Book Search */}
+            {/* Quick Word & Media Search */}
             <div className="pt-6 border-t border-gray-100">
               <label
                 htmlFor="library-search"
                 className="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2"
               >
-                Instant Lexicon & Book Search
+                Instant Lexicon & Media Search
               </label>
               <div className="relative max-w-xl">
                 <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
@@ -226,7 +299,7 @@ export default function Home() {
                       setSearchedWordAttempted(false);
                     }
                   }}
-                  placeholder="Search for a word or book in your library..."
+                  placeholder="Search for a word, book, song, or movie..."
                   className="w-full pl-11 pr-4 py-3.5 bg-gray-50 hover:bg-gray-100/70 focus:bg-white text-gray-900 placeholder-gray-400 rounded-2xl border border-gray-200/80 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-50 outline-none transition-all text-sm font-medium"
                 />
               </div>
@@ -237,7 +310,7 @@ export default function Home() {
                   {isSearchingWord ? (
                     <div className="p-3 bg-gray-50 rounded-xl text-xs text-gray-500 font-medium flex items-center gap-2">
                       <div className="animate-spin rounded-full h-3 w-3 border-b-2 border-indigo-600" />
-                      Searching dictionary & library archives...
+                      Searching dictionary & cross-media archives...
                     </div>
                   ) : searchResult ? (
                     <div className="p-4 bg-emerald-50 border border-emerald-200/80 rounded-2xl flex items-center justify-between gap-4">
@@ -252,12 +325,16 @@ export default function Home() {
                           </span>
                         </div>
                         <p className="text-xs text-emerald-700 mt-0.5">
-                          Indexed across {searchResult.booksCount} book
-                          {searchResult.booksCount > 1 ? "s" : ""}.
+                          Found in {searchResult.booksCount} book
+                          {searchResult.booksCount === 1 ? "" : "s"},{" "}
+                          {searchResult.songsCount} song
+                          {searchResult.songsCount === 1 ? "" : "s"}, and{" "}
+                          {searchResult.moviesCount} movie
+                          {searchResult.moviesCount === 1 ? "" : "s"}.
                         </p>
                       </div>
                       <Link
-                        href={`/analytics`}
+                        href="/analytics"
                         className="inline-flex items-center gap-1 text-xs font-bold text-emerald-800 hover:text-emerald-900 bg-white px-3 py-1.5 rounded-xl border border-emerald-200 shadow-2xs hover:shadow-xs transition-all"
                       >
                         Inspect
@@ -272,12 +349,12 @@ export default function Home() {
                           your library.
                         </p>
                         <p className="text-xs text-amber-700 mt-0.5">
-                          Capture it now with page number and automated
-                          definitions.
+                          Capture it now into Books, Songs, or Movies with
+                          automated definitions.
                         </p>
                       </div>
                       <button
-                        onClick={() => router.push(`/add-word`)}
+                        onClick={() => router.push("/add-word")}
                         className="inline-flex items-center gap-1 text-xs font-bold text-white bg-amber-600 hover:bg-amber-700 px-3 py-1.5 rounded-xl transition-colors shadow-2xs"
                       >
                         <PlusCircle size={14} />
@@ -314,40 +391,49 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
               {
-                label: "Total Books",
+                label: "Books Vault",
                 value: loading ? "—" : stats.totalBooks,
-                desc: "Active reading logs",
-                icon: <Library size={22} />,
+                desc: `${stats.totalPages} pages cataloged`,
+                icon: <BookOpen size={22} />,
                 bg: "bg-indigo-50 text-indigo-600",
+                href: "/book-list",
               },
               {
-                label: "Words Indexed",
-                value: loading ? "—" : stats.totalWords,
-                desc: "Cataloged with definitions",
-                icon: <Bookmark size={22} />,
+                label: "Songs Vault",
+                value: loading ? "—" : stats.totalSongs,
+                desc: "Tracks and lyrical logs",
+                icon: <Music size={22} />,
                 bg: "bg-emerald-50 text-emerald-600",
+                href: "/song-list",
               },
               {
-                label: "Pages Logged",
-                value: loading ? "—" : stats.totalPages,
-                desc: "Exact reference citations",
-                icon: <FileText size={22} />,
-                bg: "bg-amber-50 text-amber-600",
-              },
-              {
-                label: "Words Per Book",
-                value: loading ? "—" : stats.avgWords,
-                desc: "Average vocabulary density",
-                icon: <TrendingUp size={22} />,
+                label: "Movies Vault",
+                value: loading ? "—" : stats.totalMovies,
+                desc: "Cinema & screen dialogue",
+                icon: <Film size={22} />,
                 bg: "bg-purple-50 text-purple-600",
+                href: "/movie-list",
+              },
+              {
+                label: "Total Lexicon",
+                value: loading ? "—" : stats.totalWords,
+                desc: "Enriched vocabulary items",
+                icon: <Bookmark size={22} />,
+                bg: "bg-amber-50 text-amber-600",
+                href: "/analytics",
               },
             ].map((stat, idx) => (
-              <div
+              <Link
                 key={idx}
-                className="bg-white rounded-2xl p-6 border border-gray-100 shadow-2xs hover:shadow-md hover:border-indigo-100 transition-all duration-200"
+                href={stat.href}
+                className="bg-white rounded-2xl p-6 border border-gray-100 shadow-2xs hover:shadow-md hover:border-indigo-100 transition-all duration-200 group block"
               >
                 <div className="flex items-center justify-between mb-4">
                   <div className={`p-3 rounded-xl ${stat.bg}`}>{stat.icon}</div>
+                  <ChevronRight
+                    size={14}
+                    className="text-gray-300 group-hover:text-indigo-600 group-hover:translate-x-0.5 transition-all"
+                  />
                 </div>
                 <div className="text-3xl font-black text-gray-900 tracking-tight">
                   {stat.value}
@@ -356,39 +442,61 @@ export default function Home() {
                   {stat.label}
                 </div>
                 <div className="text-xs text-gray-400 mt-0.5">{stat.desc}</div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>
 
-        {/* Books Showcase / Quick Access */}
-        <section>
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6">
+        {/* Media Collections Tabbed Showcase */}
+        <section className="space-y-6">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
               <h2 className="text-xs font-black uppercase tracking-widest text-gray-400">
-                Active Reading Shelves
+                Explore Collections
               </h2>
               <p className="text-xl font-extrabold text-gray-900">
-                {searchQuery.trim()
-                  ? "Search Results"
-                  : "Your Library Collection"}
+                Your Vocabulary Archives
               </p>
             </div>
-            <div className="flex items-center gap-3">
-              <Link
-                href="/add-word"
-                className="inline-flex items-center gap-1.5 text-xs font-bold text-gray-700 hover:text-indigo-600 bg-white px-3 py-2 rounded-xl border border-gray-200 shadow-2xs hover:border-indigo-200 transition-all"
+
+            {/* Media Selector Tabs */}
+            <div className="inline-flex p-1 rounded-2xl bg-white border border-gray-200 shadow-2xs gap-1 self-start sm:self-auto">
+              <button
+                type="button"
+                onClick={() => setActiveVaultTab("books")}
+                className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${
+                  activeVaultTab === "books"
+                    ? "bg-indigo-600 text-white shadow-xs"
+                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                }`}
               >
-                <PlusCircle size={14} className="text-indigo-600" />
-                Add to Book
-              </Link>
-              <Link
-                href="/book-list"
-                className="inline-flex items-center gap-1 text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors"
+                <BookOpen size={14} />
+                <span>Books ({bookSummaries.length})</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setActiveVaultTab("songs")}
+                className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${
+                  activeVaultTab === "songs"
+                    ? "bg-indigo-600 text-white shadow-xs"
+                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                }`}
               >
-                View All ({books.length})
-                <ChevronRight size={14} />
-              </Link>
+                <Music size={14} />
+                <span>Songs ({songSummaries.length})</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setActiveVaultTab("movies")}
+                className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${
+                  activeVaultTab === "movies"
+                    ? "bg-indigo-600 text-white shadow-xs"
+                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                }`}
+              >
+                <Film size={14} />
+                <span>Movies ({movieSummaries.length})</span>
+              </button>
             </div>
           </div>
 
@@ -405,71 +513,92 @@ export default function Home() {
                 </div>
               ))}
             </div>
-          ) : filteredBooks.length === 0 ? (
-            <div className="text-center py-16 bg-white rounded-3xl border border-dashed border-gray-200 px-6">
-              <div className="bg-gray-50 p-5 rounded-full inline-flex mb-4">
-                <BookOpen size={40} className="text-gray-300" />
+          ) : activeCollection.length === 0 ? (
+            <div className="text-center py-16 bg-white rounded-3xl border border-dashed border-gray-200 px-6 space-y-3">
+              <div className="bg-indigo-50 p-4 rounded-full inline-flex text-indigo-600">
+                {activeVaultTab === "songs" ? (
+                  <Music size={36} />
+                ) : activeVaultTab === "movies" ? (
+                  <Film size={36} />
+                ) : (
+                  <BookOpen size={36} />
+                )}
               </div>
               <h3 className="text-lg font-bold text-gray-900">
-                {searchQuery.trim()
-                  ? "No matching books found"
-                  : "Your library is waiting"}
+                No {activeVaultTab} logged yet
               </h3>
-              <p className="text-gray-500 max-w-sm mx-auto mt-2 text-sm">
-                {searchQuery.trim()
-                  ? `No books match "${searchQuery}". Try adding a new book or resetting your query.`
-                  : "Begin logging words from the books you are reading to build your personal lexicon."}
+              <p className="text-gray-500 max-w-sm mx-auto text-xs">
+                Start adding words from your favorite {activeVaultTab} with
+                smart batch dump.
               </p>
-              <div className="mt-6">
+              <div className="pt-2">
                 <Link
                   href="/add-word"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm rounded-xl transition-colors shadow-sm"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs rounded-xl transition-colors shadow-sm"
                 >
-                  <PlusCircle size={16} />
-                  Add First Word
+                  <PlusCircle size={15} />
+                  Add to {activeVaultTab.slice(0, -1)}
                 </Link>
               </div>
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredBooks.slice(0, 6).map((book) => (
-                <Link
-                  key={book.name}
-                  href={`/book/${encodeURIComponent(book.name)}`}
-                  className="group flex flex-col justify-between bg-white p-6 rounded-2xl shadow-2xs border border-gray-100 hover:shadow-xl hover:border-indigo-100 transition-all duration-300 transform hover:-translate-y-1"
-                >
-                  <div>
-                    <div className="flex items-start justify-between gap-4 mb-4">
-                      <div className="p-3 rounded-xl bg-indigo-50 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
-                        <BookMarked size={22} />
+              {activeCollection.slice(0, 6).map((item) => {
+                const itemHref =
+                  item.type === "song"
+                    ? `/song/${encodeURIComponent(item.name)}`
+                    : item.type === "movie"
+                      ? `/movie/${encodeURIComponent(item.name)}`
+                      : `/book/${encodeURIComponent(item.name)}`;
+
+                return (
+                  <Link
+                    key={item.name}
+                    href={itemHref}
+                    className="group flex flex-col justify-between bg-white p-6 rounded-2xl shadow-2xs border border-gray-100 hover:shadow-xl hover:border-indigo-100 transition-all duration-300 transform hover:-translate-y-1"
+                  >
+                    <div>
+                      <div className="flex items-start justify-between gap-4 mb-4">
+                        <div className="p-3 rounded-xl bg-indigo-50 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
+                          {item.type === "song" ? (
+                            <Music size={22} />
+                          ) : item.type === "movie" ? (
+                            <Film size={22} />
+                          ) : (
+                            <BookMarked size={22} />
+                          )}
+                        </div>
+                        <span className="text-[11px] font-bold text-indigo-600 bg-indigo-50/80 px-2.5 py-1 rounded-full border border-indigo-100/50">
+                          {item.totalWords} word
+                          {item.totalWords === 1 ? "" : "s"}
+                        </span>
                       </div>
-                      <span className="text-[11px] font-bold text-indigo-600 bg-indigo-50/80 px-2.5 py-1 rounded-full border border-indigo-100/50">
-                        {book.totalWords} word{book.totalWords === 1 ? "" : "s"}
+
+                      <h3 className="font-bold text-lg text-gray-900 group-hover:text-indigo-600 transition-colors line-clamp-2 mb-1">
+                        {item.name}
+                      </h3>
+                      {item.totalPages !== undefined && (
+                        <p className="text-xs text-gray-500 font-medium">
+                          {item.totalPages} page
+                          {item.totalPages === 1 ? "" : "s"} indexed
+                        </p>
+                      )}
+                    </div>
+
+                    <div className="flex items-center justify-between mt-6 pt-4 border-t border-gray-50">
+                      <span className="text-xs font-bold text-gray-600 group-hover:text-indigo-600 transition-colors">
+                        Open Vocabulary
                       </span>
+                      <div className="w-7 h-7 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-indigo-100 transition-colors">
+                        <ChevronRight
+                          size={14}
+                          className="text-gray-400 group-hover:text-indigo-600 group-hover:translate-x-0.5 transition-all"
+                        />
+                      </div>
                     </div>
-
-                    <h3 className="font-bold text-lg text-gray-900 group-hover:text-indigo-600 transition-colors line-clamp-2 mb-2">
-                      {book.name}
-                    </h3>
-                    <p className="text-xs text-gray-500 font-medium">
-                      {book.totalPages} page{book.totalPages === 1 ? "" : "s"}{" "}
-                      indexed
-                    </p>
-                  </div>
-
-                  <div className="flex items-center justify-between mt-6 pt-4 border-t border-gray-50">
-                    <span className="text-xs font-bold text-gray-600 group-hover:text-indigo-600 transition-colors">
-                      Open Vocabulary
-                    </span>
-                    <div className="w-7 h-7 rounded-full bg-gray-50 flex items-center justify-center group-hover:bg-indigo-100 transition-colors">
-                      <ChevronRight
-                        size={14}
-                        className="text-gray-400 group-hover:text-indigo-600 group-hover:translate-x-0.5 transition-all"
-                      />
-                    </div>
-                  </div>
-                </Link>
-              ))}
+                  </Link>
+                );
+              })}
             </div>
           )}
         </section>
@@ -481,39 +610,39 @@ export default function Home() {
               Capabilities
             </h2>
             <h3 className="text-2xl sm:text-3xl font-black text-gray-900 tracking-tight">
-              Designed for Reader Depth & Vocabulary Retention
+              Designed for Depth Across Books, Songs & Cinema
             </h3>
             <p className="text-gray-500 text-sm sm:text-base mt-2">
-              Everything you need to turn reading sessions into permanent
-              linguistic knowledge.
+              Capture vocabulary from your favorite reads, albums, and
+              screenplays in seconds.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                icon: <BookCheck size={24} className="text-indigo-600" />,
-                title: "Page-Level Context",
+                icon: <FileText size={24} className="text-indigo-600" />,
+                title: "Pageless Batch Dump",
                 description:
-                  "Track words tied to the exact page numbers where you discovered them, with usage sentences preserved.",
+                  "Paste words directly for songs and movies without needing page numbers or extra hierarchy.",
               },
               {
                 icon: <Sparkles size={24} className="text-emerald-600" />,
                 title: "Smart Dictionary Fetch",
                 description:
-                  "Auto-populate definitions and parts of speech directly from dictionary databases while entering new words.",
+                  "Auto-populate substantive definitions and 2-3 contextual examples directly while importing.",
               },
               {
                 icon: <TrendingUp size={24} className="text-purple-600" />,
-                title: "Cross-Book Frequency",
+                title: "Cross-Media Frequency",
                 description:
-                  "Detect recurring terminology across disparate books in your library and group grammatical variations.",
+                  "Detect recurring terminology across Books, Songs, and Movies with unified occurrence stats.",
               },
               {
                 icon: <Compass size={24} className="text-amber-600" />,
                 title: "Linguistic Intelligence",
                 description:
-                  "Access high-level analytics on vocabulary size, reading density, and prominent literary themes.",
+                  "Access high-level analytics on vocabulary size, media density, and prominent vocabulary themes.",
               },
             ].map((feat, idx) => (
               <div key={idx} className="space-y-3">
@@ -535,11 +664,11 @@ export default function Home() {
         <section className="bg-gradient-to-r from-gray-900 to-indigo-950 rounded-3xl p-8 sm:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-6 shadow-md">
           <div className="space-y-2 text-center md:text-left">
             <h3 className="text-2xl sm:text-3xl font-black tracking-tight">
-              Ready to catalog your reading?
+              Ready to catalog your vocabulary?
             </h3>
             <p className="text-gray-400 text-sm sm:text-base max-w-xl">
-              Add a new word to an existing volume or start a fresh book log in
-              seconds.
+              Add words to an existing volume, song, or film in seconds using
+              Smart Batch Dump.
             </p>
           </div>
           <div className="flex items-center gap-3 flex-shrink-0">
@@ -550,10 +679,16 @@ export default function Home() {
               Add Word
             </Link>
             <Link
-              href="/book-list"
-              className="px-6 py-3.5 bg-white/10 hover:bg-white/15 text-white font-semibold rounded-xl border border-white/10 transition-colors"
+              href="/song-list"
+              className="px-5 py-3.5 bg-white/10 hover:bg-white/15 text-white font-semibold rounded-xl border border-white/10 transition-colors"
             >
-              Library Vault
+              Song Vault
+            </Link>
+            <Link
+              href="/movie-list"
+              className="px-5 py-3.5 bg-white/10 hover:bg-white/15 text-white font-semibold rounded-xl border border-white/10 transition-colors"
+            >
+              Movie Vault
             </Link>
           </div>
         </section>
@@ -576,7 +711,19 @@ export default function Home() {
               href="/book-list"
               className="hover:text-indigo-600 transition-colors"
             >
-              Library
+              Books
+            </Link>
+            <Link
+              href="/song-list"
+              className="hover:text-indigo-600 transition-colors"
+            >
+              Songs
+            </Link>
+            <Link
+              href="/movie-list"
+              className="hover:text-indigo-600 transition-colors"
+            >
+              Movies
             </Link>
             <Link
               href="/add-word"

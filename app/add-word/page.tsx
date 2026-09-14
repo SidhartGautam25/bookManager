@@ -5,6 +5,8 @@ import {
   BookPlus,
   PlusCircle,
   Book,
+  Music,
+  Film,
   Type,
   FileText,
   CheckCircle2,
@@ -25,16 +27,17 @@ type ExistingWordData = {
   pages: number[];
   meanings: MeaningItem[];
   variations?: string[];
-  source?: "current-book" | "other-book" | "api";
+  source?: "current-book" | "other-book" | "song" | "movie" | "api";
   bookName?: string;
 };
 
 export default function AddWordPage() {
+  const [mediaType, setMediaType] = useState<"book" | "song" | "movie">("book");
   const [entryMode, setEntryMode] = useState<"single" | "batch">("batch");
-  const [books, setBooks] = useState<string[]>([]);
-  const [selectedBook, setSelectedBook] = useState<string>("");
-  const [newBookName, setNewBookName] = useState<string>("");
-  const [showNewBookInput, setShowNewBookInput] = useState<boolean>(false);
+  const [mediaItems, setMediaItems] = useState<string[]>([]);
+  const [selectedItem, setSelectedItem] = useState<string>("");
+  const [newItemName, setNewItemName] = useState<string>("");
+  const [showNewItemInput, setShowNewItemInput] = useState<boolean>(false);
   const [word, setWord] = useState<string>("");
 
   const [pageNo, setPageNo] = useState<string>("");
@@ -49,29 +52,64 @@ export default function AddWordPage() {
     { partOfSpeech: "", definition: "", examples: [""] },
   ]);
   const [variations, setVariations] = useState<string>("");
-  const [dataSource, setDataSource] = useState<
-    "current-book" | "other-book" | "api" | null
+  const [, setDataSource] = useState<
+    "current-book" | "other-book" | "song" | "movie" | "api" | null
   >(null);
   const searchTimerRef = useRef<number | null>(null);
 
-  // Fetch existing books on component mount
+  const mediaLabel =
+    mediaType === "song" ? "Song" : mediaType === "movie" ? "Movie" : "Book";
+
   useEffect(() => {
-    const fetchBooks = async () => {
+    let isMounted = true;
+    async function loadMediaItems() {
       try {
-        const response = await fetch("/api/books");
-        const data = await response.json();
+        let endpoint = "/api/books";
+        if (mediaType === "song") endpoint = "/api/songs";
+        else if (mediaType === "movie") endpoint = "/api/movies";
+
+        const res = await fetch(endpoint);
+        const data = await res.json();
+        if (!isMounted) return;
         if (data.success) {
-          setBooks(data.books);
+          if (mediaType === "book") {
+            setMediaItems(data.books || []);
+          } else if (mediaType === "song") {
+            const names = (data.songs || []).map(
+              (s: { name: string }) => s.name,
+            );
+            setMediaItems(names);
+          } else {
+            const names = (data.movies || []).map(
+              (m: { name: string }) => m.name,
+            );
+            setMediaItems(names);
+          }
         }
       } catch {
-        console.error("Error fetching books");
-        setMessage("Error fetching books");
-        setMessageType("error");
+        console.error(`Error fetching ${mediaType} items`);
       }
-    };
+    }
 
-    void fetchBooks();
-  }, []);
+    void loadMediaItems();
+    return () => {
+      isMounted = false;
+    };
+  }, [mediaType]);
+
+  const handleMediaTypeChange = (newType: "book" | "song" | "movie") => {
+    if (newType === mediaType) return;
+    setMediaType(newType);
+    setSelectedItem("");
+    setWord("");
+    setPageNo("");
+    setMeanings([{ partOfSpeech: "", definition: "", examples: [""] }]);
+    setVariations("");
+    setExistingWordData(null);
+    setDataSource(null);
+    setMessage("");
+    setShowNewItemInput(false);
+  };
 
   const fetchDictionaryData = async (searchWord: string) => {
     const normalizedWord = searchWord.trim();
@@ -86,25 +124,32 @@ export default function AddWordPage() {
   };
 
   const searchExistingWord = async (searchWord: string) => {
-    if (!selectedBook || !searchWord.trim()) {
+    if (!selectedItem || !searchWord.trim()) {
       return null;
     }
 
     try {
-      const response = await fetch(
-        `/api/words?bookName=${encodeURIComponent(selectedBook)}&word=${encodeURIComponent(searchWord.trim())}&searchType=global`,
-      );
+      let url = "";
+      if (mediaType === "book") {
+        url = `/api/words?bookName=${encodeURIComponent(selectedItem)}&word=${encodeURIComponent(searchWord.trim())}&searchType=global`;
+      } else if (mediaType === "song") {
+        url = `/api/songs/words?songName=${encodeURIComponent(selectedItem)}&word=${encodeURIComponent(searchWord.trim())}`;
+      } else {
+        url = `/api/movies/words?movieName=${encodeURIComponent(selectedItem)}&word=${encodeURIComponent(searchWord.trim())}`;
+      }
+
+      const response = await fetch(url);
       const data = await response.json();
 
       if (data.success && data.found) {
         setExistingWordData({
           found: true,
-          frequency: data.frequency,
-          pages: data.pages,
+          frequency: data.frequency || 1,
+          pages: data.pages || [],
           meanings: data.meanings || [],
           variations: data.variations,
           source: data.source,
-          bookName: data.bookName,
+          bookName: data.bookName || selectedItem,
         });
         setMeanings(data.meanings || []);
         setVariations((data.variations || []).join(", "));
@@ -131,7 +176,6 @@ export default function AddWordPage() {
     setWord(value);
     setExistingWordData(null);
 
-    // Clear fields if input is cleared
     if (!value.trim()) {
       setMeanings([{ partOfSpeech: "", definition: "", examples: [""] }]);
       setVariations("");
@@ -142,20 +186,18 @@ export default function AddWordPage() {
       window.clearTimeout(searchTimerRef.current);
     }
 
-    if (selectedBook && value.trim()) {
+    if (selectedItem && value.trim()) {
       searchTimerRef.current = window.setTimeout(async () => {
-        // 1. Try local/global search first
         const localResult = await searchExistingWord(value);
 
-        // 2. If not found in any book, fetch from Dictionary API
         if (!localResult || !localResult.found) {
           const dictMeanings = await fetchDictionaryData(value);
-          if (dictMeanings) {
+          if (dictMeanings && dictMeanings.length > 0) {
             setMeanings(dictMeanings);
             setDataSource("api");
           }
         }
-      }, 450);
+      }, 500);
     }
   };
 
@@ -164,11 +206,11 @@ export default function AddWordPage() {
     field: keyof MeaningItem,
     value: string,
   ) => {
-    setMeanings((current) => {
-      const next = [...current];
-      next[index] = { ...next[index], [field]: value };
-      return next;
-    });
+    const updatedMeanings = [...meanings];
+    if (field === "partOfSpeech" || field === "definition") {
+      updatedMeanings[index][field] = value;
+    }
+    setMeanings(updatedMeanings);
   };
 
   const handleExampleChange = (
@@ -176,85 +218,82 @@ export default function AddWordPage() {
     exampleIndex: number,
     value: string,
   ) => {
-    setMeanings((current) => {
-      const next = [...current];
-      const nextExamples = [...next[meaningIndex].examples];
-      nextExamples[exampleIndex] = value;
-      next[meaningIndex] = { ...next[meaningIndex], examples: nextExamples };
-      return next;
-    });
+    const updatedMeanings = [...meanings];
+    updatedMeanings[meaningIndex].examples[exampleIndex] = value;
+    setMeanings(updatedMeanings);
   };
 
-  const addMeaningGroup = () => {
-    setMeanings((current) => [
-      ...current,
+  const addExampleField = (meaningIndex: number) => {
+    const updatedMeanings = [...meanings];
+    updatedMeanings[meaningIndex].examples.push("");
+    setMeanings(updatedMeanings);
+  };
+
+  const removeExampleField = (meaningIndex: number, exampleIndex: number) => {
+    const updatedMeanings = [...meanings];
+    if (updatedMeanings[meaningIndex].examples.length > 1) {
+      updatedMeanings[meaningIndex].examples.splice(exampleIndex, 1);
+      setMeanings(updatedMeanings);
+    }
+  };
+
+  const addMeaningField = () => {
+    setMeanings([
+      ...meanings,
       { partOfSpeech: "", definition: "", examples: [""] },
     ]);
   };
 
-  const removeMeaningGroup = (index: number) => {
-    setMeanings((current) => current.filter((_, i) => i !== index));
+  const removeMeaningField = (index: number) => {
+    if (meanings.length > 1) {
+      const updatedMeanings = meanings.filter((_, i) => i !== index);
+      setMeanings(updatedMeanings);
+    }
   };
 
-  const addExampleToGroup = (meaningIndex: number) => {
-    setMeanings((current) => {
-      const next = [...current];
-      next[meaningIndex] = {
-        ...next[meaningIndex],
-        examples: [...next[meaningIndex].examples, ""],
-      };
-      return next;
-    });
-  };
-
-  const removeExampleFromGroup = (
-    meaningIndex: number,
-    exampleIndex: number,
-  ) => {
-    setMeanings((current) => {
-      const next = [...current];
-      const nextExamples = next[meaningIndex].examples.filter(
-        (_, i) => i !== exampleIndex,
-      );
-      next[meaningIndex] = { ...next[meaningIndex], examples: nextExamples };
-      return next;
-    });
-  };
-
-  const handleCreateNewBook = async () => {
-    if (!newBookName.trim()) {
-      setMessage("Book name cannot be empty");
+  const handleCreateNewItem = async () => {
+    if (!newItemName.trim()) {
+      setMessage(`Please enter a ${mediaLabel.toLowerCase()} name`);
       setMessageType("error");
       return;
     }
 
     setLoading(true);
     try {
-      const response = await fetch("/api/books", {
+      let endpoint = "/api/books";
+      let payload: Record<string, string> = {
+        bookName: newItemName.trim(),
+        action: "create",
+      };
+
+      if (mediaType === "song") {
+        endpoint = "/api/songs";
+        payload = { songName: newItemName.trim(), action: "create" };
+      } else if (mediaType === "movie") {
+        endpoint = "/api/movies";
+        payload = { movieName: newItemName.trim(), action: "create" };
+      }
+
+      const response = await fetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ bookName: newBookName, action: "create" }),
+        body: JSON.stringify(payload),
       });
 
       const data = await response.json();
       if (data.success) {
-        setMessage(`Book "${newBookName}" created successfully!`);
+        setMessage(`${mediaLabel} "${newItemName}" created successfully!`);
         setMessageType("success");
-        setSelectedBook(newBookName);
-        setExistingWordData(null);
-        setMeanings([{ partOfSpeech: "", definition: "", examples: [""] }]);
-        setNewBookName("");
-        setShowNewBookInput(false);
-
-        const refreshResponse = await fetch("/api/books");
-        const result = await refreshResponse.json();
-        if (result.success) setBooks(result.books);
+        setSelectedItem(newItemName.trim());
+        setShowNewItemInput(false);
+        setMediaItems((prev) => [...prev, newItemName.trim()]);
+        setNewItemName("");
       } else {
         setMessage(data.error);
         setMessageType("error");
       }
     } catch {
-      setMessage("Error creating book");
+      setMessage(`Error creating ${mediaLabel.toLowerCase()}`);
       setMessageType("error");
     } finally {
       setLoading(false);
@@ -264,8 +303,8 @@ export default function AddWordPage() {
   const handleAddWord = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!selectedBook) {
-      setMessage("Please select or create a book");
+    if (!selectedItem) {
+      setMessage(`Please select or create a ${mediaLabel.toLowerCase()}`);
       setMessageType("error");
       return;
     }
@@ -274,36 +313,69 @@ export default function AddWordPage() {
       .map((m) => ({
         ...m,
         definition: m.definition.trim(),
-        examples: m.examples.map((e) => e.trim()).filter(Boolean),
+        examples: m.examples.map((ex) => ex.trim()).filter(Boolean),
       }))
       .filter((m) => m.definition);
 
-    if (!word.trim() || finalMeanings.length === 0 || !pageNo.trim()) {
-      setMessage("Word, at least one meaning, and page number are required");
+    if (!word.trim() || finalMeanings.length === 0) {
+      setMessage("Word and at least one meaning are required");
+      setMessageType("error");
+      return;
+    }
+
+    if (mediaType === "book" && !pageNo.trim()) {
+      setMessage("Page number is required for book entries");
       setMessageType("error");
       return;
     }
 
     setLoading(true);
     try {
-      const response = await fetch("/api/words", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          bookName: selectedBook,
+      let endpoint = "/api/words";
+      let payload: Record<string, unknown> = {
+        bookName: selectedItem,
+        word: word.trim(),
+        pageNo: parseInt(pageNo, 10),
+        meanings: finalMeanings,
+        variations: variations
+          .split(",")
+          .map((v) => v.trim())
+          .filter(Boolean),
+      };
+
+      if (mediaType === "song") {
+        endpoint = "/api/songs/words";
+        payload = {
+          songName: selectedItem,
           word: word.trim(),
-          pageNo: parseInt(pageNo),
           meanings: finalMeanings,
           variations: variations
             .split(",")
             .map((v) => v.trim())
             .filter(Boolean),
-        }),
+        };
+      } else if (mediaType === "movie") {
+        endpoint = "/api/movies/words";
+        payload = {
+          movieName: selectedItem,
+          word: word.trim(),
+          meanings: finalMeanings,
+          variations: variations
+            .split(",")
+            .map((v) => v.trim())
+            .filter(Boolean),
+        };
+      }
+
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
       });
 
       const data = await response.json();
       if (data.success) {
-        setMessage(`Word "${word}" added successfully!`);
+        setMessage(`Word "${word}" added successfully to ${selectedItem}!`);
         setMessageType("success");
         setWord("");
         setMeanings([{ partOfSpeech: "", definition: "", examples: [""] }]);
@@ -339,12 +411,54 @@ export default function AddWordPage() {
             Vocabulary Builder
           </h1>
           <p className="text-gray-600 text-sm max-w-md mx-auto">
-            Expand your lexicon with smart multi-page batch processing or
-            detailed single-word logging.
+            Expand your lexicon across Books, Songs, and Movies with fast batch
+            processing or detailed single-word logging.
           </p>
 
-          {/* Mode Switcher */}
+          {/* Media Type Switcher: Books / Songs / Movies */}
           <div className="pt-2 flex justify-center">
+            <div className="inline-flex p-1.5 rounded-2xl bg-white border border-gray-200 shadow-2xs gap-1">
+              <button
+                type="button"
+                onClick={() => handleMediaTypeChange("book")}
+                className={`flex items-center gap-2 px-5 py-2 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${
+                  mediaType === "book"
+                    ? "bg-indigo-600 text-white shadow-xs"
+                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                }`}
+              >
+                <Book size={15} />
+                <span>Books</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => handleMediaTypeChange("song")}
+                className={`flex items-center gap-2 px-5 py-2 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${
+                  mediaType === "song"
+                    ? "bg-indigo-600 text-white shadow-xs"
+                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                }`}
+              >
+                <Music size={15} />
+                <span>Songs</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => handleMediaTypeChange("movie")}
+                className={`flex items-center gap-2 px-5 py-2 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${
+                  mediaType === "movie"
+                    ? "bg-indigo-600 text-white shadow-xs"
+                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                }`}
+              >
+                <Film size={15} />
+                <span>Movies</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Mode Switcher: Batch vs Single */}
+          <div className="flex justify-center">
             <div className="inline-flex p-1 rounded-2xl bg-gray-200/70 border border-gray-200 shadow-2xs">
               <button
                 type="button"
@@ -356,7 +470,8 @@ export default function AddWordPage() {
                 }`}
               >
                 <Sparkles size={15} />
-                Smart Batch Dump (Speed Reader)
+                Smart Batch Dump (
+                {mediaType === "book" ? "Multi-Page" : "Pageless"})
               </button>
               <button
                 type="button"
@@ -394,36 +509,43 @@ export default function AddWordPage() {
 
         {entryMode === "batch" ? (
           <BatchImport
-            books={books}
-            selectedBook={selectedBook}
-            onSelectBook={(b) => setSelectedBook(b)}
+            books={mediaItems}
+            selectedBook={selectedItem}
+            onSelectBook={(b) => setSelectedItem(b)}
             onBookCreated={(b) => {
-              setBooks((prev) => [...prev, b]);
-              setSelectedBook(b);
+              setMediaItems((prev) => [...prev, b]);
+              setSelectedItem(b);
             }}
+            mediaType={mediaType}
           />
         ) : (
           <div className="space-y-8">
-            {/* Step 1: Book Management Card */}
+            {/* Step 1: Media Item Management Card */}
             <section className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
               <div className="p-6 md:p-8">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="bg-indigo-100 p-2 rounded-lg text-indigo-600">
-                    <Book size={20} />
+                    {mediaType === "song" ? (
+                      <Music size={20} />
+                    ) : mediaType === "movie" ? (
+                      <Film size={20} />
+                    ) : (
+                      <Book size={20} />
+                    )}
                   </div>
                   <h2 className="text-xl font-bold text-gray-800">
-                    Step 1: Choose Your Canvas
+                    Step 1: Choose Your {mediaLabel}
                   </h2>
                 </div>
 
-                {!showNewBookInput ? (
+                {!showNewItemInput ? (
                   <div className="flex flex-col sm:flex-row gap-3">
                     <select
-                      value={selectedBook}
+                      value={selectedItem}
                       onChange={(e) => {
-                        const nextBook = e.target.value;
-                        setSelectedBook(nextBook);
-                        setShowNewBookInput(false);
+                        const next = e.target.value;
+                        setSelectedItem(next);
+                        setShowNewItemInput(false);
                         setExistingWordData(null);
                         setMeanings([
                           { partOfSpeech: "", definition: "", examples: [""] },
@@ -431,35 +553,37 @@ export default function AddWordPage() {
                       }}
                       className="flex-1 block w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all outline-none text-gray-700"
                     >
-                      <option value="">-- Select an existing book --</option>
-                      {books.map((book) => (
-                        <option key={book} value={book}>
-                          {book}
+                      <option value="">
+                        -- Select an existing {mediaLabel.toLowerCase()} --
+                      </option>
+                      {mediaItems.map((item) => (
+                        <option key={item} value={item}>
+                          {item}
                         </option>
                       ))}
                     </select>
                     <button
                       type="button"
-                      onClick={() => setShowNewBookInput(true)}
+                      onClick={() => setShowNewItemInput(true)}
                       className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white border border-gray-200 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition-colors shadow-sm"
                     >
                       <BookPlus size={18} />
-                      New Book
+                      New {mediaLabel}
                     </button>
                   </div>
                 ) : (
                   <div className="flex flex-col sm:flex-row gap-3 animate-in zoom-in-95 duration-200">
                     <input
                       type="text"
-                      value={newBookName}
-                      onChange={(e) => setNewBookName(e.target.value)}
-                      placeholder="Enter unique book name"
+                      value={newItemName}
+                      onChange={(e) => setNewItemName(e.target.value)}
+                      placeholder={`Enter unique ${mediaLabel.toLowerCase()} name`}
                       className="flex-1 px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-black"
                     />
                     <div className="flex gap-2">
                       <button
                         type="button"
-                        onClick={handleCreateNewBook}
+                        onClick={handleCreateNewItem}
                         disabled={loading}
                         className="flex-1 sm:flex-none px-6 py-3 bg-indigo-600 text-white font-semibold rounded-xl hover:bg-indigo-700 disabled:opacity-50 transition-all shadow-md shadow-indigo-100"
                       >
@@ -472,8 +596,8 @@ export default function AddWordPage() {
                       <button
                         type="button"
                         onClick={() => {
-                          setShowNewBookInput(false);
-                          setNewBookName("");
+                          setShowNewItemInput(false);
+                          setNewItemName("");
                         }}
                         className="px-6 py-3 text-gray-500 font-medium hover:text-gray-700"
                       >
@@ -483,17 +607,17 @@ export default function AddWordPage() {
                   </div>
                 )}
 
-                {selectedBook && !showNewBookInput && (
+                {selectedItem && !showNewItemInput && (
                   <div className="mt-4 inline-flex items-center gap-2 px-3 py-1 bg-indigo-50 text-indigo-700 text-sm font-semibold rounded-full border border-indigo-100">
                     <div className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse" />
-                    Active: {selectedBook}
+                    Active {mediaLabel}: {selectedItem}
                   </div>
                 )}
               </div>
             </section>
 
             {/* Step 2: Form Details Card */}
-            {selectedBook && (
+            {selectedItem && (
               <form
                 onSubmit={handleAddWord}
                 className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden animate-in slide-in-from-bottom-6 duration-500"
@@ -545,230 +669,193 @@ export default function AddWordPage() {
                       />
                     </div>
 
-                    <div className="space-y-2">
-                      <label
-                        htmlFor="pageNo"
-                        className="flex items-center gap-2 text-sm font-bold text-gray-700"
-                      >
-                        <Hash size={16} className="text-gray-400" /> Page Number
-                      </label>
-                      <input
-                        id="pageNo"
-                        type="number"
-                        value={pageNo}
-                        onChange={(e) => setPageNo(e.target.value)}
-                        placeholder="0"
-                        className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-black"
-                        min="1"
-                        required
-                      />
-                    </div>
-
-                    <div className="space-y-2">
-                      <label
-                        htmlFor="variations"
-                        className="flex items-center gap-2 text-sm font-bold text-gray-700"
-                      >
-                        <PlusCircle size={16} className="text-gray-400" />{" "}
-                        Variations
-                      </label>
-                      <input
-                        id="variations"
-                        type="text"
-                        value={variations}
-                        onChange={(e) => setVariations(e.target.value)}
-                        placeholder="e.g., ran, runs, running"
-                        className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-black"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="pt-6 border-t border-gray-100">
-                    <div className="flex items-center justify-between mb-6">
-                      <div className="flex items-center gap-3">
-                        <div className="bg-indigo-100 p-2 rounded-lg text-indigo-600">
-                          <FileText size={18} />
-                        </div>
-                        <h3 className="text-lg font-bold text-gray-800">
-                          Meaning & Usage Sections
-                        </h3>
-                      </div>
-                      {dataSource && (
-                        <span
-                          className={`text-xs font-bold px-3 py-1 rounded-full ${
-                            dataSource === "current-book"
-                              ? "bg-green-100 text-green-700"
-                              : dataSource === "other-book"
-                                ? "bg-blue-100 text-blue-700"
-                                : "bg-purple-100 text-purple-700"
-                          }`}
+                    {/* Page Number is ONLY required and shown for Books */}
+                    {mediaType === "book" && (
+                      <div className="space-y-2">
+                        <label
+                          htmlFor="pageNo"
+                          className="flex items-center gap-2 text-sm font-bold text-gray-700"
                         >
-                          Source:{" "}
-                          {dataSource === "current-book"
-                            ? "Current Book"
-                            : dataSource === "other-book"
-                              ? `Book: ${existingWordData?.bookName}`
-                              : "Dictionary API"}
-                        </span>
-                      )}
-                    </div>
-
-                    {existingWordData?.found && (
-                      <div className="mb-6 text-sm text-indigo-700 bg-indigo-50 border border-indigo-100 rounded-xl p-4">
-                        <p className="flex items-center gap-2">
-                          <CheckCircle2 size={16} />
-                          This word already exists in your library.
-                        </p>
-                        <p className="mt-1 text-gray-600 pl-6">
-                          Frequency: {existingWordData.frequency} time
-                          {existingWordData.frequency > 1 ? "s" : ""} across
-                          pages {existingWordData.pages.join(", ")}.
-                        </p>
+                          <Hash size={16} className="text-gray-400" /> Page
+                          Number
+                        </label>
+                        <input
+                          id="pageNo"
+                          type="number"
+                          value={pageNo}
+                          onChange={(e) => setPageNo(e.target.value)}
+                          placeholder="e.g., 42"
+                          min="1"
+                          className="w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-black"
+                          required
+                        />
                       </div>
                     )}
+                  </div>
 
-                    <div className="space-y-8">
-                      {meanings.map((m, mIndex) => (
+                  {/* Existing Word Context Card */}
+                  {existingWordData?.found && (
+                    <div className="p-4 bg-indigo-50/50 rounded-2xl border border-indigo-100 flex items-start gap-4">
+                      <div className="p-2 bg-indigo-100 rounded-xl text-indigo-600">
+                        <Sparkles size={20} />
+                      </div>
+                      <div className="space-y-1">
+                        <h4 className="font-bold text-gray-900 text-sm">
+                          Word Exists in Your Library!
+                        </h4>
+                        <p className="text-xs text-gray-600 leading-relaxed">
+                          {existingWordData.source === "current-book"
+                            ? `Found in current ${mediaLabel.toLowerCase()} (Total occurrences: ${existingWordData.frequency}).`
+                            : `Found in "${existingWordData.bookName}" (Total occurrences: ${existingWordData.frequency}). We populated the meanings for you!`}
+                        </p>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Meanings and Examples Builder */}
+                  <div className="space-y-4">
+                    <div className="flex items-center justify-between">
+                      <label className="flex items-center gap-2 text-sm font-bold text-gray-700">
+                        <FileText size={16} className="text-gray-400" />{" "}
+                        Meanings & Examples
+                      </label>
+                      <button
+                        type="button"
+                        onClick={addMeaningField}
+                        className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 hover:text-indigo-800 bg-indigo-50 hover:bg-indigo-100 px-3 py-1.5 rounded-lg transition-colors"
+                      >
+                        <Plus size={14} /> Add Meaning
+                      </button>
+                    </div>
+
+                    <div className="space-y-4">
+                      {meanings.map((meaning, mIdx) => (
                         <div
-                          key={mIndex}
-                          className="p-6 rounded-2xl bg-gray-50 border border-gray-200 relative group animate-in fade-in slide-in-from-top-4 duration-300"
+                          key={mIdx}
+                          className="p-5 bg-gray-50 rounded-2xl border border-gray-200/70 space-y-4 relative group"
                         >
-                          {meanings.length > 1 && (
-                            <button
-                              type="button"
-                              onClick={() => removeMeaningGroup(mIndex)}
-                              className="absolute -top-3 -right-3 p-2 bg-white text-red-500 rounded-full border border-red-100 shadow-sm hover:bg-red-50 hover:text-red-600 transition-all opacity-0 group-hover:opacity-100"
-                            >
-                              <Trash2 size={16} />
-                            </button>
-                          )}
+                          <div className="flex items-center justify-between gap-4">
+                            <span className="text-xs font-extrabold text-gray-400 uppercase tracking-wider">
+                              Meaning #{mIdx + 1}
+                            </span>
+                            {meanings.length > 1 && (
+                              <button
+                                type="button"
+                                onClick={() => removeMeaningField(mIdx)}
+                                className="text-gray-400 hover:text-red-600 transition-colors p-1"
+                                title="Remove meaning"
+                              >
+                                <Trash2 size={16} />
+                              </button>
+                            )}
+                          </div>
 
-                          <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-6">
-                            <div className="space-y-4">
-                              <div className="space-y-2">
-                                <label className="text-xs font-black text-gray-400 uppercase tracking-wider">
-                                  Part of Speech
-                                </label>
+                          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
+                            <div className="sm:col-span-1 space-y-1.5">
+                              <label className="text-xs font-bold text-gray-600">
+                                Part of Speech
+                              </label>
+                              <input
+                                type="text"
+                                value={meaning.partOfSpeech}
+                                onChange={(e) =>
+                                  handleMeaningChange(
+                                    mIdx,
+                                    "partOfSpeech",
+                                    e.target.value,
+                                  )
+                                }
+                                placeholder="e.g. Noun"
+                                className="w-full px-3 py-2 bg-white rounded-xl border border-gray-200 text-xs font-medium text-gray-900 outline-none focus:ring-1 focus:ring-indigo-500"
+                              />
+                            </div>
+                            <div className="sm:col-span-3 space-y-1.5">
+                              <label className="text-xs font-bold text-gray-600">
+                                Definition
+                              </label>
+                              <textarea
+                                value={meaning.definition}
+                                onChange={(e) =>
+                                  handleMeaningChange(
+                                    mIdx,
+                                    "definition",
+                                    e.target.value,
+                                  )
+                                }
+                                placeholder="Enter clear definition..."
+                                rows={2}
+                                className="w-full px-3 py-2 bg-white rounded-xl border border-gray-200 text-xs font-medium text-gray-900 outline-none focus:ring-1 focus:ring-indigo-500"
+                                required
+                              />
+                            </div>
+                          </div>
+
+                          {/* Examples */}
+                          <div className="space-y-2 pt-2 border-t border-gray-200/60">
+                            <div className="flex items-center justify-between">
+                              <span className="text-xs font-bold text-gray-500">
+                                Example Sentences
+                              </span>
+                              <button
+                                type="button"
+                                onClick={() => addExampleField(mIdx)}
+                                className="text-[11px] font-bold text-indigo-600 hover:text-indigo-800"
+                              >
+                                + Add Example
+                              </button>
+                            </div>
+                            {meaning.examples.map((ex, exIdx) => (
+                              <div
+                                key={exIdx}
+                                className="flex items-center gap-2"
+                              >
                                 <input
                                   type="text"
-                                  value={m.partOfSpeech}
+                                  value={ex}
                                   onChange={(e) =>
-                                    handleMeaningChange(
-                                      mIndex,
-                                      "partOfSpeech",
+                                    handleExampleChange(
+                                      mIdx,
+                                      exIdx,
                                       e.target.value,
                                     )
                                   }
-                                  placeholder="e.g. Noun"
-                                  className="w-full px-4 py-2.5 rounded-xl border-gray-200 bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-sm text-black"
+                                  placeholder={`Example ${exIdx + 1}...`}
+                                  className="flex-1 px-3 py-1.5 bg-white rounded-lg border border-gray-200 text-xs text-gray-800 outline-none focus:ring-1 focus:ring-indigo-500"
                                 />
-                              </div>
-                              <div className="space-y-2">
-                                <label className="text-xs font-black text-gray-400 uppercase tracking-wider">
-                                  Definition
-                                </label>
-                                <textarea
-                                  value={m.definition}
-                                  onChange={(e) =>
-                                    handleMeaningChange(
-                                      mIndex,
-                                      "definition",
-                                      e.target.value,
-                                    )
-                                  }
-                                  placeholder="Describe the meaning..."
-                                  className="w-full px-4 py-2.5 rounded-xl border-gray-200 bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-sm min-h-[100px] text-black"
-                                />
-                              </div>
-                            </div>
-
-                            <div className="space-y-4">
-                              <div className="flex items-center justify-between">
-                                <label className="text-xs font-black text-gray-400 uppercase tracking-wider">
-                                  Examples
-                                </label>
-                                <button
-                                  type="button"
-                                  onClick={() => addExampleToGroup(mIndex)}
-                                  className="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-600 hover:text-indigo-700"
-                                >
-                                  <Plus size={14} /> Add Example
-                                </button>
-                              </div>
-                              <div className="space-y-3">
-                                {m.examples.map((ex, exIndex) => (
-                                  <div
-                                    key={exIndex}
-                                    className="flex items-center gap-2"
+                                {meaning.examples.length > 1 && (
+                                  <button
+                                    type="button"
+                                    onClick={() =>
+                                      removeExampleField(mIdx, exIdx)
+                                    }
+                                    className="text-gray-400 hover:text-red-500"
+                                    title="Remove example"
                                   >
-                                    <input
-                                      type="text"
-                                      value={ex}
-                                      onChange={(e) =>
-                                        handleExampleChange(
-                                          mIndex,
-                                          exIndex,
-                                          e.target.value,
-                                        )
-                                      }
-                                      placeholder={`Usage example ${exIndex + 1}`}
-                                      className="flex-1 px-4 py-2.5 rounded-xl border-gray-200 bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-sm text-black"
-                                    />
-                                    {m.examples.length > 1 && (
-                                      <button
-                                        type="button"
-                                        onClick={() =>
-                                          removeExampleFromGroup(
-                                            mIndex,
-                                            exIndex,
-                                          )
-                                        }
-                                        className="p-2.5 text-gray-400 hover:text-red-500 transition-colors"
-                                      >
-                                        <Trash2 size={16} />
-                                      </button>
-                                    )}
-                                  </div>
-                                ))}
+                                    <Trash2 size={14} />
+                                  </button>
+                                )}
                               </div>
-                            </div>
+                            ))}
                           </div>
                         </div>
                       ))}
-
-                      <button
-                        type="button"
-                        onClick={addMeaningGroup}
-                        className="w-full py-4 border-2 border-dashed border-gray-200 rounded-2xl text-gray-400 font-bold hover:border-indigo-300 hover:text-indigo-600 hover:bg-indigo-50/50 transition-all flex items-center justify-center gap-2 group"
-                      >
-                        <Plus
-                          size={20}
-                          className="group-hover:scale-110 transition-transform"
-                        />
-                        Add Another Meaning / Part of Speech
-                      </button>
                     </div>
                   </div>
 
-                  <div className="pt-4 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-                    <div className="text-sm text-gray-500">
-                      Saving to{" "}
-                      <span className="font-bold text-gray-900">
-                        {selectedBook}
-                      </span>
-                    </div>
+                  {/* Submit Button */}
+                  <div className="pt-4 flex justify-end">
                     <button
                       type="submit"
                       disabled={loading}
-                      className="w-full sm:w-auto px-8 py-4 bg-gray-900 text-white font-bold rounded-xl hover:bg-black transform transition-all active:scale-95 disabled:opacity-50 disabled:pointer-events-none flex items-center justify-center gap-2 shadow-lg"
+                      className="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm rounded-xl transition-all shadow-md active:scale-98 disabled:opacity-50"
                     >
                       {loading ? (
-                        <Loader2 className="animate-spin" size={20} />
+                        <div className="flex items-center gap-2">
+                          <Loader2 className="animate-spin" size={16} />
+                          <span>Saving...</span>
+                        </div>
                       ) : (
-                        <>
-                          <PlusCircle size={20} />
-                          Add Word to Library
-                        </>
+                        `Add Word to ${mediaLabel}`
                       )}
                     </button>
                   </div>

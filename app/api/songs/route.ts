@@ -1,12 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
-import { BookManager } from "@/lib/BookManager";
-
-const bookManager = new BookManager();
+import { songManager } from "@/lib/MediaManager";
 
 export async function GET() {
   try {
-    const books = bookManager.getAllBooks();
-    return NextResponse.json({ success: true, books });
+    const songs = songManager.getAllMedia();
+    return NextResponse.json({ success: true, songs });
   } catch (error) {
     return NextResponse.json(
       {
@@ -21,27 +19,27 @@ export async function GET() {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { bookName, action } = body;
+    const { songName, action = "create" } = body;
 
-    if (!bookName) {
+    if (!songName || !songName.trim()) {
       return NextResponse.json(
-        { success: false, error: "bookName is required" },
+        { success: false, error: "songName is required" },
         { status: 400 },
       );
     }
 
     if (action === "create") {
-      bookManager.createBook(bookName);
+      songManager.createMedia(songName.trim());
       return NextResponse.json({
         success: true,
-        message: `Book "${bookName}" created successfully`,
+        message: `Song "${songName.trim()}" created successfully`,
       });
-    } else {
-      return NextResponse.json(
-        { success: false, error: "Invalid action" },
-        { status: 400 },
-      );
     }
+
+    return NextResponse.json(
+      { success: false, error: "Invalid action" },
+      { status: 400 },
+    );
   } catch (error) {
     return NextResponse.json(
       {
