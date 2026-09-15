@@ -724,5 +724,764 @@
         ]
       }
     ]
+  },
+  {
+    "word": "lamp",
+    "variations": [
+      "lamp"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "A device that generates heat, light or other radiation. Especially an electric light bulb.; A device containing oil, burnt through a wick for illumination; an oil lamp.",
+        "examples": [
+          "The author skillfully incorporated lamp to emphasize the underlying theme.",
+          "In every chapter, the presence of lamp provided an unmistakable atmosphere.",
+          "Observers noted that lamp altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To hit, clout, belt, wallop.; To hunt at night using a lamp; see lamping.",
+        "examples": [
+          "The author skillfully incorporated lamp to emphasize the underlying theme.",
+          "In every chapter, the presence of lamp provided an unmistakable atmosphere.",
+          "Observers noted that lamp altered the entire perspective of the scene."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "jackass",
+    "variations": [
+      "jackass"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "A male donkey.; A foolish or stupid person.",
+        "examples": [
+          "The local jackass gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden jackass swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various jackass preserved from centuries of documented history."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To behave very obnoxiously.",
+        "examples": [
+          "The local jackass gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden jackass swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various jackass preserved from centuries of documented history."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "stretch",
+    "variations": [
+      "stretch",
+      "stretches",
+      "stretching",
+      "stretched"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To extend, spread, or make something longer or wider.",
+        "examples": [
+          "The road stretches across the desert for miles.",
+          "She stretched her arms after waking up.",
+          "Clouds stretched across the evening sky.",
+          "The fabric had stretched after being washed."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To reach or continue over a distance, area, or period of time.",
+        "examples": [
+          "The forest stretches from the mountains to the sea.",
+          "Their friendship stretched over many decades.",
+          "Long shadows were stretching across the field.",
+          "The meeting stretched late into the night."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A continuous area, period, or extent of something.",
+        "examples": [
+          "A long stretch of empty road lay ahead.",
+          "The river passes through a quiet stretch of forest.",
+          "He worked for hours without a single stretch of rest.",
+          "That difficult stretch of life taught her patience."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "An act of extending the body or limbs to relax muscles.",
+        "examples": [
+          "She did a quick stretch before running.",
+          "After sitting all day, he enjoyed a long stretch.",
+          "The trainer taught the students simple stretches.",
+          "Morning stretches help reduce stiffness."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "heck",
+    "variations": [
+      "heck"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "Hell.; The bolt or latch of a door.",
+        "examples": [
+          "You can go to heck as far as I'm concerned.",
+          "The author skillfully incorporated heck to emphasize the underlying theme.",
+          "In every chapter, the presence of heck provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "Interjection",
+        "definition": "Hell.",
+        "examples": [
+          "What the heck are you doing?",
+          "Heck, what did I expect? It's too muddy out to go biking today.",
+          "The author skillfully incorporated heck to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "to break, to destroy; to mess up",
+        "examples": [
+          "The author skillfully incorporated heck to emphasize the underlying theme.",
+          "In every chapter, the presence of heck provided an unmistakable atmosphere.",
+          "Observers noted that heck altered the entire perspective of the scene."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "Hop",
+    "variations": [
+      "hop"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "A short jump.; A jump on one leg.",
+        "examples": [
+          "The frog crossed the brook in three or four hops.",
+          "For popular radio stars in New York and Los Angeles, it was a short hop to network television.",
+          "The author skillfully incorporated hop to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To jump a short distance.; To jump on one foot.",
+        "examples": [
+          "Sorry, can't chat. Got to hop.",
+          "He hopped a train to California.",
+          "We had to island hop on the weekly seaplane to get to his hideaway."
+        ]
+      },
+      {
+        "partOfSpeech": "Symbol",
+        "definition": "ISO 639-3 language code for Hopi.",
+        "examples": [
+          "The author skillfully incorporated hop to emphasize the underlying theme.",
+          "In every chapter, the presence of hop provided an unmistakable atmosphere.",
+          "Observers noted that hop altered the entire perspective of the scene."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "padlocked",
+    "variations": [
+      "padlocked",
+      "padlock"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Adjective",
+        "definition": "Secured with a padlock.",
+        "examples": [
+          "The team padlocked their operations until further instructions arrived from headquarters.",
+          "She was deeply padlocked by the unexpected turn of events during the meeting.",
+          "He carefully padlocked the remaining pieces into a cohesive structure."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "(Past tense & participle) To lock using a padlock.",
+        "examples": [
+          "The team padlocked their operations until further instructions arrived from headquarters.",
+          "She was deeply padlocked by the unexpected turn of events during the meeting.",
+          "He carefully padlocked the remaining pieces into a cohesive structure."
+        ]
+      },
+      {
+        "partOfSpeech": "Noun",
+        "definition": "(Past tense & participle) A detachable lock that can be used to secure something by means of a sliding or hinged shackle",
+        "examples": [
+          "The team padlocked their operations until further instructions arrived from headquarters.",
+          "She was deeply padlocked by the unexpected turn of events during the meeting.",
+          "He carefully padlocked the remaining pieces into a cohesive structure."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "buggered",
+    "variations": [
+      "buggered",
+      "bugger"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Adjective",
+        "definition": "Broken; not properly functioning.; In trouble; in a bad situation.",
+        "examples": [
+          "Your telly is buggered, best get it fixed.",
+          "It's well and truly buggered now; you may as well throw it out.",
+          "The police caught you on CCTV, now you're really buggered."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "(Past tense & participle) To have anal sex with, sodomize.; (Past tense & participle) To break or ruin.",
+        "examples": [
+          "To be buggered sore like a hobo's whore (Attributed to Harry Mclintock's 1920s era Big Rock Candy Mountain).",
+          "This computer is buggered! Oh no! I've buggered it up.",
+          "buggered Bognor. (Alleged to be the last words of King George V of the United Kingdom in response to a suggestion that he might recover from his illness and visit Bognor Regis.)."
+        ]
+      },
+      {
+        "partOfSpeech": "Noun",
+        "definition": "(Past tense & participle) A heretic.; (Past tense & participle) Someone who commits buggery; a sodomite.",
+        "examples": [
+          "The British Sexual Offences Act of 1967 is a buggers’ charter.",
+          "He's a silly buggered for losing his keys.",
+          "The buggered’s given me the wrong change."
+        ]
+      },
+      {
+        "partOfSpeech": "Interjection",
+        "definition": "(Past tense & participle) An expression of annoyance or displeasure.",
+        "examples": [
+          "buggered, I've missed the bus.",
+          "The team buggered their operations until further instructions arrived from headquarters.",
+          "She was deeply buggered by the unexpected turn of events during the meeting."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "Spares",
+    "variations": [
+      "spares",
+      "spare"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "(Plural form) The act of sparing; moderation; restraint.; (Plural form) Parsimony; frugal use.",
+        "examples": [
+          "I stopped to help out. Do you have a spares? [Said by one motorist to another with a flat tire.].",
+          "People sometimes forget that world-class logistics also involve inventory management in warehouses full of spares.",
+          "An heir and a spares."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "(Plural form) To show mercy.; (Plural form) To keep.",
+        "examples": [
+          "The local spares gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden spares swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various spares preserved from centuries of documented history."
+        ]
+      },
+      {
+        "partOfSpeech": "Adjective",
+        "definition": "(Plural form) Scant; not abundant or plentiful.; (Plural form) Sparing; frugal; parsimonious; not spending much money.",
+        "examples": [
+          "A spares diet.",
+          "I have no spares time.",
+          "A spares anchor; a spares bed or room."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "babies",
+    "variations": [
+      "babies",
+      "baby"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "(Plural form) A very young human, particularly from birth to a couple of years old or until walking is fully mastered.; (Plural form) Any very young animal, especially a vertebrate; many species have specific names for their babies, such as kittens for the babies of cats, puppies for the babies of dogs, and chickens for the babies of birds. See for more.",
+        "examples": [
+          "When is your babies due?",
+          "Stand up for yourself – don't be such a babies!",
+          "I only qualified as an architect this summer, so I'm still a babies."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "(Plural form) To coddle; to pamper somebody like an infant.; (Plural form) To tend (something) with care; to be overly attentive to (something), fuss over.",
+        "examples": [
+          "The local babies gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden babies swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various babies preserved from centuries of documented history."
+        ]
+      },
+      {
+        "partOfSpeech": "Adjective",
+        "definition": "(Plural form) Of a child: very young; of the age when he or she would be termed a baby or infant.; (Plural form) Of an animal: young.",
+        "examples": [
+          "A babies boy.",
+          "A babies elephant.",
+          "babies clothes."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "degenerate",
+    "variations": [
+      "degenerate"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "One who is degenerate, who has fallen from previous stature; an immoral person.; One who is degenerate, who has fallen from previous stature; an immoral or corrupt person.",
+        "examples": [
+          "In the cult of degenerates, acts of decency, kindness and modesty could be seen as acts of apostasy.",
+          "The author skillfully incorporated degenerate to emphasize the underlying theme.",
+          "In every chapter, the presence of degenerate provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To lose good or desirable qualities.; To cause to lose good or desirable qualities.",
+        "examples": [
+          "His condition continued to degenerate even after admission to hospital.",
+          "The author skillfully incorporated degenerate to emphasize the underlying theme.",
+          "In every chapter, the presence of degenerate provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "Adjective",
+        "definition": "(of qualities) Having deteriorated, degraded or fallen from normal, coherent, balanced and desirable to undesirable and typically abnormal.; (of a human or system) Having lost good or desirable qualities.",
+        "examples": [
+          "The genetic code is degenerate because a single amino acid can be coded by one of several codons.",
+          "A degenerate circle, having radius zero, consists of a single point.",
+          "The author skillfully incorporated degenerate to emphasize the underlying theme."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bear",
+    "variations": [
+      "bear",
+      "bere"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "A large omnivorous mammal, related to the dog and raccoon, having shaggy hair, a very small tail, and flat feet; a member of family Ursidae.; A rough, unmannerly, uncouth person.",
+        "examples": [
+          "That window can be a bear to open.",
+          "We had barbecued bear for dinner.",
+          "The author skillfully incorporated bear to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To endeavour to depress the price of, or prices in.; To carry or convey, literally or figuratively.",
+        "examples": [
+          "To bear a railroad stock.",
+          "Judging from the look on his face, he wasn't bearing good news.",
+          "By my readings, we're bearing due south, so we should turn about ten degrees east."
+        ]
+      },
+      {
+        "partOfSpeech": "Adjective",
+        "definition": "(investments) Characterized by declining prices in securities markets or by belief that the prices will fall.; Characterized by declining prices in securities markets or by belief that the prices will fall.",
+        "examples": [
+          "The great bear market starting in 1929 scared a whole generation of investors.",
+          "The author skillfully incorporated bear to emphasize the underlying theme.",
+          "In every chapter, the presence of bear provided an unmistakable atmosphere."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "presided",
+    "variations": [
+      "presided",
+      "preside"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Verb",
+        "definition": "(Past tense & participle) To act as president or chairperson.; (Past tense & participle) To exercise authority or control.",
+        "examples": [
+          "I’ll presided at the organ.",
+          "The team presided their operations until further instructions arrived from headquarters.",
+          "She was deeply presided by the unexpected turn of events during the meeting."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "slump",
+    "variations": [
+      "slump"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "A heavy or helpless collapse; a slouching or drooping posture; a period of poor activity or performance, especially an extended period.; A measure of the fluidity of freshly mixed concrete, based on how much the concrete formed in a standard slump cone sags when the cone is removed.",
+        "examples": [
+          "If she doesn't pull out of her slump, her job may be in jeopardy.",
+          "A blackberry slump.",
+          "The author skillfully incorporated slump to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To collapse heavily or helplessly.; To decline or fall off in activity or performance.",
+        "examples": [
+          "Exhausted, he slumped down onto the sofa.",
+          "Real estate prices slumped during the recession.",
+          "The author skillfully incorporated slump to emphasize the underlying theme."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pies",
+    "variations": [
+      "pies",
+      "pie"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "(Plural form) A type of pastry that consists of an outer crust and a filling. (Savory pies are more popular in the UK and sweet pies are more popular in the US, so \"pie\" without qualification has different connotations in these dialects.); (Plural form) Any of various other, non-pastry dishes that maintain the general concept of a shell with a filling.",
+        "examples": [
+          "The family had steak and kidney pies for dinner and cherry pies for dessert.",
+          "Shepherd's pies is made of mince covered with mashed potato.",
+          "The local pies gathered early in the square to prepare their daily exhibits."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "(Plural form) To hit in the face with a pie, either for comic effect or as a means of protest (see also pieing).; (Plural form) To go around (a corner) in a guarded manner.",
+        "examples": [
+          "I'd like to see someone pies the chairman of the board.",
+          "The local pies gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden pies swept across the region, overwhelming the drainage canals."
+        ]
+      },
+      {
+        "partOfSpeech": "Symbol",
+        "definition": "(Plural form) ISO 639-3 language code for Piro.",
+        "examples": [
+          "The local pies gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden pies swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various pies preserved from centuries of documented history."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "pork",
+    "variations": [
+      "pork"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "The meat of a pig.; Funding proposed or requested by a member of Congress for special interests or their constituency as opposed to the good of the country as a whole.",
+        "examples": [
+          "The cafeteria serves pork on Tuesdays.",
+          "The author skillfully incorporated pork to emphasize the underlying theme.",
+          "In every chapter, the presence of pork provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To have sex with (someone).",
+        "examples": [
+          "The author skillfully incorporated pork to emphasize the underlying theme.",
+          "In every chapter, the presence of pork provided an unmistakable atmosphere.",
+          "Observers noted that pork altered the entire perspective of the scene."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "smug",
+    "variations": [
+      "smug"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Adjective",
+        "definition": "Irritatingly pleased with oneself; offensively self-complacent, self-satisfied.; Showing smugness; showing self-complacency, self-satisfaction.",
+        "examples": [
+          "Kate looked extremely smug this morning.",
+          "A smug look on her face.",
+          "The quiet evening settled into a deeply smug stillness across the valley."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To make smug, or spruce.; to adopt an offensively self-complacent expression.",
+        "examples": [
+          "She paused to smug the delicate situation before offering her opinion.",
+          "Throughout history, writers have sought to smug the essence of human resilience.",
+          "They watched him smug the components with remarkable precision and focus."
+        ]
+      },
+      {
+        "partOfSpeech": "Noun",
+        "definition": "The smuggling trade.",
+        "examples": [
+          "The enduring significance of the smug became clearer as the narrative progressed.",
+          "He pointed toward the smug, noting how it captured the mood of the era.",
+          "Without a proper understanding of the smug, much of the subtle nuance would be lost."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "whores",
+    "variations": [
+      "whores",
+      "whore"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "(Plural form) Any person (especially a woman) who has sexual intercourse or engages in other sexual activity for payment, especially as a means of livelihood.; (Plural form) A person who does, or offers to do, a demeaning or dishonourable activity for money or personal gain; someone who acts in a dishonourable way for personal advantage.",
+        "examples": [
+          "From the window of my red-light-district apartment I could watch the whores strutting back and forth, trying to entice their johns.",
+          "The local whores gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden whores swept across the region, overwhelming the drainage canals."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "(Plural form) To prostitute oneself.; (Plural form) To engage the services of a prostitute.",
+        "examples": [
+          "She's caught in a trap; she whores all night just to earn enough to spend the day getting stoned.",
+          "Did you see him on that chat show, whoring his new book?",
+          "BTW, that guy whuz still an asshole - camping the BFG and whoring the quad - I usually leave BFG maps but stuck around on that one and suicided quite a bit (3 times I got to about -10 frags, then came back to 0...)."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "starving",
+    "variations": [
+      "starving",
+      "starve"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Verb",
+        "definition": "(Present participle / Gerund) To die because of lack of food or of not eating.; (Present participle / Gerund) To suffer severely because of lack of food or of not eating.",
+        "examples": [
+          "I was starving so I wrote S.O.S. on the desert island using rocks.",
+          "If they refuse to surrender the garrison, we'll just starving them out.",
+          "Some historians have since classified the Siege of Leningrad as a genocide due to the intentional destruction of the city and the systematic starvation of its civilian population."
+        ]
+      },
+      {
+        "partOfSpeech": "Noun",
+        "definition": "starvation",
+        "examples": [
+          "He stood by the window, starving quietly as the light faded into evening.",
+          "They observed the fountain starving clear water high into the morning air.",
+          "She spent hours starving through the archives to locate the missing document."
+        ]
+      },
+      {
+        "partOfSpeech": "Adjective",
+        "definition": "Extremely hungry",
+        "examples": [
+          "He stood by the window, starving quietly as the light faded into evening.",
+          "They observed the fountain starving clear water high into the morning air.",
+          "She spent hours starving through the archives to locate the missing document."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "bury",
+    "variations": [
+      "bury"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "A burrow.; A borough; a manor",
+        "examples": [
+          "The author skillfully incorporated bury to emphasize the underlying theme.",
+          "In every chapter, the presence of bury provided an unmistakable atmosphere.",
+          "Observers noted that bury altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To ritualistically inter in a grave or tomb.; To place in the ground.",
+        "examples": [
+          "Bury a bone; bury the embers.",
+          "She buried her face in the pillow; they buried us in paperwork.",
+          "Secrets kept buried; she buried her shame and put on a smiling face."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "greasy",
+    "variations": [
+      "greasy"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Adjective",
+        "definition": "Having a slippery surface; having a surface covered with grease.; Containing a lot of grease or fat.",
+        "examples": [
+          "A greasy mineral.",
+          "The author skillfully incorporated greasy to emphasize the underlying theme.",
+          "In every chapter, the presence of greasy provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "Noun",
+        "definition": "An annoyed or contemptuous look; a dirty look.; Wool that still contains grease and has not undergone scouring.",
+        "examples": [
+          "The author skillfully incorporated greasy to emphasize the underlying theme.",
+          "In every chapter, the presence of greasy provided an unmistakable atmosphere.",
+          "Observers noted that greasy altered the entire perspective of the scene."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "wop",
+    "variations": [
+      "wop",
+      "whop"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "A person of Italian descent.; (Inflected form) A blow or strike.",
+        "examples": [
+          "The author skillfully incorporated wop to emphasize the underlying theme.",
+          "In every chapter, the presence of wop provided an unmistakable atmosphere.",
+          "Observers noted that wop altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "(Inflected form) To throw or move (something) quickly, usually with an impact.; (Inflected form) To administer corporal punishment to.",
+        "examples": [
+          "He angrily whopped the book onto the table.",
+          "The author skillfully incorporated wop to emphasize the underlying theme.",
+          "In every chapter, the presence of wop provided an unmistakable atmosphere."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "rear",
+    "variations": [
+      "rear"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To bring up to maturity, as offspring; to educate; to instruct; to foster.; (said of people towards animals) To breed and raise.",
+        "examples": [
+          "The family has been rearing cattle for 200 years.",
+          "The horse was shocked, and thus reared.",
+          "The monster slowly reared its head."
+        ]
+      },
+      {
+        "partOfSpeech": "Adjective",
+        "definition": "(of eggs) Underdone; nearly raw.; (of meats) Rare.",
+        "examples": [
+          "Sit in the rear seats of a car.",
+          "The rear rank of a company.",
+          "The author skillfully incorporated rear to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "Noun",
+        "definition": "The back or hindmost part; that which is behind, or last on order; - opposed to front.; Specifically, the part of an army or fleet which comes last, or is stationed behind the rest.",
+        "examples": [
+          "The author skillfully incorporated rear to emphasize the underlying theme.",
+          "In every chapter, the presence of rear provided an unmistakable atmosphere.",
+          "Observers noted that rear altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "Adverb",
+        "definition": "Early; soon",
+        "examples": [
+          "The author skillfully incorporated rear to emphasize the underlying theme.",
+          "In every chapter, the presence of rear provided an unmistakable atmosphere.",
+          "Observers noted that rear altered the entire perspective of the scene."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "drag",
+    "variations": [
+      "drag"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "Resistance of the air (or some other fluid) to something moving through it.; (foundry) The bottom part of a sand casting mold.",
+        "examples": [
+          "When designing cars, manufacturers have to take drag into consideration.",
+          "Travelling to work in the rush hour is a real drag.",
+          "To run a drag."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To pull along a surface or through a medium, sometimes with difficulty.; To move onward heavily, laboriously, or slowly; to advance with weary effort; to go on lingeringly.",
+        "examples": [
+          "Let's drag this load of wood over to the shed.",
+          "Time seems to drag when you’re waiting for a bus.",
+          "Drag the file into the window to open it."
+        ]
+      },
+      {
+        "partOfSpeech": "Adjective",
+        "definition": "Dragged on; unnecessary or superfluous, especially for an already settled issue; too much.",
+        "examples": [
+          "Wallah, the task is so drag.",
+          "The author skillfully incorporated drag to emphasize the underlying theme.",
+          "In every chapter, the presence of drag provided an unmistakable atmosphere."
+        ]
+      }
+    ]
   }
 ]
