@@ -1,0 +1,179 @@
+{
+  "lyrics": "Once upon a younger year\nWhen all our shadows disappeared\nThe animals inside came out to play\nWent face to face with all our fears\nLearned our lessons through the tears\nMade memories we knew would never fade\nOne day, my father, he told me, \"Son, don't let it slip away\"\nHe took me in his arms, I heard him say\n\"When you get older, your wild heart will live for younger days\nThink of me if ever you're afraid\"\nHe said, \"One day, you'll leave this world behind\nSo live a life you will remember\"\nMy father told me when I was just a child\n\"These are the nights that never die\"\nMy father told me\n\"When thunderclouds start pouring down\nLight a fire they can't put out\nCarve your name into those shining stars\"\nHe said, \"Go venture far beyond the shores\nDon't forsake this life of yours\nI'll guide you home no matter where you are\"\nOne day, my father, he told me, \"Son, don't let it slip away\"\nWhen I was just a kid, I heard him say\n\"When you get older, your wild heart will live for younger days\nThink of me if ever you're afraid\"\nHe said, \"One day, you'll leave this world behind\nSo live a life you will remember\"\nMy father told me when I was just a child\n\"These are the nights that never die\"\nMy father told me\n\"These are the nights that never die\"\nMy father told me\nMy father told me",
+  "words": [
+    {
+      "word": "pouring",
+      "variations": [
+        "pouring",
+        "pour"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "(Present participle / Gerund) To cause (liquid, or liquid-like substance) to flow in a stream, either out of a container or into it.; (Present participle / Gerund) To send out as in a stream or a flood; to cause (an emotion) to come out; to cause to escape.",
+          "examples": [
+            "pouring water from a jug.",
+            "pouring wine into a decanter.",
+            "To pouring oil onto chips."
+          ]
+        },
+        {
+          "partOfSpeech": "Noun",
+          "definition": "The act by which something is poured.; (Present participle / Gerund) The act of pouring.",
+          "examples": [
+            "The bartender's inexpert pouring left me with a pint of beer that was half foam.",
+            "He stood by the window, pouring quietly as the light faded into evening.",
+            "They observed the fountain pouring clear water high into the morning air."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Flowing or falling intensely.",
+          "examples": [
+            "Pouring rain.",
+            "He stood by the window, pouring quietly as the light faded into evening.",
+            "They observed the fountain pouring clear water high into the morning air."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "Carve",
+      "variations": [
+        "carve"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A carucate.; The act of carving",
+          "examples": [
+            "Give that turkey a careful carve.",
+            "The author skillfully incorporated carve to emphasize the underlying theme.",
+            "In every chapter, the presence of carve provided an unmistakable atmosphere."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To cut.; To cut meat in order to serve it.",
+          "examples": [
+            "You carve the roast and I'll serve the vegetables.",
+            "To carve a name into a tree.",
+            "You carve the roast and I’ll serve the vegetables."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "venture",
+      "variations": [
+        "venture"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A risky or daring undertaking or journey.; An event that is not, or cannot be, foreseen.",
+          "examples": [
+            "The author skillfully incorporated venture to emphasize the underlying theme.",
+            "In every chapter, the presence of venture provided an unmistakable atmosphere.",
+            "Observers noted that venture altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To undertake a risky or daring journey.; To risk or offer.",
+          "examples": [
+            "Nothing ventured, nothing gained.",
+            "To venture a horse to the West Indies.",
+            "To venture funds."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "shores",
+      "variations": [
+        "shores",
+        "shore"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "(Plural form) Land adjoining a non-flowing body of water, such as an ocean, lake or pond.; (Plural form) (from the perspective of one on a body of water) Land, usually near a port.",
+          "examples": [
+            "Lake shores; bay shores; gulf shores; island shores; mainland shores; river shores; estuary shores; pond shores; sandy shores; rocky shores.",
+            "The passengers signed up for shores tours.",
+            "The shores stayed upright during the earthquake."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "(Plural form) To set on shore.; (Plural form) (without up) To provide with support.",
+          "examples": [
+            "The workers were shoring up the dock after part of it fell into the water.",
+            "My family shored me up after I failed the GED.",
+            "The local shores gathered early in the square to prepare their daily exhibits."
+          ]
+        },
+        {
+          "partOfSpeech": "Adverb",
+          "definition": "(Plural form) Pronunciation spelling of sure.",
+          "examples": [
+            "The local shores gathered early in the square to prepare their daily exhibits.",
+            "Multiple sudden shores swept across the region, overwhelming the drainage canals.",
+            "Scholars compared various shores preserved from centuries of documented history."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "(Plural form) Pronunciation spelling of sure.",
+          "examples": [
+            "The local shores gathered early in the square to prepare their daily exhibits.",
+            "Multiple sudden shores swept across the region, overwhelming the drainage canals.",
+            "Scholars compared various shores preserved from centuries of documented history."
+          ]
+        },
+        {
+          "partOfSpeech": "Interjection",
+          "definition": "(Plural form) Pronunciation spelling of sure.",
+          "examples": [
+            "The local shores gathered early in the square to prepare their daily exhibits.",
+            "Multiple sudden shores swept across the region, overwhelming the drainage canals.",
+            "Scholars compared various shores preserved from centuries of documented history."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "forsake",
+      "variations": [
+        "forsake",
+        "forsakes",
+        "forsaking",
+        "forsook",
+        "forsaken"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "verb",
+          "definition": "To leave, abandon, or turn away from someone or something completely.",
+          "examples": [
+            "He refused to forsake his family during difficult times.",
+            "She felt forsaken after all her friends moved away.",
+            "The warrior forsook his homeland to seek peace.",
+            "True friends do not forsake each other in hardship."
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definition": "To give up or stop following a belief, habit, or lifestyle.",
+          "examples": [
+            "The monk forsook wealth and comfort.",
+            "He decided to forsake his harmful habits.",
+            "Many artists forsake stable jobs to follow creativity.",
+            "She never forsakes her principles under pressure."
+          ]
+        }
+      ]
+    }
+  ]
+}

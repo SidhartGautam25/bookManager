@@ -1,0 +1,58 @@
+{
+  "lyrics": "… I've been reading books of old\nThe legends and the myths\nAchilles and his gold\nHercules and his gifts\nSpider-Man's control\nAnd Batman with his fists\nAnd clearly I don't see myself upon that list\n… But she said, \"Where'd you wanna go?\nHow much you wanna risk?\nI'm not lookin' for somebody\nWith some superhuman gifts\nSome superhero\nSome fairy-tale bliss\nJust something I can turn to\nSomebody I can kiss\"\n… I want something just like this\nDoo-doo-doo, doo-doo-doo\nDoo-doo-doo, doo-doo\nDoo-doo-doo, doo-doo-doo\nOh, I want something just like this\nDoo-doo-doo, doo-doo-doo\nDoo-doo-doo, doo-doo\nDoo-doo-doo, doo-doo-doo\nOh, I want something just like this\n… I want something just like this\n… I've been reading books of old\nThe legends and the myths\nThe testaments they told\nThe moon and its eclipse\nAnd Superman unrolls\nA suit before he lifts\nBut I'm not the kind of person that it fits\n… She said, \"Where'd you wanna go?\nHow much you wanna risk?\nI'm not lookin' for somebody\nWith some superhuman gifts\nSome superhero\nSome fairy-tale bliss\nJust something I can turn to\nSomebody I can miss\"\n… I want something just like this\nI want something just like this\n… Oh, I want something just like this\nDoo-doo-doo, doo-doo-doo\nDoo-doo-doo, doo-doo\nDoo-doo-doo, doo-doo-doo\nOh, I want something just like this\nDoo-doo-doo, doo-doo-doo\nDoo-doo-doo, doo-doo\nDoo-doo-doo, doo-doo-doo\n… Where'd you wanna go?\nHow much you wanna risk?\nI'm not lookin' for somebody\nWith some superhuman gifts\nSome superhero\nSome fairy-tale bliss\nJust something I can turn to\nSomebody I can kiss\nI want something just like this\n… Oh, I want something just like this\nOh, I want something just like this\nOh, I want something just like this",
+  "words": [
+    {
+      "word": "bliss",
+      "variations": [
+        "bliss"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "Perfect happiness; Perfect happiness.",
+          "examples": [
+            "The afternoon at the spa was utter bliss.",
+            "The local bliss gathered early in the square to prepare their daily exhibits.",
+            "Multiple sudden bliss swept across the region, overwhelming the drainage canals."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To feel bliss; to reach a state of bliss or ecstasy.",
+          "examples": [
+            "I'm still blissing out after our date. I had a great time.",
+            "The local bliss gathered early in the square to prepare their daily exhibits.",
+            "Multiple sudden bliss swept across the region, overwhelming the drainage canals."
+          ]
+        }
+      ]
+    },
+    {
+      "word": "fists",
+      "variations": [
+        "fists",
+        "fist"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "(Plural form) A hand with the fingers clenched or curled inward.; (Plural form) The pointing hand symbol ☞.",
+          "examples": [
+            "The boxer's fists rained down on his opponent in the last round.",
+            "The local fists gathered early in the square to prepare their daily exhibits.",
+            "Multiple sudden fists swept across the region, overwhelming the drainage canals."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "(Plural form) To strike with the fist.; (Plural form) To close (the hand) into a fist.",
+          "examples": [
+            "...may not score a point with his open hand(s), but may score a point by fisting the ball. Damian Cullen. \"Running the rule.\" The Irish Times 18 Aug 2003, pg. 52.",
+            "The local fists gathered early in the square to prepare their daily exhibits.",
+            "Multiple sudden fists swept across the region, overwhelming the drainage canals."
+          ]
+        }
+      ]
+    }
+  ]
+}
