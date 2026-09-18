@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, use } from "react";
+import { useState, useEffect, useMemo, use } from "react";
 import {
   Music,
   ArrowLeft,
@@ -12,6 +12,11 @@ import {
   Sparkles,
   Info,
   ExternalLink,
+  Edit3,
+  Save,
+  ChevronDown,
+  ChevronUp,
+  FileText,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
@@ -45,6 +50,12 @@ export default function SongDetailPage({
   const songName = decodeURIComponent(encodedSongName);
 
   const [words, setWords] = useState<Word[]>([]);
+  const [lyrics, setLyrics] = useState<string>("");
+  const [isEditingLyrics, setIsEditingLyrics] = useState<boolean>(false);
+  const [lyricsDraft, setLyricsDraft] = useState<string>("");
+  const [savingLyrics, setSavingLyrics] = useState<boolean>(false);
+  const [showLyricsSection, setShowLyricsSection] = useState<boolean>(true);
+
   const [loading, setLoading] = useState<boolean>(true);
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [message, setMessage] = useState<string>("");
@@ -69,6 +80,10 @@ export default function SongDetailPage({
         if (!isMounted) return;
         if (data.success && Array.isArray(data.data)) {
           setWords(data.data);
+          if (typeof data.lyrics === "string") {
+            setLyrics(data.lyrics);
+            setLyricsDraft(data.lyrics);
+          }
         } else {
           setMessage(data.error || "Failed to load song words");
           setMessageType("error");
@@ -88,6 +103,82 @@ export default function SongDetailPage({
       isMounted = false;
     };
   }, [songName]);
+
+  const handleSaveLyrics = async () => {
+    setSavingLyrics(true);
+    try {
+      const res = await fetch("/api/songs/lyrics", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          songName,
+          lyrics: lyricsDraft,
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setLyrics(lyricsDraft);
+        setIsEditingLyrics(false);
+        setMessage("Lyrics saved successfully!");
+        setMessageType("success");
+      } else {
+        setMessage(data.error || "Failed to save lyrics");
+        setMessageType("error");
+      }
+    } catch {
+      setMessage("Error saving lyrics");
+      setMessageType("error");
+    } finally {
+      setSavingLyrics(false);
+    }
+  };
+
+  const vocabWordMap = useMemo(() => {
+    const map = new Map<string, Word>();
+    words.forEach((w) => {
+      const norm = w.word.toLowerCase().trim();
+      if (norm) map.set(norm, w);
+      if (Array.isArray(w.variations)) {
+        w.variations.forEach((v) => {
+          const vNorm = v.toLowerCase().trim();
+          if (vNorm) map.set(vNorm, w);
+        });
+      }
+    });
+    return map;
+  }, [words]);
+
+  const lyricsLines = useMemo(() => {
+    if (!lyrics) return [];
+    return lyrics.split(/\r?\n/);
+  }, [lyrics]);
+
+  const highlightedCount = useMemo(() => {
+    if (!lyrics) return 0;
+    const found = new Set<string>();
+    const tokens = lyrics.match(/[a-zA-Z0-9'-]+/g) || [];
+    tokens.forEach((t) => {
+      const clean = t
+        .replace(/^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g, "")
+        .toLowerCase();
+      if (vocabWordMap.has(clean)) {
+        found.add(vocabWordMap.get(clean)!.word.toLowerCase());
+      }
+    });
+    return found.size;
+  }, [lyrics, vocabWordMap]);
+
+  const handleLyricWordClick = (targetWord: string) => {
+    const cardId = `word-card-${targetWord.toLowerCase()}`;
+    const el = document.getElementById(cardId);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+      el.classList.add("ring-4", "ring-purple-400", "scale-[1.01]");
+      setTimeout(() => {
+        el.classList.remove("ring-4", "ring-purple-400", "scale-[1.01]");
+      }, 2000);
+    }
+  };
 
   const handleDeleteWord = async (wordToDelete: string) => {
     if (!confirm(`Remove "${wordToDelete}" from ${songName}?`)) return;
@@ -200,6 +291,240 @@ export default function SongDetailPage({
               {words.length} word{words.length === 1 ? "" : "s"} collected
             </span>
           </div>
+        </div>
+
+        {/* Song Lyrics Section with Highlighted Vocabulary Words */}
+        <div className="bg-white rounded-2xl p-6 sm:p-8 border border-purple-100 shadow-2xs space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-gray-100">
+            <div className="flex items-center gap-3">
+              <div className="p-2 rounded-xl bg-purple-50 text-purple-600">
+                <Music size={20} />
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <h2 className="text-base font-bold text-gray-900">
+                    Song Lyrics
+                  </h2>
+                  {lyrics && (
+                    <span className="inline-flex items-center gap-1 text-[11px] font-bold text-purple-700 bg-purple-50 px-2.5 py-0.5 rounded-full border border-purple-200">
+                      <Sparkles size={11} />
+                      {highlightedCount} vocabulary word
+                      {highlightedCount === 1 ? "" : "s"} highlighted
+                    </span>
+                  )}
+                </div>
+                <p className="text-xs text-gray-500">
+                  {lyrics
+                    ? "Vocabulary words from this song are highlighted in purple. Click any highlighted word to view its definition below!"
+                    : "No lyrics saved for this track yet. Add lyrics to see vocabulary highlighted in context."}
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2">
+              {!isEditingLyrics && lyrics && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setLyricsDraft(lyrics);
+                    setIsEditingLyrics(true);
+                  }}
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-700 bg-gray-100 hover:bg-gray-200 px-3 py-1.5 rounded-xl transition-colors"
+                >
+                  <Edit3 size={13} />
+                  Edit Lyrics
+                </button>
+              )}
+              {!isEditingLyrics && !lyrics && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setLyricsDraft("");
+                    setIsEditingLyrics(true);
+                  }}
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-purple-600 hover:bg-purple-700 px-3.5 py-1.5 rounded-xl transition-colors shadow-xs"
+                >
+                  <FileText size={13} />+ Add Lyrics
+                </button>
+              )}
+              {isEditingLyrics && (
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={handleSaveLyrics}
+                    disabled={savingLyrics}
+                    className="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-purple-600 hover:bg-purple-700 disabled:bg-gray-300 px-3.5 py-1.5 rounded-xl transition-colors shadow-xs"
+                  >
+                    {savingLyrics ? (
+                      <Loader2 size={13} className="animate-spin" />
+                    ) : (
+                      <Save size={13} />
+                    )}
+                    Save Lyrics
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setIsEditingLyrics(false)}
+                    className="text-xs font-semibold text-gray-500 hover:text-gray-700 px-2 py-1.5 rounded-lg"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              )}
+              {lyrics && (
+                <button
+                  type="button"
+                  onClick={() => setShowLyricsSection(!showLyricsSection)}
+                  className="p-1.5 text-gray-400 hover:text-gray-600 rounded-lg transition-colors"
+                  title={
+                    showLyricsSection ? "Collapse lyrics" : "Expand lyrics"
+                  }
+                >
+                  {showLyricsSection ? (
+                    <ChevronUp size={16} />
+                  ) : (
+                    <ChevronDown size={16} />
+                  )}
+                </button>
+              )}
+            </div>
+          </div>
+
+          {/* Section Body */}
+          {showLyricsSection && (
+            <>
+              {isEditingLyrics ? (
+                <div className="space-y-3">
+                  <textarea
+                    value={lyricsDraft}
+                    onChange={(e) => setLyricsDraft(e.target.value)}
+                    placeholder="Paste the lyrics for this song here..."
+                    rows={8}
+                    className="w-full p-4 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-purple-500 outline-none text-sm font-sans text-gray-800 transition-all resize-y"
+                  />
+                  <div className="flex justify-end gap-2">
+                    <button
+                      type="button"
+                      onClick={() => setIsEditingLyrics(false)}
+                      className="px-4 py-2 text-xs font-semibold text-gray-500 hover:text-gray-700"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleSaveLyrics}
+                      disabled={savingLyrics}
+                      className="inline-flex items-center gap-1.5 px-4 py-2 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-300 text-white text-xs font-bold rounded-xl shadow-xs transition-all"
+                    >
+                      {savingLyrics && (
+                        <Loader2 size={14} className="animate-spin" />
+                      )}
+                      Save Lyrics
+                    </button>
+                  </div>
+                </div>
+              ) : lyrics ? (
+                <div className="space-y-3">
+                  {/* Interactive highlight reader */}
+                  <div className="max-h-96 overflow-y-auto p-5 bg-gradient-to-b from-purple-50/20 via-gray-50/40 to-white rounded-xl border border-gray-200 space-y-1 select-none font-sans text-sm leading-relaxed">
+                    {lyricsLines.map((line, lineIdx) => {
+                      const trimmedLine = line.trim();
+                      if (!trimmedLine) {
+                        return <div key={lineIdx} className="h-3" />;
+                      }
+                      if (
+                        trimmedLine.startsWith("[") &&
+                        trimmedLine.endsWith("]")
+                      ) {
+                        return (
+                          <div key={lineIdx} className="pt-2 pb-1">
+                            <span className="text-[11px] font-bold uppercase tracking-wider text-purple-700 bg-purple-100/70 px-2 py-0.5 rounded">
+                              {trimmedLine}
+                            </span>
+                          </div>
+                        );
+                      }
+
+                      const tokens = line.match(
+                        /[a-zA-Z0-9'-]+|[^a-zA-Z0-9'-]+/g,
+                      ) || [line];
+
+                      return (
+                        <div
+                          key={lineIdx}
+                          className="flex flex-wrap items-center"
+                        >
+                          {tokens.map((token, tokenIdx) => {
+                            const isWord = /[a-zA-Z0-9]/.test(token);
+                            const cleanWord = token.replace(
+                              /^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g,
+                              "",
+                            );
+
+                            if (!isWord || !cleanWord) {
+                              return (
+                                <span
+                                  key={tokenIdx}
+                                  className="text-gray-500 whitespace-pre"
+                                >
+                                  {token}
+                                </span>
+                              );
+                            }
+
+                            const norm = cleanWord.toLowerCase();
+                            const vocabMatch = vocabWordMap.get(norm);
+
+                            if (vocabMatch) {
+                              return (
+                                <button
+                                  key={tokenIdx}
+                                  type="button"
+                                  onClick={() =>
+                                    handleLyricWordClick(vocabMatch.word)
+                                  }
+                                  title={`Click to jump to definition of "${vocabMatch.word}"`}
+                                  className="inline-block px-1.5 py-0.5 my-0.5 rounded-md text-sm font-bold bg-purple-600 text-white shadow-2xs scale-105 ring-2 ring-purple-300 ring-offset-1 hover:bg-purple-700 cursor-pointer transition-all duration-150"
+                                >
+                                  {token}
+                                </button>
+                              );
+                            }
+
+                            return (
+                              <span
+                                key={tokenIdx}
+                                className="text-gray-800 whitespace-pre px-0.5"
+                              >
+                                {token}
+                              </span>
+                            );
+                          })}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              ) : (
+                <div className="p-6 bg-gray-50/60 rounded-xl border border-dashed border-gray-200 text-center space-y-2">
+                  <p className="text-xs text-gray-500">
+                    No lyrics stored yet for &ldquo;{songName}&rdquo;.
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setLyricsDraft("");
+                      setIsEditingLyrics(true);
+                    }}
+                    className="inline-flex items-center gap-1.5 text-xs font-bold text-purple-700 bg-purple-50 hover:bg-purple-100 px-3 py-1.5 rounded-lg border border-purple-200 transition-colors"
+                  >
+                    <FileText size={13} />
+                    Add Lyrics Now
+                  </button>
+                </div>
+              )}
+            </>
+          )}
         </div>
 
         {/* Global Notifications */}
@@ -361,7 +686,8 @@ export default function SongDetailPage({
             {filteredWords.map((item) => (
               <div
                 key={item.word}
-                className="bg-white rounded-2xl p-6 border border-gray-200 shadow-2xs hover:shadow-xs transition-shadow space-y-4"
+                id={`word-card-${item.word.toLowerCase()}`}
+                className="bg-white rounded-2xl p-6 border border-gray-200 shadow-2xs hover:shadow-xs transition-all duration-300 space-y-4 scroll-mt-24"
               >
                 <div className="flex items-start justify-between gap-4">
                   <div className="space-y-1">

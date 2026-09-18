@@ -117,10 +117,71 @@ export class FlatMediaManager {
     try {
       const content = fs.readFileSync(filePath, "utf-8");
       const parsed = JSON.parse(content);
-      return Array.isArray(parsed) ? parsed : [];
+      if (Array.isArray(parsed)) return parsed;
+      if (parsed && Array.isArray(parsed.words)) return parsed.words;
+      return [];
     } catch (e) {
       console.error(`Error reading media file ${filePath}:`, e);
       return [];
+    }
+  }
+
+  /**
+   * Get lyrics stored for this media item (songs)
+   */
+  getLyrics(itemName: string): string {
+    const filePath = this.getFilePath(itemName);
+    if (!fs.existsSync(filePath)) {
+      return "";
+    }
+
+    try {
+      const content = fs.readFileSync(filePath, "utf-8");
+      const parsed = JSON.parse(content);
+      if (parsed && typeof parsed.lyrics === "string") {
+        return parsed.lyrics;
+      }
+      return "";
+    } catch (e) {
+      console.error(`Error reading lyrics from ${filePath}:`, e);
+      return "";
+    }
+  }
+
+  /**
+   * Save or update lyrics for this media item
+   */
+  setLyrics(itemName: string, lyrics: string): boolean {
+    const cleanName = itemName.trim();
+    this.ensureMediaDirectory();
+    const words = this.getWords(cleanName);
+    this.saveMediaFile(cleanName, words, lyrics || "");
+    return true;
+  }
+
+  /**
+   * Internal helper to persist words and lyrics to disk
+   */
+  private saveMediaFile(
+    itemName: string,
+    words: Word[],
+    explicitLyrics?: string,
+  ): void {
+    const cleanName = itemName.trim();
+    this.ensureMediaDirectory();
+    const filePath = this.getFilePath(cleanName);
+
+    const currentLyrics =
+      explicitLyrics !== undefined ? explicitLyrics : this.getLyrics(cleanName);
+
+    if (currentLyrics && currentLyrics.trim()) {
+      const payload = {
+        lyrics: currentLyrics,
+        words,
+      };
+      fs.writeFileSync(filePath, JSON.stringify(payload, null, 2), "utf-8");
+    } else {
+      fs.writeFileSync(filePath, JSON.stringify(words, null, 2), "utf-8");
     }
   }
 
@@ -140,7 +201,6 @@ export class FlatMediaManager {
     }
 
     this.ensureMediaDirectory();
-    const filePath = this.getFilePath(cleanName);
 
     const words = this.getWords(cleanName);
 
@@ -157,7 +217,7 @@ export class FlatMediaManager {
       meanings,
     });
 
-    fs.writeFileSync(filePath, JSON.stringify(words, null, 2), "utf-8");
+    this.saveMediaFile(cleanName, words);
     return true;
   }
 
@@ -168,6 +228,7 @@ export class FlatMediaManager {
     itemName: string,
     entries: MediaBatchEntry[],
     skipDuplicates: boolean = true,
+    lyrics?: string,
   ): MediaBatchResultSummary {
     const cleanName = itemName.trim();
     this.ensureMediaDirectory();
@@ -212,8 +273,8 @@ export class FlatMediaManager {
       modified = true;
     }
 
-    if (modified || !fs.existsSync(filePath)) {
-      fs.writeFileSync(filePath, JSON.stringify(words, null, 2), "utf-8");
+    if (modified || !fs.existsSync(filePath) || lyrics !== undefined) {
+      this.saveMediaFile(cleanName, words, lyrics);
     }
 
     return summary;
@@ -240,7 +301,7 @@ export class FlatMediaManager {
       return false; // Word wasn't found
     }
 
-    fs.writeFileSync(filePath, JSON.stringify(filtered, null, 2), "utf-8");
+    this.saveMediaFile(cleanName, filtered);
     return true;
   }
 
