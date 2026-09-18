@@ -532,20 +532,38 @@ export async function fetchComprehensiveDictionary(
   return result;
 }
 
+export type EnrichmentPhase =
+  | "checking_cache"
+  | "cache_hit"
+  | "querying_apis"
+  | "resolving_inflections"
+  | "saving_cache"
+  | "completed";
+
+export interface BatchProgressMeta {
+  phase: EnrichmentPhase;
+  phaseLabel: string;
+  elapsedMs?: number;
+  source?: "cache" | "dictionaryapi" | "wiktionary" | "combined" | "fallback";
+}
+
+export type BatchProgressCallback = (
+  completed: number,
+  total: number,
+  currentWord: string,
+  isCached: boolean,
+  meta?: BatchProgressMeta,
+) => void;
+
 /**
- * Concurrency-controlled batch dictionary fetcher with smart caching:
- * - Checks cache for each word first.
+ * Concurrency-controlled batch dictionary fetcher with smart caching and live telemetry:
+ * - Emits real-time progress callbacks per word with elapsed time, source, and sub-phase.
  * - Only performs network requests for uncached or updated words.
  */
 export async function fetchDictionaryBatch(
   words: string[],
-  concurrency = 4,
-  onProgress?: (
-    completed: number,
-    total: number,
-    currentWord: string,
-    isCached: boolean,
-  ) => void,
+  concurrency = 2,
+  onProgress?: BatchProgressCallback,
   forceRefreshWords: Set<string> = new Set(),
 ): Promise<Map<string, EnrichedWordData>> {
   const results = new Map<string, EnrichedWordData>();
@@ -556,7 +574,7 @@ export async function fetchDictionaryBatch(
     new Set(words.map((w) => w.trim().toLowerCase())),
   ).filter(Boolean);
 
-  // Separate cached words from uncached words
+  // 1. Process words already in client cache first
   const wordsToFetch: string[] = [];
 
   for (const word of uniqueWords) {
@@ -566,7 +584,12 @@ export async function fetchDictionaryBatch(
         results.set(word, { ...cached, source: "cache" });
         completed++;
         if (onProgress) {
-          onProgress(completed, total, word, true);
+          onProgress(completed, total, word, true, {
+            phase: "cache_hit",
+            phaseLabel: `⚡ Loaded "${word}" instantly from client cache`,
+            elapsedMs: 1,
+            source: "cache",
+          });
         }
         continue;
       }
@@ -574,68 +597,115 @@ export async function fetchDictionaryBatch(
     wordsToFetch.push(word);
   }
 
-  // If in browser, use the server's persistent disk cache API
-  if (wordsToFetch.length > 0 && typeof window !== "undefined") {
-    try {
-      const res = await fetch("/api/dictionary/lookup", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          words: wordsToFetch,
-          forceRefreshWords: Array.from(forceRefreshWords),
-        }),
-      });
-      const json = await res.json();
-      if (json.success && json.data) {
-        for (const [norm, data] of Object.entries(
-          json.data as Record<string, EnrichedWordData>,
-        )) {
-          setCachedWord(norm, data);
-          results.set(norm, data);
-          completed++;
-          if (onProgress) {
-            onProgress(completed, total, norm, data.source === "cache");
+  // 2. Fetch uncached words with controlled concurrency for live telemetry
+  if (wordsToFetch.length > 0) {
+    const activeConcurrency = Math.max(1, Math.min(concurrency || 2, 3));
+
+    for (let i = 0; i < wordsToFetch.length; i += activeConcurrency) {
+      const chunk = wordsToFetch.slice(i, i + activeConcurrency);
+      const chunkPromises = chunk.map(async (word) => {
+        const wordStart = performance.now();
+
+        if (onProgress) {
+          onProgress(completed, total, word, false, {
+            phase: "querying_apis",
+            phaseLabel: `Checking disk cache & dictionary APIs for "${word}"...`,
+            elapsedMs: 0,
+          });
+        }
+
+        let enriched: EnrichedWordData | null = null;
+        let source: EnrichedWordData["source"] = "dictionaryapi";
+        let isDiskCached = false;
+
+        // Try server lookup first if in browser
+        if (typeof window !== "undefined") {
+          try {
+            const res = await fetch("/api/dictionary/lookup", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                words: [word],
+                forceRefreshWords: forceRefreshWords.has(word) ? [word] : [],
+              }),
+            });
+            const json = await res.json();
+            if (json.success && json.data && json.data[word]) {
+              enriched = json.data[word];
+              isDiskCached = json.details?.[word]?.wasDiskCached ?? false;
+              source = enriched!.source;
+            }
+          } catch {
+            // Fall back to direct fetch below
           }
         }
-        return results;
-      }
-    } catch {
-      // Fallback to local concurrency fetch below if API route fails
-    }
-  }
 
-  // Fallback concurrency fetch if running server-side or if API route failed
-  for (let i = 0; i < wordsToFetch.length; i += concurrency) {
-    const chunk = wordsToFetch.slice(i, i + concurrency);
-    const chunkPromises = chunk.map(async (word) => {
-      try {
-        const enriched = await fetchComprehensiveDictionary(
-          word,
-          forceRefreshWords.has(word),
-        );
-        results.set(word, enriched);
-      } catch {
-        results.set(word, {
-          word,
-          meanings: [
-            {
-              partOfSpeech: "General",
-              definition: `Definition for ${word}`,
-              examples: generateInflectionExamples(word, null, "general", 3),
-            },
-          ],
-          variations: [],
-          source: "fallback",
-        });
-      } finally {
-        completed++;
-        if (onProgress) {
-          onProgress(completed, total, word, false);
+        // Fallback to comprehensive dictionary direct lookup if needed
+        if (!enriched) {
+          try {
+            enriched = await fetchComprehensiveDictionary(
+              word,
+              forceRefreshWords.has(word),
+            );
+            source = enriched.source;
+          } catch {
+            enriched = {
+              word,
+              meanings: [
+                {
+                  partOfSpeech: "General",
+                  definition: `Definition for ${word}`,
+                  examples: generateInflectionExamples(
+                    word,
+                    null,
+                    "general",
+                    3,
+                  ),
+                },
+              ],
+              variations: [],
+              source: "fallback",
+            };
+            source = "fallback";
+          }
         }
-      }
-    });
 
-    await Promise.all(chunkPromises);
+        const elapsedMs = Math.max(
+          1,
+          Math.round(performance.now() - wordStart),
+        );
+        setCachedWord(word, enriched);
+        results.set(word, enriched);
+        completed++;
+
+        if (onProgress) {
+          const phaseLabel = isDiskCached
+            ? `⚡ Retrieved "${word}" from Persistent Disk Cache`
+            : `🌐 Enriched "${word}" from ${
+                source === "combined"
+                  ? "FreeDict + Wiktionary"
+                  : source === "wiktionary"
+                    ? "Wiktionary"
+                    : "Free Dictionary API"
+              }`;
+
+          onProgress(
+            completed,
+            total,
+            word,
+            isDiskCached || source === "cache",
+            {
+              phase: "completed",
+              phaseLabel,
+              elapsedMs,
+              source,
+            },
+          );
+        }
+      });
+
+      await Promise.all(chunkPromises);
+    }
   }
 
   return results;

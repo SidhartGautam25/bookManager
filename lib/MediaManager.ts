@@ -306,6 +306,47 @@ export class FlatMediaManager {
   }
 
   /**
+   * Update a word's meanings, variations, or spelling in a media file
+   */
+  updateWord(
+    itemName: string,
+    originalWord: string,
+    updatedWordData: {
+      word?: string;
+      meanings: WordMeaning[];
+      variations?: string[];
+    },
+  ): boolean {
+    const cleanName = itemName.trim();
+    const filePath = this.getFilePath(cleanName);
+    if (!fs.existsSync(filePath)) {
+      throw new Error(
+        `${this.mediaType === "song" ? "Song" : "Movie"} "${cleanName}" does not exist`,
+      );
+    }
+
+    const words = this.getWords(cleanName);
+    const normOriginal = originalWord.trim().toLowerCase();
+    const index = words.findIndex((w) => w.word.toLowerCase() === normOriginal);
+
+    if (index === -1) {
+      throw new Error(
+        `Word "${originalWord}" not found in ${this.mediaType} "${cleanName}"`,
+      );
+    }
+
+    const newWordName = (updatedWordData.word || originalWord).trim();
+    words[index] = {
+      word: newWordName,
+      meanings: updatedWordData.meanings,
+      variations: updatedWordData.variations || words[index].variations || [],
+    };
+
+    this.saveMediaFile(cleanName, words);
+    return true;
+  }
+
+  /**
    * Delete an entire media file
    */
   deleteMedia(itemName: string): boolean {
