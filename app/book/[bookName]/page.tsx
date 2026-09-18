@@ -10,9 +10,13 @@ import {
   Info,
   Menu,
   X,
+  Pencil,
+  Trash2,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
+import WordEditModal from "@/components/WordEditModal";
+import { setCachedWord } from "@/lib/dictionary";
 
 interface WordMeaning {
   partOfSpeech: string;
@@ -22,6 +26,7 @@ interface WordMeaning {
 
 interface Word {
   word: string;
+  variations?: string[];
   meanings: WordMeaning[];
 }
 
@@ -61,6 +66,107 @@ export default function BookDetailsPage({
   const [selectedWord, setSelectedWord] = useState<string | null>(null);
   const [wordStats, setWordStats] = useState<WordStats | null>(null);
   const [loadingStats, setLoadingStats] = useState<boolean>(false);
+  const [editingWord, setEditingWord] = useState<Word | null>(null);
+  const [deletingWord, setDeletingWord] = useState<string | null>(null);
+
+  const handleEditWord = (wordItem: Word, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setEditingWord(wordItem);
+  };
+
+  const handleSaveEditedWord = async (updatedWord: Word) => {
+    if (!editingWord || selectedPage === null) return;
+
+    const res = await fetch("/api/words", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        bookName: selectedBook,
+        pageNo: selectedPage,
+        originalWord: editingWord.word,
+        updatedWord,
+      }),
+    });
+
+    const data = await res.json();
+    if (!data.success) {
+      throw new Error(data.error || "Failed to update word");
+    }
+
+    // Update client dictionary cache
+    setCachedWord(updatedWord.word, {
+      word: updatedWord.word,
+      meanings: updatedWord.meanings,
+      variations: updatedWord.variations || [],
+      source: "cache",
+    });
+
+    // Update local state in bookData
+    setBookData((prev) =>
+      prev.map((p) => {
+        if (p.page !== selectedPage) return p;
+        return {
+          ...p,
+          words: p.words.map((w) =>
+            w.word.toLowerCase() === editingWord.word.toLowerCase()
+              ? updatedWord
+              : w,
+          ),
+        };
+      }),
+    );
+
+    setMessage(
+      `Word "${updatedWord.word}" updated successfully & cache synchronized!`,
+    );
+    setMessageType("success");
+  };
+
+  const handleDeleteWord = async (
+    wordToDelete: string,
+    e: React.MouseEvent,
+  ) => {
+    e.stopPropagation();
+    if (selectedPage === null) return;
+    if (
+      !confirm(
+        `Remove "${wordToDelete}" from page ${selectedPage} of ${selectedBook}?`,
+      )
+    )
+      return;
+
+    setDeletingWord(wordToDelete);
+    try {
+      const res = await fetch(
+        `/api/words?bookName=${encodeURIComponent(selectedBook)}&pageNo=${selectedPage}&word=${encodeURIComponent(wordToDelete)}`,
+        { method: "DELETE" },
+      );
+      const data = await res.json();
+      if (data.success) {
+        setBookData((prev) =>
+          prev.map((p) => {
+            if (p.page !== selectedPage) return p;
+            return {
+              ...p,
+              words: p.words.filter(
+                (w) => w.word.toLowerCase() !== wordToDelete.toLowerCase(),
+              ),
+            };
+          }),
+        );
+        setMessage(`Word "${wordToDelete}" removed successfully`);
+        setMessageType("success");
+      } else {
+        setMessage(data.error || "Failed to delete word");
+        setMessageType("error");
+      }
+    } catch {
+      setMessage("Error deleting word");
+      setMessageType("error");
+    } finally {
+      setDeletingWord(null);
+    }
+  };
 
   const handleWordClick = async (word: string) => {
     if (selectedWord === word) {
@@ -309,13 +415,40 @@ export default function BookDetailsPage({
                                 : "border-gray-100 hover:shadow-xl hover:border-indigo-100"
                             }`}
                           >
-                            <div className="flex items-center gap-3 mb-6">
-                              <div className="p-2 rounded-xl bg-indigo-50 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
-                                <Layout size={20} />
+                            <div className="flex items-center justify-between mb-6">
+                              <div className="flex items-center gap-3">
+                                <span className="font-mono text-xs font-black text-indigo-700 bg-indigo-50 border border-indigo-100 px-2.5 py-1 rounded-lg shadow-2xs">
+                                  #{index + 1}
+                                </span>
+                                <div className="p-2 rounded-xl bg-indigo-50 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
+                                  <Layout size={20} />
+                                </div>
+                                <h4 className="font-black text-2xl text-gray-900 capitalize tracking-tight">
+                                  {item.word}
+                                </h4>
                               </div>
-                              <h4 className="font-black text-2xl text-gray-900 capitalize tracking-tight">
-                                {item.word}
-                              </h4>
+
+                              <div className="flex items-center gap-1.5 opacity-80 group-hover:opacity-100 transition-opacity">
+                                <button
+                                  type="button"
+                                  onClick={(e) => handleEditWord(item, e)}
+                                  className="p-2 text-gray-400 hover:text-indigo-600 hover:bg-indigo-50 rounded-xl transition-colors"
+                                  title="Edit word & update dictionary cache"
+                                >
+                                  <Pencil size={17} />
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={(e) =>
+                                    handleDeleteWord(item.word, e)
+                                  }
+                                  disabled={deletingWord === item.word}
+                                  className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-xl transition-colors"
+                                  title="Remove word"
+                                >
+                                  <Trash2 size={17} />
+                                </button>
+                              </div>
                             </div>
                             <div className="space-y-6 border-l-4 border-indigo-50 pl-6 ml-2">
                               {item.meanings?.map((m, mIdx) => (
@@ -517,6 +650,15 @@ export default function BookDetailsPage({
           )}
         </div>
       </main>
+
+      {/* Word Edit Modal with Persistent Cache Sync */}
+      <WordEditModal
+        isOpen={Boolean(editingWord)}
+        onClose={() => setEditingWord(null)}
+        wordData={editingWord}
+        onSave={handleSaveEditedWord}
+        contextTitle={`Edit Word in ${selectedBook} (Page ${selectedPage})`}
+      />
     </div>
   );
 }

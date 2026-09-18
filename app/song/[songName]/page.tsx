@@ -17,9 +17,12 @@ import {
   ChevronDown,
   ChevronUp,
   FileText,
+  Pencil,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
+import WordEditModal from "@/components/WordEditModal";
+import { setCachedWord } from "@/lib/dictionary";
 
 interface WordMeaning {
   partOfSpeech: string;
@@ -63,11 +66,53 @@ export default function SongDetailPage({
     "success",
   );
   const [deletingWord, setDeletingWord] = useState<string | null>(null);
+  const [editingWord, setEditingWord] = useState<Word | null>(null);
 
   // Cross-media stats modal/drawer
   const [selectedWord, setSelectedWord] = useState<string | null>(null);
   const [wordStats, setWordStats] = useState<CrossMediaStat | null>(null);
   const [loadingStats, setLoadingStats] = useState<boolean>(false);
+
+  const handleSaveEditedWord = async (updatedWord: Word) => {
+    if (!editingWord) return;
+
+    const res = await fetch("/api/songs/words", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        songName,
+        originalWord: editingWord.word,
+        updatedWord,
+      }),
+    });
+
+    const data = await res.json();
+    if (!data.success) {
+      throw new Error(data.error || "Failed to update word");
+    }
+
+    // Update client dictionary cache
+    setCachedWord(updatedWord.word, {
+      word: updatedWord.word,
+      meanings: updatedWord.meanings,
+      variations: updatedWord.variations || [],
+      source: "cache",
+    });
+
+    // Update local words state
+    setWords((prev) =>
+      prev.map((w) =>
+        w.word.toLowerCase() === editingWord.word.toLowerCase()
+          ? updatedWord
+          : w,
+      ),
+    );
+
+    setMessage(
+      `Word "${updatedWord.word}" updated & persistent cache synchronized!`,
+    );
+    setMessageType("success");
+  };
 
   useEffect(() => {
     let isMounted = true;
@@ -683,7 +728,7 @@ export default function SongDetailPage({
           </div>
         ) : (
           <div className="grid grid-cols-1 gap-4">
-            {filteredWords.map((item) => (
+            {filteredWords.map((item, index) => (
               <div
                 key={item.word}
                 id={`word-card-${item.word.toLowerCase()}`}
@@ -692,6 +737,9 @@ export default function SongDetailPage({
                 <div className="flex items-start justify-between gap-4">
                   <div className="space-y-1">
                     <div className="flex flex-wrap items-center gap-2">
+                      <span className="font-mono text-xs font-black text-indigo-700 bg-indigo-50 border border-indigo-100 px-2 py-0.5 rounded-md shadow-2xs">
+                        #{index + 1}
+                      </span>
                       <button
                         type="button"
                         onClick={() => handleWordClick(item.word)}
@@ -718,15 +766,25 @@ export default function SongDetailPage({
                     )}
                   </div>
 
-                  <button
-                    type="button"
-                    onClick={() => handleDeleteWord(item.word)}
-                    disabled={deletingWord === item.word}
-                    className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-xl transition-colors"
-                    title="Remove word"
-                  >
-                    <Trash2 size={16} />
-                  </button>
+                  <div className="flex items-center gap-1">
+                    <button
+                      type="button"
+                      onClick={() => setEditingWord(item)}
+                      className="p-2 text-gray-400 hover:text-indigo-600 hover:bg-indigo-50 rounded-xl transition-colors"
+                      title="Edit word & sync persistent cache"
+                    >
+                      <Pencil size={16} />
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => handleDeleteWord(item.word)}
+                      disabled={deletingWord === item.word}
+                      className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-xl transition-colors"
+                      title="Remove word"
+                    >
+                      <Trash2 size={16} />
+                    </button>
+                  </div>
                 </div>
 
                 <div className="space-y-3 text-xs">
@@ -767,6 +825,15 @@ export default function SongDetailPage({
           </div>
         )}
       </main>
+
+      {/* Word Edit Modal with Persistent Cache Sync */}
+      <WordEditModal
+        isOpen={Boolean(editingWord)}
+        onClose={() => setEditingWord(null)}
+        wordData={editingWord}
+        onSave={handleSaveEditedWord}
+        contextTitle={`Edit Word in Song: ${songName}`}
+      />
     </div>
   );
 }

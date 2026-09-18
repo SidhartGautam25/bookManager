@@ -41,6 +41,15 @@ export async function POST(request: NextRequest) {
     persistentDictionaryCache.ensureInitialized();
 
     const results: Record<string, EnrichedWordData> = {};
+    const details: Record<
+      string,
+      {
+        word: string;
+        source: string;
+        wasDiskCached: boolean;
+        timeMs: number;
+      }
+    > = {};
     const wordsToFetch: string[] = [];
     let cachedCount = 0;
 
@@ -53,6 +62,12 @@ export async function POST(request: NextRequest) {
       if (!forceSet.has(norm) && persistentDictionaryCache.has(norm)) {
         const cached = persistentDictionaryCache.get(norm)!;
         results[norm] = cached;
+        details[norm] = {
+          word: cleanWord,
+          source: "cache",
+          wasDiskCached: true,
+          timeMs: 1,
+        };
         cachedCount++;
       } else {
         wordsToFetch.push(cleanWord);
@@ -67,10 +82,17 @@ export async function POST(request: NextRequest) {
       const chunk = wordsToFetch.slice(i, i + concurrency);
       const chunkPromises = chunk.map(async (word) => {
         const norm = word.toLowerCase().trim();
+        const start = performance.now();
         try {
           const enriched = await fetchComprehensiveDictionary(word, true);
           results[norm] = enriched;
           newlyFetched[norm] = enriched;
+          details[norm] = {
+            word,
+            source: enriched.source,
+            wasDiskCached: false,
+            timeMs: Math.round(performance.now() - start),
+          };
         } catch {
           const fallback: EnrichedWordData = {
             word,
@@ -86,6 +108,12 @@ export async function POST(request: NextRequest) {
           };
           results[norm] = fallback;
           newlyFetched[norm] = fallback;
+          details[norm] = {
+            word,
+            source: "fallback",
+            wasDiskCached: false,
+            timeMs: Math.round(performance.now() - start),
+          };
         }
       });
 
@@ -102,6 +130,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       success: true,
       data: results,
+      details,
       cachedCount,
       fetchedCount: wordsToFetch.length,
       totalDiskWords: stats.totalWords,

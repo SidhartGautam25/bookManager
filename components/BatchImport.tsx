@@ -25,6 +25,10 @@ import {
   Edit3,
   MousePointerClick,
   Eye,
+  Timer,
+  Activity,
+  Zap,
+  Globe,
 } from "lucide-react";
 import {
   fetchDictionaryBatch,
@@ -126,16 +130,36 @@ export default function BatchImport({
   // Enrichment state
   const [isEnriching, setIsEnriching] = useState(false);
   const [refreshingWordId, setRefreshingWordId] = useState<string | null>(null);
-  const [progress, setProgress] = useState<{
+  const [telemetry, setTelemetry] = useState<{
     current: number;
     total: number;
-    word: string;
+    activeWord: string;
+    activePhaseLabel: string;
     cachedCount: number;
+    apiCount: number;
+    startTime: number;
+    elapsedMs: number;
+    cachedWords: string[];
+    apiWords: { word: string; durationMs: number; source: string }[];
+    recentLogs: {
+      word: string;
+      durationMs: number;
+      isCached: boolean;
+      source: string;
+      phaseLabel: string;
+    }[];
   }>({
     current: 0,
     total: 0,
-    word: "",
+    activeWord: "",
+    activePhaseLabel: "",
     cachedCount: 0,
+    apiCount: 0,
+    startTime: 0,
+    elapsedMs: 0,
+    cachedWords: [],
+    apiWords: [],
+    recentLogs: [],
   });
 
   // Review table state
@@ -543,39 +567,101 @@ Page 15: quixotic, recalcitrant`,
 
     // Identify which words are completely new and need network lookup
     const wordsToFetch: string[] = [];
-    let initialCached = 0;
-
+    const initialCachedWords: string[] = [];
     parsedEntries.forEach((entry) => {
       const norm = entry.word.toLowerCase();
       // If word is already in review items or in dictionary cache, count as cached
       if (currentReviewMap.has(norm) || getCachedWord(norm)) {
-        initialCached++;
+        if (!initialCachedWords.some((w) => w.toLowerCase() === norm)) {
+          initialCachedWords.push(entry.word);
+        }
       } else {
         wordsToFetch.push(entry.word);
       }
     });
 
-    setProgress({
-      current: initialCached,
+    const startTimestamp = Date.now();
+    setTelemetry({
+      current: initialCachedWords.length,
       total: parsedEntries.length,
-      word: wordsToFetch.length > 0 ? wordsToFetch[0] : "All cached",
-      cachedCount: initialCached,
+      activeWord:
+        wordsToFetch.length > 0 ? wordsToFetch[0] : "All words cached",
+      activePhaseLabel:
+        wordsToFetch.length > 0
+          ? `Starting batch enrichment for ${wordsToFetch.length} uncached words...`
+          : "All words loaded instantly from cache!",
+      cachedCount: initialCachedWords.length,
+      apiCount: 0,
+      startTime: startTimestamp,
+      elapsedMs: 0,
+      cachedWords: initialCachedWords,
+      apiWords: [],
+      recentLogs: [],
     });
 
     try {
-      // Only query network for genuinely new / uncached words
+      // Only query network for genuinely new / uncached words with live telemetry
       let newDictionaryMap = new Map<string, EnrichedWordData>();
       if (wordsToFetch.length > 0) {
         newDictionaryMap = await fetchDictionaryBatch(
           wordsToFetch,
-          4,
-          (completed, total, word, isCached) => {
-            setProgress((prev) => ({
-              current: prev.cachedCount + completed,
-              total: parsedEntries.length,
-              word,
-              cachedCount: isCached ? prev.cachedCount + 1 : prev.cachedCount,
-            }));
+          2,
+          (completed, total, word, isCached, meta) => {
+            setTelemetry((prev) => {
+              const newLogs = [...prev.recentLogs];
+              const updatedCachedWords = [...prev.cachedWords];
+              const updatedApiWords = [...prev.apiWords];
+
+              if (meta?.phase === "completed" || meta?.phase === "cache_hit") {
+                newLogs.unshift({
+                  word,
+                  durationMs: meta.elapsedMs ?? 0,
+                  isCached: Boolean(isCached),
+                  source: meta.source || (isCached ? "cache" : "dictionaryapi"),
+                  phaseLabel: meta.phaseLabel,
+                });
+                if (newLogs.length > 12) newLogs.pop();
+
+                if (isCached) {
+                  if (
+                    !updatedCachedWords.some(
+                      (w) => w.toLowerCase() === word.toLowerCase(),
+                    )
+                  ) {
+                    updatedCachedWords.push(word);
+                  }
+                } else {
+                  if (
+                    !updatedApiWords.some(
+                      (w) => w.word.toLowerCase() === word.toLowerCase(),
+                    )
+                  ) {
+                    updatedApiWords.push({
+                      word,
+                      durationMs: meta.elapsedMs ?? 0,
+                      source: meta.source || "dictionaryapi",
+                    });
+                  }
+                }
+              }
+
+              return {
+                ...prev,
+                current: Math.min(
+                  parsedEntries.length,
+                  prev.cachedCount + completed,
+                ),
+                total: parsedEntries.length,
+                activeWord: word,
+                activePhaseLabel: meta?.phaseLabel || `Processing "${word}"...`,
+                cachedCount: isCached ? prev.cachedCount + 1 : prev.cachedCount,
+                apiCount: !isCached ? prev.apiCount + 1 : prev.apiCount,
+                elapsedMs: Math.max(0, Date.now() - startTimestamp),
+                cachedWords: updatedCachedWords,
+                apiWords: updatedApiWords,
+                recentLogs: newLogs,
+              };
+            });
           },
         );
       }
@@ -843,6 +929,19 @@ Page 15: quixotic, recalcitrant`,
         setNotesText("");
         setReviewItems([]);
         setHasEnriched(false);
+        setTelemetry({
+          current: 0,
+          total: 0,
+          activeWord: "",
+          activePhaseLabel: "",
+          cachedCount: 0,
+          apiCount: 0,
+          startTime: 0,
+          elapsedMs: 0,
+          cachedWords: [],
+          apiWords: [],
+          recentLogs: [],
+        });
       } else {
         setStatusMessage({
           type: "error",
@@ -1582,7 +1681,7 @@ Page 15: quixotic, recalcitrant`,
                 {cacheStats && (
                   <span
                     className="hidden sm:inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200"
-                    title="Persistent disk cache active at .cache/dictionary_cache.json"
+                    title="Persistent disk cache active at data/dictinary/dictionary_cache.json"
                   >
                     <Database size={11} />
                     {cacheStats.totalWords} words cached
@@ -1707,7 +1806,7 @@ Page 15: quixotic, recalcitrant`,
               <>
                 <Loader2 size={16} className="animate-spin" />
                 <span>
-                  Enriching ({progress.current}/{progress.total})...
+                  Enriching ({telemetry.current}/{telemetry.total})...
                 </span>
               </>
             ) : (
@@ -1719,25 +1818,291 @@ Page 15: quixotic, recalcitrant`,
           </button>
         </div>
 
-        {/* Live Progress Bar during enrichment */}
-        {isEnriching && (
-          <div className="p-4 bg-indigo-50/60 border border-indigo-100 rounded-xl space-y-2">
-            <div className="flex justify-between text-xs font-bold text-indigo-900">
-              <span>
-                Processing words ({progress.current} of {progress.total})
-              </span>
-              <span className="font-mono text-indigo-600 truncate max-w-xs">
-                {progress.word}
-              </span>
+        {/* Real-Time Telemetry & Progress Dashboard (Persists until words are committed to library) */}
+        {(isEnriching || (hasEnriched && telemetry.total > 0)) && (
+          <div className="p-5 bg-gradient-to-br from-indigo-50/90 via-purple-50/50 to-white border border-indigo-100 rounded-2xl space-y-4 shadow-sm animate-in fade-in duration-300">
+            {/* Top header row */}
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-indigo-100/60 pb-3">
+              <div className="flex items-center gap-2.5">
+                {isEnriching ? (
+                  <span className="relative flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-indigo-600"></span>
+                  </span>
+                ) : (
+                  <CheckCircle2
+                    size={18}
+                    className="text-emerald-600 flex-shrink-0"
+                  />
+                )}
+                <span className="text-xs font-black text-indigo-950 uppercase tracking-wider">
+                  {isEnriching
+                    ? "Live Dictionary Enrichment Telemetry"
+                    : "Dictionary Enrichment Summary & Cache Audit"}
+                </span>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <span
+                  className={`text-xs font-extrabold px-3 py-1 rounded-lg border shadow-2xs ${
+                    isEnriching
+                      ? "bg-white text-indigo-700 border-indigo-100"
+                      : "bg-emerald-50 text-emerald-800 border-emerald-200"
+                  }`}
+                >
+                  {telemetry.total > 0
+                    ? Math.round((telemetry.current / telemetry.total) * 100)
+                    : 0}
+                  % Complete ({telemetry.current} / {telemetry.total} words)
+                </span>
+              </div>
             </div>
-            <div className="w-full bg-indigo-200/60 h-2 rounded-full overflow-hidden">
+
+            {/* Status / Currently Processing Word Card */}
+            <div className="bg-white p-3.5 rounded-xl border border-indigo-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3 shadow-2xs">
+              <div className="flex items-center gap-3">
+                <div
+                  className={`p-2 rounded-lg ${
+                    isEnriching
+                      ? "bg-indigo-50 text-indigo-600"
+                      : "bg-emerald-50 text-emerald-600"
+                  }`}
+                >
+                  {isEnriching ? (
+                    <Activity size={18} className="animate-pulse" />
+                  ) : (
+                    <Check size={18} />
+                  )}
+                </div>
+                <div>
+                  <span className="text-[10px] font-black uppercase tracking-wider text-gray-400 block">
+                    {isEnriching ? "Current Word" : "Status"}
+                  </span>
+                  <span className="text-base font-black text-gray-900 capitalize tracking-tight">
+                    {isEnriching
+                      ? telemetry.activeWord || "Initializing..."
+                      : "All Words Enriched & Ready"}
+                  </span>
+                </div>
+              </div>
+
               <div
-                className="bg-indigo-600 h-full rounded-full transition-all duration-300"
-                style={{
-                  width: `${progress.total > 0 ? (progress.current / progress.total) * 100 : 0}%`,
-                }}
-              />
+                className={`flex items-center gap-2 text-xs font-semibold px-3 py-1.5 rounded-lg border ${
+                  isEnriching
+                    ? "text-indigo-700 bg-indigo-50/80 border-indigo-100/60"
+                    : "text-emerald-800 bg-emerald-50 border-emerald-200"
+                }`}
+              >
+                {isEnriching && (
+                  <Loader2
+                    size={13}
+                    className="animate-spin text-indigo-600 flex-shrink-0"
+                  />
+                )}
+                <span className="truncate max-w-md">
+                  {isEnriching
+                    ? telemetry.activePhaseLabel || "Processing..."
+                    : `Retained until saved to ${selectedBook || mediaLabel.toLowerCase()}.`}
+                </span>
+              </div>
             </div>
+
+            {/* Progress bar */}
+            <div className="space-y-1.5">
+              <div className="w-full bg-indigo-100/80 h-2.5 rounded-full overflow-hidden p-0.5 border border-indigo-200/50">
+                <div
+                  className="bg-gradient-to-r from-indigo-500 via-purple-500 to-emerald-500 h-full rounded-full transition-all duration-300 shadow-xs"
+                  style={{
+                    width: `${
+                      telemetry.total > 0
+                        ? (telemetry.current / telemetry.total) * 100
+                        : 0
+                    }%`,
+                  }}
+                />
+              </div>
+            </div>
+
+            {/* Telemetry Stats Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-[11px]">
+              <div className="bg-white/80 p-2.5 rounded-xl border border-indigo-100/80 flex items-center gap-2">
+                <Zap size={14} className="text-amber-500 flex-shrink-0" />
+                <div>
+                  <span className="text-gray-400 font-bold block text-[9px] uppercase">
+                    Cache Hits
+                  </span>
+                  <span className="font-extrabold text-gray-800">
+                    {telemetry.cachedCount} (
+                    {telemetry.current > 0
+                      ? Math.round(
+                          (telemetry.cachedCount / telemetry.current) * 100,
+                        )
+                      : 0}
+                    %)
+                  </span>
+                </div>
+              </div>
+
+              <div className="bg-white/80 p-2.5 rounded-xl border border-indigo-100/80 flex items-center gap-2">
+                <Globe size={14} className="text-indigo-500 flex-shrink-0" />
+                <div>
+                  <span className="text-gray-400 font-bold block text-[9px] uppercase">
+                    API Fetches
+                  </span>
+                  <span className="font-extrabold text-gray-800">
+                    {telemetry.apiCount}
+                  </span>
+                </div>
+              </div>
+
+              <div className="bg-white/80 p-2.5 rounded-xl border border-indigo-100/80 flex items-center gap-2">
+                <Timer size={14} className="text-purple-500 flex-shrink-0" />
+                <div>
+                  <span className="text-gray-400 font-bold block text-[9px] uppercase">
+                    Elapsed Time
+                  </span>
+                  <span className="font-extrabold text-gray-800 font-mono">
+                    {telemetry.elapsedMs > 0
+                      ? `${(telemetry.elapsedMs / 1000).toFixed(1)}s`
+                      : "0s"}
+                  </span>
+                </div>
+              </div>
+
+              <div className="bg-white/80 p-2.5 rounded-xl border border-indigo-100/80 flex items-center gap-2">
+                <Activity
+                  size={14}
+                  className="text-emerald-500 flex-shrink-0"
+                />
+                <div>
+                  <span className="text-gray-400 font-bold block text-[9px] uppercase">
+                    Avg Speed
+                  </span>
+                  <span className="font-extrabold text-gray-800 font-mono">
+                    {telemetry.current > 0 && telemetry.elapsedMs > 0
+                      ? `${Math.round(
+                          telemetry.elapsedMs / telemetry.current,
+                        )}ms/word`
+                      : "—"}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Detailed Words Origin Breakdown: Specific words from cache vs APIs */}
+            <div className="pt-2 border-t border-indigo-100/60 space-y-2.5">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-black uppercase tracking-wider text-indigo-950">
+                  Cache vs API Word Audit
+                </span>
+                <span className="text-[10px] text-gray-500 font-medium">
+                  Origin breakdown of all {telemetry.total} words
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {/* Words from Persistent Cache */}
+                <div className="bg-amber-50/60 p-3 rounded-xl border border-amber-200/70 space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-extrabold text-amber-900 flex items-center gap-1.5">
+                      <Zap size={13} className="text-amber-600" />
+                      Words from Cache ({telemetry.cachedWords.length})
+                    </span>
+                    <span className="text-[10px] font-bold text-amber-700 bg-white/80 px-2 py-0.5 rounded border border-amber-200 shadow-2xs">
+                      ⚡ Instant Hit
+                    </span>
+                  </div>
+                  {telemetry.cachedWords.length > 0 ? (
+                    <div className="flex flex-wrap gap-1.5 max-h-32 overflow-y-auto pt-1">
+                      {telemetry.cachedWords.map((w, idx) => (
+                        <span
+                          key={idx}
+                          className="inline-flex items-center gap-1 px-2.5 py-1 bg-white text-amber-950 border border-amber-200/90 rounded-lg text-xs font-bold shadow-2xs capitalize"
+                        >
+                          <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+                          {w}
+                        </span>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-[11px] text-amber-800 italic pt-1">
+                      No words from cache. All were fetched new from APIs.
+                    </p>
+                  )}
+                </div>
+
+                {/* Words from Network APIs */}
+                <div className="bg-indigo-50/60 p-3 rounded-xl border border-indigo-200/70 space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-extrabold text-indigo-950 flex items-center gap-1.5">
+                      <Globe size={13} className="text-indigo-600" />
+                      Words from APIs ({telemetry.apiWords.length})
+                    </span>
+                    <span className="text-[10px] font-bold text-indigo-700 bg-white/80 px-2 py-0.5 rounded border border-indigo-200 shadow-2xs">
+                      🌐 Newly Fetched
+                    </span>
+                  </div>
+                  {telemetry.apiWords.length > 0 ? (
+                    <div className="flex flex-wrap gap-1.5 max-h-32 overflow-y-auto pt-1">
+                      {telemetry.apiWords.map((item, idx) => (
+                        <span
+                          key={idx}
+                          className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-white text-indigo-950 border border-indigo-200/90 rounded-lg text-xs font-bold shadow-2xs capitalize"
+                        >
+                          <span className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
+                          <span>{item.word}</span>
+                          <span className="text-[10px] font-mono text-gray-400 font-normal">
+                            {item.durationMs}ms
+                          </span>
+                        </span>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-[11px] text-indigo-800 italic pt-1">
+                      All words were found instantly in persistent cache!
+                    </p>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* Live Per-Word Telemetry Log */}
+            {telemetry.recentLogs.length > 0 && (
+              <div className="space-y-1.5 pt-1">
+                <span className="text-[10px] font-black uppercase tracking-wider text-gray-400 block px-1">
+                  Recent Processed Words & Latencies
+                </span>
+                <div className="flex flex-wrap gap-1.5 max-h-24 overflow-y-auto p-1">
+                  {telemetry.recentLogs.map((log, lIdx) => (
+                    <div
+                      key={lIdx}
+                      className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-white rounded-lg border border-gray-200/80 text-[11px] shadow-2xs"
+                    >
+                      <span
+                        className={`w-1.5 h-1.5 rounded-full ${
+                          log.isCached ? "bg-amber-500" : "bg-emerald-500"
+                        }`}
+                      />
+                      <span className="font-bold text-gray-900 capitalize">
+                        {log.word}
+                      </span>
+                      <span className="text-gray-400 font-mono text-[10px]">
+                        {log.durationMs}ms
+                      </span>
+                      <span
+                        className={`text-[9px] font-extrabold uppercase px-1.5 py-0.5 rounded ${
+                          log.isCached
+                            ? "bg-amber-50 text-amber-700"
+                            : "bg-indigo-50 text-indigo-700"
+                        }`}
+                      >
+                        {log.isCached ? "Disk Cache" : "API"}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         )}
       </section>

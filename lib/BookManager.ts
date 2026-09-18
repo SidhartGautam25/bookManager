@@ -461,6 +461,57 @@ export class BookManager {
   }
 
   /**
+   * Update a word's meanings, variations, or spelling on a specific page
+   */
+  updateWord(
+    bookName: string,
+    pageNo: number,
+    originalWord: string,
+    updatedWordData: {
+      word?: string;
+      meanings: WordMeaning[];
+      variations?: string[];
+    },
+  ): boolean {
+    if (!this.bookExists(bookName)) {
+      throw new Error(`Book "${bookName}" does not exist`);
+    }
+
+    const bookPath = path.join(this.booksDir, bookName);
+    const pageFileName = `page_${pageNo}.json`;
+    const pageFilePath = path.join(bookPath, pageFileName);
+
+    if (!fs.existsSync(pageFilePath)) {
+      throw new Error(`Page ${pageNo} does not exist in book "${bookName}"`);
+    }
+
+    const fileContent = fs.readFileSync(pageFilePath, "utf-8");
+    const pageData: Word[] = JSON.parse(fileContent);
+
+    const normOriginal = originalWord.trim().toLowerCase();
+    const index = pageData.findIndex(
+      (item) => item.word.toLowerCase() === normOriginal,
+    );
+
+    if (index === -1) {
+      throw new Error(
+        `Word "${originalWord}" not found on page ${pageNo} of book "${bookName}"`,
+      );
+    }
+
+    const newWordName = (updatedWordData.word || originalWord).trim();
+    pageData[index] = {
+      word: newWordName,
+      meanings: updatedWordData.meanings,
+      variations:
+        updatedWordData.variations || pageData[index].variations || [],
+    };
+
+    fs.writeFileSync(pageFilePath, JSON.stringify(pageData, null, 2), "utf-8");
+    return true;
+  }
+
+  /**
    * Get total word count from a book
    */
   getTotalWordCount(bookName: string): number {

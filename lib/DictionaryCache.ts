@@ -17,10 +17,11 @@ export class DictionaryCacheManager {
   private initialized: boolean = false;
 
   constructor() {
-    this.cacheDir = path.join(process.cwd(), ".cache");
+    this.cacheDir = path.join(process.cwd(), "data", "dictinary");
     this.cacheFile = path.join(
       process.cwd(),
-      ".cache",
+      "data",
+      "dictinary",
       "dictionary_cache.json",
     );
   }
@@ -201,7 +202,7 @@ export class DictionaryCacheManager {
   }
 
   /**
-   * Save the current memory cache map to .cache/dictionary_cache.json on disk
+   * Save the current memory cache map to data/dictinary/dictionary_cache.json on disk
    */
   private saveToDisk(): void {
     try {

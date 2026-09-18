@@ -1,0 +1,142 @@
+[
+  {
+    "word": "rugged",
+    "variations": [
+      "rugged",
+      "rug"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Adjective",
+        "definition": "Broken into sharp or irregular points; uneven; not smooth; rough.; Not neat or regular; irregular, uneven.",
+        "examples": [
+          "Please put sharp objects on the rugged shelf.",
+          "The team rugged their operations until further instructions arrived from headquarters.",
+          "She was deeply rugged by the unexpected turn of events during the meeting."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To pull roughly or hastily; to plunder; to spoil; to tear.; (Past tense & participle) To cover with a rug.",
+        "examples": [
+          "The team rugged their operations until further instructions arrived from headquarters.",
+          "She was deeply rugged by the unexpected turn of events during the meeting.",
+          "He carefully rugged the remaining pieces into a cohesive structure."
+        ]
+      },
+      {
+        "partOfSpeech": "Symbol",
+        "definition": "(Past tense & participle) ISO 639-3 language code for Roviana.",
+        "examples": [
+          "The team rugged their operations until further instructions arrived from headquarters.",
+          "She was deeply rugged by the unexpected turn of events during the meeting.",
+          "He carefully rugged the remaining pieces into a cohesive structure."
+        ]
+      },
+      {
+        "partOfSpeech": "Noun",
+        "definition": "(Past tense & participle) A partial covering for a floor.; (Past tense & participle) A (usually thick) piece of fabric used for warmth (especially on a bed); a blanket.",
+        "examples": [
+          "The team rugged their operations until further instructions arrived from headquarters.",
+          "She was deeply rugged by the unexpected turn of events during the meeting.",
+          "He carefully rugged the remaining pieces into a cohesive structure."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "coverlet",
+    "variations": [
+      "coverlet"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "A blanket used as a bed covering, usually quilted.",
+        "examples": [
+          "The author skillfully incorporated coverlet to emphasize the underlying theme.",
+          "In every chapter, the presence of coverlet provided an unmistakable atmosphere.",
+          "Observers noted that coverlet altered the entire perspective of the scene."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "gasp",
+    "variations": [
+      "gasp"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "A short, sudden intake of breath.; : A draw or drag on a cigarette (or gasper).",
+        "examples": [
+          "The audience gave a gasp of astonishment.",
+          "I'm popping out for a gasp.",
+          "The author skillfully incorporated gasp to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To draw in the breath suddenly, as if from a shock.; To breathe laboriously or convulsively.",
+        "examples": [
+          "The audience gasped as the magician disappeared.",
+          "We were all gasping when we reached the summit.",
+          "The old man gasped his last few words."
+        ]
+      },
+      {
+        "partOfSpeech": "Interjection",
+        "definition": "The sound of a gasp.",
+        "examples": [
+          "Gasp! What will happen next?",
+          "The author skillfully incorporated gasp to emphasize the underlying theme.",
+          "In every chapter, the presence of gasp provided an unmistakable atmosphere."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "splendid",
+    "variations": [
+      "splendid"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Adjective",
+        "definition": "Possessing or displaying splendor; shining; very bright.; Gorgeous; magnificent; sumptuous; of remarkable beauty.",
+        "examples": [
+          "A splendid sun.",
+          "A splendid palace.",
+          "A splendid procession."
+        ]
+      }
+    ]
+  },
+  {
+    "word": "compartment",
+    "variations": [
+      "compartment"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "A room, or section, or chamber; One of the parts into which an area is subdivided.",
+        "examples": [
+          "Two men were seated in a well-lighted compartment of a third-class railway carriage.",
+          "Two men were seated in a well-lit compartment of a third-class railway carriage.",
+          "The author skillfully incorporated compartment to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To arrange in separate compartments.",
+        "examples": [
+          "The author skillfully incorporated compartment to emphasize the underlying theme.",
+          "In every chapter, the presence of compartment provided an unmistakable atmosphere.",
+          "Observers noted that compartment altered the entire perspective of the scene."
+        ]
+      }
+    ]
+  }
+]
