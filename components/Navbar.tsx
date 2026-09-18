@@ -11,6 +11,7 @@ import {
   BookOpen,
   Music,
   Film,
+  Tag,
   BarChart3,
 } from "lucide-react";
 
@@ -19,10 +20,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Add Word", href: "/add-word", icon: <PlusCircle size={17} /> },
+    { name: "Add Entry", href: "/add-word", icon: <PlusCircle size={17} /> },
     { name: "Books", href: "/book-list", icon: <BookOpen size={17} /> },
     { name: "Songs", href: "/song-list", icon: <Music size={17} /> },
     { name: "Movies", href: "/movie-list", icon: <Film size={17} /> },
+    { name: "Tags", href: "/tags", icon: <Tag size={17} /> },
     { name: "Analytics", href: "/analytics", icon: <BarChart3 size={17} /> },
   ];
 

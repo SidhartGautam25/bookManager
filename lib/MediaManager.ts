@@ -1,10 +1,17 @@
 import fs from "fs";
 import path from "path";
-import { Word, WordMeaning, WordOccurrence } from "@/lib/BookManager";
+import {
+  Word,
+  WordMeaning,
+  WordOccurrence,
+  SentenceEntry,
+  MediaEntry,
+} from "@/lib/BookManager";
 
 export interface MediaItemSummary {
   name: string;
   totalWords: number;
+  totalSentences?: number;
 }
 
 export interface MediaBatchEntry {
@@ -82,7 +89,7 @@ export class FlatMediaManager {
   }
 
   /**
-   * Get list of all media items with total word counts
+   * Get list of all media items with total word and sentence counts
    */
   getAllMedia(): MediaItemSummary[] {
     this.ensureMediaDirectory();
@@ -98,17 +105,19 @@ export class FlatMediaManager {
     return files.map((file) => {
       const name = file.replace(/\.json$/, "");
       const words = this.getWords(name);
+      const sentences = this.getSentences(name);
       return {
         name,
         totalWords: words.length,
+        totalSentences: sentences.length,
       };
     });
   }
 
   /**
-   * Get all words stored in a specific media file
+   * Get all raw entries (both words and sentences) stored in a specific media file
    */
-  getWords(itemName: string): Word[] {
+  getAllItems(itemName: string): MediaEntry[] {
     const filePath = this.getFilePath(itemName);
     if (!fs.existsSync(filePath)) {
       return [];
@@ -124,6 +133,29 @@ export class FlatMediaManager {
       console.error(`Error reading media file ${filePath}:`, e);
       return [];
     }
+  }
+
+  /**
+   * Get all words stored in a specific media file
+   */
+  getWords(itemName: string): Word[] {
+    const items = this.getAllItems(itemName);
+    return items.filter(
+      (item): item is Word =>
+        item.type !== "sentence" && typeof (item as Word).word === "string",
+    );
+  }
+
+  /**
+   * Get all sentences stored in a specific media file
+   */
+  getSentences(itemName: string): SentenceEntry[] {
+    const items = this.getAllItems(itemName);
+    return items.filter(
+      (item): item is SentenceEntry =>
+        item.type === "sentence" &&
+        typeof (item as SentenceEntry).sentence === "string",
+    );
   }
 
   /**
@@ -154,17 +186,17 @@ export class FlatMediaManager {
   setLyrics(itemName: string, lyrics: string): boolean {
     const cleanName = itemName.trim();
     this.ensureMediaDirectory();
-    const words = this.getWords(cleanName);
-    this.saveMediaFile(cleanName, words, lyrics || "");
+    const items = this.getAllItems(cleanName);
+    this.saveMediaFile(cleanName, items, lyrics || "");
     return true;
   }
 
   /**
-   * Internal helper to persist words and lyrics to disk
+   * Internal helper to persist all items and lyrics to disk
    */
   private saveMediaFile(
     itemName: string,
-    words: Word[],
+    items: MediaEntry[],
     explicitLyrics?: string,
   ): void {
     const cleanName = itemName.trim();
@@ -177,11 +209,11 @@ export class FlatMediaManager {
     if (currentLyrics && currentLyrics.trim()) {
       const payload = {
         lyrics: currentLyrics,
-        words,
+        words: items,
       };
       fs.writeFileSync(filePath, JSON.stringify(payload, null, 2), "utf-8");
     } else {
-      fs.writeFileSync(filePath, JSON.stringify(words, null, 2), "utf-8");
+      fs.writeFileSync(filePath, JSON.stringify(items, null, 2), "utf-8");
     }
   }
 
@@ -202,22 +234,30 @@ export class FlatMediaManager {
 
     this.ensureMediaDirectory();
 
-    const words = this.getWords(cleanName);
+    const items = this.getAllItems(cleanName);
 
     // Check for duplicate word
-    if (words.some((w) => w.word.toLowerCase() === cleanWord.toLowerCase())) {
+    if (
+      items.some(
+        (w) =>
+          w.type !== "sentence" &&
+          (w as Word).word &&
+          (w as Word).word.toLowerCase() === cleanWord.toLowerCase(),
+      )
+    ) {
       throw new Error(
         `Word "${cleanWord}" already exists in ${this.mediaType} "${cleanName}"`,
       );
     }
 
-    words.push({
+    items.push({
+      type: "word",
       word: cleanWord,
       variations: variations || [],
       meanings,
     });
 
-    this.saveMediaFile(cleanName, words);
+    this.saveMediaFile(cleanName, items);
     return true;
   }
 
@@ -241,15 +281,18 @@ export class FlatMediaManager {
       errors: [],
     };
 
-    const words = this.getWords(cleanName);
+    const items = this.getAllItems(cleanName);
     let modified = false;
 
     for (const entry of entries) {
       const cleanWord = entry.word.trim();
       if (!cleanWord) continue;
 
-      const exists = words.some(
-        (w) => w.word.toLowerCase() === cleanWord.toLowerCase(),
+      const exists = items.some(
+        (w) =>
+          w.type !== "sentence" &&
+          (w as Word).word &&
+          (w as Word).word.toLowerCase() === cleanWord.toLowerCase(),
       );
 
       if (exists) {
@@ -264,7 +307,8 @@ export class FlatMediaManager {
         }
       }
 
-      words.push({
+      items.push({
+        type: "word",
         word: cleanWord,
         variations: entry.variations || [],
         meanings: entry.meanings || [],
@@ -274,7 +318,7 @@ export class FlatMediaManager {
     }
 
     if (modified || !fs.existsSync(filePath) || lyrics !== undefined) {
-      this.saveMediaFile(cleanName, words, lyrics);
+      this.saveMediaFile(cleanName, items, lyrics);
     }
 
     return summary;
@@ -292,12 +336,18 @@ export class FlatMediaManager {
       );
     }
 
-    const words = this.getWords(cleanName);
-    const filtered = words.filter(
-      (w) => w.word.toLowerCase() !== wordToDelete.trim().toLowerCase(),
+    const items = this.getAllItems(cleanName);
+    const normDelete = wordToDelete.trim().toLowerCase();
+    const filtered = items.filter(
+      (w) =>
+        !(
+          w.type !== "sentence" &&
+          (w as Word).word &&
+          (w as Word).word.toLowerCase() === normDelete
+        ),
     );
 
-    if (filtered.length === words.length) {
+    if (filtered.length === items.length) {
       return false; // Word wasn't found
     }
 
@@ -325,9 +375,14 @@ export class FlatMediaManager {
       );
     }
 
-    const words = this.getWords(cleanName);
+    const items = this.getAllItems(cleanName);
     const normOriginal = originalWord.trim().toLowerCase();
-    const index = words.findIndex((w) => w.word.toLowerCase() === normOriginal);
+    const index = items.findIndex(
+      (w) =>
+        w.type !== "sentence" &&
+        (w as Word).word &&
+        (w as Word).word.toLowerCase() === normOriginal,
+    );
 
     if (index === -1) {
       throw new Error(
@@ -335,14 +390,149 @@ export class FlatMediaManager {
       );
     }
 
+    const existingWord = items[index] as Word;
     const newWordName = (updatedWordData.word || originalWord).trim();
-    words[index] = {
+    items[index] = {
+      type: "word",
       word: newWordName,
       meanings: updatedWordData.meanings,
-      variations: updatedWordData.variations || words[index].variations || [],
+      variations: updatedWordData.variations || existingWord.variations || [],
     };
 
-    this.saveMediaFile(cleanName, words);
+    this.saveMediaFile(cleanName, items);
+    return true;
+  }
+
+  /**
+   * Add a sentence to a media file
+   */
+  addSentence(
+    itemName: string,
+    sentence: string,
+    meaning?: string,
+    tag?: string,
+  ): boolean {
+    const cleanName = itemName.trim();
+    const cleanSentence = sentence.trim();
+    if (!cleanSentence) {
+      throw new Error("Sentence cannot be empty");
+    }
+
+    this.ensureMediaDirectory();
+    const items = this.getAllItems(cleanName);
+
+    const normSentence = cleanSentence.toLowerCase();
+    if (
+      items.some(
+        (item) =>
+          item.type === "sentence" &&
+          (item as SentenceEntry).sentence.trim().toLowerCase() ===
+            normSentence,
+      )
+    ) {
+      throw new Error(
+        `Sentence already exists in ${this.mediaType} "${cleanName}"`,
+      );
+    }
+
+    const cleanTag = tag?.trim() || "";
+    const sentenceEntry: SentenceEntry = {
+      type: "sentence",
+      sentence: cleanSentence,
+      meaning: meaning?.trim() || "",
+      tag: cleanTag,
+      tags: cleanTag ? [cleanTag] : [],
+      createdAt: new Date().toISOString(),
+    };
+
+    items.push(sentenceEntry);
+    this.saveMediaFile(cleanName, items);
+    return true;
+  }
+
+  /**
+   * Update a sentence in a media file
+   */
+  updateSentence(
+    itemName: string,
+    originalSentence: string,
+    updatedData: {
+      sentence?: string;
+      meaning?: string;
+      tag?: string;
+    },
+  ): boolean {
+    const cleanName = itemName.trim();
+    const filePath = this.getFilePath(cleanName);
+    if (!fs.existsSync(filePath)) {
+      throw new Error(
+        `${this.mediaType === "song" ? "Song" : "Movie"} "${cleanName}" does not exist`,
+      );
+    }
+
+    const items = this.getAllItems(cleanName);
+    const normOriginal = originalSentence.trim().toLowerCase();
+    const index = items.findIndex(
+      (item) =>
+        item.type === "sentence" &&
+        (item as SentenceEntry).sentence.trim().toLowerCase() === normOriginal,
+    );
+
+    if (index === -1) {
+      throw new Error(`Sentence not found in ${this.mediaType} "${cleanName}"`);
+    }
+
+    const existing = items[index] as SentenceEntry;
+    const newSentenceText = updatedData.sentence
+      ? updatedData.sentence.trim()
+      : existing.sentence;
+    const cleanTag =
+      updatedData.tag !== undefined
+        ? updatedData.tag.trim()
+        : existing.tag || "";
+
+    items[index] = {
+      ...existing,
+      sentence: newSentenceText,
+      meaning:
+        updatedData.meaning !== undefined
+          ? updatedData.meaning.trim()
+          : existing.meaning,
+      tag: cleanTag,
+      tags: cleanTag ? [cleanTag] : [],
+    };
+
+    this.saveMediaFile(cleanName, items);
+    return true;
+  }
+
+  /**
+   * Delete a sentence from a media file
+   */
+  deleteSentence(itemName: string, sentenceToDelete: string): boolean {
+    const cleanName = itemName.trim();
+    const filePath = this.getFilePath(cleanName);
+    if (!fs.existsSync(filePath)) {
+      throw new Error(
+        `${this.mediaType === "song" ? "Song" : "Movie"} "${cleanName}" does not exist`,
+      );
+    }
+
+    const items = this.getAllItems(cleanName);
+    const normDelete = sentenceToDelete.trim().toLowerCase();
+    const filtered = items.filter(
+      (item) =>
+        !(
+          item.type === "sentence" &&
+          (item as SentenceEntry).sentence.trim().toLowerCase() === normDelete
+        ),
+    );
+
+    if (filtered.length === items.length) {
+      return false;
+    }
+
+    this.saveMediaFile(cleanName, filtered);
     return true;
   }
 
@@ -366,7 +556,9 @@ export class FlatMediaManager {
     if (!normalized) return null;
 
     const words = this.getWords(itemName);
-    const found = words.find((w) => w.word.toLowerCase() === normalized);
+    const found = words.find(
+      (w) => w.word && w.word.toLowerCase() === normalized,
+    );
 
     if (!found) return null;
 

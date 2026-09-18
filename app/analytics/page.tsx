@@ -31,7 +31,8 @@ interface WordFrequencyItem {
 }
 
 interface RawWordItem {
-  word: string;
+  word?: string;
+  type?: string;
   variations?: string[];
 }
 
@@ -101,8 +102,11 @@ export default function AnalyticsPage() {
 
                 wordsData.data.forEach((page: RawPageItem) => {
                   if (Array.isArray(page.words)) {
-                    totalWords += page.words.length;
-                    allWordsEntries.push(...page.words);
+                    const onlyWords = page.words.filter(
+                      (w) => w.type !== "sentence" && Boolean(w.word),
+                    );
+                    totalWords += onlyWords.length;
+                    allWordsEntries.push(...onlyWords);
                   }
                 });
                 stats.push({
@@ -128,7 +132,9 @@ export default function AnalyticsPage() {
               const wordsData = await wordsRes.json();
 
               if (wordsData.success && Array.isArray(wordsData.data)) {
-                const wordsList: RawWordItem[] = wordsData.data;
+                const wordsList: RawWordItem[] = wordsData.data.filter(
+                  (w: RawWordItem) => w.type !== "sentence" && Boolean(w.word),
+                );
                 allWordsEntries.push(...wordsList);
                 stats.push({
                   name: song.name,
@@ -153,7 +159,9 @@ export default function AnalyticsPage() {
               const wordsData = await wordsRes.json();
 
               if (wordsData.success && Array.isArray(wordsData.data)) {
-                const wordsList: RawWordItem[] = wordsData.data;
+                const wordsList: RawWordItem[] = wordsData.data.filter(
+                  (w: RawWordItem) => w.type !== "sentence" && Boolean(w.word),
+                );
                 allWordsEntries.push(...wordsList);
                 stats.push({
                   name: movie.name,
@@ -177,6 +185,7 @@ export default function AnalyticsPage() {
         const canonicalMap: Record<string, string> = {};
 
         allWordsEntries.forEach((item) => {
+          if (!item.word) return;
           const mainWord = item.word.toLowerCase().trim();
           const variations = (item.variations || []).map((v) =>
             v.toLowerCase().trim(),
@@ -193,6 +202,7 @@ export default function AnalyticsPage() {
         });
 
         allWordsEntries.forEach((item) => {
+          if (!item.word) return;
           const mainWord = item.word.toLowerCase().trim();
           const canonical = canonicalMap[mainWord] || mainWord;
           wordCounts[canonical] = (wordCounts[canonical] || 0) + 1;
@@ -250,13 +260,22 @@ export default function AnalyticsPage() {
           let wordsList: RawWordItem[] = [];
           if (itemType === "book") {
             data.data.forEach((p: RawPageItem) => {
-              if (Array.isArray(p.words)) wordsList.push(...p.words);
+              if (Array.isArray(p.words)) {
+                wordsList.push(
+                  ...p.words.filter(
+                    (w) => w.type !== "sentence" && Boolean(w.word),
+                  ),
+                );
+              }
             });
           } else {
-            wordsList = data.data;
+            wordsList = (data.data as RawWordItem[]).filter(
+              (w) => w.type !== "sentence" && Boolean(w.word),
+            );
           }
 
           wordsList.forEach((item) => {
+            if (!item.word) return;
             const mainWord = item.word.toLowerCase().trim();
             const variations = (item.variations || []).map((v) =>
               v.toLowerCase().trim(),
@@ -273,6 +292,7 @@ export default function AnalyticsPage() {
           });
 
           wordsList.forEach((item) => {
+            if (!item.word) return;
             const mainWord = item.word.toLowerCase().trim();
             const canonical = canonicalMap[mainWord] || mainWord;
             wordCounts[canonical] = (wordCounts[canonical] || 0) + 1;

@@ -16,10 +16,14 @@ import {
   Plus,
   Hash,
   Sparkles,
+  Quote,
+  Tag as TagIcon,
+  Check,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import BatchImport from "@/components/BatchImport";
 import { fetchComprehensiveDictionary, MeaningItem } from "@/lib/dictionary";
+import { TagItem } from "@/lib/TagManager";
 
 type ExistingWordData = {
   found: boolean;
@@ -33,12 +37,24 @@ type ExistingWordData = {
 
 export default function AddWordPage() {
   const [mediaType, setMediaType] = useState<"book" | "song" | "movie">("book");
-  const [entryMode, setEntryMode] = useState<"single" | "batch">("batch");
+  const [entryMode, setEntryMode] = useState<"single" | "batch" | "sentence">(
+    "batch",
+  );
   const [mediaItems, setMediaItems] = useState<string[]>([]);
   const [selectedItem, setSelectedItem] = useState<string>("");
   const [newItemName, setNewItemName] = useState<string>("");
   const [showNewItemInput, setShowNewItemInput] = useState<boolean>(false);
   const [word, setWord] = useState<string>("");
+
+  // Sentence Mode State
+  const [sentenceText, setSentenceText] = useState<string>("");
+  const [sentenceMeaning, setSentenceMeaning] = useState<string>("");
+  const [sentenceTag, setSentenceTag] = useState<string>("");
+  const [tagsList, setTagsList] = useState<TagItem[]>([]);
+  const [showNewTagInput, setShowNewTagInput] = useState<boolean>(false);
+  const [newTagName, setNewTagName] = useState<string>("");
+  const [newTagColor, setNewTagColor] = useState<string>("indigo");
+  const [creatingTag, setCreatingTag] = useState<boolean>(false);
 
   const [pageNo, setPageNo] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
@@ -395,6 +411,97 @@ export default function AddWordPage() {
     }
   };
 
+  useEffect(() => {
+    if (entryMode === "sentence") {
+      fetch("/api/tags")
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.success && Array.isArray(data.tags)) {
+            setTagsList(data.tags);
+          }
+        })
+        .catch((err) => console.error("Error loading tags:", err));
+    }
+  }, [entryMode]);
+
+  const handleCreateInlineTag = async () => {
+    if (!newTagName.trim()) return;
+    setCreatingTag(true);
+    try {
+      const res = await fetch("/api/tags", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: newTagName.trim(), color: newTagColor }),
+      });
+      const data = await res.json();
+      if (data.success && data.tag) {
+        setTagsList((prev) => [...prev, data.tag]);
+        setSentenceTag(data.tag.name);
+        setNewTagName("");
+        setShowNewTagInput(false);
+      } else {
+        setMessage(data.error || "Failed to create tag");
+        setMessageType("error");
+      }
+    } catch {
+      setMessage("Failed to create tag");
+      setMessageType("error");
+    } finally {
+      setCreatingTag(false);
+    }
+  };
+
+  const handleAddSentence = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!selectedItem) {
+      setMessage(`Please select or create a ${mediaLabel.toLowerCase()}`);
+      setMessageType("error");
+      return;
+    }
+    if (!sentenceText.trim()) {
+      setMessage("Sentence text is required");
+      setMessageType("error");
+      return;
+    }
+    if (mediaType === "book" && !pageNo.trim()) {
+      setMessage("Page number is required for book entries");
+      setMessageType("error");
+      return;
+    }
+
+    setLoading(true);
+    try {
+      const res = await fetch("/api/sentences", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          mediaType,
+          mediaName: selectedItem,
+          pageNo: mediaType === "book" ? parseInt(pageNo, 10) : undefined,
+          sentence: sentenceText.trim(),
+          meaning: sentenceMeaning.trim(),
+          tag: sentenceTag.trim(),
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setMessage(`Sentence added successfully to ${selectedItem}!`);
+        setMessageType("success");
+        setSentenceText("");
+        setSentenceMeaning("");
+        setSentenceTag("");
+      } else {
+        setMessage(data.error || "Failed to add sentence");
+        setMessageType("error");
+      }
+    } catch {
+      setMessage("Error adding sentence");
+      setMessageType("error");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
@@ -457,13 +564,13 @@ export default function AddWordPage() {
             </div>
           </div>
 
-          {/* Mode Switcher: Batch vs Single */}
+          {/* Mode Switcher: Batch vs Single vs Sentence */}
           <div className="flex justify-center">
-            <div className="inline-flex p-1 rounded-2xl bg-gray-200/70 border border-gray-200 shadow-2xs">
+            <div className="inline-flex p-1 rounded-2xl bg-gray-200/70 border border-gray-200 shadow-2xs gap-1">
               <button
                 type="button"
                 onClick={() => setEntryMode("batch")}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold transition-all ${
+                className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                   entryMode === "batch"
                     ? "bg-indigo-600 text-white shadow-sm"
                     : "text-gray-600 hover:text-gray-900"
@@ -476,7 +583,7 @@ export default function AddWordPage() {
               <button
                 type="button"
                 onClick={() => setEntryMode("single")}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold transition-all ${
+                className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                   entryMode === "single"
                     ? "bg-white text-indigo-700 shadow-sm"
                     : "text-gray-600 hover:text-gray-900"
@@ -484,6 +591,18 @@ export default function AddWordPage() {
               >
                 <PlusCircle size={15} />
                 Single Word Entry
+              </button>
+              <button
+                type="button"
+                onClick={() => setEntryMode("sentence")}
+                className={`flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                  entryMode === "sentence"
+                    ? "bg-indigo-600 text-white shadow-sm"
+                    : "text-gray-600 hover:text-gray-900"
+                }`}
+              >
+                <Quote size={15} />
+                Sentence Entry (with Tag)
               </button>
             </div>
           </div>
@@ -518,6 +637,297 @@ export default function AddWordPage() {
             }}
             mediaType={mediaType}
           />
+        ) : entryMode === "sentence" ? (
+          <div className="space-y-8">
+            {/* Step 1: Media Item Management Card */}
+            <section className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+              <div className="p-6 md:p-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="bg-indigo-100 p-2 rounded-lg text-indigo-600">
+                    {mediaType === "song" ? (
+                      <Music size={20} />
+                    ) : mediaType === "movie" ? (
+                      <Film size={20} />
+                    ) : (
+                      <Book size={20} />
+                    )}
+                  </div>
+                  <h2 className="text-xl font-bold text-gray-800">
+                    Step 1: Choose Your {mediaLabel}
+                  </h2>
+                </div>
+
+                {!showNewItemInput ? (
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <select
+                      value={selectedItem}
+                      onChange={(e) => {
+                        setSelectedItem(e.target.value);
+                        setShowNewItemInput(false);
+                      }}
+                      className="flex-1 block w-full px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all outline-none text-gray-700"
+                    >
+                      <option value="">
+                        -- Select an existing {mediaLabel.toLowerCase()} --
+                      </option>
+                      {mediaItems.map((item) => (
+                        <option key={item} value={item}>
+                          {item}
+                        </option>
+                      ))}
+                    </select>
+                    <button
+                      type="button"
+                      onClick={() => setShowNewItemInput(true)}
+                      className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white border border-gray-200 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 transition-colors shadow-sm"
+                    >
+                      <BookPlus size={18} />
+                      New {mediaLabel}
+                    </button>
+                  </div>
+                ) : (
+                  <div className="flex flex-col sm:flex-row gap-3 animate-in zoom-in-95 duration-200">
+                    <input
+                      type="text"
+                      value={newItemName}
+                      onChange={(e) => setNewItemName(e.target.value)}
+                      placeholder={`Enter unique ${mediaLabel.toLowerCase()} name`}
+                      className="flex-1 px-4 py-3 rounded-xl border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 transition-all outline-none text-black"
+                    />
+                    <div className="flex gap-2">
+                      <button
+                        type="button"
+                        onClick={handleCreateNewItem}
+                        disabled={loading}
+                        className="flex-1 sm:flex-none px-6 py-3 bg-indigo-600 text-white font-semibold rounded-xl hover:bg-indigo-700 disabled:opacity-50 transition-all shadow-md shadow-indigo-100"
+                      >
+                        {loading ? (
+                          <Loader2 className="animate-spin" size={18} />
+                        ) : (
+                          "Create"
+                        )}
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setShowNewItemInput(false);
+                          setNewItemName("");
+                        }}
+                        className="px-4 py-3 border border-gray-200 text-gray-600 font-semibold rounded-xl hover:bg-gray-50"
+                      >
+                        Cancel
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </section>
+
+            {/* Step 2: Sentence Details Card */}
+            {selectedItem && (
+              <form
+                onSubmit={handleAddSentence}
+                className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden animate-in fade-in slide-in-from-bottom-4 duration-300"
+              >
+                <div className="p-6 md:p-8 space-y-6">
+                  <div className="flex items-center gap-3">
+                    <div className="bg-indigo-100 p-2 rounded-lg text-indigo-600">
+                      <Quote size={20} />
+                    </div>
+                    <div>
+                      <h2 className="text-xl font-bold text-gray-800">
+                        Step 2: Sentence Details
+                      </h2>
+                      <p className="text-xs text-gray-400">
+                        Add a quote, dialogue, or philosophical line. No
+                        dictionary lookups needed.
+                      </p>
+                    </div>
+                  </div>
+
+                  {mediaType === "book" && (
+                    <div className="space-y-2">
+                      <label className="block text-xs font-bold uppercase tracking-wider text-gray-700">
+                        Page Number <span className="text-red-500">*</span>
+                      </label>
+                      <input
+                        type="number"
+                        min="1"
+                        value={pageNo}
+                        onChange={(e) => setPageNo(e.target.value)}
+                        placeholder="e.g. 1"
+                        required
+                        className="w-full sm:w-48 px-4 py-2.5 rounded-xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 outline-none text-sm text-gray-900"
+                      />
+                    </div>
+                  )}
+
+                  {/* Sentence Text */}
+                  <div className="space-y-2">
+                    <label className="block text-xs font-bold uppercase tracking-wider text-gray-700">
+                      Sentence Text <span className="text-red-500">*</span>
+                    </label>
+                    <textarea
+                      value={sentenceText}
+                      onChange={(e) => setSentenceText(e.target.value)}
+                      rows={4}
+                      required
+                      placeholder="Enter the full sentence here..."
+                      className="w-full px-4 py-3 rounded-2xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 outline-none text-base text-gray-900 leading-relaxed resize-none"
+                    />
+                  </div>
+
+                  {/* Meaning / Notes */}
+                  <div className="space-y-2">
+                    <label className="block text-xs font-bold uppercase tracking-wider text-gray-700">
+                      Meaning / Context / Translation{" "}
+                      <span className="text-gray-400 font-normal">
+                        (Optional)
+                      </span>
+                    </label>
+                    <textarea
+                      value={sentenceMeaning}
+                      onChange={(e) => setSentenceMeaning(e.target.value)}
+                      rows={2}
+                      placeholder="Add an explanation, translation, or personal notes on this sentence..."
+                      className="w-full px-4 py-3 rounded-2xl border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-indigo-500 outline-none text-sm text-gray-900 resize-none"
+                    />
+                  </div>
+
+                  {/* Tag Selector (Only created tags) */}
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <label className="block text-xs font-bold uppercase tracking-wider text-gray-700 flex items-center gap-1.5">
+                        <TagIcon size={14} className="text-indigo-600" />
+                        <span>Sentence Tag</span>
+                        <span className="text-gray-400 font-normal text-[11px]">
+                          (Only created tags)
+                        </span>
+                      </label>
+                      {!showNewTagInput && (
+                        <button
+                          type="button"
+                          onClick={() => setShowNewTagInput(true)}
+                          className="inline-flex items-center gap-1 text-xs font-bold text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer"
+                        >
+                          <Plus size={14} />
+                          <span>Create New Tag</span>
+                        </button>
+                      )}
+                    </div>
+
+                    {showNewTagInput && (
+                      <div className="p-4 rounded-2xl bg-indigo-50/50 border border-indigo-100 space-y-3 animate-in fade-in duration-200">
+                        <div className="flex items-center justify-between">
+                          <span className="text-xs font-bold text-indigo-900">
+                            Create New Tag
+                          </span>
+                          <button
+                            type="button"
+                            onClick={() => setShowNewTagInput(false)}
+                            className="text-gray-400 hover:text-gray-600 text-xs"
+                          >
+                            Cancel
+                          </button>
+                        </div>
+                        <div className="flex gap-2">
+                          <input
+                            type="text"
+                            value={newTagName}
+                            onChange={(e) => setNewTagName(e.target.value)}
+                            placeholder="Tag name (e.g. Philosophical, Favorite Quotes)"
+                            className="flex-1 px-3 py-2 text-sm rounded-xl border border-gray-200 bg-white outline-none focus:ring-2 focus:ring-indigo-500 text-gray-900"
+                          />
+                          <select
+                            value={newTagColor}
+                            onChange={(e) => setNewTagColor(e.target.value)}
+                            className="px-3 py-2 text-sm rounded-xl border border-gray-200 bg-white outline-none text-gray-900"
+                          >
+                            <option value="indigo">Indigo</option>
+                            <option value="emerald">Emerald</option>
+                            <option value="amber">Amber</option>
+                            <option value="rose">Rose</option>
+                            <option value="violet">Violet</option>
+                            <option value="cyan">Cyan</option>
+                            <option value="blue">Blue</option>
+                          </select>
+                          <button
+                            type="button"
+                            onClick={handleCreateInlineTag}
+                            disabled={creatingTag || !newTagName.trim()}
+                            className="px-4 py-2 bg-indigo-600 text-white rounded-xl text-xs font-bold hover:bg-indigo-700 disabled:opacity-50 transition-colors"
+                          >
+                            {creatingTag ? (
+                              <Loader2 size={14} className="animate-spin" />
+                            ) : (
+                              "Save"
+                            )}
+                          </button>
+                        </div>
+                      </div>
+                    )}
+
+                    <div className="flex flex-wrap gap-2 pt-1 max-h-36 overflow-y-auto">
+                      <button
+                        type="button"
+                        onClick={() => setSentenceTag("")}
+                        className={`px-3 py-1.5 rounded-xl text-xs font-semibold border transition-all cursor-pointer ${
+                          sentenceTag === ""
+                            ? "bg-gray-800 text-white border-gray-800 shadow-xs"
+                            : "bg-gray-50 text-gray-600 border-gray-200 hover:bg-gray-100"
+                        }`}
+                      >
+                        None
+                      </button>
+                      {tagsList.map((t) => {
+                        const isSelected =
+                          sentenceTag.toLowerCase() === t.name.toLowerCase();
+                        return (
+                          <button
+                            key={t.id}
+                            type="button"
+                            onClick={() => setSentenceTag(t.name)}
+                            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold border transition-all cursor-pointer ${
+                              isSelected
+                                ? "bg-indigo-50 text-indigo-700 border-2 border-indigo-200 shadow-sm ring-2 ring-indigo-200"
+                                : "bg-white text-gray-600 border-gray-200 hover:bg-gray-50"
+                            }`}
+                          >
+                            <span className="w-2 h-2 rounded-full bg-indigo-600" />
+                            <span>{t.name}</span>
+                            {isSelected && (
+                              <Check
+                                size={12}
+                                className="ml-0.5 text-indigo-600"
+                              />
+                            )}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                  {/* Submit Button */}
+                  <div className="pt-4 flex justify-end">
+                    <button
+                      type="submit"
+                      disabled={loading || !sentenceText.trim()}
+                      className="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm rounded-xl transition-all shadow-md active:scale-98 disabled:opacity-50 cursor-pointer"
+                    >
+                      {loading ? (
+                        <div className="flex items-center gap-2">
+                          <Loader2 className="animate-spin" size={16} />
+                          <span>Saving Sentence...</span>
+                        </div>
+                      ) : (
+                        `Add Sentence to ${mediaLabel}`
+                      )}
+                    </button>
+                  </div>
+                </div>
+              </form>
+            )}
+          </div>
         ) : (
           <div className="space-y-8">
             {/* Step 1: Media Item Management Card */}

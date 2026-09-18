@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, use } from "react";
+import { useState, useEffect, useMemo, use } from "react";
 import {
   Layout,
   Hash,
@@ -12,11 +12,17 @@ import {
   X,
   Pencil,
   Trash2,
+  Quote,
+  Tag as TagIcon,
+  Plus,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import WordEditModal from "@/components/WordEditModal";
+import SentenceEditModal from "@/components/SentenceEditModal";
+import AddSentenceModal from "@/components/AddSentenceModal";
 import { setCachedWord } from "@/lib/dictionary";
+import { SentenceEntry } from "@/lib/BookManager";
 
 interface WordMeaning {
   partOfSpeech: string;
@@ -57,6 +63,18 @@ export default function BookDetailsPage({
 
   const [selectedPage, setSelectedPage] = useState<number | null>(null);
   const [bookData, setBookData] = useState<PageData[]>([]);
+  const [sentencesData, setSentencesData] = useState<
+    { page: number; sentences: SentenceEntry[] }[]
+  >([]);
+  const [contentTypeFilter, setContentTypeFilter] = useState<
+    "all" | "words" | "sentences"
+  >("all");
+  const [isAddSentenceOpen, setIsAddSentenceOpen] = useState<boolean>(false);
+  const [editingSentence, setEditingSentence] = useState<SentenceEntry | null>(
+    null,
+  );
+  const [deletingSentence, setDeletingSentence] = useState<string | null>(null);
+
   const [loading, setLoading] = useState<boolean>(true);
   const [message, setMessage] = useState<string>("");
   const [messageType, setMessageType] = useState<"success" | "error">(
@@ -195,52 +213,205 @@ export default function BookDetailsPage({
     }
   };
 
+  const fetchBookData = async (showLoader = false) => {
+    if (showLoader) setLoading(true);
+    try {
+      const [wordsRes, sentRes] = await Promise.all([
+        fetch(`/api/words?bookName=${encodeURIComponent(selectedBook)}`),
+        fetch(
+          `/api/sentences?mediaType=book&mediaName=${encodeURIComponent(selectedBook)}`,
+        ),
+      ]);
+      const wordsData = await wordsRes.json();
+      const sentData = await sentRes.json();
+
+      if (wordsData.success) {
+        const sortedWords: PageData[] = wordsData.data || [];
+        setBookData(sortedWords);
+        const sortedSentences: { page: number; sentences: SentenceEntry[] }[] =
+          sentData.success && Array.isArray(sentData.data) ? sentData.data : [];
+        setSentencesData(sortedSentences);
+
+        const pageSet = new Set<number>();
+        sortedWords.forEach((p) => pageSet.add(p.page));
+        sortedSentences.forEach((p) => pageSet.add(p.page));
+        const allPages = Array.from(pageSet).sort((a, b) => a - b);
+
+        if (allPages.length > 0) {
+          setSelectedPage((prev) =>
+            prev && pageSet.has(prev) ? prev : allPages[0],
+          );
+        } else {
+          setSelectedPage(null);
+        }
+        setMessage("");
+      } else {
+        setMessage(wordsData.error || "Failed to load book data");
+        setMessageType("error");
+        setBookData([]);
+        setSentencesData([]);
+        setSelectedPage(null);
+      }
+    } catch {
+      setMessage("Error fetching book data");
+      setMessageType("error");
+      setBookData([]);
+      setSentencesData([]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
-    const fetchBookData = async () => {
-      setLoading(true);
+    let isMounted = true;
+    async function loadInitialBookData() {
       try {
-        const response = await fetch(
-          `/api/words?bookName=${encodeURIComponent(selectedBook)}`,
-        );
-        const data = await response.json();
-        if (data.success) {
-          const sortedData = data.data || [];
-          setBookData(sortedData);
-          if (sortedData.length > 0) {
-            setSelectedPage(sortedData[0].page);
+        const [wordsRes, sentRes] = await Promise.all([
+          fetch(`/api/words?bookName=${encodeURIComponent(selectedBook)}`),
+          fetch(
+            `/api/sentences?mediaType=book&mediaName=${encodeURIComponent(selectedBook)}`,
+          ),
+        ]);
+        const wordsData = await wordsRes.json();
+        const sentData = await sentRes.json();
+        if (!isMounted) return;
+
+        if (wordsData.success) {
+          const sortedWords: PageData[] = wordsData.data || [];
+          setBookData(sortedWords);
+          const sortedSentences: {
+            page: number;
+            sentences: SentenceEntry[];
+          }[] =
+            sentData.success && Array.isArray(sentData.data)
+              ? sentData.data
+              : [];
+          setSentencesData(sortedSentences);
+
+          const pageSet = new Set<number>();
+          sortedWords.forEach((p) => pageSet.add(p.page));
+          sortedSentences.forEach((p) => pageSet.add(p.page));
+          const unionPages = Array.from(pageSet).sort((a, b) => a - b);
+
+          if (unionPages.length > 0) {
+            setSelectedPage((prev) =>
+              prev && pageSet.has(prev) ? prev : unionPages[0],
+            );
           } else {
             setSelectedPage(null);
           }
-          setMessage("");
         } else {
-          setMessage(data.error);
+          setMessage(wordsData.error || "Failed to load book data");
           setMessageType("error");
           setBookData([]);
+          setSentencesData([]);
           setSelectedPage(null);
         }
       } catch {
-        setMessage("Error fetching book data");
-        setMessageType("error");
-        setBookData([]);
+        if (isMounted) {
+          setMessage("Error fetching book data");
+          setMessageType("error");
+          setBookData([]);
+          setSentencesData([]);
+        }
       } finally {
-        setLoading(false);
+        if (isMounted) setLoading(false);
       }
-    };
+    }
 
-    void fetchBookData();
+    void loadInitialBookData();
+    return () => {
+      isMounted = false;
+    };
   }, [selectedBook]);
 
-  const calculateStats = () => {
-    let totalWords = 0;
-    let totalPages = 0;
-    bookData.forEach((page) => {
-      totalWords += page.words.length;
-      totalPages++;
-    });
-    return { totalWords, totalPages };
+  const handleDeleteSentence = async (sentenceToDelete: string) => {
+    if (!selectedPage) return;
+    if (!confirm("Are you sure you want to delete this sentence?")) return;
+
+    setDeletingSentence(sentenceToDelete);
+    try {
+      const res = await fetch(
+        `/api/sentences?mediaType=book&mediaName=${encodeURIComponent(selectedBook)}&pageNo=${selectedPage}&sentence=${encodeURIComponent(sentenceToDelete)}`,
+        { method: "DELETE" },
+      );
+      const data = await res.json();
+      if (data.success) {
+        setSentencesData((prev) =>
+          prev.map((p) => {
+            if (p.page !== selectedPage) return p;
+            return {
+              ...p,
+              sentences: p.sentences.filter(
+                (s) =>
+                  s.sentence.trim().toLowerCase() !==
+                  sentenceToDelete.trim().toLowerCase(),
+              ),
+            };
+          }),
+        );
+        setMessage("Sentence removed successfully");
+        setMessageType("success");
+      } else {
+        setMessage(data.error || "Failed to delete sentence");
+        setMessageType("error");
+      }
+    } catch {
+      setMessage("Error deleting sentence");
+      setMessageType("error");
+    } finally {
+      setDeletingSentence(null);
+    }
   };
 
-  const stats = calculateStats();
+  const handleSaveEditedSentence = (updatedSentence: SentenceEntry) => {
+    if (!editingSentence || selectedPage === null) return;
+
+    setSentencesData((prev) =>
+      prev.map((p) => {
+        if (p.page !== selectedPage) return p;
+        return {
+          ...p,
+          sentences: p.sentences.map((s) =>
+            s.sentence.trim().toLowerCase() ===
+            editingSentence.sentence.trim().toLowerCase()
+              ? updatedSentence
+              : s,
+          ),
+        };
+      }),
+    );
+    setMessage("Sentence updated successfully!");
+    setMessageType("success");
+    setEditingSentence(null);
+  };
+
+  const allPagesList = useMemo(() => {
+    const pageSet = new Set<number>();
+    bookData.forEach((p) => pageSet.add(p.page));
+    sentencesData.forEach((p) => pageSet.add(p.page));
+    return Array.from(pageSet).sort((a, b) => a - b);
+  }, [bookData, sentencesData]);
+
+  const totalWords = useMemo(
+    () => bookData.reduce((sum, p) => sum + p.words.length, 0),
+    [bookData],
+  );
+
+  const totalSentences = useMemo(
+    () => sentencesData.reduce((sum, p) => sum + p.sentences.length, 0),
+    [sentencesData],
+  );
+
+  const currentPageWords = useMemo(
+    () => bookData.find((p) => p.page === selectedPage)?.words || [],
+    [bookData, selectedPage],
+  );
+
+  const currentPageSentences = useMemo(
+    () => sentencesData.find((p) => p.page === selectedPage)?.sentences || [],
+    [sentencesData, selectedPage],
+  );
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
@@ -279,7 +450,7 @@ export default function BookDetailsPage({
 
         <div className="flex flex-col lg:flex-row gap-8 items-start">
           {/* Collapsible Sidebar: Page Selector */}
-          {!loading && bookData.length > 0 && (
+          {!loading && allPagesList.length > 0 && (
             <aside
               className={`transition-all duration-300 flex-shrink-0 ${
                 isSidebarOpen ? "w-full lg:w-72 lg:block" : "hidden"
@@ -302,17 +473,17 @@ export default function BookDetailsPage({
                 </div>
 
                 <nav className="grid grid-cols-4 gap-2 max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
-                  {bookData.map((p) => (
+                  {allPagesList.map((p) => (
                     <button
-                      key={p.page}
-                      onClick={() => setSelectedPage(p.page)}
-                      className={`flex items-center justify-center p-3 rounded-xl text-center text-sm font-bold transition-all duration-200 ${
-                        selectedPage === p.page
+                      key={p}
+                      onClick={() => setSelectedPage(p)}
+                      className={`flex items-center justify-center p-3 rounded-xl text-center text-sm font-bold transition-all duration-200 cursor-pointer ${
+                        selectedPage === p
                           ? "bg-indigo-600 text-white shadow-md shadow-indigo-100"
                           : "bg-gray-50 text-gray-600 hover:bg-gray-100 hover:text-gray-900 border border-gray-100"
                       }`}
                     >
-                      <span>{p.page}</span>
+                      <span>{p}</span>
                     </button>
                   ))}
                 </nav>
@@ -325,7 +496,7 @@ export default function BookDetailsPage({
             {/* Book Header & Stats Card */}
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col xl:flex-row justify-between items-start xl:items-center gap-4">
               <div className="flex items-center gap-4">
-                {!isSidebarOpen && !loading && bookData.length > 0 && (
+                {!isSidebarOpen && !loading && allPagesList.length > 0 && (
                   <button
                     onClick={() => setIsSidebarOpen(true)}
                     className="p-2.5 bg-white text-gray-600 hover:text-indigo-600 hover:bg-indigo-50 rounded-xl transition-all border border-gray-200 shadow-sm"
@@ -334,7 +505,7 @@ export default function BookDetailsPage({
                     <Menu size={20} />
                   </button>
                 )}
-                {isSidebarOpen && !loading && bookData.length > 0 && (
+                {isSidebarOpen && !loading && allPagesList.length > 0 && (
                   <button
                     onClick={() => setIsSidebarOpen(false)}
                     className="p-2.5 bg-white text-gray-600 hover:text-indigo-600 hover:bg-indigo-50 rounded-xl transition-all border border-gray-200 shadow-sm hidden lg:block"
@@ -354,25 +525,93 @@ export default function BookDetailsPage({
                 </div>
               </div>
 
-              <div className="flex gap-4 w-full xl:w-auto">
-                <div className="flex-1 xl:flex-none px-4 py-2 bg-indigo-50 rounded-xl border border-indigo-100">
+              <div className="flex flex-wrap items-center gap-3 w-full xl:w-auto">
+                <div className="flex-1 sm:flex-none px-4 py-2 bg-indigo-50 rounded-xl border border-indigo-100">
                   <span className="block text-[10px] uppercase font-bold text-indigo-400 tracking-wider leading-none">
                     Total Words
                   </span>
                   <span className="text-lg font-black text-indigo-700">
-                    {stats.totalWords}
+                    {totalWords}
                   </span>
                 </div>
-                <div className="flex-1 xl:flex-none px-4 py-2 bg-indigo-50 rounded-xl border border-indigo-100">
-                  <span className="block text-[10px] uppercase font-bold text-indigo-400 tracking-wider leading-none">
+                <div className="flex-1 sm:flex-none px-4 py-2 bg-emerald-50 rounded-xl border border-emerald-100">
+                  <span className="block text-[10px] uppercase font-bold text-emerald-500 tracking-wider leading-none">
+                    Total Sentences
+                  </span>
+                  <span className="text-lg font-black text-emerald-700">
+                    {totalSentences}
+                  </span>
+                </div>
+                <div className="flex-1 sm:flex-none px-4 py-2 bg-violet-50 rounded-xl border border-violet-100">
+                  <span className="block text-[10px] uppercase font-bold text-violet-400 tracking-wider leading-none">
                     Total Pages
                   </span>
-                  <span className="text-lg font-black text-indigo-700">
-                    {stats.totalPages}
+                  <span className="text-lg font-black text-violet-700">
+                    {allPagesList.length}
                   </span>
                 </div>
+                <button
+                  type="button"
+                  onClick={() => setIsAddSentenceOpen(true)}
+                  className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-xs shadow-sm transition-all cursor-pointer"
+                >
+                  <Plus size={14} />
+                  <span>Add Sentence</span>
+                </button>
               </div>
             </div>
+
+            {/* Filter Toggle: All / Words / Sentences */}
+            {!loading && selectedPage !== null && (
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white px-5 py-3.5 rounded-2xl border border-gray-100 shadow-2xs">
+                <div className="flex items-center gap-2">
+                  <h3 className="text-lg font-bold text-gray-800">
+                    Page {selectedPage}
+                  </h3>
+                  <span className="text-xs text-gray-400 font-medium">
+                    ({currentPageWords.length} words,{" "}
+                    {currentPageSentences.length} sentences)
+                  </span>
+                </div>
+
+                <div className="inline-flex p-1 rounded-xl bg-gray-100 border border-gray-200">
+                  <button
+                    type="button"
+                    onClick={() => setContentTypeFilter("all")}
+                    className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                      contentTypeFilter === "all"
+                        ? "bg-white text-indigo-700 shadow-xs"
+                        : "text-gray-600 hover:text-gray-900"
+                    }`}
+                  >
+                    All ({currentPageWords.length + currentPageSentences.length}
+                    )
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setContentTypeFilter("words")}
+                    className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                      contentTypeFilter === "words"
+                        ? "bg-white text-indigo-700 shadow-xs"
+                        : "text-gray-600 hover:text-gray-900"
+                    }`}
+                  >
+                    Words ({currentPageWords.length})
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setContentTypeFilter("sentences")}
+                    className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                      contentTypeFilter === "sentences"
+                        ? "bg-white text-indigo-700 shadow-xs"
+                        : "text-gray-600 hover:text-gray-900"
+                    }`}
+                  >
+                    Sentences ({currentPageSentences.length})
+                  </button>
+                </div>
+              </div>
+            )}
 
             {loading ? (
               <div className="flex flex-col items-center justify-center py-20 bg-white rounded-2xl border border-dashed border-gray-200">
@@ -381,33 +620,35 @@ export default function BookDetailsPage({
                   size={32}
                 />
                 <p className="text-gray-500 font-medium">
-                  Fetching vocabulary data...
+                  Fetching vocabulary and sentences data...
                 </p>
               </div>
-            ) : bookData.length === 0 ? (
+            ) : allPagesList.length === 0 ? (
               <div className="text-center py-20 bg-white rounded-2xl border border-dashed border-gray-200">
                 <p className="text-gray-400">
-                  Empty book. Add some words to see them here.
+                  Empty book. Add some words or sentences to see them here.
                 </p>
               </div>
             ) : (
-              <div className="grid grid-cols-1 gap-6">
-                {bookData
-                  .filter((p) => p.page === selectedPage)
-                  .map((pageData) => (
-                    <div key={pageData.page} className="space-y-6">
-                      <div className="flex items-center justify-between mb-2">
-                        <h3 className="text-xl font-bold text-gray-800">
-                          Page {pageData.page}
-                        </h3>
-                        <span className="text-sm font-medium text-gray-400">
-                          {pageData.words.length} words
-                        </span>
-                      </div>
+              <div className="space-y-6">
+                {/* 1. Words List */}
+                {(contentTypeFilter === "all" ||
+                  contentTypeFilter === "words") &&
+                  currentPageWords.length > 0 && (
+                    <div className="space-y-4">
+                      {contentTypeFilter === "all" &&
+                        currentPageSentences.length > 0 && (
+                          <div className="flex items-center gap-2 px-1 pt-2">
+                            <Layout size={16} className="text-indigo-600" />
+                            <h4 className="text-xs font-black uppercase tracking-wider text-gray-400">
+                              Words ({currentPageWords.length})
+                            </h4>
+                          </div>
+                        )}
                       <div className="grid grid-cols-1 gap-6">
-                        {pageData.words.map((item, index) => (
+                        {currentPageWords.map((item, index) => (
                           <div
-                            key={index}
+                            key={`word-${index}`}
                             onClick={() => handleWordClick(item.word)}
                             className={`bg-white p-8 rounded-3xl border shadow-sm transition-all duration-300 group cursor-pointer ${
                               selectedWord === item.word
@@ -493,7 +734,121 @@ export default function BookDetailsPage({
                         ))}
                       </div>
                     </div>
-                  ))}
+                  )}
+
+                {/* 2. Sentences List */}
+                {(contentTypeFilter === "all" ||
+                  contentTypeFilter === "sentences") &&
+                  currentPageSentences.length > 0 && (
+                    <div className="space-y-4">
+                      {contentTypeFilter === "all" &&
+                        currentPageWords.length > 0 && (
+                          <div className="flex items-center gap-2 px-1 pt-4 border-t border-gray-200">
+                            <Quote size={16} className="text-indigo-600" />
+                            <h4 className="text-xs font-black uppercase tracking-wider text-gray-400">
+                              Sentences ({currentPageSentences.length})
+                            </h4>
+                          </div>
+                        )}
+                      <div className="grid grid-cols-1 gap-5">
+                        {currentPageSentences.map((sent, sIdx) => (
+                          <div
+                            key={`sentence-${sIdx}`}
+                            className="bg-white p-7 rounded-3xl border border-gray-100 shadow-sm hover:shadow-md hover:border-indigo-100 transition-all space-y-4"
+                          >
+                            <div className="flex items-center justify-between">
+                              <div className="flex items-center gap-2.5">
+                                <span className="font-mono text-xs font-black text-indigo-700 bg-indigo-50 border border-indigo-100 px-2.5 py-1 rounded-lg shadow-2xs">
+                                  #{sIdx + 1}
+                                </span>
+                                <span className="inline-flex items-center gap-1 text-[11px] font-extrabold uppercase px-2.5 py-1 rounded-md bg-indigo-50 text-indigo-700 border border-indigo-100 tracking-wider">
+                                  <Quote size={11} />
+                                  <span>Sentence</span>
+                                </span>
+                                {sent.tag && (
+                                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-extrabold border bg-indigo-50 text-indigo-700 border-indigo-200">
+                                    <TagIcon
+                                      size={12}
+                                      className="text-indigo-600"
+                                    />
+                                    <span>{sent.tag}</span>
+                                  </span>
+                                )}
+                              </div>
+
+                              <div className="flex items-center gap-1.5">
+                                <button
+                                  type="button"
+                                  onClick={() => setEditingSentence(sent)}
+                                  className="p-2 text-gray-400 hover:text-indigo-600 hover:bg-indigo-50 rounded-xl transition-colors"
+                                  title="Edit sentence"
+                                >
+                                  <Pencil size={16} />
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={() =>
+                                    handleDeleteSentence(sent.sentence)
+                                  }
+                                  disabled={deletingSentence === sent.sentence}
+                                  className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-xl transition-colors"
+                                  title="Remove sentence"
+                                >
+                                  {deletingSentence === sent.sentence ? (
+                                    <Loader2
+                                      size={16}
+                                      className="animate-spin"
+                                    />
+                                  ) : (
+                                    <Trash2 size={16} />
+                                  )}
+                                </button>
+                              </div>
+                            </div>
+
+                            <div className="relative pl-6 border-l-4 border-indigo-200">
+                              <Quote
+                                size={18}
+                                className="absolute -left-2.5 top-0 text-indigo-400 fill-indigo-100"
+                              />
+                              <p className="text-gray-900 text-lg sm:text-xl font-medium leading-relaxed italic">
+                                &ldquo;{sent.sentence}&rdquo;
+                              </p>
+                            </div>
+
+                            {sent.meaning && (
+                              <div className="bg-gray-50/70 p-4 rounded-2xl border border-gray-100 flex items-start gap-2.5">
+                                <Info
+                                  size={16}
+                                  className="text-indigo-500 mt-0.5 flex-shrink-0"
+                                />
+                                <div>
+                                  <span className="block text-[10px] font-black uppercase tracking-wider text-gray-400 mb-0.5">
+                                    Meaning & Context
+                                  </span>
+                                  <p className="text-gray-700 text-sm leading-relaxed">
+                                    {sent.meaning}
+                                  </p>
+                                </div>
+                              </div>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                {/* Empty filter message */}
+                {((contentTypeFilter === "words" &&
+                  currentPageWords.length === 0) ||
+                  (contentTypeFilter === "sentences" &&
+                    currentPageSentences.length === 0)) && (
+                  <div className="py-16 text-center bg-white rounded-2xl border border-dashed border-gray-200">
+                    <p className="text-gray-400 text-sm">
+                      No {contentTypeFilter} on page {selectedPage}.
+                    </p>
+                  </div>
+                )}
               </div>
             )}
           </section>
@@ -658,6 +1013,32 @@ export default function BookDetailsPage({
         wordData={editingWord}
         onSave={handleSaveEditedWord}
         contextTitle={`Edit Word in ${selectedBook} (Page ${selectedPage})`}
+      />
+
+      {/* Sentence Edit Modal */}
+      {editingSentence && (
+        <SentenceEditModal
+          isOpen={true}
+          sentence={editingSentence}
+          mediaType="book"
+          mediaName={selectedBook}
+          pageNo={selectedPage || 1}
+          onClose={() => setEditingSentence(null)}
+          onSaved={handleSaveEditedSentence}
+        />
+      )}
+
+      {/* Add Sentence Modal */}
+      <AddSentenceModal
+        isOpen={isAddSentenceOpen}
+        mediaType="book"
+        mediaName={selectedBook}
+        pageNo={selectedPage || 1}
+        onClose={() => setIsAddSentenceOpen(false)}
+        onAdded={() => {
+          setIsAddSentenceOpen(false);
+          void fetchBookData();
+        }}
       />
     </div>
   );
