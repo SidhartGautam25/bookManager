@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "lastUpdated": "2026-09-18T22:32:55.553Z",
-  "totalWords": 914,
+  "lastUpdated": "2026-09-23T02:17:17.401Z",
+  "totalWords": 925,
   "entries": {
     "sleazy": {
       "word": "sleazy",
@@ -27369,6 +27369,305 @@
       "variations": [
         "hissing",
         "hiss"
+      ],
+      "source": "cache"
+    },
+    "screech": {
+      "word": "screech",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A high-pitched strident or piercing sound, such as that between a moving object and any surface.; A harsh, shrill cry, as of one in acute pain or in fright; a shriek; a scream.",
+          "examples": [
+            "The author skillfully incorporated screech to emphasize the underlying theme.",
+            "In every chapter, the presence of screech provided an unmistakable atmosphere.",
+            "Observers noted that screech altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To make such a sound.; To travel very fast, as if making the sound of a car that is driving too fast.",
+          "examples": [
+            "The author skillfully incorporated screech to emphasize the underlying theme.",
+            "In every chapter, the presence of screech provided an unmistakable atmosphere.",
+            "Observers noted that screech altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "screech"
+      ],
+      "source": "cache"
+    },
+    "jingling": {
+      "word": "jingling",
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To make a noise of metal or glass clattering against itself.; To cause to make a noise of metal or glass clattering against itself.",
+          "examples": [
+            "The beads jingled as she walked.",
+            "She jingled the beads as she walked.",
+            "He stood by the window, jingling quietly as the light faded into evening."
+          ]
+        },
+        {
+          "partOfSpeech": "Noun",
+          "definition": "The sound made by something that jingles.; An old parlour game in which blindfolded players within a ring attempted to catch another player to whom a bell was tied.",
+          "examples": [
+            "The jinglings of many bells.",
+            "He heard the jingling of her keys in the door and turned off the screen.",
+            "Her tambourine didn't come with any jingles attached."
+          ]
+        }
+      ],
+      "variations": [
+        "jingling",
+        "jingle"
+      ],
+      "source": "cache"
+    },
+    "driveway": {
+      "word": "driveway",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A short private road that leads to a house or garage.; A road that enters or circulates through a defined area, such as an institution, compound, land area, etc., for the purpose of private access, maintenance, or security.",
+          "examples": [
+            "The author skillfully incorporated driveway to emphasize the underlying theme.",
+            "In every chapter, the presence of driveway provided an unmistakable atmosphere.",
+            "Observers noted that driveway altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "driveway"
+      ],
+      "source": "cache"
+    },
+    "chuckle": {
+      "word": "chuckle",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A quiet laugh.",
+          "examples": [
+            "The author skillfully incorporated chuckle to emphasize the underlying theme.",
+            "In every chapter, the presence of chuckle provided an unmistakable atmosphere.",
+            "Observers noted that chuckle altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To laugh quietly or inwardly.; To communicate through chuckling.",
+          "examples": [
+            "She chuckled her assent to my offer as she got in the car.",
+            "The author skillfully incorporated chuckle to emphasize the underlying theme.",
+            "In every chapter, the presence of chuckle provided an unmistakable atmosphere."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Clumsy.",
+          "examples": [
+            "The author skillfully incorporated chuckle to emphasize the underlying theme.",
+            "In every chapter, the presence of chuckle provided an unmistakable atmosphere.",
+            "Observers noted that chuckle altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "chuckle"
+      ],
+      "source": "cache"
+    },
+    "scoff": {
+      "word": "scoff",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A derisive or mocking expression of scorn, contempt, or reproach.; An object of scorn, mockery, or derision.",
+          "examples": [
+            "The author skillfully incorporated scoff to emphasize the underlying theme.",
+            "In every chapter, the presence of scoff provided an unmistakable atmosphere.",
+            "Observers noted that scoff altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To jeer; to laugh with contempt and derision.; To mock; to treat with scorn.",
+          "examples": [
+            "The author skillfully incorporated scoff to emphasize the underlying theme.",
+            "In every chapter, the presence of scoff provided an unmistakable atmosphere.",
+            "Observers noted that scoff altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "scoff"
+      ],
+      "source": "cache"
+    },
+    "honk": {
+      "word": "honk",
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To use a car horn.; To make a loud, harsh sound like a car horn.",
+          "examples": [
+            "They stood and observed how long it took for the other cars to honk.",
+            "She honked my titties.",
+            "The author skillfully incorporated honk to emphasize the underlying theme."
+          ]
+        },
+        {
+          "partOfSpeech": "Noun",
+          "definition": "The harsh note produced by a typical car horn.; The cry of a goose or similar bird.",
+          "examples": [
+            "The author skillfully incorporated honk to emphasize the underlying theme.",
+            "In every chapter, the presence of honk provided an unmistakable atmosphere.",
+            "Observers noted that honk altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Interjection",
+          "definition": "Imitation of car horn, used, for example, to clear a path for oneself.",
+          "examples": [
+            "The author skillfully incorporated honk to emphasize the underlying theme.",
+            "In every chapter, the presence of honk provided an unmistakable atmosphere.",
+            "Observers noted that honk altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "honk"
+      ],
+      "source": "cache"
+    },
+    "chatter": {
+      "word": "chatter",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "Talk, especially meaningless or unimportant talk.; The sound of talking.",
+          "examples": [
+            "Proper brake adjustment will help to reduce the chatter.",
+            "The NSA is concerned about increased chatter between known terror groups.",
+            "The author skillfully incorporated chatter to emphasize the underlying theme."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To talk idly.; To make a noise by rapid collisions.",
+          "examples": [
+            "They knitted and chattered the whole time.",
+            "He was so cold that his teeth were chattering.",
+            "The software in modern machine tools can often predict and prevent movements that would cause the cutting tool to chatter."
+          ]
+        }
+      ],
+      "variations": [
+        "chatter"
+      ],
+      "source": "cache"
+    },
+    "whir": {
+      "word": "whir",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "(Inflected form) A sibilant buzz or vibration; the sound of something in rapid motion.; (Inflected form) A bustle of noise and excitement.",
+          "examples": [
+            "The author skillfully incorporated whir to emphasize the underlying theme.",
+            "In every chapter, the presence of whir provided an unmistakable atmosphere.",
+            "Observers noted that whir altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "(Inflected form) To move or vibrate (something) with a buzzing sound.; (Inflected form) To make a sibilant buzzing or droning sound.",
+          "examples": [
+            "The author skillfully incorporated whir to emphasize the underlying theme.",
+            "In every chapter, the presence of whir provided an unmistakable atmosphere.",
+            "Observers noted that whir altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "whir",
+        "whirr"
+      ],
+      "source": "cache"
+    },
+    "caryall": {
+      "word": "caryall",
+      "meanings": [
+        {
+          "partOfSpeech": "General",
+          "definition": "Meaning and context of caryall",
+          "examples": [
+            "The author skillfully incorporated caryall to emphasize the underlying theme.",
+            "In every chapter, the presence of caryall provided an unmistakable atmosphere.",
+            "Observers noted that caryall altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "caryall"
+      ],
+      "source": "cache"
+    },
+    "grunt": {
+      "word": "grunt",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A short snorting sound, often to show disapproval, or used as a reply when one is reluctant to speak.; The snorting cry of a pig.",
+          "examples": [
+            "The author skillfully incorporated grunt to emphasize the underlying theme.",
+            "In every chapter, the presence of grunt provided an unmistakable atmosphere.",
+            "Observers noted that grunt altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To make a grunt or grunts.; To break wind; to fart.",
+          "examples": [
+            "Who just grunted?",
+            "The author skillfully incorporated grunt to emphasize the underlying theme.",
+            "In every chapter, the presence of grunt provided an unmistakable atmosphere."
+          ]
+        }
+      ],
+      "variations": [
+        "grunt"
+      ],
+      "source": "cache"
+    },
+    "whoop": {
+      "word": "whoop",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A loud, eager cry, usually of joy.; A gasp, characteristic of whooping cough.",
+          "examples": [
+            "Synonym of whoop-de-doo.",
+            "The author skillfully incorporated whoop to emphasize the underlying theme.",
+            "In every chapter, the presence of whoop provided an unmistakable atmosphere."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To make a whoop.; To shout, to yell.",
+          "examples": [
+            "The author skillfully incorporated whoop to emphasize the underlying theme.",
+            "In every chapter, the presence of whoop provided an unmistakable atmosphere.",
+            "Observers noted that whoop altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "whoop"
       ],
       "source": "cache"
     }

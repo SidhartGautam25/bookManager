@@ -4797,5 +4797,391 @@
         ]
       }
     ]
+  },
+  {
+    "type": "word",
+    "word": "jingling",
+    "variations": [
+      "jingling",
+      "jingle"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To make a noise of metal or glass clattering against itself.; To cause to make a noise of metal or glass clattering against itself.",
+        "examples": [
+          "The beads jingled as she walked.",
+          "She jingled the beads as she walked.",
+          "He stood by the window, jingling quietly as the light faded into evening."
+        ]
+      },
+      {
+        "partOfSpeech": "Noun",
+        "definition": "The sound made by something that jingles.; An old parlour game in which blindfolded players within a ring attempted to catch another player to whom a bell was tied.",
+        "examples": [
+          "The jinglings of many bells.",
+          "He heard the jingling of her keys in the door and turned off the screen.",
+          "Her tambourine didn't come with any jingles attached."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "word",
+    "word": "blare",
+    "variations": [
+      "blare"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Verb",
+        "definition": "(Often followed by out) To play (a radio, recorded music, etc.) at extremely loud volume levels. To express (ideas, words, etc.) loudly; to proclaim.; (Often followed by out) To play (a radio, recorded music, etc.) at extremely loud volume levels.",
+        "examples": [
+          "The trumpet blaring in my ears gave me a headache.",
+          "The author skillfully incorporated blare to emphasize the underlying theme.",
+          "In every chapter, the presence of blare provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "Noun",
+        "definition": "A loud sound.; Of colour, light, or some other quality: dazzling, often garish, brilliance.",
+        "examples": [
+          "I can hardly hear you over the blare of the radio.",
+          "The author skillfully incorporated blare to emphasize the underlying theme.",
+          "In every chapter, the presence of blare provided an unmistakable atmosphere."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "word",
+    "word": "screech",
+    "variations": [
+      "screech"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "A high-pitched strident or piercing sound, such as that between a moving object and any surface.; A harsh, shrill cry, as of one in acute pain or in fright; a shriek; a scream.",
+        "examples": [
+          "The author skillfully incorporated screech to emphasize the underlying theme.",
+          "In every chapter, the presence of screech provided an unmistakable atmosphere.",
+          "Observers noted that screech altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To make such a sound.; To travel very fast, as if making the sound of a car that is driving too fast.",
+        "examples": [
+          "The author skillfully incorporated screech to emphasize the underlying theme.",
+          "In every chapter, the presence of screech provided an unmistakable atmosphere.",
+          "Observers noted that screech altered the entire perspective of the scene."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "word",
+    "word": "driveway",
+    "variations": [
+      "driveway"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "A short private road that leads to a house or garage.; A road that enters or circulates through a defined area, such as an institution, compound, land area, etc., for the purpose of private access, maintenance, or security.",
+        "examples": [
+          "The author skillfully incorporated driveway to emphasize the underlying theme.",
+          "In every chapter, the presence of driveway provided an unmistakable atmosphere.",
+          "Observers noted that driveway altered the entire perspective of the scene."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "word",
+    "word": "chuckle",
+    "variations": [
+      "chuckle"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "A quiet laugh.",
+        "examples": [
+          "The author skillfully incorporated chuckle to emphasize the underlying theme.",
+          "In every chapter, the presence of chuckle provided an unmistakable atmosphere.",
+          "Observers noted that chuckle altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To laugh quietly or inwardly.; To communicate through chuckling.",
+        "examples": [
+          "She chuckled her assent to my offer as she got in the car.",
+          "The author skillfully incorporated chuckle to emphasize the underlying theme.",
+          "In every chapter, the presence of chuckle provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "Adjective",
+        "definition": "Clumsy.",
+        "examples": [
+          "The author skillfully incorporated chuckle to emphasize the underlying theme.",
+          "In every chapter, the presence of chuckle provided an unmistakable atmosphere.",
+          "Observers noted that chuckle altered the entire perspective of the scene."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "word",
+    "word": "scoff",
+    "variations": [
+      "scoff"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "A derisive or mocking expression of scorn, contempt, or reproach.; An object of scorn, mockery, or derision.",
+        "examples": [
+          "The author skillfully incorporated scoff to emphasize the underlying theme.",
+          "In every chapter, the presence of scoff provided an unmistakable atmosphere.",
+          "Observers noted that scoff altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To jeer; to laugh with contempt and derision.; To mock; to treat with scorn.",
+        "examples": [
+          "The author skillfully incorporated scoff to emphasize the underlying theme.",
+          "In every chapter, the presence of scoff provided an unmistakable atmosphere.",
+          "Observers noted that scoff altered the entire perspective of the scene."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "word",
+    "word": "honk",
+    "variations": [
+      "honk"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To use a car horn.; To make a loud, harsh sound like a car horn.",
+        "examples": [
+          "They stood and observed how long it took for the other cars to honk.",
+          "She honked my titties.",
+          "The author skillfully incorporated honk to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "Noun",
+        "definition": "The harsh note produced by a typical car horn.; The cry of a goose or similar bird.",
+        "examples": [
+          "The author skillfully incorporated honk to emphasize the underlying theme.",
+          "In every chapter, the presence of honk provided an unmistakable atmosphere.",
+          "Observers noted that honk altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "Interjection",
+        "definition": "Imitation of car horn, used, for example, to clear a path for oneself.",
+        "examples": [
+          "The author skillfully incorporated honk to emphasize the underlying theme.",
+          "In every chapter, the presence of honk provided an unmistakable atmosphere.",
+          "Observers noted that honk altered the entire perspective of the scene."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "word",
+    "word": "chatter",
+    "variations": [
+      "chatter"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "Talk, especially meaningless or unimportant talk.; The sound of talking.",
+        "examples": [
+          "Proper brake adjustment will help to reduce the chatter.",
+          "The NSA is concerned about increased chatter between known terror groups.",
+          "The author skillfully incorporated chatter to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To talk idly.; To make a noise by rapid collisions.",
+        "examples": [
+          "They knitted and chattered the whole time.",
+          "He was so cold that his teeth were chattering.",
+          "The software in modern machine tools can often predict and prevent movements that would cause the cutting tool to chatter."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "word",
+    "word": "whir",
+    "variations": [
+      "whir",
+      "whirr"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "(Inflected form) A sibilant buzz or vibration; the sound of something in rapid motion.; (Inflected form) A bustle of noise and excitement.",
+        "examples": [
+          "The author skillfully incorporated whir to emphasize the underlying theme.",
+          "In every chapter, the presence of whir provided an unmistakable atmosphere.",
+          "Observers noted that whir altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "(Inflected form) To move or vibrate (something) with a buzzing sound.; (Inflected form) To make a sibilant buzzing or droning sound.",
+        "examples": [
+          "The author skillfully incorporated whir to emphasize the underlying theme.",
+          "In every chapter, the presence of whir provided an unmistakable atmosphere.",
+          "Observers noted that whir altered the entire perspective of the scene."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "sentence",
+    "sentence": "time to roll",
+    "meaning": "1. it is time to leave, depart, or get going\n2. Time to get started: Used when beginning a project, task, or trip.\nEX: \nLeaving a hangout:\n\n\"It’s getting late and I’ve got an early morning tomorrow. Time to roll!\"\n\nStarting a road trip:\n\n\"The bags are packed, the gas tank is full, and everyone's in the car. Time to roll!\"\n\nGetting to work on a team project:\n\n\"Alright, break time is over. Time to roll on these designs.\"",
+    "tag": "Dialogue",
+    "tags": [
+      "Dialogue"
+    ],
+    "createdAt": "2026-09-23T01:53:15.482Z"
+  },
+  {
+    "type": "sentence",
+    "sentence": "it's touch and go",
+    "meaning": "\"Touch and go\" describes a situation that is uncertain, risky, or precarious, where the outcome is balanced between success and failure until the very last second\n\nEX:\n\nMedical Recovery:\n\n\"After the surgery, it was touch and go for a few hours, but the doctor says he is stable now.\"\n\nProject Deadlines:\n\n\"It was touch and go whether we’d finish the proposal before midnight, but we managed to submit it just in time.\"\n\nTravel Risks:\n\n\"Traffic was so terrible that catching our flight was touch and go, but we sprinted to the gate right as it was closing.\"",
+    "tag": "Dialogue",
+    "tags": [
+      "Dialogue"
+    ],
+    "createdAt": "2026-09-23T01:56:08.713Z"
+  },
+  {
+    "type": "sentence",
+    "sentence": "i am ruling you and your team disqualified",
+    "meaning": "Meaning of \"Ruling\" Specially\nWhen used as a verb in this context (\"I am ruling...\"):\n\nOfficial Decision: It is not just expressing an opinion or guess; it is an official decree or mandate.\n\nAuthority: It implies the speaker has the power, position, or jurisdiction to enforce the decision (like a referee in sports, a judge in court, or a tournament director).\n\nEX:\nSports & Esport Tournaments:\n\n\"After reviewing the replay for illegal gear, I am ruling you and your team disqualified.\"\n\nLegal & Debating Competitions:\n\n\"Due to a direct breach of conduct guidelines, the judge is ruling your team disqualified.\"\n\nBusiness Bids or Competitions:\n\n\"Because the submission was late, the committee is ruling your proposal disqualified.\"",
+    "tag": "Dialogue",
+    "tags": [
+      "Dialogue"
+    ],
+    "createdAt": "2026-09-23T02:00:38.043Z"
+  },
+  {
+    "type": "word",
+    "word": "caryall",
+    "variations": [
+      "caryall"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "General",
+        "definition": "Meaning and context of caryall",
+        "examples": [
+          "The author skillfully incorporated caryall to emphasize the underlying theme.",
+          "In every chapter, the presence of caryall provided an unmistakable atmosphere.",
+          "Observers noted that caryall altered the entire perspective of the scene."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "word",
+    "word": "grunt",
+    "variations": [
+      "grunt"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "A short snorting sound, often to show disapproval, or used as a reply when one is reluctant to speak.; The snorting cry of a pig.",
+        "examples": [
+          "The author skillfully incorporated grunt to emphasize the underlying theme.",
+          "In every chapter, the presence of grunt provided an unmistakable atmosphere.",
+          "Observers noted that grunt altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To make a grunt or grunts.; To break wind; to fart.",
+        "examples": [
+          "Who just grunted?",
+          "The author skillfully incorporated grunt to emphasize the underlying theme.",
+          "In every chapter, the presence of grunt provided an unmistakable atmosphere."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "sentence",
+    "sentence": "got his tail up",
+    "meaning": "1. to be in high spirits, confident, optimistic, or full of energy, especially after enjoying a recent success or winning momentum.\nEX:\nSports & Momentum:\n\n\"Ever since scoring that early goal, the whole team has got their tail up and is dominating the match.\"\n\nWork & Career:\n\n\"After closing that major deal, Sarah really has her tail up today—she’s pitching two more clients before lunch.\"\n\nPersonal Life:\n\n\"He was feeling down earlier this week, but after getting a promotion, he's got his tail up again.\"",
+    "tag": "Dialogue",
+    "tags": [
+      "Dialogue"
+    ],
+    "createdAt": "2026-09-23T02:08:43.000Z"
+  },
+  {
+    "type": "sentence",
+    "sentence": "don't make me lamp this at your head",
+    "meaning": "To throw / hurl something hard: As used in your sentence (\"lamp this at your head\"), it means to launch or throw an object forcefully at someone.\n\nTo hit or punch someone hard: E.g., \"I'm going to lamp him\" means \"I'm going to punch him in the face.\"\n\nSerious / Threatening Context:\n\n\"Stop talking to me like that! Don't make me lamp this mug at your head!\"\n\n(Meaning: Be quiet, or I will hurl this heavy cup directly at your face.)\n\nBanter / Playful Context (Between Friends):\n\n\"If you steal another one of my chips, don't make me lamp this balled-up paper at your head.\"\n\n(Meaning: Stop taking my food, or I'm going to toss this paper ball at you.)",
+    "tag": "Dialogue",
+    "tags": [
+      "Dialogue"
+    ],
+    "createdAt": "2026-09-23T02:11:57.502Z"
+  },
+  {
+    "type": "word",
+    "word": "whoop",
+    "variations": [
+      "whoop"
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "Noun",
+        "definition": "A loud, eager cry, usually of joy.; A gasp, characteristic of whooping cough.",
+        "examples": [
+          "Synonym of whoop-de-doo.",
+          "The author skillfully incorporated whoop to emphasize the underlying theme.",
+          "In every chapter, the presence of whoop provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "Verb",
+        "definition": "To make a whoop.; To shout, to yell.",
+        "examples": [
+          "The author skillfully incorporated whoop to emphasize the underlying theme.",
+          "In every chapter, the presence of whoop provided an unmistakable atmosphere.",
+          "Observers noted that whoop altered the entire perspective of the scene."
+        ]
+      }
+    ]
+  },
+  {
+    "type": "sentence",
+    "sentence": "hop in",
+    "meaning": "\"get inside\" or \"climb in,\" most commonly used when inviting someone into a vehicle (like a car, taxi, or truck).\n\n\"Hop\" -> Literally means to make a small jump, but here it implies doing something quickly, easily, or casually.\nEX:\nGetting into a Vehicle (Most Common):\n\nIt serves as a quick, informal invitation to get into a car, truck, or van.\n\nJoining an Activity, Group, or Call (Figurative):\n\nIt can also mean joining an ongoing virtual meeting, voice channel, game lobby, or conversation quickly.\n\nOffering a Ride:\n\n\"I see you walking in the rain! Hop in, I'll give you a lift home.\"\n\nTaking a Taxi / Ride-share:\n\n\"The driver unlocked the doors and said, 'Hop in, we're ready to go.'\"\n\nVirtual / Work Context:\n\n\"We're having a quick voice call on Discord—hop in whenever you're free!\"",
+    "tag": "Dialogue",
+    "tags": [
+      "Dialogue"
+    ],
+    "createdAt": "2026-09-23T02:20:40.885Z"
   }
 ]

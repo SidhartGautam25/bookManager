@@ -1,0 +1,37 @@
+[
+  {
+    "id": "favorite-quotes",
+    "name": "Favorite Quotes",
+    "color": "indigo",
+    "description": "Memorable lines, impactful citations, and timeless quotes.",
+    "createdAt": "2026-09-18T22:30:00.000Z"
+  },
+  {
+    "id": "philosophy",
+    "name": "Philosophy",
+    "color": "violet",
+    "description": "Deep existential thoughts, reflections, and philosophical insights.",
+    "createdAt": "2026-09-18T22:30:00.000Z"
+  },
+  {
+    "id": "vocabulary-in-context",
+    "name": "Vocabulary in Context",
+    "color": "emerald",
+    "description": "Sentences highlighting rich and sophisticated vocabulary usage.",
+    "createdAt": "2026-09-18T22:30:00.000Z"
+  },
+  {
+    "id": "idioms-and-expressions",
+    "name": "Idioms & Expressions",
+    "color": "amber",
+    "description": "Idiomatic phrasing, colloquialisms, and figurative speech.",
+    "createdAt": "2026-09-18T22:30:00.000Z"
+  },
+  {
+    "id": "dialogue",
+    "name": "Dialogue",
+    "color": "rose",
+    "description": "Sharp character dialogue, conversational nuances, and banter.",
+    "createdAt": "2026-09-18T22:30:00.000Z"
+  }
+]

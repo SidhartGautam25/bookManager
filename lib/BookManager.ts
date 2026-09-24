@@ -8,10 +8,22 @@ export interface WordMeaning {
 }
 
 export interface Word {
+  type?: "word";
   word: string;
   variations?: string[];
   meanings: WordMeaning[];
 }
+
+export interface SentenceEntry {
+  type: "sentence";
+  sentence: string;
+  meaning?: string;
+  tag?: string;
+  tags?: string[];
+  createdAt?: string;
+}
+
+export type MediaEntry = Word | SentenceEntry;
 
 export interface PageData {
   [key: string]: Word[]; // page number as key, array of words as value
@@ -126,7 +138,9 @@ export class BookManager {
 
     // Check if word already exists on this page
     if (
-      pageData.some((item) => item.word.toLowerCase() === word.toLowerCase())
+      pageData.some(
+        (item) => item.word && item.word.toLowerCase() === word.toLowerCase(),
+      )
     ) {
       throw new Error(
         `Word "${word}" already exists on page ${pageNo} of book "${bookName}"`,
@@ -238,9 +252,9 @@ export class BookManager {
   }
 
   /**
-   * Get all words from a specific page of a book
+   * Get all raw items (words and sentences) from a specific page
    */
-  getPageWords(bookName: string, pageNo: number): Word[] {
+  getPageItems(bookName: string, pageNo: number): MediaEntry[] {
     if (!this.bookExists(bookName)) {
       throw new Error(`Book "${bookName}" does not exist`);
     }
@@ -253,8 +267,36 @@ export class BookManager {
       return [];
     }
 
-    const fileContent = fs.readFileSync(pageFilePath, "utf-8");
-    return JSON.parse(fileContent);
+    try {
+      const fileContent = fs.readFileSync(pageFilePath, "utf-8");
+      const parsed = JSON.parse(fileContent);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch {
+      return [];
+    }
+  }
+
+  /**
+   * Get all words from a specific page of a book
+   */
+  getPageWords(bookName: string, pageNo: number): Word[] {
+    const items = this.getPageItems(bookName, pageNo);
+    return items.filter(
+      (item): item is Word =>
+        item.type !== "sentence" && typeof (item as Word).word === "string",
+    );
+  }
+
+  /**
+   * Get all sentences from a specific page of a book
+   */
+  getPageSentences(bookName: string, pageNo: number): SentenceEntry[] {
+    const items = this.getPageItems(bookName, pageNo);
+    return items.filter(
+      (item): item is SentenceEntry =>
+        item.type === "sentence" &&
+        typeof (item as SentenceEntry).sentence === "string",
+    );
   }
 
   /**
@@ -302,7 +344,7 @@ export class BookManager {
 
     allWords.forEach((pageData) => {
       pageData.words.forEach((item) => {
-        if (item.word.trim().toLowerCase() === normalizedWord) {
+        if (item.word && item.word.trim().toLowerCase() === normalizedWord) {
           frequency += 1;
           if (meanings.length === 0) {
             meanings = item.meanings || [];
@@ -338,9 +380,13 @@ export class BookManager {
       .slice()
       .reverse()
       .find((p) =>
-        p.words.some((w) => w.word.trim().toLowerCase() === normalizedWord),
+        p.words.some(
+          (w) => w.word && w.word.trim().toLowerCase() === normalizedWord,
+        ),
       )
-      ?.words.find((w) => w.word.trim().toLowerCase() === normalizedWord);
+      ?.words.find(
+        (w) => w.word && w.word.trim().toLowerCase() === normalizedWord,
+      );
 
     return {
       word: word.trim(),
@@ -450,10 +496,15 @@ export class BookManager {
     }
 
     const fileContent = fs.readFileSync(pageFilePath, "utf-8");
-    let pageData: Word[] = JSON.parse(fileContent);
+    let pageData: MediaEntry[] = JSON.parse(fileContent);
 
     pageData = pageData.filter(
-      (item) => item.word.toLowerCase() !== wordToDelete.toLowerCase(),
+      (item) =>
+        !(
+          item.type !== "sentence" &&
+          (item as Word).word &&
+          (item as Word).word.toLowerCase() === wordToDelete.toLowerCase()
+        ),
     );
 
     fs.writeFileSync(pageFilePath, JSON.stringify(pageData, null, 2), "utf-8");
@@ -486,11 +537,14 @@ export class BookManager {
     }
 
     const fileContent = fs.readFileSync(pageFilePath, "utf-8");
-    const pageData: Word[] = JSON.parse(fileContent);
+    const pageData: MediaEntry[] = JSON.parse(fileContent);
 
     const normOriginal = originalWord.trim().toLowerCase();
     const index = pageData.findIndex(
-      (item) => item.word.toLowerCase() === normOriginal,
+      (item) =>
+        item.type !== "sentence" &&
+        (item as Word).word &&
+        (item as Word).word.toLowerCase() === normOriginal,
     );
 
     if (index === -1) {
@@ -499,15 +553,180 @@ export class BookManager {
       );
     }
 
+    const existingWord = pageData[index] as Word;
     const newWordName = (updatedWordData.word || originalWord).trim();
     pageData[index] = {
+      type: "word",
       word: newWordName,
       meanings: updatedWordData.meanings,
-      variations:
-        updatedWordData.variations || pageData[index].variations || [],
+      variations: updatedWordData.variations || existingWord.variations || [],
     };
 
     fs.writeFileSync(pageFilePath, JSON.stringify(pageData, null, 2), "utf-8");
+    return true;
+  }
+
+  /**
+   * Add a sentence to a specific page of a book
+   */
+  addSentence(
+    bookName: string,
+    pageNo: number,
+    sentence: string,
+    meaning?: string,
+    tag?: string,
+  ): boolean {
+    if (!this.bookExists(bookName)) {
+      throw new Error(`Book "${bookName}" does not exist`);
+    }
+
+    const cleanSentence = sentence.trim();
+    if (!cleanSentence) {
+      throw new Error("Sentence cannot be empty");
+    }
+
+    const bookPath = path.join(this.booksDir, bookName);
+    const pageFileName = `page_${pageNo}.json`;
+    const pageFilePath = path.join(bookPath, pageFileName);
+
+    let pageData: MediaEntry[] = [];
+    if (fs.existsSync(pageFilePath)) {
+      const fileContent = fs.readFileSync(pageFilePath, "utf-8");
+      pageData = JSON.parse(fileContent);
+    }
+
+    // Check if sentence already exists on this page
+    const normSentence = cleanSentence.toLowerCase();
+    if (
+      pageData.some(
+        (item) =>
+          item.type === "sentence" &&
+          (item as SentenceEntry).sentence.trim().toLowerCase() ===
+            normSentence,
+      )
+    ) {
+      throw new Error(
+        `Sentence already exists on page ${pageNo} of book "${bookName}"`,
+      );
+    }
+
+    const cleanTag = tag?.trim() || "";
+    const sentenceEntry: SentenceEntry = {
+      type: "sentence",
+      sentence: cleanSentence,
+      meaning: meaning?.trim() || "",
+      tag: cleanTag,
+      tags: cleanTag ? [cleanTag] : [],
+      createdAt: new Date().toISOString(),
+    };
+
+    pageData.push(sentenceEntry);
+    fs.writeFileSync(pageFilePath, JSON.stringify(pageData, null, 2), "utf-8");
+    return true;
+  }
+
+  /**
+   * Update an existing sentence on a specific page
+   */
+  updateSentence(
+    bookName: string,
+    pageNo: number,
+    originalSentence: string,
+    updatedData: {
+      sentence?: string;
+      meaning?: string;
+      tag?: string;
+    },
+  ): boolean {
+    if (!this.bookExists(bookName)) {
+      throw new Error(`Book "${bookName}" does not exist`);
+    }
+
+    const bookPath = path.join(this.booksDir, bookName);
+    const pageFileName = `page_${pageNo}.json`;
+    const pageFilePath = path.join(bookPath, pageFileName);
+
+    if (!fs.existsSync(pageFilePath)) {
+      throw new Error(`Page ${pageNo} does not exist in book "${bookName}"`);
+    }
+
+    const fileContent = fs.readFileSync(pageFilePath, "utf-8");
+    const pageData: MediaEntry[] = JSON.parse(fileContent);
+
+    const normOriginal = originalSentence.trim().toLowerCase();
+    const index = pageData.findIndex(
+      (item) =>
+        item.type === "sentence" &&
+        (item as SentenceEntry).sentence.trim().toLowerCase() === normOriginal,
+    );
+
+    if (index === -1) {
+      throw new Error(
+        `Sentence not found on page ${pageNo} of book "${bookName}"`,
+      );
+    }
+
+    const existing = pageData[index] as SentenceEntry;
+    const newSentenceText = updatedData.sentence
+      ? updatedData.sentence.trim()
+      : existing.sentence;
+    const cleanTag =
+      updatedData.tag !== undefined
+        ? updatedData.tag.trim()
+        : existing.tag || "";
+
+    pageData[index] = {
+      ...existing,
+      sentence: newSentenceText,
+      meaning:
+        updatedData.meaning !== undefined
+          ? updatedData.meaning.trim()
+          : existing.meaning,
+      tag: cleanTag,
+      tags: cleanTag ? [cleanTag] : [],
+    };
+
+    fs.writeFileSync(pageFilePath, JSON.stringify(pageData, null, 2), "utf-8");
+    return true;
+  }
+
+  /**
+   * Delete a sentence from a specific page
+   */
+  deleteSentence(
+    bookName: string,
+    pageNo: number,
+    sentenceToDelete: string,
+  ): boolean {
+    if (!this.bookExists(bookName)) {
+      throw new Error(`Book "${bookName}" does not exist`);
+    }
+
+    const bookPath = path.join(this.booksDir, bookName);
+    const pageFileName = `page_${pageNo}.json`;
+    const pageFilePath = path.join(bookPath, pageFileName);
+
+    if (!fs.existsSync(pageFilePath)) {
+      throw new Error(`Page ${pageNo} does not exist in book "${bookName}"`);
+    }
+
+    const fileContent = fs.readFileSync(pageFilePath, "utf-8");
+    const pageData: MediaEntry[] = JSON.parse(fileContent);
+
+    const normDelete = sentenceToDelete.trim().toLowerCase();
+    const filtered = pageData.filter(
+      (item) =>
+        !(
+          item.type === "sentence" &&
+          (item as SentenceEntry).sentence.trim().toLowerCase() === normDelete
+        ),
+    );
+
+    if (filtered.length === pageData.length) {
+      return false;
+    }
+
+    fs.writeFileSync(pageFilePath, JSON.stringify(filtered, null, 2), "utf-8");
     return true;
   }
 
@@ -517,6 +736,30 @@ export class BookManager {
   getTotalWordCount(bookName: string): number {
     const allWords = this.getAllWordsFromBook(bookName);
     return allWords.reduce((sum, pageData) => sum + pageData.words.length, 0);
+  }
+
+  /**
+   * Get total sentence count from a book
+   */
+  getTotalSentenceCount(bookName: string): number {
+    const pages = this.getBookPages(bookName);
+    return pages.reduce(
+      (sum, p) => sum + this.getPageSentences(bookName, p).length,
+      0,
+    );
+  }
+
+  /**
+   * Get all sentences from a book across all pages
+   */
+  getAllSentencesFromBook(
+    bookName: string,
+  ): { page: number; sentences: SentenceEntry[] }[] {
+    const pages = this.getBookPages(bookName);
+    return pages.map((page) => ({
+      page,
+      sentences: this.getPageSentences(bookName, page),
+    }));
   }
 
   /**
