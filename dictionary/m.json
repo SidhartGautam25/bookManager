@@ -1,0 +1,1567 @@
+{
+  "muffle": {
+    "word": "muffle",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To make a sound quieter, softer, or less clear by covering or blocking it.",
+        "examples": [
+          "The thick walls muffled the noise from the street.",
+          "She tried to muffle her laughter during the meeting.",
+          "Snow muffles sounds and makes everything feel quieter.",
+          "He spoke through a scarf, which muffled his voice."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To wrap or cover someone or something to keep warm or hidden.",
+        "examples": [
+          "The child was muffled in heavy winter clothes.",
+          "She muffled her face with a woolen scarf.",
+          "Travelers muffled themselves against the cold wind.",
+          "He sat by the fire, completely muffled in blankets."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A covering or wrap used to keep something warm or quiet, especially around the neck or face.",
+        "examples": [
+          "He pulled his muffle tighter during the storm.",
+          "The old rider wore a thick woolen muffle.",
+          "A dark muffle covered most of her face.",
+          "The winter outfit included gloves and a soft muffle."
+        ]
+      }
+    ],
+    "variations": [
+      "muffle",
+      "muffles",
+      "muffling",
+      "muffled"
+    ],
+    "createdAt": "2026-11-13T12:45:54.771Z",
+    "updatedAt": "2026-11-13T12:45:54.771Z"
+  },
+  "muzzle": {
+    "word": "muzzle",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The mouth and nose area of an animal, especially a dog or horse.",
+        "examples": [
+          "The dog rested its muzzle on her lap.",
+          "A horse’s muzzle touched the grass softly.",
+          "The wolf lifted its muzzle toward the moon.",
+          "Mud covered the puppy’s muzzle after playing outside."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A device placed over an animal’s mouth to stop it from biting or eating.",
+        "examples": [
+          "The guard dog wore a strong leather muzzle.",
+          "The veterinarian advised using a muzzle during treatment.",
+          "She removed the muzzle after the dog calmed down.",
+          "Some aggressive dogs are required to wear muzzles in public."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To put a muzzle on an animal to prevent biting or barking.",
+        "examples": [
+          "They muzzled the dog before taking it to the clinic.",
+          "The officer ordered the aggressive animal to be muzzled.",
+          "Owners should muzzle dangerous dogs in crowded places.",
+          "The frightened dog was carefully muzzled by the trainer."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To stop someone from speaking freely or expressing opinions.",
+        "examples": [
+          "The government was accused of muzzling journalists.",
+          "Fear cannot muzzle honest voices forever.",
+          "The new rules effectively muzzled public criticism.",
+          "Writers protested against attempts to muzzle free speech."
+        ]
+      }
+    ],
+    "variations": [
+      "muzzle",
+      "muzzles",
+      "muzzling",
+      "muzzled"
+    ],
+    "createdAt": "2026-11-13T12:45:54.774Z",
+    "updatedAt": "2026-11-13T12:45:54.774Z"
+  },
+  "misapprehensions": {
+    "word": "misapprehensions",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Wrong ideas, misunderstandings, or incorrect beliefs about something.",
+        "examples": [
+          "Many misapprehensions arose from the unclear announcement.",
+          "The teacher corrected students’ misapprehensions about history.",
+          "People often have misapprehensions about mental health.",
+          "Their argument was caused by simple misapprehensions."
+        ]
+      }
+    ],
+    "variations": [
+      "misapprehension",
+      "misapprehensions"
+    ],
+    "createdAt": "2026-11-13T12:45:54.905Z",
+    "updatedAt": "2026-11-13T12:45:54.905Z"
+  },
+  "myriad": {
+    "word": "myriad",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Extremely many or countless in number.",
+        "examples": [
+          "The night sky was filled with myriad stars.",
+          "Scientists face myriad challenges in climate research.",
+          "She had myriad reasons for leaving the city.",
+          "The internet offers myriad opportunities for learning."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A very large number of people or things.",
+        "examples": [
+          "A myriad of lights covered the hillside.",
+          "The garden contained a myriad of flowers.",
+          "Travelers encountered myriads of cultures during their journey.",
+          "The museum displayed a myriad of ancient artifacts."
+        ]
+      }
+    ],
+    "variations": [
+      "myriad",
+      "myriads"
+    ],
+    "createdAt": "2026-11-13T12:45:55.059Z",
+    "updatedAt": "2026-11-13T12:45:55.059Z"
+  },
+  "mended": {
+    "word": "mended",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Repaired, fixed, or improved something that was broken, damaged, or not working properly.",
+        "examples": [
+          "She mended the torn shirt carefully.",
+          "The mechanic had mended the old bicycle by evening.",
+          "Their friendship slowly mended after the misunderstanding.",
+          "He spends weekends mending furniture around the house."
+        ]
+      }
+    ],
+    "variations": [
+      "mend",
+      "mends",
+      "mending",
+      "mended"
+    ],
+    "createdAt": "2026-11-13T12:45:55.153Z",
+    "updatedAt": "2026-11-13T12:45:55.153Z"
+  },
+  "murmur": {
+    "word": "murmur",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A soft, low, and often continuous sound or voice.",
+        "examples": [
+          "A gentle murmur spread through the audience.",
+          "They could hear the murmur of the river nearby.",
+          "The classroom filled with quiet murmurs after the announcement.",
+          "Her murmur of thanks was barely audible."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To speak softly, quietly, or unclearly.",
+        "examples": [
+          "She murmured a prayer before sleeping.",
+          "The crowd was murmuring in confusion.",
+          "He murmured her name under his breath.",
+          "Children murmured excitedly during the story."
+        ]
+      }
+    ],
+    "variations": [
+      "murmur",
+      "murmurs",
+      "murmuring",
+      "murmured"
+    ],
+    "createdAt": "2026-11-13T12:45:55.168Z",
+    "updatedAt": "2026-11-13T12:45:55.168Z"
+  },
+  "multitude": {
+    "word": "multitude",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A very large number of people or things.",
+        "examples": [
+          "A multitude of stars filled the night sky.",
+          "The festival attracted multitudes from nearby villages.",
+          "He faced a multitude of difficult decisions.",
+          "Books offer a multitude of perspectives on history."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A large crowd or mass of people.",
+        "examples": [
+          "The multitude gathered in the square to hear the speech.",
+          "Cheering multitudes welcomed the athletes home.",
+          "The king addressed the waiting multitude from the balcony.",
+          "A restless multitude filled the streets during the protest."
+        ]
+      }
+    ],
+    "variations": [
+      "multitude",
+      "multitudes"
+    ],
+    "createdAt": "2026-11-13T12:45:55.184Z",
+    "updatedAt": "2026-11-13T12:45:55.184Z"
+  },
+  "meagre": {
+    "word": "meagre",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Very small in amount, poor in quality, or not enough for what is needed.",
+        "examples": [
+          "The workers survived on meagre wages.",
+          "They received only meagre support from the authorities.",
+          "The harvest was meagre because of the drought.",
+          "He lived in a tiny room with meagre furniture."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Thin, weak, or lacking richness or fullness.",
+        "examples": [
+          "The stray dog looked weak and meagre.",
+          "The report provided only meagre details about the incident.",
+          "Her meagre meal consisted of bread and soup.",
+          "Years of hardship had given him a meagre appearance."
+        ]
+      }
+    ],
+    "variations": [
+      "meagre",
+      "meagrer",
+      "meagrest",
+      "meagrely",
+      "meagreness"
+    ],
+    "createdAt": "2026-11-13T12:45:55.217Z",
+    "updatedAt": "2026-11-13T12:45:55.217Z"
+  },
+  "mends": {
+    "word": "mends",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Repairs or fixes something that is broken, damaged, or torn.",
+        "examples": [
+          "She mends old clothes instead of throwing them away.",
+          "The tailor was mending the torn jacket.",
+          "He mended the bicycle before the trip.",
+          "Skilled workers mend damaged furniture carefully."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "Improves or becomes better after difficulty, damage, or illness.",
+        "examples": [
+          "Time slowly mends emotional wounds.",
+          "Their friendship mended after an honest conversation.",
+          "The patient is mending well after surgery.",
+          "Economic conditions had mended by the following year."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A repaired place or improvement after damage.",
+        "examples": [
+          "The shirt showed a neat mend near the sleeve.",
+          "The wall still carried signs of an old mend.",
+          "Careful mends extended the life of the blanket.",
+          "The carpenter inspected the previous mend in the chair."
+        ]
+      }
+    ],
+    "variations": [
+      "mend",
+      "mends",
+      "mending",
+      "mended"
+    ],
+    "createdAt": "2026-11-13T12:45:55.491Z",
+    "updatedAt": "2026-11-13T12:45:55.491Z"
+  },
+  "mutinous": {
+    "word": "mutinous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Rebellious or refusing to obey authority, especially in a group such as soldiers or sailors.",
+        "examples": [
+          "The captain struggled to control the mutinous crew.",
+          "Mutinous soldiers refused to follow orders.",
+          "The leader faced mutinous voices within the party.",
+          "Their mutinous behavior threatened discipline."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Showing anger, resistance, or desire to rebel.",
+        "examples": [
+          "He gave a mutinous look when criticized.",
+          "The child crossed his arms in mutinous silence.",
+          "Workers mutinously protested unfair conditions.",
+          "A mutinous mood spread through the crowd."
+        ]
+      }
+    ],
+    "variations": [
+      "mutinous",
+      "more mutinous",
+      "most mutinous",
+      "mutinously",
+      "mutiny",
+      "mutinies"
+    ],
+    "createdAt": "2026-11-13T12:45:55.525Z",
+    "updatedAt": "2026-11-13T12:45:55.525Z"
+  },
+  "meadows": {
+    "word": "meadows",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Open areas of grassland, often filled with wildflowers, usually found in the countryside.",
+        "examples": [
+          "Children ran freely across the green meadows.",
+          "Wild horses grazed peacefully in the mountain meadows.",
+          "Spring flowers covered the meadows with bright colors.",
+          "The river flowed quietly beside the wide meadow."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "Fields of grass used for animals to graze or for growing hay.",
+        "examples": [
+          "Farmers cut hay from the meadows before winter.",
+          "Cows wandered through the wet meadows near the village.",
+          "Several fertile meadows surrounded the farmhouse.",
+          "Morning mist spread gently across the grazing meadows."
+        ]
+      }
+    ],
+    "variations": [
+      "meadow",
+      "meadows"
+    ],
+    "createdAt": "2026-11-13T12:45:55.792Z",
+    "updatedAt": "2026-11-13T12:45:55.792Z"
+  },
+  "menagerie": {
+    "word": "menagerie",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A collection of wild, unusual, or kept animals, especially for display.",
+        "examples": [
+          "The king owned a menagerie filled with exotic animals.",
+          "Children were fascinated by the traveling menagerie.",
+          "The old palace once contained a private menagerie.",
+          "Visitors explored the colorful menagerie of birds and animals."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A varied or unusual mixture of people or things.",
+        "examples": [
+          "The market was a menagerie of sounds, colors, and smells.",
+          "Her room looked like a menagerie of books and paintings.",
+          "The film gathers a strange menagerie of characters together.",
+          "The festival became a lively menagerie of cultures and traditions."
+        ]
+      }
+    ],
+    "variations": [
+      "menagerie",
+      "menageries"
+    ],
+    "createdAt": "2026-11-13T12:45:55.816Z",
+    "updatedAt": "2026-11-13T12:45:55.816Z"
+  },
+  "malformed": {
+    "word": "malformed",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having an unnatural, damaged, or incorrectly formed shape or structure.",
+        "examples": [
+          "The tree grew in a strangely malformed shape.",
+          "Doctors treated a child born with malformed limbs.",
+          "The accident left the metal frame badly malformed.",
+          "Several malformed bricks weakened the old wall."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Incorrectly arranged or improperly structured.",
+        "examples": [
+          "The computer failed because of a malformed file.",
+          "Engineers discovered malformed data in the system.",
+          "The website crashed after receiving malformed requests.",
+          "A malformed sentence confused the readers."
+        ]
+      }
+    ],
+    "variations": [
+      "malformed",
+      "malformation",
+      "malformations"
+    ],
+    "createdAt": "2026-11-13T12:45:55.834Z",
+    "updatedAt": "2026-11-13T12:45:55.834Z"
+  },
+  "mingled": {
+    "word": "mingled",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Mixed, combined, or joined together, especially in a natural or social way.",
+        "examples": [
+          "The smell of flowers mingled with the fresh rain.",
+          "Voices from different rooms mingled in the hallway.",
+          "She mingled easily with the guests at the party.",
+          "Joy and sadness mingled in his heart at the farewell."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T12:45:56.016Z",
+    "updatedAt": "2026-11-13T12:45:56.016Z"
+  },
+  "maggot": {
+    "word": "maggot",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A soft, legless larva of a fly or other dipteran insect, that often eats decomposing organic matter.; A worthless, obnoxious or contemptible person.",
+        "examples": [
+          "Drop and give me fifty, maggot.",
+          "The author skillfully incorporated maggot to emphasize the underlying theme.",
+          "In every chapter, the presence of maggot provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To rid (an animal) of maggots.",
+        "examples": [
+          "The author skillfully incorporated maggot to emphasize the underlying theme.",
+          "In every chapter, the presence of maggot provided an unmistakable atmosphere.",
+          "Observers noted that maggot altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Alternative form of maggoted (“drunk; intoxicated”).",
+        "examples": [
+          "The author skillfully incorporated maggot to emphasize the underlying theme.",
+          "In every chapter, the presence of maggot provided an unmistakable atmosphere.",
+          "Observers noted that maggot altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "maggot",
+      "magat"
+    ],
+    "createdAt": "2026-11-13T12:45:56.216Z",
+    "updatedAt": "2026-11-13T12:45:56.216Z"
+  },
+  "mushy": {
+    "word": "mushy",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Resembling or having the consistency of mush; semiliquid, pasty, or granular.; Soft; squishy.",
+        "examples": [
+          "I don't especially like mushy oatmeal.",
+          "The brake pedal is mushy sometimes when I step on it.",
+          "Skip the mushy, romantic scenes and get to the action."
+        ]
+      }
+    ],
+    "variations": [
+      "mushy"
+    ],
+    "createdAt": "2026-11-13T12:45:56.326Z",
+    "updatedAt": "2026-11-13T12:45:56.326Z"
+  },
+  "malfunction": {
+    "word": "malfunction",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Faulty functioning.; Failure to function.",
+        "examples": [
+          "The author skillfully incorporated malfunction to emphasize the underlying theme.",
+          "In every chapter, the presence of malfunction provided an unmistakable atmosphere.",
+          "Observers noted that malfunction altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To function improperly.; To fail to function.",
+        "examples": [
+          "She told him the machine was poorly built, but they both knew that she was the one who had malfunctioned.",
+          "The author skillfully incorporated malfunction to emphasize the underlying theme.",
+          "In every chapter, the presence of malfunction provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "malfunction"
+    ],
+    "createdAt": "2026-11-13T12:45:56.342Z",
+    "updatedAt": "2026-11-13T12:45:56.342Z"
+  },
+  "miniature": {
+    "word": "miniature",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Greatly diminished size or form; reduced scale.; A small version of something; a model of reduced scale.",
+        "examples": [
+          "There was a miniature of a whaling ship in a glass bottle over the mantelpiece.",
+          "Sacha composed a miniature for strings as a final project at the conservatory.",
+          "Jack had dozens of miniatures of Napoleonic footsoldiers painted in detailed period regalia for his wargames."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Smaller than normal.",
+        "examples": [
+          "I find miniature dogs annoying; they seem to yap more than full-size dogs.",
+          "The author skillfully incorporated miniature to emphasize the underlying theme.",
+          "In every chapter, the presence of miniature provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To make smaller than normal; to reproduce in miniature.",
+        "examples": [
+          "The author skillfully incorporated miniature to emphasize the underlying theme.",
+          "In every chapter, the presence of miniature provided an unmistakable atmosphere.",
+          "Observers noted that miniature altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "miniature"
+    ],
+    "createdAt": "2026-11-13T12:45:56.426Z",
+    "updatedAt": "2026-11-13T12:45:56.426Z"
+  },
+  "mop": {
+    "word": "mop",
+    "meanings": [
+      {
+        "partOfSpeech": "symbol",
+        "definition": "ISO 639-3 language code for Mopan Maya.",
+        "examples": [
+          "The author skillfully incorporated mop to emphasize the underlying theme.",
+          "In every chapter, the presence of mop provided an unmistakable atmosphere.",
+          "Observers noted that mop altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "An implement for washing floors or similar, made of a piece of cloth, or a collection of thrums, or coarse yarn, fastened to a handle.; A wash with a mop; the act of mopping.",
+        "examples": [
+          "He gave the floor a quick mop to soak up the spilt juice.",
+          "He ran a comb through his mop and hurried out the door.",
+          "The author skillfully incorporated mop to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To rub, scrub, clean or wipe with a mop, or as if with a mop.; To shoplift.",
+        "examples": [
+          "To mop (or scrub) a floor.",
+          "To mop one's face with a handkerchief.",
+          "The author skillfully incorporated mop to emphasize the underlying theme."
+        ]
+      }
+    ],
+    "variations": [
+      "mop"
+    ],
+    "createdAt": "2026-11-13T12:45:56.487Z",
+    "updatedAt": "2026-11-13T12:45:56.487Z"
+  },
+  "magnanimous": {
+    "word": "magnanimous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Noble and generous in spirit.",
+        "examples": [
+          "The local magnanimous gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden magnanimous swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various magnanimous preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "magnanimous"
+    ],
+    "createdAt": "2026-11-13T12:45:56.549Z",
+    "updatedAt": "2026-11-13T12:45:56.549Z"
+  },
+  "mess": {
+    "word": "mess",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A disagreeable mixture or confusion of things; hence, a situation resulting from blundering or from misunderstanding; disorder.; A large quantity or number.",
+        "examples": [
+          "He made a mess of it.",
+          "My boss dumped a whole mess of projects on my desk today.",
+          "Parked under a tree, my car was soon covered in birds' mess."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(transitive, often used with \"up\") To make untidy or dirty.; (transitive, often used with \"up\") To throw into disorder or to ruin.",
+        "examples": [
+          "This doesn't concern you. Don't mess.",
+          "Stop messing with me!",
+          "I mess with the wardroom officers."
+        ]
+      }
+    ],
+    "variations": [
+      "mess"
+    ],
+    "createdAt": "2026-11-13T12:45:56.757Z",
+    "updatedAt": "2026-11-13T12:45:56.757Z"
+  },
+  "molasses": {
+    "word": "molasses",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A thick, sweet syrup drained from sugarcane, especially the still thicker and sweeter syrup produced by boiling down raw molasses.; Any similarly thick and sweet syrup produced by boiling down fruit juices, tree saps, etc., especially concentrated maple syrup.",
+        "examples": [
+          "He really poured on the molasses, charming his audience and changing more than a few votes.",
+          "The local molasses gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden molasses swept across the region, overwhelming the drainage canals."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "third-person singular simple present indicative of molass",
+        "examples": [
+          "The local molasses gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden molasses swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various molasses preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "molasses",
+      "molass"
+    ],
+    "createdAt": "2026-11-13T12:45:56.963Z",
+    "updatedAt": "2026-11-13T12:45:56.963Z"
+  },
+  "meticulous": {
+    "word": "meticulous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Characterized by very precise, conscientious attention to details.; Timid, fearful, overly cautious.",
+        "examples": [
+          "Meticulous search.",
+          "Meticulous investigation.",
+          "Meticulous knowledge."
+        ]
+      }
+    ],
+    "variations": [
+      "meticulous"
+    ],
+    "createdAt": "2026-11-13T12:45:57.132Z",
+    "updatedAt": "2026-11-13T12:45:57.132Z"
+  },
+  "mundane": {
+    "word": "mundane",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An unremarkable, ordinary human being.; (in various subcultures) A person considered to be \"normal\", part of the mainstream culture, outside the subculture, not part of the elite group.",
+        "examples": [
+          "The author skillfully incorporated mundane to emphasize the underlying theme.",
+          "In every chapter, the presence of mundane provided an unmistakable atmosphere.",
+          "Observers noted that mundane altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Worldly, earthly, profane, vulgar as opposed to heavenly.; Pertaining to the Universe, cosmos or physical reality, as opposed to the spiritual world.",
+        "examples": [
+          "The author skillfully incorporated mundane to emphasize the underlying theme.",
+          "In every chapter, the presence of mundane provided an unmistakable atmosphere.",
+          "Observers noted that mundane altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "mundane"
+    ],
+    "createdAt": "2026-11-13T12:45:57.216Z",
+    "updatedAt": "2026-11-13T12:45:57.216Z"
+  },
+  "meatloaf": {
+    "word": "meatloaf",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A dish of ground meat (usually made from ground beef, although lamb, pork, veal, venison, poultry and seafood are also used) formed into a loaf shape, mixed with egg and breadcrumbs, then baked or smoked, and usually served in slices.",
+        "examples": [
+          "For his meatloaf, he mixed the meat, eggs, chopped onion, breadcrumbs, tomato sauce and a can of beer according to the instructions, then diced in an apple he had lying around.",
+          "The author skillfully incorporated meatloaf to emphasize the underlying theme.",
+          "In every chapter, the presence of meatloaf provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "meatloaf"
+    ],
+    "createdAt": "2026-11-13T12:45:57.567Z",
+    "updatedAt": "2026-11-13T12:45:57.567Z"
+  },
+  "moors": {
+    "word": "moors",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Plural form) An extensive waste covered with patches of heath, and having a poor, light (and usually acidic) soil, but sometimes marshy, and abounding in peat; a heath.; (Plural form) A game preserve consisting of moorland.",
+        "examples": [
+          "A cold, biting wind blew across the moors, and the travellers hastened their step.",
+          "In her girlish age, she kept sheep on the moors.",
+          "The local moors gathered early in the square to prepare their daily exhibits."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Plural form) To cast anchor or become fastened.; (Plural form) To fix or secure (e.g. a vessel) in a particular place by casting anchor, or by fastening with ropes, cables or chains or the like.",
+        "examples": [
+          "The vessel moored in the stream.",
+          "They moored the boat to the wharf.",
+          "The local moors gathered early in the square to prepare their daily exhibits."
+        ]
+      }
+    ],
+    "variations": [
+      "moors",
+      "moor"
+    ],
+    "createdAt": "2026-11-13T12:45:58.187Z",
+    "updatedAt": "2026-11-13T12:45:58.187Z"
+  },
+  "monotonous": {
+    "word": "monotonous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having an unvarying pitch or tone.; Tedious, repetitious, or lacking in variety.",
+        "examples": [
+          "The local monotonous gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden monotonous swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various monotonous preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "monotonous"
+    ],
+    "createdAt": "2026-11-13T12:45:58.197Z",
+    "updatedAt": "2026-11-13T12:45:58.197Z"
+  },
+  "mend": {
+    "word": "mend",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A place, as in clothing, which has been repaired by mending.; The act of repairing.",
+        "examples": [
+          "My trousers have a big rip in them and need a mend.",
+          "The author skillfully incorporated mend to emphasize the underlying theme.",
+          "In every chapter, the presence of mend provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To repair, as anything that is torn, broken, defaced, decayed, or the like; to restore from partial decay, injury, or defacement.; To alter for the better; to set right; to reform; hence, to quicken; as, to mend one's manners or pace.",
+        "examples": [
+          "My trousers have a big rip in them and need mending.",
+          "Her stutter was mended by a speech therapist.",
+          "When your car breaks down, you can take it to the garage to have it mended."
+        ]
+      }
+    ],
+    "variations": [
+      "mend"
+    ],
+    "createdAt": "2026-11-13T12:45:58.333Z",
+    "updatedAt": "2026-11-13T12:45:58.333Z"
+  },
+  "mist": {
+    "word": "mist",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Water or other liquid finely suspended in air.; A layer of fine droplets or particles.",
+        "examples": [
+          "It was difficult to see through the morning mist.",
+          "There was an oily mist on the lens.",
+          "The author skillfully incorporated mist to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To form mist.; To spray fine droplets on, particularly of water.",
+        "examples": [
+          "It's misting this morning.",
+          "I mist my tropical plants every morning.",
+          "The lens was misted."
+        ]
+      }
+    ],
+    "variations": [
+      "mist"
+    ],
+    "createdAt": "2026-11-13T12:45:58.490Z",
+    "updatedAt": "2026-11-13T12:45:58.490Z"
+  },
+  "meadow": {
+    "word": "meadow",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A field or pasture; a piece of land covered or cultivated with grass, usually intended to be mown for hay.; Low land covered with coarse grass or rank herbage near rivers and in marshy places by the sea.",
+        "examples": [
+          "The salt meadows near Newark Bay.",
+          "Alpine meadows.",
+          "The author skillfully incorporated meadow to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To cultivate with grass in order to produce hay.",
+        "examples": [
+          "The author skillfully incorporated meadow to emphasize the underlying theme.",
+          "In every chapter, the presence of meadow provided an unmistakable atmosphere.",
+          "Observers noted that meadow altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "meadow"
+    ],
+    "createdAt": "2026-11-13T12:45:58.532Z",
+    "updatedAt": "2026-11-13T12:45:58.532Z"
+  },
+  "miserable": {
+    "word": "miserable",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A miserable person; a wretch.; A state of misery or melancholy.",
+        "examples": [
+          "The author skillfully incorporated miserable to emphasize the underlying theme.",
+          "In every chapter, the presence of miserable provided an unmistakable atmosphere.",
+          "Observers noted that miserable altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "In a state of misery: very sad, ill, or poor.; Very bad (at something); unskilled, incompetent.",
+        "examples": [
+          "He's good at some sports, like tennis, but he's just miserable at football.",
+          "A miserable sinner.",
+          "The author skillfully incorporated miserable to emphasize the underlying theme."
+        ]
+      }
+    ],
+    "variations": [
+      "miserable"
+    ],
+    "createdAt": "2026-11-13T12:45:58.541Z",
+    "updatedAt": "2026-11-13T12:45:58.541Z"
+  },
+  "meddle": {
+    "word": "meddle",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To interfere in or with; to concern oneself with unduly.; To interest or engage oneself; to have to do (with), in a good sense.",
+        "examples": [
+          "The author skillfully incorporated meddle to emphasize the underlying theme.",
+          "In every chapter, the presence of meddle provided an unmistakable atmosphere.",
+          "Observers noted that meddle altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "meddle"
+    ],
+    "createdAt": "2026-11-13T12:45:58.554Z",
+    "updatedAt": "2026-11-13T12:45:58.554Z"
+  },
+  "miscreant": {
+    "word": "miscreant",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Lacking in conscience or moral principles; unscrupulous.; Holding an incorrect religious belief.",
+        "examples": [
+          "The author skillfully incorporated miscreant to emphasize the underlying theme.",
+          "In every chapter, the presence of miscreant provided an unmistakable atmosphere.",
+          "Observers noted that miscreant altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "One who has behaved badly, or illegally.; One not restrained by moral principles; an unscrupulous villain.",
+        "examples": [
+          "The teacher sent the miscreants to see the school principal.",
+          "The author skillfully incorporated miscreant to emphasize the underlying theme.",
+          "In every chapter, the presence of miscreant provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "miscreant"
+    ],
+    "createdAt": "2026-11-13T12:45:58.712Z",
+    "updatedAt": "2026-11-13T12:45:58.712Z"
+  },
+  "monstrosity": {
+    "word": "monstrosity",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Something, especially a building or animal, that is very large and unsightly or grotesque.",
+        "examples": [
+          "His father viewed the insect on the carpet as an intolerable monstrosity."
+        ]
+      }
+    ],
+    "variations": [
+      "monstrosities",
+      "monstrous"
+    ],
+    "createdAt": "2026-11-13T14:23:18.787Z",
+    "updatedAt": "2026-11-13T14:23:18.787Z"
+  },
+  "macabre": {
+    "word": "macabre",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Disturbing and horrifying because of involvement with or depiction of death and injury.",
+        "examples": [
+          "The vulture-stalked wagon train became an increasingly macabre spectacle to onlookers in Jefferson."
+        ]
+      }
+    ],
+    "variations": [
+      "macabrely"
+    ],
+    "createdAt": "2026-11-13T14:23:18.858Z",
+    "updatedAt": "2026-11-13T14:23:18.858Z"
+  },
+  "moribund": {
+    "word": "moribund",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "At the point of death; in terminal decline; lacking vitality or vigor.",
+        "examples": [
+          "Wards overflowed with moribund patients gasping in the suffocating coastal heat."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:23:18.942Z",
+    "updatedAt": "2026-11-13T14:23:18.942Z"
+  },
+  "malaise": {
+    "word": "malaise",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A general feeling of discomfort, uneasiness, or illness whose exact cause is difficult to identify.",
+        "examples": [
+          "A pervasive moral malaise settled over the citizens during the prolonged quarantine."
+        ]
+      }
+    ],
+    "variations": [
+      "malaises"
+    ],
+    "createdAt": "2026-11-13T14:38:22.762Z",
+    "updatedAt": "2026-11-13T14:38:22.762Z"
+  },
+  "malevolence": {
+    "word": "malevolence",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The state or condition of wishing evil or harm to others; hostility.",
+        "examples": [
+          "There was cold malevolence in the overseer's eyes as he selected the day's punishment detail."
+        ]
+      }
+    ],
+    "variations": [
+      "malevolent",
+      "malevolently"
+    ],
+    "createdAt": "2026-11-13T14:38:22.772Z",
+    "updatedAt": "2026-11-13T14:38:22.772Z"
+  },
+  "malfeasance": {
+    "word": "malfeasance",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Wrongdoing, especially by a public official.",
+        "examples": [
+          "The grand jury indicted three former superintendents for gross financial malfeasance."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:22.778Z",
+    "updatedAt": "2026-11-13T14:38:22.778Z"
+  },
+  "malign": {
+    "word": "malign",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Speak about someone in a spitefully critical manner; slander.",
+        "examples": [
+          "State newspapers sought to malign civil rights organizers as outside agitators."
+        ]
+      }
+    ],
+    "variations": [
+      "maligned",
+      "maligning"
+    ],
+    "createdAt": "2026-11-13T14:38:22.786Z",
+    "updatedAt": "2026-11-13T14:38:22.786Z"
+  },
+  "malinger": {
+    "word": "malinger",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Exaggerate or feign illness in order to escape duty or work.",
+        "examples": [
+          "The chief clerk accused Gregor of attempting to malinger when he failed to report at five."
+        ]
+      }
+    ],
+    "variations": [
+      "malingered",
+      "malingering",
+      "malingerer"
+    ],
+    "createdAt": "2026-11-13T14:38:22.791Z",
+    "updatedAt": "2026-11-13T14:38:22.791Z"
+  },
+  "mandate": {
+    "word": "mandate",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An official order or commission to do something.",
+        "examples": [
+          "The health commissioner issued a sweeping mandate requiring daily disinfection of all public halls."
+        ]
+      }
+    ],
+    "variations": [
+      "mandates",
+      "mandated"
+    ],
+    "createdAt": "2026-11-13T14:38:22.797Z",
+    "updatedAt": "2026-11-13T14:38:22.797Z"
+  },
+  "manifest": {
+    "word": "manifest",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Display or show a quality or feeling by one's acts or appearance; demonstrate.",
+        "examples": [
+          "The illness began to manifest through extreme lethargy, black vomit, and swelling."
+        ]
+      }
+    ],
+    "variations": [
+      "manifested",
+      "manifesting",
+      "manifestation"
+    ],
+    "createdAt": "2026-11-13T14:38:22.802Z",
+    "updatedAt": "2026-11-13T14:38:22.802Z"
+  },
+  "martyrdom": {
+    "word": "martyrdom",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The death or suffering of a martyr; a display of feigned or exaggerated suffering to obtain sympathy.",
+        "examples": [
+          "Elwood did not seek martyrdom; he sought only to be treated as a human being."
+        ]
+      }
+    ],
+    "variations": [
+      "martyr"
+    ],
+    "createdAt": "2026-11-13T14:38:22.808Z",
+    "updatedAt": "2026-11-13T14:38:22.808Z"
+  },
+  "maudlin": {
+    "word": "maudlin",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Self-pityingly or tearfully sentimental, often through drunkenness.",
+        "examples": [
+          "The drunken lodgers sang maudlin ballads while Gregor lay dying in the next room."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:22.814Z",
+    "updatedAt": "2026-11-13T14:38:22.814Z"
+  },
+  "maverick": {
+    "word": "maverick",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An unorthodox or independent-minded person.",
+        "examples": [
+          "Turner was a solitary maverick who refused to participate in the school's petty rivalries."
+        ]
+      }
+    ],
+    "variations": [
+      "mavericks"
+    ],
+    "createdAt": "2026-11-13T14:38:22.822Z",
+    "updatedAt": "2026-11-13T14:38:22.822Z"
+  },
+  "meager": {
+    "word": "meager",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Lacking in quantity or quality; lean; thin.",
+        "examples": [
+          "The boys survived on meager portions of watery grits and fried fatback."
+        ]
+      }
+    ],
+    "variations": [
+      "meagerly"
+    ],
+    "createdAt": "2026-11-13T14:38:22.828Z",
+    "updatedAt": "2026-11-13T14:38:22.828Z"
+  },
+  "melancholy": {
+    "word": "melancholy",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A feeling of pensive sadness, typically with no obvious cause.",
+        "examples": [
+          "A deep, unshakeable melancholy overtook the doctor as the funeral wagons passed his window."
+        ]
+      }
+    ],
+    "variations": [
+      "melancholic"
+    ],
+    "createdAt": "2026-11-13T14:38:22.835Z",
+    "updatedAt": "2026-11-13T14:38:22.835Z"
+  },
+  "mendacity": {
+    "word": "mendacity",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Untruthfulness; tendency to lie.",
+        "examples": [
+          "The administration's mendacity was finally exposed when the hidden graves were opened."
+        ]
+      }
+    ],
+    "variations": [
+      "mendacious"
+    ],
+    "createdAt": "2026-11-13T14:38:22.844Z",
+    "updatedAt": "2026-11-13T14:38:22.844Z"
+  },
+  "mercenary": {
+    "word": "mercenary",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Primarily concerned with making money at the expense of ethics.",
+        "examples": [
+          "The state leased convict labor to local farms in a purely mercenary arrangement."
+        ]
+      }
+    ],
+    "variations": [
+      "mercenaries"
+    ],
+    "createdAt": "2026-11-13T14:38:22.850Z",
+    "updatedAt": "2026-11-13T14:38:22.850Z"
+  },
+  "mercurial": {
+    "word": "mercurial",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Subject to sudden or unpredictable changes of mood or mind.",
+        "examples": [
+          "The guard captain's mercurial temper kept every boy on edge from dawn to dusk."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:22.855Z",
+    "updatedAt": "2026-11-13T14:38:22.855Z"
+  },
+  "miasma": {
+    "word": "miasma",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A highly unpleasant or unhealthy smell or vapor.",
+        "examples": [
+          "A foul miasma of decay rose from the swamp where the clandestine graves were dug."
+        ]
+      }
+    ],
+    "variations": [
+      "miasmas"
+    ],
+    "createdAt": "2026-11-13T14:38:22.866Z",
+    "updatedAt": "2026-11-13T14:38:22.866Z"
+  },
+  "minuscule": {
+    "word": "minuscule",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Extremely small; tiny.",
+        "examples": [
+          "Gregor looked down at his minuscule legs flailing helplessly in the morning light."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:22.874Z",
+    "updatedAt": "2026-11-13T14:38:22.874Z"
+  },
+  "mitigate": {
+    "word": "mitigate",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Make less severe, serious, or painful.",
+        "examples": [
+          "Nothing the family said could mitigate the harsh reality of Addie's passing."
+        ]
+      }
+    ],
+    "variations": [
+      "mitigated",
+      "mitigating",
+      "mitigation"
+    ],
+    "createdAt": "2026-11-13T14:38:22.888Z",
+    "updatedAt": "2026-11-13T14:38:22.888Z"
+  },
+  "mollify": {
+    "word": "mollify",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Appease the anger or anxiety of someone.",
+        "examples": [
+          "The superintendent tried to mollify the visiting committee with a lavish barbecue."
+        ]
+      }
+    ],
+    "variations": [
+      "mollified",
+      "mollifying"
+    ],
+    "createdAt": "2026-11-13T14:38:22.897Z",
+    "updatedAt": "2026-11-13T14:38:22.897Z"
+  },
+  "monolithic": {
+    "word": "monolithic",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Large, powerful, and intractably indivisible and uniform.",
+        "examples": [
+          "The state's penal system presented a monolithic front against all outside inquiries."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:22.907Z",
+    "updatedAt": "2026-11-13T14:38:22.907Z"
+  },
+  "moratorium": {
+    "word": "moratorium",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A temporary prohibition of an activity.",
+        "examples": [
+          "The governor declared a moratorium on corporal punishment after the scandal broke."
+        ]
+      }
+    ],
+    "variations": [
+      "moratoriums"
+    ],
+    "createdAt": "2026-11-13T14:38:22.914Z",
+    "updatedAt": "2026-11-13T14:38:22.914Z"
+  },
+  "morbid": {
+    "word": "morbid",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Characterized by or appealing to an abnormal and unhealthy interest in disturbing and unpleasant subjects, especially death and disease.",
+        "examples": [
+          "Neighbors took a morbid interest in the Bundren family's slow wagon crossing."
+        ]
+      }
+    ],
+    "variations": [
+      "morbidly",
+      "morbidity"
+    ],
+    "createdAt": "2026-11-13T14:38:22.921Z",
+    "updatedAt": "2026-11-13T14:38:22.921Z"
+  },
+  "mordant": {
+    "word": "mordant",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having or showing a sharp or critical quality; biting.",
+        "examples": [
+          "Turner delivered mordant commentary on the hypocrisy of the annual school awards."
+        ]
+      }
+    ],
+    "variations": [
+      "mordantly"
+    ],
+    "createdAt": "2026-11-13T14:38:22.930Z",
+    "updatedAt": "2026-11-13T14:38:22.930Z"
+  },
+  "morose": {
+    "word": "morose",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Sullen and ill-tempered.",
+        "examples": [
+          "Gregor's father sat morose and silent at the kitchen table, refusing to speak to anyone."
+        ]
+      }
+    ],
+    "variations": [
+      "morosely"
+    ],
+    "createdAt": "2026-11-13T14:38:22.936Z",
+    "updatedAt": "2026-11-13T14:38:22.936Z"
+  },
+  "motley": {
+    "word": "motley",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Incongruously varied in appearance or character; disparate.",
+        "examples": [
+          "The volunteer sanitation squads were a motley collection of clerks, dockers, and students."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:22.943Z",
+    "updatedAt": "2026-11-13T14:38:22.943Z"
+  },
+  "multifarious": {
+    "word": "multifarious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Many and of various types; having many varied parts or aspects.",
+        "examples": [
+          "Gregor recalled the multifarious duties of his former life as a traveling salesman."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:22.948Z",
+    "updatedAt": "2026-11-13T14:38:22.948Z"
+  },
+  "munificent": {
+    "word": "munificent",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "More generous than is usual or necessary of a gift or sum of money.",
+        "examples": [
+          "The local planter made a munificent donation to the chapel while exploiting child labor in his groves."
+        ]
+      }
+    ],
+    "variations": [
+      "munificence"
+    ],
+    "createdAt": "2026-11-13T14:38:22.956Z",
+    "updatedAt": "2026-11-13T14:38:22.956Z"
+  },
+  "myopic": {
+    "word": "myopic",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Nearsighted; lacking imagination, foresight, or intellectual insight.",
+        "examples": [
+          "The school's trustees pursued a myopic policy of short-term profit over the welfare of the children."
+        ]
+      }
+    ],
+    "variations": [
+      "myopically"
+    ],
+    "createdAt": "2026-11-13T14:38:22.963Z",
+    "updatedAt": "2026-11-13T14:38:22.963Z"
+  },
+  "mold": {
+    "word": "mold",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A hollow form or matrix for shaping a fluid or plastic substance.; A frame or model around or on which something is formed or shaped.",
+        "examples": [
+          "The oval mold of her face.",
+          "A leader in the mold of her predecessors.",
+          "His method of scientific investigation broke the mold and led to a new discovery."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To shape in or on a mold; to form into a particular shape; to give shape to.; To guide or determine the growth or development of; influence",
+        "examples": [
+          "These shoes gradually molded to my feet.",
+          "The author skillfully incorporated mold to emphasize the underlying theme.",
+          "In every chapter, the presence of mold provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "mold"
+    ],
+    "createdAt": "2026-11-14T05:16:04.777Z",
+    "updatedAt": "2026-11-14T05:16:04.777Z"
+  },
+  "muster": {
+    "word": "muster",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Gathering.; Showing.",
+        "examples": [
+          "The author skillfully incorporated muster to emphasize the underlying theme.",
+          "In every chapter, the presence of muster provided an unmistakable atmosphere.",
+          "Observers noted that muster altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To show, exhibit.; To be gathered together for parade, inspection, exercise, or the like (especially of a military force); to come together as parts of a force or body.",
+        "examples": [
+          "The author skillfully incorporated muster to emphasize the underlying theme.",
+          "In every chapter, the presence of muster provided an unmistakable atmosphere.",
+          "Observers noted that muster altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "muster"
+    ],
+    "createdAt": "2026-11-14T05:16:08.967Z",
+    "updatedAt": "2026-11-14T05:16:08.967Z"
+  },
+  "maniac": {
+    "word": "maniac",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An insane person, especially one who suffers from a mania.; A fanatic, a person with an obsession.",
+        "examples": [
+          "The author skillfully incorporated maniac to emphasize the underlying theme.",
+          "In every chapter, the presence of maniac provided an unmistakable atmosphere.",
+          "Observers noted that maniac altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "maniac"
+    ],
+    "createdAt": "2026-11-14T05:16:09.882Z",
+    "updatedAt": "2026-11-14T05:16:09.882Z"
+  }
+}

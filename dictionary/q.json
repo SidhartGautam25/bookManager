@@ -1,0 +1,197 @@
+{
+  "quilts": {
+    "word": "quilts",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Warm bed coverings made by stitching together layers of cloth with soft material inside.",
+        "examples": [
+          "The grandmother stitched colorful quilts by hand.",
+          "Heavy quilts kept them warm during winter nights.",
+          "The bed was covered with bright cotton quilts.",
+          "Old family quilts were stored carefully in wooden boxes."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To stitch layers of fabric together to make a quilt or padded cloth item.",
+        "examples": [
+          "She learned to quilt from her mother.",
+          "The women quilted blankets for the village festival.",
+          "They quilted pieces of old cloth into a beautiful cover.",
+          "He watched his grandmother quilting near the window."
+        ]
+      }
+    ],
+    "variations": [
+      "quilt"
+    ],
+    "createdAt": "2026-11-13T12:45:56.074Z",
+    "updatedAt": "2026-11-13T12:45:56.074Z"
+  },
+  "queer": {
+    "word": "queer",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Homosexual.; Non-heterosexual or non-cisgender: homosexual, bisexual, asexual, transgender, etc.",
+        "examples": [
+          "The queer community.",
+          "I felt queer after eating those shrimp.",
+          "The author skillfully incorporated queer to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A person who is or appears homosexual, or who has homosexual qualities.; A person of any non-heterosexual sexuality or sexual identity.",
+        "examples": [
+          "The author skillfully incorporated queer to emphasize the underlying theme.",
+          "In every chapter, the presence of queer provided an unmistakable atmosphere.",
+          "Observers noted that queer altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To render an endeavor or agreement ineffective or null.; To puzzle.",
+        "examples": [
+          "The author skillfully incorporated queer to emphasize the underlying theme.",
+          "In every chapter, the presence of queer provided an unmistakable atmosphere.",
+          "Observers noted that queer altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adverb",
+        "definition": "Queerly.; Very, extremely.",
+        "examples": [
+          "Twas a queer bachram in the pub that night!",
+          "The author skillfully incorporated queer to emphasize the underlying theme.",
+          "In every chapter, the presence of queer provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "queer"
+    ],
+    "createdAt": "2026-11-13T12:45:56.320Z",
+    "updatedAt": "2026-11-13T12:45:56.320Z"
+  },
+  "quarantine": {
+    "word": "quarantine",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A state, period, or place of isolation in which people or animals that have arrived from elsewhere or been exposed to infectious disease are placed.",
+        "examples": [
+          "The prefecture decreed an immediate quarantine, severing all rail and telegraph communication."
+        ]
+      }
+    ],
+    "variations": [
+      "quarantined",
+      "quarantining"
+    ],
+    "createdAt": "2026-11-13T14:23:18.912Z",
+    "updatedAt": "2026-11-13T14:23:18.912Z"
+  },
+  "quandary": {
+    "word": "quandary",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A state of perplexity or uncertainty over what to do in a difficult situation.",
+        "examples": [
+          "Rambert was in a painful quandary between his desire to rejoin his lover and his duty to help."
+        ]
+      }
+    ],
+    "variations": [
+      "quandaries"
+    ],
+    "createdAt": "2026-11-13T14:40:41.999Z",
+    "updatedAt": "2026-11-13T14:40:41.999Z"
+  },
+  "quell": {
+    "word": "quell",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Put an end to a rebellion or other disorder, typically by the use of force; suppress.",
+        "examples": [
+          "The superintendent called in armed state troopers to quell the growing unrest in the dormitories."
+        ]
+      }
+    ],
+    "variations": [
+      "quelled",
+      "quelling"
+    ],
+    "createdAt": "2026-11-13T14:40:42.007Z",
+    "updatedAt": "2026-11-13T14:40:42.007Z"
+  },
+  "querulous": {
+    "word": "querulous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Complaining in a petulant or whining manner.",
+        "examples": [
+          "Anse Bundren kept up a querulous murmur from the wagon seat as the rain soaked his coat."
+        ]
+      }
+    ],
+    "variations": [
+      "querulously"
+    ],
+    "createdAt": "2026-11-13T14:40:42.012Z",
+    "updatedAt": "2026-11-13T14:40:42.012Z"
+  },
+  "quiescent": {
+    "word": "quiescent",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "In a state or period of inactivity or dormancy.",
+        "examples": [
+          "The epidemic seemed quiescent for two days, only to erupt with renewed fury in the eastern quarter."
+        ]
+      }
+    ],
+    "variations": [
+      "quiescence"
+    ],
+    "createdAt": "2026-11-13T14:40:42.018Z",
+    "updatedAt": "2026-11-13T14:40:42.018Z"
+  },
+  "quixotic": {
+    "word": "quixotic",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Exceedingly idealistic; unrealistic and impractical.",
+        "examples": [
+          "Turner regarded Elwood's faith in institutional reform as noble but dangerously quixotic."
+        ]
+      }
+    ],
+    "variations": [
+      "quixotically"
+    ],
+    "createdAt": "2026-11-13T14:40:42.023Z",
+    "updatedAt": "2026-11-13T14:40:42.023Z"
+  },
+  "quotidian": {
+    "word": "quotidian",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Of or occurring every day; daily; ordinary or everyday.",
+        "examples": [
+          "The plague disrupted the quotidian routines of market days, evening strolls, and school bells."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:40:42.029Z",
+    "updatedAt": "2026-11-13T14:40:42.029Z"
+  }
+}

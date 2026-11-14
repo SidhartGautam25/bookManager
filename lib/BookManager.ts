@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { dictionaryManager } from "@/lib/DictionaryPartitionManager";
 
 export interface WordMeaning {
   partOfSpeech: string;
@@ -10,8 +11,16 @@ export interface WordMeaning {
 export interface Word {
   type?: "word";
   word: string;
+  pageNo?: number;
   variations?: string[];
   meanings: WordMeaning[];
+}
+
+export interface LeanWordEntry {
+  type?: "word";
+  word: string;
+  pageNo?: number;
+  variations?: string[];
 }
 
 export interface SentenceEntry {
@@ -20,10 +29,11 @@ export interface SentenceEntry {
   meaning?: string;
   tag?: string;
   tags?: string[];
+  pageNo?: number;
   createdAt?: string;
 }
 
-export type MediaEntry = Word | SentenceEntry;
+export type MediaEntry = Word | SentenceEntry | LeanWordEntry;
 
 export interface PageData {
   [key: string]: Word[]; // page number as key, array of words as value
@@ -252,6 +262,190 @@ export class BookManager {
   }
 
   /**
+   * Version 2: Add a word to a specific page of a book
+   * Only stores { word, pageNo } in the book's page file.
+   * If the word is NOT in the root dictionary, it adds word + meanings + examples.
+   * If the word IS in the dictionary, it leaves dictionary untouched without editing.
+   */
+  addWordV2(
+    bookName: string,
+    pageNo: number,
+    word: string,
+    meanings: WordMeaning[],
+    variations?: string[],
+  ): { success: boolean; dictionaryAdded: boolean } {
+    if (!this.bookExists(bookName)) {
+      throw new Error(`Book "${bookName}" does not exist`);
+    }
+
+    const cleanWord = word.trim();
+    if (!cleanWord) {
+      throw new Error("Word cannot be empty");
+    }
+
+    const bookPath = path.join(this.booksDir, bookName);
+    const pageFileName = `page_${pageNo}.json`;
+    const pageFilePath = path.join(bookPath, pageFileName);
+
+    let pageData: MediaEntry[] = [];
+    if (fs.existsSync(pageFilePath)) {
+      const fileContent = fs.readFileSync(pageFilePath, "utf-8");
+      pageData = JSON.parse(fileContent);
+    }
+
+    // Check if word already exists on this page
+    if (
+      pageData.some(
+        (item) =>
+          item.type !== "sentence" &&
+          (item as Word).word &&
+          (item as Word).word.toLowerCase() === cleanWord.toLowerCase(),
+      )
+    ) {
+      throw new Error(
+        `Word "${cleanWord}" already exists on page ${pageNo} of book "${bookName}"`,
+      );
+    }
+
+    // 1. Check & Sync with Dictionary Partition Manager
+    let dictionaryAdded = false;
+    if (!dictionaryManager.hasWord(cleanWord)) {
+      const dictRes = dictionaryManager.addWord(
+        {
+          word: cleanWord,
+          meanings: meanings || [],
+          variations: variations || [],
+        },
+        false, // do not overwrite
+      );
+      dictionaryAdded = dictRes.added;
+    }
+
+    // 2. Append lean word reference in book page file
+    pageData.push({
+      type: "word",
+      word: cleanWord,
+      pageNo,
+    });
+
+    fs.writeFileSync(pageFilePath, JSON.stringify(pageData, null, 2), "utf-8");
+    return { success: true, dictionaryAdded };
+  }
+
+  /**
+   * Version 2: Batch add words across pages
+   * Stores lean { word, pageNo } in book pages and syncs new words to dictionary.
+   */
+  addWordsBatchV2(
+    bookName: string,
+    entries: BatchWordEntry[],
+    skipDuplicates: boolean = true,
+  ): BatchResultSummary & { dictionaryWordsAdded: number } {
+    if (!this.bookExists(bookName)) {
+      throw new Error(`Book "${bookName}" does not exist`);
+    }
+
+    const bookPath = path.join(this.booksDir, bookName);
+    const summary: BatchResultSummary & { dictionaryWordsAdded: number } = {
+      totalProcessed: entries.length,
+      added: 0,
+      skipped: 0,
+      pagesAffected: [],
+      errors: [],
+      dictionaryWordsAdded: 0,
+    };
+
+    // Group entries by page
+    const pageGroups = new Map<number, BatchWordEntry[]>();
+    for (const entry of entries) {
+      if (!pageGroups.has(entry.pageNo)) {
+        pageGroups.set(entry.pageNo, []);
+      }
+      pageGroups.get(entry.pageNo)!.push(entry);
+    }
+
+    // Process each page
+    for (const [pageNo, pageEntries] of pageGroups.entries()) {
+      const pageFileName = `page_${pageNo}.json`;
+      const pageFilePath = path.join(bookPath, pageFileName);
+
+      let pageData: MediaEntry[] = [];
+      if (fs.existsSync(pageFilePath)) {
+        try {
+          const fileContent = fs.readFileSync(pageFilePath, "utf-8");
+          pageData = JSON.parse(fileContent);
+        } catch (e) {
+          summary.errors.push(
+            `Failed to read page ${pageNo}: ${(e as Error).message}`,
+          );
+          continue;
+        }
+      }
+
+      let pageModified = false;
+      for (const item of pageEntries) {
+        const cleanWord = item.word.trim();
+        if (!cleanWord) continue;
+
+        const exists = pageData.some(
+          (w) =>
+            w.type !== "sentence" &&
+            (w as Word).word &&
+            (w as Word).word.toLowerCase() === cleanWord.toLowerCase(),
+        );
+
+        if (exists) {
+          if (skipDuplicates) {
+            summary.skipped++;
+            continue;
+          } else {
+            summary.errors.push(
+              `Word "${cleanWord}" already exists on page ${pageNo}`,
+            );
+            continue;
+          }
+        }
+
+        // Check dictionary and insert only if missing
+        if (!dictionaryManager.hasWord(cleanWord)) {
+          const dictRes = dictionaryManager.addWord(
+            {
+              word: cleanWord,
+              meanings: item.meanings || [],
+              variations: item.variations || [],
+            },
+            false,
+          );
+          if (dictRes.added) {
+            summary.dictionaryWordsAdded++;
+          }
+        }
+
+        // Lean book page record
+        pageData.push({
+          type: "word",
+          word: cleanWord,
+          pageNo,
+        });
+        summary.added++;
+        pageModified = true;
+      }
+
+      if (pageModified) {
+        fs.writeFileSync(
+          pageFilePath,
+          JSON.stringify(pageData, null, 2),
+          "utf-8",
+        );
+        summary.pagesAffected.push(pageNo);
+      }
+    }
+
+    summary.pagesAffected.sort((a, b) => a - b);
+    return summary;
+  }
+
+  /**
    * Get all raw items (words and sentences) from a specific page
    */
   getPageItems(bookName: string, pageNo: number): MediaEntry[] {
@@ -278,13 +472,35 @@ export class BookManager {
 
   /**
    * Get all words from a specific page of a book
+   * Automatically hydrates meanings and variations from dictionary if missing (v2 format support)
    */
   getPageWords(bookName: string, pageNo: number): Word[] {
     const items = this.getPageItems(bookName, pageNo);
-    return items.filter(
+    const rawWords = items.filter(
       (item): item is Word =>
         item.type !== "sentence" && typeof (item as Word).word === "string",
     );
+
+    return rawWords.map((w) => {
+      if (w.meanings && w.meanings.length > 0) {
+        return w;
+      }
+      const dictEntry = dictionaryManager.getWord(w.word);
+      if (dictEntry) {
+        return {
+          ...w,
+          variations:
+            w.variations && w.variations.length > 0
+              ? w.variations
+              : dictEntry.variations,
+          meanings: dictEntry.meanings,
+        };
+      }
+      return {
+        ...w,
+        meanings: w.meanings || [],
+      };
+    });
   }
 
   /**
@@ -292,11 +508,16 @@ export class BookManager {
    */
   getPageSentences(bookName: string, pageNo: number): SentenceEntry[] {
     const items = this.getPageItems(bookName, pageNo);
-    return items.filter(
-      (item): item is SentenceEntry =>
-        item.type === "sentence" &&
-        typeof (item as SentenceEntry).sentence === "string",
-    );
+    return items
+      .filter(
+        (item): item is SentenceEntry =>
+          item.type === "sentence" &&
+          typeof (item as SentenceEntry).sentence === "string",
+      )
+      .map((s) => ({
+        ...s,
+        pageNo: s.pageNo !== undefined ? s.pageNo : Number(pageNo),
+      }));
   }
 
   /**
@@ -373,6 +594,14 @@ export class BookManager {
 
     if (frequency === 0) {
       return null;
+    }
+
+    // If no inline meanings found, hydrate from partition dictionary
+    if (meanings.length === 0) {
+      const dictEntry = dictionaryManager.getWord(normalizedWord);
+      if (dictEntry) {
+        meanings = dictEntry.meanings;
+      }
     }
 
     // Get the latest occurrence metadata
@@ -617,6 +846,7 @@ export class BookManager {
       meaning: meaning?.trim() || "",
       tag: cleanTag,
       tags: cleanTag ? [cleanTag] : [],
+      pageNo: Number(pageNo),
       createdAt: new Date().toISOString(),
     };
 
@@ -684,6 +914,7 @@ export class BookManager {
           : existing.meaning,
       tag: cleanTag,
       tags: cleanTag ? [cleanTag] : [],
+      pageNo: existing.pageNo !== undefined ? existing.pageNo : Number(pageNo),
     };
 
     fs.writeFileSync(pageFilePath, JSON.stringify(pageData, null, 2), "utf-8");

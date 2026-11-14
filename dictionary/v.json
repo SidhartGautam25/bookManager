@@ -1,0 +1,990 @@
+{
+  "vigorous": {
+    "word": "vigorous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Strong, energetic, healthy, or full of force and activity.",
+        "examples": [
+          "He remained vigorous even in old age.",
+          "The team made a vigorous effort to win the match.",
+          "She vigorously defended her ideas during the debate.",
+          "The garden showed vigorous plant growth after the rain."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Done with great energy, force, or enthusiasm.",
+        "examples": [
+          "The crowd gave the singer a vigorous applause.",
+          "Doctors advised vigorous exercise for better health.",
+          "The storm brought vigorous winds across the coast.",
+          "They launched a vigorous campaign against corruption."
+        ]
+      }
+    ],
+    "variations": [
+      "vigorous",
+      "more vigorous",
+      "most vigorous",
+      "vigorously",
+      "vigour"
+    ],
+    "createdAt": "2026-11-13T12:45:54.912Z",
+    "updatedAt": "2026-11-13T12:45:54.912Z"
+  },
+  "virile": {
+    "word": "virile",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Strong, energetic, masculine, or physically powerful.",
+        "examples": [
+          "The actor was known for his virile appearance.",
+          "He maintained a virile energy even in later years.",
+          "The novel describes a virile young warrior.",
+          "Athletes admired his virile strength and confidence."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Showing force, vigor, or strong effectiveness.",
+        "examples": [
+          "The writer used a virile style of expression.",
+          "Their virile campaign quickly gained attention.",
+          "The speech carried a virile confidence.",
+          "The movement was driven by virile leadership."
+        ]
+      }
+    ],
+    "variations": [
+      "virile",
+      "more virile",
+      "most virile",
+      "virility"
+    ],
+    "createdAt": "2026-11-13T12:45:54.926Z",
+    "updatedAt": "2026-11-13T12:45:54.926Z"
+  },
+  "vestiges": {
+    "word": "vestiges",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Small remaining traces, signs, or parts of something that once existed but has mostly disappeared.",
+        "examples": [
+          "Only a few vestiges of the ancient city remain today.",
+          "The old traditions survive as faint vestiges in village life.",
+          "There was not a vestige of fear in her expression.",
+          "Ruins and broken walls were the last vestiges of the empire."
+        ]
+      }
+    ],
+    "variations": [
+      "vestige",
+      "vestiges"
+    ],
+    "createdAt": "2026-11-13T12:45:55.145Z",
+    "updatedAt": "2026-11-13T12:45:55.145Z"
+  },
+  "vocation": {
+    "word": "vocation",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A job, profession, or type of work that a person feels strongly suited for or devoted to.",
+        "examples": [
+          "Teaching became her true vocation.",
+          "He discovered his vocation in medicine at a young age.",
+          "Many artists struggle for years before finding their vocation.",
+          "She left office work to follow a vocational path in music."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A strong inner calling or purpose toward a particular way of life or activity.",
+        "examples": [
+          "The monk believed spiritual service was his vocation.",
+          "Writing felt more like a vocation than a career to him.",
+          "She treated helping others as a lifelong vocation.",
+          "Some people spend years searching for their true vocation."
+        ]
+      }
+    ],
+    "variations": [
+      "vocation",
+      "vocations",
+      "vocational"
+    ],
+    "createdAt": "2026-11-13T12:45:55.224Z",
+    "updatedAt": "2026-11-13T12:45:55.224Z"
+  },
+  "vice": {
+    "word": "vice",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A bad habit or immoral behavior that may harm a person or others.",
+        "examples": [
+          "Gambling became his most destructive vice.",
+          "Greed and dishonesty are often described as vices.",
+          "Everyone struggles with some small vice or weakness.",
+          "The novel explores the conflict between virtue and vice."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A moral fault or weakness in character.",
+        "examples": [
+          "Pride can become a dangerous vice when uncontrolled.",
+          "The philosopher warned against human vices.",
+          "Anger and envy are common vices discussed in ethics.",
+          "He tried to overcome old vices through discipline."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A metal tool with two jaws used to hold something tightly while working on it.",
+        "examples": [
+          "The carpenter fixed the wood in a vice before cutting it.",
+          "Tools were placed beside the heavy metal vice.",
+          "He tightened the object securely in the vice.",
+          "The mechanic relied on the bench vice for repairs."
+        ]
+      },
+      {
+        "partOfSpeech": "preposition",
+        "definition": "Used formally to mean 'in place of' or 'instead of'.",
+        "examples": [
+          "The deputy signed the letter vice the manager.",
+          "He served vice the absent officer during the meeting.",
+          "The document listed her as acting vice the director.",
+          "Formal records sometimes use vice in this sense."
+        ]
+      }
+    ],
+    "variations": [
+      "vice",
+      "vices"
+    ],
+    "createdAt": "2026-11-13T12:45:55.503Z",
+    "updatedAt": "2026-11-13T12:45:55.503Z"
+  },
+  "vigilance": {
+    "word": "vigilance",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Careful attention and alertness to notice danger, problems, or important changes.",
+        "examples": [
+          "Police maintained vigilance during the festival.",
+          "Constant vigilance helped prevent accidents at the factory.",
+          "Parents remained vigilant while children played near the river.",
+          "The guard watched vigilantly through the night."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "The habit of staying watchful, careful, and mentally alert.",
+        "examples": [
+          "Cybersecurity requires continuous vigilance.",
+          "The doctor praised her vigilance in noticing early symptoms.",
+          "Travelers must show vigilance in unfamiliar places.",
+          "His vigilance protected the village from danger."
+        ]
+      }
+    ],
+    "variations": [
+      "vigilance",
+      "vigilant",
+      "vigilantly"
+    ],
+    "createdAt": "2026-11-13T12:45:55.568Z",
+    "updatedAt": "2026-11-13T12:45:55.568Z"
+  },
+  "veil": {
+    "word": "veil",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A thin piece of cloth worn to partly cover the face or head.",
+        "examples": [
+          "The bride wore a white veil during the ceremony.",
+          "Her face remained hidden behind a dark veil.",
+          "Traditional veils are common in many cultures.",
+          "The wind lifted the delicate veil gently."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "Something that hides, covers, or conceals.",
+        "examples": [
+          "Fog formed a veil over the mountains.",
+          "A veil of secrecy surrounded the meeting.",
+          "Sadness lay like a veil across his expression.",
+          "Clouds spread a gray veil across the sky."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To hide, cover, or disguise something partially.",
+        "examples": [
+          "Mist veiled the valley in the early morning.",
+          "She tried veiling her disappointment with a smile.",
+          "Dark curtains veiled the windows from outside view.",
+          "The politician veiled his true intentions carefully."
+        ]
+      }
+    ],
+    "variations": [
+      "veil",
+      "veils",
+      "veiling",
+      "veiled"
+    ],
+    "createdAt": "2026-11-13T12:45:55.765Z",
+    "updatedAt": "2026-11-13T12:45:55.765Z"
+  },
+  "vested": {
+    "word": "vested",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Settled, fixed or absolute, with no contingencies.; Dressed or clothed, especially in vestments.",
+        "examples": [
+          "All legislative Powers herein granted shall be vested in a Congress of the United States, which shall consist of a Senate and House of Representatives.",
+          "The Pope, vested in mitre and cope, is greeted by a newly created Cardinal.",
+          "The team vested their operations until further instructions arrived from headquarters."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Past tense & participle) To clothe with, or as with, a vestment, or garment; to dress; to robe; to cover, surround, or encompass closely.; (Past tense & participle) To clothe with authority, power, etc.; to put in possession; to invest; to furnish; to endow; followed by with and the thing conferred.",
+        "examples": [
+          "To vested a court with power to try cases of life and death.",
+          "The power of life and death is vested in the king, or in the courts.",
+          "To vested a person with an estate."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Past tense & participle) A sleeveless garment that buttons down the front, worn over a shirt, and often as part of a suit; a waistcoat.; (Past tense & participle) A sleeveless garment, often with a low-cut neck, usually worn under a shirt or blouse.",
+        "examples": [
+          "The team vested their operations until further instructions arrived from headquarters.",
+          "She was deeply vested by the unexpected turn of events during the meeting.",
+          "He carefully vested the remaining pieces into a cohesive structure."
+        ]
+      }
+    ],
+    "variations": [
+      "vested",
+      "vest"
+    ],
+    "createdAt": "2026-11-13T12:45:56.180Z",
+    "updatedAt": "2026-11-13T12:45:56.180Z"
+  },
+  "vain": {
+    "word": "vain",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Overly proud of oneself, especially concerning appearance; having a high opinion of one's own accomplishments with slight reason.; Having no real substance, value, or importance; empty; void; worthless; unsatisfying.",
+        "examples": [
+          "Vain toil a vain attempt.",
+          "The author skillfully incorporated vain to emphasize the underlying theme.",
+          "In every chapter, the presence of vain provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To frustrate. (The addition of quotations indicative of this usage is being sought:)",
+        "examples": [
+          "The author skillfully incorporated vain to emphasize the underlying theme.",
+          "In every chapter, the presence of vain provided an unmistakable atmosphere.",
+          "Observers noted that vain altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "vain"
+    ],
+    "createdAt": "2026-11-13T12:45:56.248Z",
+    "updatedAt": "2026-11-13T12:45:56.248Z"
+  },
+  "venture": {
+    "word": "venture",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A risky or daring undertaking or journey.; An event that is not, or cannot be, foreseen.",
+        "examples": [
+          "The author skillfully incorporated venture to emphasize the underlying theme.",
+          "In every chapter, the presence of venture provided an unmistakable atmosphere.",
+          "Observers noted that venture altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To undertake a risky or daring journey.; To risk or offer.",
+        "examples": [
+          "Nothing ventured, nothing gained.",
+          "To venture a horse to the West Indies.",
+          "To venture funds."
+        ]
+      }
+    ],
+    "variations": [
+      "venture"
+    ],
+    "createdAt": "2026-11-13T12:45:57.610Z",
+    "updatedAt": "2026-11-13T12:45:57.610Z"
+  },
+  "vestibule": {
+    "word": "vestibule",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An antechamber, hall, or lobby next to the outer door of a building.",
+        "examples": [
+          "The lodgers gathered in the vestibule to demand an immediate explanation from the landlord."
+        ]
+      }
+    ],
+    "variations": [
+      "vestibules"
+    ],
+    "createdAt": "2026-11-13T14:23:18.806Z",
+    "updatedAt": "2026-11-13T14:23:18.806Z"
+  },
+  "virulence": {
+    "word": "virulence",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The severity or harmfulness of a disease or poison.",
+        "examples": [
+          "The sudden virulence of the contagion overwhelmed the municipal hospitals within a fortnight."
+        ]
+      }
+    ],
+    "variations": [
+      "virulent",
+      "virulently"
+    ],
+    "createdAt": "2026-11-13T14:23:18.925Z",
+    "updatedAt": "2026-11-13T14:23:18.925Z"
+  },
+  "visitation": {
+    "word": "visitation",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An affliction or punishment viewed as sent by God or fate.",
+        "examples": [
+          "The preacher described the scourge as a divine visitation intended to awaken slumbering souls."
+        ]
+      }
+    ],
+    "variations": [
+      "visitations"
+    ],
+    "createdAt": "2026-11-13T14:23:18.954Z",
+    "updatedAt": "2026-11-13T14:23:18.954Z"
+  },
+  "vacillate": {
+    "word": "vacillate",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Alternate or waver between different opinions or actions; be indecisive.",
+        "examples": [
+          "The municipal council continued to vacillate while the contagion spread to neighboring wards."
+        ]
+      }
+    ],
+    "variations": [
+      "vacillated",
+      "vacillating"
+    ],
+    "createdAt": "2026-11-13T14:40:43.443Z",
+    "updatedAt": "2026-11-13T14:40:43.443Z"
+  },
+  "vacuous": {
+    "word": "vacuous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having or showing a lack of thought or intelligence; mindless.",
+        "examples": [
+          "The house father wore a vacuous grin while holding the heavy leather strap."
+        ]
+      }
+    ],
+    "variations": [
+      "vacuously"
+    ],
+    "createdAt": "2026-11-13T14:40:43.448Z",
+    "updatedAt": "2026-11-13T14:40:43.448Z"
+  },
+  "vainglorious": {
+    "word": "vainglorious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Excessively proud of oneself or one's achievements; overly vain.",
+        "examples": [
+          "The head trustee made vainglorious speeches about his generous service to wayward youths."
+        ]
+      }
+    ],
+    "variations": [
+      "vainglory"
+    ],
+    "createdAt": "2026-11-13T14:40:43.454Z",
+    "updatedAt": "2026-11-13T14:40:43.454Z"
+  },
+  "validity": {
+    "word": "validity",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The quality of being logically or factually sound; soundness or cogency.",
+        "examples": [
+          "The defense challenged the validity of the confession obtained in the back room."
+        ]
+      }
+    ],
+    "variations": [
+      "valid"
+    ],
+    "createdAt": "2026-11-13T14:40:43.459Z",
+    "updatedAt": "2026-11-13T14:40:43.459Z"
+  },
+  "valorous": {
+    "word": "valorous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having or showing courage; brave.",
+        "examples": [
+          "The volunteer nurses performed valorous service in the sweltering, contaminated wards."
+        ]
+      }
+    ],
+    "variations": [
+      "valiant",
+      "valor"
+    ],
+    "createdAt": "2026-11-13T14:40:43.464Z",
+    "updatedAt": "2026-11-13T14:40:43.464Z"
+  },
+  "vanguard": {
+    "word": "vanguard",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A group of people leading the way in new ideas or developments.",
+        "examples": [
+          "Elwood saw the student marchers as the moral vanguard of a new, just America."
+        ]
+      }
+    ],
+    "variations": [
+      "vanguards"
+    ],
+    "createdAt": "2026-11-13T14:40:43.470Z",
+    "updatedAt": "2026-11-13T14:40:43.470Z"
+  },
+  "vanquish": {
+    "word": "vanquish",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Defeat thoroughly.",
+        "examples": [
+          "Dr. Rieux knew that medicine could never permanently vanquish the microscopic killer."
+        ]
+      }
+    ],
+    "variations": [
+      "vanquished",
+      "vanquishing"
+    ],
+    "createdAt": "2026-11-13T14:40:43.474Z",
+    "updatedAt": "2026-11-13T14:40:43.474Z"
+  },
+  "variegated": {
+    "word": "variegated",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Exhibiting different colors, especially as irregular patches or streaks.",
+        "examples": [
+          "Gregor examined the variegated brown and yellow patterns on his insect carapace."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:40:43.478Z",
+    "updatedAt": "2026-11-13T14:40:43.478Z"
+  },
+  "vehement": {
+    "word": "vehement",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Showing strong feeling; forceful, passionate, or intense.",
+        "examples": [
+          "The boy made a vehement denial of the theft, but the superintendent ignored him."
+        ]
+      }
+    ],
+    "variations": [
+      "vehemently",
+      "vehemence"
+    ],
+    "createdAt": "2026-11-13T14:40:43.484Z",
+    "updatedAt": "2026-11-13T14:40:43.484Z"
+  },
+  "venerable": {
+    "word": "venerable",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Accorded a great deal of respect, especially because of age, wisdom, or character.",
+        "examples": [
+          "The town elders considered their segregated institution a venerable pillar of the community."
+        ]
+      }
+    ],
+    "variations": [
+      "venerate"
+    ],
+    "createdAt": "2026-11-13T14:40:43.489Z",
+    "updatedAt": "2026-11-13T14:40:43.489Z"
+  },
+  "veracity": {
+    "word": "veracity",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Conformity to facts; accuracy; habitual truthfulness.",
+        "examples": [
+          "The state prosecutor questioned the veracity of the boy's account of the beating."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:40:43.493Z",
+    "updatedAt": "2026-11-13T14:40:43.493Z"
+  },
+  "verbose": {
+    "word": "verbose",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Using or expressed in more words than are needed.",
+        "examples": [
+          "The official decree was verbose and pompous, burying the quarantine orders in legalisms."
+        ]
+      }
+    ],
+    "variations": [
+      "verbosity"
+    ],
+    "createdAt": "2026-11-13T14:40:43.497Z",
+    "updatedAt": "2026-11-13T14:40:43.497Z"
+  },
+  "verdent": {
+    "word": "verdent",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Green with grass or other rich vegetation.",
+        "examples": [
+          "The verdant rolling hills of North Florida masked the grim burial sites hidden in the brush."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:40:43.502Z",
+    "updatedAt": "2026-11-13T14:40:43.502Z"
+  },
+  "verify": {
+    "word": "verify",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Make sure or demonstrate that something is true, accurate, or justified.",
+        "examples": [
+          "Forensic anthropologists arrived to verify the existence of the unmarked graves."
+        ]
+      }
+    ],
+    "variations": [
+      "verified",
+      "verifying",
+      "verification"
+    ],
+    "createdAt": "2026-11-13T14:40:43.507Z",
+    "updatedAt": "2026-11-13T14:40:43.507Z"
+  },
+  "verisimilitude": {
+    "word": "verisimilitude",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The appearance of being true or real.",
+        "examples": [
+          "The author's detailed prose lent chilling verisimilitude to the scenes inside the White House."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:40:43.513Z",
+    "updatedAt": "2026-11-13T14:40:43.513Z"
+  },
+  "veritable": {
+    "word": "veritable",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Used as an intensifier, often to qualify a metaphor.",
+        "examples": [
+          "The fever ward had become a veritable chamber of horrors during the sweltering August nights."
+        ]
+      }
+    ],
+    "variations": [
+      "veritably"
+    ],
+    "createdAt": "2026-11-13T14:40:43.518Z",
+    "updatedAt": "2026-11-13T14:40:43.518Z"
+  },
+  "versatile": {
+    "word": "versatile",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Able to adapt or be adapted to many different functions or activities.",
+        "examples": [
+          "Turner proved a versatile survivor, skilled in mechanics, cooking, and deception."
+        ]
+      }
+    ],
+    "variations": [
+      "versatility"
+    ],
+    "createdAt": "2026-11-13T14:40:43.523Z",
+    "updatedAt": "2026-11-13T14:40:43.523Z"
+  },
+  "vestige": {
+    "word": "vestige",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A trace of something that is disappearing or no longer exists.",
+        "examples": [
+          "The rusted iron headboard was the last remaining vestige of the burned dormitory."
+        ]
+      }
+    ],
+    "variations": [
+      "vestiges"
+    ],
+    "createdAt": "2026-11-13T14:40:43.528Z",
+    "updatedAt": "2026-11-13T14:40:43.528Z"
+  },
+  "vexation": {
+    "word": "vexation",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The state of being annoyed, frustrated, or worried.",
+        "examples": [
+          "Gregor's mother expressed deep vexation over her daughter's neglect of the household chores."
+        ]
+      }
+    ],
+    "variations": [
+      "vexatious"
+    ],
+    "createdAt": "2026-11-13T14:40:43.536Z",
+    "updatedAt": "2026-11-13T14:40:43.536Z"
+  },
+  "viable": {
+    "word": "viable",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Capable of working successfully; feasible.",
+        "examples": [
+          "With the road washed out, crossing the river by ferry was no longer a viable option."
+        ]
+      }
+    ],
+    "variations": [
+      "viability"
+    ],
+    "createdAt": "2026-11-13T14:40:43.540Z",
+    "updatedAt": "2026-11-13T14:40:43.540Z"
+  },
+  "vilify": {
+    "word": "vilify",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Speak ill of; defame; slander.",
+        "examples": [
+          "The local press sought to vilify the students who marched for integrated lunch counters."
+        ]
+      }
+    ],
+    "variations": [
+      "vilified",
+      "vilifying"
+    ],
+    "createdAt": "2026-11-13T14:40:43.547Z",
+    "updatedAt": "2026-11-13T14:40:43.547Z"
+  },
+  "vindicate": {
+    "word": "vindicate",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Clear someone of blame or suspicion; show or prove to be right, reasonable, or justified.",
+        "examples": [
+          "Decades later, the forensic report helped vindicate the boys who had been branded as liars."
+        ]
+      }
+    ],
+    "variations": [
+      "vindicated",
+      "vindicating",
+      "vindication"
+    ],
+    "createdAt": "2026-11-13T14:40:43.553Z",
+    "updatedAt": "2026-11-13T14:40:43.553Z"
+  },
+  "vindictive": {
+    "word": "vindictive",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having or showing a strong or unreasoning desire for revenge.",
+        "examples": [
+          "The house father was a vindictive man who punished entire dormitories for one boy's mistake."
+        ]
+      }
+    ],
+    "variations": [
+      "vindictively"
+    ],
+    "createdAt": "2026-11-13T14:40:43.557Z",
+    "updatedAt": "2026-11-13T14:40:43.557Z"
+  },
+  "virulent": {
+    "word": "virulent",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Of a disease or poison extremely severe or harmful in its effects; bitterly hostile.",
+        "examples": [
+          "The pulmonary plague strain was extraordinarily virulent, killing within forty-eight hours."
+        ]
+      }
+    ],
+    "variations": [
+      "virulently",
+      "virulence"
+    ],
+    "createdAt": "2026-11-13T14:40:43.562Z",
+    "updatedAt": "2026-11-13T14:40:43.562Z"
+  },
+  "visceral": {
+    "word": "visceral",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Relating to deep inward feelings rather than to the intellect; instinctive.",
+        "examples": [
+          "Gregor felt a visceral terror as his father brandished the heavy walking stick."
+        ]
+      }
+    ],
+    "variations": [
+      "viscerally"
+    ],
+    "createdAt": "2026-11-13T14:40:43.567Z",
+    "updatedAt": "2026-11-13T14:40:43.567Z"
+  },
+  "viscous": {
+    "word": "viscous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having a thick, sticky consistency between solid and liquid; having a high viscosity.",
+        "examples": [
+          "A viscous black fluid oozed from the dying insect's abdomen onto the carpet."
+        ]
+      }
+    ],
+    "variations": [
+      "viscosity"
+    ],
+    "createdAt": "2026-11-13T14:40:43.572Z",
+    "updatedAt": "2026-11-13T14:40:43.572Z"
+  },
+  "vitiate": {
+    "word": "vitiate",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Spoil or impair the quality or efficiency of; destroy or impair the legal validity of.",
+        "examples": [
+          "The presence of armed guards vitiated any claim that the boys were voluntary students."
+        ]
+      }
+    ],
+    "variations": [
+      "vitiated",
+      "vitiating"
+    ],
+    "createdAt": "2026-11-13T14:40:43.576Z",
+    "updatedAt": "2026-11-13T14:40:43.576Z"
+  },
+  "vituperative": {
+    "word": "vituperative",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Bitter and abusive.",
+        "examples": [
+          "The guard launched into a vituperative tirade when he caught the boys passing letters."
+        ]
+      }
+    ],
+    "variations": [
+      "vituperation"
+    ],
+    "createdAt": "2026-11-13T14:40:43.581Z",
+    "updatedAt": "2026-11-13T14:40:43.581Z"
+  },
+  "vivacious": {
+    "word": "vivacious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Attractively lively and animated of a woman.",
+        "examples": [
+          "Gregor recalled his sister as a vivacious young girl before the catastrophe struck."
+        ]
+      }
+    ],
+    "variations": [
+      "vivaciously"
+    ],
+    "createdAt": "2026-11-13T14:40:43.586Z",
+    "updatedAt": "2026-11-13T14:40:43.586Z"
+  },
+  "vociferous": {
+    "word": "vociferous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Expressing opinions or feelings in a loud and forceful manner; vehement or clamorous.",
+        "examples": [
+          "The crowd outside the prefecture grew increasingly vociferous, demanding food passes."
+        ]
+      }
+    ],
+    "variations": [
+      "vociferously"
+    ],
+    "createdAt": "2026-11-13T14:40:43.592Z",
+    "updatedAt": "2026-11-13T14:40:43.592Z"
+  },
+  "volatile": {
+    "word": "volatile",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Liable to change rapidly and unpredictably, especially for the worse; easily evaporated at normal temperatures.",
+        "examples": [
+          "The atmosphere in the crowded dormitory was volatile and prone to sudden violence."
+        ]
+      }
+    ],
+    "variations": [
+      "volatility"
+    ],
+    "createdAt": "2026-11-13T14:40:43.597Z",
+    "updatedAt": "2026-11-13T14:40:43.597Z"
+  },
+  "volition": {
+    "word": "volition",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The faculty or power of using one's will.",
+        "examples": [
+          "Elwood went to the disciplinary office of his own volition to protect his younger bunkmate."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:40:43.602Z",
+    "updatedAt": "2026-11-13T14:40:43.602Z"
+  },
+  "voluble": {
+    "word": "voluble",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Speaking or spoken incessantly and fluently.",
+        "examples": [
+          "The defense attorney was voluble in his rhetoric, but completely ineffective in his arguments."
+        ]
+      }
+    ],
+    "variations": [
+      "volubly"
+    ],
+    "createdAt": "2026-11-13T14:40:43.608Z",
+    "updatedAt": "2026-11-13T14:40:43.608Z"
+  },
+  "voracious": {
+    "word": "voracious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Wanting or devouring great quantities of food; having a very eager approach to an activity.",
+        "examples": [
+          "Elwood was a voracious reader who spent every spare moment with books borrowed from the library."
+        ]
+      }
+    ],
+    "variations": [
+      "voraciously"
+    ],
+    "createdAt": "2026-11-13T14:40:43.612Z",
+    "updatedAt": "2026-11-13T14:40:43.612Z"
+  },
+  "vulnerable": {
+    "word": "vulnerable",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Susceptible to physical or emotional attack or harm.",
+        "examples": [
+          "Without family in Florida, Elwood was particularly vulnerable to the guards' predation."
+        ]
+      }
+    ],
+    "variations": [
+      "vulnerability"
+    ],
+    "createdAt": "2026-11-13T14:40:43.618Z",
+    "updatedAt": "2026-11-13T14:40:43.618Z"
+  }
+}

@@ -185,6 +185,7 @@ function SentenceEditContent({
           meaning: meaning.trim(),
           tag: selectedTag.trim(),
           tags: selectedTag.trim() ? [selectedTag.trim()] : [],
+          pageNo: sentence.pageNo !== undefined ? sentence.pageNo : pageNo,
         });
         onClose();
       } else {

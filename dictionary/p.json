@@ -1,0 +1,4331 @@
+{
+  "perjured": {
+    "word": "perjured",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Lied deliberately after making a legal or formal promise to tell the truth, especially in a court of law.",
+        "examples": [
+          "The witness perjured himself during the trial.",
+          "She was accused of perjuring herself to protect her friend.",
+          "Anyone who knowingly perjures themselves in court can face punishment.",
+          "The lawyer proved that the official had perjured himself under oath."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having lied under oath or given false legal testimony.",
+        "examples": [
+          "The judge rejected the perjured testimony.",
+          "He was exposed as a perjured witness.",
+          "The case collapsed because of perjured statements.",
+          "Investigators uncovered several perjured documents."
+        ]
+      }
+    ],
+    "variations": [
+      "perjure",
+      "perjures",
+      "perjuring",
+      "perjured",
+      "perjury"
+    ],
+    "createdAt": "2026-11-13T12:45:54.720Z",
+    "updatedAt": "2026-11-13T12:45:54.720Z"
+  },
+  "plucking": {
+    "word": "plucking",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Pulling something quickly or sharply, especially flowers, fruits, strings, feathers, or hair.",
+        "examples": [
+          "She was plucking roses from the garden.",
+          "The musician plucked the guitar strings gently.",
+          "Children were plucking mangoes from the tree.",
+          "He nervously kept plucking at his shirt sleeve."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "Removing something by pulling it away from its place.",
+        "examples": [
+          "The chef was plucking feathers from the chicken.",
+          "She plucked a gray hair from her head.",
+          "Workers carefully plucked weeds from the field.",
+          "He plucks loose threads from his clothes absentmindedly."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "The act or sound of pulling something sharply, especially musical strings.",
+        "examples": [
+          "The soft plucking of the harp filled the room.",
+          "A quick pluck of the string changed the melody.",
+          "The bird escaped with one sudden plucking movement.",
+          "She recognized the gentle plucking of the sitar instantly."
+        ]
+      }
+    ],
+    "variations": [
+      "pluck",
+      "plucks",
+      "plucking",
+      "plucked"
+    ],
+    "createdAt": "2026-11-13T12:45:54.748Z",
+    "updatedAt": "2026-11-13T12:45:54.748Z"
+  },
+  "phiz": {
+    "word": "phiz",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A person’s face or facial appearance, often used humorously or informally.",
+        "examples": [
+          "He walked in with a cheerful phiz.",
+          "The cartoon showed a man with a funny-looking phiz.",
+          "Her puzzled phiz made everyone laugh.",
+          "The old photograph captured his youthful phiz perfectly."
+        ]
+      }
+    ],
+    "variations": [
+      "phiz",
+      "phizzes"
+    ],
+    "createdAt": "2026-11-13T12:45:54.755Z",
+    "updatedAt": "2026-11-13T12:45:54.755Z"
+  },
+  "professed": {
+    "word": "professed",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Openly claimed, declared, or admitted a belief, feeling, quality, or intention, whether sincerely or not.",
+        "examples": [
+          "He professed his admiration for the poet during the interview.",
+          "She has always professed loyalty to her friends.",
+          "The politician professes concern for ordinary people.",
+          "They were professing innocence despite the evidence."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Claimed openly or publicly, especially about beliefs, emotions, or intentions.",
+        "examples": [
+          "His professed honesty was questioned after the scandal.",
+          "She remained calm despite her professed fears.",
+          "The group’s professed goal was to help poor communities.",
+          "Their professed friendship slowly disappeared over time."
+        ]
+      }
+    ],
+    "variations": [
+      "profess",
+      "professes",
+      "professing",
+      "professed",
+      "profession",
+      "professor",
+      "professional"
+    ],
+    "createdAt": "2026-11-13T12:45:54.759Z",
+    "updatedAt": "2026-11-13T12:45:54.759Z"
+  },
+  "placid": {
+    "word": "placid",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "calm and quiet; peaceful; tranquil",
+        "examples": [
+          "A placid disposition.",
+          "A placid lake.",
+          "The quiet evening settled into a deeply placid stillness across the valley."
+        ]
+      }
+    ],
+    "variations": [
+      "placid"
+    ],
+    "createdAt": "2026-11-13T12:45:54.789Z",
+    "updatedAt": "2026-11-13T12:45:54.789Z"
+  },
+  "peculiar": {
+    "word": "peculiar",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Out of the ordinary; odd; strange; unusual.; Common or usual for a certain place or circumstance; specific or particular.",
+        "examples": [
+          "The sky had a peculiar appearance before the storm.",
+          "It would be rather peculiar to see a kangaroo hopping down a city street.",
+          "Kangaroos are peculiar to Australia."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "That which is peculiar; a sole or exclusive property; a prerogative; a characteristic.; an ecclesiastical district, parish, chapel or church outside the jurisdiction of the bishop of the diocese in which it is situated.",
+        "examples": [
+          "The enduring significance of the peculiar became clearer as the narrative progressed.",
+          "He pointed toward the peculiar, noting how it captured the mood of the era.",
+          "Without a proper understanding of the peculiar, much of the subtle nuance would be lost."
+        ]
+      }
+    ],
+    "variations": [
+      "peculiar"
+    ],
+    "createdAt": "2026-11-13T12:45:54.822Z",
+    "updatedAt": "2026-11-13T12:45:54.822Z"
+  },
+  "preface": {
+    "word": "preface",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An introduction at the beginning of a book, speech, or piece of writing that explains its purpose, background, or main ideas.",
+        "examples": [
+          "The author wrote a thoughtful preface for the new edition.",
+          "I read the preface before starting the novel.",
+          "The preface explains how the research was conducted.",
+          "Her prefaces often reveal personal experiences behind the stories."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To introduce something by saying or writing a few words beforehand.",
+        "examples": [
+          "He prefaced his criticism with a polite apology.",
+          "The speaker prefaced the lecture with a short joke.",
+          "She often prefaces difficult conversations with silence.",
+          "The teacher prefaced the announcement by thanking the students."
+        ]
+      }
+    ],
+    "variations": [
+      "preface",
+      "prefaces",
+      "prefacing",
+      "prefaced"
+    ],
+    "createdAt": "2026-11-13T12:45:54.875Z",
+    "updatedAt": "2026-11-13T12:45:54.875Z"
+  },
+  "prejudices": {
+    "word": "prejudices",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Unfair opinions or feelings formed without proper knowledge or understanding, often against certain people or groups.",
+        "examples": [
+          "The novel explores social prejudices in society.",
+          "Children can learn prejudices from their surroundings.",
+          "Many people are fighting against racial prejudices.",
+          "His prejudiced remarks upset the audience."
+        ]
+      }
+    ],
+    "variations": [
+      "prejudice",
+      "prejudices",
+      "prejudiced"
+    ],
+    "createdAt": "2026-11-13T12:45:54.934Z",
+    "updatedAt": "2026-11-13T12:45:54.934Z"
+  },
+  "prevail": {
+    "word": "prevail",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To succeed, win, or prove stronger in the end.",
+        "examples": [
+          "Justice finally prevailed after many years.",
+          "Hope prevailed despite the difficult circumstances.",
+          "The stronger team prevailed in the final match.",
+          "Truth eventually prevails over lies."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To exist, continue, or be commonly accepted in a place or time.",
+        "examples": [
+          "Peace prevailed throughout the region for decades.",
+          "A sense of silence prevailed in the hall.",
+          "Traditional beliefs still prevail in many villages.",
+          "Cold weather prevailed during most of the winter."
+        ]
+      }
+    ],
+    "variations": [
+      "prevail",
+      "prevails",
+      "prevailing",
+      "prevailed"
+    ],
+    "createdAt": "2026-11-13T12:45:54.949Z",
+    "updatedAt": "2026-11-13T12:45:54.949Z"
+  },
+  "palpable": {
+    "word": "palpable",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "So clear, strong, or obvious that it can almost be physically felt.",
+        "examples": [
+          "There was a palpable tension in the courtroom.",
+          "Excitement became palpable as the concert began.",
+          "Her disappointment was palpable after the announcement.",
+          "The fear in the village was almost palpably present."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Able to be touched or physically felt.",
+        "examples": [
+          "The heat from the fire was palpable even from a distance.",
+          "A palpable vibration ran through the floor.",
+          "The thick fabric gave a palpable sense of warmth.",
+          "The pulse was barely palpable during the examination."
+        ]
+      }
+    ],
+    "variations": [
+      "palpable",
+      "more palpable",
+      "most palpable",
+      "palpably",
+      "palpability"
+    ],
+    "createdAt": "2026-11-13T12:45:55.054Z",
+    "updatedAt": "2026-11-13T12:45:55.054Z"
+  },
+  "profundity": {
+    "word": "profundity",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Great depth of thought, wisdom, emotion, or meaning.",
+        "examples": [
+          "Readers admired the profundity of the philosopher’s ideas.",
+          "The poem carries emotional profundity beneath its simple words.",
+          "Her silence often contained more profundity than speeches.",
+          "The teacher explained difficult concepts with remarkable profundity."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A deep or serious quality that is difficult to fully understand.",
+        "examples": [
+          "The scientist explored the profundities of the universe.",
+          "His writings combine simplicity with intellectual profundity.",
+          "The film’s profundity became clearer after repeated viewing.",
+          "Ancient scriptures are often valued for their spiritual profundities."
+        ]
+      }
+    ],
+    "variations": [
+      "profundity",
+      "profundities",
+      "profound",
+      "profoundly"
+    ],
+    "createdAt": "2026-11-13T12:45:55.082Z",
+    "updatedAt": "2026-11-13T12:45:55.082Z"
+  },
+  "preoccupations": {
+    "word": "preoccupations",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Thoughts, worries, or interests that occupy a person’s mind continuously.",
+        "examples": [
+          "Financial preoccupations kept him awake at night.",
+          "Her artistic preoccupations shaped most of her conversations.",
+          "Students often develop preoccupations about exams.",
+          "The novel explores human preoccupations with success and failure."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "Strong attention or involvement with something that makes a person distracted from other matters.",
+        "examples": [
+          "His preoccupation with work affected his personal life.",
+          "Children can become completely absorbed in their favorite preoccupations.",
+          "The scientist’s preoccupations with research left little time for rest.",
+          "She appeared preoccupied during the meeting."
+        ]
+      }
+    ],
+    "variations": [
+      "preoccupation",
+      "preoccupations",
+      "preoccupy",
+      "preoccupies",
+      "preoccupied",
+      "preoccupying"
+    ],
+    "createdAt": "2026-11-13T12:45:55.212Z",
+    "updatedAt": "2026-11-13T12:45:55.212Z"
+  },
+  "precipitately": {
+    "word": "precipitately",
+    "meanings": [
+      {
+        "partOfSpeech": "adverb",
+        "definition": "In a sudden, hurried, or careless way without proper thought.",
+        "examples": [
+          "He acted precipitately and later regretted the decision.",
+          "The soldiers retreated precipitately after the attack.",
+          "She answered precipitately before hearing the full question.",
+          "Investors sold shares precipitately during the crisis."
+        ]
+      },
+      {
+        "partOfSpeech": "adverb",
+        "definition": "Very quickly or unexpectedly.",
+        "examples": [
+          "The weather changed precipitately during the night.",
+          "Events moved precipitately after the announcement.",
+          "The company’s profits fell precipitately within months.",
+          "The crowd dispersed precipitately when the storm began."
+        ]
+      }
+    ],
+    "variations": [
+      "precipitate",
+      "precipitates",
+      "precipitating",
+      "precipitated",
+      "precipitately",
+      "precipitation"
+    ],
+    "createdAt": "2026-11-13T12:45:55.319Z",
+    "updatedAt": "2026-11-13T12:45:55.319Z"
+  },
+  "pallid": {
+    "word": "pallid",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Pale in color, usually because of illness, fear, weakness, or lack of healthy color.",
+        "examples": [
+          "His face looked pallid after the long illness.",
+          "She turned pallid with fear upon hearing the news.",
+          "The patient lay pallid and exhausted in bed.",
+          "Cold weather left their faces pale and pallid."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Weak, dull, or lacking energy, excitement, or strength.",
+        "examples": [
+          "The sequel received only a pallid response from critics.",
+          "His speech sounded pallid compared to earlier talks.",
+          "The painting seemed pallid beside brighter works.",
+          "The celebration felt strangely pallid and lifeless."
+        ]
+      }
+    ],
+    "variations": [
+      "pallid",
+      "more pallid",
+      "most pallid",
+      "pallidly",
+      "pallor"
+    ],
+    "createdAt": "2026-11-13T12:45:55.379Z",
+    "updatedAt": "2026-11-13T12:45:55.379Z"
+  },
+  "perilous": {
+    "word": "perilous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Very dangerous or risky and likely to cause harm.",
+        "examples": [
+          "The climbers faced a perilous journey across the mountains.",
+          "The sea became perilous during the storm.",
+          "The bridge looked perilously weak.",
+          "Soldiers crossed the perilous battlefield at night."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Full of uncertainty or serious difficulty.",
+        "examples": [
+          "The company entered a perilous financial situation.",
+          "Peace in the region remained perilous and fragile.",
+          "He made a perilous choice without much thought.",
+          "Their expedition continued despite perilous conditions."
+        ]
+      }
+    ],
+    "variations": [
+      "perilous",
+      "more perilous",
+      "most perilous",
+      "perilously",
+      "peril"
+    ],
+    "createdAt": "2026-11-13T12:45:55.451Z",
+    "updatedAt": "2026-11-13T12:45:55.451Z"
+  },
+  "persecute": {
+    "word": "persecute",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To treat someone cruelly or unfairly over a long period, often because of beliefs, identity, or differences.",
+        "examples": [
+          "Many communities were persecuted for their beliefs.",
+          "The ruler persecuted those who opposed him.",
+          "History remembers people persecuted for speaking freely.",
+          "Refugees often flee countries where they are persecuted."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To repeatedly trouble, harass, or bother someone.",
+        "examples": [
+          "He felt persecuted by constant criticism at work.",
+          "The child complained that classmates were persecuting him.",
+          "She was being persecuted by endless rumors and gossip.",
+          "Bad memories continued persecuting him for years."
+        ]
+      }
+    ],
+    "variations": [
+      "persecute",
+      "persecutes",
+      "persecuting",
+      "persecuted",
+      "persecution",
+      "persecutor"
+    ],
+    "createdAt": "2026-11-13T12:45:55.487Z",
+    "updatedAt": "2026-11-13T12:45:55.487Z"
+  },
+  "pity": {
+    "word": "pity",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A feeling of sadness, sympathy, or compassion for someone suffering or in difficulty.",
+        "examples": [
+          "She felt pity for the homeless child.",
+          "The movie aroused pity among the audience.",
+          "People donated money out of pity after the disaster.",
+          "His condition filled everyone with pity."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "Something unfortunate, disappointing, or regrettable.",
+        "examples": [
+          "It’s a pity that the museum was closed today.",
+          "What a pity you missed the concert.",
+          "The rain was a pity after weeks of planning.",
+          "It would be a pity to waste such talent."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To feel sympathy or sorrow for someone.",
+        "examples": [
+          "She pitied the injured animal lying by the road.",
+          "Many people pity those living in poverty.",
+          "He disliked being pitied by others.",
+          "The villagers pitied the lonely old man."
+        ]
+      }
+    ],
+    "variations": [
+      "pity",
+      "pities",
+      "pitying",
+      "pitied",
+      "pitiful",
+      "pitiless"
+    ],
+    "createdAt": "2026-11-13T12:45:55.645Z",
+    "updatedAt": "2026-11-13T12:45:55.645Z"
+  },
+  "precarious": {
+    "word": "precarious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Unsafe, unstable, or likely to fail or become dangerous at any moment.",
+        "examples": [
+          "The climbers stood on a precarious ledge above the valley.",
+          "Their financial situation became increasingly precarious.",
+          "The old bridge looked dangerously precarious after the storm.",
+          "Workers balanced precariously on the tall scaffolding."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Uncertain and dependent on chance or changing conditions.",
+        "examples": [
+          "Peace in the region remained precarious for years.",
+          "Many artists live with precarious incomes.",
+          "The company’s future seemed precariously uncertain.",
+          "His position in the team became more precarious after the mistake."
+        ]
+      }
+    ],
+    "variations": [
+      "precarious",
+      "more precarious",
+      "most precarious",
+      "precariously",
+      "precariousness"
+    ],
+    "createdAt": "2026-11-13T12:45:55.701Z",
+    "updatedAt": "2026-11-13T12:45:55.701Z"
+  },
+  "profusion": {
+    "word": "profusion",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A very large amount or abundance of something.",
+        "examples": [
+          "The garden bloomed with a profusion of flowers.",
+          "Books lay scattered around the room in profusion.",
+          "The market displayed a profusion of colors and fabrics.",
+          "A profusion of stars filled the night sky."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A rich, overflowing display or supply of something.",
+        "examples": [
+          "She thanked them with profuse gratitude and emotion.",
+          "The artist used a profusion of bright patterns in the painting.",
+          "Guests admired the profusion of decorations at the wedding.",
+          "Water poured profusely from the broken pipe."
+        ]
+      }
+    ],
+    "variations": [
+      "profusion",
+      "profusions",
+      "profuse",
+      "profusely"
+    ],
+    "createdAt": "2026-11-13T12:45:55.715Z",
+    "updatedAt": "2026-11-13T12:45:55.715Z"
+  },
+  "padded": {
+    "word": "padded",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Covered, filled, or protected with soft material to make something more comfortable, safer, or thicker.",
+        "examples": [
+          "He wore a padded jacket during the cold weather.",
+          "The chair had padded arms for extra comfort.",
+          "She carried a padded laptop bag to protect her computer.",
+          "The football players wore padded protective gear."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "Added soft material or extra layers to something for protection, comfort, or shape.",
+        "examples": [
+          "The workers padded the box before shipping the glass items.",
+          "She padded the seat with cushions.",
+          "The tailor padded the shoulders of the coat.",
+          "He carefully padded the package to prevent damage."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "Walked softly and quietly with light steps.",
+        "examples": [
+          "The cat padded silently across the room.",
+          "She padded into the kitchen early in the morning.",
+          "Barefoot children padded along the hallway.",
+          "He padded downstairs without making a sound."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T12:45:56.025Z",
+    "updatedAt": "2026-11-13T12:45:56.025Z"
+  },
+  "plowed": {
+    "word": "plowed",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Turned over and loosened soil using a plow in order to prepare land for planting crops.",
+        "examples": [
+          "The farmer plowed the field before the rainy season.",
+          "Tractors plowed large areas of land in a single day.",
+          "He spent the morning plowing the dry soil.",
+          "The land was freshly plowed and ready for seeds."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "Moved forcefully through something, pushing it aside.",
+        "examples": [
+          "The ship plowed through the rough waves.",
+          "The truck plowed through the muddy road.",
+          "He plowed through the crowd to reach the stage.",
+          "The snowplow plowed through thick snow."
+        ]
+      }
+    ],
+    "variations": [
+      "ploughed"
+    ],
+    "createdAt": "2026-11-13T12:45:56.045Z",
+    "updatedAt": "2026-11-13T12:45:56.045Z"
+  },
+  "protruded": {
+    "word": "protruded",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Stuck out or extended beyond the normal surface or position.",
+        "examples": [
+          "A sharp rock protruded from the ground.",
+          "His elbow protruded through the torn sleeve.",
+          "Tree roots protruded from the muddy path.",
+          "The old nail protruded from the wooden wall."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T12:45:56.077Z",
+    "updatedAt": "2026-11-13T12:45:56.077Z"
+  },
+  "pondered": {
+    "word": "pondered",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Thought about something carefully, especially before making a decision or reaching a conclusion.",
+        "examples": [
+          "He pondered the question for several minutes before answering.",
+          "She sat by the window and pondered her future.",
+          "Scientists have pondered this mystery for centuries.",
+          "The committee pondered the proposal but reached no decision."
+        ]
+      }
+    ],
+    "variations": [
+      "ponder"
+    ],
+    "createdAt": "2026-11-13T12:45:56.108Z",
+    "updatedAt": "2026-11-13T12:45:56.108Z"
+  },
+  "panting": {
+    "word": "panting",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Present participle / Gerund) To breathe quickly or in a labored manner, as after exertion or from eagerness or excitement; to respire with heaving of the breast; to gasp.; (Present participle / Gerund) To long eagerly; to desire earnestly.",
+        "examples": [
+          "He stood by the window, panting quietly as the light faded into evening.",
+          "They observed the fountain panting clear water high into the morning air.",
+          "She spent hours panting through the archives to locate the missing document."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "The act of one who pants.; (Present participle / Gerund) A quick breathing; a catching of the breath; a gasp: the panting of animals such as a dog with their tong hung out- as a form of thermoregulation.",
+        "examples": [
+          "To commemorate our 50th anniversary we've rolled out a new panting with our signature blue and white seams.",
+          "He stood by the window, panting quietly as the light faded into evening.",
+          "They observed the fountain panting clear water high into the morning air."
+        ]
+      }
+    ],
+    "variations": [
+      "panting",
+      "pant"
+    ],
+    "createdAt": "2026-11-13T12:45:56.172Z",
+    "updatedAt": "2026-11-13T12:45:56.172Z"
+  },
+  "piss": {
+    "word": "piss",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Urine.; The act of urinating.",
+        "examples": [
+          "This toilet is disgusting. There's piss all over the floor.",
+          "I'm desperate for a piss!",
+          "The local piss gathered early in the square to prepare their daily exhibits."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To urinate.; To discharge as or with the urine.",
+        "examples": [
+          "When I got home I found a drunk pissing in my doorway.",
+          "If you're pissing blood, you'd better see a doctor.",
+          "The local piss gathered early in the square to prepare their daily exhibits."
+        ]
+      },
+      {
+        "partOfSpeech": "interjection",
+        "definition": "Expresses anger, disappointment or dissatisfaction.",
+        "examples": [
+          "The local piss gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden piss swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various piss preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "piss"
+    ],
+    "createdAt": "2026-11-13T12:45:56.252Z",
+    "updatedAt": "2026-11-13T12:45:56.252Z"
+  },
+  "pork": {
+    "word": "pork",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The meat of a pig.; Funding proposed or requested by a member of Congress for special interests or their constituency as opposed to the good of the country as a whole.",
+        "examples": [
+          "The cafeteria serves pork on Tuesdays.",
+          "The author skillfully incorporated pork to emphasize the underlying theme.",
+          "In every chapter, the presence of pork provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To have sex with (someone).",
+        "examples": [
+          "The author skillfully incorporated pork to emphasize the underlying theme.",
+          "In every chapter, the presence of pork provided an unmistakable atmosphere.",
+          "Observers noted that pork altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "pork"
+    ],
+    "createdAt": "2026-11-13T12:45:56.289Z",
+    "updatedAt": "2026-11-13T12:45:56.289Z"
+  },
+  "poke": {
+    "word": "Poke",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To prod or jab with an object such as a finger or a stick.; To stir up a fire to remove ash or promote burning.",
+        "examples": [
+          "I poked about in the rubble, trying to find my lost keys.",
+          "To poke an ox.",
+          "The author skillfully incorporated poke to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A prod, jab, or thrust.; A lazy person; a dawdler.",
+        "examples": [
+          "Poke of reefer.",
+          "The author skillfully incorporated poke to emphasize the underlying theme.",
+          "In every chapter, the presence of poke provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "poke"
+    ],
+    "createdAt": "2026-11-13T12:45:56.302Z",
+    "updatedAt": "2026-11-13T12:45:56.302Z"
+  },
+  "pestering": {
+    "word": "pestering",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Present participle / Gerund) To bother, harass, or annoy persistently.; (Present participle / Gerund) To crowd together thickly.",
+        "examples": [
+          "He pestered me with questions.",
+          "She pestered him to help her.",
+          "He stood by the window, pestering quietly as the light faded into evening."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "An act or instance of annoying somebody.; (Present participle / Gerund) A bother or nuisance.",
+        "examples": [
+          "He stood by the window, pestering quietly as the light faded into evening.",
+          "They observed the fountain pestering clear water high into the morning air.",
+          "She spent hours pestering through the archives to locate the missing document."
+        ]
+      }
+    ],
+    "variations": [
+      "pestering",
+      "pester"
+    ],
+    "createdAt": "2026-11-13T12:45:56.492Z",
+    "updatedAt": "2026-11-13T12:45:56.492Z"
+  },
+  "prick": {
+    "word": "prick",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A small hole or perforation, caused by piercing.; An indentation or small mark made with a pointed object.",
+        "examples": [
+          "I felt a sharp prick as the nurse took a sample of blood.",
+          "The author skillfully incorporated prick to emphasize the underlying theme.",
+          "In every chapter, the presence of prick provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To pierce or puncture slightly.; To drive a nail into (a horse's foot), so as to cause lameness.",
+        "examples": [
+          "John hardly felt the needle prick his arm when the adept nurse drew blood.",
+          "To prick holes in paper.",
+          "To prick a pattern for embroidery."
+        ]
+      }
+    ],
+    "variations": [
+      "prick"
+    ],
+    "createdAt": "2026-11-13T12:45:56.545Z",
+    "updatedAt": "2026-11-13T12:45:56.545Z"
+  },
+  "pickings": {
+    "word": "Pickings",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Plural form) A gathering to pick fruit.; (Plural form) Items remaining after others have selected the best; scraps, as of food.",
+        "examples": [
+          "We went to a strawberry pickings last June.",
+          "Easy pickings, rich pickings.",
+          "The schoolboy flicked his nose pickings across the classroom."
+        ]
+      }
+    ],
+    "variations": [
+      "pickings",
+      "picking"
+    ],
+    "createdAt": "2026-11-13T12:45:56.570Z",
+    "updatedAt": "2026-11-13T12:45:56.570Z"
+  },
+  "pry": {
+    "word": "pry",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To peer closely and curiously, especially at something closed or not public. To inquire into something that does not concern one; to be nosy; to snoop.; To peer closely and curiously, especially at something closed or not public.",
+        "examples": [
+          "I don't mean to pry, but could you tell me where you got that scarf?",
+          "To pry into someone's affairs.",
+          "The author skillfully incorporated pry to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "An act of prying; a close and curious look.; A person who is very inquisitive or nosy; a busybody, a nosey parker.",
+        "examples": [
+          "The author skillfully incorporated pry to emphasize the underlying theme.",
+          "In every chapter, the presence of pry provided an unmistakable atmosphere.",
+          "Observers noted that pry altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "pry"
+    ],
+    "createdAt": "2026-11-13T12:45:56.598Z",
+    "updatedAt": "2026-11-13T12:45:56.598Z"
+  },
+  "petrified": {
+    "word": "Petrified",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having undergone the process of petrification (transformation into a stony substance); turned to stone.; Extremely afraid.",
+        "examples": [
+          "The team petrified their operations until further instructions arrived from headquarters.",
+          "She was deeply petrified by the unexpected turn of events during the meeting.",
+          "He carefully petrified the remaining pieces into a cohesive structure."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Past tense & participle) To turn to stone: to harden organic matter by permeating with water and depositing dissolved minerals.; (Past tense & participle) To produce rigidity akin to stone.",
+        "examples": [
+          "The team petrified their operations until further instructions arrived from headquarters.",
+          "She was deeply petrified by the unexpected turn of events during the meeting.",
+          "He carefully petrified the remaining pieces into a cohesive structure."
+        ]
+      }
+    ],
+    "variations": [
+      "petrified",
+      "petrify"
+    ],
+    "createdAt": "2026-11-13T12:45:56.611Z",
+    "updatedAt": "2026-11-13T12:45:56.611Z"
+  },
+  "pucker up": {
+    "word": "pucker up",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To contract a facial feature so as to form wrinkles; used especially of the lips when whistling or kissing.",
+        "examples": [
+          "Pucker up your lips!",
+          "Pucker up and gimme a kiss!",
+          "The author skillfully incorporated pucker up to emphasize the underlying theme."
+        ]
+      }
+    ],
+    "variations": [
+      "pucker up"
+    ],
+    "createdAt": "2026-11-13T12:45:56.698Z",
+    "updatedAt": "2026-11-13T12:45:56.698Z"
+  },
+  "pinch": {
+    "word": "pinch",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The action of squeezing a small amount of a person's skin and flesh, making it hurt.; A close compression of anything with the fingers.",
+        "examples": [
+          "I gave the leather of the sofa a pinch, gauging the texture.",
+          "Mix about four cups of white flour with a pinch of salt.",
+          "The author skillfully incorporated pinch to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To squeeze a small amount of a person's skin and flesh, making it hurt.; To squeeze between the thumb and forefinger.",
+        "examples": [
+          "The children were scolded for pinching each other.",
+          "Someone has pinched my handkerchief!",
+          "To be pinched for money."
+        ]
+      }
+    ],
+    "variations": [
+      "pinch"
+    ],
+    "createdAt": "2026-11-13T12:45:56.785Z",
+    "updatedAt": "2026-11-13T12:45:56.785Z"
+  },
+  "pissed": {
+    "word": "pissed",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To urinate.; To discharge as or with the urine.",
+        "examples": [
+          "When I got home I found a drunk pissing in my doorway.",
+          "Lately I've been pissing blood.",
+          "If you're pissing blood, you'd better see a doctor."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Drunk.; Annoyed, angry.",
+        "examples": [
+          "The team pissed their operations until further instructions arrived from headquarters.",
+          "She was deeply pissed by the unexpected turn of events during the meeting.",
+          "He carefully pissed the remaining pieces into a cohesive structure."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Past tense & participle) Urine.; (Past tense & participle) The act of urinating.",
+        "examples": [
+          "This toilet is disgusting. There's pissed all over the floor.",
+          "I'm desperate for a pissed!",
+          "The team pissed their operations until further instructions arrived from headquarters."
+        ]
+      },
+      {
+        "partOfSpeech": "interjection",
+        "definition": "(Past tense & participle) Expresses anger, disappointment or dissatisfaction.",
+        "examples": [
+          "The team pissed their operations until further instructions arrived from headquarters.",
+          "She was deeply pissed by the unexpected turn of events during the meeting.",
+          "He carefully pissed the remaining pieces into a cohesive structure."
+        ]
+      }
+    ],
+    "variations": [
+      "pissed",
+      "piss"
+    ],
+    "createdAt": "2026-11-13T12:45:56.814Z",
+    "updatedAt": "2026-11-13T12:45:56.814Z"
+  },
+  "parole": {
+    "word": "parole",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Originally, one's oath or word of honour, given as a condition of release from custody; now specifically, describing the release of a former prisoner under certain conditions, especially the promise of good behaviour.; Conditional release of a prisoner (now especially before the end of a custodial sentence), or the term or state of such release; the system governing such releases.",
+        "examples": [
+          "He will be on parole for nearly two more years.",
+          "He was released on parole.",
+          "The author skillfully incorporated parole to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To release (a prisoner) on the understanding that s/he checks in regularly and obeys the law.; To be released on parole.",
+        "examples": [
+          "The author skillfully incorporated parole to emphasize the underlying theme.",
+          "In every chapter, the presence of parole provided an unmistakable atmosphere.",
+          "Observers noted that parole altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "(Inflected form) Word of mouth.; (Inflected form) Verbal, oral, informal.",
+        "examples": [
+          "parole, or extrinsic evidence should only be used where it may clarify ambiguous terms of a contract.",
+          "The author skillfully incorporated parole to emphasize the underlying theme.",
+          "In every chapter, the presence of parole provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "parole",
+      "parol"
+    ],
+    "createdAt": "2026-11-13T12:45:56.826Z",
+    "updatedAt": "2026-11-13T12:45:56.826Z"
+  },
+  "phantom": {
+    "word": "phantom",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A ghost or apparition.; Something apparently seen, heard, or sensed, but having no physical reality; an image that appears only in the mind; an illusion or delusion.",
+        "examples": [
+          "The author skillfully incorporated phantom to emphasize the underlying theme.",
+          "In every chapter, the presence of phantom provided an unmistakable atmosphere.",
+          "Observers noted that phantom altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Illusive.; Fictitious or nonexistent.",
+        "examples": [
+          "A phantom limb.",
+          "The author skillfully incorporated phantom to emphasize the underlying theme.",
+          "In every chapter, the presence of phantom provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "phantom"
+    ],
+    "createdAt": "2026-11-13T12:45:56.910Z",
+    "updatedAt": "2026-11-13T12:45:56.910Z"
+  },
+  "punk": {
+    "word": "punk",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "One who engages in sexual intercourse, particularly: A female prostitute.; A female prostitute.",
+        "examples": [
+          "Because he was so weak, Vinny soon became Tony's punk.",
+          "My girlfriend is a punk and she plays the drums.",
+          "The author skillfully incorporated punk to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Worthless, contemptible, particularly; Bad, substandard.",
+        "examples": [
+          "You look very punk with your t-shirt, piercing, and chains.",
+          "The author skillfully incorporated punk to emphasize the underlying theme.",
+          "In every chapter, the presence of punk provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To pimp.; To forcibly perform anal sex upon (an unwilling partner).",
+        "examples": [
+          "Ricky punked his new cell-mates.",
+          "I got expelled when I punked the principal.",
+          "Jimmy was going to help me with the prank, but he punked (out) at the last minute."
+        ]
+      }
+    ],
+    "variations": [
+      "punk"
+    ],
+    "createdAt": "2026-11-13T12:45:56.938Z",
+    "updatedAt": "2026-11-13T12:45:56.938Z"
+  },
+  "pricks": {
+    "word": "pricks",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Plural form) A small hole or perforation, caused by piercing.; (Plural form) An indentation or small mark made with a pointed object.",
+        "examples": [
+          "I felt a sharp pricks as the nurse took a sample of blood.",
+          "The local pricks gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden pricks swept across the region, overwhelming the drainage canals."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Plural form) To pierce or puncture slightly.; (Plural form) To form by piercing or puncturing.",
+        "examples": [
+          "John hardly felt the needle pricks his arm when the adept nurse drew blood.",
+          "To pricks a pattern for embroidery.",
+          "To pricks a knife into a board."
+        ]
+      }
+    ],
+    "variations": [
+      "pricks",
+      "prick"
+    ],
+    "createdAt": "2026-11-13T12:45:57.009Z",
+    "updatedAt": "2026-11-13T12:45:57.009Z"
+  },
+  "plymouth": {
+    "word": "plymouth",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of plymouth",
+        "examples": [
+          "The author skillfully incorporated plymouth to emphasize the underlying theme.",
+          "In every chapter, the presence of plymouth provided an unmistakable atmosphere.",
+          "Observers noted that plymouth altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "plymouth"
+    ],
+    "createdAt": "2026-11-13T12:45:57.284Z",
+    "updatedAt": "2026-11-13T12:45:57.284Z"
+  },
+  "padlocked": {
+    "word": "padlocked",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Secured with a padlock.",
+        "examples": [
+          "The team padlocked their operations until further instructions arrived from headquarters.",
+          "She was deeply padlocked by the unexpected turn of events during the meeting.",
+          "He carefully padlocked the remaining pieces into a cohesive structure."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Past tense & participle) To lock using a padlock.",
+        "examples": [
+          "The team padlocked their operations until further instructions arrived from headquarters.",
+          "She was deeply padlocked by the unexpected turn of events during the meeting.",
+          "He carefully padlocked the remaining pieces into a cohesive structure."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Past tense & participle) A detachable lock that can be used to secure something by means of a sliding or hinged shackle",
+        "examples": [
+          "The team padlocked their operations until further instructions arrived from headquarters.",
+          "She was deeply padlocked by the unexpected turn of events during the meeting.",
+          "He carefully padlocked the remaining pieces into a cohesive structure."
+        ]
+      }
+    ],
+    "variations": [
+      "padlocked",
+      "padlock"
+    ],
+    "createdAt": "2026-11-13T12:45:57.382Z",
+    "updatedAt": "2026-11-13T12:45:57.382Z"
+  },
+  "presided": {
+    "word": "presided",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Past tense & participle) To act as president or chairperson.; (Past tense & participle) To exercise authority or control.",
+        "examples": [
+          "I’ll presided at the organ.",
+          "The team presided their operations until further instructions arrived from headquarters.",
+          "She was deeply presided by the unexpected turn of events during the meeting."
+        ]
+      }
+    ],
+    "variations": [
+      "presided",
+      "preside"
+    ],
+    "createdAt": "2026-11-13T12:45:57.415Z",
+    "updatedAt": "2026-11-13T12:45:57.415Z"
+  },
+  "pies": {
+    "word": "pies",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Plural form) A type of pastry that consists of an outer crust and a filling. (Savory pies are more popular in the UK and sweet pies are more popular in the US, so \"pie\" without qualification has different connotations in these dialects.); (Plural form) Any of various other, non-pastry dishes that maintain the general concept of a shell with a filling.",
+        "examples": [
+          "The family had steak and kidney pies for dinner and cherry pies for dessert.",
+          "Shepherd's pies is made of mince covered with mashed potato.",
+          "The local pies gathered early in the square to prepare their daily exhibits."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Plural form) To hit in the face with a pie, either for comic effect or as a means of protest (see also pieing).; (Plural form) To go around (a corner) in a guarded manner.",
+        "examples": [
+          "I'd like to see someone pies the chairman of the board.",
+          "The local pies gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden pies swept across the region, overwhelming the drainage canals."
+        ]
+      },
+      {
+        "partOfSpeech": "symbol",
+        "definition": "(Plural form) ISO 639-3 language code for Piro.",
+        "examples": [
+          "The local pies gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden pies swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various pies preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "pies",
+      "pie"
+    ],
+    "createdAt": "2026-11-13T12:45:57.423Z",
+    "updatedAt": "2026-11-13T12:45:57.423Z"
+  },
+  "pouring": {
+    "word": "pouring",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Present participle / Gerund) To cause (liquid, or liquid-like substance) to flow in a stream, either out of a container or into it.; (Present participle / Gerund) To send out as in a stream or a flood; to cause (an emotion) to come out; to cause to escape.",
+        "examples": [
+          "pouring water from a jug.",
+          "pouring wine into a decanter.",
+          "To pouring oil onto chips."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "The act by which something is poured.; (Present participle / Gerund) The act of pouring.",
+        "examples": [
+          "The bartender's inexpert pouring left me with a pint of beer that was half foam.",
+          "He stood by the window, pouring quietly as the light faded into evening.",
+          "They observed the fountain pouring clear water high into the morning air."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Flowing or falling intensely.",
+        "examples": [
+          "Pouring rain.",
+          "He stood by the window, pouring quietly as the light faded into evening.",
+          "They observed the fountain pouring clear water high into the morning air."
+        ]
+      }
+    ],
+    "variations": [
+      "pouring",
+      "pour"
+    ],
+    "createdAt": "2026-11-13T12:45:57.489Z",
+    "updatedAt": "2026-11-13T12:45:57.489Z"
+  },
+  "proposition": {
+    "word": "proposition",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The act of offering (an idea) for consideration.; An idea or a plan offered.",
+        "examples": [
+          "“'Wiktionary is a good dictionary' is a proposition” is a proposition.",
+          "The propositions of Wyclif and Huss.",
+          "“Wiktionary is a good dictionary” is a proposition."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To make a suggestion of sexual intercourse to (someone with whom one is not sexually involved).; To make an offer or suggestion to (someone).",
+        "examples": [
+          "The author skillfully incorporated proposition to emphasize the underlying theme.",
+          "In every chapter, the presence of proposition provided an unmistakable atmosphere.",
+          "Observers noted that proposition altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "proposition"
+    ],
+    "createdAt": "2026-11-13T12:45:57.522Z",
+    "updatedAt": "2026-11-13T12:45:57.522Z"
+  },
+  "pop": {
+    "word": "pop",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A loud, sharp sound as of a cork coming out of a bottle.; (Midwest US) An effervescent or fizzy drink, most frequently nonalcoholic; soda pop.",
+        "examples": [
+          "Listen to the pop of a champagne cork.",
+          "Lunch was sandwiches and a bottle of pop.",
+          "Go in the store and buy us three pops."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To make a pop, or sharp, quick sound.; To burst (something) with a popping sound.",
+        "examples": [
+          "The muskets popped away on all sides.",
+          "The boy with the pin popped the balloon.",
+          "A rabbit popped out of the hole."
+        ]
+      },
+      {
+        "partOfSpeech": "interjection",
+        "definition": "Used to represent a loud, sharp sound, as of a cork coming out of a bottle.; A loud, sharp sound, as of a cork coming out of a bottle.",
+        "examples": [
+          "The author skillfully incorporated pop to emphasize the underlying theme.",
+          "In every chapter, the presence of pop provided an unmistakable atmosphere.",
+          "Observers noted that pop altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "(used attributively in set phrases) Popular.; Popular.",
+        "examples": [
+          "The author skillfully incorporated pop to emphasize the underlying theme.",
+          "In every chapter, the presence of pop provided an unmistakable atmosphere.",
+          "Observers noted that pop altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "symbol",
+        "definition": "ISO 639-3 language code for Pwapwâ.",
+        "examples": [
+          "The author skillfully incorporated pop to emphasize the underlying theme.",
+          "In every chapter, the presence of pop provided an unmistakable atmosphere.",
+          "Observers noted that pop altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "pop"
+    ],
+    "createdAt": "2026-11-13T12:45:57.554Z",
+    "updatedAt": "2026-11-13T12:45:57.554Z"
+  },
+  "premonitory": {
+    "word": "premonitory",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of premonitory",
+        "examples": [
+          "The author skillfully incorporated premonitory to emphasize the underlying theme.",
+          "In every chapter, the presence of premonitory provided an unmistakable atmosphere.",
+          "Observers noted that premonitory altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "premonitory"
+    ],
+    "createdAt": "2026-11-13T12:45:57.712Z",
+    "updatedAt": "2026-11-13T12:45:57.712Z"
+  },
+  "preliminaries": {
+    "word": "preliminaries",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of preliminaries",
+        "examples": [
+          "The local preliminaries gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden preliminaries swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various preliminaries preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "preliminaries"
+    ],
+    "createdAt": "2026-11-13T12:45:57.722Z",
+    "updatedAt": "2026-11-13T12:45:57.722Z"
+  },
+  "presumably": {
+    "word": "presumably",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of presumably",
+        "examples": [
+          "The author skillfully incorporated presumably to emphasize the underlying theme.",
+          "In every chapter, the presence of presumably provided an unmistakable atmosphere.",
+          "Observers noted that presumably altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "presumably"
+    ],
+    "createdAt": "2026-11-13T12:45:57.741Z",
+    "updatedAt": "2026-11-13T12:45:57.741Z"
+  },
+  "passage": {
+    "word": "passage",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A paragraph or section of text or music with particular meaning.; Part of a path or journey.",
+        "examples": [
+          "She struggled to play the difficult passages.",
+          "He made his passage through the trees carefully, mindful of the stickers.",
+          "The company was one of the prime movers in lobbying for the passage of the act."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To pass something, such as a pathogen or stem cell, through a host or medium; To make a passage, especially by sea; to cross",
+        "examples": [
+          "After 24 hours, the culture was passaged to an agar plate.",
+          "They passaged to America in 1902.",
+          "The author skillfully incorporated passage to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Describing a bird that has left the nest, is living on its own, but is less than a year old. (commonly used in falconry)",
+        "examples": [
+          "Passage red-tailed hawks are preferred by falconers because these younger birds have not yet developed the adult behaviors which would make them more difficult to train.",
+          "The author skillfully incorporated passage to emphasize the underlying theme.",
+          "In every chapter, the presence of passage provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "passage"
+    ],
+    "createdAt": "2026-11-13T12:45:57.756Z",
+    "updatedAt": "2026-11-13T12:45:57.756Z"
+  },
+  "pace": {
+    "word": "pace",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Step.; Way of stepping.",
+        "examples": [
+          "Even at the duel, standing 10 paces apart, he could have satisfied Aaron’s honor.",
+          "I have perambulated your field, and estimate its perimeter to be 219 paces.",
+          "We set off at a round pace."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To walk back and forth in a small distance.; To set the speed in a race.",
+        "examples": [
+          "I helped her train for the marathon by pacing her on a bike.",
+          "The author skillfully incorporated pace to emphasize the underlying theme.",
+          "In every chapter, the presence of pace provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Describing a bowler who bowls fast balls.",
+        "examples": [
+          "The author skillfully incorporated pace to emphasize the underlying theme.",
+          "In every chapter, the presence of pace provided an unmistakable atmosphere.",
+          "Observers noted that pace altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "preposition",
+        "definition": "With all due respect to.",
+        "examples": [
+          "The author skillfully incorporated pace to emphasize the underlying theme.",
+          "In every chapter, the presence of pace provided an unmistakable atmosphere.",
+          "Observers noted that pace altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "pace"
+    ],
+    "createdAt": "2026-11-13T12:45:57.821Z",
+    "updatedAt": "2026-11-13T12:45:57.821Z"
+  },
+  "prix": {
+    "word": "prix",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Synonym of prize.",
+        "examples": [
+          "The author skillfully incorporated prix to emphasize the underlying theme.",
+          "In every chapter, the presence of prix provided an unmistakable atmosphere.",
+          "Observers noted that prix altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "prix"
+    ],
+    "createdAt": "2026-11-13T12:45:57.847Z",
+    "updatedAt": "2026-11-13T12:45:57.847Z"
+  },
+  "poked": {
+    "word": "poked",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Past tense & participle) To prod or jab with an object such as a finger or a stick.; (Past tense & participle) To stir up a fire to remove ash or promote burning.",
+        "examples": [
+          "I poked about in the rubble, trying to find my lost keys.",
+          "To poked an ox.",
+          "If she smokes, she pokes."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Past tense & participle) A prod, jab, or thrust.; (Past tense & participle) A lazy person; a dawdler.",
+        "examples": [
+          "poked of reefer.",
+          "The team poked their operations until further instructions arrived from headquarters.",
+          "She was deeply poked by the unexpected turn of events during the meeting."
+        ]
+      }
+    ],
+    "variations": [
+      "poked",
+      "poke"
+    ],
+    "createdAt": "2026-11-13T12:45:57.889Z",
+    "updatedAt": "2026-11-13T12:45:57.889Z"
+  },
+  "pitched": {
+    "word": "pitched",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Past tense & participle) To cover or smear with pitch.; (Past tense & participle) To darken; to blacken; to obscure.",
+        "examples": [
+          "He pitched the horseshoe.",
+          "Bob pitches today.",
+          "He pitched the candy wrapper."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having a slope, whether shallow, steep, or intermediate.; Having a specified tonal range.",
+        "examples": [
+          "A pitched roof.",
+          "The roofs up there are pitched heavier because of the snowfalls.",
+          "If you look closely, you can see that this whole patio is pitched at a quarter-inch to the foot."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Past tense & participle) A sticky, gummy substance secreted by trees; sap.; (Past tense & participle) A dark, extremely viscous material remaining in still after distilling crude oil and tar.",
+        "examples": [
+          "It is hard to get this pitched off my hand.",
+          "It was pitched black because there was no moon.",
+          "A good pitched in quoits."
+        ]
+      }
+    ],
+    "variations": [
+      "pitched",
+      "pitch"
+    ],
+    "createdAt": "2026-11-13T12:45:58.028Z",
+    "updatedAt": "2026-11-13T12:45:58.028Z"
+  },
+  "pit": {
+    "word": "pit",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A hole in the ground.; An area at a racetrack used for refueling and repairing the vehicles during a race.",
+        "examples": [
+          "The meadow around the town is full of old pits.",
+          "Two drivers have already gone into the pit this early in the race.",
+          "I felt pain in the pit of my stomach."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To make pits in; to mark with little hollows.; To put (an animal) into a pit for fighting.",
+        "examples": [
+          "Exposure to acid rain pitted the metal.",
+          "Are you ready to pit your wits against one of the world's greatest puzzles?",
+          "One must pit a peach to make it ready for a pie."
+        ]
+      },
+      {
+        "partOfSpeech": "symbol",
+        "definition": "ISO 639-3 language code for Pitta-Pitta.",
+        "examples": [
+          "The author skillfully incorporated pit to emphasize the underlying theme.",
+          "In every chapter, the presence of pit provided an unmistakable atmosphere.",
+          "Observers noted that pit altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "pit"
+    ],
+    "createdAt": "2026-11-13T12:45:58.033Z",
+    "updatedAt": "2026-11-13T12:45:58.033Z"
+  },
+  "poplars": {
+    "word": "poplars",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Plural form) Any of various deciduous trees of the genus Populus.; (Plural form) Wood from the poplar tree.",
+        "examples": [
+          "The local poplars gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden poplars swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various poplars preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "poplars",
+      "poplar"
+    ],
+    "createdAt": "2026-11-13T12:45:58.075Z",
+    "updatedAt": "2026-11-13T12:45:58.075Z"
+  },
+  "pageant": {
+    "word": "pageant",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An elaborate public display, especially a parade in historical or traditional costume.; A spectacular ceremony.",
+        "examples": [
+          "The author skillfully incorporated pageant to emphasize the underlying theme.",
+          "In every chapter, the presence of pageant provided an unmistakable atmosphere.",
+          "Observers noted that pageant altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To exhibit in show; to represent; to mimic.",
+        "examples": [
+          "The author skillfully incorporated pageant to emphasize the underlying theme.",
+          "In every chapter, the presence of pageant provided an unmistakable atmosphere.",
+          "Observers noted that pageant altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "pageant"
+    ],
+    "createdAt": "2026-11-13T12:45:58.084Z",
+    "updatedAt": "2026-11-13T12:45:58.084Z"
+  },
+  "pitting": {
+    "word": "pitting",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The formation of pits on a surface because of corrosion.; The digging of a pit.",
+        "examples": [
+          "Test pittings were carried out prior to the main excavation.",
+          "The meadow around the town is full of old pits.",
+          "Two drivers have already gone into the pitting this early in the race."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Present participle / Gerund) To make pits in; to mark with little hollows.; To put (an animal) into a pit for fighting.",
+        "examples": [
+          "Exposure to acid rain pitted the metal.",
+          "Are you ready to pitting your wits against one of the world's greatest puzzles?",
+          "One must pitting a peach to make it ready for a pie."
+        ]
+      },
+      {
+        "partOfSpeech": "symbol",
+        "definition": "(Present participle / Gerund) ISO 639-3 language code for Pitta-Pitta.",
+        "examples": [
+          "The author skillfully incorporated pitting to emphasize the underlying theme.",
+          "In every chapter, the presence of pitting provided an unmistakable atmosphere.",
+          "Observers noted that pitting altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "pitting",
+      "pit"
+    ],
+    "createdAt": "2026-11-13T12:45:58.090Z",
+    "updatedAt": "2026-11-13T12:45:58.090Z"
+  },
+  "pits": {
+    "word": "pits",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Plural form) A hole in the ground.; An area at a racetrack used for refueling and repairing the vehicles during a race.",
+        "examples": [
+          "John works in the pits.",
+          "The meadow around the town is full of old pits.",
+          "Two drivers have already gone into the pits this early in the race."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Plural form) To make pits in; to mark with little hollows.; To put (an animal) into a pit for fighting.",
+        "examples": [
+          "Exposure to acid rain pitted the metal.",
+          "Are you ready to pits your wits against one of the world's greatest puzzles?",
+          "One must pits a peach to make it ready for a pie."
+        ]
+      },
+      {
+        "partOfSpeech": "symbol",
+        "definition": "(Plural form) ISO 639-3 language code for Pitta-Pitta.",
+        "examples": [
+          "The author skillfully incorporated pits to emphasize the underlying theme.",
+          "In every chapter, the presence of pits provided an unmistakable atmosphere.",
+          "Observers noted that pits altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "pits",
+      "pit"
+    ],
+    "createdAt": "2026-11-13T12:45:58.115Z",
+    "updatedAt": "2026-11-13T12:45:58.115Z"
+  },
+  "provence": {
+    "word": "provence",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of provence",
+        "examples": [
+          "The author skillfully incorporated provence to emphasize the underlying theme.",
+          "In every chapter, the presence of provence provided an unmistakable atmosphere.",
+          "Observers noted that provence altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "provence"
+    ],
+    "createdAt": "2026-11-13T12:45:58.182Z",
+    "updatedAt": "2026-11-13T12:45:58.182Z"
+  },
+  "prey": {
+    "word": "prey",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Anything, as goods, etc., taken or got by violence; anything taken by force from an enemy in war; That which is or may be seized by animals or birds to be devoured; hence, a person given up as a victim.",
+        "examples": [
+          "The rabbit was eaten by the coyote, so the rabbit is the coyote's prey.",
+          "The deer became prey to the lion.",
+          "Stranded without any weapons, we made very easy prey."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To act as a predator.",
+        "examples": [
+          "The author skillfully incorporated prey to emphasize the underlying theme.",
+          "In every chapter, the presence of prey provided an unmistakable atmosphere.",
+          "Observers noted that prey altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "prey"
+    ],
+    "createdAt": "2026-11-13T12:45:58.252Z",
+    "updatedAt": "2026-11-13T12:45:58.252Z"
+  },
+  "pail": {
+    "word": "pail",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A vessel of wood, tin, plastic, etc., usually cylindrical and having a handle -- used especially for carrying liquids, for example water or milk; a bucket (sometimes with a cover).; (In technical use) A closed (covered) cylindrical shipping container.",
+        "examples": [
+          "The milkmaid carried a pail of milk in each hand.",
+          "The author skillfully incorporated pail to emphasize the underlying theme.",
+          "In every chapter, the presence of pail provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "pail"
+    ],
+    "createdAt": "2026-11-13T12:45:58.405Z",
+    "updatedAt": "2026-11-13T12:45:58.405Z"
+  },
+  "pasture": {
+    "word": "pasture",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Land, specifically, an open field, on which livestock is kept for feeding.; Ground covered with grass or herbage, used or suitable for the grazing of livestock.",
+        "examples": [
+          "The author skillfully incorporated pasture to emphasize the underlying theme.",
+          "In every chapter, the presence of pasture provided an unmistakable atmosphere.",
+          "Observers noted that pasture altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To move animals into a pasture.; To graze.",
+        "examples": [
+          "The farmer pastures fifty oxen.",
+          "The land will pasture forty cows.",
+          "The author skillfully incorporated pasture to emphasize the underlying theme."
+        ]
+      }
+    ],
+    "variations": [
+      "pasture"
+    ],
+    "createdAt": "2026-11-13T12:45:58.434Z",
+    "updatedAt": "2026-11-13T12:45:58.434Z"
+  },
+  "parish": {
+    "word": "parish",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An administrative part of a diocese that has its own church.; The community attending that church; the members of the parish.",
+        "examples": [
+          "The author skillfully incorporated parish to emphasize the underlying theme.",
+          "In every chapter, the presence of parish provided an unmistakable atmosphere.",
+          "Observers noted that parish altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To place (an area, or rarely a person) into one or more parishes.; To visit residents of a parish.",
+        "examples": [
+          "The author skillfully incorporated parish to emphasize the underlying theme.",
+          "In every chapter, the presence of parish provided an unmistakable atmosphere.",
+          "Observers noted that parish altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "parish"
+    ],
+    "createdAt": "2026-11-13T12:45:58.447Z",
+    "updatedAt": "2026-11-13T12:45:58.447Z"
+  },
+  "parted": {
+    "word": "parted",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Past tense & participle) To leave the company of.; (Past tense & participle) To cut hair with a parting; shed.",
+        "examples": [
+          "To parted the curtains.",
+          "A rope parts. His hair parts in the middle.",
+          "To parted gold from silver."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Separated; taken asunder.; Having the specified number of parts.",
+        "examples": [
+          "A parted leaf.",
+          "Fred was parted owner of the car.",
+          "The team parted their operations until further instructions arrived from headquarters."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Past tense & participle) A portion; a component.; (Past tense & participle) Duty; responsibility.",
+        "examples": [
+          "To do one’s parted.",
+          "The parted of his hair was slightly to the left.",
+          "Gaul is divided into three parts."
+        ]
+      },
+      {
+        "partOfSpeech": "adverb",
+        "definition": "(Past tense & participle) Partly; partially; fractionally.; (Past tense & participle) Partly; partially; fractionally.",
+        "examples": [
+          "parted finished.",
+          "My Native American friend is also parted German and parted French.",
+          "The team parted their operations until further instructions arrived from headquarters."
+        ]
+      }
+    ],
+    "variations": [
+      "parted",
+      "part"
+    ],
+    "createdAt": "2026-11-13T12:45:58.486Z",
+    "updatedAt": "2026-11-13T12:45:58.486Z"
+  },
+  "prohibited": {
+    "word": "prohibited",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Forbidden; banned; unallowed.",
+        "examples": [
+          "The team prohibited their operations until further instructions arrived from headquarters.",
+          "She was deeply prohibited by the unexpected turn of events during the meeting.",
+          "He carefully prohibited the remaining pieces into a cohesive structure."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Past tense & participle) To forbid, disallow, or proscribe officially; to make illegal or illicit.",
+        "examples": [
+          "The restaurant prohibits smoking on the patio.",
+          "I was prohibited to come.",
+          "Crossing the border without permission is prohibited."
+        ]
+      }
+    ],
+    "variations": [
+      "prohibited",
+      "prohibit"
+    ],
+    "createdAt": "2026-11-13T12:45:58.595Z",
+    "updatedAt": "2026-11-13T12:45:58.595Z"
+  },
+  "prosperity": {
+    "word": "prosperity",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The condition of being prosperous: having good fortune and a fortune.",
+        "examples": [
+          "The author skillfully incorporated prosperity to emphasize the underlying theme.",
+          "In every chapter, the presence of prosperity provided an unmistakable atmosphere.",
+          "Observers noted that prosperity altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "prosperity"
+    ],
+    "createdAt": "2026-11-13T12:45:58.640Z",
+    "updatedAt": "2026-11-13T12:45:58.640Z"
+  },
+  "plastered": {
+    "word": "plastered",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Coated with plaster.; Covered extensively with something, especially posters, pictures, or notices.",
+        "examples": [
+          "The old home had plastered walls rather than drywall.",
+          "The wall was plastered with pictures.",
+          "The only way he could deal with the grief following his wife's death was to get so plastered that he passed out."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Past tense & participle) To cover or coat something with plaster; to render.; (Past tense & participle) To apply a plaster to.",
+        "examples": [
+          "To plastered a wall.",
+          "To plastered a wound.",
+          "Her face was plastered with mud."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Past tense & participle) A paste applied to the skin for healing or cosmetic purposes.; (Past tense & participle) A small adhesive bandage to cover a minor wound; a sticking plaster.",
+        "examples": [
+          "The team plastered their operations until further instructions arrived from headquarters.",
+          "She was deeply plastered by the unexpected turn of events during the meeting.",
+          "He carefully plastered the remaining pieces into a cohesive structure."
+        ]
+      }
+    ],
+    "variations": [
+      "plastered",
+      "plaster"
+    ],
+    "createdAt": "2026-11-13T12:45:58.650Z",
+    "updatedAt": "2026-11-13T12:45:58.650Z"
+  },
+  "porter": {
+    "word": "porter",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A person who carries luggage and related objects.; An ant having the specialized role of carrying.",
+        "examples": [
+          "By the time I reached the train station I was exhausted, but fortunately there was a porter waiting.",
+          "Goods porter.",
+          "The author skillfully incorporated porter to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To serve as a porter; to carry.",
+        "examples": [
+          "The author skillfully incorporated porter to emphasize the underlying theme.",
+          "In every chapter, the presence of porter provided an unmistakable atmosphere.",
+          "Observers noted that porter altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "porter"
+    ],
+    "createdAt": "2026-11-13T12:45:58.679Z",
+    "updatedAt": "2026-11-13T12:45:58.679Z"
+  },
+  "profusely": {
+    "word": "profusely",
+    "meanings": [
+      {
+        "partOfSpeech": "adverb",
+        "definition": "In great quantity or abundance; in a profuse manner.",
+        "examples": [
+          "The run left him sweating profusely.",
+          "The author skillfully incorporated profusely to emphasize the underlying theme.",
+          "In every chapter, the presence of profusely provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "profusely"
+    ],
+    "createdAt": "2026-11-13T12:45:58.703Z",
+    "updatedAt": "2026-11-13T12:45:58.703Z"
+  },
+  "penance": {
+    "word": "penance",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Voluntary self-punishment inflicted as an outward expression of repentance for having done wrong.",
+        "examples": [
+          "He endured the backbreaking field work not as a penance, but to avoid the superintendent's belt."
+        ]
+      }
+    ],
+    "variations": [
+      "penances"
+    ],
+    "createdAt": "2026-11-13T14:23:18.635Z",
+    "updatedAt": "2026-11-13T14:23:18.635Z"
+  },
+  "probation": {
+    "word": "probation",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The release of an offender from detention, subject to a period of good behavior under supervision.",
+        "examples": [
+          "The social worker promised Elwood a hearing for early probation if he avoided demerits."
+        ]
+      }
+    ],
+    "variations": [
+      "probationary"
+    ],
+    "createdAt": "2026-11-13T14:23:18.710Z",
+    "updatedAt": "2026-11-13T14:23:18.710Z"
+  },
+  "penitentiary": {
+    "word": "penitentiary",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A prison for people convicted of serious crimes.",
+        "examples": [
+          "The older boys warned that the reform school was merely an anteroom to the state penitentiary."
+        ]
+      }
+    ],
+    "variations": [
+      "penitentiaries"
+    ],
+    "createdAt": "2026-11-13T14:23:18.748Z",
+    "updatedAt": "2026-11-13T14:23:18.748Z"
+  },
+  "pariah": {
+    "word": "pariah",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An outcast; a person who is rejected from society or home.",
+        "examples": [
+          "Gregor accepted his status as a hidden pariah within the very home he had financed."
+        ]
+      }
+    ],
+    "variations": [
+      "pariahs"
+    ],
+    "createdAt": "2026-11-13T14:23:18.822Z",
+    "updatedAt": "2026-11-13T14:23:18.822Z"
+  },
+  "putrefaction": {
+    "word": "putrefaction",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The process of decay or rotting in a body or other organic matter.",
+        "examples": [
+          "The summer heat accelerated the putrefaction of the corpse during the nine-day wagon journey."
+        ]
+      }
+    ],
+    "variations": [
+      "putrefy",
+      "putrescent"
+    ],
+    "createdAt": "2026-11-13T14:23:18.855Z",
+    "updatedAt": "2026-11-13T14:23:18.855Z"
+  },
+  "parched": {
+    "word": "parched",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Dried out with heat; extremely thirsty.",
+        "examples": [
+          "The red clay roads were parched before the sudden summer storm broke over the hills."
+        ]
+      }
+    ],
+    "variations": [
+      "parch"
+    ],
+    "createdAt": "2026-11-13T14:23:18.885Z",
+    "updatedAt": "2026-11-13T14:23:18.885Z"
+  },
+  "pestilence": {
+    "word": "pestilence",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A fatal epidemic disease, especially bubonic plague.",
+        "examples": [
+          "Dr. Rieux was among the first to acknowledge that the pestilence had besieged Oran."
+        ]
+      }
+    ],
+    "variations": [
+      "pestilences",
+      "pestilent"
+    ],
+    "createdAt": "2026-11-13T14:23:18.903Z",
+    "updatedAt": "2026-11-13T14:23:18.903Z"
+  },
+  "pacify": {
+    "word": "pacify",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Quell the anger, agitation, or excitement of.",
+        "examples": [
+          "Gregor's mother tried to pacify her furious husband before he reached for his cane."
+        ]
+      }
+    ],
+    "variations": [
+      "pacified",
+      "pacifying"
+    ],
+    "createdAt": "2026-11-13T14:38:23.193Z",
+    "updatedAt": "2026-11-13T14:38:23.193Z"
+  },
+  "painstaking": {
+    "word": "painstaking",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Done with or employing great care and thoroughness.",
+        "examples": [
+          "The forensic anthropologists conducted a painstaking excavation of the clandestine graves."
+        ]
+      }
+    ],
+    "variations": [
+      "painstakingly"
+    ],
+    "createdAt": "2026-11-13T14:38:23.201Z",
+    "updatedAt": "2026-11-13T14:38:23.201Z"
+  },
+  "palliate": {
+    "word": "palliate",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Make a disease or its symptoms less severe or unpleasant without removing the cause.",
+        "examples": [
+          "Morphine was the only substance available to palliate the agony of the final hours."
+        ]
+      }
+    ],
+    "variations": [
+      "palliated",
+      "palliating",
+      "palliative"
+    ],
+    "createdAt": "2026-11-13T14:38:23.207Z",
+    "updatedAt": "2026-11-13T14:38:23.207Z"
+  },
+  "panacea": {
+    "word": "panacea",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A solution or remedy for all difficulties or diseases.",
+        "examples": [
+          "The town elders spoke of quarantine as a panacea that would resolve everything within two weeks."
+        ]
+      }
+    ],
+    "variations": [
+      "panaceas"
+    ],
+    "createdAt": "2026-11-13T14:38:23.216Z",
+    "updatedAt": "2026-11-13T14:38:23.216Z"
+  },
+  "pandemonium": {
+    "word": "pandemonium",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Wild and noisy disorder or confusion; uproar.",
+        "examples": [
+          "Pandemonium erupted in the mess hall when an inmate knocked over the boiling kettle."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:23.223Z",
+    "updatedAt": "2026-11-13T14:38:23.223Z"
+  },
+  "panoply": {
+    "word": "panoply",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A complete or impressive collection of things; a splendid display.",
+        "examples": [
+          "The state exhibited a full panoply of legal excuses to delay opening the mass graves."
+        ]
+      }
+    ],
+    "variations": [
+      "panoplies"
+    ],
+    "createdAt": "2026-11-13T14:38:23.231Z",
+    "updatedAt": "2026-11-13T14:38:23.231Z"
+  },
+  "paradigm": {
+    "word": "paradigm",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A typical example or pattern of something; a model.",
+        "examples": [
+          "The school was the tragic paradigm of the Jim Crow penal system in the rural South."
+        ]
+      }
+    ],
+    "variations": [
+      "paradigms"
+    ],
+    "createdAt": "2026-11-13T14:38:23.238Z",
+    "updatedAt": "2026-11-13T14:38:23.238Z"
+  },
+  "paradox": {
+    "word": "paradox",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A seemingly absurd or self-contradictory statement or proposition that when investigated or explained may prove to be well founded or true.",
+        "examples": [
+          "The central paradox of the town was that freedom was found only in shared suffering."
+        ]
+      }
+    ],
+    "variations": [
+      "paradoxes",
+      "paradoxical"
+    ],
+    "createdAt": "2026-11-13T14:38:23.245Z",
+    "updatedAt": "2026-11-13T14:38:23.245Z"
+  },
+  "paragon": {
+    "word": "paragon",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A person or thing regarded as a perfect example of a particular quality.",
+        "examples": [
+          "The principal held up the quiet, hardworking student as a paragon of youthful virtue."
+        ]
+      }
+    ],
+    "variations": [
+      "paragons"
+    ],
+    "createdAt": "2026-11-13T14:38:23.252Z",
+    "updatedAt": "2026-11-13T14:38:23.252Z"
+  },
+  "paramount": {
+    "word": "paramount",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "More important than anything else; supreme.",
+        "examples": [
+          "To Dr. Rieux, relieving the agony of the dying child was paramount over all theology."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:23.259Z",
+    "updatedAt": "2026-11-13T14:38:23.259Z"
+  },
+  "paranoia": {
+    "word": "paranoia",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A mental condition characterized by delusions of persecution, unwarranted jealousy, or exaggerated self-importance.",
+        "examples": [
+          "A climate of pervasive paranoia caused neighbors to inform on each other for coughing."
+        ]
+      }
+    ],
+    "variations": [
+      "paranoid"
+    ],
+    "createdAt": "2026-11-13T14:38:23.265Z",
+    "updatedAt": "2026-11-13T14:38:23.265Z"
+  },
+  "parapet": {
+    "word": "parapet",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A low protective wall along the edge of a roof, bridge, or balcony.",
+        "examples": [
+          "Armed guards paced along the concrete parapet overlooking the exercise yard."
+        ]
+      }
+    ],
+    "variations": [
+      "parapets"
+    ],
+    "createdAt": "2026-11-13T14:38:23.271Z",
+    "updatedAt": "2026-11-13T14:38:23.271Z"
+  },
+  "paroxysm": {
+    "word": "paroxysm",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A sudden attack or violent expression of a particular emotion or activity; a convulsion.",
+        "examples": [
+          "A violent paroxysm of coughing shook the fever patient's emaciated frame."
+        ]
+      }
+    ],
+    "variations": [
+      "paroxysms"
+    ],
+    "createdAt": "2026-11-13T14:38:23.281Z",
+    "updatedAt": "2026-11-13T14:38:23.281Z"
+  },
+  "parsimonious": {
+    "word": "parsimonious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Unwilling to spend money or use resources; stingy or frugal.",
+        "examples": [
+          "The parsimonious administration cut food budgets while increasing inmate working hours."
+        ]
+      }
+    ],
+    "variations": [
+      "parsimoniously",
+      "parsimony"
+    ],
+    "createdAt": "2026-11-13T14:38:23.288Z",
+    "updatedAt": "2026-11-13T14:38:23.288Z"
+  },
+  "partisan": {
+    "word": "partisan",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Prejudiced in favor of a particular cause; devoted to one faction.",
+        "examples": [
+          "The local newspaper took a fiercely partisan stance against civil rights workers."
+        ]
+      }
+    ],
+    "variations": [
+      "partisans"
+    ],
+    "createdAt": "2026-11-13T14:38:23.294Z",
+    "updatedAt": "2026-11-13T14:38:23.294Z"
+  },
+  "patent": {
+    "word": "patent",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Easily recognizable; obvious.",
+        "examples": [
+          "The supervisor's claim that the boy had injured himself was a patent falsehood."
+        ]
+      }
+    ],
+    "variations": [
+      "patently"
+    ],
+    "createdAt": "2026-11-13T14:38:23.301Z",
+    "updatedAt": "2026-11-13T14:38:23.301Z"
+  },
+  "pathological": {
+    "word": "pathological",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Relating to pathology; involving, caused by, or of the nature of a physical or mental disease; compulsive.",
+        "examples": [
+          "The guard took a pathological pleasure in administering corporal punishment."
+        ]
+      }
+    ],
+    "variations": [
+      "pathologically",
+      "pathology"
+    ],
+    "createdAt": "2026-11-13T14:38:23.308Z",
+    "updatedAt": "2026-11-13T14:38:23.308Z"
+  },
+  "pathos": {
+    "word": "pathos",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A quality that evokes pity or sadness.",
+        "examples": [
+          "There was profound pathos in the sight of the dying boy clutching his worn schoolbook."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:23.316Z",
+    "updatedAt": "2026-11-13T14:38:23.316Z"
+  },
+  "patriarch": {
+    "word": "patriarch",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The male head of a family or tribe.",
+        "examples": [
+          "Anse Bundren fancied himself the noble patriarch of a suffering household."
+        ]
+      }
+    ],
+    "variations": [
+      "patriarchs",
+      "patriarchal"
+    ],
+    "createdAt": "2026-11-13T14:38:23.322Z",
+    "updatedAt": "2026-11-13T14:38:23.322Z"
+  },
+  "patronize": {
+    "word": "patronize",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Treat with an apparent kindness that betrays a feeling of superiority; frequent as a customer.",
+        "examples": [
+          "The white overseers loved to patronize the young Black inmates with condescending advice."
+        ]
+      }
+    ],
+    "variations": [
+      "patronized",
+      "patronizing"
+    ],
+    "createdAt": "2026-11-13T14:38:23.329Z",
+    "updatedAt": "2026-11-13T14:38:23.329Z"
+  },
+  "paucity": {
+    "word": "paucity",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The presence of something only in small or insufficient quantities or amounts; scarcity.",
+        "examples": [
+          "A critical paucity of medical personnel forced untrained clerks to serve as orderlies."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:23.336Z",
+    "updatedAt": "2026-11-13T14:38:23.336Z"
+  },
+  "pedantic": {
+    "word": "pedantic",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Of or like a pedant; excessively concerned with minor details and rules or with displaying academic learning.",
+        "examples": [
+          "The chief clerk gave pedantic lectures on timetable compliance while Gregor lay bleeding."
+        ]
+      }
+    ],
+    "variations": [
+      "pedantically"
+    ],
+    "createdAt": "2026-11-13T14:38:23.342Z",
+    "updatedAt": "2026-11-13T14:38:23.342Z"
+  },
+  "peerless": {
+    "word": "peerless",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Unequaled; unrivaled.",
+        "examples": [
+          "Cash's skill with an adze and plane was peerless in the entire county."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:23.349Z",
+    "updatedAt": "2026-11-13T14:38:23.349Z"
+  },
+  "pejorative": {
+    "word": "pejorative",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Expressing contempt or disapproval.",
+        "examples": [
+          "The warden consistently used pejorative epithets when addressing the young laborers."
+        ]
+      }
+    ],
+    "variations": [
+      "pejoratively"
+    ],
+    "createdAt": "2026-11-13T14:38:23.356Z",
+    "updatedAt": "2026-11-13T14:38:23.356Z"
+  },
+  "penchant": {
+    "word": "penchant",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A strong or habitual liking for something or tendency to do something.",
+        "examples": [
+          "Turner had an incurable penchant for sarcastic observations about authority."
+        ]
+      }
+    ],
+    "variations": [
+      "penchants"
+    ],
+    "createdAt": "2026-11-13T14:38:23.364Z",
+    "updatedAt": "2026-11-13T14:38:23.364Z"
+  },
+  "penitent": {
+    "word": "penitent",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Feeling or showing sorrow and regret for having done wrong; repentant.",
+        "examples": [
+          "Father Paneloux exhorted the parishioners to kneel as humble and penitent sinners."
+        ]
+      }
+    ],
+    "variations": [
+      "penitence",
+      "penitently"
+    ],
+    "createdAt": "2026-11-13T14:38:23.371Z",
+    "updatedAt": "2026-11-13T14:38:23.371Z"
+  },
+  "pensive": {
+    "word": "pensive",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Engaged in, involving, or reflecting deep or serious thought.",
+        "examples": [
+          "Gregor stared in pensive silence out the window at the bleak autumn rain."
+        ]
+      }
+    ],
+    "variations": [
+      "pensively"
+    ],
+    "createdAt": "2026-11-13T14:38:23.379Z",
+    "updatedAt": "2026-11-13T14:38:23.379Z"
+  },
+  "perceptive": {
+    "word": "perceptive",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having or showing sensitive insight.",
+        "examples": [
+          "Turner was an extraordinarily perceptive observer of the hidden power structures at the school."
+        ]
+      }
+    ],
+    "variations": [
+      "perceptively"
+    ],
+    "createdAt": "2026-11-13T14:38:23.385Z",
+    "updatedAt": "2026-11-13T14:38:23.385Z"
+  },
+  "peremptory": {
+    "word": "peremptory",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Insisting on immediate attention or obedience, especially in a brusquely imperious way.",
+        "examples": [
+          "The captain issued a peremptory command that all lights be extinguished immediately."
+        ]
+      }
+    ],
+    "variations": [
+      "peremptorily"
+    ],
+    "createdAt": "2026-11-13T14:38:23.391Z",
+    "updatedAt": "2026-11-13T14:38:23.391Z"
+  },
+  "perfidious": {
+    "word": "perfidious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Deceitful and untrustworthy.",
+        "examples": [
+          "The superintendent proved a perfidious ally who betrayed the boys to save his own skin."
+        ]
+      }
+    ],
+    "variations": [
+      "perfidiously",
+      "perfidy"
+    ],
+    "createdAt": "2026-11-13T14:38:23.398Z",
+    "updatedAt": "2026-11-13T14:38:23.398Z"
+  },
+  "perfunctory": {
+    "word": "perfunctory",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Of an action or gesture carried out with a minimum of effort or reflection.",
+        "examples": [
+          "The state inspector gave only a perfunctory nod before heading off to lunch with the trustees."
+        ]
+      }
+    ],
+    "variations": [
+      "perfunctorily"
+    ],
+    "createdAt": "2026-11-13T14:38:23.404Z",
+    "updatedAt": "2026-11-13T14:38:23.404Z"
+  },
+  "peripatetic": {
+    "word": "peripatetic",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Traveling from place to place, in particular working or based in various places for relatively short periods.",
+        "examples": [
+          "Gregor had lived a peripatetic life as a traveling salesman for five long years."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:23.414Z",
+    "updatedAt": "2026-11-13T14:38:23.414Z"
+  },
+  "peripheral": {
+    "word": "peripheral",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Of, relating to, or situated on the edge or periphery of something; of secondary or minor importance.",
+        "examples": [
+          "The boy's safety was treated as a merely peripheral concern by the state authorities."
+        ]
+      }
+    ],
+    "variations": [
+      "peripherally"
+    ],
+    "createdAt": "2026-11-13T14:38:23.421Z",
+    "updatedAt": "2026-11-13T14:38:23.421Z"
+  },
+  "permeate": {
+    "word": "permeate",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Spread throughout something; pervade.",
+        "examples": [
+          "The smell of stagnant water and carbolic acid permeated every corridor in the hospital."
+        ]
+      }
+    ],
+    "variations": [
+      "permeated",
+      "permeating"
+    ],
+    "createdAt": "2026-11-13T14:38:23.430Z",
+    "updatedAt": "2026-11-13T14:38:23.430Z"
+  },
+  "pernicious": {
+    "word": "pernicious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having a harmful effect, especially in a gradual or subtle way.",
+        "examples": [
+          "The school exerted a pernicious moral influence that warped the character of everyone inside."
+        ]
+      }
+    ],
+    "variations": [
+      "perniciously"
+    ],
+    "createdAt": "2026-11-13T14:38:23.438Z",
+    "updatedAt": "2026-11-13T14:38:23.438Z"
+  },
+  "perpetuate": {
+    "word": "perpetuate",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Make something, typically an undesirable situation or an unfounded belief, continue indefinitely.",
+        "examples": [
+          "The penal laws were specifically crafted to perpetuate racial subjugation."
+        ]
+      }
+    ],
+    "variations": [
+      "perpetuated",
+      "perpetuating",
+      "perpetuation"
+    ],
+    "createdAt": "2026-11-13T14:38:23.444Z",
+    "updatedAt": "2026-11-13T14:38:23.444Z"
+  },
+  "perplex": {
+    "word": "perplex",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Cause someone to feel completely baffled or confused.",
+        "examples": [
+          "Gregor's strange clicks and wheezes completely perplexed his frightened mother."
+        ]
+      }
+    ],
+    "variations": [
+      "perplexed",
+      "perplexing",
+      "perplexity"
+    ],
+    "createdAt": "2026-11-13T14:38:23.450Z",
+    "updatedAt": "2026-11-13T14:38:23.450Z"
+  },
+  "persevere": {
+    "word": "persevere",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Continue in a course of action even in the face of difficulty or with little or no prospect of success.",
+        "examples": [
+          "Elwood resolved to persevere with his education regardless of his imprisonment."
+        ]
+      }
+    ],
+    "variations": [
+      "persevered",
+      "persevering",
+      "perseverance"
+    ],
+    "createdAt": "2026-11-13T14:38:23.457Z",
+    "updatedAt": "2026-11-13T14:38:23.457Z"
+  },
+  "persistent": {
+    "word": "persistent",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Continuing firmly or obstinately in a course of action in spite of difficulty or opposition.",
+        "examples": [
+          "The persistent buzzing of flies was a grim reminder of the coffin on the wagon."
+        ]
+      }
+    ],
+    "variations": [
+      "persistently"
+    ],
+    "createdAt": "2026-11-13T14:38:23.464Z",
+    "updatedAt": "2026-11-13T14:38:23.464Z"
+  },
+  "personable": {
+    "word": "personable",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Of a person having a pleasant appearance and manner.",
+        "examples": [
+          "Elwood was a personable and polite youth who had won the admiration of his teachers."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:23.469Z",
+    "updatedAt": "2026-11-13T14:38:23.469Z"
+  },
+  "perspicacious": {
+    "word": "perspicacious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having a ready insight into and understanding of things.",
+        "examples": [
+          "Turner was a perspicacious youth who quickly saw through the superintendent's friendly facade."
+        ]
+      }
+    ],
+    "variations": [
+      "perspicacity"
+    ],
+    "createdAt": "2026-11-13T14:38:23.477Z",
+    "updatedAt": "2026-11-13T14:38:23.477Z"
+  },
+  "pertinent": {
+    "word": "pertinent",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Relevant or applicable to a particular matter; apposite.",
+        "examples": [
+          "The attorney asked pertinent questions regarding the missing entries in the logbook."
+        ]
+      }
+    ],
+    "variations": [
+      "pertinently"
+    ],
+    "createdAt": "2026-11-13T14:38:23.484Z",
+    "updatedAt": "2026-11-13T14:38:23.484Z"
+  },
+  "perturb": {
+    "word": "perturb",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Make someone anxious or unsettled; subject a system, moving object, or process to an influence tending to alter its normal state.",
+        "examples": [
+          "Gregor's failure to catch the morning train deeply perturbed his punctual supervisor."
+        ]
+      }
+    ],
+    "variations": [
+      "perturbed",
+      "perturbing"
+    ],
+    "createdAt": "2026-11-13T14:38:23.491Z",
+    "updatedAt": "2026-11-13T14:38:23.491Z"
+  },
+  "peruse": {
+    "word": "peruse",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Read something, typically in a thorough or careful way.",
+        "examples": [
+          "Elwood would peruse the pages of Dr. King's sermons late into the night."
+        ]
+      }
+    ],
+    "variations": [
+      "perused",
+      "perusing"
+    ],
+    "createdAt": "2026-11-13T14:38:23.497Z",
+    "updatedAt": "2026-11-13T14:38:23.497Z"
+  },
+  "pervade": {
+    "word": "pervade",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Spread through and be perceived in every part of a space; be present and apparent throughout.",
+        "examples": [
+          "A sense of quiet despair pervaded the crowded fever wards."
+        ]
+      }
+    ],
+    "variations": [
+      "pervaded",
+      "pervading",
+      "pervasive"
+    ],
+    "createdAt": "2026-11-13T14:38:23.505Z",
+    "updatedAt": "2026-11-13T14:38:23.505Z"
+  },
+  "pestilent": {
+    "word": "pestilent",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Destructive to life; deadly; causing or tending to cause infection or disease.",
+        "examples": [
+          "The unburied rodent carcasses created a pestilent hazard throughout the harbor district."
+        ]
+      }
+    ],
+    "variations": [
+      "pestilence"
+    ],
+    "createdAt": "2026-11-13T14:38:23.511Z",
+    "updatedAt": "2026-11-13T14:38:23.511Z"
+  },
+  "petition": {
+    "word": "petition",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A formal written request, typically one signed by many people, appealing to authority with respect to a particular cause.",
+        "examples": [
+          "The parents submitted a signed petition demanding an immediate investigation of the school."
+        ]
+      }
+    ],
+    "variations": [
+      "petitions",
+      "petitioned"
+    ],
+    "createdAt": "2026-11-13T14:38:23.517Z",
+    "updatedAt": "2026-11-13T14:38:23.517Z"
+  },
+  "petulant": {
+    "word": "petulant",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Childishly sulky or bad-tempered.",
+        "examples": [
+          "Anse let out a petulant sigh whenever asked to assist in lifting the heavy coffin."
+        ]
+      }
+    ],
+    "variations": [
+      "petulantly"
+    ],
+    "createdAt": "2026-11-13T14:38:23.525Z",
+    "updatedAt": "2026-11-13T14:38:23.525Z"
+  },
+  "philanthropic": {
+    "word": "philanthropic",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Seeking to promote the welfare of others, especially by donating money to good causes; generous and benevolent.",
+        "examples": [
+          "The wealthy board members presented themselves as philanthropic benefactors."
+        ]
+      }
+    ],
+    "variations": [
+      "philanthropy"
+    ],
+    "createdAt": "2026-11-13T14:38:23.532Z",
+    "updatedAt": "2026-11-13T14:38:23.532Z"
+  },
+  "pious": {
+    "word": "pious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Devoutly religious; making a hypocritical display of virtue.",
+        "examples": [
+          "Cora Tull offered pious platitudes while watching the Bundrens struggle across the ford."
+        ]
+      }
+    ],
+    "variations": [
+      "piously",
+      "piety"
+    ],
+    "createdAt": "2026-11-13T14:38:23.538Z",
+    "updatedAt": "2026-11-13T14:38:23.538Z"
+  },
+  "piquant": {
+    "word": "piquant",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having a pleasantly sharp taste or appetizing flavor; pleasantly stimulating or exciting to the mind.",
+        "examples": [
+          "Turner added piquant irony to every description of life inside the dormitory."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:23.544Z",
+    "updatedAt": "2026-11-13T14:38:23.544Z"
+  },
+  "pique": {
+    "word": "pique",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A feeling of irritation or resentment resulting from a slight, especially to one's pride.",
+        "examples": [
+          "In a fit of pique, the father threw a heavy red apple directly at his insect son."
+        ]
+      }
+    ],
+    "variations": [
+      "piqued"
+    ],
+    "createdAt": "2026-11-13T14:38:23.550Z",
+    "updatedAt": "2026-11-13T14:38:23.550Z"
+  },
+  "pithy": {
+    "word": "pithy",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Concise and forcefully expressive.",
+        "examples": [
+          "Turner offered pithy summaries of how to avoid being chosen for the White House."
+        ]
+      }
+    ],
+    "variations": [
+      "pithily"
+    ],
+    "createdAt": "2026-11-13T14:38:23.557Z",
+    "updatedAt": "2026-11-13T14:38:23.557Z"
+  },
+  "placate": {
+    "word": "placate",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Make someone less angry or hostile.",
+        "examples": [
+          "Nothing Gregor did could placate the furious supervisor standing in the vestibule."
+        ]
+      }
+    ],
+    "variations": [
+      "placated",
+      "placating"
+    ],
+    "createdAt": "2026-11-13T14:38:23.565Z",
+    "updatedAt": "2026-11-13T14:38:23.565Z"
+  },
+  "plaintive": {
+    "word": "plaintive",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Sounding sad and mournful.",
+        "examples": [
+          "The boy let out a plaintive cry as the door to the solitary cell was bolted shut."
+        ]
+      }
+    ],
+    "variations": [
+      "plaintively"
+    ],
+    "createdAt": "2026-11-13T14:38:23.575Z",
+    "updatedAt": "2026-11-13T14:38:23.575Z"
+  },
+  "platitude": {
+    "word": "platitude",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A remark or statement, especially one with a moral content, that has been used too often to be interesting or thoughtful.",
+        "examples": [
+          "The school principal offered tired platitudes about obedience and hard work."
+        ]
+      }
+    ],
+    "variations": [
+      "platitudes"
+    ],
+    "createdAt": "2026-11-13T14:38:23.583Z",
+    "updatedAt": "2026-11-13T14:38:23.583Z"
+  },
+  "plausible": {
+    "word": "plausible",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Seeming reasonable or probable.",
+        "examples": [
+          "The administration concocted a plausible lie about an escape to explain the boy's death."
+        ]
+      }
+    ],
+    "variations": [
+      "plausibly",
+      "plausibility"
+    ],
+    "createdAt": "2026-11-13T14:38:23.589Z",
+    "updatedAt": "2026-11-13T14:38:23.589Z"
+  },
+  "plebeian": {
+    "word": "plebeian",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Of or belonging to the common people; coarse; low-class.",
+        "examples": [
+          "The aristocratic doctor had little patience for the plebeian superstitions of the port."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:23.596Z",
+    "updatedAt": "2026-11-13T14:38:23.596Z"
+  },
+  "plight": {
+    "word": "plight",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A dangerous, difficult, or otherwise unfortunate situation.",
+        "examples": [
+          "Dr. Rieux was moved by the tragic plight of families separated by the military cordon."
+        ]
+      }
+    ],
+    "variations": [
+      "plights"
+    ],
+    "createdAt": "2026-11-13T14:38:23.603Z",
+    "updatedAt": "2026-11-13T14:38:23.603Z"
+  },
+  "plummet": {
+    "word": "plummet",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Fall or drop straight down at high speed.",
+        "examples": [
+          "The boy's fever caused his strength to plummet within forty-eight hours."
+        ]
+      }
+    ],
+    "variations": [
+      "plummeted",
+      "plummeting"
+    ],
+    "createdAt": "2026-11-13T14:38:23.609Z",
+    "updatedAt": "2026-11-13T14:38:23.609Z"
+  },
+  "poignant": {
+    "word": "poignant",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Evoking a keen sense of sadness or regret.",
+        "examples": [
+          "There was poignant sorrow in Gregor's realization that his family wished him dead."
+        ]
+      }
+    ],
+    "variations": [
+      "poignantly",
+      "poignancy"
+    ],
+    "createdAt": "2026-11-13T14:38:23.617Z",
+    "updatedAt": "2026-11-13T14:38:23.617Z"
+  },
+  "polarize": {
+    "word": "polarize",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Divide or cause to divide into two sharply contrasting groups or sets of opinions or beliefs.",
+        "examples": [
+          "The scandal threatened to polarize the state legislature along bitter racial lines."
+        ]
+      }
+    ],
+    "variations": [
+      "polarized",
+      "polarizing"
+    ],
+    "createdAt": "2026-11-13T14:38:23.625Z",
+    "updatedAt": "2026-11-13T14:38:23.625Z"
+  },
+  "polemic": {
+    "word": "polemic",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A strong verbal or written attack on someone or something.",
+        "examples": [
+          "The author's novel was both a gripping narrative and a fierce polemic against state violence."
+        ]
+      }
+    ],
+    "variations": [
+      "polemics",
+      "polemical"
+    ],
+    "createdAt": "2026-11-13T14:38:23.632Z",
+    "updatedAt": "2026-11-13T14:38:23.632Z"
+  },
+  "ponderous": {
+    "word": "ponderous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Slow and clumsy because of great weight; dull, laborious, or excessively solemn.",
+        "examples": [
+          "The farm wagon made ponderous progress along the rutted clay road."
+        ]
+      }
+    ],
+    "variations": [
+      "ponderously"
+    ],
+    "createdAt": "2026-11-13T14:38:23.638Z",
+    "updatedAt": "2026-11-13T14:38:23.638Z"
+  },
+  "populace": {
+    "word": "populace",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The people living in a particular country or area.",
+        "examples": [
+          "The quarantined populace grew increasingly restless as the summer heat intensified."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:23.646Z",
+    "updatedAt": "2026-11-13T14:38:23.646Z"
+  },
+  "portentous": {
+    "word": "portentous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Done in a pompously or overly solemn manner so as to impress; of the nature of an omen; menacing.",
+        "examples": [
+          "The minister delivered his sermon in a portentous rumble that echoed off the stone vaulting."
+        ]
+      }
+    ],
+    "variations": [
+      "portentously",
+      "portent"
+    ],
+    "createdAt": "2026-11-13T14:38:23.653Z",
+    "updatedAt": "2026-11-13T14:38:23.653Z"
+  },
+  "pragmatic": {
+    "word": "pragmatic",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Dealing with things sensibly and realistically in a way that is based on practical rather than theoretical considerations.",
+        "examples": [
+          "Turner adopted a pragmatic survival philosophy: keep your head down and do your time."
+        ]
+      }
+    ],
+    "variations": [
+      "pragmatically"
+    ],
+    "createdAt": "2026-11-13T14:38:23.662Z",
+    "updatedAt": "2026-11-13T14:38:23.662Z"
+  },
+  "precept": {
+    "word": "precept",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A general rule intended to regulate behavior or thought.",
+        "examples": [
+          "Elwood lived his life by the moral precepts articulated in the speeches of Martin Luther King."
+        ]
+      }
+    ],
+    "variations": [
+      "precepts"
+    ],
+    "createdAt": "2026-11-13T14:38:23.672Z",
+    "updatedAt": "2026-11-13T14:38:23.672Z"
+  },
+  "precipice": {
+    "word": "precipice",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A very steep rock face or cliff, especially a tall one; a point where danger, trouble, or difficulty begins.",
+        "examples": [
+          "The community stood upon the precipice of total moral and physical collapse."
+        ]
+      }
+    ],
+    "variations": [
+      "precipices"
+    ],
+    "createdAt": "2026-11-13T14:38:23.679Z",
+    "updatedAt": "2026-11-13T14:38:23.679Z"
+  },
+  "precipitate": {
+    "word": "precipitate",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Cause an event or situation, typically one that is bad or undesirable, to happen suddenly, unexpectedly, or prematurely.",
+        "examples": [
+          "The boy's bold letter served to precipitate a violent retaliation from the superintendent."
+        ]
+      }
+    ],
+    "variations": [
+      "precipitated",
+      "precipitating"
+    ],
+    "createdAt": "2026-11-13T14:38:23.687Z",
+    "updatedAt": "2026-11-13T14:38:23.687Z"
+  },
+  "precocious": {
+    "word": "precocious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having developed certain abilities or proclivities at an earlier age than usual.",
+        "examples": [
+          "Elwood had been a precocious reader who devoured encyclopedias in elementary school."
+        ]
+      }
+    ],
+    "variations": [
+      "precociously",
+      "precocity"
+    ],
+    "createdAt": "2026-11-13T14:38:23.695Z",
+    "updatedAt": "2026-11-13T14:38:23.695Z"
+  },
+  "predicament": {
+    "word": "predicament",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A difficult, unpleasant, or embarrassing situation.",
+        "examples": [
+          "Gregor pondered his bizarre predicament while watching the rain beat against the glass."
+        ]
+      }
+    ],
+    "variations": [
+      "predicaments"
+    ],
+    "createdAt": "2026-11-13T14:38:23.702Z",
+    "updatedAt": "2026-11-13T14:38:23.702Z"
+  },
+  "predilection": {
+    "word": "predilection",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A preference or special liking for something; a bias in favor of something.",
+        "examples": [
+          "The supervisor had a well-known predilection for assigning the harshest chores to newcomers."
+        ]
+      }
+    ],
+    "variations": [
+      "predilections"
+    ],
+    "createdAt": "2026-11-13T14:38:23.709Z",
+    "updatedAt": "2026-11-13T14:38:23.709Z"
+  },
+  "premonition": {
+    "word": "premonition",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A strong feeling that something is about to happen, especially something unpleasant.",
+        "examples": [
+          "Darl experienced a dark premonition of disaster as the wagon approached the bridge."
+        ]
+      }
+    ],
+    "variations": [
+      "premonitions"
+    ],
+    "createdAt": "2026-11-13T14:38:23.716Z",
+    "updatedAt": "2026-11-13T14:38:23.716Z"
+  },
+  "preposterous": {
+    "word": "preposterous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Contrary to reason or common sense; utterly absurd or ridiculous.",
+        "examples": [
+          "The chief clerk dismissed Gregor's explanation as completely preposterous."
+        ]
+      }
+    ],
+    "variations": [
+      "preposterously"
+    ],
+    "createdAt": "2026-11-13T14:38:23.723Z",
+    "updatedAt": "2026-11-13T14:38:23.723Z"
+  },
+  "prerogative": {
+    "word": "prerogative",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A right or privilege exclusive to a particular individual or class.",
+        "examples": [
+          "The superintendent considered corporal punishment his unquestioned personal prerogative."
+        ]
+      }
+    ],
+    "variations": [
+      "prerogatives"
+    ],
+    "createdAt": "2026-11-13T14:38:23.731Z",
+    "updatedAt": "2026-11-13T14:38:23.731Z"
+  },
+  "prescience": {
+    "word": "prescience",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The fact of knowing something before it takes place; foreknowledge.",
+        "examples": [
+          "Dr. Rieux showed remarkable prescience in stocking emergency disinfectant before the port closed."
+        ]
+      }
+    ],
+    "variations": [
+      "prescient",
+      "presciently"
+    ],
+    "createdAt": "2026-11-13T14:38:23.741Z",
+    "updatedAt": "2026-11-13T14:38:23.741Z"
+  },
+  "pretentious": {
+    "word": "pretentious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Attempting to impress by affecting greater importance, talent, culture, etc., than is actually possessed.",
+        "examples": [
+          "The three lodgers gave themselves pretentious airs, examining every dish with exaggerated disdain."
+        ]
+      }
+    ],
+    "variations": [
+      "pretentiously",
+      "pretension"
+    ],
+    "createdAt": "2026-11-13T14:38:23.747Z",
+    "updatedAt": "2026-11-13T14:38:23.747Z"
+  },
+  "prevaricate": {
+    "word": "prevaricate",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Speak or act in an evasive way; equivocate.",
+        "examples": [
+          "The witness began to prevaricate under cross-examination by the federal prosecutor."
+        ]
+      }
+    ],
+    "variations": [
+      "prevaricated",
+      "prevaricating"
+    ],
+    "createdAt": "2026-11-13T14:38:23.756Z",
+    "updatedAt": "2026-11-13T14:38:23.756Z"
+  },
+  "pristine": {
+    "word": "pristine",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "In its original condition; unspoiled; clean and fresh as if new.",
+        "examples": [
+          "Cash planed the pine wood until the surface was smooth and pristine."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:23.763Z",
+    "updatedAt": "2026-11-13T14:38:23.763Z"
+  },
+  "privation": {
+    "word": "privation",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A state in which things that are essential for human well-being such as food and warmth are lacking.",
+        "examples": [
+          "Years of severe nutritional privation had left the boy's bones brittle and stunted."
+        ]
+      }
+    ],
+    "variations": [
+      "privations"
+    ],
+    "createdAt": "2026-11-13T14:38:23.771Z",
+    "updatedAt": "2026-11-13T14:38:23.771Z"
+  },
+  "probity": {
+    "word": "probity",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The quality of having strong moral principles; honesty and decency.",
+        "examples": [
+          "Dr. Rieux was a man of quiet probity who refused to compromise with administrative falsehoods."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:23.779Z",
+    "updatedAt": "2026-11-13T14:38:23.779Z"
+  },
+  "prodigious": {
+    "word": "prodigious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Remarkably or impressively great in extent, size, or degree; unnatural or abnormal.",
+        "examples": [
+          "Gregor discovered that his multiple insect legs possessed prodigious climbing ability."
+        ]
+      }
+    ],
+    "variations": [
+      "prodigiously"
+    ],
+    "createdAt": "2026-11-13T14:38:23.786Z",
+    "updatedAt": "2026-11-13T14:38:23.786Z"
+  },
+  "profane": {
+    "word": "profane",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Relating or devoted to that which is not sacred or biblical; secular rather than religious; disrespectful of sacred things.",
+        "examples": [
+          "Anse cursed with profane fury when the wagon axle snapped in the river mud."
+        ]
+      }
+    ],
+    "variations": [
+      "profanely",
+      "profanity"
+    ],
+    "createdAt": "2026-11-13T14:38:23.795Z",
+    "updatedAt": "2026-11-13T14:38:23.795Z"
+  },
+  "profligate": {
+    "word": "profligate",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Recklessly extravagant or wasteful in the use of resources; licentious.",
+        "examples": [
+          "The superintendent was notorious for his profligate spending on personal luxuries."
+        ]
+      }
+    ],
+    "variations": [
+      "profligacy"
+    ],
+    "createdAt": "2026-11-13T14:38:23.802Z",
+    "updatedAt": "2026-11-13T14:38:23.802Z"
+  },
+  "profound": {
+    "word": "profound",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Of a state, quality, or emotion very great or intense; having or showing great knowledge or insight.",
+        "examples": [
+          "The silence that fell over the quarantined streets was profound and terrifying."
+        ]
+      }
+    ],
+    "variations": [
+      "profoundly",
+      "profundity"
+    ],
+    "createdAt": "2026-11-13T14:38:23.810Z",
+    "updatedAt": "2026-11-13T14:38:23.810Z"
+  },
+  "progenitor": {
+    "word": "progenitor",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A person or thing from which a person, animal, or plant is descended or originates; an ancestor or parent.",
+        "examples": [
+          "The old man fancied himself the honorable progenitor of a great Southern family."
+        ]
+      }
+    ],
+    "variations": [
+      "progenitors"
+    ],
+    "createdAt": "2026-11-13T14:38:23.823Z",
+    "updatedAt": "2026-11-13T14:38:23.823Z"
+  },
+  "prognosis": {
+    "word": "prognosis",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The likely course of a disease or ailment; a forecast of the likely outcome of a situation.",
+        "examples": [
+          "The doctor gave a grim prognosis: the child would not survive the night."
+        ]
+      }
+    ],
+    "variations": [
+      "prognoses"
+    ],
+    "createdAt": "2026-11-13T14:38:23.831Z",
+    "updatedAt": "2026-11-13T14:38:23.831Z"
+  },
+  "proletariat": {
+    "word": "proletariat",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Workers or working-class people, regarded collectively.",
+        "examples": [
+          "Gregor belonged to the exhausted urban proletariat that sacrificed body and soul to the firm."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:23.838Z",
+    "updatedAt": "2026-11-13T14:38:23.838Z"
+  },
+  "prolific": {
+    "word": "prolific",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Producing much fruit or foliage or many offspring; present in large numbers, quantities, or works.",
+        "examples": [
+          "The disease proved a prolific killer, claiming hundreds of victims each week."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:23.846Z",
+    "updatedAt": "2026-11-13T14:38:23.846Z"
+  },
+  "prolix": {
+    "word": "prolix",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Using or containing too many words; tediously lengthy of speech or writing.",
+        "examples": [
+          "The magistrate issued a prolix proclamation that buried the emergency orders in bureaucratic prose."
+        ]
+      }
+    ],
+    "variations": [
+      "prolixity"
+    ],
+    "createdAt": "2026-11-13T14:38:23.853Z",
+    "updatedAt": "2026-11-13T14:38:23.853Z"
+  },
+  "promiscuous": {
+    "word": "promiscuous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Characterized by a lack of discrimination or selection; indiscriminate.",
+        "examples": [
+          "The plague was a promiscuous assassin that struck rich merchants and dock laborers alike."
+        ]
+      }
+    ],
+    "variations": [
+      "promiscuously"
+    ],
+    "createdAt": "2026-11-13T14:38:23.861Z",
+    "updatedAt": "2026-11-13T14:38:23.861Z"
+  },
+  "propagate": {
+    "word": "propagate",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Breed specimens of a plant or animal; spread and promote an idea or theory widely.",
+        "examples": [
+          "Rats scurrying through the unpaved alleyways helped propagate the deadly contagion."
+        ]
+      }
+    ],
+    "variations": [
+      "propagated",
+      "propagating",
+      "propagation"
+    ],
+    "createdAt": "2026-11-13T14:38:23.869Z",
+    "updatedAt": "2026-11-13T14:38:23.869Z"
+  },
+  "propensity": {
+    "word": "propensity",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An inclination or natural tendency to behave in a particular way.",
+        "examples": [
+          "The house father had an alarming propensity for violence when drinking."
+        ]
+      }
+    ],
+    "variations": [
+      "propensities"
+    ],
+    "createdAt": "2026-11-13T14:38:23.880Z",
+    "updatedAt": "2026-11-13T14:38:23.880Z"
+  },
+  "prophetic": {
+    "word": "prophetic",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Accurately describing or predicting what will happen in the future.",
+        "examples": [
+          "Darl's cryptic words proved chillingly prophetic as the floodwaters rose."
+        ]
+      }
+    ],
+    "variations": [
+      "prophetically",
+      "prophecy"
+    ],
+    "createdAt": "2026-11-13T14:38:23.887Z",
+    "updatedAt": "2026-11-13T14:38:23.887Z"
+  },
+  "propinquity": {
+    "word": "propinquity",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The state of being close to someone or something; proximity.",
+        "examples": [
+          "The physical propinquity of healthy and infected boys in the dormitory ensured rapid spread."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:23.896Z",
+    "updatedAt": "2026-11-13T14:38:23.896Z"
+  },
+  "propitiate": {
+    "word": "propitiate",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Win or regain the favor of a god, spirit, or person by doing something that pleases them.",
+        "examples": [
+          "Father Paneloux called on the congregation to propitiate the wrath of God through communal prayer."
+        ]
+      }
+    ],
+    "variations": [
+      "propitiated",
+      "propitiating"
+    ],
+    "createdAt": "2026-11-13T14:38:23.905Z",
+    "updatedAt": "2026-11-13T14:38:23.905Z"
+  },
+  "propitious": {
+    "word": "propitious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Giving or indicating a good chance of success; favorable.",
+        "examples": [
+          "The clear dawn seemed a propitious moment to attempt the river crossing."
+        ]
+      }
+    ],
+    "variations": [
+      "propitiously"
+    ],
+    "createdAt": "2026-11-13T14:38:23.914Z",
+    "updatedAt": "2026-11-13T14:38:23.914Z"
+  },
+  "prosaic": {
+    "word": "prosaic",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having the style or diction of prose; lacking poetic beauty; commonplace; unromantic.",
+        "examples": [
+          "Dr. Rieux was a prosaic man who viewed the epidemic as a matter of sanitation rather than drama."
+        ]
+      }
+    ],
+    "variations": [
+      "prosaically"
+    ],
+    "createdAt": "2026-11-13T14:38:23.921Z",
+    "updatedAt": "2026-11-13T14:38:23.921Z"
+  },
+  "proscribe": {
+    "word": "proscribe",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Forbid, especially by law; denounce or condemn.",
+        "examples": [
+          "The state moved to proscribe all unauthorized civil rights gatherings in the county."
+        ]
+      }
+    ],
+    "variations": [
+      "proscribed",
+      "proscribing",
+      "proscription"
+    ],
+    "createdAt": "2026-11-13T14:38:23.929Z",
+    "updatedAt": "2026-11-13T14:38:23.929Z"
+  },
+  "proselytize": {
+    "word": "proselytize",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Convert or attempt to convert someone from one religion, belief, or opinion to another.",
+        "examples": [
+          "The school chaplains used corporal threats to proselytize the young inmates."
+        ]
+      }
+    ],
+    "variations": [
+      "proselytized",
+      "proselytizing"
+    ],
+    "createdAt": "2026-11-13T14:38:23.936Z",
+    "updatedAt": "2026-11-13T14:38:23.936Z"
+  },
+  "prostrate": {
+    "word": "prostrate",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Lying stretched out on the ground with one's face downward; completely overcome or helpless.",
+        "examples": [
+          "The boy lay prostrate on his cot, unable to move after the beating."
+        ]
+      }
+    ],
+    "variations": [
+      "prostration"
+    ],
+    "createdAt": "2026-11-13T14:38:23.947Z",
+    "updatedAt": "2026-11-13T14:38:23.947Z"
+  },
+  "protagonist": {
+    "word": "protagonist",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The leading character or one of the major characters in a drama, movie, novel, or other fictional text.",
+        "examples": [
+          "Elwood stands as the moral protagonist whose idealism confronts brutal institutional power."
+        ]
+      }
+    ],
+    "variations": [
+      "protagonists"
+    ],
+    "createdAt": "2026-11-13T14:38:23.956Z",
+    "updatedAt": "2026-11-13T14:38:23.956Z"
+  },
+  "protract": {
+    "word": "protract",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Prolong; extend the duration of.",
+        "examples": [
+          "The administration sought to protract the legal proceedings until the witnesses scattered."
+        ]
+      }
+    ],
+    "variations": [
+      "protracted",
+      "protracting"
+    ],
+    "createdAt": "2026-11-13T14:38:23.964Z",
+    "updatedAt": "2026-11-13T14:38:23.964Z"
+  },
+  "provident": {
+    "word": "provident",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Making or indicating timely preparation for the future.",
+        "examples": [
+          "Dr. Rieux proved a provident physician, ordering crates of carbolic acid weeks in advance."
+        ]
+      }
+    ],
+    "variations": [
+      "providently"
+    ],
+    "createdAt": "2026-11-13T14:38:23.973Z",
+    "updatedAt": "2026-11-13T14:38:23.973Z"
+  },
+  "provincial": {
+    "word": "provincial",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Of or concerning a province of a country; of or concerning the regions outside the capital city; narrow-minded.",
+        "examples": [
+          "The town was a provincial backwater dominated by conservative merchants and cotton brokers."
+        ]
+      }
+    ],
+    "variations": [
+      "provincially"
+    ],
+    "createdAt": "2026-11-13T14:38:23.982Z",
+    "updatedAt": "2026-11-13T14:38:23.982Z"
+  },
+  "prudence": {
+    "word": "prudence",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The quality of being prudent; cautiousness.",
+        "examples": [
+          "Turner advised that prudence was the only armor that could protect a Black boy at Nickel."
+        ]
+      }
+    ],
+    "variations": [
+      "prudent",
+      "prudently"
+    ],
+    "createdAt": "2026-11-13T14:38:23.990Z",
+    "updatedAt": "2026-11-13T14:38:23.990Z"
+  },
+  "puerile": {
+    "word": "puerile",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Childishly silly and trivial.",
+        "examples": [
+          "The supervisor dismissed the boys' legitimate complaints as puerile whining."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:23.997Z",
+    "updatedAt": "2026-11-13T14:38:23.997Z"
+  },
+  "pugnacious": {
+    "word": "pugnacious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Eager or quick to argue, quarrel, or fight.",
+        "examples": [
+          "The guard captain was a pugnacious bully who picked fights with unarmed inmates."
+        ]
+      }
+    ],
+    "variations": [
+      "pugnaciously",
+      "pugnacity"
+    ],
+    "createdAt": "2026-11-13T14:38:24.006Z",
+    "updatedAt": "2026-11-13T14:38:24.006Z"
+  },
+  "punctilious": {
+    "word": "punctilious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Showing great attention to detail or correct behavior.",
+        "examples": [
+          "Gregor had always been punctilious about catching his early morning connections."
+        ]
+      }
+    ],
+    "variations": [
+      "punctiliously"
+    ],
+    "createdAt": "2026-11-13T14:38:24.014Z",
+    "updatedAt": "2026-11-13T14:38:24.014Z"
+  },
+  "pundit": {
+    "word": "pundit",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An expert in a particular subject or field who is frequently called on to give opinions about it to the public.",
+        "examples": [
+          "Radio pundits minimized the epidemic until the death count exceeded fifty a day."
+        ]
+      }
+    ],
+    "variations": [
+      "pundits"
+    ],
+    "createdAt": "2026-11-13T14:38:24.022Z",
+    "updatedAt": "2026-11-13T14:38:24.022Z"
+  },
+  "punitive": {
+    "word": "punitive",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Inflicting or intended as punishment.",
+        "examples": [
+          "The solitary confinement cells were purely punitive structures devoid of ventilation."
+        ]
+      }
+    ],
+    "variations": [
+      "punitively"
+    ],
+    "createdAt": "2026-11-13T14:38:24.031Z",
+    "updatedAt": "2026-11-13T14:38:24.031Z"
+  },
+  "purge": {
+    "word": "purge",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Rid someone or something of an unwanted quality, condition, or feeling; remove people from an organization or place in an abrupt or violent way.",
+        "examples": [
+          "The governor promised to purge the administration of all corrupt wardens."
+        ]
+      }
+    ],
+    "variations": [
+      "purged",
+      "purging"
+    ],
+    "createdAt": "2026-11-13T14:38:24.039Z",
+    "updatedAt": "2026-11-13T14:38:24.039Z"
+  },
+  "puritanical": {
+    "word": "puritanical",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Practicing or affecting strict religious or moral behavior.",
+        "examples": [
+          "The superintendent enforced a puritanical moral code while committing theft and violence in private."
+        ]
+      }
+    ],
+    "variations": [
+      "puritanically"
+    ],
+    "createdAt": "2026-11-13T14:38:24.047Z",
+    "updatedAt": "2026-11-13T14:38:24.047Z"
+  },
+  "pusillanimous": {
+    "word": "pusillanimous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Showing a lack of courage or determination; timid.",
+        "examples": [
+          "The school board made a pusillanimous decision to ignore the testimony of the surviving victims."
+        ]
+      }
+    ],
+    "variations": [
+      "pusillanimously"
+    ],
+    "createdAt": "2026-11-13T14:38:24.055Z",
+    "updatedAt": "2026-11-13T14:38:24.055Z"
+  },
+  "putrid": {
+    "word": "putrid",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Of organic matter decaying or rotting and emitting a fetid smell; very unpleasant; repulsive.",
+        "examples": [
+          "A putrid stench rose from the muddy swamp where bodies had been hastily covered with lime."
+        ]
+      }
+    ],
+    "variations": [
+      "putridity"
+    ],
+    "createdAt": "2026-11-13T14:38:24.064Z",
+    "updatedAt": "2026-11-13T14:38:24.064Z"
+  },
+  "paddle": {
+    "word": "paddle",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A two-handed, single-bladed oar used to propel a canoe or a small boat.; A double-bladed oar used for kayaking.",
+        "examples": [
+          "We had a nice paddle this morning.",
+          "The paddle practically ousted the British cane for spankings in the independent US.",
+          "A sea turtle's paddles make it swim almost as fast as land tortoises are slow."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To propel something through water with a paddle, oar, hands, etc.; To row a boat with less than one's full capacity.",
+        "examples": [
+          "The author skillfully incorporated paddle to emphasize the underlying theme.",
+          "In every chapter, the presence of paddle provided an unmistakable atmosphere.",
+          "Observers noted that paddle altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "paddle",
+      "padel"
+    ],
+    "createdAt": "2026-11-14T05:16:03.375Z",
+    "updatedAt": "2026-11-14T05:16:03.375Z"
+  },
+  "patrolled": {
+    "word": "patrolled",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To go the rounds along a chain of sentinels; to traverse a police district or beat.; To go the rounds of, as a sentry, guard, or policeman",
+        "examples": [
+          "To patrol a beat.",
+          "To patrolled a beat.",
+          "To patrolled a frontier."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having regular patrols.",
+        "examples": [
+          "The team patrolled their operations until further instructions arrived from headquarters.",
+          "She was deeply patrolled by the unexpected turn of events during the meeting.",
+          "He carefully patrolled the remaining pieces into a cohesive structure."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Past tense & participle) A going of the rounds along the chain of sentinels and between the posts, by a guard, usually consisting of three or four men, to insure greater security from attacks on the outposts.; (Past tense & participle) A movement, by a small body of troops beyond the line of outposts, to explore the country and gain intelligence of the enemy's whereabouts.",
+        "examples": [
+          "A customs patrolled.",
+          "Four members of the squadron were on patrolled.",
+          "A fire patrolled."
+        ]
+      }
+    ],
+    "variations": [
+      "patrolled",
+      "patrol"
+    ],
+    "createdAt": "2026-11-14T05:16:06.162Z",
+    "updatedAt": "2026-11-14T05:16:06.162Z"
+  },
+  "persuade": {
+    "word": "persuade",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To successfully convince (someone) to agree to, accept, or do something, usually through reasoning and verbal influence.; To convince of by argument, or by reasons offered or suggested from reflection, etc.; to cause to believe (something).",
+        "examples": [
+          "That salesman was able to persuade me into buying this bottle of lotion.",
+          "The author skillfully incorporated persuade to emphasize the underlying theme.",
+          "In every chapter, the presence of persuade provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "persuade"
+    ],
+    "createdAt": "2026-11-14T05:16:10.076Z",
+    "updatedAt": "2026-11-14T05:16:10.076Z"
+  }
+}

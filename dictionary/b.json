@@ -1,0 +1,3088 @@
+{
+  "broadsided": {
+    "word": "broadsided",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Hit the side of something with great force, especially in a vehicle accident.",
+        "examples": [
+          "The truck broadsided the small car at the crossing.",
+          "A speeding vehicle had broadsided the bus during the storm.",
+          "The cyclist was nearly broadsided by a turning van.",
+          "The ship was broadsided by huge waves."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "Strongly criticized, attacked, or shocked someone suddenly with words or actions.",
+        "examples": [
+          "The journalist broadsided the minister during the interview.",
+          "She was broadsided by unexpected criticism from her team.",
+          "The report broadsides several powerful companies.",
+          "He felt emotionally broadsided by the sudden announcement."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A strong attack, criticism, or forceful hit directed at someone or something.",
+        "examples": [
+          "The speech was a direct broadside against corruption.",
+          "Critics launched broadsides at the new policy.",
+          "The newspaper published a political broadside.",
+          "The army suffered a broadside from enemy fire."
+        ]
+      }
+    ],
+    "variations": [
+      "broadside",
+      "broadsides",
+      "broadsiding",
+      "broadsided"
+    ],
+    "createdAt": "2026-11-13T12:45:54.718Z",
+    "updatedAt": "2026-11-13T12:45:54.718Z"
+  },
+  "blared": {
+    "word": "blared",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Produced a very loud, harsh, and powerful sound, often suddenly or continuously.",
+        "examples": [
+          "Music blared from the speakers late into the night.",
+          "The alarm was blaring throughout the building.",
+          "Car horns blare constantly in the busy streets.",
+          "The television blared loudly while everyone was trying to sleep."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "Displayed or announced something very loudly, clearly, or in an attention-grabbing way.",
+        "examples": [
+          "The newspaper blared shocking headlines across the front page.",
+          "Bright advertisements blared from every screen in the market.",
+          "The signs were blaring warnings about the storm.",
+          "News channels blared updates throughout the evening."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A loud, harsh, or unpleasant sound.",
+        "examples": [
+          "A sudden blare from the siren startled everyone.",
+          "The blares of traffic filled the narrow street.",
+          "They woke up to the blare of loud music outside.",
+          "The trumpet’s blare echoed through the hall."
+        ]
+      }
+    ],
+    "variations": [
+      "blare",
+      "blares",
+      "blaring",
+      "blared"
+    ],
+    "createdAt": "2026-11-13T12:45:54.768Z",
+    "updatedAt": "2026-11-13T12:45:54.768Z"
+  },
+  "blemish": {
+    "word": "blemish",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A mark, flaw, or imperfection that spoils appearance or quality.",
+        "examples": [
+          "The mirror had a small blemish near the edge.",
+          "Years of sunlight caused blemishes on the painting.",
+          "Her skin was free from noticeable blemishes.",
+          "The scandal left a blemish on his reputation."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To spoil or damage the appearance, quality, or reputation of something.",
+        "examples": [
+          "Scratches blemished the surface of the table.",
+          "The controversy blemished the company’s image.",
+          "Smoke had blemished the walls of the old building.",
+          "A single mistake should not blemish years of good work."
+        ]
+      }
+    ],
+    "variations": [
+      "blemish",
+      "blemishes",
+      "blemishing",
+      "blemished"
+    ],
+    "createdAt": "2026-11-13T12:45:54.945Z",
+    "updatedAt": "2026-11-13T12:45:54.945Z"
+  },
+  "bowing": {
+    "word": "bowing",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Bending the head or upper body forward as a sign of respect, greeting, thanks, or obedience.",
+        "examples": [
+          "The audience was bowing to the performer after the concert.",
+          "He bowed respectfully before the king.",
+          "People in the temple were bowing quietly in prayer.",
+          "She gave a slight bow while greeting the guests."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "Bending or curving because of pressure, weight, age, or force.",
+        "examples": [
+          "The tree branches were bowing under the snow.",
+          "Years of hard work had bowed his shoulders.",
+          "The old bridge was bowing slightly in the middle.",
+          "Tall grass bowed gently in the wind."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "The act of bending the body or head forward to show respect or greeting.",
+        "examples": [
+          "She greeted the elders with a polite bowing of her head.",
+          "The actor received applause after a graceful bow.",
+          "His slight bowing showed humility and respect.",
+          "Ceremonial bowings are common in many cultures."
+        ]
+      }
+    ],
+    "variations": [
+      "bow",
+      "bows",
+      "bowing",
+      "bowed"
+    ],
+    "createdAt": "2026-11-13T12:45:55.027Z",
+    "updatedAt": "2026-11-13T12:45:55.027Z"
+  },
+  "benediction": {
+    "word": "benediction",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A prayer, blessing, or kind expression asking for divine help, protection, or peace.",
+        "examples": [
+          "The priest ended the ceremony with a benediction.",
+          "Her grandmother’s words felt like a benediction.",
+          "The crowd listened silently to the final benediction.",
+          "He offered a quiet benediction before the journey began."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "Something seen as a source of blessing, comfort, or goodness.",
+        "examples": [
+          "Rain after the drought was considered a benediction.",
+          "Their friendship became a benediction during difficult times.",
+          "The teacher’s guidance felt like a blessing and benediction.",
+          "Peace after years of conflict seemed almost like a benediction."
+        ]
+      }
+    ],
+    "variations": [
+      "benediction",
+      "benedictions",
+      "benedictory",
+      "bless",
+      "blesses",
+      "blessing",
+      "blessed"
+    ],
+    "createdAt": "2026-11-13T12:45:55.115Z",
+    "updatedAt": "2026-11-13T12:45:55.115Z"
+  },
+  "basins": {
+    "word": "basins",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Wide open containers used for holding water or other liquids.",
+        "examples": [
+          "The kitchen shelves were filled with metal basins.",
+          "She washed clothes in large plastic basins.",
+          "Several basins of water were placed near the entrance.",
+          "The barber rinsed his tools in a small basin."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "Natural or artificial hollow areas where water collects.",
+        "examples": [
+          "Rainwater gathered in shallow basins across the field.",
+          "The river flows into several fertile basins.",
+          "Mountain basins often contain beautiful lakes.",
+          "Farmers depended on water stored in nearby basins."
+        ]
+      }
+    ],
+    "variations": [
+      "basin",
+      "basins"
+    ],
+    "createdAt": "2026-11-13T12:45:55.164Z",
+    "updatedAt": "2026-11-13T12:45:55.164Z"
+  },
+  "barren": {
+    "word": "barren",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Unable to produce plants, crops, or life; dry and unproductive.",
+        "examples": [
+          "The desert remained barren for miles.",
+          "Years without rain turned the farmland barren.",
+          "Only a few shrubs grew in the barren landscape.",
+          "The once fertile valley became barren after the drought."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Lacking ideas, interest, activity, or meaningful results.",
+        "examples": [
+          "The discussion proved barren and unproductive.",
+          "He feared living a barren and lonely life.",
+          "Her imagination never remained barren for long.",
+          "The research produced barren results despite years of effort."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Unable to have children or produce offspring.",
+        "examples": [
+          "The queen feared being considered barren.",
+          "Some ancient societies treated barren women unfairly.",
+          "The story tells of a barren couple praying for a child.",
+          "Medical treatment helped many once-barren families conceive."
+        ]
+      }
+    ],
+    "variations": [
+      "barren",
+      "more barren",
+      "most barren",
+      "barrenness"
+    ],
+    "createdAt": "2026-11-13T12:45:55.221Z",
+    "updatedAt": "2026-11-13T12:45:55.221Z"
+  },
+  "bated": {
+    "word": "bated",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Held back, reduced, or stopped for a short time, especially in the phrase 'with bated breath' meaning waiting nervously or excitedly.",
+        "examples": [
+          "The audience waited with bated breath for the final result.",
+          "Children listened with bated excitement to the ghost story.",
+          "She stood with bated breath as the doctor opened the report.",
+          "Fans watched the final moments of the match with bated silence."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "Reduced, restrained, or held back something.",
+        "examples": [
+          "He bated his anger during the argument.",
+          "The speaker carefully bated his criticism of the government.",
+          "She was bating her impatience while waiting in line.",
+          "Fear had bated their confidence before the battle."
+        ]
+      }
+    ],
+    "variations": [
+      "bate",
+      "bates",
+      "bating",
+      "bated"
+    ],
+    "createdAt": "2026-11-13T12:45:55.268Z",
+    "updatedAt": "2026-11-13T12:45:55.268Z"
+  },
+  "buoyancy": {
+    "word": "buoyancy",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The ability of something to float or stay afloat in water or another liquid.",
+        "examples": [
+          "The boat’s buoyancy kept it from sinking.",
+          "Engineers tested the buoyancy of the rescue raft.",
+          "Air trapped inside increases the buoyancy of objects.",
+          "Life jackets provide extra buoyancy in deep water."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A cheerful, lively, or confident attitude.",
+        "examples": [
+          "Her natural buoyancy lifted everyone’s mood.",
+          "He faced difficulties with surprising buoyancy.",
+          "The team regained buoyancy after their victory.",
+          "Even during hard times, she spoke with buoyant optimism."
+        ]
+      }
+    ],
+    "variations": [
+      "buoyancy",
+      "buoyant",
+      "buoyantly"
+    ],
+    "createdAt": "2026-11-13T12:45:55.307Z",
+    "updatedAt": "2026-11-13T12:45:55.307Z"
+  },
+  "bestowed": {
+    "word": "bestowed",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Gave or presented something valuable, honorable, or special to someone.",
+        "examples": [
+          "The king bestowed medals upon the soldiers.",
+          "She was bestowed with an award for her service.",
+          "The university bestowed an honorary degree on the scientist.",
+          "His parents bestowed great love and care on him."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "Placed or directed something carefully toward someone or something.",
+        "examples": [
+          "She bestowed all her attention on the child.",
+          "The teacher bestowed praise on hardworking students.",
+          "He bestowed kindness even on strangers.",
+          "The leader bestowed trust upon his closest advisers."
+        ]
+      }
+    ],
+    "variations": [
+      "bestow",
+      "bestows",
+      "bestowing",
+      "bestowed"
+    ],
+    "createdAt": "2026-11-13T12:45:55.361Z",
+    "updatedAt": "2026-11-13T12:45:55.361Z"
+  },
+  "bewildering": {
+    "word": "bewildering",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Very confusing, difficult to understand, or causing uncertainty.",
+        "examples": [
+          "The instructions were so bewildering that nobody could follow them.",
+          "He faced a bewildering number of choices at the market.",
+          "The city’s narrow streets formed a bewildering maze.",
+          "Modern technology can feel bewildering to some older people."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "Causing someone to become confused, puzzled, or uncertain.",
+        "examples": [
+          "The magician’s trick bewildered the audience completely.",
+          "She looked bewildered after hearing the unexpected news.",
+          "His strange behavior was bewildering everyone around him.",
+          "The complicated map had bewildered the travelers."
+        ]
+      }
+    ],
+    "variations": [
+      "bewilder",
+      "bewilders",
+      "bewildering",
+      "bewildered",
+      "bewilderment"
+    ],
+    "createdAt": "2026-11-13T12:45:55.662Z",
+    "updatedAt": "2026-11-13T12:45:55.662Z"
+  },
+  "boast": {
+    "word": "boast",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To speak proudly or excessively about achievements, abilities, or possessions.",
+        "examples": [
+          "He constantly boasted about his wealth and success.",
+          "She was boasting that her team would easily win.",
+          "People who boast too much often annoy others.",
+          "The athlete boasted of breaking several records."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To possess or contain something impressive or desirable.",
+        "examples": [
+          "The city boasts several beautiful historical buildings.",
+          "Their garden boasts a wide variety of flowers.",
+          "The university boasts one of the best libraries in the country.",
+          "The restaurant boasted an excellent view of the sea."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A proud or exaggerated statement about oneself or something related to oneself.",
+        "examples": [
+          "His boast about never failing sounded unrealistic.",
+          "The soldier’s boasts entertained the crowd.",
+          "She dismissed his boasts as empty words.",
+          "The company’s advertisement was little more than a boast."
+        ]
+      }
+    ],
+    "variations": [
+      "boast",
+      "boasts",
+      "boasting",
+      "boasted",
+      "boastful",
+      "boastfully"
+    ],
+    "createdAt": "2026-11-13T12:45:55.748Z",
+    "updatedAt": "2026-11-13T12:45:55.748Z"
+  },
+  "birches": {
+    "word": "birches",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Trees with smooth bark, usually white or silver, commonly found in colder regions.",
+        "examples": [
+          "Tall birches lined the path through the forest.",
+          "The wind moved gently through the birch trees.",
+          "Artists often paint snowy landscapes filled with birches.",
+          "Sunlight filtered between the silver birches beautifully."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To punish someone by hitting them with birch sticks or branches.",
+        "examples": [
+          "In earlier times, students were sometimes birched for disobedience.",
+          "The cruel official threatened to birch the prisoners.",
+          "Historical records describe children being birched at school.",
+          "Such harsh punishments are no longer accepted in many places."
+        ]
+      }
+    ],
+    "variations": [
+      "birch",
+      "birches",
+      "birching",
+      "birched"
+    ],
+    "createdAt": "2026-11-13T12:45:55.800Z",
+    "updatedAt": "2026-11-13T12:45:55.800Z"
+  },
+  "bobbing": {
+    "word": "bobbing",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Moving up and down repeatedly, usually in a light or floating motion.",
+        "examples": [
+          "The fishing boat was bobbing on the waves.",
+          "Her head kept bobbing as she listened to music.",
+          "The balloons were bobbing gently in the air.",
+          "A cork floated on the water, bobbing slowly."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "The repeated up-and-down movement of something floating or moving lightly.",
+        "examples": [
+          "The bobbing of the boat made him dizzy.",
+          "Children laughed at the bobbing balloons.",
+          "The gentle bobbing of the cradle put the baby to sleep.",
+          "She watched the bobbing of the ducks on the pond."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T12:45:56.057Z",
+    "updatedAt": "2026-11-13T12:45:56.057Z"
+  },
+  "bitter": {
+    "word": "bitter",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having an acrid taste (usually from a basic substance).; Harsh, piercing, acerbic or stinging.",
+        "examples": [
+          "The coffee tasted bitter.",
+          "They're bitter enemies.",
+          "I've been bitter ever since that defeat."
+        ]
+      },
+      {
+        "partOfSpeech": "adverb",
+        "definition": "To an intense or severe degree; bitterly.",
+        "examples": [
+          "The author skillfully incorporated bitter to emphasize the underlying theme.",
+          "In every chapter, the presence of bitter provided an unmistakable atmosphere.",
+          "Observers noted that bitter altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A liquid or powder, made from bitter herbs, used in mixed drinks or as a tonic.; A type of beer heavily flavored with hops.",
+        "examples": [
+          "The author skillfully incorporated bitter to emphasize the underlying theme.",
+          "In every chapter, the presence of bitter provided an unmistakable atmosphere.",
+          "Observers noted that bitter altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To make bitter.",
+        "examples": [
+          "The author skillfully incorporated bitter to emphasize the underlying theme.",
+          "In every chapter, the presence of bitter provided an unmistakable atmosphere.",
+          "Observers noted that bitter altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "bitter"
+    ],
+    "createdAt": "2026-11-13T12:45:56.119Z",
+    "updatedAt": "2026-11-13T12:45:56.119Z"
+  },
+  "bloodstained": {
+    "word": "bloodstained",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Stained, spotted or otherwise discolored with blood.; Having the color of something which has been stained with blood.",
+        "examples": [
+          "The author skillfully incorporated bloodstained to emphasize the underlying theme.",
+          "In every chapter, the presence of bloodstained provided an unmistakable atmosphere.",
+          "Observers noted that bloodstained altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "bloodstained"
+    ],
+    "createdAt": "2026-11-13T12:45:56.154Z",
+    "updatedAt": "2026-11-13T12:45:56.154Z"
+  },
+  "banging": {
+    "word": "banging",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Present participle / Gerund) To make sudden loud noises, often repeatedly, especially by exploding or hitting something.; (Present participle / Gerund) To hit (something) hard, making a loud noise.",
+        "examples": [
+          "The fireworks banged away all through the night.",
+          "The door banged in the wind.",
+          "My head was banging after drinking all night at the concert."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "The action or sound of something that bangs.; A session of sexual intercourse.",
+        "examples": [
+          "The banging of the hammers could be heard from several streets away.",
+          "Strange bangings in the old house were ascribed to a poltergeist.",
+          "When he struck it with a hammer, there was a loud banging."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Excellent, brilliant, very exciting, top, great.; Attractive; sexually appealing.",
+        "examples": [
+          "Wow, what a banging haircut! It looks terrific!",
+          "He stood by the window, banging quietly as the light faded into evening.",
+          "They observed the fountain banging clear water high into the morning air."
+        ]
+      },
+      {
+        "partOfSpeech": "adverb",
+        "definition": "(Present participle / Gerund) Right, directly.; (Present participle / Gerund) Precisely, exactly, completely.",
+        "examples": [
+          "The passenger door was banging against the garage wall.",
+          "He arrived banging on time.",
+          "Distracted, he ran banging into the opening door."
+        ]
+      },
+      {
+        "partOfSpeech": "interjection",
+        "definition": "(Present participle / Gerund) A sudden percussive sound, such as made by the firing of a gun, slamming of a door, etc.",
+        "examples": [
+          "He pointed his finger at her like a gun and said, “banging!”.",
+          "He stood by the window, banging quietly as the light faded into evening.",
+          "They observed the fountain banging clear water high into the morning air."
+        ]
+      }
+    ],
+    "variations": [
+      "banging",
+      "bang"
+    ],
+    "createdAt": "2026-11-13T12:45:56.196Z",
+    "updatedAt": "2026-11-13T12:45:56.196Z"
+  },
+  "blasphemy": {
+    "word": "blasphemy",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An act of irreverence or contempt toward a god or toward something considered sacred; an impious act, utterance, view, etc.; An act of irreverence towards anything considered inviolable; the act of disregarding a convention.",
+        "examples": [
+          "That imam said that drawing the prophet Muhammad was a form of blasphemy.",
+          "The author skillfully incorporated blasphemy to emphasize the underlying theme.",
+          "In every chapter, the presence of blasphemy provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "blasphemy"
+    ],
+    "createdAt": "2026-11-13T12:45:56.244Z",
+    "updatedAt": "2026-11-13T12:45:56.244Z"
+  },
+  "blown": {
+    "word": "blown",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Distended, swollen, or inflated.; Panting and out of breath.",
+        "examples": [
+          "Cattle are said to be blown when gorged with green food which develops gas.",
+          "A blown head gasket.",
+          "The team blown their operations until further instructions arrived from headquarters."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Past tense & participle) To produce an air current.; (Past tense & participle) To propel by an air current (or, if under water, a water current), usually with the mouth.",
+        "examples": [
+          "blown the dust off that book and open it up.",
+          "The leaves blown through the streets in the fall.",
+          "What stormy weather —the roofs are blowing off!"
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Past tense & participle) A strong wind.; (Past tense & participle) A chance to catch one's breath.",
+        "examples": [
+          "We’re having a bit of a blown this afternoon.",
+          "The players were able to get a blown during the last timeout.",
+          "His girlfriend gave him a blown."
+        ]
+      },
+      {
+        "partOfSpeech": "interjection",
+        "definition": "(Past tense & participle) Used to express displeasure or frustration.",
+        "examples": [
+          "blown the expense!",
+          "The team blown their operations until further instructions arrived from headquarters.",
+          "She was deeply blown by the unexpected turn of events during the meeting."
+        ]
+      }
+    ],
+    "variations": [
+      "blown",
+      "blow"
+    ],
+    "createdAt": "2026-11-13T12:45:56.274Z",
+    "updatedAt": "2026-11-13T12:45:56.274Z"
+  },
+  "baton": {
+    "word": "baton",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A staff or truncheon, used for various purposes.; A ceremonial staff of a field marshal or a similar high-ranking military office.",
+        "examples": [
+          "The conductor raised his baton and the orchestra fell silent.",
+          "In the relay race, the runner dropped the baton.",
+          "The police officer carried a baton for self-defense."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To strike with a baton.",
+        "examples": [
+          "The author skillfully incorporated baton to emphasize the underlying theme.",
+          "In every chapter, the presence of baton provided an unmistakable atmosphere.",
+          "Observers noted that baton altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "baton"
+    ],
+    "createdAt": "2026-11-13T12:45:56.338Z",
+    "updatedAt": "2026-11-13T12:45:56.338Z"
+  },
+  "barrel": {
+    "word": "barrel",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A round (cylindrical) vessel, such as a cask, of greater length than breadth, and bulging in the middle, made of staves bound with hoops, and having flat ends (heads). The word is sometimes applied to a similar cylindrical container made of metal, usually called a drum.; Such a cask of a certain size, holding one-eighth of what a tun holds. (See a diagram comparing cask sizes.)",
+        "examples": [
+          "A cracker barrel.",
+          "The barrel of a windlass;&nbsp; the barrel of a watch, within which the spring is coiled.",
+          "Throw it into the trash barrel."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To put or to pack in a barrel or barrels.; To move quickly or in an uncontrolled manner.",
+        "examples": [
+          "He came barrelling around the corner and I almost hit him.",
+          "The author skillfully incorporated barrel to emphasize the underlying theme.",
+          "In every chapter, the presence of barrel provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "barrel"
+    ],
+    "createdAt": "2026-11-13T12:45:56.346Z",
+    "updatedAt": "2026-11-13T12:45:56.346Z"
+  },
+  "buzzer": {
+    "word": "buzzer",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "One who, or that which, buzzes; an insect that buzzes.; A device that makes a buzzing sound.",
+        "examples": [
+          "If you think you know the answer to the question, hit the buzzer as fast as you can.",
+          "The author skillfully incorporated buzzer to emphasize the underlying theme.",
+          "In every chapter, the presence of buzzer provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "buzzer"
+    ],
+    "createdAt": "2026-11-13T12:45:56.385Z",
+    "updatedAt": "2026-11-13T12:45:56.385Z"
+  },
+  "busted": {
+    "word": "busted",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having a certain type of bust (breasts; cleavage).; Broke; having no money.",
+        "examples": [
+          "I'd like to help you, but I'm busted.",
+          "I saw you take that cookie from the cookie jar! You're busted!",
+          "She was cute, but all her friends were busted."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Past tense & participle) To break.; (Past tense & participle) To arrest (someone or a group of people) for a crime.",
+        "examples": [
+          "I busted my cooker while trying to fix it.",
+          "Aaron got busted by the feds for leaking confidential government documents on Reddit.",
+          "We want to busted the myth that real men don't eat quiche."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Past tense & participle) The act of arresting someone for a crime, or raiding a suspected criminal operation.; (Past tense & participle) A police raid or takedown of a criminal enterprise.",
+        "examples": [
+          "A narcotics busted.",
+          "The team busted their operations until further instructions arrived from headquarters.",
+          "She was deeply busted by the unexpected turn of events during the meeting."
+        ]
+      }
+    ],
+    "variations": [
+      "busted",
+      "bust"
+    ],
+    "createdAt": "2026-11-13T12:45:56.414Z",
+    "updatedAt": "2026-11-13T12:45:56.414Z"
+  },
+  "bruises": {
+    "word": "bruises",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Plural form) A purplish mark on the skin due to leakage of blood from capillaries under the surface that have been damaged by a blow.; (Plural form) A dark mark on fruit or vegetables caused by a blow to the surface.",
+        "examples": [
+          "The local bruises gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden bruises swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various bruises preserved from centuries of documented history."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Plural form) To strike (a person), originally with something flat or heavy, but now specifically in such a way as to discolour the skin without breaking it; to contuse.; (Plural form) To damage the skin of (fruit or vegetables), in an analogous way.",
+        "examples": [
+          "Bananas bruises easily.",
+          "I bruises easily.",
+          "Her thoughtless remarks bruised my ego."
+        ]
+      }
+    ],
+    "variations": [
+      "bruises",
+      "bruise"
+    ],
+    "createdAt": "2026-11-13T12:45:56.468Z",
+    "updatedAt": "2026-11-13T12:45:56.468Z"
+  },
+  "buckwheat": {
+    "word": "buckwheat",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An Asian plant, of the species Fagopyrum esculentum.; The fruit of this plant used as a pseudocereal.",
+        "examples": [
+          "The author skillfully incorporated buckwheat to emphasize the underlying theme.",
+          "In every chapter, the presence of buckwheat provided an unmistakable atmosphere.",
+          "Observers noted that buckwheat altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "buckwheat"
+    ],
+    "createdAt": "2026-11-13T12:45:56.514Z",
+    "updatedAt": "2026-11-13T12:45:56.514Z"
+  },
+  "befitting": {
+    "word": "befitting",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Present participle / Gerund) to be fit for",
+        "examples": [
+          "His conduct was not befitting an officer of his station.",
+          "He stood by the window, befitting quietly as the light faded into evening.",
+          "They observed the fountain befitting clear water high into the morning air."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Appropriate, becoming.",
+        "examples": [
+          "He moved with a befitting grace.",
+          "He stood by the window, befitting quietly as the light faded into evening.",
+          "They observed the fountain befitting clear water high into the morning air."
+        ]
+      }
+    ],
+    "variations": [
+      "befitting",
+      "befit"
+    ],
+    "createdAt": "2026-11-13T12:45:56.659Z",
+    "updatedAt": "2026-11-13T12:45:56.659Z"
+  },
+  "blares": {
+    "word": "blares",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Plural form) A loud sound.; (Plural form) Of colour, light, or some other quality: dazzling, often garish, brilliance.",
+        "examples": [
+          "I can hardly hear you over the blares of the radio.",
+          "The local blares gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden blares swept across the region, overwhelming the drainage canals."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Plural form) (Often followed by out) To play (a radio, recorded music, etc.) at extremely loud volume levels. To express (ideas, words, etc.) loudly; to proclaim.; (Plural form) (Often followed by out) To play (a radio, recorded music, etc.) at extremely loud volume levels.",
+        "examples": [
+          "The trumpet blaring in my ears gave me a headache.",
+          "The local blares gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden blares swept across the region, overwhelming the drainage canals."
+        ]
+      }
+    ],
+    "variations": [
+      "blares",
+      "blare"
+    ],
+    "createdAt": "2026-11-13T12:45:56.740Z",
+    "updatedAt": "2026-11-13T12:45:56.740Z"
+  },
+  "bagging": {
+    "word": "bagging",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Present participle / Gerund) To put into a bag.; (Present participle / Gerund) To catch or kill, especially when fishing or hunting.",
+        "examples": [
+          "We bagged three deer yesterday.",
+          "The brisk wind bagged the sails.",
+          "His trousers bagging at the knees."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "The act of putting anything into a bag.; Cloth or other material for bags.",
+        "examples": [
+          "Baggings used to cover cotton bales.",
+          "Acid House is not my bagging: I prefer the more traditional styles of music.",
+          "The grounder hit the bagging and bounced over the fielder’s head."
+        ]
+      },
+      {
+        "partOfSpeech": "symbol",
+        "definition": "(Present participle / Gerund) ISO 639-3 language code for Tuki.",
+        "examples": [
+          "He stood by the window, bagging quietly as the light faded into evening.",
+          "They observed the fountain bagging clear water high into the morning air.",
+          "She spent hours bagging through the archives to locate the missing document."
+        ]
+      }
+    ],
+    "variations": [
+      "bagging",
+      "bag"
+    ],
+    "createdAt": "2026-11-13T12:45:56.744Z",
+    "updatedAt": "2026-11-13T12:45:56.744Z"
+  },
+  "bangs": {
+    "word": "bangs",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Hair hanging over the forehead.; (Can we verify this sense?) A hairstyle including such hair, especially cut straight across the forehead.",
+        "examples": [
+          "Tiffany has long hair and bangs.",
+          "When he struck it with a hammer, there was a loud bangs.",
+          "I gave the door a bangs and it swung open."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Plural form) To make sudden loud noises, often repeatedly, especially by exploding or hitting something.; (Plural form) To hit (something) hard, making a loud noise.",
+        "examples": [
+          "The fireworks banged away all through the night.",
+          "The door banged in the wind.",
+          "My head was banging after drinking all night at the concert."
+        ]
+      },
+      {
+        "partOfSpeech": "adverb",
+        "definition": "(Plural form) Right, directly.; (Plural form) Precisely, exactly, completely.",
+        "examples": [
+          "The passenger door was bangs against the garage wall.",
+          "He arrived bangs on time.",
+          "Distracted, he ran bangs into the opening door."
+        ]
+      },
+      {
+        "partOfSpeech": "interjection",
+        "definition": "(Plural form) A sudden percussive sound, such as made by the firing of a gun, slamming of a door, etc.",
+        "examples": [
+          "He pointed his finger at her like a gun and said, “bangs!”.",
+          "The local bangs gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden bangs swept across the region, overwhelming the drainage canals."
+        ]
+      }
+    ],
+    "variations": [
+      "bangs",
+      "bang"
+    ],
+    "createdAt": "2026-11-13T12:45:56.818Z",
+    "updatedAt": "2026-11-13T12:45:56.818Z"
+  },
+  "bake": {
+    "word": "bake",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The act of cooking food by baking.; Any of various baked dishes resembling casserole.",
+        "examples": [
+          "An oyster bake on the shore.",
+          "The author skillfully incorporated bake to emphasize the underlying theme.",
+          "In every chapter, the presence of bake provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(with person as subject) To cook (something) in an oven.; (with baked thing as subject) To be cooked in an oven.",
+        "examples": [
+          "I baked a delicious cherry pie.",
+          "The cake baked at 350°F.",
+          "The clay baked in the sun."
+        ]
+      }
+    ],
+    "variations": [
+      "bake"
+    ],
+    "createdAt": "2026-11-13T12:45:56.880Z",
+    "updatedAt": "2026-11-13T12:45:56.880Z"
+  },
+  "bother": {
+    "word": "bother",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Fuss, ado.; Trouble, inconvenience.",
+        "examples": [
+          "There was a bit of bother at the hairdresser's when they couldn't find my appointment in the book.",
+          "Yes, I can do that for you - it's no bother.",
+          "Yes, I can do that for you—it’s no bother."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To annoy, to disturb, to irritate.; To feel care or anxiety; to make or take trouble; to be troublesome.",
+        "examples": [
+          "Would it bother you if I smoked?",
+          "Why do I even bother to try?",
+          "You didn't even bother to close the door."
+        ]
+      },
+      {
+        "partOfSpeech": "interjection",
+        "definition": "A mild expression of annoyance.",
+        "examples": [
+          "The author skillfully incorporated bother to emphasize the underlying theme.",
+          "In every chapter, the presence of bother provided an unmistakable atmosphere.",
+          "Observers noted that bother altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "bother"
+    ],
+    "createdAt": "2026-11-13T12:45:56.947Z",
+    "updatedAt": "2026-11-13T12:45:56.947Z"
+  },
+  "backing out": {
+    "word": "backing out",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Present participle / Gerund) To go in the reverse direction.; (Present participle / Gerund) To support.",
+        "examples": [
+          "The train backed into the station; the horse refuses to backing out.",
+          "I backing out you all the way; which horse are you backing in this race?",
+          "The mugger backed her into a corner and demanded her wallet."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Present participle / Gerund) The rear of the body, especially the part between the neck and the end of the spine and opposite the chest and belly.; (Present participle / Gerund) That which is farthest away from the front.",
+        "examples": [
+          "Could you please scratch my backing out?",
+          "He sat in the backing out of the room.",
+          "The small boat raced over the backs of the waves."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "(Present participle / Gerund) Near the rear.; (Present participle / Gerund) Not current.",
+        "examples": [
+          "Go in the backing out door of the house.",
+          "I’d like to find a backing out issue of that magazine.",
+          "They took a backing out road."
+        ]
+      },
+      {
+        "partOfSpeech": "adverb",
+        "definition": "(Present participle / Gerund) To or in a previous condition or place.; (Present participle / Gerund) Away from the front or from an edge.",
+        "examples": [
+          "He gave backing out the money. He needs his money backing out. He was on vacation, but now he’s backing out. The office fell into chaos when you left, but now order is backing out.",
+          "Sit all the way backing out in your chair.",
+          "Fear held him backing out."
+        ]
+      }
+    ],
+    "variations": [
+      "backing out",
+      "back"
+    ],
+    "createdAt": "2026-11-13T12:45:56.959Z",
+    "updatedAt": "2026-11-13T12:45:56.959Z"
+  },
+  "burglary": {
+    "word": "burglary",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The crime of unlawfully breaking into a vehicle, house, store, or other enclosure with the intent to steal. Under the common law, breaking and entering of the dwelling of another at night with the intent to commit a felony. Under the Model Penal Code, entering a building or occupied structure with purpose to commit a crime therein, unless the premises are at the time open to the public or the actor is licensed or privileged to enter.; Under the common law, breaking and entering of the dwelling of another at night with the intent to commit a felony.",
+        "examples": [
+          "The author skillfully incorporated burglary to emphasize the underlying theme.",
+          "In every chapter, the presence of burglary provided an unmistakable atmosphere.",
+          "Observers noted that burglary altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "burglary"
+    ],
+    "createdAt": "2026-11-13T12:45:56.991Z",
+    "updatedAt": "2026-11-13T12:45:56.991Z"
+  },
+  "bussing": {
+    "word": "bussing",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of bussing",
+        "examples": [
+          "He stood by the window, bussing quietly as the light faded into evening.",
+          "They observed the fountain bussing clear water high into the morning air.",
+          "She spent hours bussing through the archives to locate the missing document."
+        ]
+      }
+    ],
+    "variations": [
+      "bussing"
+    ],
+    "createdAt": "2026-11-13T12:45:57.018Z",
+    "updatedAt": "2026-11-13T12:45:57.018Z"
+  },
+  "butt": {
+    "word": "butt",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The larger or thicker end of something; the blunt end, in distinction from the sharp or narrow end; The waste end of anything",
+        "examples": [
+          "Be careful in the pen, that ram can knock you down with a butt.",
+          "Get up off your butt and get to work.",
+          "I can see your butt."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To join at the butt, end, or outward extremity; to terminate; to be bounded; to abut.; To strike bluntly, particularly with the head.",
+        "examples": [
+          "Rams butt at other males during mating season.",
+          "Teacher! He just butted me!",
+          "The author skillfully incorporated butt to emphasize the underlying theme."
+        ]
+      }
+    ],
+    "variations": [
+      "butt"
+    ],
+    "createdAt": "2026-11-13T12:45:57.064Z",
+    "updatedAt": "2026-11-13T12:45:57.064Z"
+  },
+  "barbecue": {
+    "word": "barbecue",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A fireplace or pit for grilling food, typically used outdoors and traditionally employing hot charcoal as the heating medium.; A meal or event highlighted by food cooked in such an apparatus.",
+        "examples": [
+          "We cooked our food on the barbecue.",
+          "We're having a barbecue on Saturday, and you're invited.",
+          "She ordered a plate of barbecue with a side of slaw."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To cook food on a barbecue; to smoke it over indirect heat from high-smoke fuels.; To grill.",
+        "examples": [
+          "The author skillfully incorporated barbecue to emphasize the underlying theme.",
+          "In every chapter, the presence of barbecue provided an unmistakable atmosphere.",
+          "Observers noted that barbecue altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "barbecue"
+    ],
+    "createdAt": "2026-11-13T12:45:57.078Z",
+    "updatedAt": "2026-11-13T12:45:57.078Z"
+  },
+  "britches": {
+    "word": "britches",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The roe of cod.; (Inflected form) A garment worn by men, covering the hips and thighs; smallclothes.",
+        "examples": [
+          "The local britches gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden britches swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various britches preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "britches",
+      "breeches"
+    ],
+    "createdAt": "2026-11-13T12:45:57.125Z",
+    "updatedAt": "2026-11-13T12:45:57.125Z"
+  },
+  "blare": {
+    "word": "blare",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Often followed by out) To play (a radio, recorded music, etc.) at extremely loud volume levels. To express (ideas, words, etc.) loudly; to proclaim.; (Often followed by out) To play (a radio, recorded music, etc.) at extremely loud volume levels.",
+        "examples": [
+          "The trumpet blaring in my ears gave me a headache.",
+          "The author skillfully incorporated blare to emphasize the underlying theme.",
+          "In every chapter, the presence of blare provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A loud sound.; Of colour, light, or some other quality: dazzling, often garish, brilliance.",
+        "examples": [
+          "I can hardly hear you over the blare of the radio.",
+          "The author skillfully incorporated blare to emphasize the underlying theme.",
+          "In every chapter, the presence of blare provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "blare"
+    ],
+    "createdAt": "2026-11-13T12:45:57.128Z",
+    "updatedAt": "2026-11-13T12:45:57.128Z"
+  },
+  "buffed": {
+    "word": "buffed",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Past tense & participle) To polish and make shiny by rubbing.; (Past tense & participle) To make a character or an item stronger.",
+        "examples": [
+          "He was already buffing the car's hubs.",
+          "The enchanter buffed the paladin to prepare him to fight the dragon.",
+          "I noticed that the pistols were buffed in the update."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Past tense & participle) Undyed leather from the skin of buffalo or similar animals.; (Past tense & participle) A tool, often one covered with buff leather, used for polishing.",
+        "examples": [
+          "buffed: &nbsp;.",
+          "He’s a real history buffed. He knows everything there is to know about the civil war.",
+          "I just picked up an epic damage buffed! Let's go gank the other team!"
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "(Past tense & participle) Of the color of buff leather, a brownish yellow.; (Past tense & participle) Unusually muscular.",
+        "examples": [
+          "The bouncer was a big, buffed dude with tattoos, a shaved head, and a serious scowl.",
+          "The team buffed their operations until further instructions arrived from headquarters.",
+          "She was deeply buffed by the unexpected turn of events during the meeting."
+        ]
+      }
+    ],
+    "variations": [
+      "buffed",
+      "buff"
+    ],
+    "createdAt": "2026-11-13T12:45:57.154Z",
+    "updatedAt": "2026-11-13T12:45:57.154Z"
+  },
+  "blew": {
+    "word": "blew",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Past tense & participle) To produce an air current.; (Past tense & participle) To propel by an air current.",
+        "examples": [
+          "blew the dust off that book and open it up.",
+          "The leaves blew through the streets in the fall.",
+          "To blew the fire."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "Obsolete form of blue.; (Past tense & participle) A strong wind.",
+        "examples": [
+          "We're having a bit of a blew this afternoon.",
+          "The players were able to get a blew during the last timeout.",
+          "A fabricator is used to direct a sharp blew to the surface of the stone."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Obsolete form of blue.; (Past tense & participle) Blue.",
+        "examples": [
+          "The team blew their operations until further instructions arrived from headquarters.",
+          "She was deeply blew by the unexpected turn of events during the meeting.",
+          "He carefully blew the remaining pieces into a cohesive structure."
+        ]
+      },
+      {
+        "partOfSpeech": "interjection",
+        "definition": "(Past tense & participle) Used to express displeasure or frustration.",
+        "examples": [
+          "blew the expense!",
+          "The team blew their operations until further instructions arrived from headquarters.",
+          "She was deeply blew by the unexpected turn of events during the meeting."
+        ]
+      }
+    ],
+    "variations": [
+      "blew",
+      "blow"
+    ],
+    "createdAt": "2026-11-13T12:45:57.163Z",
+    "updatedAt": "2026-11-13T12:45:57.163Z"
+  },
+  "bugle": {
+    "word": "bugle",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A horn used by hunters.; A simple brass instrument consisting of a horn with no valves, playing only pitches in its harmonic series",
+        "examples": [
+          "The bugle of an elk.",
+          "The author skillfully incorporated bugle to emphasize the underlying theme.",
+          "In every chapter, the presence of bugle provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To announce, sing, or cry in the manner of a musical bugle.",
+        "examples": [
+          "The author skillfully incorporated bugle to emphasize the underlying theme.",
+          "In every chapter, the presence of bugle provided an unmistakable atmosphere.",
+          "Observers noted that bugle altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "jet-black",
+        "examples": [
+          "The author skillfully incorporated bugle to emphasize the underlying theme.",
+          "In every chapter, the presence of bugle provided an unmistakable atmosphere.",
+          "Observers noted that bugle altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "bugle"
+    ],
+    "createdAt": "2026-11-13T12:45:57.188Z",
+    "updatedAt": "2026-11-13T12:45:57.188Z"
+  },
+  "buried": {
+    "word": "buried",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Placed in a grave at a burial.; Concealed, hidden.",
+        "examples": [
+          "The team buried their operations until further instructions arrived from headquarters.",
+          "She was deeply buried by the unexpected turn of events during the meeting.",
+          "He carefully buried the remaining pieces into a cohesive structure."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To ritualistically inter in a grave or tomb.; To place in the ground.",
+        "examples": [
+          "Bury a bone; bury the embers.",
+          "She buried her face in the pillow; they buried us in paperwork.",
+          "Secrets kept buried; she buried her shame and put on a smiling face."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Past tense & participle) A burrow.; (Past tense & participle) A borough; a manor",
+        "examples": [
+          "The team buried their operations until further instructions arrived from headquarters.",
+          "She was deeply buried by the unexpected turn of events during the meeting.",
+          "He carefully buried the remaining pieces into a cohesive structure."
+        ]
+      }
+    ],
+    "variations": [
+      "buried",
+      "bury"
+    ],
+    "createdAt": "2026-11-13T12:45:57.229Z",
+    "updatedAt": "2026-11-13T12:45:57.229Z"
+  },
+  "braking": {
+    "word": "braking",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Present participle / Gerund) To bruise and crush; to knead; (Present participle / Gerund) To pulverise with a harrow",
+        "examples": [
+          "The farmer's son brakes the flax while mother brakes the bread dough.",
+          "If the vase falls to the floor, it might break.",
+          "Can you break a hundred-dollar bill for me?"
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "The act of applying brakes.; (Present participle / Gerund) A fern; bracken.",
+        "examples": [
+          "The acceleratings and brakings of a vehicle.",
+          "She slammed the brakes when she saw a child run in front of the car.",
+          "You’re pressing the brakes too hard—try just squeezing them."
+        ]
+      }
+    ],
+    "variations": [
+      "braking",
+      "brake"
+    ],
+    "createdAt": "2026-11-13T12:45:57.278Z",
+    "updatedAt": "2026-11-13T12:45:57.278Z"
+  },
+  "bondurant": {
+    "word": "bondurant",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of bondurant",
+        "examples": [
+          "The author skillfully incorporated bondurant to emphasize the underlying theme.",
+          "In every chapter, the presence of bondurant provided an unmistakable atmosphere.",
+          "Observers noted that bondurant altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "bondurant"
+    ],
+    "createdAt": "2026-11-13T12:45:57.324Z",
+    "updatedAt": "2026-11-13T12:45:57.324Z"
+  },
+  "buggered": {
+    "word": "buggered",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Broken; not properly functioning.; In trouble; in a bad situation.",
+        "examples": [
+          "Your telly is buggered, best get it fixed.",
+          "It's well and truly buggered now; you may as well throw it out.",
+          "The police caught you on CCTV, now you're really buggered."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Past tense & participle) To have anal sex with, sodomize.; (Past tense & participle) To break or ruin.",
+        "examples": [
+          "To be buggered sore like a hobo's whore (Attributed to Harry Mclintock's 1920s era Big Rock Candy Mountain).",
+          "This computer is buggered! Oh no! I've buggered it up.",
+          "buggered Bognor. (Alleged to be the last words of King George V of the United Kingdom in response to a suggestion that he might recover from his illness and visit Bognor Regis.)."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Past tense & participle) A heretic.; (Past tense & participle) Someone who commits buggery; a sodomite.",
+        "examples": [
+          "The British Sexual Offences Act of 1967 is a buggers’ charter.",
+          "He's a silly buggered for losing his keys.",
+          "The buggered’s given me the wrong change."
+        ]
+      },
+      {
+        "partOfSpeech": "interjection",
+        "definition": "(Past tense & participle) An expression of annoyance or displeasure.",
+        "examples": [
+          "buggered, I've missed the bus.",
+          "The team buggered their operations until further instructions arrived from headquarters.",
+          "She was deeply buggered by the unexpected turn of events during the meeting."
+        ]
+      }
+    ],
+    "variations": [
+      "buggered",
+      "bugger"
+    ],
+    "createdAt": "2026-11-13T12:45:57.387Z",
+    "updatedAt": "2026-11-13T12:45:57.387Z"
+  },
+  "babies": {
+    "word": "babies",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Plural form) A very young human, particularly from birth to a couple of years old or until walking is fully mastered.; (Plural form) Any very young animal, especially a vertebrate; many species have specific names for their babies, such as kittens for the babies of cats, puppies for the babies of dogs, and chickens for the babies of birds. See for more.",
+        "examples": [
+          "When is your babies due?",
+          "Stand up for yourself – don't be such a babies!",
+          "I only qualified as an architect this summer, so I'm still a babies."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Plural form) To coddle; to pamper somebody like an infant.; (Plural form) To tend (something) with care; to be overly attentive to (something), fuss over.",
+        "examples": [
+          "The local babies gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden babies swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various babies preserved from centuries of documented history."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "(Plural form) Of a child: very young; of the age when he or she would be termed a baby or infant.; (Plural form) Of an animal: young.",
+        "examples": [
+          "A babies boy.",
+          "A babies elephant.",
+          "babies clothes."
+        ]
+      }
+    ],
+    "variations": [
+      "babies",
+      "baby"
+    ],
+    "createdAt": "2026-11-13T12:45:57.391Z",
+    "updatedAt": "2026-11-13T12:45:57.391Z"
+  },
+  "bear": {
+    "word": "bear",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A large omnivorous mammal, related to the dog and raccoon, having shaggy hair, a very small tail, and flat feet; a member of family Ursidae.; A rough, unmannerly, uncouth person.",
+        "examples": [
+          "That window can be a bear to open.",
+          "We had barbecued bear for dinner.",
+          "The author skillfully incorporated bear to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To endeavour to depress the price of, or prices in.; To carry or convey, literally or figuratively.",
+        "examples": [
+          "To bear a railroad stock.",
+          "Judging from the look on his face, he wasn't bearing good news.",
+          "By my readings, we're bearing due south, so we should turn about ten degrees east."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "(investments) Characterized by declining prices in securities markets or by belief that the prices will fall.; Characterized by declining prices in securities markets or by belief that the prices will fall.",
+        "examples": [
+          "The great bear market starting in 1929 scared a whole generation of investors.",
+          "The author skillfully incorporated bear to emphasize the underlying theme.",
+          "In every chapter, the presence of bear provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "bear",
+      "bere"
+    ],
+    "createdAt": "2026-11-13T12:45:57.411Z",
+    "updatedAt": "2026-11-13T12:45:57.411Z"
+  },
+  "bury": {
+    "word": "bury",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A burrow.; A borough; a manor",
+        "examples": [
+          "The author skillfully incorporated bury to emphasize the underlying theme.",
+          "In every chapter, the presence of bury provided an unmistakable atmosphere.",
+          "Observers noted that bury altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To ritualistically inter in a grave or tomb.; To place in the ground.",
+        "examples": [
+          "Bury a bone; bury the embers.",
+          "She buried her face in the pillow; they buried us in paperwork.",
+          "Secrets kept buried; she buried her shame and put on a smiling face."
+        ]
+      }
+    ],
+    "variations": [
+      "bury"
+    ],
+    "createdAt": "2026-11-13T12:45:57.420Z",
+    "updatedAt": "2026-11-13T12:45:57.420Z"
+  },
+  "buckle": {
+    "word": "buckle",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To distort or collapse under physical pressure; especially, of a slender structure in compression.; To make bend; to cause to become distorted.",
+        "examples": [
+          "It is amazing that he has never buckled after so many years of doing such urgent work.",
+          "The author skillfully incorporated buckle to emphasize the underlying theme.",
+          "In every chapter, the presence of buckle provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A clasp used for fastening two things together, such as the ends of a belt, or for retaining the end of a strap.; The brisure of an eighth daughter.",
+        "examples": [
+          "We can’t use that saw any more. It’s got a buckle in its blade.",
+          "The author skillfully incorporated buckle to emphasize the underlying theme.",
+          "In every chapter, the presence of buckle provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "buckle"
+    ],
+    "createdAt": "2026-11-13T12:45:57.530Z",
+    "updatedAt": "2026-11-13T12:45:57.530Z"
+  },
+  "beatnik": {
+    "word": "beatnik",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A person who dresses in a manner that is not socially acceptable and is supposed to reject conventional norms of thought and behavior; nonconformist in dress and behavior.; A person associated with the Beat Generation of the 1950s and 1960s or its style.",
+        "examples": [
+          "The author skillfully incorporated beatnik to emphasize the underlying theme.",
+          "In every chapter, the presence of beatnik provided an unmistakable atmosphere.",
+          "Observers noted that beatnik altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "beatnik"
+    ],
+    "createdAt": "2026-11-13T12:45:57.587Z",
+    "updatedAt": "2026-11-13T12:45:57.587Z"
+  },
+  "bliss": {
+    "word": "bliss",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Perfect happiness; Perfect happiness.",
+        "examples": [
+          "The afternoon at the spa was utter bliss.",
+          "The local bliss gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden bliss swept across the region, overwhelming the drainage canals."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To feel bliss; to reach a state of bliss or ecstasy.",
+        "examples": [
+          "I'm still blissing out after our date. I had a great time.",
+          "The local bliss gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden bliss swept across the region, overwhelming the drainage canals."
+        ]
+      }
+    ],
+    "variations": [
+      "bliss"
+    ],
+    "createdAt": "2026-11-13T12:45:57.597Z",
+    "updatedAt": "2026-11-13T12:45:57.597Z"
+  },
+  "budge": {
+    "word": "budge",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To move; to be shifted from a fixed position.; To move; to shift from a fixed position.",
+        "examples": [
+          "I’ve been pushing this rock as hard as I can, but it won’t budge an inch.",
+          "I’ve been pushing this rock as hard as I can, but I can’t budge it.",
+          "The Minister for Finance refused to budge on the new economic rules."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A kind of fur prepared from lambskin dressed with the wool on, formerly used as an edging and ornament, especially on scholastic habits.; Alcoholic drink.",
+        "examples": [
+          "The author skillfully incorporated budge to emphasize the underlying theme.",
+          "In every chapter, the presence of budge provided an unmistakable atmosphere.",
+          "Observers noted that budge altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "austere or stiff, like scholastics",
+        "examples": [
+          "The author skillfully incorporated budge to emphasize the underlying theme.",
+          "In every chapter, the presence of budge provided an unmistakable atmosphere.",
+          "Observers noted that budge altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "budge"
+    ],
+    "createdAt": "2026-11-13T12:45:57.657Z",
+    "updatedAt": "2026-11-13T12:45:57.657Z"
+  },
+  "banality": {
+    "word": "banality",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The quality of being banal.; Something which is banal.",
+        "examples": [
+          "The author skillfully incorporated banality to emphasize the underlying theme.",
+          "In every chapter, the presence of banality provided an unmistakable atmosphere.",
+          "Observers noted that banality altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "banality"
+    ],
+    "createdAt": "2026-11-13T12:45:57.661Z",
+    "updatedAt": "2026-11-13T12:45:57.661Z"
+  },
+  "bay": {
+    "word": "bay",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A berry.; Laurus nobilis, a tree or shrub of the family Lauraceae, having dark green leaves and berries.",
+        "examples": [
+          "This hotel has a great view across the bay.",
+          "Gondola bay.",
+          "Bay: &nbsp;."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To howl.; To bark at; hence, to follow with barking; to bring or drive to bay.",
+        "examples": [
+          "To bay the bear.",
+          "The author skillfully incorporated bay to emphasize the underlying theme.",
+          "In every chapter, the presence of bay provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Of a reddish-brown colour (especially of horses).; Of a reddish-brown colour with a black mane and tail.",
+        "examples": [
+          "The author skillfully incorporated bay to emphasize the underlying theme.",
+          "In every chapter, the presence of bay provided an unmistakable atmosphere.",
+          "Observers noted that bay altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "symbol",
+        "definition": "ISO 639-3 language code for Batuley.",
+        "examples": [
+          "The author skillfully incorporated bay to emphasize the underlying theme.",
+          "In every chapter, the presence of bay provided an unmistakable atmosphere.",
+          "Observers noted that bay altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "bay"
+    ],
+    "createdAt": "2026-11-13T12:45:57.690Z",
+    "updatedAt": "2026-11-13T12:45:57.690Z"
+  },
+  "bagged": {
+    "word": "bagged",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Past tense & participle) To put into a bag.; (Past tense & participle) To catch or kill, especially when fishing or hunting.",
+        "examples": [
+          "The groceries had already been bagged.",
+          "We bagged three deer yesterday.",
+          "The brisk wind bagged the sails."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having been placed in a bag.; Having been caught or successfully hunted.",
+        "examples": [
+          "The team bagged their operations until further instructions arrived from headquarters.",
+          "She was deeply bagged by the unexpected turn of events during the meeting.",
+          "He carefully bagged the remaining pieces into a cohesive structure."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Past tense & participle) A flexible container made of cloth, paper, plastic, etc.; (Past tense & participle) A handbag",
+        "examples": [
+          "Acid House is not my bagged: I prefer the more traditional styles of music.",
+          "The grounder hit the bagged and bounced over the fielder’s head.",
+          "He headed back to the bagged."
+        ]
+      },
+      {
+        "partOfSpeech": "symbol",
+        "definition": "(Past tense & participle) ISO 639-3 language code for Tuki.",
+        "examples": [
+          "The team bagged their operations until further instructions arrived from headquarters.",
+          "She was deeply bagged by the unexpected turn of events during the meeting.",
+          "He carefully bagged the remaining pieces into a cohesive structure."
+        ]
+      }
+    ],
+    "variations": [
+      "bagged",
+      "bag"
+    ],
+    "createdAt": "2026-11-13T12:45:57.813Z",
+    "updatedAt": "2026-11-13T12:45:57.813Z"
+  },
+  "bitch": {
+    "word": "bitch",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A female dog or other canine, particularly a recent mother.; A promiscuous woman, slut, whore.",
+        "examples": [
+          "My bitch just had puppies; they're so cute!",
+          "He had three pet bitches with him.",
+          "Ann spread rumors about me; she's such a bitch."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To behave or act as a bitch; especially, to complain excessively.; To complain or criticize spitefully, often for the sake of complaining rather than in order to have the problem corrected.",
+        "examples": [
+          "All you ever do is bitch about the food I cook for you!",
+          "All you ever do is bitch at me!",
+          "The author skillfully incorporated bitch to emphasize the underlying theme."
+        ]
+      }
+    ],
+    "variations": [
+      "bitch"
+    ],
+    "createdAt": "2026-11-13T12:45:57.878Z",
+    "updatedAt": "2026-11-13T12:45:57.878Z"
+  },
+  "blisters": {
+    "word": "blisters",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Plural form) A small bubble between the layers of the skin that contains watery or bloody fluid and is caused by friction and pressure, burning, freezing, chemical irritation, disease or infection.; (Plural form) A swelling on a plant.",
+        "examples": [
+          "blisters card.",
+          "blisters pack.",
+          "The local blisters gathered early in the square to prepare their daily exhibits."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Plural form) To raise blisters on.; (Plural form) To have a blister form.",
+        "examples": [
+          "A chemical agent that blisters the skin.",
+          "The local blisters gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden blisters swept across the region, overwhelming the drainage canals."
+        ]
+      }
+    ],
+    "variations": [
+      "blisters",
+      "blister"
+    ],
+    "createdAt": "2026-11-13T12:45:58.003Z",
+    "updatedAt": "2026-11-13T12:45:58.003Z"
+  },
+  "bleak": {
+    "word": "bleak",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Without color; pale; pallid.; Desolate and exposed; swept by cold winds.",
+        "examples": [
+          "A bleak and bare rock.",
+          "A bleak, crater-pocked moonscape.",
+          "They escaped across the bleak landscape."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A small European river fish (Alburnus alburnus), of the family Cyprinidae.",
+        "examples": [
+          "The author skillfully incorporated bleak to emphasize the underlying theme.",
+          "In every chapter, the presence of bleak provided an unmistakable atmosphere.",
+          "Observers noted that bleak altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "bleak"
+    ],
+    "createdAt": "2026-11-13T12:45:58.192Z",
+    "updatedAt": "2026-11-13T12:45:58.192Z"
+  },
+  "belfry": {
+    "word": "belfry",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A tower or steeple typically containing bells, especially as part of a church.; A part of a large tower or steeple, specifically for containing bells.",
+        "examples": [
+          "The author skillfully incorporated belfry to emphasize the underlying theme.",
+          "In every chapter, the presence of belfry provided an unmistakable atmosphere.",
+          "Observers noted that belfry altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "belfry"
+    ],
+    "createdAt": "2026-11-13T12:45:58.248Z",
+    "updatedAt": "2026-11-13T12:45:58.248Z"
+  },
+  "beech": {
+    "word": "beech",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A tree of the genus Fagus having a smooth, light grey trunk, oval, pointed leaves, and many branches.; The wood of the beech tree.",
+        "examples": [
+          "The author skillfully incorporated beech to emphasize the underlying theme.",
+          "In every chapter, the presence of beech provided an unmistakable atmosphere.",
+          "Observers noted that beech altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "beech"
+    ],
+    "createdAt": "2026-11-13T12:45:58.456Z",
+    "updatedAt": "2026-11-13T12:45:58.456Z"
+  },
+  "brook": {
+    "word": "brook",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To use; enjoy; have the full employment of.; To earn; deserve.",
+        "examples": [
+          "I will not brook any disobedience. I will brook no refusal. I will brook no impertinence.",
+          "Brook no refusal.",
+          "I will not brook any disobedience."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A body of running water smaller than a river; a small stream.; A water meadow.",
+        "examples": [
+          "The author skillfully incorporated brook to emphasize the underlying theme.",
+          "In every chapter, the presence of brook provided an unmistakable atmosphere.",
+          "Observers noted that brook altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "brook"
+    ],
+    "createdAt": "2026-11-13T12:45:58.527Z",
+    "updatedAt": "2026-11-13T12:45:58.527Z"
+  },
+  "boar": {
+    "word": "boar",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A wild boar (Sus scrofa), the wild ancestor of the domesticated pig.; A male pig.",
+        "examples": [
+          "The author skillfully incorporated boar to emphasize the underlying theme.",
+          "In every chapter, the presence of boar provided an unmistakable atmosphere.",
+          "Observers noted that boar altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "boar"
+    ],
+    "createdAt": "2026-11-13T12:45:58.545Z",
+    "updatedAt": "2026-11-13T12:45:58.545Z"
+  },
+  "brisk": {
+    "word": "brisk",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(often with \"up\") To make or become lively; to enliven; to animate.; To make or become lively; to enliven; to animate.",
+        "examples": [
+          "The author skillfully incorporated brisk to emphasize the underlying theme.",
+          "In every chapter, the presence of brisk provided an unmistakable atmosphere.",
+          "Observers noted that brisk altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Full of liveliness and activity; characterized by quickness of motion or action; Full of spirit of life; effervescing",
+        "examples": [
+          "We took a brisk walk yesterday.",
+          "Brisk cider.",
+          "This morning was a brisk fall day. It wasn't cold enough for frost, but you wanted to keep moving."
+        ]
+      }
+    ],
+    "variations": [
+      "brisk"
+    ],
+    "createdAt": "2026-11-13T12:45:58.591Z",
+    "updatedAt": "2026-11-13T12:45:58.591Z"
+  },
+  "barley": {
+    "word": "barley",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A cereal of the species Hordeum vulgare or its grains, often used as food or to make beer and other malted drinks.; The seed of Job's tears (Coix lacryma-jobi).",
+        "examples": [
+          "The author skillfully incorporated barley to emphasize the underlying theme.",
+          "In every chapter, the presence of barley provided an unmistakable atmosphere.",
+          "Observers noted that barley altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "barley"
+    ],
+    "createdAt": "2026-11-13T12:45:58.627Z",
+    "updatedAt": "2026-11-13T12:45:58.627Z"
+  },
+  "brim": {
+    "word": "brim",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The sea; ocean; water; flood.; An edge or border (originally specifically of the sea or a body of water).",
+        "examples": [
+          "The toy box was filled to the brim with stuffed animals.",
+          "He turned the back of his brim up stylishly.",
+          "The author skillfully incorporated brim to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To be full to overflowing.; To fill to the brim, upper edge, or top.",
+        "examples": [
+          "The room brimmed with people.",
+          "The author skillfully incorporated brim to emphasize the underlying theme.",
+          "In every chapter, the presence of brim provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Fierce; sharp; cold.; Synonym of breme (“of the sea, wind, etc.: fierce; raging; stormy, tempestuous”).",
+        "examples": [
+          "The author skillfully incorporated brim to emphasize the underlying theme.",
+          "In every chapter, the presence of brim provided an unmistakable atmosphere.",
+          "Observers noted that brim altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "brim"
+    ],
+    "createdAt": "2026-11-13T12:45:58.654Z",
+    "updatedAt": "2026-11-13T12:45:58.654Z"
+  },
+  "buttonholed": {
+    "word": "buttonholed",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Past tense & participle) To detain (a person) in conversation against their will.; (Past tense & participle) To cut one or more buttonholes (in).",
+        "examples": [
+          "The team buttonholed their operations until further instructions arrived from headquarters.",
+          "She was deeply buttonholed by the unexpected turn of events during the meeting.",
+          "He carefully buttonholed the remaining pieces into a cohesive structure."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Past tense & participle) A hole through which a button is pushed to secure a garment or some part of one.; (Past tense & participle) A flower worn in a buttonhole for decoration.",
+        "examples": [
+          "The team buttonholed their operations until further instructions arrived from headquarters.",
+          "She was deeply buttonholed by the unexpected turn of events during the meeting.",
+          "He carefully buttonholed the remaining pieces into a cohesive structure."
+        ]
+      }
+    ],
+    "variations": [
+      "buttonholed",
+      "buttonhole"
+    ],
+    "createdAt": "2026-11-13T12:45:58.694Z",
+    "updatedAt": "2026-11-13T12:45:58.694Z"
+  },
+  "breadwinner": {
+    "word": "breadwinner",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A person who earns money to support a family.",
+        "examples": [
+          "Gregor took immense pride in having been the sole breadwinner for his parents and sister."
+        ]
+      }
+    ],
+    "variations": [
+      "breadwinners"
+    ],
+    "createdAt": "2026-11-13T14:23:18.794Z",
+    "updatedAt": "2026-11-13T14:23:18.794Z"
+  },
+  "bureaucratic": {
+    "word": "bureaucratic",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Relating to the business of running an organization or government through strict rules and hierarchy.",
+        "examples": [
+          "The firm operated with cold, bureaucratic ruthlessness that showed no mercy to sick employees."
+        ]
+      }
+    ],
+    "variations": [
+      "bureaucracy",
+      "bureaucrat"
+    ],
+    "createdAt": "2026-11-13T14:23:18.832Z",
+    "updatedAt": "2026-11-13T14:23:18.832Z"
+  },
+  "bereavement": {
+    "word": "bereavement",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The state of sorrow over the death or departure of a loved one.",
+        "examples": [
+          "The Bundren family set out across the flooded country during their solemn bereavement."
+        ]
+      }
+    ],
+    "variations": [
+      "bereave",
+      "bereaved"
+    ],
+    "createdAt": "2026-11-13T14:23:18.838Z",
+    "updatedAt": "2026-11-13T14:23:18.838Z"
+  },
+  "bier": {
+    "word": "bier",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A movable frame on which a coffin or a corpse is placed before burial or borne to the grave.",
+        "examples": [
+          "Cash laid the cedar planks flat across the carpenter's sawhorses to fashion the bier."
+        ]
+      }
+    ],
+    "variations": [
+      "biers"
+    ],
+    "createdAt": "2026-11-13T14:23:18.844Z",
+    "updatedAt": "2026-11-13T14:23:18.844Z"
+  },
+  "bevel": {
+    "word": "bevel",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Reduce a square edge on an object to a sloping edge.",
+        "examples": [
+          "He carefully beveled the wooden seams so the rain would drain outward from the casket."
+        ]
+      }
+    ],
+    "variations": [
+      "beveled",
+      "beveling",
+      "bevels"
+    ],
+    "createdAt": "2026-11-13T14:23:18.851Z",
+    "updatedAt": "2026-11-13T14:23:18.851Z"
+  },
+  "bacilli": {
+    "word": "bacilli",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Rod-shaped bacteria, especially those causing diseases like plague or tuberculosis.",
+        "examples": [
+          "Microscopic analysis confirmed the deadly presence of Yersinia bacilli in the lymph nodes."
+        ]
+      }
+    ],
+    "variations": [
+      "bacillus"
+    ],
+    "createdAt": "2026-11-13T14:23:18.909Z",
+    "updatedAt": "2026-11-13T14:23:18.909Z"
+  },
+  "bubo": {
+    "word": "bubo",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A swollen, inflamed lymph node in the armpit or groin, characteristic of bubonic plague.",
+        "examples": [
+          "The patient suffered excruciating pain wherever a dark, tender bubo emerged."
+        ]
+      }
+    ],
+    "variations": [
+      "buboes"
+    ],
+    "createdAt": "2026-11-13T14:23:18.921Z",
+    "updatedAt": "2026-11-13T14:23:18.921Z"
+  },
+  "baffle": {
+    "word": "baffle",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Totally bewilder or perplex.",
+        "examples": [
+          "The sudden onset of bubonic symptoms baffled the younger general practitioners."
+        ]
+      }
+    ],
+    "variations": [
+      "baffled",
+      "baffling"
+    ],
+    "createdAt": "2026-11-13T14:27:05.167Z",
+    "updatedAt": "2026-11-13T14:27:05.167Z"
+  },
+  "baleful": {
+    "word": "baleful",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Threatening harm; menacing; having a destructive effect.",
+        "examples": [
+          "The buzzards cast baleful shadows as they circled over the Bundren wagon."
+        ]
+      }
+    ],
+    "variations": [
+      "balefully"
+    ],
+    "createdAt": "2026-11-13T14:27:05.175Z",
+    "updatedAt": "2026-11-13T14:27:05.175Z"
+  },
+  "banal": {
+    "word": "banal",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "So lacking in originality as to be obvious and boring.",
+        "examples": [
+          "The municipal notices repeated banal instructions about washing hands with carbolic soap."
+        ]
+      }
+    ],
+    "variations": [
+      "banality"
+    ],
+    "createdAt": "2026-11-13T14:27:05.182Z",
+    "updatedAt": "2026-11-13T14:27:05.182Z"
+  },
+  "bane": {
+    "word": "bane",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A cause of great distress or annoyance.",
+        "examples": [
+          "The heavy red clay was the perennial bane of traveling farm wagons in Yoknapatawpha."
+        ]
+      }
+    ],
+    "variations": [
+      "banes"
+    ],
+    "createdAt": "2026-11-13T14:27:05.189Z",
+    "updatedAt": "2026-11-13T14:27:05.189Z"
+  },
+  "banish": {
+    "word": "banish",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Send someone away from a country or place as an official punishment.",
+        "examples": [
+          "The father resolved to banish the hideous insect from the living quarters forever."
+        ]
+      }
+    ],
+    "variations": [
+      "banished",
+      "banishing"
+    ],
+    "createdAt": "2026-11-13T14:27:05.197Z",
+    "updatedAt": "2026-11-13T14:27:05.197Z"
+  },
+  "barrage": {
+    "word": "barrage",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A concentrated outpouring, as of questions or blows.",
+        "examples": [
+          "The interrogators subjected the runaway to a brutal barrage of blows."
+        ]
+      }
+    ],
+    "variations": [
+      "barrages"
+    ],
+    "createdAt": "2026-11-13T14:27:05.205Z",
+    "updatedAt": "2026-11-13T14:27:05.205Z"
+  },
+  "barricade": {
+    "word": "barricade",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An improvised barrier erected across a street or other thoroughfare to prevent or delay movement.",
+        "examples": [
+          "Police erected a wooden barricade across the highway leading out of the infected district."
+        ]
+      }
+    ],
+    "variations": [
+      "barricaded",
+      "barricades"
+    ],
+    "createdAt": "2026-11-13T14:27:05.216Z",
+    "updatedAt": "2026-11-13T14:27:05.216Z"
+  },
+  "beckon": {
+    "word": "beckon",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Make a gesture with the hand, arm, or head to encourage someone to come nearer.",
+        "examples": [
+          "Turner beckoned Elwood toward the darkness beneath the grandstand."
+        ]
+      }
+    ],
+    "variations": [
+      "beckoned",
+      "beckoning"
+    ],
+    "createdAt": "2026-11-13T14:27:05.222Z",
+    "updatedAt": "2026-11-13T14:27:05.222Z"
+  },
+  "beguile": {
+    "word": "beguile",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Charm or enchant someone, sometimes in a deceptive way.",
+        "examples": [
+          "The friendly salesman beguiled the boy into accepting a ride in the stolen Plymouth."
+        ]
+      }
+    ],
+    "variations": [
+      "beguiled",
+      "beguiling"
+    ],
+    "createdAt": "2026-11-13T14:27:05.232Z",
+    "updatedAt": "2026-11-13T14:27:05.232Z"
+  },
+  "beholden": {
+    "word": "beholden",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Owing thanks or having a duty to someone in return for help or a service.",
+        "examples": [
+          "Anse refused to feel beholden to neighbors who had fed his children for years."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:27:05.238Z",
+    "updatedAt": "2026-11-13T14:27:05.238Z"
+  },
+  "belated": {
+    "word": "belated",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Coming or happening later than should have been the case.",
+        "examples": [
+          "The state launched a belated investigation forty years after the abuses occurred."
+        ]
+      }
+    ],
+    "variations": [
+      "belatedly"
+    ],
+    "createdAt": "2026-11-13T14:27:05.244Z",
+    "updatedAt": "2026-11-13T14:27:05.244Z"
+  },
+  "beleaguer": {
+    "word": "beleaguer",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Lay siege to; beset with difficulties.",
+        "examples": [
+          "The beleaguered physicians worked sixteen-hour shifts without replacement."
+        ]
+      }
+    ],
+    "variations": [
+      "beleaguered"
+    ],
+    "createdAt": "2026-11-13T14:27:05.251Z",
+    "updatedAt": "2026-11-13T14:27:05.251Z"
+  },
+  "belie": {
+    "word": "belie",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Fail to give a true notion or impression of something; disguise or contradict.",
+        "examples": [
+          "His composed countenance belied the terror gnawing at his gut."
+        ]
+      }
+    ],
+    "variations": [
+      "belied",
+      "belying"
+    ],
+    "createdAt": "2026-11-13T14:27:05.258Z",
+    "updatedAt": "2026-11-13T14:27:05.258Z"
+  },
+  "bellicose": {
+    "word": "bellicose",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Demonstrating aggression and willingness to fight.",
+        "examples": [
+          "The guard captain possessed a bellicose temperament that erupted at minor infractions."
+        ]
+      }
+    ],
+    "variations": [
+      "bellicosity"
+    ],
+    "createdAt": "2026-11-13T14:27:05.265Z",
+    "updatedAt": "2026-11-13T14:27:05.265Z"
+  },
+  "belligerent": {
+    "word": "belligerent",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Hostile and aggressive; engaged in a war or conflict.",
+        "examples": [
+          "The drunken lodgers grew belligerent when their evening meal was delayed."
+        ]
+      }
+    ],
+    "variations": [
+      "belligerently"
+    ],
+    "createdAt": "2026-11-13T14:27:05.273Z",
+    "updatedAt": "2026-11-13T14:27:05.273Z"
+  },
+  "benefactor": {
+    "word": "benefactor",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A person who gives money or other help to a person or cause.",
+        "examples": [
+          "The wealthy merchant fancied himself a public benefactor while raising bread prices."
+        ]
+      }
+    ],
+    "variations": [
+      "benefactors"
+    ],
+    "createdAt": "2026-11-13T14:27:05.280Z",
+    "updatedAt": "2026-11-13T14:27:05.280Z"
+  },
+  "benevolent": {
+    "word": "benevolent",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Well meaning and kindly; serving a charitable rather than profit-making purpose.",
+        "examples": [
+          "The school brochure portrayed the staff as benevolent mentors to wayward youths."
+        ]
+      }
+    ],
+    "variations": [
+      "benevolently",
+      "benevolence"
+    ],
+    "createdAt": "2026-11-13T14:27:05.288Z",
+    "updatedAt": "2026-11-13T14:27:05.288Z"
+  },
+  "benign": {
+    "word": "benign",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Gentle and kindly; not harmful in effect.",
+        "examples": [
+          "At first the doctor hoped the swelling was a benign glandular inflammation."
+        ]
+      }
+    ],
+    "variations": [
+      "benignly"
+    ],
+    "createdAt": "2026-11-13T14:27:05.295Z",
+    "updatedAt": "2026-11-13T14:27:05.295Z"
+  },
+  "bequeath": {
+    "word": "bequeath",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Pass something on or leave something to someone, especially by a will.",
+        "examples": [
+          "Addie Bundren wished to bequeath nothing of her spirit to the husband who failed her."
+        ]
+      }
+    ],
+    "variations": [
+      "bequeathed",
+      "bequeathing"
+    ],
+    "createdAt": "2026-11-13T14:27:05.304Z",
+    "updatedAt": "2026-11-13T14:27:05.304Z"
+  },
+  "berate": {
+    "word": "berate",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Scold or criticize someone angrily.",
+        "examples": [
+          "The head clerk began to berate Gregor through the locked bedroom keyhole."
+        ]
+      }
+    ],
+    "variations": [
+      "berated",
+      "berating"
+    ],
+    "createdAt": "2026-11-13T14:27:05.312Z",
+    "updatedAt": "2026-11-13T14:27:05.312Z"
+  },
+  "bereft": {
+    "word": "bereft",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Deprived of or lacking something, especially a non-material asset; sorrowful.",
+        "examples": [
+          "Her death left the household utterly bereft of warmth or direction."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:27:05.320Z",
+    "updatedAt": "2026-11-13T14:27:05.320Z"
+  },
+  "beseech": {
+    "word": "beseech",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Ask someone urgently and fervently to do something; implore.",
+        "examples": [
+          "Gregor's mother began to beseech her husband not to hurt their afflicted son."
+        ]
+      }
+    ],
+    "variations": [
+      "besought",
+      "beseeching"
+    ],
+    "createdAt": "2026-11-13T14:27:05.327Z",
+    "updatedAt": "2026-11-13T14:27:05.327Z"
+  },
+  "beset": {
+    "word": "beset",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Trouble or threaten persistently.",
+        "examples": [
+          "The funeral procession was beset by flooded crossings, broken axles, and buzzards."
+        ]
+      }
+    ],
+    "variations": [
+      "besetting"
+    ],
+    "createdAt": "2026-11-13T14:27:05.334Z",
+    "updatedAt": "2026-11-13T14:27:05.334Z"
+  },
+  "bestow": {
+    "word": "bestow",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Confer or present an honor, right, or gift.",
+        "examples": [
+          "The state refused to bestow even basic legal dignity upon the juvenile wards."
+        ]
+      }
+    ],
+    "variations": [
+      "bestowed",
+      "bestowing"
+    ],
+    "createdAt": "2026-11-13T14:27:05.343Z",
+    "updatedAt": "2026-11-13T14:27:05.343Z"
+  },
+  "betrayal": {
+    "word": "betrayal",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The action of betraying one's country, a group, or a person; treachery.",
+        "examples": [
+          "Elwood could not believe the school trustee's sudden betrayal of their confidential letter."
+        ]
+      }
+    ],
+    "variations": [
+      "betrayals"
+    ],
+    "createdAt": "2026-11-13T14:27:05.352Z",
+    "updatedAt": "2026-11-13T14:27:05.352Z"
+  },
+  "bewilder": {
+    "word": "bewilder",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Cause someone to become perplexed and confused.",
+        "examples": [
+          "The alien clicks emitting from his throat bewildered Gregor's own ears."
+        ]
+      }
+    ],
+    "variations": [
+      "bewildered",
+      "bewildering",
+      "bewilderment"
+    ],
+    "createdAt": "2026-11-13T14:27:05.359Z",
+    "updatedAt": "2026-11-13T14:27:05.359Z"
+  },
+  "bigotry": {
+    "word": "bigotry",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Obstinate or unreasonable attachment to a belief, faction, or prejudice, in particular against other groups.",
+        "examples": [
+          "Institutionalized bigotry dictated every rule governing the Florida reform school."
+        ]
+      }
+    ],
+    "variations": [
+      "bigot",
+      "bigoted"
+    ],
+    "createdAt": "2026-11-13T14:27:05.368Z",
+    "updatedAt": "2026-11-13T14:27:05.368Z"
+  },
+  "blandishment": {
+    "word": "blandishment",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A flattering or pleasing statement or action used to persuade someone gently.",
+        "examples": [
+          "Neither threats nor soft blandishments could induce the boy to name his accomplice."
+        ]
+      }
+    ],
+    "variations": [
+      "blandishments"
+    ],
+    "createdAt": "2026-11-13T14:27:05.377Z",
+    "updatedAt": "2026-11-13T14:27:05.377Z"
+  },
+  "blatant": {
+    "word": "blatant",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Done openly and unashamedly; completely obvious.",
+        "examples": [
+          "The misappropriation of government meat was a blatant theft that everyone witnessed."
+        ]
+      }
+    ],
+    "variations": [
+      "blatantly"
+    ],
+    "createdAt": "2026-11-13T14:27:05.384Z",
+    "updatedAt": "2026-11-13T14:27:05.384Z"
+  },
+  "blithe": {
+    "word": "blithe",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Showing a casual and cheerful indifference considered to be callous or improper.",
+        "examples": [
+          "He maintained a blithe disregard for the dangers of crossing the flooded river."
+        ]
+      }
+    ],
+    "variations": [
+      "blithely"
+    ],
+    "createdAt": "2026-11-13T14:27:05.394Z",
+    "updatedAt": "2026-11-13T14:27:05.394Z"
+  },
+  "blight": {
+    "word": "blight",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A plant disease; a thing that spoils or damages something.",
+        "examples": [
+          "The plague acted like a moral blight that stripped the city of its illusions."
+        ]
+      }
+    ],
+    "variations": [
+      "blights",
+      "blighted"
+    ],
+    "createdAt": "2026-11-13T14:27:05.400Z",
+    "updatedAt": "2026-11-13T14:27:05.400Z"
+  },
+  "boisterous": {
+    "word": "boisterous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Noisy, energetic, and rowdy; wild or stormy.",
+        "examples": [
+          "The white boys engaged in boisterous games on the manicured front lawn."
+        ]
+      }
+    ],
+    "variations": [
+      "boisterously"
+    ],
+    "createdAt": "2026-11-13T14:27:05.406Z",
+    "updatedAt": "2026-11-13T14:27:05.406Z"
+  },
+  "bolster": {
+    "word": "bolster",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Support or strengthen; prop up.",
+        "examples": [
+          "Elwood read Dr. King's speeches to bolster his spirits before the tribunal."
+        ]
+      }
+    ],
+    "variations": [
+      "bolstered",
+      "bolstering"
+    ],
+    "createdAt": "2026-11-13T14:27:05.416Z",
+    "updatedAt": "2026-11-13T14:27:05.416Z"
+  },
+  "bombastic": {
+    "word": "bombastic",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "High-sounding but with little meaning; inflated.",
+        "examples": [
+          "The politician delivered a bombastic address praising the state's enlightened penal system."
+        ]
+      }
+    ],
+    "variations": [
+      "bombastically"
+    ],
+    "createdAt": "2026-11-13T14:27:05.440Z",
+    "updatedAt": "2026-11-13T14:27:05.440Z"
+  },
+  "boorish": {
+    "word": "boorish",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Rough and bad-mannered; coarse.",
+        "examples": [
+          "The lodgers displayed boorish contempt toward Gregor's grieving mother."
+        ]
+      }
+    ],
+    "variations": [
+      "boorishly"
+    ],
+    "createdAt": "2026-11-13T14:27:05.461Z",
+    "updatedAt": "2026-11-13T14:27:05.461Z"
+  },
+  "bourgeois": {
+    "word": "bourgeois",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Characteristic of the middle class, typically with reference to its perceived materialistic values or conventional attitudes.",
+        "examples": [
+          "The family's respectable bourgeois parlor was quickly sullied by neglect and lodgers."
+        ]
+      }
+    ],
+    "variations": [
+      "bourgeoisie"
+    ],
+    "createdAt": "2026-11-13T14:27:05.474Z",
+    "updatedAt": "2026-11-13T14:27:05.474Z"
+  },
+  "brazen": {
+    "word": "brazen",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Bold and without shame.",
+        "examples": [
+          "The guards engaged in brazen extortion against the helpless families of inmates."
+        ]
+      }
+    ],
+    "variations": [
+      "brazenly"
+    ],
+    "createdAt": "2026-11-13T14:27:05.485Z",
+    "updatedAt": "2026-11-13T14:27:05.485Z"
+  },
+  "brevity": {
+    "word": "brevity",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Concise and exact use of words in writing or speech; shortness of time.",
+        "examples": [
+          "The superintendent spoke with chilling brevity when announcing the punishments."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:27:05.493Z",
+    "updatedAt": "2026-11-13T14:27:05.493Z"
+  },
+  "bristle": {
+    "word": "bristle",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "React angrily or defensively, typically by drawing oneself up.",
+        "examples": [
+          "Gregor felt the fine hairs on his carapace bristle at the loud knock on the door."
+        ]
+      }
+    ],
+    "variations": [
+      "bristled",
+      "bristling"
+    ],
+    "createdAt": "2026-11-13T14:27:05.501Z",
+    "updatedAt": "2026-11-13T14:27:05.501Z"
+  },
+  "brood": {
+    "word": "brood",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Think deeply about something that makes one unhappy, angry, or worried.",
+        "examples": [
+          "Gregor lay under the sofa to brood over his family's growing poverty."
+        ]
+      }
+    ],
+    "variations": [
+      "brooded",
+      "brooding"
+    ],
+    "createdAt": "2026-11-13T14:27:05.509Z",
+    "updatedAt": "2026-11-13T14:27:05.509Z"
+  },
+  "brusque": {
+    "word": "brusque",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Abrupt or offhand in speech or manner.",
+        "examples": [
+          "The doctor gave a brusque nod and moved to the next bed in the ward."
+        ]
+      }
+    ],
+    "variations": [
+      "brusquely"
+    ],
+    "createdAt": "2026-11-13T14:27:05.516Z",
+    "updatedAt": "2026-11-13T14:27:05.516Z"
+  },
+  "bucolic": {
+    "word": "bucolic",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Relating to the pleasant aspects of the countryside and country life.",
+        "examples": [
+          "The tranquil bucolic surroundings of the campus masked a brutal regime of labor."
+        ]
+      }
+    ],
+    "variations": [
+      "bucolically"
+    ],
+    "createdAt": "2026-11-13T14:27:05.524Z",
+    "updatedAt": "2026-11-13T14:27:05.524Z"
+  },
+  "buffer": {
+    "word": "buffer",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A person or thing that prevents incompatible or antagonistic people or things from coming into contact with or harming each other.",
+        "examples": [
+          "The sister acted as an emotional buffer between Gregor and their enraged father."
+        ]
+      }
+    ],
+    "variations": [
+      "buffers"
+    ],
+    "createdAt": "2026-11-13T14:27:05.534Z",
+    "updatedAt": "2026-11-13T14:27:05.534Z"
+  },
+  "bulwark": {
+    "word": "bulwark",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A defensive wall; a person, institution, or principle that acts as a defense.",
+        "examples": [
+          "The physician saw his sanitation brigade as the only bulwark against collective despair."
+        ]
+      }
+    ],
+    "variations": [
+      "bulwarks"
+    ],
+    "createdAt": "2026-11-13T14:27:05.541Z",
+    "updatedAt": "2026-11-13T14:27:05.541Z"
+  },
+  "burgeon": {
+    "word": "burgeon",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Begin to grow or increase rapidly; flourish.",
+        "examples": [
+          "A burgeoning sense of solidarity began to unite the citizens behind the cordons."
+        ]
+      }
+    ],
+    "variations": [
+      "burgeoned",
+      "burgeoning"
+    ],
+    "createdAt": "2026-11-13T14:27:05.548Z",
+    "updatedAt": "2026-11-13T14:27:05.548Z"
+  },
+  "burnish": {
+    "word": "burnish",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Polish something, especially metal, by rubbing; enhance or improve.",
+        "examples": [
+          "The school trustees sought to burnish their public reputation with staged ceremonies."
+        ]
+      }
+    ],
+    "variations": [
+      "burnished",
+      "burnishing"
+    ],
+    "createdAt": "2026-11-13T14:27:05.556Z",
+    "updatedAt": "2026-11-13T14:27:05.556Z"
+  },
+  "buttress": {
+    "word": "buttress",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Increase the strength of or justify; support.",
+        "examples": [
+          "The prosecutor cited archaic statutes to buttress his demand for a severe sentence."
+        ]
+      }
+    ],
+    "variations": [
+      "buttressed",
+      "buttressing"
+    ],
+    "createdAt": "2026-11-13T14:27:05.564Z",
+    "updatedAt": "2026-11-13T14:27:05.564Z"
+  },
+  "bullied": {
+    "word": "bullied",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having been a victim of a bully.",
+        "examples": [
+          "The author skillfully incorporated bullied to emphasize the underlying theme.",
+          "In every chapter, the presence of bullied provided an unmistakable atmosphere.",
+          "Observers noted that bullied altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To intimidate (someone) as a bully.; To act aggressively towards.",
+        "examples": [
+          "You shouldn't bully people for being gay.",
+          "The team bullied their operations until further instructions arrived from headquarters.",
+          "She was deeply bullied by the unexpected turn of events during the meeting."
+        ]
+      }
+    ],
+    "variations": [
+      "bullied"
+    ],
+    "createdAt": "2026-11-14T05:16:09.015Z",
+    "updatedAt": "2026-11-14T05:16:09.015Z"
+  }
+}

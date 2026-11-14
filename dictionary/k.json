@@ -1,0 +1,145 @@
+{
+  "kin": {
+    "word": "kin",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Family members, relatives, or people connected by blood.",
+        "examples": [
+          "She invited all her kin to the wedding.",
+          "Villagers treated one another like kin.",
+          "He searched for surviving kin after the disaster.",
+          "Stories about ancestors were shared among the kin."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Related or similar in nature, type, or feeling.",
+        "examples": [
+          "The two cultures share kin traditions and beliefs.",
+          "Artists often feel kinship with creative minds from the past.",
+          "Their ideas were closely kin to each other.",
+          "The poet described humans and nature as deeply kin."
+        ]
+      }
+    ],
+    "variations": [
+      "kin",
+      "kinsman",
+      "kinsmen",
+      "kinswoman",
+      "kinswomen"
+    ],
+    "createdAt": "2026-11-13T12:45:55.773Z",
+    "updatedAt": "2026-11-13T12:45:55.773Z"
+  },
+  "king me": {
+    "word": "King me",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of king me",
+        "examples": [
+          "The author skillfully incorporated king me to emphasize the underlying theme.",
+          "In every chapter, the presence of king me provided an unmistakable atmosphere.",
+          "Observers noted that king me altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "king me"
+    ],
+    "createdAt": "2026-11-13T12:45:56.560Z",
+    "updatedAt": "2026-11-13T12:45:56.560Z"
+  },
+  "kickbacks": {
+    "word": "kickbacks",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Plural form) A backward kick; a retrograde movement of an extremity.; (Plural form) A covert, often illegal, payment in return for a favor consisting of providing an opportunity of chargeable transaction; especially, a kind of quid pro quo in which if you (an insider) secretly help me (an outsider) win the bid for the contract then I will secretly send you a portion of the contract value; thus, a kind of bribe.",
+        "examples": [
+          "The local kickbacks gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden kickbacks swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various kickbacks preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "kickbacks",
+      "kickback"
+    ],
+    "createdAt": "2026-11-13T12:45:56.895Z",
+    "updatedAt": "2026-11-13T12:45:56.895Z"
+  },
+  "kidding": {
+    "word": "kidding",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To make a fool of (someone).; To dupe or deceive (someone).",
+        "examples": [
+          "Only kidding.",
+          "Are you kidding me?",
+          "I kidding you not!"
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "The action of the verb kid.; The act of a goat giving birth.",
+        "examples": [
+          "He treated the oxen like they didn't exist, but he treated the goat kidding like a puppy.",
+          "She's a kidding. It's normal for her to have imaginary friends.",
+          "He's been living in Los Angeles for years now, but he's a Florida kidding."
+        ]
+      },
+      {
+        "partOfSpeech": "symbol",
+        "definition": "(Present participle / Gerund) ISO 639-3 language code for Koshin.",
+        "examples": [
+          "He stood by the window, kidding quietly as the light faded into evening.",
+          "They observed the fountain kidding clear water high into the morning air.",
+          "She spent hours kidding through the archives to locate the missing document."
+        ]
+      }
+    ],
+    "variations": [
+      "kidding",
+      "kid"
+    ],
+    "createdAt": "2026-11-13T12:45:57.544Z",
+    "updatedAt": "2026-11-13T12:45:57.544Z"
+  },
+  "kinetic": {
+    "word": "kinetic",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Relating to or resulting from motion.",
+        "examples": [
+          "The dormitory was filled with the frantic, kinetic energy of boys hiding contraband before inspection."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:35:30.333Z",
+    "updatedAt": "2026-11-13T14:35:30.333Z"
+  },
+  "knell": {
+    "word": "knell",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The sound of a bell, especially when rung solemnly for a death or funeral; an omen of death or end.",
+        "examples": [
+          "The tolling bell sounded the death knell of the city's commercial prosperity."
+        ]
+      }
+    ],
+    "variations": [
+      "knells"
+    ],
+    "createdAt": "2026-11-13T14:35:30.338Z",
+    "updatedAt": "2026-11-13T14:35:30.338Z"
+  }
+}

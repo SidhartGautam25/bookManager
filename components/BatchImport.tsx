@@ -877,7 +877,7 @@ Page 15: quixotic, recalcitrant`,
     setStatusMessage(null);
 
     try {
-      let endpoint = "/api/words/batch";
+      let endpoint = "/api/v2/books/words/batch";
       let payload: Record<string, unknown> = {
         bookName: selectedBook,
         entries: included.map((item) => ({

@@ -1,0 +1,912 @@
+{
+  "uninhibitedness": {
+    "word": "uninhibitedness",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The quality of behaving freely, naturally, and without embarrassment or restraint.",
+        "examples": [
+          "Children often show joyful uninhibitedness while playing.",
+          "Her uninhibitedness made conversations lively and honest.",
+          "The festival encouraged music, dance, and uninhibitedness.",
+          "Artists sometimes admire the uninhibitedness of street performers."
+        ]
+      }
+    ],
+    "variations": [
+      "uninhibited",
+      "uninhibitedness",
+      "uninhibitedly"
+    ],
+    "createdAt": "2026-11-13T12:45:54.922Z",
+    "updatedAt": "2026-11-13T12:45:54.922Z"
+  },
+  "unceasing": {
+    "word": "unceasing",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Continuing without stopping or interruption.",
+        "examples": [
+          "The unceasing rain flooded the streets.",
+          "She admired his unceasing determination.",
+          "Traffic noise continued in an unceasing stream outside.",
+          "The machine worked unceasingly throughout the night."
+        ]
+      }
+    ],
+    "variations": [
+      "unceasing",
+      "unceasingly"
+    ],
+    "createdAt": "2026-11-13T12:45:54.972Z",
+    "updatedAt": "2026-11-13T12:45:54.972Z"
+  },
+  "unassumingly": {
+    "word": "unassumingly",
+    "meanings": [
+      {
+        "partOfSpeech": "adverb",
+        "definition": "In a modest, humble, and simple way without trying to attract attention or appear important.",
+        "examples": [
+          "She spoke unassumingly despite her great achievements.",
+          "The famous writer lived unassumingly in a small town.",
+          "He dressed unassumingly and avoided showing off his wealth.",
+          "The professor unassumingly helped every student after class."
+        ]
+      }
+    ],
+    "variations": [
+      "unassuming",
+      "unassumingly",
+      "unassumingness"
+    ],
+    "createdAt": "2026-11-13T12:45:54.991Z",
+    "updatedAt": "2026-11-13T12:45:54.991Z"
+  },
+  "unerring": {
+    "word": "unerring",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Always correct, accurate, or reliable without making mistakes.",
+        "examples": [
+          "The hunter was famous for his unerring aim.",
+          "She showed an unerring sense of direction in the forest.",
+          "His unerring judgment impressed the entire team.",
+          "The scientist’s methods were considered remarkably unerring."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Certain, steady, and dependable in action or result.",
+        "examples": [
+          "The guide moved with unerring confidence through the mountains.",
+          "Her unerringly calm voice reassured the frightened children.",
+          "The dog followed the trail with unerring accuracy.",
+          "Years of experience gave him an unerring understanding of people."
+        ]
+      }
+    ],
+    "variations": [
+      "unerring",
+      "unerringly",
+      "err",
+      "errs",
+      "erring",
+      "erred",
+      "error",
+      "errors"
+    ],
+    "createdAt": "2026-11-13T12:45:55.096Z",
+    "updatedAt": "2026-11-13T12:45:55.096Z"
+  },
+  "unlamenting": {
+    "word": "unlamenting",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Not expressing grief, sorrow, or complaint despite pain or loss.",
+        "examples": [
+          "He faced hardship with an unlamenting spirit.",
+          "The old woman remained quiet and unlamenting after the loss.",
+          "Her unlamenting silence surprised everyone around her.",
+          "The soldiers endured difficult conditions with unlamenting courage."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Accepting suffering or difficulty without openly mourning or protesting.",
+        "examples": [
+          "The poem describes an unlamenting heart carrying hidden pain.",
+          "She lived an unlamenting life despite many struggles.",
+          "His face remained calm and unlamenting during the farewell.",
+          "Many admired his unlamenting strength in difficult times."
+        ]
+      }
+    ],
+    "variations": [
+      "unlamenting",
+      "lament",
+      "laments",
+      "lamenting",
+      "lamented",
+      "lamentation"
+    ],
+    "createdAt": "2026-11-13T12:45:55.375Z",
+    "updatedAt": "2026-11-13T12:45:55.375Z"
+  },
+  "unerringly": {
+    "word": "unerringly",
+    "meanings": [
+      {
+        "partOfSpeech": "adverb",
+        "definition": "In a way that is always accurate, correct, or without mistakes.",
+        "examples": [
+          "The bird unerringly found its way back to the nest.",
+          "She unerringly recognized his voice in the crowd.",
+          "The guide led them unerringly through the forest.",
+          "His instincts unerringly pointed toward the truth."
+        ]
+      },
+      {
+        "partOfSpeech": "adverb",
+        "definition": "With complete certainty or reliability.",
+        "examples": [
+          "The doctor unerringly identified the symptoms.",
+          "He aimed unerringly at the target.",
+          "Her memory unerringly recalled small details.",
+          "The detective unerringly followed the clues to the culprit."
+        ]
+      }
+    ],
+    "variations": [
+      "unerring",
+      "unerringly",
+      "err",
+      "errs",
+      "erring",
+      "erred"
+    ],
+    "createdAt": "2026-11-13T12:45:55.415Z",
+    "updatedAt": "2026-11-13T12:45:55.415Z"
+  },
+  "unceasingly": {
+    "word": "unceasingly",
+    "meanings": [
+      {
+        "partOfSpeech": "adverb",
+        "definition": "Without stopping; continuously or constantly.",
+        "examples": [
+          "Rain fell unceasingly throughout the night.",
+          "She worked unceasingly to support her family.",
+          "The river flowed unceasingly toward the sea.",
+          "His mind worried unceasingly about the future."
+        ]
+      },
+      {
+        "partOfSpeech": "adverb",
+        "definition": "In a way that continues for a long time without interruption or rest.",
+        "examples": [
+          "The machine hummed unceasingly in the factory.",
+          "Birds sang unceasingly at dawn.",
+          "The child asked questions unceasingly during the journey.",
+          "Winds blew unceasingly across the desert."
+        ]
+      }
+    ],
+    "variations": [
+      "unceasing",
+      "unceasingly",
+      "cease",
+      "ceases",
+      "ceasing",
+      "ceased"
+    ],
+    "createdAt": "2026-11-13T12:45:55.560Z",
+    "updatedAt": "2026-11-13T12:45:55.560Z"
+  },
+  "utterable": {
+    "word": "utterable",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Able to be spoken, expressed, or put into words.",
+        "examples": [
+          "Some feelings are difficult but still utterable with honesty.",
+          "His thoughts were finally made utterable through poetry.",
+          "The fear was real but hardly utterable before strangers.",
+          "Pain that seems unutterable may still seek expression."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Possible or suitable to say aloud.",
+        "examples": [
+          "Certain truths remained utterable only in private conversations.",
+          "The joke was barely utterable in formal company.",
+          "Her anger became utterable after long silence.",
+          "Not every thought is easily utterable in public."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To speak, say, or express something aloud.",
+        "examples": [
+          "He uttered a quiet apology before leaving.",
+          "She could barely utter his name through tears.",
+          "The witness uttered only a few words in court.",
+          "Children were uttering excited cries during the game."
+        ]
+      }
+    ],
+    "variations": [
+      "utterable",
+      "utterably",
+      "utter",
+      "utters",
+      "uttering",
+      "uttered"
+    ],
+    "createdAt": "2026-11-13T12:45:55.564Z",
+    "updatedAt": "2026-11-13T12:45:55.564Z"
+  },
+  "underbid": {
+    "word": "underbid",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To bid too low.; To bid lower than another.",
+        "examples": [
+          "The author skillfully incorporated underbid to emphasize the underlying theme.",
+          "In every chapter, the presence of underbid provided an unmistakable atmosphere.",
+          "Observers noted that underbid altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A bid that is lower than another.",
+        "examples": [
+          "The author skillfully incorporated underbid to emphasize the underlying theme.",
+          "In every chapter, the presence of underbid provided an unmistakable atmosphere.",
+          "Observers noted that underbid altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "underbid"
+    ],
+    "createdAt": "2026-11-13T12:45:56.856Z",
+    "updatedAt": "2026-11-13T12:45:56.856Z"
+  },
+  "ungraded": {
+    "word": "ungraded",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Not graded; having no grade.",
+        "examples": [
+          "The author skillfully incorporated ungraded to emphasize the underlying theme.",
+          "In every chapter, the presence of ungraded provided an unmistakable atmosphere.",
+          "Observers noted that ungraded altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "ungraded"
+    ],
+    "createdAt": "2026-11-13T12:45:57.479Z",
+    "updatedAt": "2026-11-13T12:45:57.479Z"
+  },
+  "underneath": {
+    "word": "underneath",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The lower surface or part of something.; A background radio sound track played during a specific announcement or program.",
+        "examples": [
+          "The underneath of the aircraft was painted blue.",
+          "The author skillfully incorporated underneath to emphasize the underlying theme.",
+          "In every chapter, the presence of underneath provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Under, lower.",
+        "examples": [
+          "You can have the underneath bunk.",
+          "The underneath part is harder to reach.",
+          "The author skillfully incorporated underneath to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "adverb",
+        "definition": "Below; in a place beneath.; On the underside or lower face.",
+        "examples": [
+          "I can't take my sweater off: I amn't wearing anything else on underneath.",
+          "I lifted up the pile of clothes, and underneath, on the floor, was a dark red stain.",
+          "(Can we add an example for this sense?)."
+        ]
+      },
+      {
+        "partOfSpeech": "preposition",
+        "definition": "Under, below, beneath.; Under the control or power of.",
+        "examples": [
+          "Underneath the water, all was calm.",
+          "There was little freedom underneath the jackboot.",
+          "We flew underneath the bridge."
+        ]
+      }
+    ],
+    "variations": [
+      "underneath"
+    ],
+    "createdAt": "2026-11-13T12:45:57.957Z",
+    "updatedAt": "2026-11-13T12:45:57.957Z"
+  },
+  "upright": {
+    "word": "upright",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Any vertical part of a structure, especially one of the goal posts in sports.; A word clued by the successive initial, middle, or final letters of the cross-lights in a double acrostic or triple acrostic.",
+        "examples": [
+          "Can you fix that? It's out of upright.",
+          "The author skillfully incorporated upright to emphasize the underlying theme.",
+          "In every chapter, the presence of upright provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To set upright or stand back up (something that has fallen).",
+        "examples": [
+          "The author skillfully incorporated upright to emphasize the underlying theme.",
+          "In every chapter, the presence of upright provided an unmistakable atmosphere.",
+          "Observers noted that upright altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Vertical; erect.; Greater in height than breadth.",
+        "examples": [
+          "I was standing upright, waiting for my orders.",
+          "My brother didn't get angry when his son knocked over the lamp; he simply called the boy over and helped him set it upright again.",
+          "He's an upright runner."
+        ]
+      },
+      {
+        "partOfSpeech": "adverb",
+        "definition": "In or into an upright position; In or into an upright position.",
+        "examples": [
+          "I was standing upright, waiting for my orders.",
+          "Amputee hockey is played upright.",
+          "The author skillfully incorporated upright to emphasize the underlying theme."
+        ]
+      }
+    ],
+    "variations": [
+      "upright"
+    ],
+    "createdAt": "2026-11-13T12:45:58.125Z",
+    "updatedAt": "2026-11-13T12:45:58.125Z"
+  },
+  "undoing": {
+    "word": "undoing",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The act of loosening or unfastening; Ruin; defeat, that which causes defeat or ruin.",
+        "examples": [
+          "His fatal flaw was his undoing. In a sense he defeated himself.",
+          "In the end, his jealousy was his undoing.",
+          "How many undos does this program support?"
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To reverse the effects of an action.; To unfasten.",
+        "examples": [
+          "Fortunately, we can undo most of the damage to the system by the war.",
+          "Could you undo my buckle for me?",
+          "Fortunately, we can undoing most of the damage to the system by the war."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "(Present participle / Gerund) Misspelling of undue.",
+        "examples": [
+          "He stood by the window, undoing quietly as the light faded into evening.",
+          "They observed the fountain undoing clear water high into the morning air.",
+          "She spent hours undoing through the archives to locate the missing document."
+        ]
+      }
+    ],
+    "variations": [
+      "undoing",
+      "undo"
+    ],
+    "createdAt": "2026-11-13T13:38:39.044Z",
+    "updatedAt": "2026-11-13T13:38:39.044Z"
+  },
+  "undertow": {
+    "word": "undertow",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A current in the sea or a river below the surface and moving in a different direction to the surface current.",
+        "examples": [
+          "The raging river's undertow swept the mules off their feet and threatened to capsize the wagon."
+        ]
+      }
+    ],
+    "variations": [
+      "undertows"
+    ],
+    "createdAt": "2026-11-13T14:23:18.866Z",
+    "updatedAt": "2026-11-13T14:23:18.866Z"
+  },
+  "ubiquitous": {
+    "word": "ubiquitous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Present, appearing, or found everywhere.",
+        "examples": [
+          "The smell of carbolic acid was ubiquitous throughout the quarantined coastal town."
+        ]
+      }
+    ],
+    "variations": [
+      "ubiquitously",
+      "ubiquity"
+    ],
+    "createdAt": "2026-11-13T14:40:43.290Z",
+    "updatedAt": "2026-11-13T14:40:43.290Z"
+  },
+  "ulterior": {
+    "word": "ulterior",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Existing beyond what is obvious or admitted; intentionally hidden.",
+        "examples": [
+          "The superintendent had an ulterior financial motive for expanding the school's cane harvest."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:40:43.295Z",
+    "updatedAt": "2026-11-13T14:40:43.295Z"
+  },
+  "umbrage": {
+    "word": "umbrage",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Offense or annoyance.",
+        "examples": [
+          "The chief clerk took umbrage at Gregor's delayed response to his summons."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:40:43.301Z",
+    "updatedAt": "2026-11-13T14:40:43.301Z"
+  },
+  "unabashed": {
+    "word": "unabashed",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Not embarrassed, disconcerted, or ashamed.",
+        "examples": [
+          "The warden was unabashed in his defense of corporal punishment as a Christian duty."
+        ]
+      }
+    ],
+    "variations": [
+      "unabashedly"
+    ],
+    "createdAt": "2026-11-13T14:40:43.306Z",
+    "updatedAt": "2026-11-13T14:40:43.306Z"
+  },
+  "unanimous": {
+    "word": "unanimous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Held or carried by everyone involved of an opinion, decision, or vote.",
+        "examples": [
+          "The jury returned a unanimous verdict of guilty after less than ten minutes of deliberation."
+        ]
+      }
+    ],
+    "variations": [
+      "unanimously"
+    ],
+    "createdAt": "2026-11-13T14:40:43.312Z",
+    "updatedAt": "2026-11-13T14:40:43.312Z"
+  },
+  "uncanny": {
+    "word": "uncanny",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Strange or mysterious, especially in an unsettling way.",
+        "examples": [
+          "Darl possessed an uncanny ability to perceive the secret thoughts of his siblings."
+        ]
+      }
+    ],
+    "variations": [
+      "uncannily"
+    ],
+    "createdAt": "2026-11-13T14:40:43.318Z",
+    "updatedAt": "2026-11-13T14:40:43.318Z"
+  },
+  "unconscionable": {
+    "word": "unconscionable",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Not right or reasonable; unreasonably excessive.",
+        "examples": [
+          "The state permitted an unconscionable degree of brutality to continue unchecked for decades."
+        ]
+      }
+    ],
+    "variations": [
+      "unconscionably"
+    ],
+    "createdAt": "2026-11-13T14:40:43.323Z",
+    "updatedAt": "2026-11-13T14:40:43.323Z"
+  },
+  "uncouth": {
+    "word": "uncouth",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Lacking good manners, refinement, or grace.",
+        "examples": [
+          "The lodgers were uncouth men who spat on the parlor rug and insulted Gregor's mother."
+        ]
+      }
+    ],
+    "variations": [
+      "uncouthly"
+    ],
+    "createdAt": "2026-11-13T14:40:43.329Z",
+    "updatedAt": "2026-11-13T14:40:43.329Z"
+  },
+  "understate": {
+    "word": "understate",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Describe or represent something as being smaller, worse, or less important than it actually is.",
+        "examples": [
+          "The official bulletins continued to understate the true number of plague fatalities."
+        ]
+      }
+    ],
+    "variations": [
+      "understated",
+      "understatement"
+    ],
+    "createdAt": "2026-11-13T14:40:43.335Z",
+    "updatedAt": "2026-11-13T14:40:43.335Z"
+  },
+  "undulate": {
+    "word": "undulate",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Move or go with a smooth up-and-down motion.",
+        "examples": [
+          "Gregor watched his soft, segmented underbelly undulate as he struggled to turn over."
+        ]
+      }
+    ],
+    "variations": [
+      "undulated",
+      "undulating"
+    ],
+    "createdAt": "2026-11-13T14:40:43.340Z",
+    "updatedAt": "2026-11-13T14:40:43.340Z"
+  },
+  "unequivocal": {
+    "word": "unequivocal",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Leaving no doubt; unambiguous.",
+        "examples": [
+          "The forensic pathologist gave unequivocal testimony: the victim had died of fractured ribs."
+        ]
+      }
+    ],
+    "variations": [
+      "unequivocally"
+    ],
+    "createdAt": "2026-11-13T14:40:43.346Z",
+    "updatedAt": "2026-11-13T14:40:43.346Z"
+  },
+  "unfathomable": {
+    "word": "unfathomable",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Incapable of being fully explored or understood.",
+        "examples": [
+          "The sudden transformation of a human being into a vermin was an unfathomable mystery."
+        ]
+      }
+    ],
+    "variations": [
+      "unfathomably"
+    ],
+    "createdAt": "2026-11-13T14:40:43.355Z",
+    "updatedAt": "2026-11-13T14:40:43.355Z"
+  },
+  "ungainly": {
+    "word": "ungainly",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Awkward; clumsy.",
+        "examples": [
+          "Gregor's rounded, domed body proved extraordinarily ungainly on the narrow linoleum floor."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:40:43.360Z",
+    "updatedAt": "2026-11-13T14:40:43.360Z"
+  },
+  "unilateral": {
+    "word": "unilateral",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Performed by or affecting only one person, group, or country involved in a particular situation, without the agreement of another or the others.",
+        "examples": [
+          "The governor made a unilateral decision to seal the county borders without consulting the mayor."
+        ]
+      }
+    ],
+    "variations": [
+      "unilaterally"
+    ],
+    "createdAt": "2026-11-13T14:40:43.365Z",
+    "updatedAt": "2026-11-13T14:40:43.365Z"
+  },
+  "unmitigated": {
+    "word": "unmitigated",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Absolute; unqualified, typically of something bad.",
+        "examples": [
+          "The flood was an unmitigated disaster that swept away the cotton crop and the road."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:40:43.372Z",
+    "updatedAt": "2026-11-13T14:40:43.372Z"
+  },
+  "unpalatable": {
+    "word": "unpalatable",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Not pleasant to taste; difficult to put up with or accept.",
+        "examples": [
+          "The truth about the White House beatings was deeply unpalatable to state officials."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:40:43.377Z",
+    "updatedAt": "2026-11-13T14:40:43.377Z"
+  },
+  "unprecedented": {
+    "word": "unprecedented",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Never done or known before.",
+        "examples": [
+          "The military quarantine imposed an unprecedented restriction on civilian freedom."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:40:43.384Z",
+    "updatedAt": "2026-11-13T14:40:43.384Z"
+  },
+  "unremitting": {
+    "word": "unremitting",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Never relaxing or slackening; incessant.",
+        "examples": [
+          "The unremitting summer heat accelerated the decomposition of the corpse on the wagon."
+        ]
+      }
+    ],
+    "variations": [
+      "unremittingly"
+    ],
+    "createdAt": "2026-11-13T14:40:43.390Z",
+    "updatedAt": "2026-11-13T14:40:43.390Z"
+  },
+  "unscrupulous": {
+    "word": "unscrupulous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having or showing no moral principles; not honest or fair.",
+        "examples": [
+          "Unscrupulous merchants hoarded flour and beans to drive prices to astronomical heights."
+        ]
+      }
+    ],
+    "variations": [
+      "unscrupulously"
+    ],
+    "createdAt": "2026-11-13T14:40:43.396Z",
+    "updatedAt": "2026-11-13T14:40:43.396Z"
+  },
+  "untenable": {
+    "word": "untenable",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Not able to be maintained or defended against attack or objection of a position or view.",
+        "examples": [
+          "The administration's claim that the graves were from an influenza epidemic became untenable."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:40:43.401Z",
+    "updatedAt": "2026-11-13T14:40:43.401Z"
+  },
+  "unwarranted": {
+    "word": "unwarranted",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Not justified or authorized.",
+        "examples": [
+          "The beating of a teenager for speaking out of turn was completely unwarranted."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:40:43.408Z",
+    "updatedAt": "2026-11-13T14:40:43.408Z"
+  },
+  "unwieldy": {
+    "word": "unwieldy",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Difficult to carry or move because of its size, shape, or weight.",
+        "examples": [
+          "The heavy cedar coffin was unwieldy and dangerously unbalanced across the wagon bed."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:40:43.414Z",
+    "updatedAt": "2026-11-13T14:40:43.414Z"
+  },
+  "upheaval": {
+    "word": "upheaval",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A violent or sudden change or disruption to something.",
+        "examples": [
+          "The civil rights boycotts caused immense political upheaval throughout the Deep South."
+        ]
+      }
+    ],
+    "variations": [
+      "upheavals"
+    ],
+    "createdAt": "2026-11-13T14:40:43.420Z",
+    "updatedAt": "2026-11-13T14:40:43.420Z"
+  },
+  "urbane": {
+    "word": "urbane",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Courteous and refined in manner of a person, especially a man.",
+        "examples": [
+          "Dr. Rieux was an urbane and educated physician who spoke with quiet precision."
+        ]
+      }
+    ],
+    "variations": [
+      "urbanely"
+    ],
+    "createdAt": "2026-11-13T14:40:43.426Z",
+    "updatedAt": "2026-11-13T14:40:43.426Z"
+  },
+  "usurp": {
+    "word": "usurp",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Take a position of power or importance illegally or by force.",
+        "examples": [
+          "The corrupt deputy sought to usurp the authority of the elderly county sheriff."
+        ]
+      }
+    ],
+    "variations": [
+      "usurped",
+      "usurping"
+    ],
+    "createdAt": "2026-11-13T14:40:43.433Z",
+    "updatedAt": "2026-11-13T14:40:43.433Z"
+  },
+  "utilitarian": {
+    "word": "utilitarian",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Designed to be useful or practical rather than attractive.",
+        "examples": [
+          "The reform school buildings were grim, utilitarian structures of unpainted cinderblock."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:40:43.439Z",
+    "updatedAt": "2026-11-13T14:40:43.439Z"
+  },
+  "untamed": {
+    "word": "untamed",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Wild, uncontrolled, especially of animals not domesticated or trained to human contact.",
+        "examples": [
+          "The mustang is an untamed horse that roams where it wants, with little interest in humans.",
+          "The author skillfully incorporated untamed to emphasize the underlying theme.",
+          "In every chapter, the presence of untamed provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "untamed"
+    ],
+    "createdAt": "2026-11-14T05:15:55.676Z",
+    "updatedAt": "2026-11-14T05:15:55.676Z"
+  },
+  "urinate": {
+    "word": "urinate",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(urology) To pass urine from the body.",
+        "examples": [
+          "The author skillfully incorporated urinate to emphasize the underlying theme.",
+          "In every chapter, the presence of urinate provided an unmistakable atmosphere.",
+          "Observers noted that urinate altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "urinate"
+    ],
+    "createdAt": "2026-11-14T05:16:09.376Z",
+    "updatedAt": "2026-11-14T05:16:09.376Z"
+  }
+}

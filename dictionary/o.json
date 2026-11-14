@@ -1,0 +1,688 @@
+{
+  "object": {
+    "word": "Object",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A thing that has physical existence.",
+        "examples": [
+          "Mary Jane had been the object of Peter's affection for years."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To disagree with or oppose something or someone; (especially in a Court of Law) to raise an objection.",
+        "examples": [
+          "I object to the proposal to build a new airport terminal."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "A dummy adjective definition for testing.",
+        "examples": []
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T12:45:54.777Z",
+    "updatedAt": "2026-11-13T12:45:54.777Z"
+  },
+  "obscured": {
+    "word": "obscured",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Hidden, blocked, or made difficult to see, understand, or notice.",
+        "examples": [
+          "Dark clouds obscured the moon.",
+          "The truth was obscured by rumors and confusion.",
+          "Smoke had obscured the view of the mountains.",
+          "His real intentions remained obscured for years."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Not clearly seen, understood, or known.",
+        "examples": [
+          "The road became obscured in the heavy fog.",
+          "Several details remained obscured in the old document.",
+          "Her face was partly obscured by shadows.",
+          "The writer discussed obscure and obscured historical events."
+        ]
+      }
+    ],
+    "variations": [
+      "obscure",
+      "obscures",
+      "obscuring",
+      "obscured",
+      "obscurity"
+    ],
+    "createdAt": "2026-11-13T12:45:55.021Z",
+    "updatedAt": "2026-11-13T12:45:55.021Z"
+  },
+  "obliged": {
+    "word": "obliged",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Forced, required, or expected to do something because of duty, rules, or circumstances.",
+        "examples": [
+          "He felt obliged to help his old friend.",
+          "Employees are obliged to follow safety instructions.",
+          "Bad weather obliged the travelers to stop early.",
+          "She was legally obliged to appear in court."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Grateful because someone has done a favor or kindness.",
+        "examples": [
+          "I’m much obliged for your help.",
+          "She felt deeply obliged to the doctor who saved her life.",
+          "They were obliged to everyone who supported the project.",
+          "He politely thanked the host and said he was obliged."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To do someone a favor or help them willingly.",
+        "examples": [
+          "Could you oblige me with some advice?",
+          "The shopkeeper gladly obliged the customer’s request.",
+          "She often obliges friends without expecting anything in return.",
+          "He obliged by carrying the heavy bags upstairs."
+        ]
+      }
+    ],
+    "variations": [
+      "oblige",
+      "obliges",
+      "obliging",
+      "obliged",
+      "obligation",
+      "obligatory"
+    ],
+    "createdAt": "2026-11-13T12:45:55.245Z",
+    "updatedAt": "2026-11-13T12:45:55.245Z"
+  },
+  "obtuse": {
+    "word": "obtuse",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To dull or reduce an emotion or a physical state.",
+        "examples": [
+          "The author skillfully incorporated obtuse to emphasize the underlying theme.",
+          "In every chapter, the presence of obtuse provided an unmistakable atmosphere.",
+          "Observers noted that obtuse altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Blunt; not sharp, pointed, or acute in form.; Intellectually dull or dim-witted.",
+        "examples": [
+          "The author skillfully incorporated obtuse to emphasize the underlying theme.",
+          "In every chapter, the presence of obtuse provided an unmistakable atmosphere.",
+          "Observers noted that obtuse altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "obtuse"
+    ],
+    "createdAt": "2026-11-13T12:45:57.039Z",
+    "updatedAt": "2026-11-13T12:45:57.039Z"
+  },
+  "outraged": {
+    "word": "outraged",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To cause or commit an outrage upon; to treat with violence or abuse.; To violate; to rape (a female).",
+        "examples": [
+          "The team outraged their operations until further instructions arrived from headquarters.",
+          "She was deeply outraged by the unexpected turn of events during the meeting.",
+          "He carefully outraged the remaining pieces into a cohesive structure."
+        ]
+      }
+    ],
+    "variations": [
+      "outraged"
+    ],
+    "createdAt": "2026-11-13T12:45:57.749Z",
+    "updatedAt": "2026-11-13T12:45:57.749Z"
+  },
+  "outskirt": {
+    "word": "outskirt",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A more remote part of a town or city; the periphery, environs; a suburb.",
+        "examples": [
+          "Many people commute into the business district from the outskirts of town.",
+          "The author skillfully incorporated outskirt to emphasize the underlying theme.",
+          "In every chapter, the presence of outskirt provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To surround as an outskirt.",
+        "examples": [
+          "The author skillfully incorporated outskirt to emphasize the underlying theme.",
+          "In every chapter, the presence of outskirt provided an unmistakable atmosphere.",
+          "Observers noted that outskirt altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "outskirt"
+    ],
+    "createdAt": "2026-11-13T12:45:58.724Z",
+    "updatedAt": "2026-11-13T12:45:58.724Z"
+  },
+  "ostracize": {
+    "word": "ostracize",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Exclude someone from a society or group.",
+        "examples": [
+          "Anyone who cooperated with the state investigators risked being ostracized by the guards."
+        ]
+      }
+    ],
+    "variations": [
+      "ostracized",
+      "ostracizing",
+      "ostracism"
+    ],
+    "createdAt": "2026-11-13T14:23:18.719Z",
+    "updatedAt": "2026-11-13T14:23:18.719Z"
+  },
+  "obsequious": {
+    "word": "obsequious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Obedient or attentive to an excessive or servile degree.",
+        "examples": [
+          "The father adopted an obsequious bow whenever addressing the haughty lodgers."
+        ]
+      }
+    ],
+    "variations": [
+      "obsequiously",
+      "obsequiousness"
+    ],
+    "createdAt": "2026-11-13T14:23:18.817Z",
+    "updatedAt": "2026-11-13T14:23:18.817Z"
+  },
+  "obstinate": {
+    "word": "obstinate",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Stubbornly refusing to change one's opinion or chosen course of action.",
+        "examples": [
+          "Anse remained obstinate in his vow to bury Addie forty miles away in town."
+        ]
+      }
+    ],
+    "variations": [
+      "obstinately",
+      "obstinacy"
+    ],
+    "createdAt": "2026-11-13T14:23:18.869Z",
+    "updatedAt": "2026-11-13T14:23:18.869Z"
+  },
+  "obdurate": {
+    "word": "obdurate",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Stubbornly refusing to change one's opinion or course of action.",
+        "examples": [
+          "Anse remained obdurate, refusing to let his wife be buried anywhere other than Jefferson."
+        ]
+      }
+    ],
+    "variations": [
+      "obdurately"
+    ],
+    "createdAt": "2026-11-13T14:38:23.067Z",
+    "updatedAt": "2026-11-13T14:38:23.067Z"
+  },
+  "obliterate": {
+    "word": "obliterate",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Destroy utterly; wipe out; cause to become invisible or indistinct.",
+        "examples": [
+          "The administration tried to obliterate every trace of the secret burial ground."
+        ]
+      }
+    ],
+    "variations": [
+      "obliterated",
+      "obliterating",
+      "obliteration"
+    ],
+    "createdAt": "2026-11-13T14:38:23.074Z",
+    "updatedAt": "2026-11-13T14:38:23.074Z"
+  },
+  "oblivion": {
+    "word": "oblivion",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The state of being unaware or unconscious of what is happening; the state of being forgotten.",
+        "examples": [
+          "The forgotten boys had been consigned to oblivion until the forensic team began digging."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:23.079Z",
+    "updatedAt": "2026-11-13T14:38:23.079Z"
+  },
+  "obnoxious": {
+    "word": "obnoxious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Extremely unpleasant; offensive.",
+        "examples": [
+          "The lodgers complained bitterly about the obnoxious odor seeping from Gregor's closed room."
+        ]
+      }
+    ],
+    "variations": [
+      "obnoxiously"
+    ],
+    "createdAt": "2026-11-13T14:38:23.083Z",
+    "updatedAt": "2026-11-13T14:38:23.083Z"
+  },
+  "obscure": {
+    "word": "obscure",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Not discovered or known about; uncertain; not clearly expressed or easily understood.",
+        "examples": [
+          "The origins of the pestilence remained obscure despite rigorous scientific inquiries."
+        ]
+      }
+    ],
+    "variations": [
+      "obscurely",
+      "obscurity"
+    ],
+    "createdAt": "2026-11-13T14:38:23.087Z",
+    "updatedAt": "2026-11-13T14:38:23.087Z"
+  },
+  "obsolete": {
+    "word": "obsolete",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "No longer produced or used; out of date.",
+        "examples": [
+          "The antiquated textbooks donated to the black campus were completely obsolete."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:23.094Z",
+    "updatedAt": "2026-11-13T14:38:23.094Z"
+  },
+  "obtrusive": {
+    "word": "obtrusive",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Noticeable or prominent in an unwelcome or intrusive way.",
+        "examples": [
+          "The armed sentries on the rooftops were an obtrusive reminder of the military cordon."
+        ]
+      }
+    ],
+    "variations": [
+      "obtrusively"
+    ],
+    "createdAt": "2026-11-13T14:38:23.100Z",
+    "updatedAt": "2026-11-13T14:38:23.100Z"
+  },
+  "obviate": {
+    "word": "obviate",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Remove a need or difficulty; avoid; prevent.",
+        "examples": [
+          "Securing an official health pass would obviate the need to risk crossing through the sewers."
+        ]
+      }
+    ],
+    "variations": [
+      "obviated",
+      "obviating"
+    ],
+    "createdAt": "2026-11-13T14:38:23.109Z",
+    "updatedAt": "2026-11-13T14:38:23.109Z"
+  },
+  "occlude": {
+    "word": "occlude",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Stop, close up, or obstruct an opening, orifice, or passage.",
+        "examples": [
+          "Thick blood clots began to occlude the patient's major arteries as the infection peaked."
+        ]
+      }
+    ],
+    "variations": [
+      "occluded",
+      "occluding",
+      "occlusion"
+    ],
+    "createdAt": "2026-11-13T14:38:23.114Z",
+    "updatedAt": "2026-11-13T14:38:23.114Z"
+  },
+  "odious": {
+    "word": "odious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Extremely unpleasant; repulsive.",
+        "examples": [
+          "Gregor recognized that his physical form had become profoundly odious to those he loved."
+        ]
+      }
+    ],
+    "variations": [
+      "odiously"
+    ],
+    "createdAt": "2026-11-13T14:38:23.119Z",
+    "updatedAt": "2026-11-13T14:38:23.119Z"
+  },
+  "ominous": {
+    "word": "ominous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Giving the impression that something bad or unpleasant is going to happen; threatening; inauspicious.",
+        "examples": [
+          "The low rumbling of thunder beyond the flooded river was an ominous sign."
+        ]
+      }
+    ],
+    "variations": [
+      "ominously"
+    ],
+    "createdAt": "2026-11-13T14:38:23.123Z",
+    "updatedAt": "2026-11-13T14:38:23.123Z"
+  },
+  "onerous": {
+    "word": "onerous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Of a task, duty, or responsibility involving an amount of effort and difficulty that is oppressively burdensome.",
+        "examples": [
+          "Cleaning the dormitory latrines was the most onerous punishment assigned to junior inmates."
+        ]
+      }
+    ],
+    "variations": [
+      "onerously"
+    ],
+    "createdAt": "2026-11-13T14:38:23.128Z",
+    "updatedAt": "2026-11-13T14:38:23.128Z"
+  },
+  "opaque": {
+    "word": "opaque",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Not able to be seen through; not transparent; hard or impossible to understand.",
+        "examples": [
+          "The school's bookkeeping methods were deliberately opaque to conceal stolen funds."
+        ]
+      }
+    ],
+    "variations": [
+      "opaquely"
+    ],
+    "createdAt": "2026-11-13T14:38:23.132Z",
+    "updatedAt": "2026-11-13T14:38:23.132Z"
+  },
+  "opportune": {
+    "word": "opportune",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Of a time well-chosen or particularly favorable or appropriate.",
+        "examples": [
+          "Turner waited for an opportune moment when the guards were distracted by the thunderstorm."
+        ]
+      }
+    ],
+    "variations": [
+      "opportunely"
+    ],
+    "createdAt": "2026-11-13T14:38:23.136Z",
+    "updatedAt": "2026-11-13T14:38:23.136Z"
+  },
+  "oppressive": {
+    "word": "oppressive",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Inflicting harsh and authoritarian treatment on a person or group; of weather close, sultry, and suffocating.",
+        "examples": [
+          "The oppressive humidity and constant threat of violence made sleep impossible."
+        ]
+      }
+    ],
+    "variations": [
+      "oppressively",
+      "oppression"
+    ],
+    "createdAt": "2026-11-13T14:38:23.141Z",
+    "updatedAt": "2026-11-13T14:38:23.141Z"
+  },
+  "opprobrium": {
+    "word": "opprobrium",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Harsh criticism or censure; the public disgrace arising from someone's shameful conduct.",
+        "examples": [
+          "The international press covered the reformatory with well-deserved opprobrium."
+        ]
+      }
+    ],
+    "variations": [],
+    "createdAt": "2026-11-13T14:38:23.146Z",
+    "updatedAt": "2026-11-13T14:38:23.146Z"
+  },
+  "opulent": {
+    "word": "opulent",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Ostentatiously rich and luxurious or lavish.",
+        "examples": [
+          "The superintendent lived in an opulent brick residence while the boys slept on bare springs."
+        ]
+      }
+    ],
+    "variations": [
+      "opulently",
+      "opulence"
+    ],
+    "createdAt": "2026-11-13T14:38:23.151Z",
+    "updatedAt": "2026-11-13T14:38:23.151Z"
+  },
+  "ordain": {
+    "word": "ordain",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Order or decree officially.",
+        "examples": [
+          "The municipal council ordained that all domestic pets within the quarantined zone be destroyed."
+        ]
+      }
+    ],
+    "variations": [
+      "ordained",
+      "ordaining"
+    ],
+    "createdAt": "2026-11-13T14:38:23.156Z",
+    "updatedAt": "2026-11-13T14:38:23.156Z"
+  },
+  "ordeal": {
+    "word": "ordeal",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A painful or horrific experience, especially a protracted one.",
+        "examples": [
+          "The surviving boys bore the physical and emotional scars of their ordeal for the rest of their lives."
+        ]
+      }
+    ],
+    "variations": [
+      "ordeals"
+    ],
+    "createdAt": "2026-11-13T14:38:23.161Z",
+    "updatedAt": "2026-11-13T14:38:23.161Z"
+  },
+  "ordinance": {
+    "word": "ordinance",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An authoritative order; a decree.",
+        "examples": [
+          "The mayor signed an emergency ordinance forbidding public assemblies of more than three citizens."
+        ]
+      }
+    ],
+    "variations": [
+      "ordinances"
+    ],
+    "createdAt": "2026-11-13T14:38:23.166Z",
+    "updatedAt": "2026-11-13T14:38:23.166Z"
+  },
+  "oscillate": {
+    "word": "oscillate",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Move or swing back and forth at a regular speed; waver between different opinions or actions.",
+        "examples": [
+          "The patient's temperature would oscillate violently between shivering chills and raging fever."
+        ]
+      }
+    ],
+    "variations": [
+      "oscillated",
+      "oscillating"
+    ],
+    "createdAt": "2026-11-13T14:38:23.172Z",
+    "updatedAt": "2026-11-13T14:38:23.172Z"
+  },
+  "ostensible": {
+    "word": "ostensible",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Stated or appearing to be true, but not necessarily so.",
+        "examples": [
+          "The ostensible purpose of the academy was education, but its actual practice was servitude."
+        ]
+      }
+    ],
+    "variations": [
+      "ostensibly"
+    ],
+    "createdAt": "2026-11-13T14:38:23.177Z",
+    "updatedAt": "2026-11-13T14:38:23.177Z"
+  },
+  "ostentatious": {
+    "word": "ostentatious",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Characterized by vulgar or pretentious display; designed to impress or attract notice.",
+        "examples": [
+          "The head trustee arrived in an ostentatious Cadillac bought with diverted state funds."
+        ]
+      }
+    ],
+    "variations": [
+      "ostentatiously"
+    ],
+    "createdAt": "2026-11-13T14:38:23.182Z",
+    "updatedAt": "2026-11-13T14:38:23.182Z"
+  },
+  "oust": {
+    "word": "oust",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Drive out or expel someone from a position or place.",
+        "examples": [
+          "The reformers fought for ten years to oust the entrenched prison administration."
+        ]
+      }
+    ],
+    "variations": [
+      "ousted",
+      "ousting"
+    ],
+    "createdAt": "2026-11-13T14:38:23.187Z",
+    "updatedAt": "2026-11-13T14:38:23.187Z"
+  },
+  "overcast": {
+    "word": "overcast",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An outcast.; A cloud covering all of the sky from horizon to horizon; cloudy.",
+        "examples": [
+          "The author skillfully incorporated overcast to emphasize the underlying theme.",
+          "In every chapter, the presence of overcast provided an unmistakable atmosphere.",
+          "Observers noted that overcast altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To overthrow.; To cover with cloud; to overshadow; to darken.",
+        "examples": [
+          "The author skillfully incorporated overcast to emphasize the underlying theme.",
+          "In every chapter, the presence of overcast provided an unmistakable atmosphere.",
+          "Observers noted that overcast altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Covered with clouds; overshadowed; darkened; more than 90% covered by clouds.; In a state of depression; gloomy; melancholy.",
+        "examples": [
+          "The author skillfully incorporated overcast to emphasize the underlying theme.",
+          "In every chapter, the presence of overcast provided an unmistakable atmosphere.",
+          "Observers noted that overcast altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "overcast"
+    ],
+    "createdAt": "2026-11-14T05:16:08.111Z",
+    "updatedAt": "2026-11-14T05:16:08.111Z"
+  }
+}

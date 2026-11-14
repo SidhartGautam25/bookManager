@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { persistentDictionaryCache } from "@/lib/DictionaryCache";
+import { dictionaryManager } from "@/lib/DictionaryPartitionManager";
 import {
   fetchComprehensiveDictionary,
   EnrichedWordData,
@@ -53,13 +54,28 @@ export async function POST(request: NextRequest) {
     const wordsToFetch: string[] = [];
     let cachedCount = 0;
 
-    // 1. Separate cached words from uncached words
+    // 1. Separate cached words from uncached words (check root partitioned dictionary first)
     for (const rawWord of words) {
       const cleanWord = String(rawWord).trim();
       if (!cleanWord) continue;
       const norm = cleanWord.toLowerCase();
 
-      if (!forceSet.has(norm) && persistentDictionaryCache.has(norm)) {
+      if (!forceSet.has(norm) && dictionaryManager.hasWord(norm)) {
+        const dictEntry = dictionaryManager.getWord(norm)!;
+        results[norm] = {
+          word: dictEntry.word,
+          meanings: dictEntry.meanings,
+          variations: dictEntry.variations || [],
+          source: "cache",
+        };
+        details[norm] = {
+          word: cleanWord,
+          source: "dictionary",
+          wasDiskCached: true,
+          timeMs: 0,
+        };
+        cachedCount++;
+      } else if (!forceSet.has(norm) && persistentDictionaryCache.has(norm)) {
         const cached = persistentDictionaryCache.get(norm)!;
         results[norm] = cached;
         details[norm] = {
@@ -123,6 +139,18 @@ export async function POST(request: NextRequest) {
     // 3. Persist all newly fetched words to disk in a single batch write
     if (Object.keys(newlyFetched).length > 0) {
       persistentDictionaryCache.setBatch(newlyFetched);
+      for (const entry of Object.values(newlyFetched)) {
+        if (entry.word && entry.meanings && entry.meanings.length > 0) {
+          dictionaryManager.addWord(
+            {
+              word: entry.word,
+              meanings: entry.meanings,
+              variations: entry.variations || [],
+            },
+            false,
+          );
+        }
+      }
     }
 
     const stats = persistentDictionaryCache.getStats();

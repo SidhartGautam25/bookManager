@@ -1,0 +1,19 @@
+{
+  "xenophobia": {
+    "word": "xenophobia",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Dislike of or prejudice against people from other countries.",
+        "examples": [
+          "The quarantine inflamed local xenophobia against foreign sailors docked at the port."
+        ]
+      }
+    ],
+    "variations": [
+      "xenophobic"
+    ],
+    "createdAt": "2026-11-13T14:40:43.659Z",
+    "updatedAt": "2026-11-13T14:40:43.659Z"
+  }
+}

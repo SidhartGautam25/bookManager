@@ -1,0 +1,171 @@
+{
+  "yelps": {
+    "word": "Yelps",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Plural form) An abrupt, high-pitched noise or utterance.; (Plural form) A type of emergency vehicle siren sounding quicker and more intense than the wail.",
+        "examples": [
+          "The puppy let out a yelps when I stepped on her tail.",
+          "The local yelps gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden yelps swept across the region, overwhelming the drainage canals."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Plural form) To utter an abrupt, high-pitched noise.",
+        "examples": [
+          "The children yelped with delight as they played in the cold water.",
+          "The local yelps gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden yelps swept across the region, overwhelming the drainage canals."
+        ]
+      }
+    ],
+    "variations": [
+      "yelps",
+      "yelp"
+    ],
+    "createdAt": "2026-11-13T12:45:56.366Z",
+    "updatedAt": "2026-11-13T12:45:56.366Z"
+  },
+  "yelling": {
+    "word": "yelling",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Present participle / Gerund) To shout; holler; make a loud sound with the voice, especially to express intense emotions such as anger or excitement.; (Present participle / Gerund) To convey by shouting.",
+        "examples": [
+          "He yelled directions to the party from the car.",
+          "If I come home late again, my dad is gonna yelling at me.",
+          "They sent another email yelling at us to get our reports in on time. (or) They sent another email yelling about how we had to get our reports in on time."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "The act of producing a yell.; (Present participle / Gerund) A shout.",
+        "examples": [
+          "He stood by the window, yelling quietly as the light faded into evening.",
+          "They observed the fountain yelling clear water high into the morning air.",
+          "She spent hours yelling through the archives to locate the missing document."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "(Present participle / Gerund) dry",
+        "examples": [
+          "He stood by the window, yelling quietly as the light faded into evening.",
+          "They observed the fountain yelling clear water high into the morning air.",
+          "She spent hours yelling through the archives to locate the missing document."
+        ]
+      }
+    ],
+    "variations": [
+      "yelling",
+      "yell"
+    ],
+    "createdAt": "2026-11-13T12:45:56.464Z",
+    "updatedAt": "2026-11-13T12:45:56.464Z"
+  },
+  "yakking": {
+    "word": "yakking",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Present participle / Gerund) To talk, particularly informally but persistently; to chatter or prattle.; (Present participle / Gerund) To vomit, usually as a result of excessive alcohol consumption.",
+        "examples": [
+          "He stood by the window, yakking quietly as the light faded into evening.",
+          "They observed the fountain yakking clear water high into the morning air.",
+          "She spent hours yakking through the archives to locate the missing document."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Present participle / Gerund) An ox-like mammal native to the Himalayas, Mongolia, Burma, and Tibet with dark, long, and silky hair, a horse-like tail, and a full, bushy mane.; (Present participle / Gerund) A talk, particular an informal talk; chattering; gossip.",
+        "examples": [
+          "He stood by the window, yakking quietly as the light faded into evening.",
+          "They observed the fountain yakking clear water high into the morning air.",
+          "She spent hours yakking through the archives to locate the missing document."
+        ]
+      },
+      {
+        "partOfSpeech": "symbol",
+        "definition": "(Present participle / Gerund) ISO 639-3 language code for Yakima.",
+        "examples": [
+          "He stood by the window, yakking quietly as the light faded into evening.",
+          "They observed the fountain yakking clear water high into the morning air.",
+          "She spent hours yakking through the archives to locate the missing document."
+        ]
+      }
+    ],
+    "variations": [
+      "yakking",
+      "yak"
+    ],
+    "createdAt": "2026-11-13T12:45:57.575Z",
+    "updatedAt": "2026-11-13T12:45:57.575Z"
+  },
+  "yampy": {
+    "word": "yampy",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A vegetable, the Indian white yam.; A foolish person.",
+        "examples": [
+          "The author skillfully incorporated yampy to emphasize the underlying theme.",
+          "In every chapter, the presence of yampy provided an unmistakable atmosphere.",
+          "Observers noted that yampy altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Barmy; mad; daft.",
+        "examples": [
+          "The author skillfully incorporated yampy to emphasize the underlying theme.",
+          "In every chapter, the presence of yampy provided an unmistakable atmosphere.",
+          "Observers noted that yampy altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "yampy"
+    ],
+    "createdAt": "2026-11-13T12:45:58.045Z",
+    "updatedAt": "2026-11-13T12:45:58.045Z"
+  },
+  "yearn": {
+    "word": "yearn",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Have an intense feeling of longing for something, typically something that one has lost or been separated from.",
+        "examples": [
+          "The homesick boy would yearn for his grandmother's warm kitchen in Tallahassee."
+        ]
+      }
+    ],
+    "variations": [
+      "yearned",
+      "yearning"
+    ],
+    "createdAt": "2026-11-13T14:40:43.663Z",
+    "updatedAt": "2026-11-13T14:40:43.663Z"
+  },
+  "yield": {
+    "word": "yield",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "Produce or provide; give way to arguments, demands, or pressure.",
+        "examples": [
+          "The unyielding red clay refused to yield to the farmer's wooden plow."
+        ]
+      }
+    ],
+    "variations": [
+      "yielded",
+      "yielding"
+    ],
+    "createdAt": "2026-11-13T14:40:43.668Z",
+    "updatedAt": "2026-11-13T14:40:43.668Z"
+  }
+}

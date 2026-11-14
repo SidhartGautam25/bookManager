@@ -347,7 +347,7 @@ export default function AddWordPage() {
 
     setLoading(true);
     try {
-      let endpoint = "/api/words";
+      let endpoint = "/api/v2/books/words";
       let payload: Record<string, unknown> = {
         bookName: selectedItem,
         word: word.trim(),

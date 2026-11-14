@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "lastUpdated": "2026-09-23T02:17:17.401Z",
-  "totalWords": 925,
+  "lastUpdated": "2026-11-14T05:16:10.858Z",
+  "totalWords": 957,
   "entries": {
     "sleazy": {
       "word": "sleazy",
@@ -27668,6 +27668,867 @@
       ],
       "variations": [
         "whoop"
+      ],
+      "source": "cache"
+    },
+    "undoing": {
+      "word": "undoing",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "The act of loosening or unfastening; Ruin; defeat, that which causes defeat or ruin.",
+          "examples": [
+            "His fatal flaw was his undoing. In a sense he defeated himself.",
+            "In the end, his jealousy was his undoing.",
+            "How many undos does this program support?"
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To reverse the effects of an action.; To unfasten.",
+          "examples": [
+            "Fortunately, we can undo most of the damage to the system by the war.",
+            "Could you undo my buckle for me?",
+            "Fortunately, we can undoing most of the damage to the system by the war."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "(Present participle / Gerund) Misspelling of undue.",
+          "examples": [
+            "He stood by the window, undoing quietly as the light faded into evening.",
+            "They observed the fountain undoing clear water high into the morning air.",
+            "She spent hours undoing through the archives to locate the missing document."
+          ]
+        }
+      ],
+      "variations": [
+        "undoing",
+        "undo"
+      ],
+      "source": "cache"
+    },
+    "gospel": {
+      "word": "gospel",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "The first section of the Christian New Testament scripture, comprising the books of Matthew, Mark, Luke and John, concerned with the life, crucifixion, death, resurrection, and teachings of Jesus.; An account of the life, crucifixion, death, resurrection, and teachings of Jesus, generally written during the first several centuries of the Common Era.",
+          "examples": [
+            "We took her words for gospel.",
+            "The author skillfully incorporated gospel to emphasize the underlying theme.",
+            "In every chapter, the presence of gospel provided an unmistakable atmosphere."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To instruct in the gospel.; To instruct in, declare, or communicate the gospel; to evangelise.",
+          "examples": [
+            "The author skillfully incorporated gospel to emphasize the underlying theme.",
+            "In every chapter, the presence of gospel provided an unmistakable atmosphere.",
+            "Observers noted that gospel altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "gospel"
+      ],
+      "source": "cache"
+    },
+    "crackle": {
+      "word": "crackle",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A fizzing, popping sound.; A style of glaze giving the impression of many small cracks.",
+          "examples": [
+            "I heard a crackle from the frying pan as I was frying bacon.",
+            "There was an annoying crackle during the phone call, due to poor connection.",
+            "The author skillfully incorporated crackle to emphasize the underlying theme."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To make a fizzing, popping sound.; To make a prolonged, frequent cracking sound which sounds like fizzing or popping.",
+          "examples": [
+            "A crackling fire.",
+            "The last scenes of the film crackle with repressed sexual energy.",
+            "The author skillfully incorporated crackle to emphasize the underlying theme."
+          ]
+        }
+      ],
+      "variations": [
+        "crackle"
+      ],
+      "source": "cache"
+    },
+    "licentious": {
+      "word": "licentious",
+      "meanings": [
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Lacking restraint, or ignoring societal standards, particularly in sexual conduct.; Disregarding accepted rules.",
+          "examples": [
+            "The local licentious gathered early in the square to prepare their daily exhibits.",
+            "Multiple sudden licentious swept across the region, overwhelming the drainage canals.",
+            "Scholars compared various licentious preserved from centuries of documented history."
+          ]
+        }
+      ],
+      "variations": [
+        "licentious"
+      ],
+      "source": "cache"
+    },
+    "segregation": {
+      "word": "segregation",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "The setting apart or separation of things or people, as a natural process, a manner of organizing people that may be voluntary or enforced by law.; The setting apart in Mendelian inheritance of alleles, such that each parent passes only one allele to its offspring.",
+          "examples": [
+            "The author skillfully incorporated segregation to emphasize the underlying theme.",
+            "In every chapter, the presence of segregation provided an unmistakable atmosphere.",
+            "Observers noted that segregation altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "segregation"
+      ],
+      "source": "cache"
+    },
+    "reverend": {
+      "word": "reverend",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A member of the Christian clergy; a minister.",
+          "examples": [
+            "The esteemed reverend will enlighten us with a sermon on reconciliation.",
+            "The author skillfully incorporated reverend to emphasize the underlying theme.",
+            "In every chapter, the presence of reverend provided an unmistakable atmosphere."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Worthy of reverence or respect; reverent.; Worthy of reverence or respect.",
+          "examples": [
+            "The reverend doctor will enlighten us with a lecture on the germ theory.",
+            "The author skillfully incorporated reverend to emphasize the underlying theme.",
+            "In every chapter, the presence of reverend provided an unmistakable atmosphere."
+          ]
+        }
+      ],
+      "variations": [
+        "reverend"
+      ],
+      "source": "cache"
+    },
+    "envy": {
+      "word": "envy",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "Resentful desire of something possessed by another or others (but not limited to material possessions).; An object of envious notice or feeling.",
+          "examples": [
+            "The author skillfully incorporated envy to emphasize the underlying theme.",
+            "In every chapter, the presence of envy provided an unmistakable atmosphere.",
+            "Observers noted that envy altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To feel displeasure or hatred towards (someone) for their good fortune or possessions.; To have envious feelings (at).",
+          "examples": [
+            "The author skillfully incorporated envy to emphasize the underlying theme.",
+            "In every chapter, the presence of envy provided an unmistakable atmosphere.",
+            "Observers noted that envy altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "envy"
+      ],
+      "source": "cache"
+    },
+    "rumble": {
+      "word": "rumble",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A low, heavy, continuous sound, such as that of thunder or a hungry stomach.; A street fight or brawl.",
+          "examples": [
+            "The rumble from passing trucks made it hard to sleep at night.",
+            "The author skillfully incorporated rumble to emphasize the underlying theme.",
+            "In every chapter, the presence of rumble provided an unmistakable atmosphere."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To make a low, heavy, continuous sound.; To discover deceitful or underhanded behaviour.",
+          "examples": [
+            "I could hear the thunder rumbling in the distance.",
+            "The police is going to rumble your hideout.",
+            "The truck rumbled over the rough road."
+          ]
+        },
+        {
+          "partOfSpeech": "Interjection",
+          "definition": "An onomatopoeia describing a rumbling noise",
+          "examples": [
+            "The author skillfully incorporated rumble to emphasize the underlying theme.",
+            "In every chapter, the presence of rumble provided an unmistakable atmosphere.",
+            "Observers noted that rumble altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "rumble"
+      ],
+      "source": "cache"
+    },
+    "lurch": {
+      "word": "lurch",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A sudden or unsteady movement.; An old game played with dice and counters; a variety of the game of tables.",
+          "examples": [
+            "The lurch of a ship, or of a drunkard.",
+            "To leave someone in the lurch.",
+            "The author skillfully incorporated lurch to emphasize the underlying theme."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To make such a sudden, unsteady movement.; To swallow or eat greedily; to devour; hence, to swallow up.",
+          "examples": [
+            "The author skillfully incorporated lurch to emphasize the underlying theme.",
+            "In every chapter, the presence of lurch provided an unmistakable atmosphere.",
+            "Observers noted that lurch altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "lurch"
+      ],
+      "source": "cache"
+    },
+    "lure": {
+      "word": "lure",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "Something that tempts or attracts, especially one with a promise of reward or pleasure; An artificial bait attached to a fishing line to attract fish",
+          "examples": [
+            "The author skillfully incorporated lure to emphasize the underlying theme.",
+            "In every chapter, the presence of lure provided an unmistakable atmosphere.",
+            "Observers noted that lure altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To attract by temptation etc.; to entice; To recall a hawk with a lure",
+          "examples": [
+            "The author skillfully incorporated lure to emphasize the underlying theme.",
+            "In every chapter, the presence of lure provided an unmistakable atmosphere.",
+            "Observers noted that lure altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Symbol",
+          "definition": "(Inflected form) ISO 639-3 language code for Laura.",
+          "examples": [
+            "The author skillfully incorporated lure to emphasize the underlying theme.",
+            "In every chapter, the presence of lure provided an unmistakable atmosphere.",
+            "Observers noted that lure altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "lure",
+        "lur"
+      ],
+      "source": "cache"
+    },
+    "untamed": {
+      "word": "untamed",
+      "meanings": [
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Wild, uncontrolled, especially of animals not domesticated or trained to human contact.",
+          "examples": [
+            "The mustang is an untamed horse that roams where it wants, with little interest in humans.",
+            "The author skillfully incorporated untamed to emphasize the underlying theme.",
+            "In every chapter, the presence of untamed provided an unmistakable atmosphere."
+          ]
+        }
+      ],
+      "variations": [
+        "untamed"
+      ],
+      "source": "cache"
+    },
+    "suck": {
+      "word": "suck",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "An instance of drawing something into one's mouth by inhaling.; Milk drawn from the breast.",
+          "examples": [
+            "The author skillfully incorporated suck to emphasize the underlying theme.",
+            "In every chapter, the presence of suck provided an unmistakable atmosphere.",
+            "Observers noted that suck altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To use the mouth and lips to pull in (a liquid, especially milk from the breast).; To perform such an action; to feed from a breast or teat.",
+          "examples": [
+            "The baby sucked (milk) on her bottle.",
+            "The food from this restaurant sucks.",
+            "He sucks at baseball."
+          ]
+        }
+      ],
+      "variations": [
+        "suck"
+      ],
+      "source": "cache"
+    },
+    "saggy": {
+      "word": "saggy",
+      "meanings": [
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Baggy or loose-fitting.; That sinks or droops from wear or its own weight.",
+          "examples": [
+            "Saggy boobs.",
+            "Saggy skin.",
+            "The author skillfully incorporated saggy to emphasize the underlying theme."
+          ]
+        }
+      ],
+      "variations": [
+        "saggy"
+      ],
+      "source": "cache"
+    },
+    "paddle": {
+      "word": "paddle",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A two-handed, single-bladed oar used to propel a canoe or a small boat.; A double-bladed oar used for kayaking.",
+          "examples": [
+            "We had a nice paddle this morning.",
+            "The paddle practically ousted the British cane for spankings in the independent US.",
+            "A sea turtle's paddles make it swim almost as fast as land tortoises are slow."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To propel something through water with a paddle, oar, hands, etc.; To row a boat with less than one's full capacity.",
+          "examples": [
+            "The author skillfully incorporated paddle to emphasize the underlying theme.",
+            "In every chapter, the presence of paddle provided an unmistakable atmosphere.",
+            "Observers noted that paddle altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "paddle",
+        "padel"
+      ],
+      "source": "cache"
+    },
+    "cursed": {
+      "word": "cursed",
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To place a curse upon (a person or object).; To call upon divine or supernatural power to send injury upon; to imprecate evil upon; to execrate.",
+          "examples": [
+            "The team cursed their operations until further instructions arrived from headquarters.",
+            "She was deeply cursed by the unexpected turn of events during the meeting.",
+            "He carefully cursed the remaining pieces into a cohesive structure."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Under some divine harm, malady, or other curse.; Shrewish, ill-tempered (often applied to women).",
+          "examples": [
+            "That cursed bird keeps stealing my milk!",
+            "The team cursed their operations until further instructions arrived from headquarters.",
+            "She was deeply cursed by the unexpected turn of events during the meeting."
+          ]
+        },
+        {
+          "partOfSpeech": "Adverb",
+          "definition": "Damnably; awfully.",
+          "examples": [
+            "The team cursed their operations until further instructions arrived from headquarters.",
+            "She was deeply cursed by the unexpected turn of events during the meeting.",
+            "He carefully cursed the remaining pieces into a cohesive structure."
+          ]
+        },
+        {
+          "partOfSpeech": "Noun",
+          "definition": "(Past tense & participle) A supernatural detriment or hindrance; a bane.; (Past tense & participle) A prayer or imprecation that harm may befall someone.",
+          "examples": [
+            "The team cursed their operations until further instructions arrived from headquarters.",
+            "She was deeply cursed by the unexpected turn of events during the meeting.",
+            "He carefully cursed the remaining pieces into a cohesive structure."
+          ]
+        }
+      ],
+      "variations": [
+        "cursed",
+        "curse"
+      ],
+      "source": "cache"
+    },
+    "mold": {
+      "word": "mold",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A hollow form or matrix for shaping a fluid or plastic substance.; A frame or model around or on which something is formed or shaped.",
+          "examples": [
+            "The oval mold of her face.",
+            "A leader in the mold of her predecessors.",
+            "His method of scientific investigation broke the mold and led to a new discovery."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To shape in or on a mold; to form into a particular shape; to give shape to.; To guide or determine the growth or development of; influence",
+          "examples": [
+            "These shoes gradually molded to my feet.",
+            "The author skillfully incorporated mold to emphasize the underlying theme.",
+            "In every chapter, the presence of mold provided an unmistakable atmosphere."
+          ]
+        }
+      ],
+      "variations": [
+        "mold"
+      ],
+      "source": "cache"
+    },
+    "hassle": {
+      "word": "hassle",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "Trouble, bother, unwanted annoyances or problems.; A fight or argument.",
+          "examples": [
+            "I went through a lot of hassle to be the first to get a ticket.",
+            "The author skillfully incorporated hassle to emphasize the underlying theme.",
+            "In every chapter, the presence of hassle provided an unmistakable atmosphere."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To trouble, to bother, to annoy.; To pick a fight or start an argument.",
+          "examples": [
+            "The unlucky boy was hassled by a gang of troublemakers on his way home.",
+            "If you don't want to hassle through converting formats, you'll have to stick with one program.",
+            "The author skillfully incorporated hassle to emphasize the underlying theme."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "hassling; hasslesome",
+          "examples": [
+            "The author skillfully incorporated hassle to emphasize the underlying theme.",
+            "In every chapter, the presence of hassle provided an unmistakable atmosphere.",
+            "Observers noted that hassle altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "hassle"
+      ],
+      "source": "cache"
+    },
+    "patrolled": {
+      "word": "patrolled",
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To go the rounds along a chain of sentinels; to traverse a police district or beat.; To go the rounds of, as a sentry, guard, or policeman",
+          "examples": [
+            "To patrol a beat.",
+            "To patrolled a beat.",
+            "To patrolled a frontier."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Having regular patrols.",
+          "examples": [
+            "The team patrolled their operations until further instructions arrived from headquarters.",
+            "She was deeply patrolled by the unexpected turn of events during the meeting.",
+            "He carefully patrolled the remaining pieces into a cohesive structure."
+          ]
+        },
+        {
+          "partOfSpeech": "Noun",
+          "definition": "(Past tense & participle) A going of the rounds along the chain of sentinels and between the posts, by a guard, usually consisting of three or four men, to insure greater security from attacks on the outposts.; (Past tense & participle) A movement, by a small body of troops beyond the line of outposts, to explore the country and gain intelligence of the enemy's whereabouts.",
+          "examples": [
+            "A customs patrolled.",
+            "Four members of the squadron were on patrolled.",
+            "A fire patrolled."
+          ]
+        }
+      ],
+      "variations": [
+        "patrolled",
+        "patrol"
+      ],
+      "source": "cache"
+    },
+    "humming": {
+      "word": "humming",
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To make a sound from the vocal chords without pronouncing any real words, with one's lips closed.; To express by humming.",
+          "examples": [
+            "We are humming happily along with the music.",
+            "The team ominously hummed “We shall overcome” as they came back onto the field after the break.",
+            "The streets were humming with activity."
+          ]
+        },
+        {
+          "partOfSpeech": "Noun",
+          "definition": "The sound of something that hums; a hum.; (Present participle / Gerund) A hummed tune, i.e. created orally with lips closed.",
+          "examples": [
+            "They could hear a humming coming from the kitchen, and found the dishwasher on.",
+            "They could hear a humming coming from the kitchen and found the dishwasher on.",
+            "He stood by the window, humming quietly as the light faded into evening."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Making a hum sound.; Of ale or beer: very strong.",
+          "examples": [
+            "He stood by the window, humming quietly as the light faded into evening.",
+            "They observed the fountain humming clear water high into the morning air.",
+            "She spent hours humming through the archives to locate the missing document."
+          ]
+        },
+        {
+          "partOfSpeech": "Interjection",
+          "definition": "(Present participle / Gerund) Indicating thinking or pondering.; (Present participle / Gerund) A demand for an answer to a question.",
+          "examples": [
+            "Hmm... I just can't decide between the two.",
+            "Just where were you until 2 a.m.? Hmm?",
+            "Mmm, this is a tasty pie!"
+          ]
+        },
+        {
+          "partOfSpeech": "Symbol",
+          "definition": "(Present participle / Gerund) ISO 639-3 language code for Hungana.",
+          "examples": [
+            "He stood by the window, humming quietly as the light faded into evening.",
+            "They observed the fountain humming clear water high into the morning air.",
+            "She spent hours humming through the archives to locate the missing document."
+          ]
+        }
+      ],
+      "variations": [
+        "humming",
+        "hum"
+      ],
+      "source": "cache"
+    },
+    "sooty": {
+      "word": "sooty",
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To blacken or make dirty with soot.",
+          "examples": [
+            "The author skillfully incorporated sooty to emphasize the underlying theme.",
+            "In every chapter, the presence of sooty provided an unmistakable atmosphere.",
+            "Observers noted that sooty altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Of, relating to, or producing soot.; Soiled with soot",
+          "examples": [
+            "The author skillfully incorporated sooty to emphasize the underlying theme.",
+            "In every chapter, the presence of sooty provided an unmistakable atmosphere.",
+            "Observers noted that sooty altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "sooty"
+      ],
+      "source": "cache"
+    },
+    "overcast": {
+      "word": "overcast",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "An outcast.; A cloud covering all of the sky from horizon to horizon; cloudy.",
+          "examples": [
+            "The author skillfully incorporated overcast to emphasize the underlying theme.",
+            "In every chapter, the presence of overcast provided an unmistakable atmosphere.",
+            "Observers noted that overcast altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To overthrow.; To cover with cloud; to overshadow; to darken.",
+          "examples": [
+            "The author skillfully incorporated overcast to emphasize the underlying theme.",
+            "In every chapter, the presence of overcast provided an unmistakable atmosphere.",
+            "Observers noted that overcast altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Covered with clouds; overshadowed; darkened; more than 90% covered by clouds.; In a state of depression; gloomy; melancholy.",
+          "examples": [
+            "The author skillfully incorporated overcast to emphasize the underlying theme.",
+            "In every chapter, the presence of overcast provided an unmistakable atmosphere.",
+            "Observers noted that overcast altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "overcast"
+      ],
+      "source": "cache"
+    },
+    "ceiling": {
+      "word": "ceiling",
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To line or finish (a surface, such as a wall), with plaster, stucco, thin boards, or similar.; To set a higher bound.",
+          "examples": [
+            "He stood by the window, ceiling quietly as the light faded into evening.",
+            "They observed the fountain ceiling clear water high into the morning air.",
+            "She spent hours ceiling through the archives to locate the missing document."
+          ]
+        },
+        {
+          "partOfSpeech": "Noun",
+          "definition": "The overhead closure of a room.; The upper limit of an object or action.",
+          "examples": [
+            "The dining room had an ornate ceiling.",
+            "The ceiling of 4.5 is 5, the ceiling of -4.5 is -4.",
+            "He stood by the window, ceiling quietly as the light faded into evening."
+          ]
+        }
+      ],
+      "variations": [
+        "ceiling"
+      ],
+      "source": "cache"
+    },
+    "enrich": {
+      "word": "enrich",
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To enhance.; To make (someone or something) rich or richer.",
+          "examples": [
+            "Hobbies enrich lives.",
+            "The author skillfully incorporated enrich to emphasize the underlying theme.",
+            "In every chapter, the presence of enrich provided an unmistakable atmosphere."
+          ]
+        }
+      ],
+      "variations": [
+        "enrich"
+      ],
+      "source": "cache"
+    },
+    "intervened": {
+      "word": "intervened",
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To become involved in a situation, so as to alter or prevent an action.; To occur, fall, or come between, points of time, or events.",
+          "examples": [
+            "The police had to be called to intervene in the fight.",
+            "An instant intervened between the flash and the report.",
+            "Nothing intervened to prevent the undertaking."
+          ]
+        }
+      ],
+      "variations": [
+        "intervened"
+      ],
+      "source": "cache"
+    },
+    "muster": {
+      "word": "muster",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "Gathering.; Showing.",
+          "examples": [
+            "The author skillfully incorporated muster to emphasize the underlying theme.",
+            "In every chapter, the presence of muster provided an unmistakable atmosphere.",
+            "Observers noted that muster altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To show, exhibit.; To be gathered together for parade, inspection, exercise, or the like (especially of a military force); to come together as parts of a force or body.",
+          "examples": [
+            "The author skillfully incorporated muster to emphasize the underlying theme.",
+            "In every chapter, the presence of muster provided an unmistakable atmosphere.",
+            "Observers noted that muster altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "muster"
+      ],
+      "source": "cache"
+    },
+    "bullied": {
+      "word": "bullied",
+      "meanings": [
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Having been a victim of a bully.",
+          "examples": [
+            "The author skillfully incorporated bullied to emphasize the underlying theme.",
+            "In every chapter, the presence of bullied provided an unmistakable atmosphere.",
+            "Observers noted that bullied altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To intimidate (someone) as a bully.; To act aggressively towards.",
+          "examples": [
+            "You shouldn't bully people for being gay.",
+            "The team bullied their operations until further instructions arrived from headquarters.",
+            "She was deeply bullied by the unexpected turn of events during the meeting."
+          ]
+        }
+      ],
+      "variations": [
+        "bullied"
+      ],
+      "source": "cache"
+    },
+    "urinate": {
+      "word": "urinate",
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "(urology) To pass urine from the body.",
+          "examples": [
+            "The author skillfully incorporated urinate to emphasize the underlying theme.",
+            "In every chapter, the presence of urinate provided an unmistakable atmosphere.",
+            "Observers noted that urinate altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "urinate"
+      ],
+      "source": "cache"
+    },
+    "maniac": {
+      "word": "maniac",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "An insane person, especially one who suffers from a mania.; A fanatic, a person with an obsession.",
+          "examples": [
+            "The author skillfully incorporated maniac to emphasize the underlying theme.",
+            "In every chapter, the presence of maniac provided an unmistakable atmosphere.",
+            "Observers noted that maniac altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "maniac"
+      ],
+      "source": "cache"
+    },
+    "persuade": {
+      "word": "persuade",
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To successfully convince (someone) to agree to, accept, or do something, usually through reasoning and verbal influence.; To convince of by argument, or by reasons offered or suggested from reflection, etc.; to cause to believe (something).",
+          "examples": [
+            "That salesman was able to persuade me into buying this bottle of lotion.",
+            "The author skillfully incorporated persuade to emphasize the underlying theme.",
+            "In every chapter, the presence of persuade provided an unmistakable atmosphere."
+          ]
+        }
+      ],
+      "variations": [
+        "persuade"
+      ],
+      "source": "cache"
+    },
+    "crucible": {
+      "word": "crucible",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A cup-shaped piece of laboratory equipment used to contain chemical compounds when heating them to very high temperatures.; A heat-resistant container in which metals are melted, usually at temperatures above 500°C, commonly made of graphite with clay as a binder.",
+          "examples": [
+            "The author skillfully incorporated crucible to emphasize the underlying theme.",
+            "In every chapter, the presence of crucible provided an unmistakable atmosphere.",
+            "Observers noted that crucible altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "crucible"
+      ],
+      "source": "cache"
+    },
+    "slugged": {
+      "word": "slugged",
+      "meanings": [
+        {
+          "partOfSpeech": "General",
+          "definition": "Meaning and context of slugged",
+          "examples": [
+            "The author skillfully incorporated slugged to emphasize the underlying theme.",
+            "In every chapter, the presence of slugged provided an unmistakable atmosphere.",
+            "Observers noted that slugged altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "slugged"
+      ],
+      "source": "cache"
+    },
+    "drowsy": {
+      "word": "drowsy",
+      "meanings": [
+        {
+          "partOfSpeech": "General",
+          "definition": "Meaning and context of drowsy",
+          "examples": [
+            "The author skillfully incorporated drowsy to emphasize the underlying theme.",
+            "In every chapter, the presence of drowsy provided an unmistakable atmosphere.",
+            "Observers noted that drowsy altered the entire perspective of the scene."
+          ]
+        }
+      ],
+      "variations": [
+        "drowsy"
       ],
       "source": "cache"
     }

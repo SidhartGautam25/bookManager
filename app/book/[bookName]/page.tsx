@@ -765,6 +765,11 @@ export default function BookDetailsPage({
                                   <Quote size={11} />
                                   <span>Sentence</span>
                                 </span>
+                                {(sent.pageNo || selectedPage) && (
+                                  <span className="inline-flex items-center gap-1 text-[11px] font-mono font-bold px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200">
+                                    Page {sent.pageNo || selectedPage}
+                                  </span>
+                                )}
                                 {sent.tag && (
                                   <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-extrabold border bg-indigo-50 text-indigo-700 border-indigo-200">
                                     <TagIcon

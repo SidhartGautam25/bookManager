@@ -1,0 +1,54 @@
+{
+  "zeal": {
+    "word": "zeal",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Great energy or enthusiasm in pursuit of a cause or an objective.",
+        "examples": [
+          "Dr. Rieux worked with tireless zeal to organize the emergency medical brigades."
+        ]
+      }
+    ],
+    "variations": [
+      "zealous",
+      "zealously"
+    ],
+    "createdAt": "2026-11-13T14:40:43.671Z",
+    "updatedAt": "2026-11-13T14:40:43.671Z"
+  },
+  "zealot": {
+    "word": "zealot",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A person who is fanatical and uncompromising in pursuit of their religious, political, or other ideals.",
+        "examples": [
+          "Father Paneloux spoke with the fiery conviction of an Old Testament zealot."
+        ]
+      }
+    ],
+    "variations": [
+      "zealots"
+    ],
+    "createdAt": "2026-11-13T14:40:43.675Z",
+    "updatedAt": "2026-11-13T14:40:43.675Z"
+  },
+  "zenith": {
+    "word": "zenith",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The time at which something is most powerful or successful; the highest point reached by a celestial or other object.",
+        "examples": [
+          "The epidemic reached its catastrophic zenith in the stifling heat of mid-August."
+        ]
+      }
+    ],
+    "variations": [
+      "zeniths"
+    ],
+    "createdAt": "2026-11-13T14:40:43.680Z",
+    "updatedAt": "2026-11-13T14:40:43.680Z"
+  }
+}

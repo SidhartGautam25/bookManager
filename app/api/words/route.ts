@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { BookManager } from "@/lib/BookManager";
 import { persistentDictionaryCache } from "@/lib/DictionaryCache";
+import { dictionaryManager } from "@/lib/DictionaryPartitionManager";
 
 const bookManager = new BookManager();
 
@@ -89,6 +90,22 @@ export async function GET(request: NextRequest) {
               ...globalOccurrence,
             });
           }
+        }
+
+        // Check root partitioned dictionary
+        if (dictionaryManager.hasWord(word)) {
+          const dictEntry = dictionaryManager.getWord(word)!;
+          return NextResponse.json({
+            success: true,
+            found: true,
+            source: "dictionary",
+            word: dictEntry.word,
+            meanings: dictEntry.meanings,
+            variations: dictEntry.variations || [],
+            frequency: 0,
+            pages: [],
+            bookName,
+          });
         }
 
         return NextResponse.json({
