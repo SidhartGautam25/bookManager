@@ -9,6 +9,7 @@ import {
   BookOpen,
   Music,
   Film,
+  Feather,
   Pencil,
   Trash2,
   Loader2,
@@ -104,7 +105,7 @@ export default function TagsPage() {
   // Sentence Edit Modal state
   const [editingSentence, setEditingSentence] = useState<{
     entry: SentenceEntry;
-    mediaType: "book" | "song" | "movie";
+    mediaType: "book" | "song" | "movie" | "poem";
     mediaName: string;
     pageNo?: number;
   } | null>(null);
@@ -624,7 +625,9 @@ export default function TagsPage() {
                               ? `/book/${encodeURIComponent(item.mediaName)}`
                               : item.mediaType === "song"
                                 ? `/song/${encodeURIComponent(item.mediaName)}`
-                                : `/movie/${encodeURIComponent(item.mediaName)}`
+                                : item.mediaType === "poem"
+                                  ? `/poem/${encodeURIComponent(item.mediaName)}`
+                                  : `/movie/${encodeURIComponent(item.mediaName)}`
                           }
                           className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-bold text-gray-600 bg-gray-50 border border-gray-200 hover:bg-indigo-50 hover:text-indigo-700 hover:border-indigo-200 transition-all"
                         >
@@ -632,6 +635,8 @@ export default function TagsPage() {
                             <BookOpen size={13} className="text-indigo-600" />
                           ) : item.mediaType === "song" ? (
                             <Music size={13} className="text-pink-600" />
+                          ) : item.mediaType === "poem" ? (
+                            <Feather size={13} className="text-violet-600" />
                           ) : (
                             <Film size={13} className="text-amber-600" />
                           )}

@@ -14,6 +14,7 @@ import {
   BookOpen,
   Music,
   Film,
+  Feather,
   Layers,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -22,7 +23,7 @@ interface MediaItemStats {
   name: string;
   totalWords: number;
   totalPages: number;
-  type: "book" | "song" | "movie";
+  type: "book" | "song" | "movie" | "poem";
 }
 
 interface WordFrequencyItem {
@@ -57,7 +58,7 @@ export default function AnalyticsPage() {
 
   // Filtering and sorting for Corpus Distribution
   const [mediaTypeFilter, setMediaTypeFilter] = useState<
-    "all" | "book" | "song" | "movie"
+    "all" | "book" | "song" | "movie" | "poem"
   >("all");
   const [mediaSearchQuery, setMediaSearchQuery] = useState<string>("");
   const [mediaSortBy, setMediaSortBy] = useState<"words" | "pages" | "name">(
@@ -69,17 +70,19 @@ export default function AnalyticsPage() {
 
     async function loadAnalytics() {
       try {
-        const [booksResponse, songsResponse, moviesResponse] =
+        const [booksResponse, songsResponse, moviesResponse, poemsResponse] =
           await Promise.all([
             fetch("/api/books"),
             fetch("/api/songs"),
             fetch("/api/movies"),
+            fetch("/api/poems"),
           ]);
 
-        const [booksData, songsData, moviesData] = await Promise.all([
+        const [booksData, songsData, moviesData, poemsData] = await Promise.all([
           booksResponse.json(),
           songsResponse.json(),
           moviesResponse.json(),
+          poemsResponse.json(),
         ]);
 
         if (!isMounted) return;
@@ -176,6 +179,33 @@ export default function AnalyticsPage() {
           }
         }
 
+        // 4. Process Poems
+        if (poemsData.success && Array.isArray(poemsData.poems)) {
+          for (const poem of poemsData.poems) {
+            try {
+              const wordsRes = await fetch(
+                `/api/poems/words?poemName=${encodeURIComponent(poem.name)}`,
+              );
+              const wordsData = await wordsRes.json();
+
+              if (wordsData.success && Array.isArray(wordsData.data)) {
+                const wordsList: RawWordItem[] = wordsData.data.filter(
+                  (w: RawWordItem) => w.type !== "sentence" && Boolean(w.word),
+                );
+                allWordsEntries.push(...wordsList);
+                stats.push({
+                  name: poem.name,
+                  totalWords: wordsList.length,
+                  totalPages: 0,
+                  type: "poem",
+                });
+              }
+            } catch {
+              console.error(`Error fetching stats for poem: ${poem.name}`);
+            }
+          }
+        }
+
         if (stats.length > 0) {
           setSelectedItem((prev) => prev || stats[0].name);
         }
@@ -244,6 +274,8 @@ export default function AnalyticsPage() {
         let endpoint = `/api/words?bookName=${encodeURIComponent(selectedItem)}`;
         if (itemType === "song") {
           endpoint = `/api/songs/words?songName=${encodeURIComponent(selectedItem)}`;
+        } else if (itemType === "poem") {
+          endpoint = `/api/poems/words?poemName=${encodeURIComponent(selectedItem)}`;
         } else if (itemType === "movie") {
           endpoint = `/api/movies/words?movieName=${encodeURIComponent(selectedItem)}`;
         }
@@ -321,6 +353,7 @@ export default function AnalyticsPage() {
   const overallStats = useMemo(() => {
     let totalBooks = 0;
     let totalSongs = 0;
+    let totalPoems = 0;
     let totalMovies = 0;
     let totalWords = 0;
     let totalPages = 0;
@@ -330,10 +363,11 @@ export default function AnalyticsPage() {
       totalPages += stat.totalPages;
       if (stat.type === "book") totalBooks++;
       else if (stat.type === "song") totalSongs++;
+      else if (stat.type === "poem") totalPoems++;
       else if (stat.type === "movie") totalMovies++;
     });
 
-    return { totalBooks, totalSongs, totalMovies, totalWords, totalPages };
+    return { totalBooks, totalSongs, totalPoems, totalMovies, totalWords, totalPages };
   }, [mediaStats]);
 
   // Filter and sort items for Corpus Distribution
@@ -409,6 +443,13 @@ export default function AnalyticsPage() {
                 Songs
               </Link>
               <Link
+                href="/poem-list"
+                className="px-4 py-2.5 bg-white hover:bg-gray-100 text-gray-700 text-xs font-bold rounded-xl border border-gray-200 transition-colors flex items-center gap-1.5 shadow-2xs"
+              >
+                <Feather size={14} className="text-violet-600" />
+                Poems
+              </Link>
+              <Link
                 href="/movie-list"
                 className="px-4 py-2.5 bg-white hover:bg-gray-100 text-gray-700 text-xs font-bold rounded-xl border border-gray-200 transition-colors flex items-center gap-1.5 shadow-2xs"
               >
@@ -449,7 +490,7 @@ export default function AnalyticsPage() {
                   Linguistic Summary
                 </h2>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
                 {[
                   {
                     label: "Books",
@@ -466,6 +507,14 @@ export default function AnalyticsPage() {
                     icon: <Music size={22} className="text-emerald-600" />,
                     bg: "bg-emerald-50 border-emerald-100",
                     href: "/song-list",
+                  },
+                  {
+                    label: "Poems",
+                    value: overallStats.totalPoems,
+                    desc: "Verse & stanza archives",
+                    icon: <Feather size={22} className="text-violet-600" />,
+                    bg: "bg-violet-50 border-violet-100",
+                    href: "/poem-list",
                   },
                   {
                     label: "Movies",
@@ -619,7 +668,7 @@ export default function AnalyticsPage() {
                 <div className="flex flex-wrap items-center gap-3">
                   {/* Media Type Filter */}
                   <div className="inline-flex p-1 rounded-xl bg-gray-100 border border-gray-200 text-xs">
-                    {(["all", "book", "song", "movie"] as const).map((t) => (
+                    {(["all", "book", "song", "poem", "movie"] as const).map((t) => (
                       <button
                         key={t}
                         onClick={() => setMediaTypeFilter(t)}
@@ -686,9 +735,11 @@ export default function AnalyticsPage() {
                       const itemLink =
                         item.type === "song"
                           ? `/song/${encodeURIComponent(item.name)}`
-                          : item.type === "movie"
-                            ? `/movie/${encodeURIComponent(item.name)}`
-                            : `/book/${encodeURIComponent(item.name)}`;
+                          : item.type === "poem"
+                            ? `/poem/${encodeURIComponent(item.name)}`
+                            : item.type === "movie"
+                              ? `/movie/${encodeURIComponent(item.name)}`
+                              : `/book/${encodeURIComponent(item.name)}`;
 
                       return (
                         <tr
@@ -702,6 +753,11 @@ export default function AnalyticsPage() {
                                   <Music
                                     size={14}
                                     className="text-indigo-600"
+                                  />
+                                ) : item.type === "poem" ? (
+                                  <Feather
+                                    size={14}
+                                    className="text-violet-600"
                                   />
                                 ) : item.type === "movie" ? (
                                   <Film size={14} className="text-purple-600" />

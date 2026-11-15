@@ -1533,5 +1533,99 @@
     ],
     "createdAt": "2026-11-13T14:35:29.671Z",
     "updatedAt": "2026-11-13T14:35:29.671Z"
+  },
+  "grievings": {
+    "word": "grievings",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of grievings",
+        "examples": [
+          "The local grievings gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden grievings swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various grievings preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "grievings"
+    ],
+    "createdAt": "2026-11-14T07:12:11.923Z",
+    "updatedAt": "2026-11-14T07:12:11.923Z"
+  },
+  "gusty": {
+    "word": "gusty",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "(of wind) Blowing in gusts; blustery; tempestuous.; (by extension, metaphoric) Characterized by or occurring in instances of sudden strong expression",
+        "examples": [
+          "The author skillfully incorporated gusty to emphasize the underlying theme.",
+          "In every chapter, the presence of gusty provided an unmistakable atmosphere.",
+          "Observers noted that gusty altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "gusty"
+    ],
+    "createdAt": "2026-11-14T07:12:12.292Z",
+    "updatedAt": "2026-11-14T07:12:12.292Z"
+  },
+  "gaze": {
+    "word": "gaze",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of gaze",
+        "examples": [
+          "The author skillfully incorporated gaze to emphasize the underlying theme.",
+          "In every chapter, the presence of gaze provided an unmistakable atmosphere.",
+          "Observers noted that gaze altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "gaze"
+    ],
+    "createdAt": "2026-11-14T07:12:22.163Z",
+    "updatedAt": "2026-11-14T07:12:22.163Z"
+  },
+  "glare": {
+    "word": "glare",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An intense, blinding light.; Showy brilliance; gaudiness.",
+        "examples": [
+          "A glare of ice.",
+          "The author skillfully incorporated glare to emphasize the underlying theme.",
+          "In every chapter, the presence of glare provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To stare angrily.; To shine brightly.",
+        "examples": [
+          "He walked in late, with the teacher glaring at him the whole time.",
+          "The sun glared down on the desert sand.",
+          "The author skillfully incorporated glare to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "(of ice) smooth and bright or translucent; glary; smooth and bright or translucent; glary",
+        "examples": [
+          "Skating on glare ice.",
+          "The author skillfully incorporated glare to emphasize the underlying theme.",
+          "In every chapter, the presence of glare provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "glare"
+    ],
+    "createdAt": "2026-11-14T07:43:59.341Z",
+    "updatedAt": "2026-11-14T07:43:59.341Z"
   }
 }

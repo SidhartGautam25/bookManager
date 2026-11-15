@@ -3374,5 +3374,110 @@
     "variations": [],
     "createdAt": "2026-11-13T14:27:05.161Z",
     "updatedAt": "2026-11-13T14:27:05.161Z"
+  },
+  "awakened": {
+    "word": "awakened",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of awakened",
+        "examples": [
+          "The author skillfully incorporated awakened to emphasize the underlying theme.",
+          "In every chapter, the presence of awakened provided an unmistakable atmosphere.",
+          "Observers noted that awakened altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "awakened"
+    ],
+    "createdAt": "2026-11-14T07:12:18.133Z",
+    "updatedAt": "2026-11-14T07:12:18.133Z"
+  },
+  "ambiguous": {
+    "word": "ambiguous",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Open to multiple interpretations.; Vague and unclear.",
+        "examples": [
+          "The politician was criticized for his ambiguous statements and lack of precision.",
+          "He gave an ambiguous answer.",
+          "The local ambiguous gathered early in the square to prepare their daily exhibits."
+        ]
+      }
+    ],
+    "variations": [
+      "ambiguous"
+    ],
+    "createdAt": "2026-11-14T07:12:36.757Z",
+    "updatedAt": "2026-11-14T07:12:36.757Z"
+  },
+  "arose": {
+    "word": "arose",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To come up from a lower to a higher position.; To come up from one's bed or place of repose; to get up.",
+        "examples": [
+          "To arise from a kneeling posture.",
+          "He arose early in the morning.",
+          "A cloud arose and covered the sun."
+        ]
+      }
+    ],
+    "variations": [
+      "arose"
+    ],
+    "createdAt": "2026-11-14T07:29:14.221Z",
+    "updatedAt": "2026-11-14T07:29:14.221Z"
+  },
+  "afresh": {
+    "word": "afresh",
+    "meanings": [
+      {
+        "partOfSpeech": "adverb",
+        "definition": "Anew; again; once more; Anew; again; once more.",
+        "examples": [
+          "We ditched the original design and decided to start afresh.",
+          "The author skillfully incorporated afresh to emphasize the underlying theme.",
+          "In every chapter, the presence of afresh provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "afresh"
+    ],
+    "createdAt": "2026-11-14T07:43:58.729Z",
+    "updatedAt": "2026-11-14T07:43:58.729Z"
+  },
+  "anaesthetic": {
+    "word": "anaesthetic",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A substance administered to reduce the perception of pain or to induce numbness for surgery and may render the recipient unconscious.; (Inflected form) ↑ “anaesthetic | anesthetic, adj. and n.”, in OED Online ⁠, Oxford: Oxford University Press, launched 2000.",
+        "examples": [
+          "The author skillfully incorporated anaesthetic to emphasize the underlying theme.",
+          "In every chapter, the presence of anaesthetic provided an unmistakable atmosphere.",
+          "Observers noted that anaesthetic altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Causing anesthesia; reducing pain sensitivity.; Insensate: unable to feel, or unconscious.",
+        "examples": [
+          "The author skillfully incorporated anaesthetic to emphasize the underlying theme.",
+          "In every chapter, the presence of anaesthetic provided an unmistakable atmosphere.",
+          "Observers noted that anaesthetic altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "anaesthetic",
+      "anesthetic"
+    ],
+    "createdAt": "2026-11-14T07:44:02.479Z",
+    "updatedAt": "2026-11-14T07:44:02.479Z"
   }
 }

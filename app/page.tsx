@@ -16,6 +16,7 @@ import {
   Bookmark,
   Music,
   Film,
+  Feather,
   Compass,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -24,7 +25,7 @@ interface MediaSummary {
   name: string;
   totalWords: number;
   totalPages?: number;
-  type: "book" | "song" | "movie";
+  type: "book" | "song" | "movie" | "poem";
 }
 
 interface QuickSearchWordResult {
@@ -33,15 +34,17 @@ interface QuickSearchWordResult {
   booksCount: number;
   songsCount: number;
   moviesCount: number;
+  poemsCount?: number;
 }
 
 export default function Home() {
   const router = useRouter();
   const [bookSummaries, setBookSummaries] = useState<MediaSummary[]>([]);
   const [songSummaries, setSongSummaries] = useState<MediaSummary[]>([]);
+  const [poemSummaries, setPoemSummaries] = useState<MediaSummary[]>([]);
   const [movieSummaries, setMovieSummaries] = useState<MediaSummary[]>([]);
   const [activeVaultTab, setActiveVaultTab] = useState<
-    "books" | "songs" | "movies"
+    "books" | "songs" | "movies" | "poems"
   >("books");
 
   const [loading, setLoading] = useState<boolean>(true);
@@ -56,16 +59,18 @@ export default function Home() {
     const fetchAllData = async () => {
       setLoading(true);
       try {
-        const [booksRes, songsRes, moviesRes] = await Promise.all([
+        const [booksRes, songsRes, moviesRes, poemsRes] = await Promise.all([
           fetch("/api/books"),
           fetch("/api/songs"),
           fetch("/api/movies"),
+          fetch("/api/poems"),
         ]);
 
-        const [booksData, songsData, moviesData] = await Promise.all([
+        const [booksData, songsData, moviesData, poemsData] = await Promise.all([
           booksRes.json(),
           songsRes.json(),
           moviesRes.json(),
+          poemsRes.json(),
         ]);
 
         // Process Books
@@ -127,6 +132,19 @@ export default function Home() {
             ),
           );
         }
+
+        // Process Poems
+        if (poemsData.success && Array.isArray(poemsData.poems)) {
+          setPoemSummaries(
+            poemsData.poems.map(
+              (p: { name: string; totalWords: number }) => ({
+                name: p.name,
+                totalWords: p.totalWords,
+                type: "poem" as const,
+              }),
+            ),
+          );
+        }
       } catch (err) {
         console.error("Error loading library data:", err);
       } finally {
@@ -159,6 +177,7 @@ export default function Home() {
             booksCount: data.data.books?.length || 0,
             songsCount: data.data.songs?.length || 0,
             moviesCount: data.data.movies?.length || 0,
+            poemsCount: data.data.poems?.length || 0,
           });
         } else {
           setSearchResult(null);
@@ -178,6 +197,7 @@ export default function Home() {
   const stats = useMemo(() => {
     const totalBooks = bookSummaries.length;
     const totalSongs = songSummaries.length;
+    const totalPoems = poemSummaries.length;
     const totalMovies = movieSummaries.length;
 
     let bookWords = 0;
@@ -188,16 +208,18 @@ export default function Home() {
     });
 
     const songWords = songSummaries.reduce((sum, s) => sum + s.totalWords, 0);
+    const poemWords = poemSummaries.reduce((sum, p) => sum + p.totalWords, 0);
     const movieWords = movieSummaries.reduce((sum, m) => sum + m.totalWords, 0);
-    const totalWords = bookWords + songWords + movieWords;
+    const totalWords = bookWords + songWords + poemWords + movieWords;
 
-    return { totalBooks, totalSongs, totalMovies, totalPages, totalWords };
-  }, [bookSummaries, songSummaries, movieSummaries]);
+    return { totalBooks, totalSongs, totalPoems, totalMovies, totalPages, totalWords };
+  }, [bookSummaries, songSummaries, poemSummaries, movieSummaries]);
 
   // Filter items for active tab
   const activeCollection = useMemo(() => {
     let source = bookSummaries;
     if (activeVaultTab === "songs") source = songSummaries;
+    else if (activeVaultTab === "poems") source = poemSummaries;
     else if (activeVaultTab === "movies") source = movieSummaries;
 
     const q = searchQuery.toLowerCase().trim();
@@ -207,6 +229,7 @@ export default function Home() {
     activeVaultTab,
     bookSummaries,
     songSummaries,
+    poemSummaries,
     movieSummaries,
     searchQuery,
   ]);
@@ -388,7 +411,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
             {[
               {
                 label: "Books Vault",
@@ -405,6 +428,14 @@ export default function Home() {
                 icon: <Music size={22} />,
                 bg: "bg-emerald-50 text-emerald-600",
                 href: "/song-list",
+              },
+              {
+                label: "Poems Vault",
+                value: loading ? "—" : stats.totalPoems,
+                desc: "Verse & stanza archives",
+                icon: <Feather size={22} />,
+                bg: "bg-violet-50 text-violet-600",
+                href: "/poem-list",
               },
               {
                 label: "Movies Vault",
@@ -487,6 +518,18 @@ export default function Home() {
               </button>
               <button
                 type="button"
+                onClick={() => setActiveVaultTab("poems")}
+                className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${
+                  activeVaultTab === "poems"
+                    ? "bg-indigo-600 text-white shadow-xs"
+                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                }`}
+              >
+                <Feather size={14} />
+                <span>Poems ({poemSummaries.length})</span>
+              </button>
+              <button
+                type="button"
                 onClick={() => setActiveVaultTab("movies")}
                 className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${
                   activeVaultTab === "movies"
@@ -518,6 +561,8 @@ export default function Home() {
               <div className="bg-indigo-50 p-4 rounded-full inline-flex text-indigo-600">
                 {activeVaultTab === "songs" ? (
                   <Music size={36} />
+                ) : activeVaultTab === "poems" ? (
+                  <Feather size={36} />
                 ) : activeVaultTab === "movies" ? (
                   <Film size={36} />
                 ) : (
@@ -547,9 +592,11 @@ export default function Home() {
                 const itemHref =
                   item.type === "song"
                     ? `/song/${encodeURIComponent(item.name)}`
-                    : item.type === "movie"
-                      ? `/movie/${encodeURIComponent(item.name)}`
-                      : `/book/${encodeURIComponent(item.name)}`;
+                    : item.type === "poem"
+                      ? `/poem/${encodeURIComponent(item.name)}`
+                      : item.type === "movie"
+                        ? `/movie/${encodeURIComponent(item.name)}`
+                        : `/book/${encodeURIComponent(item.name)}`;
 
                 return (
                   <Link
@@ -562,6 +609,8 @@ export default function Home() {
                         <div className="p-3 rounded-xl bg-indigo-50 text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors duration-300">
                           {item.type === "song" ? (
                             <Music size={22} />
+                          ) : item.type === "poem" ? (
+                            <Feather size={22} />
                           ) : item.type === "movie" ? (
                             <Film size={22} />
                           ) : (

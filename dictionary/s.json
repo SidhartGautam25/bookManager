@@ -6102,5 +6102,474 @@
     ],
     "createdAt": "2026-11-14T05:16:10.518Z",
     "updatedAt": "2026-11-14T05:16:10.518Z"
+  },
+  "sunny": {
+    "word": "sunny",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A sunfish.",
+        "examples": [
+          "The author skillfully incorporated sunny to emphasize the underlying theme.",
+          "In every chapter, the presence of sunny provided an unmistakable atmosphere.",
+          "Observers noted that sunny altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "(of weather or a day) Featuring a lot of sunshine.; (of a place) Receiving a lot of sunshine.",
+        "examples": [
+          "Whilst it may be sunny today, the weather forecast is predicting rain.",
+          "I would describe Spain as sunny, but it's nothing in comparison to the Sahara.",
+          "A sunny disposition."
+        ]
+      },
+      {
+        "partOfSpeech": "adverb",
+        "definition": "Sunny side up",
+        "examples": [
+          "The author skillfully incorporated sunny to emphasize the underlying theme.",
+          "In every chapter, the presence of sunny provided an unmistakable atmosphere.",
+          "Observers noted that sunny altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "sunny"
+    ],
+    "createdAt": "2026-11-14T07:12:05.765Z",
+    "updatedAt": "2026-11-14T07:12:05.765Z"
+  },
+  "stilled": {
+    "word": "stilled",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To calm down, to quiet; To trickle, drip.",
+        "examples": [
+          "To still the raging sea.",
+          "To stilled the raging sea.",
+          "The team stilled their operations until further instructions arrived from headquarters."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Brought to a standstill; Quieted",
+        "examples": [
+          "stilled waters run deep.",
+          "stilled water; stilled wines.",
+          "The team stilled their operations until further instructions arrived from headquarters."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Past tense & participle) A period of calm or silence.; (Past tense & participle) A photograph, as opposed to movie footage.",
+        "examples": [
+          "The stilled of the night.",
+          "The team stilled their operations until further instructions arrived from headquarters.",
+          "She was deeply stilled by the unexpected turn of events during the meeting."
+        ]
+      },
+      {
+        "partOfSpeech": "adverb",
+        "definition": "(Past tense & participle) Without motion.; (Past tense & participle) (aspect) Up to a time, as in the preceding time.",
+        "examples": [
+          "They stood stilled until the guard was out of sight.",
+          "Is it stilled raining? It was stilled raining five minutes ago.",
+          "Tom is tall; Dick is taller; Harry is stilled taller."
+        ]
+      }
+    ],
+    "variations": [
+      "stilled",
+      "still"
+    ],
+    "createdAt": "2026-11-14T07:12:10.136Z",
+    "updatedAt": "2026-11-14T07:12:10.136Z"
+  },
+  "sepulchre": {
+    "word": "sepulchre",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A burial chamber.; A recess in some early churches in which the reserved sacrament, etc. were kept from Good Friday till Easter.",
+        "examples": [
+          "The author skillfully incorporated sepulchre to emphasize the underlying theme.",
+          "In every chapter, the presence of sepulchre provided an unmistakable atmosphere.",
+          "Observers noted that sepulchre altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To place in a sepulchre.",
+        "examples": [
+          "The author skillfully incorporated sepulchre to emphasize the underlying theme.",
+          "In every chapter, the presence of sepulchre provided an unmistakable atmosphere.",
+          "Observers noted that sepulchre altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "sepulchre"
+    ],
+    "createdAt": "2026-11-14T07:12:10.511Z",
+    "updatedAt": "2026-11-14T07:12:10.511Z"
+  },
+  "suckled": {
+    "word": "suckled",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of suckled",
+        "examples": [
+          "The author skillfully incorporated suckled to emphasize the underlying theme.",
+          "In every chapter, the presence of suckled provided an unmistakable atmosphere.",
+          "Observers noted that suckled altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "suckled"
+    ],
+    "createdAt": "2026-11-14T07:12:14.101Z",
+    "updatedAt": "2026-11-14T07:12:14.101Z"
+  },
+  "strews": {
+    "word": "strews",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of strews",
+        "examples": [
+          "The local strews gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden strews swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various strews preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "strews"
+    ],
+    "createdAt": "2026-11-14T07:12:19.895Z",
+    "updatedAt": "2026-11-14T07:12:19.895Z"
+  },
+  "sick": {
+    "word": "sick",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of sick",
+        "examples": [
+          "The author skillfully incorporated sick to emphasize the underlying theme.",
+          "In every chapter, the presence of sick provided an unmistakable atmosphere.",
+          "Observers noted that sick altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "sick"
+    ],
+    "createdAt": "2026-11-14T07:12:20.316Z",
+    "updatedAt": "2026-11-14T07:12:20.316Z"
+  },
+  "sorrow": {
+    "word": "sorrow",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of sorrow",
+        "examples": [
+          "The author skillfully incorporated sorrow to emphasize the underlying theme.",
+          "In every chapter, the presence of sorrow provided an unmistakable atmosphere.",
+          "Observers noted that sorrow altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "sorrow"
+    ],
+    "createdAt": "2026-11-14T07:12:20.345Z",
+    "updatedAt": "2026-11-14T07:12:20.345Z"
+  },
+  "shiver": {
+    "word": "shiver",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of shiver",
+        "examples": [
+          "The author skillfully incorporated shiver to emphasize the underlying theme.",
+          "In every chapter, the presence of shiver provided an unmistakable atmosphere.",
+          "Observers noted that shiver altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "shiver"
+    ],
+    "createdAt": "2026-11-14T07:12:21.301Z",
+    "updatedAt": "2026-11-14T07:12:21.301Z"
+  },
+  "seek": {
+    "word": "seek",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of seek",
+        "examples": [
+          "The author skillfully incorporated seek to emphasize the underlying theme.",
+          "In every chapter, the presence of seek provided an unmistakable atmosphere.",
+          "Observers noted that seek altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "seek"
+    ],
+    "createdAt": "2026-11-14T07:12:24.077Z",
+    "updatedAt": "2026-11-14T07:12:24.077Z"
+  },
+  "silken": {
+    "word": "silken",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To render silken or silklike.",
+        "examples": [
+          "Silkening body lotion.",
+          "The author skillfully incorporated silken to emphasize the underlying theme.",
+          "In every chapter, the presence of silken provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Made of silk.; Having a smooth, soft, or light texture, like that of silk; suggestive of silk.",
+        "examples": [
+          "A silken veil.",
+          "The author skillfully incorporated silken to emphasize the underlying theme.",
+          "In every chapter, the presence of silken provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "silken"
+    ],
+    "createdAt": "2026-11-14T07:12:28.199Z",
+    "updatedAt": "2026-11-14T07:12:28.199Z"
+  },
+  "supple": {
+    "word": "supple",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To make or become supple.; To make compliant, submissive, or obedient.",
+        "examples": [
+          "The author skillfully incorporated supple to emphasize the underlying theme.",
+          "In every chapter, the presence of supple provided an unmistakable atmosphere.",
+          "Observers noted that supple altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Pliant, flexible, easy to bend; Lithe and agile when moving and bending",
+        "examples": [
+          "Supple joints; supple fingers.",
+          "A supple horse.",
+          "The author skillfully incorporated supple to emphasize the underlying theme."
+        ]
+      }
+    ],
+    "variations": [
+      "supple"
+    ],
+    "createdAt": "2026-11-14T07:12:31.961Z",
+    "updatedAt": "2026-11-14T07:12:31.961Z"
+  },
+  "sink": {
+    "word": "sink",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A basin used for holding water for washing.; A drain for carrying off wastewater.",
+        "examples": [
+          "Jones has a two-seamer with heavy sink.",
+          "The author skillfully incorporated sink to emphasize the underlying theme.",
+          "In every chapter, the presence of sink provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(heading, physical) To move or be moved into something.; (heading, social) To diminish or be diminished.",
+        "examples": [
+          "I have sunk thousands of pounds into this project.",
+          "To sink the national debt.",
+          "The author skillfully incorporated sink to emphasize the underlying theme."
+        ]
+      }
+    ],
+    "variations": [
+      "sink"
+    ],
+    "createdAt": "2026-11-14T07:12:37.164Z",
+    "updatedAt": "2026-11-14T07:12:37.164Z"
+  },
+  "shrunken": {
+    "word": "shrunken",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To cause to become smaller.; To become smaller; to contract.",
+        "examples": [
+          "The dryer shrank my sweater.",
+          "This garment will shrink when wet.",
+          "Molly shrank away from the blows of the whip."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Reduced in size as a result of shrinkage; shrivelled.",
+        "examples": [
+          "The author skillfully incorporated shrunken to emphasize the underlying theme.",
+          "In every chapter, the presence of shrunken provided an unmistakable atmosphere.",
+          "Observers noted that shrunken altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "shrunken"
+    ],
+    "createdAt": "2026-11-14T07:29:13.281Z",
+    "updatedAt": "2026-11-14T07:29:13.281Z"
+  },
+  "stare": {
+    "word": "stare",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A persistent gaze.; A starling.",
+        "examples": [
+          "The stares of astonished passers-by.",
+          "The stares of astonished passers-by contrasted with my father's vacuous stare at the ground.",
+          "The author skillfully incorporated stare to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(construed with at) To look fixedly (at something).; To influence in some way by looking fixedly.",
+        "examples": [
+          "To stare a timid person into submission.",
+          "Staring windows or colours.",
+          "She found him staring with raised eyebrows at her."
+        ]
+      }
+    ],
+    "variations": [
+      "stare"
+    ],
+    "createdAt": "2026-11-14T07:43:57.053Z",
+    "updatedAt": "2026-11-14T07:43:57.053Z"
+  },
+  "scaring": {
+    "word": "scaring",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To frighten, terrify, startle, especially in a minor way.; (Present participle / Gerund) (To be able) to be scared.",
+        "examples": [
+          "Did it scare you when I said \"Boo!\"?",
+          "Did it scaring you when I said \"Boo!\"?",
+          "I don't scaring easily."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "(Present participle / Gerund) A minor fright.; (Present participle / Gerund) A cause of slight terror; something that inspires fear or dread.",
+        "examples": [
+          "Johnny had a bad scaring last night.",
+          "A food-poisoning scaring.",
+          "He stood by the window, scaring quietly as the light faded into evening."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "(Present participle / Gerund) Lean; scanty; (Present participle / Gerund) lean; scanty",
+        "examples": [
+          "He stood by the window, scaring quietly as the light faded into evening.",
+          "They observed the fountain scaring clear water high into the morning air.",
+          "She spent hours scaring through the archives to locate the missing document."
+        ]
+      }
+    ],
+    "variations": [
+      "scaring",
+      "scare"
+    ],
+    "createdAt": "2026-11-14T07:44:03.761Z",
+    "updatedAt": "2026-11-14T07:44:03.761Z"
+  },
+  "stray": {
+    "word": "stray",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Any domestic animal that has no enclosure, or its proper place and company, and wanders at large, or is lost; an estray.; One who is lost, either literally or metaphorically.",
+        "examples": [
+          "Waifs and strays.",
+          "Catch a stray.",
+          "The author skillfully incorporated stray to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To wander, as from a direct course; to deviate, or go out of the way.; To wander from one's limits; to rove or roam at large; to go astray.",
+        "examples": [
+          "The author skillfully incorporated stray to emphasize the underlying theme.",
+          "In every chapter, the presence of stray provided an unmistakable atmosphere.",
+          "Observers noted that stray altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having gone astray; strayed; wandering; In the wrong place; misplaced.",
+        "examples": [
+          "The alley is full of stray cats rummaging through the garbage.",
+          "A stray comma.",
+          "A stray bullet."
+        ]
+      }
+    ],
+    "variations": [
+      "stray"
+    ],
+    "createdAt": "2026-11-14T07:56:50.600Z",
+    "updatedAt": "2026-11-14T07:56:50.600Z"
+  },
+  "scavenger": {
+    "word": "scavenger",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Someone who scavenges, especially one who searches through rubbish for food or useful things.; An animal that feeds on decaying matter such as carrion.",
+        "examples": [
+          "Garbage scavenger.",
+          "A scavenger picked through the rubbish heap.",
+          "Vultures are natural scavengers."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To scavenge.; To clean the rubbish from a street, etc.",
+        "examples": [
+          "The author skillfully incorporated scavenger to emphasize the underlying theme.",
+          "In every chapter, the presence of scavenger provided an unmistakable atmosphere.",
+          "Observers noted that scavenger altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "scavenger"
+    ],
+    "createdAt": "2026-11-14T07:56:52.453Z",
+    "updatedAt": "2026-11-14T07:56:52.453Z"
   }
 }

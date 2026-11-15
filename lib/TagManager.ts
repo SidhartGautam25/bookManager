@@ -13,7 +13,7 @@ export interface TaggedSentenceResult {
   sentence: string;
   meaning?: string;
   tag: string;
-  mediaType: "book" | "song" | "movie";
+  mediaType: "book" | "song" | "movie" | "poem";
   mediaName: string;
   pageNo?: number;
   createdAt?: string;
@@ -367,6 +367,49 @@ export class TagManager {
         }
       }
     }
+
+    // 4. Scan Poems
+    const poemsDir = path.join(process.cwd(), "poems");
+    if (fs.existsSync(poemsDir)) {
+      const poemFiles = fs
+        .readdirSync(poemsDir)
+        .filter((f) => f.endsWith(".json"));
+      for (const file of poemFiles) {
+        const filePath = path.join(poemsDir, file);
+        try {
+          const content = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+          const items = Array.isArray(content) ? content : content.words;
+          if (!Array.isArray(items)) continue;
+
+          let modified = false;
+          for (const item of items) {
+            if (
+              item.type === "sentence" &&
+              item.tag &&
+              item.tag.toLowerCase() === normOld
+            ) {
+              item.tag = newName;
+              if (Array.isArray(item.tags)) {
+                item.tags = item.tags.map((t: string) =>
+                  t.toLowerCase() === normOld ? newName : t,
+                );
+              }
+              modified = true;
+            }
+          }
+
+          if (modified) {
+            fs.writeFileSync(
+              filePath,
+              JSON.stringify(content, null, 2),
+              "utf-8",
+            );
+          }
+        } catch (e) {
+          console.error(`Error updating tag in poem ${filePath}:`, e);
+        }
+      }
+    }
   }
 
   /**
@@ -487,6 +530,41 @@ export class TagManager {
           }
         } catch (e) {
           console.error(`Error reading movie ${filePath}:`, e);
+        }
+      }
+    }
+
+    // 4. Poems
+    const poemsDir = path.join(process.cwd(), "poems");
+    if (fs.existsSync(poemsDir)) {
+      const poemFiles = fs
+        .readdirSync(poemsDir)
+        .filter((f) => f.endsWith(".json"));
+      for (const file of poemFiles) {
+        const poemName = file.replace(/\.json$/, "");
+        const filePath = path.join(poemsDir, file);
+        try {
+          const content = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+          const items = Array.isArray(content) ? content : content.words;
+          if (!Array.isArray(items)) continue;
+
+          for (const item of items) {
+            if (item.type === "sentence" && item.sentence) {
+              const itemTag = item.tag || "";
+              if (!normTarget || itemTag.toLowerCase() === normTarget) {
+                results.push({
+                  sentence: item.sentence,
+                  meaning: item.meaning || "",
+                  tag: itemTag,
+                  mediaType: "poem",
+                  mediaName: poemName,
+                  createdAt: item.createdAt,
+                });
+              }
+            }
+          }
+        } catch (e) {
+          console.error(`Error reading poem ${filePath}:`, e);
         }
       }
     }

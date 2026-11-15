@@ -2419,5 +2419,185 @@
     ],
     "createdAt": "2026-11-14T05:16:08.619Z",
     "updatedAt": "2026-11-14T05:16:08.619Z"
+  },
+  "isle": {
+    "word": "isle",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of isle",
+        "examples": [
+          "The author skillfully incorporated isle to emphasize the underlying theme.",
+          "In every chapter, the presence of isle provided an unmistakable atmosphere.",
+          "Observers noted that isle altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "isle"
+    ],
+    "createdAt": "2026-11-14T07:12:17.701Z",
+    "updatedAt": "2026-11-14T07:12:17.701Z"
+  },
+  "imperishable": {
+    "word": "imperishable",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of imperishable",
+        "examples": [
+          "The author skillfully incorporated imperishable to emphasize the underlying theme.",
+          "In every chapter, the presence of imperishable provided an unmistakable atmosphere.",
+          "Observers noted that imperishable altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "imperishable"
+    ],
+    "createdAt": "2026-11-14T07:12:19.421Z",
+    "updatedAt": "2026-11-14T07:12:19.421Z"
+  },
+  "impassioned": {
+    "word": "impassioned",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of impassioned",
+        "examples": [
+          "The author skillfully incorporated impassioned to emphasize the underlying theme.",
+          "In every chapter, the presence of impassioned provided an unmistakable atmosphere.",
+          "Observers noted that impassioned altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "impassioned"
+    ],
+    "createdAt": "2026-11-14T07:12:22.709Z",
+    "updatedAt": "2026-11-14T07:12:22.709Z"
+  },
+  "inescapable": {
+    "word": "inescapable",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Impossible (unable) to avoid or escape; not escapable.",
+        "examples": [
+          "The author skillfully incorporated inescapable to emphasize the underlying theme.",
+          "In every chapter, the presence of inescapable provided an unmistakable atmosphere.",
+          "Observers noted that inescapable altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "inescapable"
+    ],
+    "createdAt": "2026-11-14T07:12:35.850Z",
+    "updatedAt": "2026-11-14T07:12:35.850Z"
+  },
+  "illimited": {
+    "word": "illimited",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of illimited",
+        "examples": [
+          "The author skillfully incorporated illimited to emphasize the underlying theme.",
+          "In every chapter, the presence of illimited provided an unmistakable atmosphere.",
+          "Observers noted that illimited altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "illimited"
+    ],
+    "createdAt": "2026-11-14T07:29:16.126Z",
+    "updatedAt": "2026-11-14T07:29:16.126Z"
+  },
+  "interrogation": {
+    "word": "interrogation",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The act of interrogating or questioning; examination by questions; inquiry.; A question put; an inquiry.",
+        "examples": [
+          "The author skillfully incorporated interrogation to emphasize the underlying theme.",
+          "In every chapter, the presence of interrogation provided an unmistakable atmosphere.",
+          "Observers noted that interrogation altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "interrogation"
+    ],
+    "createdAt": "2026-11-14T07:43:58.214Z",
+    "updatedAt": "2026-11-14T07:43:58.214Z"
+  },
+  "indecision": {
+    "word": "indecision",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The inability to decide on a course of action, especially if two or more possibilities exist.",
+        "examples": [
+          "Billy Toad has shown extreme indecision in all aspects when it comes to his jeep. Whether it's how to modify it, or if he will sell it.",
+          "The author skillfully incorporated indecision to emphasize the underlying theme.",
+          "In every chapter, the presence of indecision provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "indecision"
+    ],
+    "createdAt": "2026-11-14T07:44:02.152Z",
+    "updatedAt": "2026-11-14T07:44:02.152Z"
+  },
+  "intricate": {
+    "word": "intricate",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Having a great deal of fine detail or complexity.",
+        "examples": [
+          "The architecture of this clock is very intricate.",
+          "The author skillfully incorporated intricate to emphasize the underlying theme.",
+          "In every chapter, the presence of intricate provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To become enmeshed or entangled.; To enmesh or entangle: to cause to intricate.",
+        "examples": [
+          "The author skillfully incorporated intricate to emphasize the underlying theme.",
+          "In every chapter, the presence of intricate provided an unmistakable atmosphere.",
+          "Observers noted that intricate altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "intricate"
+    ],
+    "createdAt": "2026-11-14T07:44:04.593Z",
+    "updatedAt": "2026-11-14T07:44:04.593Z"
+  },
+  "intact": {
+    "word": "intact",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Left complete or whole; not touched, defiled, sullied or otherwise damaged; Of animals, not castrated: an intact bull.",
+        "examples": [
+          "I packed my belongings carefully so that they would survive the move intact.",
+          "The opposite of a circumcised penis is an intact penis.",
+          "An intact bull."
+        ]
+      }
+    ],
+    "variations": [
+      "intact"
+    ],
+    "createdAt": "2026-11-14T07:56:53.238Z",
+    "updatedAt": "2026-11-14T07:56:53.238Z"
   }
 }

@@ -7,6 +7,7 @@ import {
   Book,
   Music,
   Film,
+  Feather,
   Sparkles,
   CheckCircle2,
   AlertCircle,
@@ -101,12 +102,36 @@ I think it's the excitement only a free man can feel. A free man at the start of
 00:01:46,000 --> 00:01:52,000
 I hope I can make it across the border. I hope the Pacific is as blue as it has been in my dreams. I hope.`;
 
+const SAMPLE_POEM_TEXT = `Two roads diverged in a yellow wood,
+And sorry I could not travel both
+And be one traveler, long I stood
+And looked down one as far as I could
+To where it bent in the undergrowth;
+
+Then took the other, as just as fair,
+And having perhaps the better claim,
+Because it was grassy and wanted wear;
+Though as for that the passing there
+Had worn them really about the same,
+
+And both that morning equally lay
+In leaves no step had trodden black.
+Oh, I kept the first for another day!
+Yet knowing how way leads on to way,
+I doubted if I should ever come back.
+
+I shall be telling this with a sigh
+Somewhere ages and ages hence:
+Two roads diverged in a wood, and I—
+I took the one less traveled by,
+And that has made all the difference.`;
+
 interface BatchImportProps {
   books: string[];
   selectedBook: string;
   onSelectBook: (book: string) => void;
   onBookCreated: (newBook: string) => void;
-  mediaType?: "book" | "song" | "movie";
+  mediaType?: "book" | "song" | "movie" | "poem";
 }
 
 export default function BatchImport({
@@ -123,9 +148,21 @@ export default function BatchImport({
 
   // Dynamic media labels
   const mediaLabel =
-    mediaType === "song" ? "Song" : mediaType === "movie" ? "Movie" : "Book";
+    mediaType === "song"
+      ? "Song"
+      : mediaType === "poem"
+        ? "Poem"
+        : mediaType === "movie"
+          ? "Movie"
+          : "Book";
   const mediaPath =
-    mediaType === "song" ? "song" : mediaType === "movie" ? "movie" : "book";
+    mediaType === "song"
+      ? "song"
+      : mediaType === "poem"
+        ? "poem"
+        : mediaType === "movie"
+          ? "movie"
+          : "book";
 
   // Enrichment state
   const [isEnriching, setIsEnriching] = useState(false);
@@ -222,21 +259,26 @@ export default function BatchImport({
   const [isEditingLyrics, setIsEditingLyrics] = useState(false);
   const [showLyricsCard, setShowLyricsCard] = useState(true);
 
-  // Restore saved lyrics from sessionStorage or server disk when song changes
+  // Restore saved lyrics/verses from sessionStorage or server disk when song/poem changes
   useEffect(() => {
-    if (mediaType === "song" && selectedBook && typeof window !== "undefined") {
+    if (
+      (mediaType === "song" || mediaType === "poem") &&
+      selectedBook &&
+      typeof window !== "undefined"
+    ) {
       const timer = setTimeout(() => {
         try {
-          const saved = sessionStorage.getItem(
-            `bookword_lyrics_${selectedBook}`,
-          );
+          const storageKey = `bookword_${mediaType === "poem" ? "verses" : "lyrics"}_${selectedBook}`;
+          const saved = sessionStorage.getItem(storageKey);
           if (saved) {
             setLyricsText(saved);
             setIsEditingLyrics(false);
           } else {
-            fetch(
-              `/api/songs/lyrics?songName=${encodeURIComponent(selectedBook)}`,
-            )
+            const endpoint =
+              mediaType === "poem"
+                ? `/api/poems/lyrics?poemName=${encodeURIComponent(selectedBook)}`
+                : `/api/songs/lyrics?songName=${encodeURIComponent(selectedBook)}`;
+            fetch(endpoint)
               .then((r) => r.json())
               .then((d) => {
                 if (d.success && d.lyrics) {
@@ -485,6 +527,14 @@ export default function BatchImport({
       setNotesText(
         "scaramouche, fandango, gallimaufry, serendipity, ephemeral, bohemian, rhapsody",
       );
+    } else if (mediaType === "poem") {
+      setNotesText(
+        "diverged, undergrowth, fair, claim, trodden, difference, sigh",
+      );
+      if (!lyricsText) {
+        setLyricsText(SAMPLE_POEM_TEXT);
+        setIsEditingLyrics(false);
+      }
     } else if (mediaType === "movie") {
       setNotesText(
         "labyrinth, subconscious, anomalous, paradox, petrichor, inception, totemic",
@@ -513,6 +563,9 @@ Page 15: quixotic, recalcitrant`,
       if (mediaType === "song") {
         endpoint = "/api/songs";
         bodyData = { songName: newBookName.trim(), action: "create" };
+      } else if (mediaType === "poem") {
+        endpoint = "/api/poems";
+        bodyData = { poemName: newBookName.trim(), action: "create" };
       } else if (mediaType === "movie") {
         endpoint = "/api/movies";
         bodyData = { movieName: newBookName.trim(), action: "create" };
@@ -901,6 +954,18 @@ Page 15: quixotic, recalcitrant`,
           })),
           skipDuplicates: true,
         };
+      } else if (mediaType === "poem") {
+        endpoint = "/api/poems/batch";
+        payload = {
+          poemName: selectedBook,
+          lyrics: lyricsText || undefined,
+          entries: included.map((item) => ({
+            word: item.word,
+            meanings: item.meanings,
+            variations: item.variations,
+          })),
+          skipDuplicates: true,
+        };
       } else if (mediaType === "movie") {
         endpoint = "/api/movies/batch";
         payload = {
@@ -1140,6 +1205,8 @@ Page 15: quixotic, recalcitrant`,
             <div className="p-2 rounded-xl bg-indigo-50 text-indigo-600">
               {mediaType === "song" ? (
                 <Music size={18} />
+              ) : mediaType === "poem" ? (
+                <Feather size={18} />
               ) : mediaType === "movie" ? (
                 <Film size={18} />
               ) : (
@@ -1220,18 +1287,22 @@ Page 15: quixotic, recalcitrant`,
         )}
       </section>
 
-      {/* Optional Song Lyrics Interactive Word-Picker Section (Songs only) */}
-      {mediaType === "song" && (
+      {/* Optional Song Lyrics / Poem Verses Interactive Word-Picker Section */}
+      {(mediaType === "song" || mediaType === "poem") && (
         <section className="bg-white rounded-2xl p-6 sm:p-8 border border-purple-100 shadow-2xs space-y-4">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-gray-100">
             <div className="flex items-center gap-2.5">
               <div className="p-2 rounded-xl bg-purple-50 text-purple-600">
-                <Music size={18} />
+                {mediaType === "poem" ? (
+                  <Feather size={18} />
+                ) : (
+                  <Music size={18} />
+                )}
               </div>
               <div>
                 <div className="flex items-center gap-2">
                   <h2 className="text-base font-bold text-gray-900">
-                    Song Lyrics{" "}
+                    {mediaType === "poem" ? "Poem Verses / Stanzas" : "Song Lyrics"}{" "}
                     <span className="text-xs font-normal text-gray-500">
                       (Optional)
                     </span>
@@ -1244,8 +1315,9 @@ Page 15: quixotic, recalcitrant`,
                   )}
                 </div>
                 <p className="text-xs text-gray-500">
-                  Paste lyrics to click words directly into your Wordpad, or
-                  type words manually below.
+                  {mediaType === "poem"
+                    ? "Paste poem verses to click words directly into your Wordpad, or type words manually below."
+                    : "Paste lyrics to click words directly into your Wordpad, or type words manually below."}
                 </p>
               </div>
             </div>
@@ -1258,7 +1330,7 @@ Page 15: quixotic, recalcitrant`,
                   className="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-700 bg-gray-100 hover:bg-gray-200 px-3 py-1.5 rounded-xl transition-colors"
                 >
                   <Edit3 size={13} />
-                  Edit Lyrics
+                  {mediaType === "poem" ? "Edit Verses" : "Edit Lyrics"}
                 </button>
               )}
               {lyricsText.trim() && isEditingLyrics && (
@@ -1274,12 +1346,16 @@ Page 15: quixotic, recalcitrant`,
               <button
                 type="button"
                 onClick={() => {
-                  handleLyricsChange(SAMPLE_SONG_LYRICS);
+                  handleLyricsChange(
+                    mediaType === "poem"
+                      ? SAMPLE_POEM_TEXT
+                      : SAMPLE_SONG_LYRICS,
+                  );
                   setIsEditingLyrics(false);
                 }}
                 className="text-xs font-bold text-purple-600 bg-purple-50 hover:bg-purple-100 px-3 py-1.5 rounded-xl transition-colors"
               >
-                Sample Lyrics
+                {mediaType === "poem" ? "Sample Verses" : "Sample Lyrics"}
               </button>
               {lyricsText.trim() && (
                 <button

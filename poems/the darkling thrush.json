@@ -1,0 +1,717 @@
+{
+  "lyrics": "I leant upon a coppice gate\n      When Frost was spectre-grey,\nAnd Winter's dregs made desolate\n      The weakening eye of day.\nThe tangled bine-stems scored the sky\n      Like strings of broken lyres,\nAnd all mankind that haunted nigh\n      Had sought their household fires.\n\nThe land's sharp features seemed to be\n      The Century's corpse outleant,\nHis crypt the cloudy canopy,\n      The wind his death-lament.\nThe ancient pulse of germ and birth\n      Was shrunken hard and dry,\nAnd every spirit upon earth\n      Seemed fervourless as I.\n\nAt once a voice arose among\n      The bleak twigs overhead\nIn a full-hearted evensong\n      Of joy illimited;\nAn aged thrush, frail, gaunt, and small,\n      In blast-beruffled plume,\nHad chosen thus to fling his soul\n      Upon the growing gloom.\n\nSo little cause for carolings\n      Of such ecstatic sound\nWas written on terrestrial things\n      Afar or nigh around,\nThat I could think there trembled through\n      His happy good-night air\nSome blessed Hope, whereof he knew\n      And I was unaware.\n",
+  "words": [
+    {
+      "type": "word",
+      "word": "coppice",
+      "variations": [
+        "coppice"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A grove of small growth; a thicket of brushwood; a wood cut at certain times for fuel or other purposes, typically managed to promote growth and ensure a reliable supply of timber. See copse.",
+          "examples": [
+            "The author skillfully incorporated coppice to emphasize the underlying theme.",
+            "In every chapter, the presence of coppice provided an unmistakable atmosphere.",
+            "Observers noted that coppice altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To manage (a wooded area) sustainably, as a coppice, by periodically cutting back woody plants to promote new growth.; To sprout from the stump.",
+          "examples": [
+            "Her plan to coppice the woods should keep her self-sufficient in fuel indefinitely.",
+            "Few conifer species can coppice.",
+            "The author skillfully incorporated coppice to emphasize the underlying theme."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "Frost",
+      "variations": [
+        "frost"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A cover of minute ice crystals on objects that are exposed to the air. Frost is formed by the same process as dew, except that the temperature of the frosted object is below freezing.; The cold weather that causes these ice crystals to form.",
+          "examples": [
+            "Frost: &nbsp;.",
+            "The author skillfully incorporated frost to emphasize the underlying theme.",
+            "In every chapter, the presence of frost provided an unmistakable atmosphere."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To cover with frost.; To become covered with frost.",
+          "examples": [
+            "I think the boss's decision frosted him a bit.",
+            "The author skillfully incorporated frost to emphasize the underlying theme.",
+            "In every chapter, the presence of frost provided an unmistakable atmosphere."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "dregs",
+      "variations": [
+        "dregs"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "(collectively) The sediment settled at the bottom of a liquid; the lees in a container of unfiltered wine.; (the dregs) The worst and lowest part of something.",
+          "examples": [
+            "The dregs of society.",
+            "I sat through the dregs of a long hectic evening.",
+            "The local dregs gathered early in the square to prepare their daily exhibits."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "desolate",
+      "variations": [
+        "desolate"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "adjective",
+          "definition": "Deserted and devoid of inhabitants.; Barren and lifeless.",
+          "examples": [
+            "A desolate isle; a desolate wilderness; a desolate house.",
+            "Desolate altars.",
+            "He was left desolate by the early death of his wife."
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definition": "To deprive of inhabitants.; To devastate or lay waste somewhere.",
+          "examples": [
+            "The author skillfully incorporated desolate to emphasize the underlying theme.",
+            "In every chapter, the presence of desolate provided an unmistakable atmosphere.",
+            "Observers noted that desolate altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "weakening",
+      "variations": [
+        "weakening",
+        "weaken"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To make weaker or less strong.; To become weaker or less strong.",
+          "examples": [
+            "weakening a bond.",
+            "weakening a joint.",
+            "Over the years my enthusiasm for the job has weakened."
+          ]
+        },
+        {
+          "partOfSpeech": "Noun",
+          "definition": "An instance or process of loss of strength.; A structural principle of mathematical logic that states that the hypotheses of any derived fact may be freely extended with additional assumptions.",
+          "examples": [
+            "He stood by the window, weakening quietly as the light faded into evening.",
+            "They observed the fountain weakening clear water high into the morning air.",
+            "She spent hours weakening through the archives to locate the missing document."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "tangled",
+      "variations": [
+        "tangle",
+        "tangles",
+        "tangling",
+        "tangled"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "adjective",
+          "definition": "Twisted together in a messy or confusing way.",
+          "examples": [
+            "She tried to comb her tangled hair.",
+            "The fishing lines became badly tangled.",
+            "Roots formed a tangled pattern beneath the tree.",
+            "The wires were tangled behind the computer desk."
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definition": "Twisted or caught things together so they became difficult to separate.",
+          "examples": [
+            "The storm tangled the branches together.",
+            "He tangled the headphones in his pocket.",
+            "Children were tangling strings while flying kites.",
+            "The dog had tangled itself in the rope."
+          ]
+        },
+        {
+          "partOfSpeech": "adjective",
+          "definition": "Complicated, confused, or difficult to understand clearly.",
+          "examples": [
+            "They became trapped in a tangled legal dispute.",
+            "Her tangled emotions made decision-making difficult.",
+            "The story follows a tangled web of relationships.",
+            "History often leaves behind tangled political questions."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "lyres",
+      "variations": [
+        "lyres",
+        "lyre"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "An ancient stringed musical instrument (a yoke lute chordophone) of Greek origin, consisting of two arms extending from a body to a crossbar (a yoke), and strings, parallel to the soundboard, connecting the body to the yoke.; A lyre-shaped sheet music holder that attaches to a wind instrument when a music stand is impractical.",
+          "examples": [
+            "The local lyres gathered early in the square to prepare their daily exhibits.",
+            "Multiple sudden lyres swept across the region, overwhelming the drainage canals.",
+            "Scholars compared various lyres preserved from centuries of documented history."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "(Plural form) to play the lyre",
+          "examples": [
+            "The local lyres gathered early in the square to prepare their daily exhibits.",
+            "Multiple sudden lyres swept across the region, overwhelming the drainage canals.",
+            "Scholars compared various lyres preserved from centuries of documented history."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "corpse",
+      "variations": [
+        "corpse"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A dead body.; (sometimes derogatory) A human body in general, whether living or dead.",
+          "examples": [
+            "Drive over the [expletive] corpses! Or we're not letting you in!",
+            "The author skillfully incorporated corpse to emphasize the underlying theme.",
+            "In every chapter, the presence of corpse provided an unmistakable atmosphere."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "(of an actor) To lose control during a performance and laugh uncontrollably.; To laugh uncontrollably during a performance.",
+          "examples": [
+            "The author skillfully incorporated corpse to emphasize the underlying theme.",
+            "In every chapter, the presence of corpse provided an unmistakable atmosphere.",
+            "Observers noted that corpse altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "outleant",
+      "variations": [
+        "outleant",
+        "outlean"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "simple past and past participle of outlean",
+          "examples": [
+            "The team outleant their operations until further instructions arrived from headquarters.",
+            "She was deeply outleant by the unexpected turn of events during the meeting.",
+            "He carefully outleant the remaining pieces into a cohesive structure."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "crypt",
+      "variations": [
+        "crypt"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A cave or cavern.; An underground vault, especially one beneath a church that is used as a burial place.",
+          "examples": [
+            "The author skillfully incorporated crypt to emphasize the underlying theme.",
+            "In every chapter, the presence of crypt provided an unmistakable atmosphere.",
+            "Observers noted that crypt altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "canopy",
+      "variations": [
+        "canopy"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A high cover providing shelter, such as a cloth supported above an object, particularly over a bed.; Any overhanging or projecting roof structure, typically over entrances or doors.",
+          "examples": [
+            "The author skillfully incorporated canopy to emphasize the underlying theme.",
+            "In every chapter, the presence of canopy provided an unmistakable atmosphere.",
+            "Observers noted that canopy altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To cover with or as if with a canopy.; To go through the canopy of a forest on a zipline.",
+          "examples": [
+            "The author skillfully incorporated canopy to emphasize the underlying theme.",
+            "In every chapter, the presence of canopy provided an unmistakable atmosphere.",
+            "Observers noted that canopy altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "death",
+      "variations": [
+        "death"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Context Note",
+          "definition": "lament",
+          "examples": [
+            "Observed in context in the darkling thrush."
+          ]
+        },
+        {
+          "partOfSpeech": "Noun",
+          "definition": "The cessation of life and all associated processes; the end of an organism's existence as an entity independent from its environment and its return to an inert, nonliving state.; (often capitalized) The personification of death as a hooded figure with a scythe; the Grim Reaper. The pronoun he is not the only option, but probably the most traditional one, as it matches with the male grammatical gender of Old English dēaþ, also with cognate German der Tod. The fourth apocalyptic rider (Bible, revelations 6:8) is male θᾰ́νᾰτος (thanatos) in Greek. It has the female name Mors in Latin, but is referred to with male forms qui and eum. The following quotes show this rider on a pale horse is his in the English Bible and she in Peter Gabriel's lyrics.",
+          "examples": [
+            "The death of my grandmother saddened the whole family.",
+            "When death walked in, a chill spread through the room.",
+            "England scored a goal at the death to even the score at one all."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "shrunken",
+      "variations": [
+        "shrunken"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To cause to become smaller.; To become smaller; to contract.",
+          "examples": [
+            "The dryer shrank my sweater.",
+            "This garment will shrink when wet.",
+            "Molly shrank away from the blows of the whip."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Reduced in size as a result of shrinkage; shrivelled.",
+          "examples": [
+            "The author skillfully incorporated shrunken to emphasize the underlying theme.",
+            "In every chapter, the presence of shrunken provided an unmistakable atmosphere.",
+            "Observers noted that shrunken altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "fervourless",
+      "variations": [
+        "fervourless"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "General",
+          "definition": "Meaning and context of fervourless",
+          "examples": [
+            "The local fervourless gathered early in the square to prepare their daily exhibits.",
+            "Multiple sudden fervourless swept across the region, overwhelming the drainage canals.",
+            "Scholars compared various fervourless preserved from centuries of documented history."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "arose",
+      "variations": [
+        "arose"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To come up from a lower to a higher position.; To come up from one's bed or place of repose; to get up.",
+          "examples": [
+            "To arise from a kneeling posture.",
+            "He arose early in the morning.",
+            "A cloud arose and covered the sun."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "bleak",
+      "variations": [
+        "bleak"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "adjective",
+          "definition": "Without color; pale; pallid.; Desolate and exposed; swept by cold winds.",
+          "examples": [
+            "A bleak and bare rock.",
+            "A bleak, crater-pocked moonscape.",
+            "They escaped across the bleak landscape."
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "definition": "A small European river fish (Alburnus alburnus), of the family Cyprinidae.",
+          "examples": [
+            "The author skillfully incorporated bleak to emphasize the underlying theme.",
+            "In every chapter, the presence of bleak provided an unmistakable atmosphere.",
+            "Observers noted that bleak altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "twigs",
+      "variations": [
+        "twigs"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A small thin branch of a tree or bush.",
+          "examples": [
+            "They used twigs and leaves as a base to start the fire.",
+            "The local twigs gathered early in the square to prepare their daily exhibits.",
+            "Multiple sudden twigs swept across the region, overwhelming the drainage canals."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To beat with twigs.; To realise something; to catch on; to recognize someone or something.",
+          "examples": [
+            "He hasn't twigged that we're planning a surprise party for him.",
+            "Do you twig me?",
+            "The local twigs gathered early in the square to prepare their daily exhibits."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "evensong",
+      "variations": [
+        "evensong"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A religious service, most commonly seen in the Anglican or Episcopal Church, that takes place in the early hours of the evening.",
+          "examples": [
+            "The author skillfully incorporated evensong to emphasize the underlying theme.",
+            "In every chapter, the presence of evensong provided an unmistakable atmosphere.",
+            "Observers noted that evensong altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "illimited",
+      "variations": [
+        "illimited"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "General",
+          "definition": "Meaning and context of illimited",
+          "examples": [
+            "The author skillfully incorporated illimited to emphasize the underlying theme.",
+            "In every chapter, the presence of illimited provided an unmistakable atmosphere.",
+            "Observers noted that illimited altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "thrush",
+      "variations": [
+        "thrush"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "Any of several species of songbirds of the family Turdidae, often with spotted underbellies such as the bluebird, nightingale, and American robin have.; A female singer.",
+          "examples": [
+            "The author skillfully incorporated thrush to emphasize the underlying theme.",
+            "In every chapter, the presence of thrush provided an unmistakable atmosphere.",
+            "Observers noted that thrush altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "frail",
+      "variations": [
+        "frail"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A basket made of rushes, used chiefly to hold figs and raisins.; The quantity of fruit or other items contained in a frail.",
+          "examples": [
+            "The author skillfully incorporated frail to emphasize the underlying theme.",
+            "In every chapter, the presence of frail provided an unmistakable atmosphere.",
+            "Observers noted that frail altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To play a stringed instrument, usually a banjo, by picking with the back of a fingernail.",
+          "examples": [
+            "The author skillfully incorporated frail to emphasize the underlying theme.",
+            "In every chapter, the presence of frail provided an unmistakable atmosphere.",
+            "Observers noted that frail altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Easily broken physically; not firm or durable; liable to fail and perish; Weak; infirm.",
+          "examples": [
+            "The author skillfully incorporated frail to emphasize the underlying theme.",
+            "In every chapter, the presence of frail provided an unmistakable atmosphere.",
+            "Observers noted that frail altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "gaunt",
+      "variations": [
+        "gauntness"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "adjective",
+          "definition": "Lean and haggard, especially because of suffering, hunger, or age.",
+          "examples": [
+            "The gaunt faces of the solitary confinement prisoners stared through the iron bars."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "plume",
+      "variations": [
+        "plume"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A feather of a bird, especially a large or showy one used as a decoration.; A cluster of feathers worn as an ornament, especially on a helmet; a hackle.",
+          "examples": [
+            "The author skillfully incorporated plume to emphasize the underlying theme.",
+            "In every chapter, the presence of plume provided an unmistakable atmosphere.",
+            "Observers noted that plume altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To adorn, cover, or furnish with feathers or plumes, or as if with feathers or plumes.; Chiefly of a bird: to arrange and preen the feathers of, specifically in preparation for flight; hence , to prepare for (something).",
+          "examples": [
+            "He plumes himself on his skill.",
+            "Smoke plumed from his pipe, then slowly settled towards the floor.",
+            "The author skillfully incorporated plume to emphasize the underlying theme."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "blast",
+      "variations": [
+        "blast"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Context Note",
+          "definition": "beruffled",
+          "examples": [
+            "Observed in context in the darkling thrush."
+          ]
+        },
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A violent gust of wind.; A forcible stream of gas or liquid from an orifice, for example from a bellows, the mouth, etc.",
+          "examples": [
+            "Many tons of iron were melted at a blast.",
+            "We had a blast at the party last night.",
+            "An e-mail blast; a fax blast."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To make an impression on, by making a loud blast or din.; To make a loud noise.",
+          "examples": [
+            "Blast right through it.",
+            "Blast it! Foiled again.",
+            "Chewbacca blasted the Stormtroopers with his laser rifle."
+          ]
+        },
+        {
+          "partOfSpeech": "Interjection",
+          "definition": "(chiefly British) To show displeasure; damn",
+          "examples": [
+            "The author skillfully incorporated blast to emphasize the underlying theme.",
+            "In every chapter, the presence of blast provided an unmistakable atmosphere.",
+            "Observers noted that blast altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "fling",
+      "variations": [
+        "fling"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "An act of throwing, often violently.; An act of moving the limbs or body with violent movements, especially in a dance.",
+          "examples": [
+            "The fling of a horse.",
+            "I had a fling with a girl I met on holiday.",
+            "The Highland fling."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To move (oneself) abruptly or violently; to rush or dash.; To throw with violence or quick movement; to hurl.",
+          "examples": [
+            "The scold began to flout and fling.",
+            "He stood by the window, fling quietly as the light faded into evening.",
+            "They observed the fountain fling clear water high into the morning air."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "gloom",
+      "variations": [
+        "gloomy"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definition": "Partial or total darkness; a state of depression or despondency.",
+          "examples": [
+            "A heavy, unyielding gloom settled over Gregor's locked bedroom."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "carolings",
+      "variations": [
+        "carolings"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "General",
+          "definition": "Meaning and context of carolings",
+          "examples": [
+            "The local carolings gathered early in the square to prepare their daily exhibits.",
+            "Multiple sudden carolings swept across the region, overwhelming the drainage canals.",
+            "Scholars compared various carolings preserved from centuries of documented history."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "ecstatic",
+      "variations": [
+        "ecstatic"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "(in the plural) Transports of delight; words or actions performed in a state of ecstasy.; A person in a state of ecstasy.",
+          "examples": [
+            "The author skillfully incorporated ecstatic to emphasize the underlying theme.",
+            "In every chapter, the presence of ecstatic provided an unmistakable atmosphere.",
+            "Observers noted that ecstatic altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Feeling or characterized by ecstasy.; Extremely happy.",
+          "examples": [
+            "Ecstatic gaze; ecstatic trance.",
+            "The author skillfully incorporated ecstatic to emphasize the underlying theme.",
+            "In every chapter, the presence of ecstatic provided an unmistakable atmosphere."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "trembled",
+      "variations": [
+        "trembled"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "General",
+          "definition": "Meaning and context of trembled",
+          "examples": [
+            "The author skillfully incorporated trembled to emphasize the underlying theme.",
+            "In every chapter, the presence of trembled provided an unmistakable atmosphere.",
+            "Observers noted that trembled altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    }
+  ]
+}

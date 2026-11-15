@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { BookManager, WordMeaning } from "@/lib/BookManager";
-import { songManager, movieManager } from "@/lib/MediaManager";
+import { songManager, movieManager, poemManager } from "@/lib/MediaManager";
 
 const bookManager = new BookManager();
 
@@ -20,11 +20,14 @@ export async function GET(request: NextRequest) {
     const bookStats = bookManager.getWordStatsAcrossAllBooks(cleanWord);
     const songStats = songManager.getWordStatsAcrossAll(cleanWord);
     const movieStats = movieManager.getWordStatsAcrossAll(cleanWord);
+    const poemStats = poemManager.getWordStatsAcrossAll(cleanWord);
 
     const totalBooksFreq = bookStats?.totalFrequency || 0;
     const totalSongsFreq = songStats.reduce((sum, s) => sum + s.frequency, 0);
     const totalMoviesFreq = movieStats.reduce((sum, m) => sum + m.frequency, 0);
-    const totalFrequency = totalBooksFreq + totalSongsFreq + totalMoviesFreq;
+    const totalPoemsFreq = poemStats.reduce((sum, p) => sum + p.frequency, 0);
+    const totalFrequency =
+      totalBooksFreq + totalSongsFreq + totalMoviesFreq + totalPoemsFreq;
 
     if (totalFrequency === 0) {
       return NextResponse.json({
@@ -50,6 +53,13 @@ export async function GET(request: NextRequest) {
     ) {
       combinedMeanings = movieStats[0].meanings;
     }
+    if (
+      combinedMeanings.length === 0 &&
+      poemStats.length > 0 &&
+      poemStats[0].meanings
+    ) {
+      combinedMeanings = poemStats[0].meanings;
+    }
 
     return NextResponse.json({
       success: true,
@@ -61,6 +71,7 @@ export async function GET(request: NextRequest) {
         books: bookStats?.books || [],
         songs: songStats,
         movies: movieStats,
+        poems: poemStats,
       },
     });
   } catch (error) {

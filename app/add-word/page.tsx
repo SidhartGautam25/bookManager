@@ -7,6 +7,7 @@ import {
   Book,
   Music,
   Film,
+  Feather,
   Type,
   FileText,
   CheckCircle2,
@@ -31,12 +32,12 @@ type ExistingWordData = {
   pages: number[];
   meanings: MeaningItem[];
   variations?: string[];
-  source?: "current-book" | "other-book" | "song" | "movie" | "api";
+  source?: "current-book" | "other-book" | "song" | "movie" | "poem" | "api";
   bookName?: string;
 };
 
 export default function AddWordPage() {
-  const [mediaType, setMediaType] = useState<"book" | "song" | "movie">("book");
+  const [mediaType, setMediaType] = useState<"book" | "song" | "movie" | "poem">("book");
   const [entryMode, setEntryMode] = useState<"single" | "batch" | "sentence">(
     "batch",
   );
@@ -69,12 +70,18 @@ export default function AddWordPage() {
   ]);
   const [variations, setVariations] = useState<string>("");
   const [, setDataSource] = useState<
-    "current-book" | "other-book" | "song" | "movie" | "api" | null
+    "current-book" | "other-book" | "song" | "movie" | "poem" | "api" | null
   >(null);
   const searchTimerRef = useRef<number | null>(null);
 
   const mediaLabel =
-    mediaType === "song" ? "Song" : mediaType === "movie" ? "Movie" : "Book";
+    mediaType === "song"
+      ? "Song"
+      : mediaType === "poem"
+        ? "Poem"
+        : mediaType === "movie"
+          ? "Movie"
+          : "Book";
 
   useEffect(() => {
     let isMounted = true;
@@ -82,6 +89,7 @@ export default function AddWordPage() {
       try {
         let endpoint = "/api/books";
         if (mediaType === "song") endpoint = "/api/songs";
+        else if (mediaType === "poem") endpoint = "/api/poems";
         else if (mediaType === "movie") endpoint = "/api/movies";
 
         const res = await fetch(endpoint);
@@ -93,6 +101,11 @@ export default function AddWordPage() {
           } else if (mediaType === "song") {
             const names = (data.songs || []).map(
               (s: { name: string }) => s.name,
+            );
+            setMediaItems(names);
+          } else if (mediaType === "poem") {
+            const names = (data.poems || []).map(
+              (p: { name: string }) => p.name,
             );
             setMediaItems(names);
           } else {
@@ -113,7 +126,7 @@ export default function AddWordPage() {
     };
   }, [mediaType]);
 
-  const handleMediaTypeChange = (newType: "book" | "song" | "movie") => {
+  const handleMediaTypeChange = (newType: "book" | "song" | "movie" | "poem") => {
     if (newType === mediaType) return;
     setMediaType(newType);
     setSelectedItem("");
@@ -150,6 +163,8 @@ export default function AddWordPage() {
         url = `/api/words?bookName=${encodeURIComponent(selectedItem)}&word=${encodeURIComponent(searchWord.trim())}&searchType=global`;
       } else if (mediaType === "song") {
         url = `/api/songs/words?songName=${encodeURIComponent(selectedItem)}&word=${encodeURIComponent(searchWord.trim())}`;
+      } else if (mediaType === "poem") {
+        url = `/api/poems/words?poemName=${encodeURIComponent(selectedItem)}&word=${encodeURIComponent(searchWord.trim())}`;
       } else {
         url = `/api/movies/words?movieName=${encodeURIComponent(selectedItem)}&word=${encodeURIComponent(searchWord.trim())}`;
       }
@@ -285,6 +300,9 @@ export default function AddWordPage() {
       if (mediaType === "song") {
         endpoint = "/api/songs";
         payload = { songName: newItemName.trim(), action: "create" };
+      } else if (mediaType === "poem") {
+        endpoint = "/api/poems";
+        payload = { poemName: newItemName.trim(), action: "create" };
       } else if (mediaType === "movie") {
         endpoint = "/api/movies";
         payload = { movieName: newItemName.trim(), action: "create" };
@@ -363,6 +381,17 @@ export default function AddWordPage() {
         endpoint = "/api/songs/words";
         payload = {
           songName: selectedItem,
+          word: word.trim(),
+          meanings: finalMeanings,
+          variations: variations
+            .split(",")
+            .map((v) => v.trim())
+            .filter(Boolean),
+        };
+      } else if (mediaType === "poem") {
+        endpoint = "/api/poems/words";
+        payload = {
+          poemName: selectedItem,
           word: word.trim(),
           meanings: finalMeanings,
           variations: variations
@@ -551,6 +580,18 @@ export default function AddWordPage() {
               </button>
               <button
                 type="button"
+                onClick={() => handleMediaTypeChange("poem")}
+                className={`flex items-center gap-2 px-5 py-2 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${
+                  mediaType === "poem"
+                    ? "bg-indigo-600 text-white shadow-xs"
+                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                }`}
+              >
+                <Feather size={15} />
+                <span>Poems</span>
+              </button>
+              <button
+                type="button"
                 onClick={() => handleMediaTypeChange("movie")}
                 className={`flex items-center gap-2 px-5 py-2 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${
                   mediaType === "movie"
@@ -646,6 +687,8 @@ export default function AddWordPage() {
                   <div className="bg-indigo-100 p-2 rounded-lg text-indigo-600">
                     {mediaType === "song" ? (
                       <Music size={20} />
+                    ) : mediaType === "poem" ? (
+                      <Feather size={20} />
                     ) : mediaType === "movie" ? (
                       <Film size={20} />
                     ) : (
@@ -937,6 +980,8 @@ export default function AddWordPage() {
                   <div className="bg-indigo-100 p-2 rounded-lg text-indigo-600">
                     {mediaType === "song" ? (
                       <Music size={20} />
+                    ) : mediaType === "poem" ? (
+                      <Feather size={20} />
                     ) : mediaType === "movie" ? (
                       <Film size={20} />
                     ) : (

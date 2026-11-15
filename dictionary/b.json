@@ -3084,5 +3084,220 @@
     ],
     "createdAt": "2026-11-14T05:16:09.015Z",
     "updatedAt": "2026-11-14T05:16:09.015Z"
+  },
+  "bounty": {
+    "word": "bounty",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Generosity; also an act of generosity.; Something given liberally; a gift.",
+        "examples": [
+          "The author skillfully incorporated bounty to emphasize the underlying theme.",
+          "In every chapter, the presence of bounty provided an unmistakable atmosphere.",
+          "Observers noted that bounty altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "bounty"
+    ],
+    "createdAt": "2026-11-14T07:12:10.567Z",
+    "updatedAt": "2026-11-14T07:12:10.567Z"
+  },
+  "balm": {
+    "word": "balm",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Any of various aromatic resins exuded from certain plants, especially trees of the genus Commiphora of Africa, Arabia and India and Myroxylon of South America.; A plant or tree yielding such substance.",
+        "examples": [
+          "There is a balm in Gilead... (Spiritual).",
+          "Classical music is a sweet balm for our sorrows.",
+          "The author skillfully incorporated balm to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To anoint with balm, or with anything medicinal.; To soothe; to mitigate.",
+        "examples": [
+          "The author skillfully incorporated balm to emphasize the underlying theme.",
+          "In every chapter, the presence of balm provided an unmistakable atmosphere.",
+          "Observers noted that balm altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "balm"
+    ],
+    "createdAt": "2026-11-14T07:12:10.931Z",
+    "updatedAt": "2026-11-14T07:12:10.931Z"
+  },
+  "blooms": {
+    "word": "blooms",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A blossom; the flower of a plant; an expanded bud.; Flowers, collectively.",
+        "examples": [
+          "The cherry trees are in bloom.",
+          "The bloom of youth.",
+          "The rose-red cobalt bloom."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To cause to blossom; to make flourish.; To bestow a bloom upon; to make blooming or radiant.",
+        "examples": [
+          "The local blooms gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden blooms swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various blooms preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "blooms"
+    ],
+    "createdAt": "2026-11-14T07:12:13.611Z",
+    "updatedAt": "2026-11-14T07:12:13.611Z"
+  },
+  "bough": {
+    "word": "bough",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A firm branch of a tree.; The gallows.",
+        "examples": [
+          "When the bough breaks, the cradle will fall.",
+          "The author skillfully incorporated bough to emphasize the underlying theme.",
+          "In every chapter, the presence of bough provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "bough"
+    ],
+    "createdAt": "2026-11-14T07:12:14.048Z",
+    "updatedAt": "2026-11-14T07:12:14.048Z"
+  },
+  "brassy": {
+    "word": "brassy",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of brassy",
+        "examples": [
+          "The author skillfully incorporated brassy to emphasize the underlying theme.",
+          "In every chapter, the presence of brassy provided an unmistakable atmosphere.",
+          "Observers noted that brassy altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "brassy"
+    ],
+    "createdAt": "2026-11-14T07:12:20.810Z",
+    "updatedAt": "2026-11-14T07:12:20.810Z"
+  },
+  "bosom": {
+    "word": "bosom",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "(somewhat obsolete) The breast or chest of a human (or sometimes of another animal).; The seat of one's inner thoughts, feelings etc.; one's secret feelings; desire.",
+        "examples": [
+          "The author skillfully incorporated bosom to emphasize the underlying theme.",
+          "In every chapter, the presence of bosom provided an unmistakable atmosphere.",
+          "Observers noted that bosom altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To enclose or carry in the bosom; to keep with care; to take to heart; to cherish.; To conceal; to hide from view; to embosom.",
+        "examples": [
+          "The author skillfully incorporated bosom to emphasize the underlying theme.",
+          "In every chapter, the presence of bosom provided an unmistakable atmosphere.",
+          "Observers noted that bosom altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "In a very close relationship.",
+        "examples": [
+          "The author skillfully incorporated bosom to emphasize the underlying theme.",
+          "In every chapter, the presence of bosom provided an unmistakable atmosphere.",
+          "Observers noted that bosom altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "bosom"
+    ],
+    "createdAt": "2026-11-14T07:12:31.476Z",
+    "updatedAt": "2026-11-14T07:12:31.476Z"
+  },
+  "blast": {
+    "word": "blast",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A violent gust of wind.; A forcible stream of gas or liquid from an orifice, for example from a bellows, the mouth, etc.",
+        "examples": [
+          "Many tons of iron were melted at a blast.",
+          "We had a blast at the party last night.",
+          "An e-mail blast; a fax blast."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To make an impression on, by making a loud blast or din.; To make a loud noise.",
+        "examples": [
+          "Blast right through it.",
+          "Blast it! Foiled again.",
+          "Chewbacca blasted the Stormtroopers with his laser rifle."
+        ]
+      },
+      {
+        "partOfSpeech": "interjection",
+        "definition": "(chiefly British) To show displeasure; damn",
+        "examples": [
+          "The author skillfully incorporated blast to emphasize the underlying theme.",
+          "In every chapter, the presence of blast provided an unmistakable atmosphere.",
+          "Observers noted that blast altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "blast"
+    ],
+    "createdAt": "2026-11-14T07:29:16.971Z",
+    "updatedAt": "2026-11-14T07:29:16.971Z"
+  },
+  "brocade": {
+    "word": "brocade",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A thick heavy fabric into which raised patterns have been woven, originally in gold and silver; more recently any cloth incorporating raised, woven patterns.; An item decorated with brocade.",
+        "examples": [
+          "The author skillfully incorporated brocade to emphasize the underlying theme.",
+          "In every chapter, the presence of brocade provided an unmistakable atmosphere.",
+          "Observers noted that brocade altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To decorate fabric with raised woven patterns.",
+        "examples": [
+          "The author skillfully incorporated brocade to emphasize the underlying theme.",
+          "In every chapter, the presence of brocade provided an unmistakable atmosphere.",
+          "Observers noted that brocade altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "brocade"
+    ],
+    "createdAt": "2026-11-14T07:44:00.793Z",
+    "updatedAt": "2026-11-14T07:44:00.793Z"
   }
 }

@@ -4153,5 +4153,232 @@
     ],
     "createdAt": "2026-11-14T05:16:10.874Z",
     "updatedAt": "2026-11-14T05:16:10.874Z"
+  },
+  "dominion": {
+    "word": "dominion",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Power or the use of power; sovereignty over something; stewardship, supremacy.; Predominance; ascendancy",
+        "examples": [
+          "The dominions of a king the dominion of the passions.",
+          "The author skillfully incorporated dominion to emphasize the underlying theme.",
+          "In every chapter, the presence of dominion provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "dominion"
+    ],
+    "createdAt": "2026-11-14T07:12:09.918Z",
+    "updatedAt": "2026-11-14T07:12:09.918Z"
+  },
+  "discerned": {
+    "word": "discerned",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of discerned",
+        "examples": [
+          "The author skillfully incorporated discerned to emphasize the underlying theme.",
+          "In every chapter, the presence of discerned provided an unmistakable atmosphere.",
+          "Observers noted that discerned altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "discerned"
+    ],
+    "createdAt": "2026-11-14T07:12:15.869Z",
+    "updatedAt": "2026-11-14T07:12:15.869Z"
+  },
+  "disregarded": {
+    "word": "disregarded",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of disregarded",
+        "examples": [
+          "The author skillfully incorporated disregarded to emphasize the underlying theme.",
+          "In every chapter, the presence of disregarded provided an unmistakable atmosphere.",
+          "Observers noted that disregarded altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "disregarded"
+    ],
+    "createdAt": "2026-11-14T07:12:22.666Z",
+    "updatedAt": "2026-11-14T07:12:22.666Z"
+  },
+  "devise": {
+    "word": "devise",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The act of leaving real property in a will.; Such a will, or a clause in such a will.",
+        "examples": [
+          "The author skillfully incorporated devise to emphasize the underlying theme.",
+          "In every chapter, the presence of devise provided an unmistakable atmosphere.",
+          "Observers noted that devise altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To use one's intellect to plan or design (something).; To leave (property) in a will.",
+        "examples": [
+          "To devise an argument; to devise a machine, or a new system of writing.",
+          "The author skillfully incorporated devise to emphasize the underlying theme.",
+          "In every chapter, the presence of devise provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "devise"
+    ],
+    "createdAt": "2026-11-14T07:12:31.509Z",
+    "updatedAt": "2026-11-14T07:12:31.509Z"
+  },
+  "dregs": {
+    "word": "dregs",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "(collectively) The sediment settled at the bottom of a liquid; the lees in a container of unfiltered wine.; (the dregs) The worst and lowest part of something.",
+        "examples": [
+          "The dregs of society.",
+          "I sat through the dregs of a long hectic evening.",
+          "The local dregs gathered early in the square to prepare their daily exhibits."
+        ]
+      }
+    ],
+    "variations": [
+      "dregs"
+    ],
+    "createdAt": "2026-11-14T07:29:08.552Z",
+    "updatedAt": "2026-11-14T07:29:08.552Z"
+  },
+  "death": {
+    "word": "death",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The cessation of life and all associated processes; the end of an organism's existence as an entity independent from its environment and its return to an inert, nonliving state.; (often capitalized) The personification of death as a hooded figure with a scythe; the Grim Reaper. The pronoun he is not the only option, but probably the most traditional one, as it matches with the male grammatical gender of Old English dēaþ, also with cognate German der Tod. The fourth apocalyptic rider (Bible, revelations 6:8) is male θᾰ́νᾰτος (thanatos) in Greek. It has the female name Mors in Latin, but is referred to with male forms qui and eum. The following quotes show this rider on a pale horse is his in the English Bible and she in Peter Gabriel's lyrics.",
+        "examples": [
+          "The death of my grandmother saddened the whole family.",
+          "When death walked in, a chill spread through the room.",
+          "England scored a goal at the death to even the score at one all."
+        ]
+      }
+    ],
+    "variations": [
+      "death"
+    ],
+    "createdAt": "2026-11-14T07:29:12.865Z",
+    "updatedAt": "2026-11-14T07:29:12.865Z"
+  },
+  "dread": {
+    "word": "dread",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Great fear in view of impending evil; fearful apprehension of danger; anticipatory terror.; Reverential or respectful fear; awe.",
+        "examples": [
+          "My visit to the doctor is filling me with dread.",
+          "The Royal Navy sent six dreads and four BCs to intercept the German raiding force.",
+          "The author skillfully incorporated dread to emphasize the underlying theme."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To fear greatly.; To anticipate with fear.",
+        "examples": [
+          "I'm dreading getting the results of the test, as it could decide my whole life.",
+          "The author skillfully incorporated dread to emphasize the underlying theme.",
+          "In every chapter, the presence of dread provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Terrible; greatly feared.; Awe-inspiring; held in fearful awe.",
+        "examples": [
+          "The author skillfully incorporated dread to emphasize the underlying theme.",
+          "In every chapter, the presence of dread provided an unmistakable atmosphere.",
+          "Observers noted that dread altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "dread"
+    ],
+    "createdAt": "2026-11-14T07:43:58.817Z",
+    "updatedAt": "2026-11-14T07:43:58.817Z"
+  },
+  "dispels": {
+    "word": "dispels",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An act or instance of dispelling.",
+        "examples": [
+          "The local dispels gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden dispels swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various dispels preserved from centuries of documented history."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To drive away or cause to vanish by scattering.; To remove (fears, doubts, objections etc.) by proving them unjustified.",
+        "examples": [
+          "The clouds and mist were soon enough dispelled by the sun.",
+          "The local dispels gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden dispels swept across the region, overwhelming the drainage canals."
+        ]
+      }
+    ],
+    "variations": [
+      "dispels",
+      "dispel"
+    ],
+    "createdAt": "2026-11-14T07:44:01.127Z",
+    "updatedAt": "2026-11-14T07:44:01.127Z"
+  },
+  "dwindling": {
+    "word": "dwindling",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To decrease, shrink, diminish, reduce in size or intensity.; To fall away in quality; degenerate, sink.",
+        "examples": [
+          "Their supplies began to dwindling after a week.",
+          "Interest in the project slowly dwindled.",
+          "dwindling away."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A gradual reduction to nothing.",
+        "examples": [
+          "He stood by the window, dwindling quietly as the light faded into evening.",
+          "They observed the fountain dwindling clear water high into the morning air.",
+          "She spent hours dwindling through the archives to locate the missing document."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Declining; growing less",
+        "examples": [
+          "There is dwindling support for New Labour.",
+          "He stood by the window, dwindling quietly as the light faded into evening.",
+          "They observed the fountain dwindling clear water high into the morning air."
+        ]
+      }
+    ],
+    "variations": [
+      "dwindling",
+      "dwindle"
+    ],
+    "createdAt": "2026-11-14T07:56:51.423Z",
+    "updatedAt": "2026-11-14T07:56:51.423Z"
   }
 }

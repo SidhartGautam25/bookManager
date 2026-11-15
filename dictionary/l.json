@@ -1261,5 +1261,137 @@
     ],
     "createdAt": "2026-11-13T14:35:30.459Z",
     "updatedAt": "2026-11-13T14:35:30.459Z"
+  },
+  "littering": {
+    "word": "littering",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of littering",
+        "examples": [
+          "He stood by the window, littering quietly as the light faded into evening.",
+          "They observed the fountain littering clear water high into the morning air.",
+          "She spent hours littering through the archives to locate the missing document."
+        ]
+      }
+    ],
+    "variations": [
+      "littering"
+    ],
+    "createdAt": "2026-11-14T07:12:23.119Z",
+    "updatedAt": "2026-11-14T07:12:23.119Z"
+  },
+  "lutes": {
+    "word": "lutes",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A fretted stringed instrument of European origin, similar to the guitar, having a bowl-shaped body or soundbox; any of a wide variety of chordophones with a pear-shaped body and a neck whose upper surface is in the same plane as the soundboard, with strings along the neck and parallel to the soundboard.; Thick sticky clay or cement used to close up a hole or gap, especially to make something air-tight.",
+        "examples": [
+          "The local lutes gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden lutes swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various lutes preserved from centuries of documented history."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To play on a lute, or as if on a lute.; To fix or fasten something with lute.",
+        "examples": [
+          "The local lutes gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden lutes swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various lutes preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "lutes"
+    ],
+    "createdAt": "2026-11-14T07:12:31.017Z",
+    "updatedAt": "2026-11-14T07:12:31.017Z"
+  },
+  "lingering": {
+    "word": "lingering",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To stay or remain in a place or situation, especially as if unwilling to depart or not easily able to do so; to loiter.; To remain alive or existent although still proceeding toward death or extinction; to die gradually.",
+        "examples": [
+          "He stood by the window, lingering quietly as the light faded into evening.",
+          "They observed the fountain lingering clear water high into the morning air.",
+          "She spent hours lingering through the archives to locate the missing document."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "An act of lingering or waiting.; That which lingers; a remnant.",
+        "examples": [
+          "He stood by the window, lingering quietly as the light faded into evening.",
+          "They observed the fountain lingering clear water high into the morning air.",
+          "She spent hours lingering through the archives to locate the missing document."
+        ]
+      }
+    ],
+    "variations": [
+      "lingering"
+    ],
+    "createdAt": "2026-11-14T07:12:35.817Z",
+    "updatedAt": "2026-11-14T07:12:35.817Z"
+  },
+  "lyres": {
+    "word": "lyres",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An ancient stringed musical instrument (a yoke lute chordophone) of Greek origin, consisting of two arms extending from a body to a crossbar (a yoke), and strings, parallel to the soundboard, connecting the body to the yoke.; A lyre-shaped sheet music holder that attaches to a wind instrument when a music stand is impractical.",
+        "examples": [
+          "The local lyres gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden lyres swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various lyres preserved from centuries of documented history."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "(Plural form) to play the lyre",
+        "examples": [
+          "The local lyres gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden lyres swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various lyres preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "lyres",
+      "lyre"
+    ],
+    "createdAt": "2026-11-14T07:29:10.617Z",
+    "updatedAt": "2026-11-14T07:29:10.617Z"
+  },
+  "litter": {
+    "word": "litter",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A platform mounted on two shafts, or a more elaborate construction, designed to be carried by two (or more) people to transport one (in luxury models sometimes more) third person(s) or (occasionally in the elaborate version) a cargo, such as a religious idol.; (collective) The offspring of a mammal born in one birth.",
+        "examples": [
+          "Sleep in the litter.",
+          "Drop litter.",
+          "The cat's litter."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To drop or throw trash without properly disposing of it (as discarding in public areas rather than trash receptacles).; To scatter carelessly about.",
+        "examples": [
+          "By tossing the bottle out the window, he was littering.",
+          "The author skillfully incorporated litter to emphasize the underlying theme.",
+          "In every chapter, the presence of litter provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "litter"
+    ],
+    "createdAt": "2026-11-14T07:56:55.190Z",
+    "updatedAt": "2026-11-14T07:56:55.190Z"
   }
 }

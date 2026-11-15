@@ -1,0 +1,23 @@
+{
+  "lyrics": "Talking in bed ought to be easiest,\nLying together there goes back so far,\nAn emblem of two people being honest.\nYet more and more time passes silently.\nOutside, the wind's incomplete unrest\nBuilds and disperses clouds in the sky,\nAnd dark towns heap up on the horizon.\nNone of this cares for us. Nothing shows why\nAt this unique distance from isolation\nIt becomes still more difficult to find\nWords at once true and kind,\nOr not untrue and not unkind.",
+  "words": [
+    {
+      "type": "word",
+      "word": "emblem",
+      "variations": [
+        "emblem"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "General",
+          "definition": "Meaning and context of emblem",
+          "examples": [
+            "The author skillfully incorporated emblem to emphasize the underlying theme.",
+            "In every chapter, the presence of emblem provided an unmistakable atmosphere.",
+            "Observers noted that emblem altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -17,7 +17,7 @@ import { TagItem } from "@/lib/TagManager";
 interface SentenceEditModalProps {
   isOpen: boolean;
   sentence: SentenceEntry | null;
-  mediaType: "book" | "song" | "movie";
+  mediaType: "book" | "song" | "movie" | "poem";
   mediaName: string;
   pageNo?: number;
   onClose: () => void;
@@ -81,7 +81,7 @@ function SentenceEditContent({
   onSaved,
 }: {
   sentence: SentenceEntry;
-  mediaType: "book" | "song" | "movie";
+  mediaType: "book" | "song" | "movie" | "poem";
   mediaName: string;
   pageNo?: number;
   onClose: () => void;
@@ -214,7 +214,7 @@ function SentenceEditContent({
               <p className="text-xs text-gray-400 font-medium">
                 {mediaType === "book"
                   ? `Book "${mediaName}" (Page ${pageNo})`
-                  : `${mediaType === "song" ? "Song" : "Movie"} "${mediaName}"`}
+                  : `${mediaType === "song" ? "Song" : mediaType === "poem" ? "Poem" : "Movie"} "${mediaName}"`}
               </p>
             </div>
           </div>

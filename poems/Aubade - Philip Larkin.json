@@ -1,0 +1,573 @@
+{
+  "lyrics": "I work all day, and get half-drunk at night.   \nWaking at four to soundless dark, I stare.   \nIn time the curtain-edges will grow light.   \nTill then I see what’s really always there:   \nUnresting death, a whole day nearer now,   \nMaking all thought impossible but how   \nAnd where and when I shall myself die.   \nArid interrogation: yet the dread\nOf dying, and being dead,\nFlashes afresh to hold and horrify.\n\nThe mind blanks at the glare. Not in remorse   \n—The good not done, the love not given, time   \nTorn off unused—nor wretchedly because   \nAn only life can take so long to climb\nClear of its wrong beginnings, and may never;   \nBut at the total emptiness for ever,\nThe sure extinction that we travel to\nAnd shall be lost in always. Not to be here,   \nNot to be anywhere,\nAnd soon; nothing more terrible, nothing more true.\n\nThis is a special way of being afraid\nNo trick dispels. Religion used to try,\nThat vast moth-eaten musical brocade\nCreated to pretend we never die,\nAnd specious stuff that says No rational being\nCan fear a thing it will not feel, not seeing\nThat this is what we fear—no sight, no sound,   \nNo touch or taste or smell, nothing to think with,   \nNothing to love or link with,\nThe anaesthetic from which none come round.\n\nAnd so it stays just on the edge of vision,   \nA small unfocused blur, a standing chill   \nThat slows each impulse down to indecision.   \nMost things may never happen: this one will,   \nAnd realisation of it rages out\nIn furnace-fear when we are caught without   \nPeople or drink. Courage is no good:\nIt means not scaring others. Being brave   \nLets no one off the grave.\nDeath is no different whined at than withstood.\n\nSlowly light strengthens, and the room takes shape.   \nIt stands plain as a wardrobe, what we know,   \nHave always known, know that we can’t escape,   \nYet can’t accept. One side will have to go.\nMeanwhile telephones crouch, getting ready to ring   \nIn locked-up offices, and all the uncaring\nIntricate rented world begins to rouse.\nThe sky is white as clay, with no sun.\nWork has to be done.\nPostmen like doctors go from house to house.",
+  "words": [
+    {
+      "type": "word",
+      "word": "stare",
+      "variations": [
+        "stare"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A persistent gaze.; A starling.",
+          "examples": [
+            "The stares of astonished passers-by.",
+            "The stares of astonished passers-by contrasted with my father's vacuous stare at the ground.",
+            "The author skillfully incorporated stare to emphasize the underlying theme."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "(construed with at) To look fixedly (at something).; To influence in some way by looking fixedly.",
+          "examples": [
+            "To stare a timid person into submission.",
+            "Staring windows or colours.",
+            "She found him staring with raised eyebrows at her."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "Unresting",
+      "variations": [
+        "unresting"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Not resting; ceaseless",
+          "examples": [
+            "He stood by the window, unresting quietly as the light faded into evening.",
+            "They observed the fountain unresting clear water high into the morning air.",
+            "She spent hours unresting through the archives to locate the missing document."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "Arid",
+      "variations": [],
+      "meanings": [
+        {
+          "partOfSpeech": "adjective",
+          "definition": "Extremely dry, with very little rain or moisture; also used for something dull or lacking emotion or excitement.",
+          "examples": [
+            "The desert remained hot and arid throughout the year.",
+            "Very few plants can survive in such an arid climate.",
+            "After weeks without rain, the land became arid and cracked.",
+            "His lecture sounded so arid that many students lost interest."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "interrogation",
+      "variations": [
+        "interrogation"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "The act of interrogating or questioning; examination by questions; inquiry.; A question put; an inquiry.",
+          "examples": [
+            "The author skillfully incorporated interrogation to emphasize the underlying theme.",
+            "In every chapter, the presence of interrogation provided an unmistakable atmosphere.",
+            "Observers noted that interrogation altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "dread",
+      "variations": [
+        "dread"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "Great fear in view of impending evil; fearful apprehension of danger; anticipatory terror.; Reverential or respectful fear; awe.",
+          "examples": [
+            "My visit to the doctor is filling me with dread.",
+            "The Royal Navy sent six dreads and four BCs to intercept the German raiding force.",
+            "The author skillfully incorporated dread to emphasize the underlying theme."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To fear greatly.; To anticipate with fear.",
+          "examples": [
+            "I'm dreading getting the results of the test, as it could decide my whole life.",
+            "The author skillfully incorporated dread to emphasize the underlying theme.",
+            "In every chapter, the presence of dread provided an unmistakable atmosphere."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Terrible; greatly feared.; Awe-inspiring; held in fearful awe.",
+          "examples": [
+            "The author skillfully incorporated dread to emphasize the underlying theme.",
+            "In every chapter, the presence of dread provided an unmistakable atmosphere.",
+            "Observers noted that dread altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "afresh",
+      "variations": [
+        "afresh"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Adverb",
+          "definition": "Anew; again; once more; Anew; again; once more.",
+          "examples": [
+            "We ditched the original design and decided to start afresh.",
+            "The author skillfully incorporated afresh to emphasize the underlying theme.",
+            "In every chapter, the presence of afresh provided an unmistakable atmosphere."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "glare",
+      "variations": [
+        "glare"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "An intense, blinding light.; Showy brilliance; gaudiness.",
+          "examples": [
+            "A glare of ice.",
+            "The author skillfully incorporated glare to emphasize the underlying theme.",
+            "In every chapter, the presence of glare provided an unmistakable atmosphere."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To stare angrily.; To shine brightly.",
+          "examples": [
+            "He walked in late, with the teacher glaring at him the whole time.",
+            "The sun glared down on the desert sand.",
+            "The author skillfully incorporated glare to emphasize the underlying theme."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "(of ice) smooth and bright or translucent; glary; smooth and bright or translucent; glary",
+          "examples": [
+            "Skating on glare ice.",
+            "The author skillfully incorporated glare to emphasize the underlying theme.",
+            "In every chapter, the presence of glare provided an unmistakable atmosphere."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "remorse",
+      "variations": [
+        "remorse"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definition": "A feeling of regret or sadness for doing wrong or sinning.; Sorrow; pity; compassion.",
+          "examples": [
+            "The accused committed perjury without remorse.",
+            "The author skillfully incorporated remorse to emphasize the underlying theme.",
+            "In every chapter, the presence of remorse provided an unmistakable atmosphere."
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definition": "To experience remorse or sorrow; to regret.",
+          "examples": [
+            "The author skillfully incorporated remorse to emphasize the underlying theme.",
+            "In every chapter, the presence of remorse provided an unmistakable atmosphere.",
+            "Observers noted that remorse altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "wretchedly",
+      "variations": [
+        "wretchedly"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Adverb",
+          "definition": "In a wretched manner.",
+          "examples": [
+            "The author skillfully incorporated wretchedly to emphasize the underlying theme.",
+            "In every chapter, the presence of wretchedly provided an unmistakable atmosphere.",
+            "Observers noted that wretchedly altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "extinction",
+      "variations": [
+        "extinction"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "The action of making or becoming extinct; annihilation.; The absorption or scattering of electromagnetic radiation emitted by astronomical objects by intervening dust and gas before it reaches the observer.",
+          "examples": [
+            "The author skillfully incorporated extinction to emphasize the underlying theme.",
+            "In every chapter, the presence of extinction provided an unmistakable atmosphere.",
+            "Observers noted that extinction altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "dispels",
+      "variations": [
+        "dispels",
+        "dispel"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "An act or instance of dispelling.",
+          "examples": [
+            "The local dispels gathered early in the square to prepare their daily exhibits.",
+            "Multiple sudden dispels swept across the region, overwhelming the drainage canals.",
+            "Scholars compared various dispels preserved from centuries of documented history."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To drive away or cause to vanish by scattering.; To remove (fears, doubts, objections etc.) by proving them unjustified.",
+          "examples": [
+            "The clouds and mist were soon enough dispelled by the sun.",
+            "The local dispels gathered early in the square to prepare their daily exhibits.",
+            "Multiple sudden dispels swept across the region, overwhelming the drainage canals."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "brocade",
+      "variations": [
+        "brocade"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A thick heavy fabric into which raised patterns have been woven, originally in gold and silver; more recently any cloth incorporating raised, woven patterns.; An item decorated with brocade.",
+          "examples": [
+            "The author skillfully incorporated brocade to emphasize the underlying theme.",
+            "In every chapter, the presence of brocade provided an unmistakable atmosphere.",
+            "Observers noted that brocade altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To decorate fabric with raised woven patterns.",
+          "examples": [
+            "The author skillfully incorporated brocade to emphasize the underlying theme.",
+            "In every chapter, the presence of brocade provided an unmistakable atmosphere.",
+            "Observers noted that brocade altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "pretend",
+      "variations": [
+        "pretend"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To claim, to allege, especially when falsely or as a form of deliberate deception.; To feign, affect (a state, quality, etc.).",
+          "examples": [
+            "You don't have to pretend that the soup tastes fine.",
+            "You don't have to pretend to like the soup.",
+            "If you don't like it, say so. You don't have to pretend."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Not really what it is represented as being; imaginary, feigned.",
+          "examples": [
+            "As children we used to go on \"spying\" missions around the neighbour's house, but it was all pretend.",
+            "The author skillfully incorporated pretend to emphasize the underlying theme.",
+            "In every chapter, the presence of pretend provided an unmistakable atmosphere."
+          ]
+        },
+        {
+          "partOfSpeech": "Noun",
+          "definition": "The act of engaging in pretend play.",
+          "examples": [
+            "We used to dress up in our grandparents' old clothes and play pretend.",
+            "The author skillfully incorporated pretend to emphasize the underlying theme.",
+            "In every chapter, the presence of pretend provided an unmistakable atmosphere."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "specious",
+      "variations": [
+        "speciously"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "adjective",
+          "definition": "Superficially plausible, but actually wrong; misleading in appearance.",
+          "examples": [
+            "The governor offered a specious defense of the reform school's financial records."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "anaesthetic",
+      "variations": [
+        "anaesthetic",
+        "anesthetic"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A substance administered to reduce the perception of pain or to induce numbness for surgery and may render the recipient unconscious.; (Inflected form) ↑ “anaesthetic | anesthetic, adj. and n.”, in OED Online ⁠, Oxford: Oxford University Press, launched 2000.",
+          "examples": [
+            "The author skillfully incorporated anaesthetic to emphasize the underlying theme.",
+            "In every chapter, the presence of anaesthetic provided an unmistakable atmosphere.",
+            "Observers noted that anaesthetic altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Causing anesthesia; reducing pain sensitivity.; Insensate: unable to feel, or unconscious.",
+          "examples": [
+            "The author skillfully incorporated anaesthetic to emphasize the underlying theme.",
+            "In every chapter, the presence of anaesthetic provided an unmistakable atmosphere.",
+            "Observers noted that anaesthetic altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "indecision",
+      "variations": [
+        "indecision"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "The inability to decide on a course of action, especially if two or more possibilities exist.",
+          "examples": [
+            "Billy Toad has shown extreme indecision in all aspects when it comes to his jeep. Whether it's how to modify it, or if he will sell it.",
+            "The author skillfully incorporated indecision to emphasize the underlying theme.",
+            "In every chapter, the presence of indecision provided an unmistakable atmosphere."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "scaring",
+      "variations": [
+        "scaring",
+        "scare"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To frighten, terrify, startle, especially in a minor way.; (Present participle / Gerund) (To be able) to be scared.",
+          "examples": [
+            "Did it scare you when I said \"Boo!\"?",
+            "Did it scaring you when I said \"Boo!\"?",
+            "I don't scaring easily."
+          ]
+        },
+        {
+          "partOfSpeech": "Noun",
+          "definition": "(Present participle / Gerund) A minor fright.; (Present participle / Gerund) A cause of slight terror; something that inspires fear or dread.",
+          "examples": [
+            "Johnny had a bad scaring last night.",
+            "A food-poisoning scaring.",
+            "He stood by the window, scaring quietly as the light faded into evening."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "(Present participle / Gerund) Lean; scanty; (Present participle / Gerund) lean; scanty",
+          "examples": [
+            "He stood by the window, scaring quietly as the light faded into evening.",
+            "They observed the fountain scaring clear water high into the morning air.",
+            "She spent hours scaring through the archives to locate the missing document."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "withstood",
+      "variations": [
+        "withstood",
+        "withstand"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To resist or endure (something) successfully.; To oppose (something) forcefully.",
+          "examples": [
+            "The team withstood their operations until further instructions arrived from headquarters.",
+            "She was deeply withstood by the unexpected turn of events during the meeting.",
+            "He carefully withstood the remaining pieces into a cohesive structure."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "whined",
+      "variations": [
+        "whined"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To utter a high-pitched cry.; To make a sound resembling such a cry.",
+          "examples": [
+            "The jet engines whined at take off.",
+            "The jet whined into the air.",
+            "Kelly Queen was whining that the boss made him put on his tie."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "wardrobe",
+      "variations": [
+        "wardrobe"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A room for keeping clothes and armor safe, particularly a dressing room or walk-in closet beside a bedroom.; A governmental office or department in a monarchy which purchases, keeps, and cares for royal clothes.",
+          "examples": [
+            "The author skillfully incorporated wardrobe to emphasize the underlying theme.",
+            "In every chapter, the presence of wardrobe provided an unmistakable atmosphere.",
+            "Observers noted that wardrobe altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To act as a wardrobe department, to provide clothing or sets of clothes.",
+          "examples": [
+            "The author skillfully incorporated wardrobe to emphasize the underlying theme.",
+            "In every chapter, the presence of wardrobe provided an unmistakable atmosphere.",
+            "Observers noted that wardrobe altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "crouch",
+      "variations": [
+        "crouch"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A bent or stooped position.; A cross.",
+          "examples": [
+            "The cat waited in a crouch, hidden behind the hedge.",
+            "The author skillfully incorporated crouch to emphasize the underlying theme.",
+            "In every chapter, the presence of crouch provided an unmistakable atmosphere."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To bend down; to stoop low; to stand close to the ground with legs bent, like an animal when waiting for prey, or someone in fear.; To bend servilely; to bow in reverence or humility.",
+          "examples": [
+            "We crouched behind the low wall until the squad of soldiers had passed by.",
+            "The author skillfully incorporated crouch to emphasize the underlying theme.",
+            "In every chapter, the presence of crouch provided an unmistakable atmosphere."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "Intricate",
+      "variations": [
+        "intricate"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Having a great deal of fine detail or complexity.",
+          "examples": [
+            "The architecture of this clock is very intricate.",
+            "The author skillfully incorporated intricate to emphasize the underlying theme.",
+            "In every chapter, the presence of intricate provided an unmistakable atmosphere."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To become enmeshed or entangled.; To enmesh or entangle: to cause to intricate.",
+          "examples": [
+            "The author skillfully incorporated intricate to emphasize the underlying theme.",
+            "In every chapter, the presence of intricate provided an unmistakable atmosphere.",
+            "Observers noted that intricate altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "rouse",
+      "variations": [
+        "rouse"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "An arousal.; The sounding of a bugle in the morning after reveille, to signal that soldiers are to rise from bed, often the rouse.",
+          "examples": [
+            "The author skillfully incorporated rouse to emphasize the underlying theme.",
+            "In every chapter, the presence of rouse provided an unmistakable atmosphere.",
+            "Observers noted that rouse altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To wake (someone) or be awoken from sleep, or from apathy.; To cause, stir up, excite (a feeling, thought, etc.).",
+          "examples": [
+            "To rouse the faculties, passions, or emotions.",
+            "To rouse a deer or other animal of the chase.",
+            "He roused on her for being late yet again."
+          ]
+        }
+      ]
+    }
+  ]
+}

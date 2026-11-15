@@ -684,5 +684,44 @@
     ],
     "createdAt": "2026-11-14T05:16:08.111Z",
     "updatedAt": "2026-11-14T05:16:08.111Z"
+  },
+  "obliteration": {
+    "word": "obliteration",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of obliteration",
+        "examples": [
+          "The author skillfully incorporated obliteration to emphasize the underlying theme.",
+          "In every chapter, the presence of obliteration provided an unmistakable atmosphere.",
+          "Observers noted that obliteration altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "obliteration"
+    ],
+    "createdAt": "2026-11-14T07:12:19.870Z",
+    "updatedAt": "2026-11-14T07:12:19.870Z"
+  },
+  "outleant": {
+    "word": "outleant",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "simple past and past participle of outlean",
+        "examples": [
+          "The team outleant their operations until further instructions arrived from headquarters.",
+          "She was deeply outleant by the unexpected turn of events during the meeting.",
+          "He carefully outleant the remaining pieces into a cohesive structure."
+        ]
+      }
+    ],
+    "variations": [
+      "outleant",
+      "outlean"
+    ],
+    "createdAt": "2026-11-14T07:29:12.459Z",
+    "updatedAt": "2026-11-14T07:29:12.459Z"
   }
 }

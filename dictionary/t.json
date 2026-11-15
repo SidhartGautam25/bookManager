@@ -2089,5 +2089,185 @@
     ],
     "createdAt": "2026-11-13T14:40:43.283Z",
     "updatedAt": "2026-11-13T14:40:43.283Z"
+  },
+  "tipped": {
+    "word": "tipped",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of tipped",
+        "examples": [
+          "The author skillfully incorporated tipped to emphasize the underlying theme.",
+          "In every chapter, the presence of tipped provided an unmistakable atmosphere.",
+          "Observers noted that tipped altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "tipped"
+    ],
+    "createdAt": "2026-11-14T07:12:18.605Z",
+    "updatedAt": "2026-11-14T07:12:18.605Z"
+  },
+  "triumph": {
+    "word": "triumph",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of triumph",
+        "examples": [
+          "The author skillfully incorporated triumph to emphasize the underlying theme.",
+          "In every chapter, the presence of triumph provided an unmistakable atmosphere.",
+          "Observers noted that triumph altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "triumph"
+    ],
+    "createdAt": "2026-11-14T07:12:20.749Z",
+    "updatedAt": "2026-11-14T07:12:20.749Z"
+  },
+  "tenderness": {
+    "word": "tenderness",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of tenderness",
+        "examples": [
+          "The local tenderness gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden tenderness swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various tenderness preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "tenderness"
+    ],
+    "createdAt": "2026-11-14T07:12:21.262Z",
+    "updatedAt": "2026-11-14T07:12:21.262Z"
+  },
+  "turbulent": {
+    "word": "turbulent",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Violently disturbed or agitated; tempestuous, tumultuous; Being in, or causing, disturbance or unrest",
+        "examples": [
+          "It is dangerous to sail in turbulent seas.",
+          "The mid-19th century was a turbulent time in American history.",
+          "The author skillfully incorporated turbulent to emphasize the underlying theme."
+        ]
+      }
+    ],
+    "variations": [
+      "turbulent"
+    ],
+    "createdAt": "2026-11-14T07:12:32.006Z",
+    "updatedAt": "2026-11-14T07:12:32.006Z"
+  },
+  "twigs": {
+    "word": "twigs",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A small thin branch of a tree or bush.",
+        "examples": [
+          "They used twigs and leaves as a base to start the fire.",
+          "The local twigs gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden twigs swept across the region, overwhelming the drainage canals."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To beat with twigs.; To realise something; to catch on; to recognize someone or something.",
+        "examples": [
+          "He hasn't twigged that we're planning a surprise party for him.",
+          "Do you twig me?",
+          "The local twigs gathered early in the square to prepare their daily exhibits."
+        ]
+      }
+    ],
+    "variations": [
+      "twigs"
+    ],
+    "createdAt": "2026-11-14T07:29:14.596Z",
+    "updatedAt": "2026-11-14T07:29:14.596Z"
+  },
+  "thrush": {
+    "word": "thrush",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Any of several species of songbirds of the family Turdidae, often with spotted underbellies such as the bluebird, nightingale, and American robin have.; A female singer.",
+        "examples": [
+          "The author skillfully incorporated thrush to emphasize the underlying theme.",
+          "In every chapter, the presence of thrush provided an unmistakable atmosphere.",
+          "Observers noted that thrush altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "thrush"
+    ],
+    "createdAt": "2026-11-14T07:29:15.602Z",
+    "updatedAt": "2026-11-14T07:29:15.602Z"
+  },
+  "trembled": {
+    "word": "trembled",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of trembled",
+        "examples": [
+          "The author skillfully incorporated trembled to emphasize the underlying theme.",
+          "In every chapter, the presence of trembled provided an unmistakable atmosphere.",
+          "Observers noted that trembled altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "trembled"
+    ],
+    "createdAt": "2026-11-14T07:29:19.184Z",
+    "updatedAt": "2026-11-14T07:29:19.184Z"
+  },
+  "trailing": {
+    "word": "trailing",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To follow behind (someone or something); to tail (someone or something).; To drag (something) behind on the ground.",
+        "examples": [
+          "The hunters trailed their prey deep into the woods.",
+          "You'll get your coat all muddy if you trail it around like that.",
+          "He walked into the house, soaking wet, and trailed water all over the place."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "Fabric or other material that trails.; (Present participle / Gerund) The track or indication marking the route followed by something that has passed, such as the footprints of animal on land or the contrail of an airplane in the sky.",
+        "examples": [
+          "The trailing has gone cold.",
+          "Condensation trailing.",
+          "Data trailing, paper trailing."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "(of points and crossovers) That converges in the direction of travel.; That which is attached and pulled behind.",
+        "examples": [
+          "The trailing railcars.",
+          "The trailing comments.",
+          "No trailing whitespace characters."
+        ]
+      }
+    ],
+    "variations": [
+      "trailing",
+      "trail"
+    ],
+    "createdAt": "2026-11-14T07:56:51.688Z",
+    "updatedAt": "2026-11-14T07:56:51.688Z"
   }
 }

@@ -1846,5 +1846,43 @@
     ],
     "createdAt": "2026-11-14T05:16:07.045Z",
     "updatedAt": "2026-11-14T05:16:07.045Z"
+  },
+  "hinds": {
+    "word": "hinds",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of hinds",
+        "examples": [
+          "The local hinds gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden hinds swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various hinds preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "hinds"
+    ],
+    "createdAt": "2026-11-14T07:12:14.976Z",
+    "updatedAt": "2026-11-14T07:12:14.976Z"
+  },
+  "haunt": {
+    "word": "haunt",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of haunt",
+        "examples": [
+          "The author skillfully incorporated haunt to emphasize the underlying theme.",
+          "In every chapter, the presence of haunt provided an unmistakable atmosphere.",
+          "Observers noted that haunt altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "haunt"
+    ],
+    "createdAt": "2026-11-14T07:12:17.656Z",
+    "updatedAt": "2026-11-14T07:12:17.656Z"
   }
 }

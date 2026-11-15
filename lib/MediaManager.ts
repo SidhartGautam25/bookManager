@@ -29,16 +29,24 @@ export interface MediaBatchResultSummary {
 
 export class FlatMediaManager {
   private mediaDir: string;
-  private mediaType: "song" | "movie";
+  private mediaType: "song" | "movie" | "poem";
 
-  constructor(mediaType: "song" | "movie", customDir?: string) {
+  constructor(mediaType: "song" | "movie" | "poem", customDir?: string) {
     this.mediaType = mediaType;
     this.mediaDir =
       customDir ||
       (mediaType === "song"
         ? path.join(process.cwd(), "songs")
-        : path.join(process.cwd(), "movies"));
+        : mediaType === "poem"
+          ? path.join(process.cwd(), "poems")
+          : path.join(process.cwd(), "movies"));
     this.ensureMediaDirectory();
+  }
+
+  private getMediaTypeName(): string {
+    if (this.mediaType === "song") return "Song";
+    if (this.mediaType === "poem") return "Poem";
+    return "Movie";
   }
 
   /**
@@ -80,7 +88,7 @@ export class FlatMediaManager {
 
     if (fs.existsSync(filePath)) {
       throw new Error(
-        `${this.mediaType === "song" ? "Song" : "Movie"} "${cleanName}" already exists`,
+        `${this.getMediaTypeName()} "${cleanName}" already exists`,
       );
     }
 
@@ -332,7 +340,7 @@ export class FlatMediaManager {
     const filePath = this.getFilePath(cleanName);
     if (!fs.existsSync(filePath)) {
       throw new Error(
-        `${this.mediaType === "song" ? "Song" : "Movie"} "${cleanName}" does not exist`,
+        `${this.getMediaTypeName()} "${cleanName}" does not exist`,
       );
     }
 
@@ -371,7 +379,7 @@ export class FlatMediaManager {
     const filePath = this.getFilePath(cleanName);
     if (!fs.existsSync(filePath)) {
       throw new Error(
-        `${this.mediaType === "song" ? "Song" : "Movie"} "${cleanName}" does not exist`,
+        `${this.getMediaTypeName()} "${cleanName}" does not exist`,
       );
     }
 
@@ -466,7 +474,7 @@ export class FlatMediaManager {
     const filePath = this.getFilePath(cleanName);
     if (!fs.existsSync(filePath)) {
       throw new Error(
-        `${this.mediaType === "song" ? "Song" : "Movie"} "${cleanName}" does not exist`,
+        `${this.getMediaTypeName()} "${cleanName}" does not exist`,
       );
     }
 
@@ -514,7 +522,7 @@ export class FlatMediaManager {
     const filePath = this.getFilePath(cleanName);
     if (!fs.existsSync(filePath)) {
       throw new Error(
-        `${this.mediaType === "song" ? "Song" : "Movie"} "${cleanName}" does not exist`,
+        `${this.getMediaTypeName()} "${cleanName}" does not exist`,
       );
     }
 
@@ -603,6 +611,7 @@ export class FlatMediaManager {
   }
 }
 
-// Singletons for songs and movies
+// Singletons for songs, movies, and poems
 export const songManager = new FlatMediaManager("song");
 export const movieManager = new FlatMediaManager("movie");
+export const poemManager = new FlatMediaManager("poem");

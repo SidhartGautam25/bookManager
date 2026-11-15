@@ -160,6 +160,31 @@ export class DictionaryCacheManager {
         // Movies folder read error
       }
     }
+
+    // 4. Pre-seed from Poems
+    const poemsDir = path.join(process.cwd(), "poems");
+    if (fs.existsSync(poemsDir)) {
+      try {
+        const poemFiles = fs
+          .readdirSync(poemsDir)
+          .filter((f) => f.endsWith(".json"));
+
+        for (const poemFile of poemFiles) {
+          try {
+            const raw = fs.readFileSync(path.join(poemsDir, poemFile), "utf-8");
+            const parsed = JSON.parse(raw);
+            const words: Word[] = Array.isArray(parsed)
+              ? parsed
+              : parsed?.words || [];
+            this.indexWordList(words);
+          } catch {
+            // Ignore single file parse errors
+          }
+        }
+      } catch {
+        // Poems folder read error
+      }
+    }
   }
 
   /**

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { BookManager } from "@/lib/BookManager";
-import { songManager, movieManager } from "@/lib/MediaManager";
+import { songManager, movieManager, poemManager } from "@/lib/MediaManager";
 import { tagManager } from "@/lib/TagManager";
 
 const bookManager = new BookManager();
@@ -40,11 +40,14 @@ export async function GET(request: NextRequest) {
     } else if (mediaType === "movie") {
       const sentences = movieManager.getSentences(mediaName);
       return NextResponse.json({ success: true, data: sentences });
+    } else if (mediaType === "poem") {
+      const sentences = poemManager.getSentences(mediaName);
+      return NextResponse.json({ success: true, data: sentences });
     } else {
       return NextResponse.json(
         {
           success: false,
-          error: "Invalid mediaType. Must be 'book', 'song', or 'movie'",
+          error: "Invalid mediaType. Must be 'book', 'song', 'movie', or 'poem'",
         },
         { status: 400 },
       );
@@ -144,6 +147,17 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({
         success: true,
         message: `Sentence added to movie "${mediaName}"`,
+      });
+    } else if (mediaType === "poem") {
+      poemManager.addSentence(
+        mediaName.trim(),
+        sentence.trim(),
+        meaning,
+        validatedTag,
+      );
+      return NextResponse.json({
+        success: true,
+        message: `Sentence added to poem "${mediaName}"`,
       });
     } else {
       return NextResponse.json(
@@ -250,6 +264,16 @@ export async function PUT(request: NextRequest) {
         success: true,
         message: `Sentence updated successfully in movie "${mediaName}"`,
       });
+    } else if (mediaType === "poem") {
+      poemManager.updateSentence(
+        mediaName.trim(),
+        originalSentence.trim(),
+        updates,
+      );
+      return NextResponse.json({
+        success: true,
+        message: `Sentence updated successfully in poem "${mediaName}"`,
+      });
     } else {
       return NextResponse.json(
         { success: false, error: "Invalid mediaType" },
@@ -296,6 +320,8 @@ export async function DELETE(request: NextRequest) {
       deleted = songManager.deleteSentence(mediaName, sentence);
     } else if (mediaType === "movie") {
       deleted = movieManager.deleteSentence(mediaName, sentence);
+    } else if (mediaType === "poem") {
+      deleted = poemManager.deleteSentence(mediaName, sentence);
     }
 
     if (!deleted) {

@@ -1563,5 +1563,156 @@
     ],
     "createdAt": "2026-11-14T05:16:09.882Z",
     "updatedAt": "2026-11-14T05:16:09.882Z"
+  },
+  "mingle": {
+    "word": "mingle",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A mixture.; The act of informally meeting numerous people in a group",
+        "examples": [
+          "The author skillfully incorporated mingle to emphasize the underlying theme.",
+          "In every chapter, the presence of mingle provided an unmistakable atmosphere.",
+          "Observers noted that mingle altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To intermix; to combine or join, as an individual or part, with other parts, but commonly so as to be distinguishable in the product; To associate or unite in a figurative way, or by ties of relationship",
+        "examples": [
+          "The author skillfully incorporated mingle to emphasize the underlying theme.",
+          "In every chapter, the presence of mingle provided an unmistakable atmosphere.",
+          "Observers noted that mingle altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "mingle"
+    ],
+    "createdAt": "2026-11-14T07:12:06.871Z",
+    "updatedAt": "2026-11-14T07:12:06.871Z"
+  },
+  "mythy": {
+    "word": "mythy",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of mythy",
+        "examples": [
+          "The author skillfully incorporated mythy to emphasize the underlying theme.",
+          "In every chapter, the presence of mythy provided an unmistakable atmosphere.",
+          "Observers noted that mythy altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "mythy"
+    ],
+    "createdAt": "2026-11-14T07:12:14.486Z",
+    "updatedAt": "2026-11-14T07:12:14.486Z"
+  },
+  "muttering": {
+    "word": "muttering",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of muttering",
+        "examples": [
+          "He stood by the window, muttering quietly as the light faded into evening.",
+          "They observed the fountain muttering clear water high into the morning air.",
+          "She spent hours muttering through the archives to locate the missing document."
+        ]
+      }
+    ],
+    "variations": [
+      "muttering"
+    ],
+    "createdAt": "2026-11-14T07:12:14.518Z",
+    "updatedAt": "2026-11-14T07:12:14.518Z"
+  },
+  "misty": {
+    "word": "misty",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of misty",
+        "examples": [
+          "The author skillfully incorporated misty to emphasize the underlying theme.",
+          "In every chapter, the presence of misty provided an unmistakable atmosphere.",
+          "Observers noted that misty altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "misty"
+    ],
+    "createdAt": "2026-11-14T07:12:16.765Z",
+    "updatedAt": "2026-11-14T07:12:16.765Z"
+  },
+  "maidens": {
+    "word": "maidens",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of maidens",
+        "examples": [
+          "The local maidens gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden maidens swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various maidens preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "maidens"
+    ],
+    "createdAt": "2026-11-14T07:12:21.760Z",
+    "updatedAt": "2026-11-14T07:12:21.760Z"
+  },
+  "morn": {
+    "word": "morn",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Morning.",
+        "examples": [
+          "The author skillfully incorporated morn to emphasize the underlying theme.",
+          "In every chapter, the presence of morn provided an unmistakable atmosphere.",
+          "Observers noted that morn altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "morn"
+    ],
+    "createdAt": "2026-11-14T07:12:33.192Z",
+    "updatedAt": "2026-11-14T07:12:33.192Z"
+  },
+  "manic": {
+    "word": "manic",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Of or pertaining to someone who exhibits mania or craziness; wicked.; Suffering from mania, the state of an abnormally elevated or irritable mood, arousal, and/or energy levels.",
+        "examples": [
+          "The author skillfully incorporated manic to emphasize the underlying theme.",
+          "In every chapter, the presence of manic provided an unmistakable atmosphere.",
+          "Observers noted that manic altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A person exhibiting mania.",
+        "examples": [
+          "The author skillfully incorporated manic to emphasize the underlying theme.",
+          "In every chapter, the presence of manic provided an unmistakable atmosphere.",
+          "Observers noted that manic altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "manic"
+    ],
+    "createdAt": "2026-11-14T07:56:52.916Z",
+    "updatedAt": "2026-11-14T07:56:52.916Z"
   }
 }

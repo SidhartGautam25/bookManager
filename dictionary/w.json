@@ -1157,5 +1157,224 @@
     ],
     "createdAt": "2026-11-13T14:40:43.656Z",
     "updatedAt": "2026-11-13T14:40:43.656Z"
+  },
+  "wakened": {
+    "word": "wakened",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of wakened",
+        "examples": [
+          "The author skillfully incorporated wakened to emphasize the underlying theme.",
+          "In every chapter, the presence of wakened provided an unmistakable atmosphere.",
+          "Observers noted that wakened altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "wakened"
+    ],
+    "createdAt": "2026-11-14T07:12:16.310Z",
+    "updatedAt": "2026-11-14T07:12:16.310Z"
+  },
+  "willow": {
+    "word": "willow",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of willow",
+        "examples": [
+          "The author skillfully incorporated willow to emphasize the underlying theme.",
+          "In every chapter, the presence of willow provided an unmistakable atmosphere.",
+          "Observers noted that willow altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "willow"
+    ],
+    "createdAt": "2026-11-14T07:12:21.704Z",
+    "updatedAt": "2026-11-14T07:12:21.704Z"
+  },
+  "weavings": {
+    "word": "weavings",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of weavings",
+        "examples": [
+          "The local weavings gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden weavings swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various weavings preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "weavings"
+    ],
+    "createdAt": "2026-11-14T07:12:30.990Z",
+    "updatedAt": "2026-11-14T07:12:30.990Z"
+  },
+  "whistle": {
+    "word": "whistle",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A device designed to be placed in the mouth and blown, or driven by steam or some other mechanism, to make a whistling sound.; An act of whistling.",
+        "examples": [
+          "The whistle of the wind in the trees.",
+          "The author skillfully incorporated whistle to emphasize the underlying theme.",
+          "In every chapter, the presence of whistle provided an unmistakable atmosphere."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To make a shrill, high-pitched sound by forcing air through the mouth. To produce a whistling sound, restrictions to the flow of air are created using the teeth, tongue and lips.; To make a similar sound by forcing air through a musical instrument or a pipe etc.",
+        "examples": [
+          "Never whistle at a funeral.",
+          "The stream train whistled as it passed by.",
+          "A bullet whistled past."
+        ]
+      }
+    ],
+    "variations": [
+      "whistle"
+    ],
+    "createdAt": "2026-11-14T07:12:36.295Z",
+    "updatedAt": "2026-11-14T07:12:36.295Z"
+  },
+  "weakening": {
+    "word": "weakening",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To make weaker or less strong.; To become weaker or less strong.",
+        "examples": [
+          "weakening a bond.",
+          "weakening a joint.",
+          "Over the years my enthusiasm for the job has weakened."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "An instance or process of loss of strength.; A structural principle of mathematical logic that states that the hypotheses of any derived fact may be freely extended with additional assumptions.",
+        "examples": [
+          "He stood by the window, weakening quietly as the light faded into evening.",
+          "They observed the fountain weakening clear water high into the morning air.",
+          "She spent hours weakening through the archives to locate the missing document."
+        ]
+      }
+    ],
+    "variations": [
+      "weakening",
+      "weaken"
+    ],
+    "createdAt": "2026-11-14T07:29:09.295Z",
+    "updatedAt": "2026-11-14T07:29:09.295Z"
+  },
+  "wretchedly": {
+    "word": "wretchedly",
+    "meanings": [
+      {
+        "partOfSpeech": "adverb",
+        "definition": "In a wretched manner.",
+        "examples": [
+          "The author skillfully incorporated wretchedly to emphasize the underlying theme.",
+          "In every chapter, the presence of wretchedly provided an unmistakable atmosphere.",
+          "Observers noted that wretchedly altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "wretchedly"
+    ],
+    "createdAt": "2026-11-14T07:44:00.315Z",
+    "updatedAt": "2026-11-14T07:44:00.315Z"
+  },
+  "withstood": {
+    "word": "withstood",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To resist or endure (something) successfully.; To oppose (something) forcefully.",
+        "examples": [
+          "The team withstood their operations until further instructions arrived from headquarters.",
+          "She was deeply withstood by the unexpected turn of events during the meeting.",
+          "He carefully withstood the remaining pieces into a cohesive structure."
+        ]
+      }
+    ],
+    "variations": [
+      "withstood",
+      "withstand"
+    ],
+    "createdAt": "2026-11-14T07:44:03.697Z",
+    "updatedAt": "2026-11-14T07:44:03.697Z"
+  },
+  "wardrobe": {
+    "word": "wardrobe",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A room for keeping clothes and armor safe, particularly a dressing room or walk-in closet beside a bedroom.; A governmental office or department in a monarchy which purchases, keeps, and cares for royal clothes.",
+        "examples": [
+          "The author skillfully incorporated wardrobe to emphasize the underlying theme.",
+          "In every chapter, the presence of wardrobe provided an unmistakable atmosphere.",
+          "Observers noted that wardrobe altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To act as a wardrobe department, to provide clothing or sets of clothes.",
+        "examples": [
+          "The author skillfully incorporated wardrobe to emphasize the underlying theme.",
+          "In every chapter, the presence of wardrobe provided an unmistakable atmosphere.",
+          "Observers noted that wardrobe altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "wardrobe"
+    ],
+    "createdAt": "2026-11-14T07:44:04.122Z",
+    "updatedAt": "2026-11-14T07:44:04.122Z"
+  },
+  "whined": {
+    "word": "whined",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To utter a high-pitched cry.; To make a sound resembling such a cry.",
+        "examples": [
+          "The jet engines whined at take off.",
+          "The jet whined into the air.",
+          "Kelly Queen was whining that the boss made him put on his tie."
+        ]
+      }
+    ],
+    "variations": [
+      "whined"
+    ],
+    "createdAt": "2026-11-14T07:44:04.192Z",
+    "updatedAt": "2026-11-14T07:44:04.192Z"
+  },
+  "wreckage": {
+    "word": "wreckage",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "Something wrecked, especially the remains or debris of something which has been severely damaged or destroyed.",
+        "examples": [
+          "The author skillfully incorporated wreckage to emphasize the underlying theme.",
+          "In every chapter, the presence of wreckage provided an unmistakable atmosphere.",
+          "Observers noted that wreckage altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "wreckage"
+    ],
+    "createdAt": "2026-11-14T07:56:54.834Z",
+    "updatedAt": "2026-11-14T07:56:54.834Z"
   }
 }

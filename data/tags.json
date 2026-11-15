@@ -33,5 +33,19 @@
     "color": "rose",
     "description": "Sharp character dialogue, conversational nuances, and banter.",
     "createdAt": "2026-09-18T22:30:00.000Z"
+  },
+  {
+    "id": "normal-lines",
+    "name": "normal lines",
+    "color": "indigo",
+    "description": "",
+    "createdAt": "2026-11-14T08:33:18.797Z"
+  },
+  {
+    "id": "2-word-combination",
+    "name": "2 word combination",
+    "color": "rose",
+    "description": "",
+    "createdAt": "2026-11-14T08:39:26.897Z"
   }
 ]

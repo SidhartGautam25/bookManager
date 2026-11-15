@@ -1,0 +1,383 @@
+{
+  "lyrics": "I have walked through many lives,\nsome of them my own,\nand I am not who I was,\nthough some principle of being\nabides, from which I struggle\nnot to stray.\nWhen I look behind,\nas I am compelled to look\nbefore I can gather strength\nto proceed on my journey,\nI see the milestones dwindling\ntoward the horizon\nand the slow fires trailing\nfrom the abandoned camp-sites,\nover which scavenger angels\nwheel on heavy wings.\nOh, I have made myself a tribe\nout of my true affections,\nand my tribe is scattered!\nHow shall the heart be reconciled\nto its feast of losses?\nIn a rising wind\nthe manic dust of my friends,\nthose who fell along the way,\nbitterly stings my face.\nYet I turn, I turn,\nexulting somewhat,\nwith my will intact to go\nwherever I need to go,\nand every stone on the road\nprecious to me.\nIn my darkest night,\nwhen the moon was covered\nand I roamed through wreckage,\na nimbus-clouded voice\ndirected me:\n“Live in the layers,\nnot on the litter.”\nThough I lack the art\nto decipher it,\nno doubt the next chapter\nin my book of transformations\nis already written.\nI am not done with my changes.",
+  "words": [
+    {
+      "type": "word",
+      "word": "abides",
+      "variations": [
+        "abide",
+        "abides",
+        "abiding",
+        "abided",
+        "abode"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "verb",
+          "definition": "Accepts, follows, or obeys rules, decisions, or agreements.",
+          "examples": [
+            "She abides by the rules strictly.",
+            "Good citizens abide by the law.",
+            "The team agreed to abide by the referee’s decision.",
+            "He has always abided by his principles."
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definition": "Remains, continues, or stays for a long time.",
+          "examples": [
+            "True friendship abides even through hardship.",
+            "The memory of that day still abides with him.",
+            "Peace rarely abides in times of war.",
+            "Ancient traditions continue abiding in the village."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "stray",
+      "variations": [
+        "stray"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "Any domestic animal that has no enclosure, or its proper place and company, and wanders at large, or is lost; an estray.; One who is lost, either literally or metaphorically.",
+          "examples": [
+            "Waifs and strays.",
+            "Catch a stray.",
+            "The author skillfully incorporated stray to emphasize the underlying theme."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To wander, as from a direct course; to deviate, or go out of the way.; To wander from one's limits; to rove or roam at large; to go astray.",
+          "examples": [
+            "The author skillfully incorporated stray to emphasize the underlying theme.",
+            "In every chapter, the presence of stray provided an unmistakable atmosphere.",
+            "Observers noted that stray altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Having gone astray; strayed; wandering; In the wrong place; misplaced.",
+          "examples": [
+            "The alley is full of stray cats rummaging through the garbage.",
+            "A stray comma.",
+            "A stray bullet."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "dwindling",
+      "variations": [
+        "dwindling",
+        "dwindle"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To decrease, shrink, diminish, reduce in size or intensity.; To fall away in quality; degenerate, sink.",
+          "examples": [
+            "Their supplies began to dwindling after a week.",
+            "Interest in the project slowly dwindled.",
+            "dwindling away."
+          ]
+        },
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A gradual reduction to nothing.",
+          "examples": [
+            "He stood by the window, dwindling quietly as the light faded into evening.",
+            "They observed the fountain dwindling clear water high into the morning air.",
+            "She spent hours dwindling through the archives to locate the missing document."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Declining; growing less",
+          "examples": [
+            "There is dwindling support for New Labour.",
+            "He stood by the window, dwindling quietly as the light faded into evening.",
+            "They observed the fountain dwindling clear water high into the morning air."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "trailing",
+      "variations": [
+        "trailing",
+        "trail"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To follow behind (someone or something); to tail (someone or something).; To drag (something) behind on the ground.",
+          "examples": [
+            "The hunters trailed their prey deep into the woods.",
+            "You'll get your coat all muddy if you trail it around like that.",
+            "He walked into the house, soaking wet, and trailed water all over the place."
+          ]
+        },
+        {
+          "partOfSpeech": "Noun",
+          "definition": "Fabric or other material that trails.; (Present participle / Gerund) The track or indication marking the route followed by something that has passed, such as the footprints of animal on land or the contrail of an airplane in the sky.",
+          "examples": [
+            "The trailing has gone cold.",
+            "Condensation trailing.",
+            "Data trailing, paper trailing."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "(of points and crossovers) That converges in the direction of travel.; That which is attached and pulled behind.",
+          "examples": [
+            "The trailing railcars.",
+            "The trailing comments.",
+            "No trailing whitespace characters."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "scavenger",
+      "variations": [
+        "scavenger"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "Someone who scavenges, especially one who searches through rubbish for food or useful things.; An animal that feeds on decaying matter such as carrion.",
+          "examples": [
+            "Garbage scavenger.",
+            "A scavenger picked through the rubbish heap.",
+            "Vultures are natural scavengers."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To scavenge.; To clean the rubbish from a street, etc.",
+          "examples": [
+            "The author skillfully incorporated scavenger to emphasize the underlying theme.",
+            "In every chapter, the presence of scavenger provided an unmistakable atmosphere.",
+            "Observers noted that scavenger altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "reconciled",
+      "variations": [
+        "reconciled",
+        "reconcile"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To restore a friendly relationship; to bring back to harmony.; To make things compatible or consistent.",
+          "examples": [
+            "To reconcile people who have quarrelled.",
+            "To reconcile differences.",
+            "To reconciled people who have quarrelled."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "feast",
+      "variations": [
+        "feast"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A very large meal, often of a ceremonial nature.; Something delightful",
+          "examples": [
+            "We had a feast to celebrate the harvest.",
+            "It was a feast for the eyes.",
+            "The author skillfully incorporated feast to emphasize the underlying theme."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To partake in a feast, or large meal.; To dwell upon (something) with delight.",
+          "examples": [
+            "I feasted on turkey and dumplings.",
+            "We feasted them after the victory.",
+            "The author skillfully incorporated feast to emphasize the underlying theme."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "manic",
+      "variations": [
+        "manic"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Of or pertaining to someone who exhibits mania or craziness; wicked.; Suffering from mania, the state of an abnormally elevated or irritable mood, arousal, and/or energy levels.",
+          "examples": [
+            "The author skillfully incorporated manic to emphasize the underlying theme.",
+            "In every chapter, the presence of manic provided an unmistakable atmosphere.",
+            "Observers noted that manic altered the entire perspective of the scene."
+          ]
+        },
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A person exhibiting mania.",
+          "examples": [
+            "The author skillfully incorporated manic to emphasize the underlying theme.",
+            "In every chapter, the presence of manic provided an unmistakable atmosphere.",
+            "Observers noted that manic altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "exulting",
+      "variations": [
+        "exulting",
+        "exult"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To rejoice; to be very happy, especially in triumph.",
+          "examples": [
+            "He stood by the window, exulting quietly as the light faded into evening.",
+            "They observed the fountain exulting clear water high into the morning air.",
+            "She spent hours exulting through the archives to locate the missing document."
+          ]
+        },
+        {
+          "partOfSpeech": "Noun",
+          "definition": "Exultation",
+          "examples": [
+            "He stood by the window, exulting quietly as the light faded into evening.",
+            "They observed the fountain exulting clear water high into the morning air.",
+            "She spent hours exulting through the archives to locate the missing document."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Showing exultation.",
+          "examples": [
+            "He stood by the window, exulting quietly as the light faded into evening.",
+            "They observed the fountain exulting clear water high into the morning air.",
+            "She spent hours exulting through the archives to locate the missing document."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "intact",
+      "variations": [
+        "intact"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "Left complete or whole; not touched, defiled, sullied or otherwise damaged; Of animals, not castrated: an intact bull.",
+          "examples": [
+            "I packed my belongings carefully so that they would survive the move intact.",
+            "The opposite of a circumcised penis is an intact penis.",
+            "An intact bull."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "roamed",
+      "variations": [
+        "roamed"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To wander or travel freely and with no specific destination.; To use a network or service from different locations or devices.",
+          "examples": [
+            "Gangs of thugs roamed the streets.",
+            "The team roamed their operations until further instructions arrived from headquarters.",
+            "She was deeply roamed by the unexpected turn of events during the meeting."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "wreckage",
+      "variations": [
+        "wreckage"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "Something wrecked, especially the remains or debris of something which has been severely damaged or destroyed.",
+          "examples": [
+            "The author skillfully incorporated wreckage to emphasize the underlying theme.",
+            "In every chapter, the presence of wreckage provided an unmistakable atmosphere.",
+            "Observers noted that wreckage altered the entire perspective of the scene."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "litter",
+      "variations": [
+        "litter"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A platform mounted on two shafts, or a more elaborate construction, designed to be carried by two (or more) people to transport one (in luxury models sometimes more) third person(s) or (occasionally in the elaborate version) a cargo, such as a religious idol.; (collective) The offspring of a mammal born in one birth.",
+          "examples": [
+            "Sleep in the litter.",
+            "Drop litter.",
+            "The cat's litter."
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To drop or throw trash without properly disposing of it (as discarding in public areas rather than trash receptacles).; To scatter carelessly about.",
+          "examples": [
+            "By tossing the bottle out the window, he was littering.",
+            "The author skillfully incorporated litter to emphasize the underlying theme.",
+            "In every chapter, the presence of litter provided an unmistakable atmosphere."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "word",
+      "word": "decipher",
+      "variations": [
+        "deciphered",
+        "deciphering"
+      ],
+      "meanings": [
+        {
+          "partOfSpeech": "verb",
+          "definition": "Convert a text written in code, or that is defective or obscure, into normal language; succeed in understanding.",
+          "examples": [
+            "Elwood tried to decipher the cryptic notations in the superintendent's ledger."
+          ]
+        }
+      ]
+    }
+  ]
+}

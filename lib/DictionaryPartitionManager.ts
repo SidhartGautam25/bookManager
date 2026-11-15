@@ -490,8 +490,8 @@ export class DictionaryPartitionManager {
       }
     }
 
-    // 3. Ingest existing songs/ and movies/
-    for (const dirName of ["songs", "movies"]) {
+    // 3. Ingest existing songs, movies, and poems
+    for (const dirName of ["songs", "movies", "poems"]) {
       const mediaDir = path.join(process.cwd(), dirName);
       if (fs.existsSync(mediaDir)) {
         try {

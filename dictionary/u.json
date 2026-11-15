@@ -908,5 +908,62 @@
     ],
     "createdAt": "2026-11-14T05:16:09.376Z",
     "updatedAt": "2026-11-14T05:16:09.376Z"
+  },
+  "unsubdued": {
+    "word": "unsubdued",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Unconquered, not vanquished.; Restless, not calm.",
+        "examples": [
+          "The author skillfully incorporated unsubdued to emphasize the underlying theme.",
+          "In every chapter, the presence of unsubdued provided an unmistakable atmosphere.",
+          "Observers noted that unsubdued altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "unsubdued"
+    ],
+    "createdAt": "2026-11-14T07:12:11.417Z",
+    "updatedAt": "2026-11-14T07:12:11.417Z"
+  },
+  "undulations": {
+    "word": "undulations",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An instance or act of undulating.; A wavy appearance or outline; waviness.",
+        "examples": [
+          "The local undulations gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden undulations swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various undulations preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "undulations"
+    ],
+    "createdAt": "2026-11-14T07:12:37.110Z",
+    "updatedAt": "2026-11-14T07:12:37.110Z"
+  },
+  "unresting": {
+    "word": "unresting",
+    "meanings": [
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Not resting; ceaseless",
+        "examples": [
+          "He stood by the window, unresting quietly as the light faded into evening.",
+          "They observed the fountain unresting clear water high into the morning air.",
+          "She spent hours unresting through the archives to locate the missing document."
+        ]
+      }
+    ],
+    "variations": [
+      "unresting"
+    ],
+    "createdAt": "2026-11-14T07:43:57.707Z",
+    "updatedAt": "2026-11-14T07:43:57.707Z"
   }
 }

@@ -986,5 +986,24 @@
     ],
     "createdAt": "2026-11-13T14:40:43.618Z",
     "updatedAt": "2026-11-13T14:40:43.618Z"
+  },
+  "virginal": {
+    "word": "virginal",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of virginal",
+        "examples": [
+          "The author skillfully incorporated virginal to emphasize the underlying theme.",
+          "In every chapter, the presence of virginal provided an unmistakable atmosphere.",
+          "Observers noted that virginal altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "virginal"
+    ],
+    "createdAt": "2026-11-14T07:12:15.378Z",
+    "updatedAt": "2026-11-14T07:12:15.378Z"
   }
 }

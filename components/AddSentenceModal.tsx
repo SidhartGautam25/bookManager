@@ -14,7 +14,7 @@ import { TagItem } from "@/lib/TagManager";
 
 interface AddSentenceModalProps {
   isOpen: boolean;
-  mediaType: "book" | "song" | "movie";
+  mediaType: "book" | "song" | "movie" | "poem";
   mediaName: string;
   pageNo?: number;
   onClose: () => void;
@@ -76,7 +76,7 @@ function AddSentenceContent({
   onClose,
   onAdded,
 }: {
-  mediaType: "book" | "song" | "movie";
+  mediaType: "book" | "song" | "movie" | "poem";
   mediaName: string;
   pageNo?: number;
   onClose: () => void;
@@ -200,7 +200,7 @@ function AddSentenceContent({
               <p className="text-xs text-gray-400 font-medium">
                 {mediaType === "book"
                   ? `To Book "${mediaName}" (Page ${pageNo})`
-                  : `To ${mediaType === "song" ? "Song" : "Movie"} "${mediaName}"`}
+                  : `To ${mediaType === "song" ? "Song" : mediaType === "poem" ? "Poem" : "Movie"} "${mediaName}"`}
               </p>
             </div>
           </div>

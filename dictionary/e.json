@@ -2686,5 +2686,232 @@
     ],
     "createdAt": "2026-11-14T05:16:08.568Z",
     "updatedAt": "2026-11-14T05:16:08.568Z"
+  },
+  "encroachment": {
+    "word": "encroachment",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "An entry into a place or area that was previously uncommon; an advance beyond former borders; intrusion; incursion.; An intrusion upon another's possessions or rights; infringement.",
+        "examples": [
+          "The author skillfully incorporated encroachment to emphasize the underlying theme.",
+          "In every chapter, the presence of encroachment provided an unmistakable atmosphere.",
+          "Observers noted that encroachment altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "encroachment"
+    ],
+    "createdAt": "2026-11-14T07:12:08.013Z",
+    "updatedAt": "2026-11-14T07:12:08.013Z"
+  },
+  "elations": {
+    "word": "elations",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of elations",
+        "examples": [
+          "The local elations gathered early in the square to prepare their daily exhibits.",
+          "Multiple sudden elations swept across the region, overwhelming the drainage canals.",
+          "Scholars compared various elations preserved from centuries of documented history."
+        ]
+      }
+    ],
+    "variations": [
+      "elations"
+    ],
+    "createdAt": "2026-11-14T07:12:13.076Z",
+    "updatedAt": "2026-11-14T07:12:13.076Z"
+  },
+  "enduring": {
+    "word": "enduring",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of enduring",
+        "examples": [
+          "He stood by the window, enduring quietly as the light faded into evening.",
+          "They observed the fountain enduring clear water high into the morning air.",
+          "She spent hours enduring through the archives to locate the missing document."
+        ]
+      }
+    ],
+    "variations": [
+      "enduring"
+    ],
+    "createdAt": "2026-11-14T07:12:15.931Z",
+    "updatedAt": "2026-11-14T07:12:15.931Z"
+  },
+  "endured": {
+    "word": "endured",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of endured",
+        "examples": [
+          "The author skillfully incorporated endured to emphasize the underlying theme.",
+          "In every chapter, the presence of endured provided an unmistakable atmosphere.",
+          "Observers noted that endured altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "endured"
+    ],
+    "createdAt": "2026-11-14T07:12:18.097Z",
+    "updatedAt": "2026-11-14T07:12:18.097Z"
+  },
+  "echoing": {
+    "word": "echoing",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(of a sound or sound waves) To reflect off a surface and return.; To reflect back (a sound).",
+        "examples": [
+          "Sid echoed his father's point of view.",
+          "He stood by the window, echoing quietly as the light faded into evening.",
+          "They observed the fountain echoing clear water high into the morning air."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "The act of something that echoes.",
+        "examples": [
+          "He stood by the window, echoing quietly as the light faded into evening.",
+          "They observed the fountain echoing clear water high into the morning air.",
+          "She spent hours echoing through the archives to locate the missing document."
+        ]
+      }
+    ],
+    "variations": [
+      "echoing"
+    ],
+    "createdAt": "2026-11-14T07:12:34.544Z",
+    "updatedAt": "2026-11-14T07:12:34.544Z"
+  },
+  "evensong": {
+    "word": "evensong",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A religious service, most commonly seen in the Anglican or Episcopal Church, that takes place in the early hours of the evening.",
+        "examples": [
+          "The author skillfully incorporated evensong to emphasize the underlying theme.",
+          "In every chapter, the presence of evensong provided an unmistakable atmosphere.",
+          "Observers noted that evensong altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "evensong"
+    ],
+    "createdAt": "2026-11-14T07:29:15.198Z",
+    "updatedAt": "2026-11-14T07:29:15.198Z"
+  },
+  "ecstatic": {
+    "word": "ecstatic",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "(in the plural) Transports of delight; words or actions performed in a state of ecstasy.; A person in a state of ecstasy.",
+        "examples": [
+          "The author skillfully incorporated ecstatic to emphasize the underlying theme.",
+          "In every chapter, the presence of ecstatic provided an unmistakable atmosphere.",
+          "Observers noted that ecstatic altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Feeling or characterized by ecstasy.; Extremely happy.",
+        "examples": [
+          "Ecstatic gaze; ecstatic trance.",
+          "The author skillfully incorporated ecstatic to emphasize the underlying theme.",
+          "In every chapter, the presence of ecstatic provided an unmistakable atmosphere."
+        ]
+      }
+    ],
+    "variations": [
+      "ecstatic"
+    ],
+    "createdAt": "2026-11-14T07:29:18.162Z",
+    "updatedAt": "2026-11-14T07:29:18.162Z"
+  },
+  "extinction": {
+    "word": "extinction",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "The action of making or becoming extinct; annihilation.; The absorption or scattering of electromagnetic radiation emitted by astronomical objects by intervening dust and gas before it reaches the observer.",
+        "examples": [
+          "The author skillfully incorporated extinction to emphasize the underlying theme.",
+          "In every chapter, the presence of extinction provided an unmistakable atmosphere.",
+          "Observers noted that extinction altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "extinction"
+    ],
+    "createdAt": "2026-11-14T07:43:59.942Z",
+    "updatedAt": "2026-11-14T07:43:59.942Z"
+  },
+  "emblem": {
+    "word": "emblem",
+    "meanings": [
+      {
+        "partOfSpeech": "general",
+        "definition": "Meaning and context of emblem",
+        "examples": [
+          "The author skillfully incorporated emblem to emphasize the underlying theme.",
+          "In every chapter, the presence of emblem provided an unmistakable atmosphere.",
+          "Observers noted that emblem altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "emblem"
+    ],
+    "createdAt": "2026-11-14T07:52:39.177Z",
+    "updatedAt": "2026-11-14T07:52:39.177Z"
+  },
+  "exulting": {
+    "word": "exulting",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To rejoice; to be very happy, especially in triumph.",
+        "examples": [
+          "He stood by the window, exulting quietly as the light faded into evening.",
+          "They observed the fountain exulting clear water high into the morning air.",
+          "She spent hours exulting through the archives to locate the missing document."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "Exultation",
+        "examples": [
+          "He stood by the window, exulting quietly as the light faded into evening.",
+          "They observed the fountain exulting clear water high into the morning air.",
+          "She spent hours exulting through the archives to locate the missing document."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "Showing exultation.",
+        "examples": [
+          "He stood by the window, exulting quietly as the light faded into evening.",
+          "They observed the fountain exulting clear water high into the morning air.",
+          "She spent hours exulting through the archives to locate the missing document."
+        ]
+      }
+    ],
+    "variations": [
+      "exulting",
+      "exult"
+    ],
+    "createdAt": "2026-11-14T07:56:53.804Z",
+    "updatedAt": "2026-11-14T07:56:53.804Z"
   }
 }

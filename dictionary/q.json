@@ -193,5 +193,33 @@
     "variations": [],
     "createdAt": "2026-11-13T14:40:42.029Z",
     "updatedAt": "2026-11-13T14:40:42.029Z"
+  },
+  "quail": {
+    "word": "quail",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To waste away; to fade, to wither; To daunt or frighten (someone)",
+        "examples": [
+          "The author skillfully incorporated quail to emphasize the underlying theme.",
+          "In every chapter, the presence of quail provided an unmistakable atmosphere.",
+          "Observers noted that quail altered the entire perspective of the scene."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "Any of various small game birds of the genera Coturnix, Anurophasis or Perdicula in the Old World family Phasianidae or of the New World family Odontophoridae.; The meat from this bird eaten as food.",
+        "examples": [
+          "The author skillfully incorporated quail to emphasize the underlying theme.",
+          "In every chapter, the presence of quail provided an unmistakable atmosphere.",
+          "Observers noted that quail altered the entire perspective of the scene."
+        ]
+      }
+    ],
+    "variations": [
+      "quail"
+    ],
+    "createdAt": "2026-11-14T07:12:36.249Z",
+    "updatedAt": "2026-11-14T07:12:36.249Z"
   }
 }
