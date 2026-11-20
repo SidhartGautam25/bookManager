@@ -3299,5 +3299,71 @@
     ],
     "createdAt": "2026-11-14T07:44:00.793Z",
     "updatedAt": "2026-11-14T07:44:00.793Z"
+  },
+  "baking": {
+    "word": "baking",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "(with person as subject) To cook (something) in an oven.; (with baked thing as subject) To be cooked in an oven.",
+        "examples": [
+          "I baked a delicious cherry pie.",
+          "The cake baked at 350°F.",
+          "The clay baked in the sun."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "An action in which something is baked.; The way in which something is baked.",
+        "examples": [
+          "I'm going to do some baking this afternoon.",
+          "I’m going to do some baking this afternoon.",
+          "An oyster baking on the shore."
+        ]
+      },
+      {
+        "partOfSpeech": "adjective",
+        "definition": "That bakes.; Of a person, an object, or the weather: very hot; boiling, broiling, roasting.",
+        "examples": [
+          "Baking bread baking clay.",
+          "I'm baking – could you open the window?",
+          "Baking bread; baking clay; baking dish."
+        ]
+      }
+    ],
+    "variations": [
+      "baking",
+      "bake"
+    ],
+    "createdAt": "2026-11-20T11:12:15.008Z",
+    "updatedAt": "2026-11-20T11:12:15.008Z"
+  },
+  "batter": {
+    "word": "batter",
+    "meanings": [
+      {
+        "partOfSpeech": "verb",
+        "definition": "To hit or strike violently and repeatedly.; To coat with batter (the food ingredient).",
+        "examples": [
+          "The firemen battered down the door.",
+          "I prefer it when they batter the cod with breadcrumbs.",
+          "Leeds United battered Charlton 7-0."
+        ]
+      },
+      {
+        "partOfSpeech": "noun",
+        "definition": "A beaten mixture of flour and liquid (usually egg and milk), used for baking (e.g. pancakes, cake, or Yorkshire pudding) or to coat food (e.g. fish) prior to frying; A binge, a heavy drinking session.",
+        "examples": [
+          "To the dismay of his mother, the boy put his finger into the cake batter.",
+          "When he went on a batter, he became very violent.",
+          "The first batter hit the ball into the corner for a double."
+        ]
+      }
+    ],
+    "variations": [
+      "batter"
+    ],
+    "createdAt": "2026-11-20T11:21:01.164Z",
+    "updatedAt": "2026-11-20T11:21:01.164Z"
   }
 }

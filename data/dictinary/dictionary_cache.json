@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "lastUpdated": "2026-11-14T07:56:55.166Z",
-  "totalWords": 1099,
+  "lastUpdated": "2026-11-20T11:21:01.114Z",
+  "totalWords": 1113,
   "entries": {
     "sleazy": {
       "word": "sleazy",
@@ -31782,6 +31782,277 @@
       ],
       "variations": [
         "litter"
+      ],
+      "source": "cache"
+    },
+    "specious": {
+      "word": "specious",
+      "meanings": [
+        {
+          "partOfSpeech": "adjective",
+          "definition": "Superficially plausible, but actually wrong; misleading in appearance.",
+          "examples": [
+            "The governor offered a specious defense of the reform school's financial records."
+          ]
+        }
+      ],
+      "variations": [
+        "speciously"
+      ],
+      "source": "cache"
+    },
+    "dissipate": {
+      "word": "dissipate",
+      "meanings": [
+        {
+          "partOfSpeech": "verb",
+          "definition": "Disappear or cause to disappear; squander or fritter away money, energy, or resources.",
+          "examples": [
+            "The morning fog began to dissipate, revealing the swollen river ahead."
+          ]
+        }
+      ],
+      "variations": [
+        "dissipated",
+        "dissipating"
+      ],
+      "source": "cache"
+    },
+    "catastrophe": {
+      "word": "catastrophe",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definition": "An event causing great and often sudden damage or suffering; a disaster.",
+          "examples": [
+            "The plague represented an existential catastrophe that shattered the town's complacency."
+          ]
+        }
+      ],
+      "variations": [
+        "catastrophes",
+        "catastrophic"
+      ],
+      "source": "cache"
+    },
+    "indifferent": {
+      "word": "indifferent",
+      "meanings": [
+        {
+          "partOfSpeech": "adjective",
+          "definition": "Having no particular interest or sympathy; unconcerned.",
+          "examples": [
+            "The townspeople were initially indifferent to the plight of the poor in the outer wards."
+          ]
+        }
+      ],
+      "variations": [
+        "indifferently",
+        "indifference"
+      ],
+      "source": "cache"
+    },
+    "inarticulate": {
+      "word": "inarticulate",
+      "meanings": [
+        {
+          "partOfSpeech": "adjective",
+          "definition": "Unable to speak distinctly or express oneself clearly.",
+          "examples": [
+            "Gregor's vocal cords produced only an inarticulate, wheezing hiss."
+          ]
+        }
+      ],
+      "variations": [
+        "inarticulately"
+      ],
+      "source": "cache"
+    },
+    "insipid": {
+      "word": "insipid",
+      "meanings": [
+        {
+          "partOfSpeech": "adjective",
+          "definition": "Lacking flavor; lacking vigor or interest.",
+          "examples": [
+            "The watered gruel served in the mess hall was cold, greasy, and utterly insipid."
+          ]
+        }
+      ],
+      "variations": [],
+      "source": "cache"
+    },
+    "boisterous": {
+      "word": "boisterous",
+      "meanings": [
+        {
+          "partOfSpeech": "adjective",
+          "definition": "Noisy, energetic, and rowdy; wild or stormy.",
+          "examples": [
+            "The white boys engaged in boisterous games on the manicured front lawn."
+          ]
+        }
+      ],
+      "variations": [
+        "boisterously"
+      ],
+      "source": "cache"
+    },
+    "manifest": {
+      "word": "manifest",
+      "meanings": [
+        {
+          "partOfSpeech": "verb",
+          "definition": "Display or show a quality or feeling by one's acts or appearance; demonstrate.",
+          "examples": [
+            "The illness began to manifest through extreme lethargy, black vomit, and swelling."
+          ]
+        }
+      ],
+      "variations": [
+        "manifested",
+        "manifesting",
+        "manifestation"
+      ],
+      "source": "cache"
+    },
+    "gaunt": {
+      "word": "gaunt",
+      "meanings": [
+        {
+          "partOfSpeech": "adjective",
+          "definition": "Lean and haggard, especially because of suffering, hunger, or age.",
+          "examples": [
+            "The gaunt faces of the solitary confinement prisoners stared through the iron bars."
+          ]
+        }
+      ],
+      "variations": [
+        "gauntness"
+      ],
+      "source": "cache"
+    },
+    "gloom": {
+      "word": "gloom",
+      "meanings": [
+        {
+          "partOfSpeech": "noun",
+          "definition": "Partial or total darkness; a state of depression or despondency.",
+          "examples": [
+            "A heavy, unyielding gloom settled over Gregor's locked bedroom."
+          ]
+        }
+      ],
+      "variations": [
+        "gloomy"
+      ],
+      "source": "cache"
+    },
+    "decipher": {
+      "word": "decipher",
+      "meanings": [
+        {
+          "partOfSpeech": "verb",
+          "definition": "Convert a text written in code, or that is defective or obscure, into normal language; succeed in understanding.",
+          "examples": [
+            "Elwood tried to decipher the cryptic notations in the superintendent's ledger."
+          ]
+        }
+      ],
+      "variations": [
+        "deciphered",
+        "deciphering"
+      ],
+      "source": "cache"
+    },
+    "baking": {
+      "word": "baking",
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "(with person as subject) To cook (something) in an oven.; (with baked thing as subject) To be cooked in an oven.",
+          "examples": [
+            "I baked a delicious cherry pie.",
+            "The cake baked at 350°F.",
+            "The clay baked in the sun."
+          ]
+        },
+        {
+          "partOfSpeech": "Noun",
+          "definition": "An action in which something is baked.; The way in which something is baked.",
+          "examples": [
+            "I'm going to do some baking this afternoon.",
+            "I’m going to do some baking this afternoon.",
+            "An oyster baking on the shore."
+          ]
+        },
+        {
+          "partOfSpeech": "Adjective",
+          "definition": "That bakes.; Of a person, an object, or the weather: very hot; boiling, broiling, roasting.",
+          "examples": [
+            "Baking bread baking clay.",
+            "I'm baking – could you open the window?",
+            "Baking bread; baking clay; baking dish."
+          ]
+        }
+      ],
+      "variations": [
+        "baking",
+        "bake"
+      ],
+      "source": "cache"
+    },
+    "whip": {
+      "word": "whip",
+      "meanings": [
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A lash; a pliant, flexible instrument, such as a rod (commonly of cane or rattan) or a plaited or braided rope or thong (commonly of leather) used to create a sharp \"crack\" sound for directing or herding animals.; A blow administered with a whip.",
+          "examples": [
+            "I had to use the whip to get the sheep's attention.",
+            "I was going to vote against the bill, but the party whip came to see me and made it clear I needed to vote for it.",
+            "Did you want to add some whip to your coffee, ma'am?"
+          ]
+        },
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To hit with a whip.; (by extension) To hit with any flexible object.",
+          "examples": [
+            "The rider whipped the horse.",
+            "I whipped her with a newspaper.",
+            "To whip eggs or cream."
+          ]
+        }
+      ],
+      "variations": [
+        "whip"
+      ],
+      "source": "cache"
+    },
+    "batter": {
+      "word": "batter",
+      "meanings": [
+        {
+          "partOfSpeech": "Verb",
+          "definition": "To hit or strike violently and repeatedly.; To coat with batter (the food ingredient).",
+          "examples": [
+            "The firemen battered down the door.",
+            "I prefer it when they batter the cod with breadcrumbs.",
+            "Leeds United battered Charlton 7-0."
+          ]
+        },
+        {
+          "partOfSpeech": "Noun",
+          "definition": "A beaten mixture of flour and liquid (usually egg and milk), used for baking (e.g. pancakes, cake, or Yorkshire pudding) or to coat food (e.g. fish) prior to frying; A binge, a heavy drinking session.",
+          "examples": [
+            "To the dismay of his mother, the boy put his finger into the cake batter.",
+            "When he went on a batter, he became very violent.",
+            "The first batter hit the ball into the corner for a double."
+          ]
+        }
+      ],
+      "variations": [
+        "batter"
       ],
       "source": "cache"
     }

@@ -1376,5 +1376,33 @@
     ],
     "createdAt": "2026-11-14T07:56:54.834Z",
     "updatedAt": "2026-11-14T07:56:54.834Z"
+  },
+  "whip": {
+    "word": "whip",
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definition": "A lash; a pliant, flexible instrument, such as a rod (commonly of cane or rattan) or a plaited or braided rope or thong (commonly of leather) used to create a sharp \"crack\" sound for directing or herding animals.; A blow administered with a whip.",
+        "examples": [
+          "I had to use the whip to get the sheep's attention.",
+          "I was going to vote against the bill, but the party whip came to see me and made it clear I needed to vote for it.",
+          "Did you want to add some whip to your coffee, ma'am?"
+        ]
+      },
+      {
+        "partOfSpeech": "verb",
+        "definition": "To hit with a whip.; (by extension) To hit with any flexible object.",
+        "examples": [
+          "The rider whipped the horse.",
+          "I whipped her with a newspaper.",
+          "To whip eggs or cream."
+        ]
+      }
+    ],
+    "variations": [
+      "whip"
+    ],
+    "createdAt": "2026-11-20T11:15:26.052Z",
+    "updatedAt": "2026-11-20T11:15:26.052Z"
   }
 }
